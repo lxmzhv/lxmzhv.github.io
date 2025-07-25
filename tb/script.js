@@ -1,3 +1,12 @@
+let state = {
+    playerData: [],
+    guildActivePhases: new Set(),
+    sort: {
+        key: 'totalWaves',
+        direction: 'desc'
+    }
+};
+
 const ZoneAliases = [
     ['tb3_mixed_', ''],
     ['phase0', 'p'],
@@ -24,6 +33,41 @@ function getPlayers(data) {
         }
     }
     return players;
+}
+
+function sortAndRender() {
+    const { key, direction } = state.sort;
+    const sortedData = [...state.playerData];
+
+    const isNumeric = (k) => k === 'totalWaves' || k.startsWith('waves-');
+
+    sortedData.sort((a, b) => {
+        let valA, valB;
+
+        if (key.startsWith('waves-')) {
+            const phase = key.split('-')[1];
+            valA = a.phases[phase].waves;
+            valB = b.phases[phase].waves;
+        } else if (key.startsWith('special-')) {
+            const phase = key.split('-')[1];
+            valA = a.phases[phase].sm;
+            valB = b.phases[phase].sm;
+        } else {
+            valA = a[key];
+            valB = b[key];
+        }
+
+        let result;
+        if (isNumeric(key)) {
+            result = valA - valB;
+        } else {
+            result = String(valA).localeCompare(String(valB));
+        }
+
+        return direction === 'asc' ? result : -result;
+    });
+
+    renderDashboard(sortedData, state.guildActivePhases);
 }
 
 function processData(data) {
@@ -97,9 +141,10 @@ function processData(data) {
     }
 
     // Calculate totals
-    let sortedPlayers = Object.values(playerData);
+    state.playerData = Object.values(playerData);
+    state.guildActivePhases = guildActivePhases;
 
-    for (const p of sortedPlayers) {
+    for (const p of state.playerData) {
         let grandTotal = 0;
         for (let i = 1; i <= 6; i++) {
             const phaseData = p.phases[i];
@@ -109,14 +154,11 @@ function processData(data) {
     }
 
     // Calculate normalized total waves using the global active phase count
-    for (const p of sortedPlayers) {
-        p.normalizedTotalWaves = p.totalWaves / Math.max(guildActivePhases.size, 1);
+    for (const p of state.playerData) {
+        p.normalizedTotalWaves = p.totalWaves / Math.max(state.guildActivePhases.size, 1);
     }
 
-    // Sort by total waves
-    sortedPlayers.sort((a, b) => b.totalWaves - a.totalWaves);
-
-    renderDashboard(sortedPlayers, guildActivePhases);
+    sortAndRender();
 }
 
 function getWaveCountGroupClass(waves_count) {
@@ -140,15 +182,15 @@ function renderDashboard(playerData, guildActivePhases) {
 
     // Header
     html += '<thead><tr>';
-    html += '<th rowspan="2">Player</th>';
-    html += '<th rowspan="2">Total Waves</th>';
+    html += '<th rowspan="2" data-sort="playerName">Player</th>';
+    html += '<th rowspan="2" data-sort="totalWaves">Total Waves</th>';
     for (let i = 1; i <= 6; i++) {
         html += `<th colspan="2">Phase ${i}</th>`;
     }
     html += '</tr><tr>';
     for (let i = 1; i <= 6; i++) {
-        html += '<th>Waves</th>';
-        html += '<th>Special</th>';
+        html += `<th data-sort="waves-${i}">Waves</th>`;
+        html += `<th data-sort="special-${i}">Special</th>`;
     }
     html += '</tr></thead>';
 
@@ -230,6 +272,31 @@ function renderDashboard(playerData, guildActivePhases) {
     html += '</tbody></table>';
 
     dashboard.innerHTML = html;
+
+    dashboard.querySelectorAll('th[data-sort]').forEach(th => {
+        const sortKey = th.dataset.sort;
+        if (sortKey === state.sort.key) {
+            th.classList.add('sort-active');
+            if (state.sort.direction === 'asc') {
+                th.innerHTML += ' &uarr;';
+            } else {
+                th.innerHTML += ' &darr;';
+            }
+        }
+
+        th.addEventListener('click', () => {
+            const newSortKey = th.dataset.sort;
+            if (state.sort.key === newSortKey) {
+                state.sort.direction = state.sort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                state.sort.key = newSortKey;
+                const isNumeric = (k) => k === 'totalWaves' || k.startsWith('waves-');
+                state.sort.direction = isNumeric(newSortKey) ? 'desc' : 'asc';
+            }
+            sortAndRender();
+        });
+    });
+
     setupHighlightEventListeners();
 }
 
