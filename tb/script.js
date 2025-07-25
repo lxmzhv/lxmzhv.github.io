@@ -39,7 +39,7 @@ function sortAndRender() {
     const { key, direction } = state.sort;
     const sortedData = [...state.playerData];
 
-    const isNumeric = (k) => k === 'totalWaves' || k === 'totalWaves2plus' || k.startsWith('waves-');
+    const isNumeric = (k) => k === 'rank' || k === 'totalWaves' || k === 'totalWaves2plus' || k.startsWith('waves-');
 
     sortedData.sort((a, b) => {
         let valA, valB;
@@ -65,6 +65,11 @@ function sortAndRender() {
         }
 
         return direction === 'asc' ? result : -result;
+    });
+
+    // Assign ranks after sorting
+    sortedData.forEach((p, index) => {
+        p.rank = index + 1;
     });
 
     renderDashboard(sortedData, state.guildActivePhases);
@@ -141,7 +146,6 @@ function processData(data) {
         }
     }
 
-    // Calculate totals
     state.playerData = Object.values(playerData);
     state.guildActivePhases = guildActivePhases;
 
@@ -192,6 +196,7 @@ function renderDashboard(playerData, guildActivePhases) {
 
     // Header
     html += '<thead><tr>';
+    html += '<th rowspan="2" data-sort="rank">#</th>';
     html += '<th rowspan="2" data-sort="playerName">Player</th>';
     html += '<th rowspan="2" data-sort="totalWaves">Total Waves</th>';
     html += '<th rowspan="2" data-sort="totalWaves2plus">Total Waves 2+</th>';
@@ -231,6 +236,7 @@ function renderDashboard(playerData, guildActivePhases) {
     }
 
     html += '<tr>';
+    html += '<td><b>0</b></td>';
     html += '<td><b>Totals</b></td>';
 
     const playersCount = Math.max(playerData.length, 1);
@@ -260,6 +266,7 @@ function renderDashboard(playerData, guildActivePhases) {
     // Render player rows
     for (const p of playerData) {
         html += '<tr>';
+        html += `<td>${p.rank}</td>`;
         html += `<td>${p.playerName}</td>`;
 
         const total_waves_class = getWaveCountGroupClass(p.normalizedTotalWaves);
@@ -343,7 +350,7 @@ function setupHighlightEventListeners() {
         const rowIndex = row.rowIndex - headerRows.length; // 0 for totals row
 
         // If hovering over player name or total waves, stop here
-        if (cellIndex <= 2) {
+        if (cellIndex <= 3) {
             const titleCell = headerRows[0].cells[cellIndex];
             if (titleCell) {
                 titleCell.classList.add('highlight-header');
@@ -352,14 +359,14 @@ function setupHighlightEventListeners() {
         }
 
         // Highlight current column title (light blue)
-        const columnTitleCell = headerRows[1].cells[cellIndex - 3];
+        const columnTitleCell = headerRows[1].cells[cellIndex - 4];
         if (columnTitleCell) {
             columnTitleCell.classList.add('highlight-header');
         }
 
         // Highlight phase title (light blue)
         const phaseColumns = 2; // Total, SM
-        const phaseHeaderIndex = Math.floor((cellIndex - 3) / phaseColumns) + 3;
+        const phaseHeaderIndex = Math.floor((cellIndex - 4) / phaseColumns) + 4;
         const phaseTitleCell = headerRows[0].cells[phaseHeaderIndex];
         if (phaseTitleCell) {
             phaseTitleCell.classList.add('highlight-header');
