@@ -38,7 +38,7 @@ function processData(data) {
             totalWaves: 0
         };
         for (let i = 1; i <= 6; i++) {
-            playerData[pId].phases[i] = { left: 0, middle: 0, right: 0, total: 0, sm: '-', right_bonus: 0, middle_bonus: 0 };
+            playerData[pId].phases[i] = { waves: 0, sm: '-' };
         }
     }
 
@@ -47,20 +47,24 @@ function processData(data) {
         return;
     }
 
+    const guildActivePhases = new Set();
+
     // Process wave stats
     for (const stats of data.currentStat) {
-        if (!stats.playerStat || !stats.mapStatId.startsWith("strike_encounter")) {
+        if (!stats.playerStat) {
             continue;
         }
         const statName = zone_id_to_name(stats.mapStatId);
-        const match = statName.match(/p(\d+)_(right_bonus|middle_bonus|left|right|middle)/);
+        const match = statName.match(/strike_encounter_round_(\d+)/);
         if (match) {
             const phase = parseInt(match[1], 10);
-            const zoneType = match[2];
+            if (stats.playerStat.length > 0) {
+                guildActivePhases.add(phase);
+            }
             for (const playerStat of stats.playerStat) {
                 const pId = playerStat.memberId;
                 if (playerData[pId] && playerData[pId].phases[phase]) {
-                    playerData[pId].phases[phase][zoneType] = parseInt(playerStat.score, 10);
+                    playerData[pId].phases[phase].waves = parseInt(playerStat.score, 10);
                 }
             }
         }
@@ -92,27 +96,21 @@ function processData(data) {
         }
     }
 
-    // Calculate totals and determine globally active phases
+    // Calculate totals
     let sortedPlayers = Object.values(playerData);
-    const guildActivePhases = new Set();
 
     for (const p of sortedPlayers) {
         let grandTotal = 0;
         for (let i = 1; i <= 6; i++) {
             const phaseData = p.phases[i];
-            phaseData.total = phaseData.left + phaseData.middle + phaseData.right + phaseData.right_bonus + phaseData.middle_bonus;
-            grandTotal += phaseData.total;
-            if (phaseData.total > 0) {
-                guildActivePhases.add(i);
-            }
+            grandTotal += phaseData.waves;
         }
         p.totalWaves = grandTotal;
     }
 
     // Calculate normalized total waves using the global active phase count
-    const globalActivePhasesCount = guildActivePhases.size;
     for (const p of sortedPlayers) {
-        p.normalizedTotalWaves = p.totalWaves / globalActivePhasesCount;
+        p.normalizedTotalWaves = p.totalWaves / Math.max(guildActivePhases.size, 1);
     }
 
     // Sort by total waves
@@ -163,7 +161,7 @@ function renderDashboard(playerData, guildActivePhases) {
         phases: {}
     };
     for (let i = 1; i <= 6; i++) {
-        totals.phases[i] = { left: 0, middle: 0, right: 0, right_bonus: 0, middle_bonus: 0, total: 0, win: 0, fail: 0 };
+        totals.phases[i] = { waves: 0, win: 0, fail: 0 };
     }
 
     for (const p of playerData) {
@@ -171,12 +169,7 @@ function renderDashboard(playerData, guildActivePhases) {
         for (let i = 1; i <= 6; i++) {
             const playerPhase = p.phases[i];
             const totalPhase = totals.phases[i];
-            totalPhase.left += playerPhase.left;
-            totalPhase.middle += playerPhase.middle;
-            totalPhase.right += playerPhase.right;
-            totalPhase.middle_bonus += playerPhase.middle_bonus;
-            totalPhase.right_bonus += playerPhase.right_bonus;
-            totalPhase.total += playerPhase.total;
+            totalPhase.waves += playerPhase.waves;
             if (playerPhase.sm === 'win') totalPhase.win++;
             if (playerPhase.sm === 'fail') totalPhase.fail++;
         }
@@ -185,28 +178,16 @@ function renderDashboard(playerData, guildActivePhases) {
     html += '<tr>';
     html += '<td><b>Totals</b></td>';
 
-    const players_count = Math.max(playerData.length, 1);
-
-    const normalizedFooterTotal = totals.totalWaves / (guildActivePhases.size * players_count);
+    const playersCount = Math.max(playerData.length, 1);
+    const normalizedFooterTotal = totals.totalWaves / (Math.max(guildActivePhases.size, 1) * playersCount);
     const footer_total_class = getWaveCountGroupClass(normalizedFooterTotal);
     html += `<td class="${footer_total_class}"><b>${totals.totalWaves}</b></td>`;
 
     for (let i = 1; i <= 6; i++) {
         if (guildActivePhases.has(i)) {
             const phase = totals.phases[i];
-            const total_class = getWaveCountGroupClass(phase.total/players_count);
-            const wave_details = JSON.stringify({
-                left: phase.left,
-                middle: phase.middle,
-                right: phase.right,
-                right_bonus: phase.right_bonus,
-                middle_bonus: phase.middle_bonus
-            });
-            let cell_class = total_class;
-            if (phase.total > 0) {
-                cell_class += ' phase-total-cell';
-            }
-            html += `<td class="${cell_class}" data-player="Total" data-phase="${i}" data-waves='${wave_details}'><b>${phase.total}</b></td>`;
+            const total_class = getWaveCountGroupClass(phase.waves/playersCount);
+            html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
             html += `<td>${phase.win} W / ${phase.fail} F</td>`;
         } else {
             html += `<td>-</td><td>-</td>`;
@@ -226,19 +207,8 @@ function renderDashboard(playerData, guildActivePhases) {
             if (guildActivePhases.has(i)) {
                 const phase = p.phases[i];
 
-                let total_class = getWaveCountGroupClass(phase.total);
-                const wave_details = JSON.stringify({
-                    left: phase.left,
-                    middle: phase.middle,
-                    right: phase.right,
-                    right_bonus: phase.right_bonus,
-                    middle_bonus: phase.middle_bonus
-                });
-                let cell_class = total_class;
-                if (phase.total > 0) {
-                    cell_class += ' phase-total-cell';
-                }
-                html += `<td class="${cell_class}" data-player="${p.playerName}" data-phase="${i}" data-waves='${wave_details}'><b>${phase.total}</b></td>`;
+                let total_class = getWaveCountGroupClass(phase.waves);
+                html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
 
                 let sm_class = '';
                 if (phase.sm === 'win') {
@@ -260,49 +230,7 @@ function renderDashboard(playerData, guildActivePhases) {
     html += '</tbody></table>';
 
     dashboard.innerHTML = html;
-    setupModalEventListeners();
     setupHighlightEventListeners();
-}
-
-function setupModalEventListeners() {
-    const modal = document.getElementById('wavesModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalBody = document.getElementById('modalBody');
-    const span = document.getElementsByClassName("close")[0];
-
-    if (!modal || !modalTitle || !modalBody || !span) {
-        console.error("Modal elements not found!");
-        return;
-    }
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    const cells = document.getElementsByClassName('phase-total-cell');
-    for (const cell of cells) {
-        cell.onclick = function() {
-            const playerName = this.getAttribute('data-player');
-            const phase = this.getAttribute('data-phase');
-            const waves = JSON.parse(this.getAttribute('data-waves'));
-
-            modalTitle.innerText = `${playerName} - Phase ${phase} Details`;
-            modalBody.innerHTML = `
-                <p><strong>Left Planet:</strong> ${waves.left} waves</p>
-                <p><strong>Middle Planet:</strong> ${waves.middle} waves</p>
-                <p><strong>Right Planet:</strong> ${waves.right} waves</p>
-                <p><strong>Mandalore:</strong> ${waves.middle_bonus} waves</p>
-                <p><strong>Zeffo:</strong> ${waves.right_bonus} waves</p>
-            `;
-            modal.style.display = "block";
-        }
-    }
 }
 
 function setupHighlightEventListeners() {
