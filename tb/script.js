@@ -17,7 +17,13 @@ const ZoneAliases = [
     ['covert0', 'sm'],
 ];
 
-function zone_id_to_name(zone_id) {
+const SpecialMissions = [
+   { name: 'Cere', id: 'phase02_conflict01_covert01' },
+   { name: 'Reva', id: 'phase03_conflict03_covert01' },
+   { name: 'Bo-Katan', id: 'phase03_conflict03_covert02' },
+];
+
+function zoneIdToName(zone_id) {
     let name = zone_id;
     for (const [text, alias] of ZoneAliases) {
         name = name.replace(new RegExp(text, 'g'), alias);
@@ -48,10 +54,10 @@ function sortAndRender() {
             const phase = key.split('-')[1];
             valA = a.phases[phase].waves;
             valB = b.phases[phase].waves;
-        } else if (key.startsWith('special-')) {
-            const phase = key.split('-')[1];
-            valA = a.phases[phase].sm;
-            valB = b.phases[phase].sm;
+        } else if (key.startsWith('sm-')) {
+            const missionName = key.substring(3);
+            valA = a.specialMissions[missionName];
+            valB = b.specialMissions[missionName];
         } else {
             valA = a[key];
             valB = b[key];
@@ -84,11 +90,15 @@ function processData(data) {
         playerData[pId] = {
             playerName: players[pId].playerName,
             phases: {},
+            specialMissions: {},
             totalWaves: 0,
             totalWaves2plus: 0
         };
         for (let i = 1; i <= 6; i++) {
-            playerData[pId].phases[i] = { waves: 0, sm: '-' };
+            playerData[pId].phases[i] = { waves: 0 };
+        }
+        for (const mission of SpecialMissions) {
+            playerData[pId].specialMissions[mission.name] = '-';
         }
     }
 
@@ -104,7 +114,7 @@ function processData(data) {
         if (!stats.playerStat) {
             continue;
         }
-        const statName = zone_id_to_name(stats.mapStatId);
+        const statName = zoneIdToName(stats.mapStatId);
         const match = statName.match(/strike_encounter_round_(\d+)/);
         if (match) {
             const phase = parseInt(match[1], 10);
@@ -121,26 +131,25 @@ function processData(data) {
     }
 
     // Process special missions
-    const attemptedMissions = data.currentStat.filter(s => s.mapStatId.startsWith("covert_round_attempted_mission"));
-    for (const roundStats of attemptedMissions) {
-        const completeStatId = roundStats.mapStatId.replace('covert_round_attempted_mission', 'covert_complete_mission');
-        const completeStats = data.currentStat.find(s => s.mapStatId === completeStatId);
-        if (!completeStats) continue;
+    for (const mission of SpecialMissions) {
+        const suffix = '_tb3_mixed_' + mission.id;
+        const attemptedMissionStatId = "covert_round_attempted_mission" + suffix;
+        const completedMissionStatId = "covert_complete_mission" + suffix;
 
-        const statName = zone_id_to_name(completeStats.mapStatId);
-        const match = statName.match(/p(\d+).*_sm\d/);
-        if (match) {
-            const phase = parseInt(match[1], 10);
-            const attemptedPlayers = new Set(roundStats.playerStat.map(p => p.memberId));
-            const completedPlayers = new Set(completeStats.playerStat.map(p => p.memberId));
+        const attemptedMissionStats = data.currentStat.find(s => s.mapStatId === attemptedMissionStatId);
+        const completedMissionStats = data.currentStat.find(s => s.mapStatId === completedMissionStatId);
 
-            for (const pId in playerData) {
-                if (playerData[pId] && playerData[pId].phases[phase]) {
-                    if (completedPlayers.has(pId)) {
-                        playerData[pId].phases[phase].sm = 'win';
-                    } else if (attemptedPlayers.has(pId)) {
-                        playerData[pId].phases[phase].sm = 'fail';
-                    }
+        const attemptedPlayers = new Set(attemptedMissionStats ? attemptedMissionStats.playerStat.map(p => p.memberId) : []);
+        const completedPlayers = new Set(completedMissionStats ? completedMissionStats.playerStat.map(p => p.memberId) : []);
+
+        for (const pId in playerData) {
+            if (playerData[pId]) {
+                if (completedPlayers.has(pId)) {
+                    playerData[pId].specialMissions[mission.name] = 'win';
+                } else if (attemptedPlayers.has(pId)) {
+                    playerData[pId].specialMissions[mission.name] = 'fail';
+                } else {
+                    playerData[pId].specialMissions[mission.name] = '-';
                 }
             }
         }
@@ -201,12 +210,15 @@ function renderDashboard(playerData, guildActivePhases) {
     html += '<th rowspan="2" data-sort="totalWaves">Total Waves</th>';
     html += '<th rowspan="2" data-sort="totalWaves2plus">Total Waves 2+</th>';
     for (let i = 1; i <= 6; i++) {
-        html += `<th colspan="2">Phase ${i}</th>`;
+        html += `<th>Phase ${i}</th>`;
     }
+    html += `<th colspan="${SpecialMissions.length}">Special Missions</th>`;
     html += '</tr><tr>';
     for (let i = 1; i <= 6; i++) {
         html += `<th data-sort="waves-${i}">Waves</th>`;
-        html += `<th data-sort="special-${i}">Special</th>`;
+    }
+    for (const mission of SpecialMissions) {
+        html += `<th data-sort="sm-${mission.name}">${mission.name}</th>`;
     }
     html += '</tr></thead>';
 
@@ -217,21 +229,26 @@ function renderDashboard(playerData, guildActivePhases) {
     const totals = {
         totalWaves: 0,
         totalWaves2plus: 0,
-        phases: {}
+        phases: {},
+        specialMissions: {}
     };
     for (let i = 1; i <= 6; i++) {
-        totals.phases[i] = { waves: 0, win: 0, fail: 0 };
+        totals.phases[i] = { waves: 0 };
+    }
+    for (const mission of SpecialMissions) {
+        totals.specialMissions[mission.name] = { win: 0, fail: 0 };
     }
 
     for (const p of playerData) {
         totals.totalWaves += p.totalWaves;
         totals.totalWaves2plus += p.totalWaves2plus;
         for (let i = 1; i <= 6; i++) {
-            const playerPhase = p.phases[i];
-            const totalPhase = totals.phases[i];
-            totalPhase.waves += playerPhase.waves;
-            if (playerPhase.sm === 'win') totalPhase.win++;
-            if (playerPhase.sm === 'fail') totalPhase.fail++;
+            totals.phases[i].waves += p.phases[i].waves;
+        }
+        for (const mission of SpecialMissions) {
+            const sm_status = p.specialMissions[mission.name];
+            if (sm_status === 'win') totals.specialMissions[mission.name].win++;
+            if (sm_status === 'fail') totals.specialMissions[mission.name].fail++;
         }
     }
 
@@ -254,12 +271,15 @@ function renderDashboard(playerData, guildActivePhases) {
     for (let i = 1; i <= 6; i++) {
         if (guildActivePhases.has(i)) {
             const phase = totals.phases[i];
-            const total_class = getWaveCountGroupClass(phase.waves/playersCount);
+            const total_class = getWaveCountGroupClass(phase.waves / playersCount);
             html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
-            html += `<td>${phase.win} W / ${phase.fail} F</td>`;
         } else {
-            html += `<td>-</td><td>-</td>`;
+            html += `<td>-</td>`;
         }
+    }
+    for (const mission of SpecialMissions) {
+        const sm_total = totals.specialMissions[mission.name];
+        html += `<td>${sm_total.win} W / ${sm_total.fail} F</td>`;
     }
     html += '</tr>';
 
@@ -278,24 +298,24 @@ function renderDashboard(playerData, guildActivePhases) {
         for (let i = 1; i <= 6; i++) {
             if (guildActivePhases.has(i)) {
                 const phase = p.phases[i];
-
                 let total_class = getWaveCountGroupClass(phase.waves);
                 html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
-
-                let sm_class = '';
-                if (phase.sm === 'win') {
-                    sm_class = 'sm-win';
-                } else if (phase.sm === 'fail') {
-                    sm_class = 'sm-fail';
-                } else {
-                    sm_class = 'sm-not-attempted';
-                }
-                html += `<td class="${sm_class}">${phase.sm}</td>`;
             } else {
-                // Inactive phase, render placeholders
-                html += `<td>-</td>`;
                 html += `<td>-</td>`;
             }
+        }
+
+        for (const mission of SpecialMissions) {
+            const sm_status = p.specialMissions[mission.name];
+            let sm_class = '';
+            if (sm_status === 'win') {
+                sm_class = 'sm-win';
+            } else if (sm_status === 'fail') {
+                sm_class = 'sm-fail';
+            } else {
+                sm_class = 'sm-not-attempted';
+            }
+            html += `<td class="${sm_class}">${sm_status}</td>`;
         }
         html += '</tr>';
     }
@@ -349,8 +369,9 @@ function setupHighlightEventListeners() {
         const cellIndex = cell.cellIndex;
         const rowIndex = row.rowIndex - headerRows.length; // 0 for totals row
 
+        const baseColumnCount = 4;
         // If hovering over player name or total waves, stop here
-        if (cellIndex <= 3) {
+        if (cellIndex < baseColumnCount) {
             const titleCell = headerRows[0].cells[cellIndex];
             if (titleCell) {
                 titleCell.classList.add('highlight-header');
@@ -359,17 +380,25 @@ function setupHighlightEventListeners() {
         }
 
         // Highlight current column title (light blue)
-        const columnTitleCell = headerRows[1].cells[cellIndex - 4];
+        const columnTitleCell = headerRows[1].cells[cellIndex - baseColumnCount];
         if (columnTitleCell) {
             columnTitleCell.classList.add('highlight-header');
         }
 
-        // Highlight phase title (light blue)
-        const phaseColumns = 2; // Total, SM
-        const phaseHeaderIndex = Math.floor((cellIndex - 4) / phaseColumns) + 4;
-        const phaseTitleCell = headerRows[0].cells[phaseHeaderIndex];
-        if (phaseTitleCell) {
-            phaseTitleCell.classList.add('highlight-header');
+        const phaseStartIndex = baseColumnCount;
+        const numPhaseCols = 6;
+        const smStartIndex = phaseStartIndex + numPhaseCols;
+        const numSmCols = SpecialMissions.length;
+
+        let primaryTitleCell;
+        if (cellIndex >= phaseStartIndex && cellIndex < smStartIndex) { // Phase columns
+            primaryTitleCell = headerRows[0].cells[cellIndex];
+        } else if (cellIndex >= smStartIndex && cellIndex < smStartIndex + numSmCols) { // SM columns
+            primaryTitleCell = headerRows[0].cells[smStartIndex];
+        }
+
+        if (primaryTitleCell) {
+            primaryTitleCell.classList.add('highlight-header');
         }
     });
 
