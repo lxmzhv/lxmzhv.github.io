@@ -55,7 +55,7 @@ function sortAndRender() {
     const { key, direction } = state.sort;
     const sortedData = [...state.playerData];
 
-    const isNumeric = (k) => k === 'rank' || k === 'galacticPower' || k === 'totalWaves' || k === 'totalWaves2plus' || k === 'totalUnits' || k === 'totalScore' || k === 'totalDeployed' || k.startsWith('waves-') || k.startsWith('units-') || k.startsWith('score-') || k.startsWith('deployed-');
+    const isNumeric = (k) => k === 'rank' || k === 'galacticPower' || k === 'totalWaves' || k === 'totalWaves2plus' || k === 'totalUnits' || k === 'totalScore' || k === 'totalDeployed' || k === 'totalUndeployed' || k.startsWith('waves-') || k.startsWith('units-') || k.startsWith('score-') || k.startsWith('deployed-') || k.startsWith('undeployed-');
 
     sortedData.sort((a, b) => {
         let valA, valB;
@@ -76,6 +76,10 @@ function sortAndRender() {
             const phase = key.split('-')[1];
             valA = a.phases[phase].deployed;
             valB = b.phases[phase].deployed;
+        } else if (key.startsWith('undeployed-')) {
+            const phase = key.split('-')[1];
+            valA = a.phases[phase].undeployed;
+            valB = b.phases[phase].undeployed;
         } else if (key.startsWith('sm-')) {
             const missionName = key.substring(3);
             valA = a.specialMissions[missionName];
@@ -130,10 +134,11 @@ function processData(data) {
             totalWaves2plus: 0,
             totalUnits: 0,
             totalScore: 0,
-            totalDeployed: 0
+            totalDeployed: 0,
+            totalUndeployed: 0
         };
         for (let i = 1; i <= 6; i++) {
-            playerData[pId].phases[i] = { waves: 0, units: 0, score: 0, deployed: 0 };
+            playerData[pId].phases[i] = { waves: 0, units: 0, score: 0, deployed: 0, undeployed: 0 };
         }
         for (const mission of SpecialMissions) {
             playerData[pId].specialMissions[mission.name] = '-';
@@ -274,6 +279,7 @@ function processData(data) {
     state.playerData = Object.values(playerData);
     state.guildActivePhases = guildActivePhases;
 
+    const activePhasesCount = Math.max(state.guildActivePhases.size, 1);
     for (const p of state.playerData) {
         let grandTotal = 0;
         let grandTotal2plus = 0;
@@ -283,13 +289,16 @@ function processData(data) {
             if (i >= 2) {
                 grandTotal2plus += phaseData.waves;
             }
+            if (state.guildActivePhases.has(i)) {
+                p.phases[i].undeployed = p.galacticPower - p.phases[i].deployed;
+            }
         }
         p.totalWaves = grandTotal;
         p.totalWaves2plus = grandTotal2plus;
+        p.totalUndeployed = p.galacticPower * activePhasesCount - p.totalDeployed;
     }
 
     // Calculate normalized total waves using the global active phase count
-    const activePhasesCount = Math.max(state.guildActivePhases.size, 1);
     const activePhases2plusCount = Math.max([...state.guildActivePhases].filter(p => p >= 2).length, 1);
 
     for (const p of state.playerData) {
@@ -331,23 +340,42 @@ function getDeployedColorClass(deployed, gp) {
     }
 }
 
+function getUndeployedColorClass(undeployed, gp) {
+    if (gp === 0) return '';
+    const ratio = undeployed / gp;
+    if (ratio > 0.20) {
+        return 'group-red';
+    } else if (ratio > 0.10) {
+        return 'group-orange';
+    } else if (ratio > 0.05) {
+        return 'group-yellow';
+    } else if (ratio > 0.01) {
+        return 'group-lightgreen';
+    } else {
+        return 'group-green';
+    }
+}
+
 function renderDashboard(playerData, guildActivePhases) {
     const dashboard = document.getElementById('dashboard');
-    const { showGP, showUnits, showScore, showReva, showDeployed, showWaves } = state;
+    const { showGP, showUnits, showScore, showReva, showDeployed, showUndeployed, showWaves } = state;
     const visibleMissions = SpecialMissions.filter(m => m.name !== 'Reva' || showReva);
-    const showDataColumns = showUnits || showScore || showWaves || showDeployed;
+    const showDataColumns = showUnits || showScore || showWaves || showDeployed || showUndeployed;
 
     let totalColspan = 0;
     if (showWaves) totalColspan += 2;
     if (showUnits) totalColspan++;
     if (showScore) totalColspan++;
     if (showDeployed) totalColspan++;
+    if (showUndeployed) totalColspan++;
 
     let phaseColspan = 0;
     if (showWaves) phaseColspan++;
     if (showUnits) phaseColspan++;
     if (showScore) phaseColspan++;
     if (showDeployed) phaseColspan++;
+    if (showUndeployed) phaseColspan++;
+
 
     let html = '<table>';
 
@@ -380,6 +408,9 @@ function renderDashboard(playerData, guildActivePhases) {
         if (showDeployed) {
             html += '<th data-sort="totalDeployed">Deployed</th>';
         }
+        if (showUndeployed) {
+            html += '<th data-sort="totalUndeployed">Undeployed</th>';
+        }
         for (let i = 1; i <= 6; i++) {
             if (showWaves) {
                 html += `<th data-sort="waves-${i}">Waves</th>`;
@@ -392,6 +423,9 @@ function renderDashboard(playerData, guildActivePhases) {
             }
             if (showDeployed) {
                 html += `<th data-sort="deployed-${i}">Deployed</th>`;
+            }
+            if (showUndeployed) {
+                html += `<th data-sort="undeployed-${i}">Undeployed</th>`;
             }
         }
     }
@@ -410,12 +444,13 @@ function renderDashboard(playerData, guildActivePhases) {
         totalUnits: 0,
         totalScore: 0,
         totalDeployed: 0,
+        totalUndeployed: 0,
         totalGalacticPower: 0,
         phases: {},
         specialMissions: {}
     };
     for (let i = 1; i <= 6; i++) {
-        totals.phases[i] = { waves: 0, units: 0, score: 0, deployed: 0 };
+        totals.phases[i] = { waves: 0, units: 0, score: 0, deployed: 0, undeployed: 0 };
     }
     for (const mission of SpecialMissions) {
         totals.specialMissions[mission.name] = { win: 0, fail: 0 };
@@ -427,12 +462,14 @@ function renderDashboard(playerData, guildActivePhases) {
         totals.totalUnits += p.totalUnits;
         totals.totalScore += p.totalScore;
         totals.totalDeployed += p.totalDeployed;
+        totals.totalUndeployed += p.totalUndeployed;
         totals.totalGalacticPower += p.galacticPower;
         for (let i = 1; i <= 6; i++) {
             totals.phases[i].waves += p.phases[i].waves;
             totals.phases[i].units += p.phases[i].units;
             totals.phases[i].score += p.phases[i].score;
             totals.phases[i].deployed += p.phases[i].deployed;
+            totals.phases[i].undeployed += p.phases[i].undeployed;
         }
         for (const mission of SpecialMissions) {
             const sm_status = p.specialMissions[mission.name];
@@ -474,6 +511,11 @@ function renderDashboard(playerData, guildActivePhases) {
             const deployedClass = getDeployedColorClass(totals.totalDeployed, totals.totalGalacticPower * activePhasesCount);
             html += `<td class="${deployedClass}"><b>${totals.totalDeployed.toFixed(1)}</b></td>`;
         }
+        if (showUndeployed) {
+            totals.totalUndeployed = totals.totalGalacticPower * activePhasesCount - totals.totalDeployed;
+            const undeployedClass = getUndeployedColorClass(totals.totalUndeployed, totals.totalGalacticPower * activePhasesCount);
+            html += `<td class="${undeployedClass}"><b>${totals.totalUndeployed.toFixed(1)}</b></td>`;
+        }
 
         for (let i = 1; i <= 6; i++) {
             if (guildActivePhases.has(i)) {
@@ -494,12 +536,17 @@ function renderDashboard(playerData, guildActivePhases) {
                     const deployedClass = getDeployedColorClass(phase.deployed, state.guildGalacticPower);
                     html += `<td class="${deployedClass}"><b>${phase.deployed.toFixed(1)}</b></td>`;
                 }
+                if (showUndeployed) {
+                    const undeployedClass = getUndeployedColorClass(phase.undeployed, totals.totalGalacticPower);
+                    html += `<td class="${undeployedClass}"><b>${phase.undeployed.toFixed(1)}</b></td>`;
+                }
             } else {
                 let content = '';
                 if (showWaves) content += `<td>-</td>`;
                 if (showUnits) content += `<td>-</td>`;
                 if (showScore) content += `<td>-</td>`;
                 if (showDeployed) content += `<td>-</td>`;
+                if (showUndeployed) content += `<td>-</td>`;
                 html += content;
             }
         }
@@ -542,6 +589,11 @@ function renderDashboard(playerData, guildActivePhases) {
                 const deployedClass = getDeployedColorClass(p.totalDeployed, p.galacticPower * activePhasesCount);
                 html += `<td class="${deployedClass}"><b>${p.totalDeployed.toFixed(1)}</b></td>`;
             }
+            if (showUndeployed) {
+                const activePhasesCount = Math.max(state.guildActivePhases.size, 1);
+                const undeployedClass = getUndeployedColorClass(p.totalUndeployed, p.galacticPower * activePhasesCount);
+                html += `<td class="${undeployedClass}"><b>${p.totalUndeployed.toFixed(1)}</b></td>`;
+            }
 
             for (let i = 1; i <= 6; i++) {
                 if (guildActivePhases.has(i)) {
@@ -562,12 +614,17 @@ function renderDashboard(playerData, guildActivePhases) {
                         const deployedClass = getDeployedColorClass(phase.deployed, p.galacticPower);
                         html += `<td class="${deployedClass}"><b>${phase.deployed.toFixed(1)}</b></td>`;
                     }
+                    if (showUndeployed) {
+                        const undeployedClass = getUndeployedColorClass(phase.undeployed, p.galacticPower);
+                        html += `<td class="${undeployedClass}"><b>${phase.undeployed.toFixed(1)}</b></td>`;
+                    }
                 } else {
                     let content = '';
                     if (showWaves) content += `<td>-</td>`;
                     if (showUnits) content += `<td>-</td>`;
                     if (showScore) content += `<td>-</td>`;
                     if (showDeployed) content += `<td>-</td>`;
+                    if (showUndeployed) content += `<td>-</td>`;
                     html += content;
                 }
             }
@@ -608,7 +665,7 @@ function renderDashboard(playerData, guildActivePhases) {
                 state.sort.direction = state.sort.direction === 'asc' ? 'desc' : 'asc';
             } else {
                 state.sort.key = newSortKey;
-                const isNumeric = (k) => k === 'totalWaves' || k === 'totalWaves2plus' || k.startsWith('waves-') || k.startsWith('units-') || k === 'totalUnits' || k.startsWith('score-') || k === 'totalScore' || k.startsWith('deployed-') || k === 'totalDeployed';
+                const isNumeric = (k) => k === 'totalWaves' || k === 'totalWaves2plus' || k.startsWith('waves-') || k.startsWith('units-') || k === 'totalUnits' || k.startsWith('score-') || k === 'totalScore' || k.startsWith('deployed-') || k === 'totalDeployed' || k === 'totalUndeployed' || k.startsWith('undeployed-');
                 state.sort.direction = isNumeric(newSortKey) ? 'desc' : 'asc';
             }
             sortAndRender();
@@ -624,7 +681,7 @@ function setupHighlightEventListeners() {
 
     const headerRows = table.querySelectorAll('thead tr');
     const tBody = table.querySelector('tbody');
-    const { showGP, showUnits, showScore, showReva, showDeployed, showWaves } = state;
+    const { showGP, showUnits, showScore, showReva, showDeployed, showUndeployed, showWaves } = state;
     const visibleMissions = SpecialMissions.filter(m => m.name !== 'Reva' || showReva);
 
     tBody.addEventListener('click', (e) => {
@@ -659,12 +716,14 @@ function setupHighlightEventListeners() {
         if (showUnits) totalGroupSize++;
         if (showScore) totalGroupSize++;
         if (showDeployed) totalGroupSize++;
+        if (showUndeployed) totalGroupSize++;
 
         let phaseGroupSize = 0;
         if (showWaves) phaseGroupSize++;
         if (showUnits) phaseGroupSize++;
         if (showScore) phaseGroupSize++;
         if (showDeployed) phaseGroupSize++;
+        if (showUndeployed) phaseGroupSize++;
 
         const numPhaseGroups = 6;
 
@@ -749,6 +808,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.getElementById('show-waves-checkbox').addEventListener('change', (event) => {
         state.showWaves = event.target.checked;
+        sortAndRender();
+    });
+    document.getElementById('show-undeployed-checkbox').addEventListener('change', (event) => {
+        state.showUndeployed = event.target.checked;
         sortAndRender();
     });
 });
