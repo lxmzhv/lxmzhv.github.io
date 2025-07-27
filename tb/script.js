@@ -7,11 +7,13 @@ let state = {
         key: 'totalWaves',
         direction: 'desc'
     },
+    selectedPlayerId: null,
     showGP: false,
     showUnits: false,
     showScore: false,
     showReva: false,
     showDeployed: false,
+    showUndeployed: false,
     showWaves: true
 };
 
@@ -119,6 +121,7 @@ function processData(data) {
     // Initialize player data structure
     for (const pId in players) {
         playerData[pId] = {
+            playerId: pId,
             playerName: players[pId].playerName,
             galacticPower: parseInt(players[pId].galacticPower, 10) / 1000000,
             phases: {},
@@ -299,15 +302,15 @@ function processData(data) {
 
 function getWaveCountGroupClass(waves_count) {
     if (waves_count === 0) {
-        return 'waves-group0';
+        return 'group-red';
     } else if (waves_count > 0 && waves_count < 5) {
-        return 'waves-group1';
+        return 'group-orange';
     } else if (waves_count >= 5 && waves_count < 10) {
-        return 'waves-group2';
+        return 'group-yellow';
     } else if (waves_count >= 10 && waves_count < 15) {
-        return 'waves-group3';
+        return 'group-lightgreen';
     } else if (waves_count >= 15) {
-        return 'waves-group4';
+        return 'group-green';
     }
     return '';
 }
@@ -316,15 +319,15 @@ function getDeployedColorClass(deployed, gp) {
     if (gp === 0) return ''; // Avoid division by zero
     const ratio = deployed / gp;
     if (ratio < 0.8) {
-        return 'waves-group0'; // red
+        return 'group-red'; // red
     } else if (ratio < 0.9) {
-        return 'waves-group1'; // orange
+        return 'group-orange'; // orange
     } else if (ratio < 0.95) {
-        return 'waves-group2'; // yellow
+        return 'group-yellow'; // yellow
     } else if (ratio < 0.99) {
-        return 'waves-group3'; // lightgreen
+        return 'group-lightgreen'; // lightgreen
     } else {
-        return 'waves-group4'; // green
+        return 'group-green'; // green
     }
 }
 
@@ -460,11 +463,11 @@ function renderDashboard(playerData, guildActivePhases) {
             html += `<td class="${footer_total_2plus_class}"><b>${totals.totalWaves2plus}</b></td>`;
         }
         if (showUnits) {
-            const unitsClass = totals.totalUnits === 0 ? 'waves-group0' : '';
+            const unitsClass = totals.totalUnits === 0 ? 'group-red' : '';
             html += `<td class="${unitsClass}"><b>${totals.totalUnits}</b></td>`;
         }
         if (showScore) {
-            const scoreClass = totals.totalScore === 0 ? 'waves-group0' : '';
+            const scoreClass = totals.totalScore === 0 ? 'group-red' : '';
             html += `<td class="${scoreClass}"><b>${totals.totalScore.toFixed(1)}</b></td>`;
         }
         if (showDeployed) {
@@ -480,11 +483,11 @@ function renderDashboard(playerData, guildActivePhases) {
                     html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
                 }
                 if (showUnits) {
-                    const unitsClass = phase.units === 0 ? 'waves-group0' : '';
+                    const unitsClass = phase.units === 0 ? 'group-red' : '';
                     html += `<td class="${unitsClass}"><b>${phase.units}</b></td>`;
                 }
                 if (showScore) {
-                    const scoreClass = phase.score === 0 ? 'waves-group0' : '';
+                    const scoreClass = phase.score === 0 ? 'group-red' : '';
                     html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}</b></td>`;
                 }
                 if (showDeployed) {
@@ -510,9 +513,10 @@ function renderDashboard(playerData, guildActivePhases) {
 
     // Render player rows
     for (const p of playerData) {
-        html += '<tr>';
+        const isSelected = p.playerId === state.selectedPlayerId;
+        html += `<tr class="${isSelected ? 'selected-row' : ''}" data-player-id="${p.playerId}">`;
         html += `<td>${p.rank}</td>`;
-        html += `<td>${p.playerName}</td>`;
+        html += `<td class="player-name-cell">${p.playerName}</td>`;
         if (showGP) {
             html += `<td>${p.galacticPower.toFixed(1)}</td>`;
         }
@@ -526,11 +530,11 @@ function renderDashboard(playerData, guildActivePhases) {
                 html += `<td class="${total_waves_2plus_class}"><b>${p.totalWaves2plus}</b></td>`;
             }
             if (showUnits) {
-                const unitsClass = p.totalUnits === 0 ? 'waves-group0' : '';
+                const unitsClass = p.totalUnits === 0 ? 'group-red' : '';
                 html += `<td class="${unitsClass}"><b>${p.totalUnits}</b></td>`;
             }
             if (showScore) {
-                const scoreClass = p.totalScore === 0 ? 'waves-group0' : '';
+                const scoreClass = p.totalScore === 0 ? 'group-red' : '';
                 html += `<td class="${scoreClass}"><b>${p.totalScore.toFixed(1)}</b></td>`;
             }
             if (showDeployed) {
@@ -547,11 +551,11 @@ function renderDashboard(playerData, guildActivePhases) {
                         html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
                     }
                     if (showUnits) {
-                        const unitsClass = phase.units === 0 ? 'waves-group0' : '';
+                        const unitsClass = phase.units === 0 ? 'group-red' : '';
                         html += `<td class="${unitsClass}"><b>${phase.units}</b></td>`;
                     }
                     if (showScore) {
-                        const scoreClass = phase.score === 0 ? 'waves-group0' : '';
+                        const scoreClass = phase.score === 0 ? 'group-red' : '';
                         html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}</b></td>`;
                     }
                     if (showDeployed) {
@@ -622,6 +626,19 @@ function setupHighlightEventListeners() {
     const tBody = table.querySelector('tbody');
     const { showGP, showUnits, showScore, showReva, showDeployed, showWaves } = state;
     const visibleMissions = SpecialMissions.filter(m => m.name !== 'Reva' || showReva);
+
+    tBody.addEventListener('click', (e) => {
+        const targetRow = e.target.closest('tr');
+        if (targetRow && targetRow.dataset.playerId) {
+            const playerId = targetRow.dataset.playerId;
+            if (state.selectedPlayerId === playerId) {
+                state.selectedPlayerId = null; // Deselect if clicking the same player
+            } else {
+                state.selectedPlayerId = playerId;
+            }
+            sortAndRender();
+        }
+    });
 
     tBody.addEventListener('mouseover', (e) => {
         if (e.target.tagName !== 'TD') return;

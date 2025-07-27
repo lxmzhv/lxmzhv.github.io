@@ -24,11 +24,11 @@
         .sm-win { background-color: green; color: white; font-weight: bold; }
         .sm-fail { background-color: red; color: white; font-weight: bold; }
         .sm-not-attempted { background-color: transparent; color: black; }
-        .waves-group0 { background-color: red; color: white; font-weight: bold; }
-        .waves-group1 { background-color: orange; color: black; font-weight: bold; }
-        .waves-group2 { background-color: gold; color: black; font-weight: bold; }
-        .waves-group3 { background-color: lightgreen; color: black; font-weight: bold; }
-        .waves-group4 { background-color: green; color: white; font-weight: bold; }
+        .group-red { background-color: red; color: white; font-weight: bold; }
+        .group-orange { background-color: orange; color: black; font-weight: bold; }
+        .group-yellow { background-color: gold; color: black; font-weight: bold; }
+        .group-lightgreen { background-color: lightgreen; color: black; font-weight: bold; }
+        .group-green { background-color: green; color: white; font-weight: bold; }
 
         /* Sortable table styles */
         th[data-sort] {
@@ -58,6 +58,11 @@
             opacity: 100%;
         }
 
+        .selected-row {
+            background-color: #a8d8f8 !important; /* A slightly darker blue for selected rows */
+            opacity: 100%;
+        }
+
         /* Highlighting styles */
         .highlight-header {
             background-color: lightblue !important; /* A light blue for headers */
@@ -70,12 +75,13 @@
         <p>Upload a TB export JSON file to view the status.</p>
         <input type="file" id="file-input" accept=".json">
         <div>
-            <label><input type="checkbox" id="show-gp-checkbox"> GP</label>
+            <label><input type="checkbox" id="show-waves-checkbox" checked> Waves</label>
+            <label><input type="checkbox" id="show-deployed-checkbox"> Deployed</label>
+            <label><input type="checkbox" id="show-undeployed-checkbox"> Undeployed</label>
             <label><input type="checkbox" id="show-units-checkbox"> Platoons</label>
             <label><input type="checkbox" id="show-score-checkbox"> Scores</label>
-            <label><input type="checkbox" id="show-deployed-checkbox"> Deployed</label>
+            <label><input type="checkbox" id="show-gp-checkbox"> GP</label>
             <label><input type="checkbox" id="show-reva-checkbox"> Reva Special Mission</label>
-            <label><input type="checkbox" id="show-waves-checkbox" checked> Waves</label>
         </div>
         <div id="dashboard"></div>
     </div>
