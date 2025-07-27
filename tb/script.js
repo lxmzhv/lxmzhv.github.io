@@ -363,10 +363,12 @@ function renderDashboard(playerData, guildActivePhases) {
     const footer_total_2plus_class = getWaveCountGroupClass(normalizedFooterTotal2plus);
     html += `<td class="${footer_total_2plus_class}"><b>${totals.totalWaves2plus}</b></td>`;
     if (showUnits) {
-        html += `<td><b>${totals.totalUnits}</b></td>`;
+        const unitsClass = totals.totalUnits === 0 ? 'waves-group0' : '';
+        html += `<td class="${unitsClass}"><b>${totals.totalUnits}</b></td>`;
     }
     if (showScore) {
-        html += `<td><b>${totals.totalScore.toFixed(1)}M</b></td>`;
+        const scoreClass = totals.totalScore === 0 ? 'waves-group0' : '';
+        html += `<td class="${scoreClass}"><b>${totals.totalScore.toFixed(1)}M</b></td>`;
     }
 
     for (let i = 1; i <= 6; i++) {
@@ -375,10 +377,12 @@ function renderDashboard(playerData, guildActivePhases) {
             const total_class = getWaveCountGroupClass(phase.waves / playersCount);
             html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
             if (showUnits) {
-                html += `<td><b>${phase.units}</b></td>`;
+                const unitsClass = phase.units === 0 ? 'waves-group0' : '';
+                html += `<td class="${unitsClass}"><b>${phase.units}</b></td>`;
             }
             if (showScore) {
-                html += `<td><b>${phase.score.toFixed(1)}M</b></td>`;
+                const scoreClass = phase.score === 0 ? 'waves-group0' : '';
+                html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}M</b></td>`;
             }
         } else {
             html += `<td>-</td>`;
@@ -405,10 +409,12 @@ function renderDashboard(playerData, guildActivePhases) {
         const total_waves_2plus_class = getWaveCountGroupClass(p.normalizedTotalWaves2plus);
         html += `<td class="${total_waves_2plus_class}"><b>${p.totalWaves2plus}</b></td>`;
         if (showUnits) {
-            html += `<td><b>${p.totalUnits}</b></td>`;
+            const unitsClass = p.totalUnits === 0 ? 'waves-group0' : '';
+            html += `<td class="${unitsClass}"><b>${p.totalUnits}</b></td>`;
         }
         if (showScore) {
-            html += `<td><b>${p.totalScore.toFixed(1)}M</b></td>`;
+            const scoreClass = p.totalScore === 0 ? 'waves-group0' : '';
+            html += `<td class="${scoreClass}"><b>${p.totalScore.toFixed(1)}M</b></td>`;
         }
 
         for (let i = 1; i <= 6; i++) {
@@ -417,10 +423,12 @@ function renderDashboard(playerData, guildActivePhases) {
                 let total_class = getWaveCountGroupClass(phase.waves);
                 html += `<td class="${total_class}"><b>${phase.waves}</b></td>`;
                 if (showUnits) {
-                    html += `<td><b>${phase.units}</b></td>`;
+                    const unitsClass = phase.units === 0 ? 'waves-group0' : '';
+                    html += `<td class="${unitsClass}"><b>${phase.units}</b></td>`;
                 }
                 if (showScore) {
-                    html += `<td><b>${phase.score.toFixed(1)}M</b></td>`;
+                    const scoreClass = phase.score === 0 ? 'waves-group0' : '';
+                    html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}M</b></td>`;
                 }
             } else {
                 html += `<td>-</td>`;
