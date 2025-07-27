@@ -13,7 +13,14 @@
         td { border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: bold; }
         th { background-color: #e9e9e9; }
         .phase { margin-bottom: 2em; }
-        #file-input { margin-bottom: 1em; }
+        #file-input {
+            margin-bottom: 1em;
+            padding: 10px;
+            font-size: 1.1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
         .sm-win { background-color: green; color: white; font-weight: bold; }
         .sm-fail { background-color: red; color: white; font-weight: bold; }
         .sm-not-attempted { background-color: transparent; color: black; }
@@ -63,9 +70,12 @@
         <p>Upload a TB export JSON file to view the status.</p>
         <input type="file" id="file-input" accept=".json">
         <div>
-            <label><input type="checkbox" id="show-units-checkbox"> Show Platoons</label>
-            <label><input type="checkbox" id="show-score-checkbox"> Show Scores</label>
-            <label><input type="checkbox" id="show-reva-checkbox"> Show Reva Special Mission</label>
+            <label><input type="checkbox" id="show-gp-checkbox"> GP</label>
+            <label><input type="checkbox" id="show-units-checkbox"> Platoons</label>
+            <label><input type="checkbox" id="show-score-checkbox"> Scores</label>
+            <label><input type="checkbox" id="show-deployed-checkbox"> Deployed</label>
+            <label><input type="checkbox" id="show-reva-checkbox"> Reva Special Mission</label>
+            <label><input type="checkbox" id="show-waves-checkbox" checked> Waves</label>
         </div>
         <div id="dashboard"></div>
     </div>
