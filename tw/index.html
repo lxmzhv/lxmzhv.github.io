@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWGOH Territory War Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        #dateSelector {
+            margin-top: 15px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #dateSelector:focus {
+            outline: none;
+            border-color: #ffd700;
+        }
+
+        .loading {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 50px 0;
+            color: #ffd700;
+        }
+
+        .player-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .player-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .player-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .player-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            flex-grow: 1;
+        }
+
+        .player-rank {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff9900;
+            margin-right: 15px;
+        }
+
+        .player-score {
+            font-size: 1.3rem;
+            color: #ff9900; /* Light Yellow */
+            font-weight: bold;
+        }
+
+        .player-score-bar-container {
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 1px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .player-score-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffb700, #ff8c00);
+            border-radius: 1px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .score-events {
+            color: #ffd700; /* Yellow */
+        }
+
+        .score-total {
+            color: #ff9900; /* Orange */
+        }
+
+        .timeline {
+            margin-top: 15px;
+            position: relative;
+            height: 30px;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .timeline-segment {
+            position: absolute;
+            height: 100%;
+            cursor: pointer;
+            transition: opacity 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 2px;
+            background: linear-gradient(45deg, #ffffff, #cccccc);
+        }
+
+        .timeline-segment:hover {
+            opacity: 0.8;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .timeline-segment.win {
+            background: linear-gradient(45deg, #00ff88, #00cc6a);
+        }
+
+        .timeline-segment.fail {
+            background: linear-gradient(45deg, #ff4757, #c44569);
+        }
+
+        .timeline-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        .timeline-start-time {
+            font-size: 0.7rem;
+        }
+
+        .timeline-end-time {
+            font-size: 0.7rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #ffd700;
+        }
+
+        .modal-header {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .modal-info {
+            display: grid;
+            gap: 15px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .info-value {
+            color: #ffffff;
+        }
+
+        .outcome-win {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .outcome-fail {
+            color: #ff4757;
+            font-weight: bold;
+        }
+
+        .outcome-unknown {
+            color: #ffff44;
+            font-weight: bold;
+        }
+
+        .error {
+            text-align: center;
+            color: #ff4757;
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+
+        .stats-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .players-grid {
+            //display: grid;
+            //grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        #activity-heatmap-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .heatmap-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .heatmap {
+            display: flex;
+            height: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .heatmap-segment {
+            height: 100%;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Territory War</h1>
+        <select id="dateSelector"></select>
+    </div>
+
+    <div id="loading" class="loading">
+        <div id="loadingText">Loading battle data...</div>
+        <div id="progressBar" style="width: 300px; height: 20px; background: rgba(255,255,255,0.2); border-radius: 10px; margin: 10px auto; overflow: hidden;">
+            <div id="progressFill" style="width: 0%; height: 100%; background: linear-gradient(45deg, #ffd700, #ff6b35); border-radius: 10px; transition: width 0.3s ease;"></div>
+        </div>
+        <div id="progressText" style="font-size: 0.9rem; color: #ccc; margin-top: 5px;">0%</div>
+    </div>
+    <div id="error" class="error" style="display: none;"></div>
+
+    <div id="stats" class="stats-summary" style="display: none;"></div>
+    <div id="activity-heatmap-container" style="display: none;">
+        <div class="heatmap-title">Total Player Activity</div>
+        <div id="activity-heatmap" class="heatmap"></div>
+        <div id="heatmap-info" class="timeline-info"></div>
+    </div>
+    <div id="players" class="players-grid" style="display: none;"></div>
+
+    <!-- Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">Attack Details</div>
+            <div id="modalInfo" class="modal-info"></div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+
+</body>
+</html>
