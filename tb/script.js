@@ -52,11 +52,29 @@ function getPlayers(data) {
     return players;
 }
 
+function isNumericKey(key) {
+    return (
+        key === 'rank' ||
+        key === 'galacticPower' ||
+        key === 'totalWaves' ||
+        key === 'totalWaves2plus' ||
+        key === 'totalUnits' ||
+        key === 'totalScore' ||
+        key === 'totalMissionsScore' ||
+        key === 'totalDeployed' ||
+        key === 'totalUndeployed' ||
+        key.startsWith('waves-') ||
+        key.startsWith('units-') ||
+        key.startsWith('score-') ||
+        key.startsWith('missionsScore-') ||
+        key.startsWith('deployed-') ||
+        key.startsWith('undeployed-')
+    );
+}
+
 function sortAndRender() {
     const { key, direction } = state.sort;
     const sortedData = [...state.playerData];
-
-    const isNumeric = (k) => k === 'rank' || k === 'galacticPower' || k === 'totalWaves' || k === 'totalWaves2plus' || k === 'totalUnits' || k === 'totalScore' || k === 'totalMissionsScore' || k === 'totalDeployed' || k === 'totalUndeployed' || k.startsWith('waves-') || k.startsWith('units-') || k.startsWith('score-') || k.startsWith('missionsScore-') || k.startsWith('deployed-') || k.startsWith('undeployed-');
 
     sortedData.sort((a, b) => {
         let valA, valB;
@@ -95,7 +113,7 @@ function sortAndRender() {
         }
 
         let result;
-        if (isNumeric(key)) {
+        if (isNumericKey(key)) {
             result = valA - valB;
         } else {
             result = String(valA).localeCompare(String(valB));
@@ -312,6 +330,7 @@ function processData(data) {
     for (const p of state.playerData) {
         p.normalizedTotalWaves = p.totalWaves / activePhasesCount;
         p.normalizedTotalWaves2plus = p.totalWaves2plus / activePhases2plusCount;
+        p.normalizedTotalMissionsScore = p.totalMissionsScore / activePhasesCount;
     }
 
     sortAndRender();
@@ -361,6 +380,20 @@ function getUndeployedColorClass(undeployed, gp) {
         return 'group-lightgreen';
     } else {
         return 'group-green';
+    }
+}
+
+function getMissionsScoreColorClass(score) {
+    if (score >= 3) {
+        return 'group-green';
+    } else if (score >= 2) {
+        return 'group-lightgreen';
+    } else if (score >= 1) {
+        return 'group-yellow';
+    } else if (score >= 0.5) {
+        return 'group-orange';
+    } else {
+        return 'group-red';
     }
 }
 
@@ -527,7 +560,8 @@ function renderDashboard(playerData, guildActivePhases) {
             html += `<td class="${scoreClass}"><b>${totals.totalScore.toFixed(1)}</b></td>`;
         }
         if (showMissionsScore) {
-            const missionsScoreClass = totals.totalMissionsScore <= 0 ? 'group-red' : '';
+            const avgMissionsScore = totals.totalMissionsScore / (playersCount * activePhasesCount);
+            const missionsScoreClass = getMissionsScoreColorClass(avgMissionsScore);
             html += `<td class="${missionsScoreClass}"><b>${totals.totalMissionsScore.toFixed(1)}</b></td>`;
         }
         if (showDeployed) {
@@ -556,7 +590,8 @@ function renderDashboard(playerData, guildActivePhases) {
                     html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}</b></td>`;
                 }
                 if (showMissionsScore) {
-                    const missionsScoreClass = phase.missionsScore <= 0 ? 'group-red' : '';
+                    const avgMissionsScore = phase.missionsScore / playersCount;
+                    const missionsScoreClass = getMissionsScoreColorClass(avgMissionsScore);
                     html += `<td class="${missionsScoreClass}"><b>${phase.missionsScore.toFixed(1)}</b></td>`;
                 }
                 if (showDeployed) {
@@ -613,7 +648,7 @@ function renderDashboard(playerData, guildActivePhases) {
                 html += `<td class="${scoreClass}"><b>${p.totalScore.toFixed(1)}</b></td>`;
             }
             if (showMissionsScore) {
-                const missionsScoreClass = p.totalMissionsScore <= 0 ? 'group-red' : '';
+                const missionsScoreClass = getMissionsScoreColorClass(p.normalizedTotalMissionsScore);
                 html += `<td class="${missionsScoreClass}"><b>${p.totalMissionsScore.toFixed(1)}</b></td>`;
             }
             if (showDeployed) {
@@ -643,7 +678,7 @@ function renderDashboard(playerData, guildActivePhases) {
                         html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}</b></td>`;
                     }
                     if (showMissionsScore) {
-                        const missionsScoreClass = phase.missionsScore <= 0 ? 'group-red' : '';
+                        const missionsScoreClass = getMissionsScoreColorClass(phase.missionsScore);
                         html += `<td class="${missionsScoreClass}"><b>${phase.missionsScore.toFixed(1)}</b></td>`;
                     }
                     if (showDeployed) {
@@ -702,8 +737,7 @@ function renderDashboard(playerData, guildActivePhases) {
                 state.sort.direction = state.sort.direction === 'asc' ? 'desc' : 'asc';
             } else {
                 state.sort.key = newSortKey;
-                const isNumeric = (k) => k === 'totalWaves' || k === 'totalWaves2plus' || k.startsWith('waves-') || k.startsWith('units-') || k === 'totalUnits' || k.startsWith('score-') || k === 'totalScore' || k.startsWith('missionsScore-') || k === 'totalMissionsScore' || k.startsWith('deployed-') || k === 'totalDeployed' || k === 'totalUndeployed' || k.startsWith('undeployed-');
-                state.sort.direction = isNumeric(newSortKey) ? 'desc' : 'asc';
+                state.sort.direction = isNumericKey(newSortKey) ? 'desc' : 'asc';
             }
             sortAndRender();
         });
