@@ -75,15 +75,16 @@
         <p>Upload a TB export JSON file to view the status.</p>
         <input type="file" id="file-input" accept=".json">
         <div>
-            <label><input type="checkbox" id="show-waves-checkbox" checked> Waves</label>
+            <label><input type="checkbox" id="show-score-checkbox"> Scores</label>
+            <label><input type="checkbox" id="show-missions-score-checkbox" checked> Missions Score</label>
+            <label><input type="checkbox" id="show-waves-checkbox"> Waves</label>
             <label><input type="checkbox" id="show-deployed-checkbox"> Deployed</label>
             <label><input type="checkbox" id="show-undeployed-checkbox"> Undeployed</label>
             <label><input type="checkbox" id="show-units-checkbox"> Platoons</label>
-            <label><input type="checkbox" id="show-score-checkbox"> Scores</label>
-            <label><input type="checkbox" id="show-missions-score-checkbox"> Missions Score</label>
             <label><input type="checkbox" id="show-gp-checkbox"> GP</label>
-            <label><input type="checkbox" id="show-reva-checkbox"> Reva Special Mission</label>
+            <label><input type="checkbox" id="show-special-missions-checkbox" checked> Special Missions</label>
         </div>
+        <div id="phase-checkboxes" style="margin-top: 1em; margin-bottom: 1em;"></div>
         <div id="dashboard"></div>
     </div>
     <script src="script.js"></script>
