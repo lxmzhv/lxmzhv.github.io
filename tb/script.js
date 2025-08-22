@@ -383,16 +383,24 @@ function getUndeployedColorClass(undeployed, gp) {
     }
 }
 
-function getMissionsScoreColorClass(score) {
-    if (score >= 3) {
-        return 'group-green';
-    } else if (score >= 2) {
-        return 'group-lightgreen';
-    } else if (score >= 1) {
-        return 'group-yellow';
-    } else if (score >= 0.5) {
-        return 'group-orange';
+function getMissionsScoreColorClass(score, phase) {
+    if (phase && phase >= 4) {
+        if (score >= 6) return 'group-green';
+        if (score >= 4) return 'group-lightgreen';
+        if (score >= 2) return 'group-yellow';
+        if (score >= 1) return 'group-orange';
+        return 'group-red';
+    } else if (phase && phase === 3) {
+        if (score >= 4) return 'group-green';
+        if (score >= 3) return 'group-lightgreen';
+        if (score >= 2) return 'group-yellow';
+        if (score >= 1) return 'group-orange';
+        return 'group-red';
     } else {
+        if (score >= 3) return 'group-green';
+        if (score >= 2) return 'group-lightgreen';
+        if (score >= 1) return 'group-yellow';
+        if (score >= 0.5) return 'group-orange';
         return 'group-red';
     }
 }
@@ -591,7 +599,7 @@ function renderDashboard(playerData, guildActivePhases) {
                 }
                 if (showMissionsScore) {
                     const avgMissionsScore = phase.missionsScore / playersCount;
-                    const missionsScoreClass = getMissionsScoreColorClass(avgMissionsScore);
+                    const missionsScoreClass = getMissionsScoreColorClass(avgMissionsScore, i);
                     html += `<td class="${missionsScoreClass}"><b>${phase.missionsScore.toFixed(1)}</b></td>`;
                 }
                 if (showDeployed) {
@@ -678,7 +686,7 @@ function renderDashboard(playerData, guildActivePhases) {
                         html += `<td class="${scoreClass}"><b>${phase.score.toFixed(1)}</b></td>`;
                     }
                     if (showMissionsScore) {
-                        const missionsScoreClass = getMissionsScoreColorClass(phase.missionsScore);
+                        const missionsScoreClass = getMissionsScoreColorClass(phase.missionsScore, i);
                         html += `<td class="${missionsScoreClass}"><b>${phase.missionsScore.toFixed(1)}</b></td>`;
                     }
                     if (showDeployed) {
