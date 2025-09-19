@@ -13,8 +13,13 @@
         td { border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: bold; }
         th { background-color: #e9e9e9; }
         .phase { margin-bottom: 2em; }
-        #file-input {
+        #file-inputs {
             margin-bottom: 1em;
+        }
+        #file-inputs > div {
+            margin-bottom: 0.5em;
+        }
+        #file-inputs input {
             padding: 10px;
             font-size: 1.1em;
             border: 1px solid #ddd;
@@ -72,8 +77,17 @@
 <body>
     <div id="container">
         <h1>Territory Battle Status</h1>
-        <p>Upload a TB export JSON file to view the status.</p>
-        <input type="file" id="file-input" accept=".json">
+        <p>Upload a TB export JSON file to view the status. Upload a second "baseline" file to see the diff.</p>
+        <div id="file-inputs">
+            <div>
+                <label for="current-file-input">Current: </label>
+                <input type="file" id="current-file-input" accept=".json">
+            </div>
+            <div>
+                <label for="baseline-file-input">Baseline: </label>
+                <input type="file" id="baseline-file-input" accept=".json">
+            </div>
+        </div>
         <div>
             <label><input type="checkbox" id="show-score-checkbox"> Scores</label>
             <label><input type="checkbox" id="show-missions-score-checkbox" checked> Missions Score</label>
