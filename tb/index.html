@@ -26,6 +26,14 @@
             border-radius: 4px;
             cursor: pointer;
         }
+        .clear-button {
+            display: none;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            cursor: pointer;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
         .sm-win { background-color: green; color: white; font-weight: bold; }
         .sm-fail { background-color: red; color: white; font-weight: bold; }
         .sm-not-attempted { background-color: transparent; color: black; }
@@ -82,13 +90,16 @@
             <div>
                 <label for="current-file-input">Current: </label>
                 <input type="file" id="current-file-input" accept=".json">
+                <button id="clear-current-button" class="clear-button">Clear</button>
             </div>
             <div>
                 <label for="baseline-file-input">Baseline: </label>
                 <input type="file" id="baseline-file-input" accept=".json">
+                <button id="clear-baseline-button" class="clear-button">Clear</button>
             </div>
         </div>
         <div>
+            <label><input type="checkbox" id="show-totals-checkbox" checked> Totals</label>
             <label><input type="checkbox" id="show-score-checkbox"> Scores</label>
             <label><input type="checkbox" id="show-missions-score-checkbox" checked> Missions Score</label>
             <label><input type="checkbox" id="show-waves-checkbox"> Waves</label>

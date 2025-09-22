@@ -20,6 +20,7 @@ let state = {
     showDeployed: false,
     showUndeployed: false,
     showWaves: false,
+    showTotals: true,
 };
 
 const ZoneAliases = [
@@ -592,7 +593,7 @@ function getScoreInfo(score, metricName, targetScore) {
 
 function renderDashboard(playerData, guildActivePhases) {
     const dashboard = document.getElementById('dashboard');
-    const { showGP, showUnits, showScore, showMissionsScore, showSpecialMissions, showDeployed, showUndeployed, showWaves, isDiffMode } = state;
+    const { showGP, showUnits, showScore, showMissionsScore, showSpecialMissions, showDeployed, showUndeployed, showWaves, isDiffMode, showTotals } = state;
     const visibleMissions = showSpecialMissions ? SpecialMissions : [];
     const showDataColumns = showUnits || showScore || showMissionsScore || showWaves || showDeployed || showUndeployed;
 
@@ -627,7 +628,9 @@ function renderDashboard(playerData, guildActivePhases) {
         html += '<th rowspan="2" data-sort="galacticPower">GP</th>';
     }
     if (showDataColumns) {
-        html += `<th colspan="${totalColspan}">Total</th>`;
+        if (showTotals) {
+            html += `<th colspan="${totalColspan}">Total</th>`;
+        }
         for (let i = 1; i <= 6; i++) {
             if (state.visiblePhases.has(i)) {
                 html += `<th colspan="${phaseColspan}">Phase ${i}</th>`;
@@ -639,12 +642,14 @@ function renderDashboard(playerData, guildActivePhases) {
     }
     html += '</tr><tr>';
     if (showDataColumns) {
-        if (showWaves) html += '<th data-sort="totalWaves">Waves</th>';
-        if (showUnits) html += '<th data-sort="totalUnits">Units</th>';
-        if (showScore) html += '<th data-sort="totalScore">Score</th>';
-        if (showMissionsScore) html += '<th data-sort="totalMissionsScore">Missions Score</th>';
-        if (showDeployed) html += '<th data-sort="totalDeployed">Deployed</th>';
-        if (showUndeployed) html += '<th data-sort="totalUndeployed">Undeployed</th>';
+        if (showTotals) {
+            if (showWaves) html += '<th data-sort="totalWaves">Waves</th>';
+            if (showUnits) html += '<th data-sort="totalUnits">Units</th>';
+            if (showScore) html += '<th data-sort="totalScore">Score</th>';
+            if (showMissionsScore) html += '<th data-sort="totalMissionsScore">Missions Score</th>';
+            if (showDeployed) html += '<th data-sort="totalDeployed">Deployed</th>';
+            if (showUndeployed) html += '<th data-sort="totalUndeployed">Undeployed</th>';
+        }
         for (let i = 1; i <= 6; i++) {
             if (state.visiblePhases.has(i)) {
                 if (showWaves) html += `<th data-sort="waves-${i}">Waves</th>`;
@@ -733,35 +738,37 @@ function renderDashboard(playerData, guildActivePhases) {
         }
 
         if (showDataColumns) {
-            if (showWaves) {
-                const diff = totals.current.totalWaves - totals.baseline.totalWaves;
-                const tooltip = `Current: ${totals.current.totalWaves}\nBaseline: ${totals.baseline.totalWaves}`;
-                html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
-            }
-            if (showUnits) {
-                const diff = totals.current.totalUnits - totals.baseline.totalUnits;
-                const tooltip = `Current: ${totals.current.totalUnits}\nBaseline: ${totals.baseline.totalUnits}`;
-                html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
-            }
-            if (showScore) {
-                const diff = totals.current.totalScore - totals.baseline.totalScore;
-                const tooltip = `Current: ${totals.current.totalScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalScore.toFixed(1)}M`;
-                html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
-            }
-            if (showMissionsScore) {
-                const diff = totals.current.totalMissionsScore - totals.baseline.totalMissionsScore;
-                const tooltip = `Current: ${totals.current.totalMissionsScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalMissionsScore.toFixed(1)}M`;
-                html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
-            }
-            if (showDeployed) {
-                const diff = totals.current.totalDeployed - totals.baseline.totalDeployed;
-                const tooltip = `Current: ${totals.current.totalDeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalDeployed.toFixed(1)}M`;
-                html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
-            }
-            if (showUndeployed) {
-                const diff = totals.current.totalUndeployed - totals.baseline.totalUndeployed;
-                const tooltip = `Current: ${totals.current.totalUndeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalUndeployed.toFixed(1)}M`;
-                html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+            if (showTotals) {
+                if (showWaves) {
+                    const diff = totals.current.totalWaves - totals.baseline.totalWaves;
+                    const tooltip = `Current: ${totals.current.totalWaves}\nBaseline: ${totals.baseline.totalWaves}`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
+                }
+                if (showUnits) {
+                    const diff = totals.current.totalUnits - totals.baseline.totalUnits;
+                    const tooltip = `Current: ${totals.current.totalUnits}\nBaseline: ${totals.baseline.totalUnits}`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
+                }
+                if (showScore) {
+                    const diff = totals.current.totalScore - totals.baseline.totalScore;
+                    const tooltip = `Current: ${totals.current.totalScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalScore.toFixed(1)}M`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                }
+                if (showMissionsScore) {
+                    const diff = totals.current.totalMissionsScore - totals.baseline.totalMissionsScore;
+                    const tooltip = `Current: ${totals.current.totalMissionsScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalMissionsScore.toFixed(1)}M`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                }
+                if (showDeployed) {
+                    const diff = totals.current.totalDeployed - totals.baseline.totalDeployed;
+                    const tooltip = `Current: ${totals.current.totalDeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalDeployed.toFixed(1)}M`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                }
+                if (showUndeployed) {
+                    const diff = totals.current.totalUndeployed - totals.baseline.totalUndeployed;
+                    const tooltip = `Current: ${totals.current.totalUndeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalUndeployed.toFixed(1)}M`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                }
             }
 
             for (let i = 1; i <= 6; i++) {
@@ -858,35 +865,37 @@ function renderDashboard(playerData, guildActivePhases) {
             const playersCount = Math.max(playerData.length, 1);
             const visiblePhasesCount = Math.max(state.visiblePhases.size, 1);
 
-            if (showWaves) {
-                const normalizedFooterTotal = totals.totalWaves / (visiblePhasesCount * playersCount);
-                const waveInfo = getWaveCountGroupInfo(normalizedFooterTotal);
-                html += `<td class="${waveInfo.className}" title="${waveInfo.tooltipText}"><b>${totals.totalWaves}</b></td>`;
-            }
-            if (showUnits) {
-                const unitsClass = totals.totalUnits === 0 ? 'group-red' : '';
-                html += `<td class="${unitsClass}"><b>${totals.totalUnits}</b></td>`;
-            }
-            if (showScore) {
-                const avgGP = totals.totalGalacticPower / playersCount;
-                const avgTargetScore = totalTargetMissionScore + avgGP * visiblePhasesCount;
-                const guildTotalTargetScore = avgTargetScore * playersCount;
-                const scoreInfo = getScoreInfo(totals.totalScore, 'Total Score', guildTotalTargetScore);
-                html += `<td class="${scoreInfo.className}" title="${scoreInfo.tooltipText}"><b>${totals.totalScore.toFixed(1)}</b></td>`;
-            }
-            if (showMissionsScore) {
-                const guildTotalTargetMissionScore = totalTargetMissionScore * playersCount;
-                const missionsScoreInfo = getScoreInfo(totals.totalMissionsScore, 'Total Missions Score', guildTotalTargetMissionScore);
-                html += `<td class="${missionsScoreInfo.className}" title="${missionsScoreInfo.tooltipText}"><b>${totals.totalMissionsScore.toFixed(1)}</b></td>`;
-            }
-            if (showDeployed) {
-                const deployedInfo = getDeployedInfo(totals.totalDeployed, totals.totalGalacticPower * visiblePhasesCount);
-                html += `<td class="${deployedInfo.className}" title="${deployedInfo.tooltipText}"><b>${totals.totalDeployed.toFixed(1)}</b></td>`;
-            }
-            if (showUndeployed) {
-                totals.totalUndeployed = totals.totalGalacticPower * visiblePhasesCount - totals.totalDeployed;
-                const undeployedInfo = getUndeployedInfo(totals.totalUndeployed, totals.totalGalacticPower * visiblePhasesCount);
-                html += `<td class="${undeployedInfo.className}" title="${undeployedInfo.tooltipText}"><b>${totals.totalUndeployed.toFixed(1)}</b></td>`;
+            if (showTotals) {
+                if (showWaves) {
+                    const normalizedFooterTotal = totals.totalWaves / (visiblePhasesCount * playersCount);
+                    const waveInfo = getWaveCountGroupInfo(normalizedFooterTotal);
+                    html += `<td class="${waveInfo.className}" title="${waveInfo.tooltipText}"><b>${totals.totalWaves}</b></td>`;
+                }
+                if (showUnits) {
+                    const unitsClass = totals.totalUnits === 0 ? 'group-red' : '';
+                    html += `<td class="${unitsClass}"><b>${totals.totalUnits}</b></td>`;
+                }
+                if (showScore) {
+                    const avgGP = totals.totalGalacticPower / playersCount;
+                    const avgTargetScore = totalTargetMissionScore + avgGP * visiblePhasesCount;
+                    const guildTotalTargetScore = avgTargetScore * playersCount;
+                    const scoreInfo = getScoreInfo(totals.totalScore, 'Total Score', guildTotalTargetScore);
+                    html += `<td class="${scoreInfo.className}" title="${scoreInfo.tooltipText}"><b>${totals.totalScore.toFixed(1)}</b></td>`;
+                }
+                if (showMissionsScore) {
+                    const guildTotalTargetMissionScore = totalTargetMissionScore * playersCount;
+                    const missionsScoreInfo = getScoreInfo(totals.totalMissionsScore, 'Total Missions Score', guildTotalTargetMissionScore);
+                    html += `<td class="${missionsScoreInfo.className}" title="${missionsScoreInfo.tooltipText}"><b>${totals.totalMissionsScore.toFixed(1)}</b></td>`;
+                }
+                if (showDeployed) {
+                    const deployedInfo = getDeployedInfo(totals.totalDeployed, totals.totalGalacticPower * visiblePhasesCount);
+                    html += `<td class="${deployedInfo.className}" title="${deployedInfo.tooltipText}"><b>${totals.totalDeployed.toFixed(1)}</b></td>`;
+                }
+                if (showUndeployed) {
+                    totals.totalUndeployed = totals.totalGalacticPower * visiblePhasesCount - totals.totalDeployed;
+                    const undeployedInfo = getUndeployedInfo(totals.totalUndeployed, totals.totalGalacticPower * visiblePhasesCount);
+                    html += `<td class="${undeployedInfo.className}" title="${undeployedInfo.tooltipText}"><b>${totals.totalUndeployed.toFixed(1)}</b></td>`;
+                }
             }
 
             for (let i = 1; i <= 6; i++) {
@@ -934,7 +943,6 @@ function renderDashboard(playerData, guildActivePhases) {
     }
 
     // Render player rows
-
     for (const p of playerData) {
         const isSelected = p.playerId === state.selectedPlayerId;
         html += `<tr class="${isSelected ? 'selected-row' : ''}" data-player-id="${p.playerId}">`;
@@ -969,12 +977,14 @@ Baseline: ${formatNumber(baseline)}`;
                 }
             };
 
-            if (showWaves) html += renderCell(p.totalWaves, p.current?.totalWaves, p.baseline?.totalWaves, getWaveCountGroupInfo, p.normalizedTotalWaves);
-            if (showUnits) html += renderCell(p.totalUnits, p.current?.totalUnits, p.baseline?.totalUnits, (u) => ({ className: u === 0 ? 'group-red' : '', tooltipText: '' }));
-            if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', (totalTargetMissionScore + p.galacticPower * Math.max(state.visiblePhases.size, 1)));
-            if (showMissionsScore) html += renderScoreCell(p.totalMissionsScore, p.current?.totalMissionsScore, p.baseline?.totalMissionsScore, getScoreInfo, 'Missions Score', totalTargetMissionScore);
-            if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
-            if (showUndeployed) html += renderScoreCell(p.totalUndeployed, p.current?.totalUndeployed, p.baseline?.totalUndeployed, getUndeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
+            if (showTotals) {
+                if (showWaves) html += renderCell(p.totalWaves, p.current?.totalWaves, p.baseline?.totalWaves, getWaveCountGroupInfo, p.normalizedTotalWaves);
+                if (showUnits) html += renderCell(p.totalUnits, p.current?.totalUnits, p.baseline?.totalUnits, (u) => ({ className: u === 0 ? 'group-red' : '', tooltipText: '' }));
+                if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', totalTargetMissionScore + p.galacticPower * Math.max(state.visiblePhases.size, 1));
+                if (showMissionsScore) html += renderScoreCell(p.totalMissionsScore, p.current?.totalMissionsScore, p.baseline?.totalMissionsScore, getScoreInfo, 'Missions Score', totalTargetMissionScore);
+                if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
+                if (showUndeployed) html += renderScoreCell(p.totalUndeployed, p.current?.totalUndeployed, p.baseline?.totalUndeployed, getUndeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
+            }
 
             for (let i = 1; i <= 6; i++) {
                 if (state.visiblePhases.has(i)) {
@@ -1130,6 +1140,19 @@ async function loadDefaultData() {
     }
 }
 
+function clearDashboard() {
+    document.getElementById('dashboard').innerHTML = '';
+    document.querySelector('h1').textContent = 'Territory Battle Status';
+    document.title = 'TB Status Dashboard';
+    state.playerData = [];
+    state.guildActivePhases = new Set();
+    state.visiblePhases = new Set();
+    state.guildName = '';
+    state.guildGalacticPower = 0;
+    state.isDiffMode = false;
+    setupPhaseCheckboxes();
+}
+
 function onDataLoaded() {
     if (state.currentData && state.baselineData) {
         processDiffData(state.currentData, state.baselineData);
@@ -1137,6 +1160,8 @@ function onDataLoaded() {
         processSingleData(state.currentData);
     } else if (state.baselineData) {
         processSingleData(state.baselineData);
+    } else {
+        clearDashboard();
     }
 }
 
@@ -1148,8 +1173,10 @@ function handleFileSelect(file, type) {
                 const data = JSON.parse(e.target.result);
                 if (type === 'current') {
                     state.currentData = data;
+                    document.getElementById('clear-current-button').style.display = 'inline-block';
                 } else {
                     state.baselineData = data;
+                    document.getElementById('clear-baseline-button').style.display = 'inline-block';
                 }
                 onDataLoaded();
             } catch (error) {
@@ -1163,6 +1190,10 @@ function handleFileSelect(file, type) {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadDefaultData();
+    document.getElementById('show-totals-checkbox').addEventListener('change', (event) => {
+        state.showTotals = event.target.checked;
+        sortAndRender();
+    });
     document.getElementById('show-gp-checkbox').addEventListener('change', (event) => {
         state.showGP = event.target.checked;
         sortAndRender();
@@ -1201,6 +1232,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.getElementById('baseline-file-input').addEventListener('change', (event) => {
         handleFileSelect(event.target.files[0], 'baseline');
+    });
+
+    document.getElementById('clear-current-button').addEventListener('click', () => {
+        state.currentData = null;
+        const fileInput = document.getElementById('current-file-input');
+        fileInput.value = '';
+        document.getElementById('clear-current-button').style.display = 'none';
+        onDataLoaded();
+    });
+
+    document.getElementById('clear-baseline-button').addEventListener('click', () => {
+        state.baselineData = null;
+        const fileInput = document.getElementById('baseline-file-input');
+        fileInput.value = '';
+        document.getElementById('clear-baseline-button').style.display = 'none';
+        onDataLoaded();
     });
 
     const modal = document.getElementById('cell-info-modal');
