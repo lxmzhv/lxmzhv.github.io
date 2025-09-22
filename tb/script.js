@@ -893,8 +893,9 @@ function renderDashboard(playerData, guildActivePhases) {
                 }
                 if (showUndeployed) {
                     totals.totalUndeployed = totals.totalGalacticPower * visiblePhasesCount - totals.totalDeployed;
-                    const undeployedInfo = getUndeployedInfo(totals.totalUndeployed, totals.totalGalacticPower * visiblePhasesCount);
-                    html += `<td class="${undeployedInfo.className}" title="${undeployedInfo.tooltipText}"><b>${totals.totalUndeployed.toFixed(1)}</b></td>`;
+                    const undeployedClass = totals.totalUndeployed > 0 ? 'group-red' : 'group-green';
+                    const undeployedTooltip = `Undeployed: ${totals.totalUndeployed.toFixed(1)}M`;
+                    html += `<td class="${undeployedClass}" title="${undeployedTooltip}"><b>${totals.totalUndeployed.toFixed(1)}</b></td>`;
                 }
             }
 
@@ -928,8 +929,9 @@ function renderDashboard(playerData, guildActivePhases) {
                         html += `<td class="${deployedInfo.className}" title="${deployedInfo.tooltipText}"><b>${phase.deployed.toFixed(1)}</b></td>`;
                     }
                     if (showUndeployed) {
-                        const undeployedInfo = getUndeployedInfo(phase.undeployed, totals.totalGalacticPower);
-                        html += `<td class="${undeployedInfo.className}" title="${undeployedInfo.tooltipText}"><b>${phase.undeployed.toFixed(1)}</b></td>`;
+                        const undeployedClass = phase.undeployed > 0 ? 'group-red' : 'group-green';
+                        const undeployedTooltip = `Undeployed: ${phase.undeployed.toFixed(1)}M`;
+                        html += `<td class="${undeployedClass}" title="${undeployedTooltip}"><b>${phase.undeployed.toFixed(1)}</b></td>`;
                     }
                 }
             }
