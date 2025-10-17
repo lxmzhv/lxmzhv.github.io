@@ -123,37 +123,40 @@ function sortAndRender() {
     sortedData.sort((a, b) => {
         let valA, valB;
 
+        const playerA = state.isDiffMode ? a.current : a;
+        const playerB = state.isDiffMode ? b.current : b;
+
         if (key.startsWith('waves-')) {
             const phase = key.split('-')[1];
-            valA = a.phases[phase].waves;
-            valB = b.phases[phase].waves;
+            valA = playerA.phases[phase].waves;
+            valB = playerB.phases[phase].waves;
         } else if (key.startsWith('units-')) {
             const phase = key.split('-')[1];
-            valA = a.phases[phase].units;
-            valB = b.phases[phase].units;
+            valA = playerA.phases[phase].units;
+            valB = playerB.phases[phase].units;
         } else if (key.startsWith('score-')) {
             const phase = key.split('-')[1];
-            valA = a.phases[phase].score;
-            valB = b.phases[phase].score;
+            valA = playerA.phases[phase].score;
+            valB = playerB.phases[phase].score;
         } else if (key.startsWith('missionsScore-')) {
             const phase = key.split('-')[1];
-            valA = a.phases[phase].missionsScore;
-            valB = b.phases[phase].missionsScore;
+            valA = playerA.phases[phase].missionsScore;
+            valB = playerB.phases[phase].missionsScore;
         } else if (key.startsWith('deployed-')) {
             const phase = key.split('-')[1];
-            valA = a.phases[phase].deployed;
-            valB = b.phases[phase].deployed;
+            valA = playerA.phases[phase].deployed;
+            valB = playerB.phases[phase].deployed;
         } else if (key.startsWith('undeployed-')) {
             const phase = key.split('-')[1];
-            valA = a.phases[phase].undeployed;
-            valB = b.phases[phase].undeployed;
+            valA = playerA.phases[phase].undeployed;
+            valB = playerB.phases[phase].undeployed;
         } else if (key.startsWith('sm-')) {
             const missionName = key.substring(3);
-            valA = a.specialMissions[missionName];
-            valB = b.specialMissions[missionName];
+            valA = playerA.specialMissions[missionName];
+            valB = playerB.specialMissions[missionName];
         } else {
-            valA = a[key];
-            valB = b[key];
+            valA = playerA[key];
+            valB = playerB[key];
         }
 
         let result;
@@ -734,7 +737,7 @@ function renderDashboard(playerData, guildActivePhases) {
         if (showGP) {
             const diff = totals.current.totalGalacticPower - totals.baseline.totalGalacticPower;
             const tooltip = `Current: ${totals.current.totalGalacticPower.toFixed(1)}M\nBaseline: ${totals.baseline.totalGalacticPower.toFixed(1)}M`;
-            html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+            html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalGalacticPower.toFixed(1)} (${formatDiff(diff)})</b></td>`;
         }
 
         if (showDataColumns) {
@@ -742,32 +745,32 @@ function renderDashboard(playerData, guildActivePhases) {
                 if (showWaves) {
                     const diff = totals.current.totalWaves - totals.baseline.totalWaves;
                     const tooltip = `Current: ${totals.current.totalWaves}\nBaseline: ${totals.baseline.totalWaves}`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalWaves} (${formatDiff(diff, 0)})</b></td>`;
                 }
                 if (showUnits) {
                     const diff = totals.current.totalUnits - totals.baseline.totalUnits;
                     const tooltip = `Current: ${totals.current.totalUnits}\nBaseline: ${totals.baseline.totalUnits}`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalUnits} (${formatDiff(diff, 0)})</b></td>`;
                 }
                 if (showScore) {
                     const diff = totals.current.totalScore - totals.baseline.totalScore;
                     const tooltip = `Current: ${totals.current.totalScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalScore.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalScore.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                 }
                 if (showMissionsScore) {
                     const diff = totals.current.totalMissionsScore - totals.baseline.totalMissionsScore;
                     const tooltip = `Current: ${totals.current.totalMissionsScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalMissionsScore.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalMissionsScore.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                 }
                 if (showDeployed) {
                     const diff = totals.current.totalDeployed - totals.baseline.totalDeployed;
                     const tooltip = `Current: ${totals.current.totalDeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalDeployed.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalDeployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                 }
                 if (showUndeployed) {
                     const diff = totals.current.totalUndeployed - totals.baseline.totalUndeployed;
                     const tooltip = `Current: ${totals.current.totalUndeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalUndeployed.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalUndeployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                 }
             }
 
@@ -776,32 +779,32 @@ function renderDashboard(playerData, guildActivePhases) {
                     if (showWaves) {
                         const diff = totals.current.phases[i].waves - totals.baseline.phases[i].waves;
                         const tooltip = `Current: ${totals.current.phases[i].waves}\nBaseline: ${totals.baseline.phases[i].waves}`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
+                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].waves} (${formatDiff(diff, 0)})</b></td>`;
                     }
                     if (showUnits) {
                         const diff = totals.current.phases[i].units - totals.baseline.phases[i].units;
                         const tooltip = `Current: ${totals.current.phases[i].units}\nBaseline: ${totals.baseline.phases[i].units}`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff, 0)}</b></td>`;
+                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].units} (${formatDiff(diff, 0)})</b></td>`;
                     }
                     if (showScore) {
                         const diff = totals.current.phases[i].score - totals.baseline.phases[i].score;
                         const tooltip = `Current: ${totals.current.phases[i].score.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].score.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].score.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                     }
                     if (showMissionsScore) {
                         const diff = totals.current.phases[i].missionsScore - totals.baseline.phases[i].missionsScore;
                         const tooltip = `Current: ${totals.current.phases[i].missionsScore.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].missionsScore.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].missionsScore.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                     }
                     if (showDeployed) {
                         const diff = totals.current.phases[i].deployed - totals.baseline.phases[i].deployed;
                         const tooltip = `Current: ${totals.current.phases[i].deployed.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].deployed.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].deployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                     }
                     if (showUndeployed) {
                         const diff = totals.current.phases[i].undeployed - totals.baseline.phases[i].undeployed;
                         const tooltip = `Current: ${totals.current.phases[i].undeployed.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].undeployed.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${formatDiff(diff)}</b></td>`;
+                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].undeployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
                     }
                 }
             }
@@ -951,18 +954,24 @@ function renderDashboard(playerData, guildActivePhases) {
         html += `<td>${p.rank}</td>`;
         html += `<td class="player-name-cell">${p.playerName}</td>`;
         if (showGP) {
-            const gp_val = isDiffMode ? formatDiff(p.galacticPower) : p.galacticPower.toFixed(1);
-            const gp_cls = isDiffMode ? getDiffClass(p.galacticPower) : '';
-            const gp_title = isDiffMode ? `Current: ${p.current.galacticPower.toFixed(1)}M\nBaseline: ${p.baseline.galacticPower.toFixed(1)}M` : '';
+            let gp_val, gp_cls = '', gp_title = '';
+            if (isDiffMode) {
+                gp_val = `${p.current.galacticPower.toFixed(1)} (${formatDiff(p.galacticPower)})`;
+                gp_cls = getDiffClass(p.galacticPower);
+                gp_title = `Current: ${p.current.galacticPower.toFixed(1)}M\nBaseline: ${p.baseline.galacticPower.toFixed(1)}M`;
+            } else {
+                gp_val = p.galacticPower.toFixed(1);
+            }
             html += `<td class="${gp_cls}" title="${gp_title}">${gp_val}</td>`;
         }
 
         if (showDataColumns) {
             const renderCell = (val, current, baseline, infoFn, ...args) => {
                 if (isDiffMode) {
-                    const tooltip = `Current: ${formatNumber(current)}
-Baseline: ${formatNumber(baseline)}`;
-                    return `<td class="${getDiffClass(val)}" title="${tooltip}"><b>${formatDiff(val, 0)}</b></td>`;
+                    const tooltip = `Current: ${formatNumber(current)}\nBaseline: ${formatNumber(baseline)}`;
+                    const diffStr = formatDiff(val, 0);
+                    const displayVal = `${formatNumber(current)} (${diffStr})`;
+                    return `<td class="${getDiffClass(val)}" title="${tooltip}"><b>${displayVal}</b></td>`;
                 } else {
                     const { className, tooltipText } = infoFn(val, ...args);
                     return `<td class="${className}" title="${tooltipText}"><b>${formatNumber(val)}</b></td>`;
@@ -972,7 +981,9 @@ Baseline: ${formatNumber(baseline)}`;
             const renderScoreCell = (val, current, baseline, infoFn, ...args) => {
                 if (isDiffMode) {
                     const tooltip = `Current: ${current.toFixed(1)}M\nBaseline: ${baseline.toFixed(1)}M`;
-                    return `<td class="${getDiffClass(val)}" title="${tooltip}"><b>${formatDiff(val)}</b></td>`;
+                    const diffStr = formatDiff(val);
+                    const displayVal = `${current.toFixed(1)} (${diffStr})`;
+                    return `<td class="${getDiffClass(val)}" title="${tooltip}"><b>${displayVal}</b></td>`;
                 } else {
                     const { className, tooltipText } = infoFn(val, ...args);
                     return `<td class="${className}" title="${tooltipText}"><b>${val.toFixed(1)}</b></td>`;
