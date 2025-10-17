@@ -83,12 +83,6 @@ function formatDiff(value, precision = 1) {
     return sign + num;
 }
 
-function getDiffClass(value) {
-    if (value > 0) return 'group-green';
-    if (value < 0) return 'group-red';
-    return '';
-}
-
 function getSmDiff(current, baseline) {
     if (current === baseline) return current;
     if (!baseline || baseline === '-') {
@@ -115,6 +109,17 @@ function getSmDiffClass(current, baseline) {
     return 'sm-not-attempted';
 }
 
+function getDiffColor(diff, className) {
+    const isLightBg = className === 'group-orange' || className === 'group-yellow' || className === 'group-lightgreen' || className === '';
+
+    if (diff > 0) {
+        return isLightBg ? 'darkgreen' : 'lightgreen';
+    }
+    if (diff < 0) {
+        return isLightBg ? 'darkred' : '#ffd0d0';
+    }
+    return isLightBg ? '#404040' : 'lightgrey';
+}
 
 function sortAndRender() {
     const { key, direction } = state.sort;
@@ -730,6 +735,9 @@ function renderDashboard(playerData, guildActivePhases) {
             }
         }
 
+        const playersCount = Math.max(playerData.length, 1);
+        const visiblePhasesCount = Math.max(state.visiblePhases.size, 1);
+
         html += '<tr>';
         html += '<td><b>0</b></td>';
         html += '<td><b>Totals</b></td>';
@@ -737,7 +745,9 @@ function renderDashboard(playerData, guildActivePhases) {
         if (showGP) {
             const diff = totals.current.totalGalacticPower - totals.baseline.totalGalacticPower;
             const tooltip = `Current: ${totals.current.totalGalacticPower.toFixed(1)}M\nBaseline: ${totals.baseline.totalGalacticPower.toFixed(1)}M`;
-            html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalGalacticPower.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+            const diffColor = getDiffColor(diff, '');
+            const diffStr = formatDiff(diff);
+            html += `<td title="${tooltip}"><b>${totals.current.totalGalacticPower.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
         }
 
         if (showDataColumns) {
@@ -745,32 +755,61 @@ function renderDashboard(playerData, guildActivePhases) {
                 if (showWaves) {
                     const diff = totals.current.totalWaves - totals.baseline.totalWaves;
                     const tooltip = `Current: ${totals.current.totalWaves}\nBaseline: ${totals.baseline.totalWaves}`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalWaves} (${formatDiff(diff, 0)})</b></td>`;
+                    const diffStr = formatDiff(diff, 0);
+                    const normalizedFooterTotal = totals.current.totalWaves / (visiblePhasesCount * playersCount);
+                    const waveInfo = getWaveCountGroupInfo(normalizedFooterTotal);
+                    const diffColor = getDiffColor(diff, waveInfo.className);
+                    const finalTooltip = `${tooltip}\n${waveInfo.tooltipText}`;
+                    html += `<td class="${waveInfo.className}" title="${finalTooltip}"><b>${totals.current.totalWaves} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
                 if (showUnits) {
                     const diff = totals.current.totalUnits - totals.baseline.totalUnits;
                     const tooltip = `Current: ${totals.current.totalUnits}\nBaseline: ${totals.baseline.totalUnits}`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalUnits} (${formatDiff(diff, 0)})</b></td>`;
+                    const diffStr = formatDiff(diff, 0);
+                    const unitsClass = totals.current.totalUnits === 0 ? 'group-red' : '';
+                    const diffColor = getDiffColor(diff, unitsClass);
+                    html += `<td class="${unitsClass}" title="${tooltip}"><b>${totals.current.totalUnits} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
                 if (showScore) {
                     const diff = totals.current.totalScore - totals.baseline.totalScore;
                     const tooltip = `Current: ${totals.current.totalScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalScore.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalScore.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                    const diffStr = formatDiff(diff);
+                    const avgGP = totals.current.totalGalacticPower / playersCount;
+                    const avgTargetScore = totalTargetMissionScore + avgGP * visiblePhasesCount;
+                    const guildTotalTargetScore = avgTargetScore * playersCount;
+                    const scoreInfo = getScoreInfo(totals.current.totalScore, 'Total Score', guildTotalTargetScore);
+                    const diffColor = getDiffColor(diff, scoreInfo.className);
+                    const finalTooltip = `${tooltip}\n${scoreInfo.tooltipText}`;
+                    html += `<td class="${scoreInfo.className}" title="${finalTooltip}"><b>${totals.current.totalScore.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
                 if (showMissionsScore) {
                     const diff = totals.current.totalMissionsScore - totals.baseline.totalMissionsScore;
                     const tooltip = `Current: ${totals.current.totalMissionsScore.toFixed(1)}M\nBaseline: ${totals.baseline.totalMissionsScore.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalMissionsScore.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                    const diffStr = formatDiff(diff);
+                    const guildTotalTargetMissionScore = totalTargetMissionScore * playersCount;
+                    const missionsScoreInfo = getScoreInfo(totals.current.totalMissionsScore, 'Total Missions Score', guildTotalTargetMissionScore);
+                    const diffColor = getDiffColor(diff, missionsScoreInfo.className);
+                    const finalTooltip = `${tooltip}\n${missionsScoreInfo.tooltipText}`;
+                    html += `<td class="${missionsScoreInfo.className}" title="${finalTooltip}"><b>${totals.current.totalMissionsScore.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
                 if (showDeployed) {
                     const diff = totals.current.totalDeployed - totals.baseline.totalDeployed;
                     const tooltip = `Current: ${totals.current.totalDeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalDeployed.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalDeployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                    const diffStr = formatDiff(diff);
+                    const deployedInfo = getDeployedInfo(totals.current.totalDeployed, totals.current.totalGalacticPower * visiblePhasesCount);
+                    const diffColor = getDiffColor(diff, deployedInfo.className);
+                    const finalTooltip = `${tooltip}\n${deployedInfo.tooltipText}`;
+                    html += `<td class="${deployedInfo.className}" title="${finalTooltip}"><b>${totals.current.totalDeployed.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
                 if (showUndeployed) {
                     const diff = totals.current.totalUndeployed - totals.baseline.totalUndeployed;
                     const tooltip = `Current: ${totals.current.totalUndeployed.toFixed(1)}M\nBaseline: ${totals.baseline.totalUndeployed.toFixed(1)}M`;
-                    html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.totalUndeployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                    const diffStr = formatDiff(diff);
+                    const undeployedClass = totals.current.totalUndeployed > 0 ? 'group-red' : 'group-green';
+                    const diffColor = getDiffColor(diff, undeployedClass);
+                    const undeployedTooltip = `Undeployed: ${totals.current.totalUndeployed.toFixed(1)}M`;
+                    const finalTooltip = `${tooltip}\n${undeployedTooltip}`;
+                    html += `<td class="${undeployedClass}" title="${finalTooltip}"><b>${totals.current.totalUndeployed.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
             }
 
@@ -779,32 +818,62 @@ function renderDashboard(playerData, guildActivePhases) {
                     if (showWaves) {
                         const diff = totals.current.phases[i].waves - totals.baseline.phases[i].waves;
                         const tooltip = `Current: ${totals.current.phases[i].waves}\nBaseline: ${totals.baseline.phases[i].waves}`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].waves} (${formatDiff(diff, 0)})</b></td>`;
+                        const diffStr = formatDiff(diff, 0);
+                        const waveInfo = getWaveCountGroupInfo(totals.current.phases[i].waves / playersCount);
+                        const diffColor = getDiffColor(diff, waveInfo.className);
+                        const finalTooltip = `${tooltip}\n${waveInfo.tooltipText}`;
+                        html += `<td class="${waveInfo.className}" title="${finalTooltip}"><b>${totals.current.phases[i].waves} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                     if (showUnits) {
                         const diff = totals.current.phases[i].units - totals.baseline.phases[i].units;
                         const tooltip = `Current: ${totals.current.phases[i].units}\nBaseline: ${totals.baseline.phases[i].units}`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].units} (${formatDiff(diff, 0)})</b></td>`;
+                        const diffStr = formatDiff(diff, 0);
+                        const unitsClass = totals.current.phases[i].units === 0 ? 'group-red' : '';
+                        const diffColor = getDiffColor(diff, unitsClass);
+                        html += `<td class="${unitsClass}" title="${tooltip}"><b>${totals.current.phases[i].units} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                     if (showScore) {
                         const diff = totals.current.phases[i].score - totals.baseline.phases[i].score;
                         const tooltip = `Current: ${totals.current.phases[i].score.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].score.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].score.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                        const diffStr = formatDiff(diff);
+                        const avgGP = totals.current.totalGalacticPower / playersCount;
+                        const targetMissionScoreForPhase = TargetMissionScores[i] || 0;
+                        const avgTargetScore = targetMissionScoreForPhase + avgGP;
+                        const guildTotalTargetScoreForPhase = avgTargetScore * playersCount;
+                        const scoreInfo = getScoreInfo(totals.current.phases[i].score, 'Total Score', guildTotalTargetScoreForPhase);
+                        const diffColor = getDiffColor(diff, scoreInfo.className);
+                        const finalTooltip = `${tooltip}\n${scoreInfo.tooltipText}`;
+                        html += `<td class="${scoreInfo.className}" title="${finalTooltip}"><b>${totals.current.phases[i].score.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                     if (showMissionsScore) {
                         const diff = totals.current.phases[i].missionsScore - totals.baseline.phases[i].missionsScore;
                         const tooltip = `Current: ${totals.current.phases[i].missionsScore.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].missionsScore.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].missionsScore.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                        const diffStr = formatDiff(diff);
+                        const targetMissionScoreForPhase = TargetMissionScores[i] || 0;
+                        const guildTotalTargetMissionScoreForPhase = targetMissionScoreForPhase * playersCount;
+                        const missionsScoreInfo = getScoreInfo(totals.current.phases[i].missionsScore, 'Total Missions Score', guildTotalTargetMissionScoreForPhase);
+                        const diffColor = getDiffColor(diff, missionsScoreInfo.className);
+                        const finalTooltip = `${tooltip}\n${missionsScoreInfo.tooltipText}`;
+                        html += `<td class="${missionsScoreInfo.className}" title="${finalTooltip}"><b>${totals.current.phases[i].missionsScore.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                     if (showDeployed) {
                         const diff = totals.current.phases[i].deployed - totals.baseline.phases[i].deployed;
                         const tooltip = `Current: ${totals.current.phases[i].deployed.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].deployed.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].deployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                        const diffStr = formatDiff(diff);
+                        const deployedInfo = getDeployedInfo(totals.current.phases[i].deployed, state.guildGalacticPower);
+                        const diffColor = getDiffColor(diff, deployedInfo.className);
+                        const finalTooltip = `${tooltip}\n${deployedInfo.tooltipText}`;
+                        html += `<td class="${deployedInfo.className}" title="${finalTooltip}"><b>${totals.current.phases[i].deployed.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                     if (showUndeployed) {
                         const diff = totals.current.phases[i].undeployed - totals.baseline.phases[i].undeployed;
                         const tooltip = `Current: ${totals.current.phases[i].undeployed.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].undeployed.toFixed(1)}M`;
-                        html += `<td class="${getDiffClass(diff)}" title="${tooltip}"><b>${totals.current.phases[i].undeployed.toFixed(1)} (${formatDiff(diff)})</b></td>`;
+                        const diffStr = formatDiff(diff);
+                        const undeployedClass = totals.current.phases[i].undeployed > 0 ? 'group-red' : 'group-green';
+                        const diffColor = getDiffColor(diff, undeployedClass);
+                        const undeployedTooltip = `Undeployed: ${totals.current.phases[i].undeployed.toFixed(1)}M`;
+                        const finalTooltip = `${tooltip}\n${undeployedTooltip}`;
+                        html += `<td class="${undeployedClass}" title="${finalTooltip}"><b>${totals.current.phases[i].undeployed.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                 }
             }
@@ -956,8 +1025,11 @@ function renderDashboard(playerData, guildActivePhases) {
         if (showGP) {
             let gp_val, gp_cls = '', gp_title = '';
             if (isDiffMode) {
-                gp_val = `${p.current.galacticPower.toFixed(1)} (${formatDiff(p.galacticPower)})`;
-                gp_cls = getDiffClass(p.galacticPower);
+                const diff = p.galacticPower;
+                const diffColor = getDiffColor(diff, '');
+                const diffStr = formatDiff(diff);
+                gp_val = `${p.current.galacticPower.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span>`;
+                gp_cls = '';
                 gp_title = `Current: ${p.current.galacticPower.toFixed(1)}M\nBaseline: ${p.baseline.galacticPower.toFixed(1)}M`;
             } else {
                 gp_val = p.galacticPower.toFixed(1);
@@ -970,8 +1042,11 @@ function renderDashboard(playerData, guildActivePhases) {
                 if (isDiffMode) {
                     const tooltip = `Current: ${formatNumber(current)}\nBaseline: ${formatNumber(baseline)}`;
                     const diffStr = formatDiff(val, 0);
-                    const displayVal = `${formatNumber(current)} (${diffStr})`;
-                    return `<td class="${getDiffClass(val)}" title="${tooltip}"><b>${displayVal}</b></td>`;
+                    const { className, tooltipText: nonDiffTooltip } = infoFn(current, ...args);
+                    const diffColor = getDiffColor(val, className);
+                    const displayVal = `${formatNumber(current)} <span style="color: ${diffColor};">(${diffStr})</span>`;
+                    const finalTooltip = nonDiffTooltip ? `${tooltip}\n${nonDiffTooltip}` : tooltip;
+                    return `<td class="${className}" title="${finalTooltip}"><b>${displayVal}</b></td>`;
                 } else {
                     const { className, tooltipText } = infoFn(val, ...args);
                     return `<td class="${className}" title="${tooltipText}"><b>${formatNumber(val)}</b></td>`;
@@ -982,8 +1057,11 @@ function renderDashboard(playerData, guildActivePhases) {
                 if (isDiffMode) {
                     const tooltip = `Current: ${current.toFixed(1)}M\nBaseline: ${baseline.toFixed(1)}M`;
                     const diffStr = formatDiff(val);
-                    const displayVal = `${current.toFixed(1)} (${diffStr})`;
-                    return `<td class="${getDiffClass(val)}" title="${tooltip}"><b>${displayVal}</b></td>`;
+                    const { className, tooltipText: nonDiffTooltip } = infoFn(current, ...args);
+                    const diffColor = getDiffColor(val, className);
+                    const displayVal = `${current.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span>`;
+                    const finalTooltip = nonDiffTooltip ? `${tooltip}\n${nonDiffTooltip}` : tooltip;
+                    return `<td class="${className}" title="${finalTooltip}"><b>${displayVal}</b></td>`;
                 } else {
                     const { className, tooltipText } = infoFn(val, ...args);
                     return `<td class="${className}" title="${tooltipText}"><b>${val.toFixed(1)}</b></td>`;
