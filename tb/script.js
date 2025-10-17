@@ -121,6 +121,7 @@ function getDiffColor(diff, className) {
     return isLightBg ? '#404040' : 'lightgrey';
 }
 
+
 function sortAndRender() {
     const { key, direction } = state.sort;
     const sortedData = [...state.playerData];
