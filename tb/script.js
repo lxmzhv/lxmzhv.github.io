@@ -253,12 +253,6 @@ function extractPlayerData(data) {
                 }
             }
         }
-        if (stats.mapStatId === 'unit_donated') {
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId]) playerData[pId].totalUnits = parseInt(playerStat.score, 10);
-            }
-        }
     }
 
     for (const stats of data.currentStat) {
@@ -432,6 +426,7 @@ function recalculatePlayerTotals(playerData = state.playerData, guildActivePhase
         p.totalScore = 0;
         p.totalDeployed = 0;
         p.totalMissionsScore = 0;
+        p.totalUnits = 0;
 
         for (let i = 1; i <= 6; i++) {
             const phaseData = p.phases[i];
@@ -445,6 +440,7 @@ function recalculatePlayerTotals(playerData = state.playerData, guildActivePhase
                 p.totalScore += phaseData.score;
                 p.totalDeployed += phaseData.deployed;
                 p.totalMissionsScore += phaseData.missionsScore;
+                p.totalUnits += phaseData.units;
             }
         }
 
@@ -497,6 +493,7 @@ function recalculateAndRender() {
             recalculatePlayerTotals([p.baseline], state.guildActivePhases, state.visiblePhases);
 
             p.totalWaves = p.current.totalWaves - p.baseline.totalWaves;
+            p.totalUnits = p.current.totalUnits - p.baseline.totalUnits;
             p.totalScore = p.current.totalScore - p.baseline.totalScore;
             p.totalDeployed = p.current.totalDeployed - p.baseline.totalDeployed;
             p.totalUndeployed = p.current.totalUndeployed - p.baseline.totalUndeployed;
