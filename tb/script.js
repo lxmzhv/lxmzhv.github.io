@@ -532,6 +532,28 @@ function getWaveCountGroupInfo(waves_count) {
     return { className, tooltipText };
 }
 
+function getUnitsInfo(units) {
+    let className = '';
+    let tooltipText = `Units: ${formatNumber(units)}`;
+    if (units >= 6) {
+        className = 'group-green';
+        tooltipText += '\nStatus: Excellent';
+    } else if (units >= 3) {
+        className = 'group-lightgreen';
+        tooltipText += '\nStatus: Good';
+    } else if (units === 2) {
+        className = 'group-yellow';
+        tooltipText += '\nStatus: Average';
+    } else if (units === 1) {
+        className = 'group-orange';
+        tooltipText += '\nStatus: Poor';
+    } else if (units === 0) {
+        className = 'group-red';
+        tooltipText += '\nStatus: Very Poor';
+    }
+    return { className, tooltipText };
+}
+
 function getDeployedInfo(deployed, gp) {
     if (gp === 0) return { className: '', tooltipText: '' };
     const ratio = deployed / gp;
@@ -767,9 +789,11 @@ function renderDashboard(playerData, guildActivePhases) {
                     const diff = totals.current.totalUnits - totals.baseline.totalUnits;
                     const tooltip = `Current: ${totals.current.totalUnits}\nBaseline: ${totals.baseline.totalUnits}`;
                     const diffStr = formatDiff(diff, 0);
-                    const unitsClass = totals.current.totalUnits === 0 ? 'group-red' : '';
-                    const diffColor = getDiffColor(diff, unitsClass);
-                    html += `<td class="${unitsClass}" title="${tooltip}"><b>${totals.current.totalUnits} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
+                    const normalizedUnits = totals.current.totalUnits / (visiblePhasesCount * playersCount);
+                    const unitsInfo = getUnitsInfo(normalizedUnits);
+                    const diffColor = getDiffColor(diff, unitsInfo.className);
+                    const finalTooltip = `${tooltip}\n${unitsInfo.tooltipText}`;
+                    html += `<td class="${unitsInfo.className}" title="${finalTooltip}"><b>${totals.current.totalUnits} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
                 if (showScore) {
                     const diff = totals.current.totalScore - totals.baseline.totalScore;
@@ -829,9 +853,10 @@ function renderDashboard(playerData, guildActivePhases) {
                         const diff = totals.current.phases[i].units - totals.baseline.phases[i].units;
                         const tooltip = `Current: ${totals.current.phases[i].units}\nBaseline: ${totals.baseline.phases[i].units}`;
                         const diffStr = formatDiff(diff, 0);
-                        const unitsClass = totals.current.phases[i].units === 0 ? 'group-red' : '';
-                        const diffColor = getDiffColor(diff, unitsClass);
-                        html += `<td class="${unitsClass}" title="${tooltip}"><b>${totals.current.phases[i].units} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
+                        const unitsInfo = getUnitsInfo(totals.current.phases[i].units / playersCount);
+                        const diffColor = getDiffColor(diff, unitsInfo.className);
+                        const finalTooltip = `${tooltip}\n${unitsInfo.tooltipText}`;
+                        html += `<td class="${unitsInfo.className}" title="${finalTooltip}"><b>${totals.current.phases[i].units} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                     }
                     if (showScore) {
                         const diff = totals.current.phases[i].score - totals.baseline.phases[i].score;
@@ -945,8 +970,9 @@ function renderDashboard(playerData, guildActivePhases) {
                     html += `<td class="${waveInfo.className}" title="${waveInfo.tooltipText}"><b>${totals.totalWaves}</b></td>`;
                 }
                 if (showUnits) {
-                    const unitsClass = totals.totalUnits === 0 ? 'group-red' : '';
-                    html += `<td class="${unitsClass}"><b>${totals.totalUnits}</b></td>`;
+                    const normalizedUnits = totals.totalUnits / (visiblePhasesCount * playersCount);
+                    const unitsInfo = getUnitsInfo(normalizedUnits);
+                    html += `<td class="${unitsInfo.className}" title="${unitsInfo.tooltipText}"><b>${totals.totalUnits}</b></td>`;
                 }
                 if (showScore) {
                     const avgGP = totals.totalGalacticPower / playersCount;
@@ -980,8 +1006,8 @@ function renderDashboard(playerData, guildActivePhases) {
                         html += `<td class="${waveInfo.className}" title="${waveInfo.tooltipText}"><b>${phase.waves}</b></td>`;
                     }
                     if (showUnits) {
-                        const unitsClass = phase.units === 0 ? 'group-red' : '';
-                        html += `<td class="${unitsClass}"><b>${phase.units}</b></td>`;
+                        const unitsInfo = getUnitsInfo(phase.units / playersCount);
+                        html += `<td class="${unitsInfo.className}" title="${unitsInfo.tooltipText}"><b>${phase.units}</b></td>`;
                     }
                     if (showScore) {
                         const avgGP = totals.totalGalacticPower / playersCount;
@@ -1071,7 +1097,7 @@ function renderDashboard(playerData, guildActivePhases) {
 
             if (showTotals) {
                 if (showWaves) html += renderCell(p.totalWaves, p.current?.totalWaves, p.baseline?.totalWaves, getWaveCountGroupInfo, p.normalizedTotalWaves);
-                if (showUnits) html += renderCell(p.totalUnits, p.current?.totalUnits, p.baseline?.totalUnits, (u) => ({ className: u === 0 ? 'group-red' : '', tooltipText: '' }));
+                if (showUnits) html += renderCell(p.totalUnits, p.current?.totalUnits, p.baseline?.totalUnits, getUnitsInfo);
                 if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', totalTargetMissionScore + p.galacticPower * Math.max(state.visiblePhases.size, 1));
                 if (showMissionsScore) html += renderScoreCell(p.totalMissionsScore, p.current?.totalMissionsScore, p.baseline?.totalMissionsScore, getScoreInfo, 'Missions Score', totalTargetMissionScore);
                 if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
@@ -1085,7 +1111,7 @@ function renderDashboard(playerData, guildActivePhases) {
                     const baselinePhase = p.baseline?.phases[i];
                     
                     if (showWaves) html += renderCell(phase.waves, currentPhase?.waves, baselinePhase?.waves, getWaveCountGroupInfo);
-                    if (showUnits) html += renderCell(phase.units, currentPhase?.units, baselinePhase?.units, (u) => ({ className: u === 0 ? 'group-red' : '', tooltipText: '' }));
+                    if (showUnits) html += renderCell(phase.units, currentPhase?.units, baselinePhase?.units, getUnitsInfo);
                     if (showScore) html += renderScoreCell(phase.score, currentPhase?.score, baselinePhase?.score, getScoreInfo, 'Score', (TargetMissionScores[i] || 0) + p.galacticPower);
                     if (showMissionsScore) html += renderScoreCell(phase.missionsScore, currentPhase?.missionsScore, baselinePhase?.missionsScore, getScoreInfo, 'Missions Score', TargetMissionScores[i] || 0);
                     if (showDeployed) html += renderScoreCell(phase.deployed, currentPhase?.deployed, baselinePhase?.deployed, getDeployedInfo, p.galacticPower);
