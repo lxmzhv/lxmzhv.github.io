@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return '#7ACC7A'; // Green
     }
 
-    fetch('../cache/guild_LVmIG5W_RSCmvZYOxdyH_Q.json')
+    fetch('cache/guild_LVmIG5W_RSCmvZYOxdyH_Q.json')
         .then(response => response.json())
         .then(guildData => {
             const guildInfoDiv = document.getElementById('guild-info');
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const platoonPromises = [];
         for (let i = 1; i <= 6; i++) {
             platoonPromises.push(
-                fetch(`../data/tb/hatori/platoons/wookieebot-ops-P${i}.json`)
+                fetch(`data/tb/hatori/platoons/wookieebot-ops-P${i}.json`)
                     .then(response => {
                         if (!response.ok) return null;
                         return response.json();
@@ -678,11 +678,32 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tbGroupHeaderPlaceholder) tbGroupHeaderPlaceholder.remove();
 
         if (tbColumns.length > 0) {
-            const tbGroupHeader = document.createElement('th');
-            tbGroupHeader.colSpan = tbColumns.length;
-            tbGroupHeader.className = 'separator-left separator-right col-tb';
-            tbGroupHeader.textContent = 'Territory Battle Platoons';
-            headerRow1.appendChild(tbGroupHeader);
+            const columnsByPhase = {};
+            tbColumns.forEach(col => {
+                if (!columnsByPhase[col.phase]) {
+                    columnsByPhase[col.phase] = [];
+                }
+                columnsByPhase[col.phase].push(col);
+            });
+
+            const sortedPhases = Object.keys(columnsByPhase).sort((a, b) => parseInt(a) - parseInt(b));
+
+            sortedPhases.forEach((phase, index) => {
+                const phaseColumns = columnsByPhase[phase];
+                const tbGroupHeader = document.createElement('th');
+                tbGroupHeader.colSpan = phaseColumns.length;
+                tbGroupHeader.className = 'col-tb';
+                tbGroupHeader.textContent = `TB Platoons - Phase ${phase}`;
+
+                if (index === 0) {
+                    tbGroupHeader.classList.add('separator-left');
+                }
+
+                if (index === sortedPhases.length - 1) {
+                    tbGroupHeader.classList.add('separator-right');
+                }
+                headerRow1.appendChild(tbGroupHeader);
+            });
 
             tbColumns.forEach((col, idx) => {
                 const charHeader = document.createElement('th');
