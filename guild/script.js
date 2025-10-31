@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return '#7ACC7A'; // Green
     }
 
-    fetch('cache/guild_LVmIG5W_RSCmvZYOxdyH_Q.json')
+    fetch('../cache/guild_LVmIG5W_RSCmvZYOxdyH_Q.json')
         .then(response => response.json())
         .then(guildData => {
             const guildInfoDiv = document.getElementById('guild-info');
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const platoonPromises = [];
         for (let i = 1; i <= 6; i++) {
             platoonPromises.push(
-                fetch(`data/tb/hatori/platoons/wookieebot-ops-P${i}.json`)
+                fetch(`../data/tb/hatori/platoons/wookieebot-ops-P${i}.json`)
                     .then(response => {
                         if (!response.ok) return null;
                         return response.json();
