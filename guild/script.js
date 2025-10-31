@@ -58,10 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         "jedimasterkenobi": "JMK", "lordvader": "LV", "glleia": "Leia", "jabbathehutt": "Jabba",
         "glahsokatano": "Ahsoka", "glhondo": "Hondo", "capitalleviathan": "Levi", "capitalprofundity": "Prof",
         "capitalexecutor": "Exec", "punishingone": "PO", "marauder": "Marauder", "badbatchhunter": "Hunter",
-        "badbatchtech": "Tech", "badbatchwrecker": "Wrecker", "razorcrest": "Razor", "tieinterceptor": "TIE Int",
-        "commanderahsoka": "CAT", "maul": "Maul", "bobafettscion": "Boba", "darthmalgus": "Malgus",
+        "badbatchtech": "Tech", "badbatchwrecker": "Wrecker", "tieinterceptor": "TIE Int",
+        "commanderahsoka": "CAT", "mauls7": "Maul", "maul": "Darth Maul", "bobafettscion": "Boba", "darthmalgus": "Malgus",
         "trench": "Trench", "darthbane": "Bane", "queenamidala": "Amidala", "luthenrael": "Luthen",
         "ezraexile": "Ezra", "darkrey": "DRey", "sm33": "SM33", "jocastanu": "Jocasta", "mazkanata": "Maz",
+        "bensolo": "Ben Solo", "taronmalicos": "Taron Malicos", "moffgideons3": "Moff Gideon S3",
         "jediknightluke": "JKL", "generalskywalker": "GAS", "wampa": "Wampa", "hermityoda": "Hermit",
         "darthrevan": "DRevan", "bastilashanfallen": "BSF", "darthmalak": "Malak", "kiadimundi": "KAM",
         "monmothma": "Mon Mothma", "chewbacca": "Chewie", "c3po": "C-3PO", "padmeamidala": "Padme",
@@ -184,8 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pilots = Object.keys(pilotsMap);
 
     const conquestCharactersSet = new Set([
-        "commanderahsoka",
-        "maul",
+        "mauls7",
         "bobafettscion",
         "darthmalgus",
         "trench",
@@ -197,18 +197,22 @@ document.addEventListener('DOMContentLoaded', () => {
         "sm33",
         "jocastanu",
         "mazkanata",
+        "bensolo",
+        "taronmalicos",
+        "moffgideons3",
     ]);
     const conquestCharacters = [...conquestCharactersSet];
 
     const conquestShipsMap = {
-        "razorcrest": "Razor",
-        "tieinterceptor": " TIE Int"
+        "scythe": "Scythe",
+        "furyclassinterceptor": "Fury"
     };
     const conquestShips = Object.keys(conquestShipsMap);
 
     const conquestUnitsOrder = [
-        "razorcrest", "commanderahsoka", "maul", "bobafettscion", "tieinterceptor",
-        "darthmalgus", "trench", "darthbane", "queenamidala", "luthenrael",
+        "mauls7", "bobafettscion", "scythe",
+        "darthmalgus", "bensolo", "furyclassinterceptor", "taronmalicos", "moffgideons3",
+        "trench", "darthbane", "queenamidala", "luthenrael",
         "ezraexile", "darkrey", "sm33", "jocastanu", "mazkanata"
     ];
 
