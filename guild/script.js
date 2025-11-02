@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "glahsokatano": "Ahsoka", "glhondo": "Hondo", "capitalleviathan": "Levi", "capitalprofundity": "Prof",
         "capitalexecutor": "Exec", "punishingone": "PO", "marauder": "Marauder", "badbatchhunter": "Hunter",
         "badbatchtech": "Tech", "badbatchwrecker": "Wrecker", "tieinterceptor": "TIE Int",
-        "commanderahsoka": "CAT", "mauls7": "Maul", "maul": "Darth Maul", "bobafettscion": "Boba", "darthmalgus": "Malgus",
+        "commanderahsoka": "CAT", "mauls7": "Maul", "maul": "Darth Maul", "bobafettscion": "Boba Fett, Scion of Jango", "darthmalgus": "Malgus",
         "trench": "Trench", "darthbane": "Bane", "queenamidala": "Amidala", "luthenrael": "Luthen",
         "ezraexile": "Ezra", "darkrey": "DRey", "sm33": "SM33", "jocastanu": "Jocasta", "mazkanata": "Maz",
         "bensolo": "Ben Solo", "taronmalicos": "Taron Malicos", "moffgideons3": "Moff Gideon S3",
@@ -563,6 +563,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return playerInfo;
             });
 
+            assignPlatoons(players, planetStats);
+
             const savedSortKey = localStorage.getItem('sortKey') || 'memberLevel';
             const savedSortDirection = localStorage.getItem('sortDirection') || 'asc';
 
@@ -574,7 +576,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 sortedHeader.dataset.direction = savedSortDirection;
             }
 
-            renderDebugTable();
+            const savedDebugSortKey = localStorage.getItem('debugSortKey') || 'round';
+            const savedDebugSortDirection = localStorage.getItem('debugSortDirection') || 'asc';
+            sortAndRenderDebug(savedDebugSortKey, savedDebugSortDirection);
+            const debugTable = document.getElementById('debug-table');
+            const sortedDebugHeader = debugTable.querySelector(`th[data-sort="${savedDebugSortKey}"]`);
+            if (sortedDebugHeader) {
+                sortedDebugHeader.classList.add(savedDebugSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+                sortedDebugHeader.dataset.direction = savedDebugSortDirection;
+            }
         })
         .catch(error => {
             console.error('Error loading guild data:', error);
@@ -695,6 +705,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const debugTable = document.getElementById('debug-table');
+    debugTable.querySelectorAll('th[data-sort]').forEach(headerCell => {
+        headerCell.addEventListener('click', () => {
+            const sortKey = headerCell.dataset.sort;
+            const currentDirection = headerCell.dataset.direction || 'desc';
+            const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
+
+            debugTable.querySelectorAll('th[data-sort]').forEach(th => {
+                delete th.dataset.direction;
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            headerCell.dataset.direction = newDirection;
+            headerCell.classList.add(newDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+
+            sortAndRenderDebug(sortKey, newDirection);
+        });
+    });
+
     function sortAndRender(key, direction) {
         localStorage.setItem('sortKey', key);
         localStorage.setItem('sortDirection', direction);
@@ -764,6 +793,201 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(sortedData);
     }
 
+    function assignPlatoons(players, planetStats) {
+        // Loop through each round from 1 to 6 to perform assignments independently.
+        for (let round = 1; round <= 6; round++) {
+            const assignedUnitsThisRound = new Set(); // Tracks "playerId-unitId" for this round only.
+
+            const roundPlanets = Object.keys(planetStats)
+                .filter(planetName => planetStats[planetName].round === round)
+                .sort((a, b) => {
+                    const statsA = planetStats[a];
+                    const statsB = planetStats[b];
+                    const relicA = parseInt(statsA.relic.substring(1));
+                    const relicB = parseInt(statsB.relic.substring(1));
+                    if (relicA !== relicB) {
+                        return relicB - relicA;
+                    }
+                    return a.localeCompare(b);
+                });
+
+            roundPlanets.forEach(planetName => {
+                const planet = planetStats[planetName];
+                const relicLevel = parseInt(planet.relic.substring(1));
+
+                planet.units.forEach(unit => {
+                    unit.assignedPlayerName = null;
+                    const isShip = shipBaseIds.has(unit.unitId);
+
+                    for (const player of players) {
+                        const assignmentKey = `${player.playerId}-${unit.unitId}`;
+                        if (assignedUnitsThisRound.has(assignmentKey)) continue;
+
+                        if (isShip) {
+                            const shipInfo = getShipInfo(player, unit.unitId);
+                            if (shipInfo.rarity === 7) {
+                                unit.assignedPlayerName = player.playerName;
+                                assignedUnitsThisRound.add(assignmentKey);
+                                break;
+                            }
+                        } else {
+                            const unitInfo = getPlayerUnitInfo(player, unit.unitId);
+                            if (unitInfo.type === 3 && unitInfo.level >= relicLevel) {
+                                unit.assignedPlayerName = player.playerName;
+                                assignedUnitsThisRound.add(assignmentKey);
+                                break;
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Find Candidates for missing units
+            const candidateUnitsThisRound = new Set();
+            roundPlanets.forEach(planetName => {
+                const planet = planetStats[planetName];
+                planet.candidates = [];
+                const missingUnits = planet.units.filter(u => !u.assignedPlayerName);
+                const requiredRelic = parseInt(planet.relic.substring(1));
+
+                missingUnits.forEach(missingUnit => {
+                    let bestCandidate = null;
+                    const isShip = shipBaseIds.has(missingUnit.unitId);
+
+                    if (isShip) {
+                        let bestShipCandidate = { player: null, rarity: 0, display: '' };
+                        for (const player of players) {
+                            const candidateKey = `${player.playerId}-${missingUnit.unitId}`;
+                            if (assignedUnitsThisRound.has(candidateKey) || candidateUnitsThisRound.has(candidateKey)) continue;
+
+                            const shipInfo = getShipInfo(player, missingUnit.unitId);
+                            if (shipInfo.rarity > 0 && shipInfo.rarity > bestShipCandidate.rarity) {
+                                bestShipCandidate = { player: player, rarity: shipInfo.rarity, display: shipInfo.display };
+                            }
+                        }
+                        if (bestShipCandidate.player) {
+                            bestCandidate = {
+                                unitName: missingUnit.name,
+                                required: '7*',
+                                candidatePlayer: bestShipCandidate.player.playerName,
+                                candidateUnitInfo: bestShipCandidate.display
+                            };
+                            candidateUnitsThisRound.add(`${bestShipCandidate.player.playerId}-${missingUnit.unitId}`);
+                        }
+                    } else { // Character
+                        let bestRelicCandidate = { player: null, level: -1, display: '' };
+                        let bestGearCandidate = { player: null, level: 0, display: '' };
+
+                        for (const player of players) {
+                            const candidateKey = `${player.playerId}-${missingUnit.unitId}`;
+                            if (assignedUnitsThisRound.has(candidateKey) || candidateUnitsThisRound.has(candidateKey)) continue;
+
+                            const unitInfo = getPlayerUnitInfo(player, missingUnit.unitId);
+                            if (unitInfo.type === 3 && unitInfo.level < requiredRelic) {
+                                if (unitInfo.level > bestRelicCandidate.level) {
+                                    bestRelicCandidate = { player: player, level: unitInfo.level, display: unitInfo.display };
+                                }
+                            } else if (unitInfo.type === 2) {
+                                if (unitInfo.level > bestGearCandidate.level) {
+                                    bestGearCandidate = { player: player, level: unitInfo.level, display: unitInfo.display };
+                                }
+                            }
+                        }
+
+                        let finalCandidatePlayer = null;
+                        let finalCandidateInfo = '';
+                        if (bestRelicCandidate.player) {
+                            finalCandidatePlayer = bestRelicCandidate.player;
+                            finalCandidateInfo = bestRelicCandidate.display;
+                        } else if (bestGearCandidate.player) {
+                            finalCandidatePlayer = bestGearCandidate.player;
+                            finalCandidateInfo = bestGearCandidate.display;
+                        }
+
+                        if (finalCandidatePlayer) {
+                            bestCandidate = {
+                                unitName: missingUnit.name,
+                                required: `R${requiredRelic}`,
+                                candidatePlayer: finalCandidatePlayer.playerName,
+                                candidateUnitInfo: finalCandidateInfo
+                            };
+                            candidateUnitsThisRound.add(`${finalCandidatePlayer.playerId}-${missingUnit.unitId}`);
+                        }
+                    }
+
+                    if (bestCandidate) {
+                        planet.candidates.push(bestCandidate);
+                    } else {
+                        planet.candidates.push({
+                            unitName: missingUnit.name,
+                            required: isShip ? '7*' : `R${requiredRelic}`,
+                            candidatePlayer: 'None',
+                            candidateUnitInfo: '-'
+                        });
+                    }
+                });
+            });
+        }
+
+        // After all rounds, calculate final missing and candidate counts
+        for (const planetName in planetStats) {
+            const planet = planetStats[planetName];
+            planet.missingCount = planet.units.filter(u => !u.assignedPlayerName).length;
+            planet.candidateCount = planet.candidates ? planet.candidates.filter(c => c.candidatePlayer !== 'None').length : 0;
+        }
+    }
+
+    function sortAndRenderDebug(key, direction) {
+        localStorage.setItem('debugSortKey', key);
+        localStorage.setItem('debugSortDirection', direction);
+
+        const sortedPlanets = Object.keys(planetStats).sort((a, b) => {
+            const statsA = planetStats[a];
+            const statsB = planetStats[b];
+
+            let valA, valB;
+
+            if (key === 'planet') {
+                valA = a;
+                valB = b;
+            } else if (key === 'unitCount') {
+                valA = statsA.units.length;
+                valB = statsB.units.length;
+            } else if (key === 'missing') {
+                valA = statsA.missingCount || 0;
+                valB = statsB.missingCount || 0;
+            } else if (key === 'candidates') {
+                valA = statsA.candidateCount || 0;
+                valB = statsB.candidateCount || 0;
+            } else if (key === 'relic') {
+                valA = parseInt(statsA.relic.substring(1));
+                valB = parseInt(statsB.relic.substring(1));
+            } else {
+                valA = statsA[key];
+                valB = statsB[key];
+            }
+
+            if (typeof valA === 'number') {
+                if (valA < valB) return direction === 'asc' ? -1 : 1;
+                if (valA > valB) return direction === 'asc' ? 1 : -1;
+            } else {
+                if (String(valA).toLowerCase() < String(valB).toLowerCase()) {
+                    return direction === 'asc' ? -1 : 1;
+                }
+                if (String(valA).toLowerCase() > String(valB).toLowerCase()) {
+                    return direction === 'asc' ? 1 : -1;
+                }
+            }
+
+            if (a.toLowerCase() < b.toLowerCase()) return -1;
+            if (a.toLowerCase() > b.toLowerCase()) return 1;
+
+            return 0;
+        });
+
+        renderDebugTable(sortedPlanets);
+    }
+
     function showRareCharsPopup(player, relicLevel) {
         let charsToList = [];
         const uniqueCharNames = new Set();
@@ -814,25 +1038,27 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
-    function renderDebugTable() {
+    function renderDebugTable(sortedPlanets) {
         const debugTbody = document.getElementById('debug-table').querySelector('tbody');
         debugTbody.innerHTML = '';
 
-        const sortedPlanets = Object.keys(planetStats).sort((a, b) => {
-            const statsA = planetStats[a];
-            const statsB = planetStats[b];
-            if (statsA.round !== statsB.round) {
-                return statsA.round - statsB.round;
-            }
-            return a.localeCompare(b);
-        });
+        if (!sortedPlanets) {
+            sortedPlanets = Object.keys(planetStats).sort((a, b) => {
+                const statsA = planetStats[a];
+                const statsB = planetStats[b];
+                if (statsA.round !== statsB.round) {
+                    return statsA.round - statsB.round;
+                }
+                return a.localeCompare(b);
+            });
+        }
 
         sortedPlanets.forEach(planetName => {
             const stats = planetStats[planetName];
             const row = debugTbody.insertRow();
             row.insertCell().textContent = stats.round;
-            row.insertCell().textContent = stats.phase;
             row.insertCell().textContent = stats.alignment;
+            row.insertCell().textContent = stats.phase;
             row.insertCell().textContent = planetName;
             row.insertCell().textContent = stats.relic;
 
@@ -843,7 +1069,71 @@ document.addEventListener('DOMContentLoaded', () => {
             countCell.addEventListener('click', () => {
                 showPlanetUnitsPopup(planetName, stats);
             });
+
+            const missingCell = row.insertCell();
+            const missingCount = stats.missingCount || 0;
+            missingCell.textContent = missingCount;
+
+            if (missingCount > 0) {
+                missingCell.style.color = 'red';
+                missingCell.style.cursor = 'pointer';
+                missingCell.style.textDecoration = 'underline';
+                missingCell.addEventListener('click', () => {
+                    const missingUnits = stats.units.filter(u => !u.assignedPlayerName);
+                    showMissingUnitsPopup(planetName, stats, missingUnits);
+                });
+            }
+
+            const candidateCell = row.insertCell();
+            const candidateCount = stats.candidateCount || 0;
+            candidateCell.textContent = candidateCount;
+            if (candidateCount > 0) {
+                candidateCell.style.color = 'orange';
+                candidateCell.style.cursor = 'pointer';
+                candidateCell.style.textDecoration = 'underline';
+                candidateCell.addEventListener('click', () => {
+                    showCandidatesPopup(planetName, stats);
+                });
+            }
         });
+    }
+
+    function showCandidatesPopup(planetName, stats) {
+        let popupContent = `<h2>${planetName} - Candidates for Missing Units</h2>`;
+        if (stats.candidates && stats.candidates.length > 0) {
+            popupContent += '<ul>';
+            stats.candidates.sort((a, b) => a.unitName.localeCompare(b.name));
+            stats.candidates.forEach(candidate => {
+                let candidateText;
+                if (candidate.candidatePlayer === 'None') {
+                    candidateText = `<span style="color: red;">No candidate available</span>`;
+                } else {
+                    candidateText = `${candidate.candidatePlayer} (${candidate.candidateUnitInfo})`;
+                }
+                popupContent += `<li><b>${candidate.unitName}</b> (Req: ${candidate.required}): ${candidateText}</li>`;
+            });
+            popupContent += '</ul>';
+        } else {
+            popupContent += '<p>No candidates found for missing units.</p>';
+        }
+        modalBody.innerHTML = popupContent;
+        modal.style.display = 'block';
+    }
+
+    function showMissingUnitsPopup(planetName, stats, missingUnits) {
+        let popupContent = `<h2>${planetName} - Missing Units (${stats.relic})</h2>`;
+        if (missingUnits.length > 0) {
+            popupContent += '<ul>';
+            missingUnits.sort((a, b) => a.name.localeCompare(b.name));
+            missingUnits.forEach(unit => {
+                popupContent += `<li>${unit.name}</li>`;
+            });
+            popupContent += '</ul>';
+        } else {
+            popupContent += '<p>No missing units for this planet.</p>';
+        }
+        modalBody.innerHTML = popupContent;
+        modal.style.display = 'block';
     }
 
     function showPlanetUnitsPopup(planetName, stats) {
@@ -852,7 +1142,11 @@ document.addEventListener('DOMContentLoaded', () => {
             popupContent += '<ul>';
             stats.units.sort((a, b) => a.name.localeCompare(b.name));
             stats.units.forEach(unit => {
-                popupContent += `<li>${unit.name}</li>`;
+                let assignmentText = ` - <span style="color: red;">Missing</span>`;
+                if (unit.assignedPlayerName) {
+                    assignmentText = ` - ${unit.assignedPlayerName}`;
+                }
+                popupContent += `<li>${unit.name} ${stats.relic}${assignmentText}</li>`;
             });
             popupContent += '</ul>';
         } else {
