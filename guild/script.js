@@ -582,13 +582,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     function loadPlatoonData() {
-        const planetToRoundMap = {
+        // [plan 1]
+        // Round 1: DS 1 Mustafar, Mix 1 Corellia, LS 1 Coruscant
+        // Round 2: DS 2 Geonosis, Mix 2 Felucia, LS 2 Bracca
+        // Round 3: DS 3 Dathomir, Mix 3 Tatooine, LS 3 Kashyyyk, LS 3 Zeffo
+        // Round 4: Mix 4 Kessel, LS 4 Lothal, Mix 4 Mandalor
+        // Round 5: DS 4 Haven-Class Medical Station, Mix 5 Vandor, LS 5 Ring of Cafrene
+        // Round 6: LS 6 Scarif
+        /*const planetToRoundMap = {
             'mustafar': 1, 'corellia': 1, 'coruscant': 1,
             'geonosis': 2, 'felucia': 2, 'bracca': 2,
             'dathomir': 3, 'tatooine': 3, 'kashyyyk': 3, 'zeffo': 3,
             'kessel': 4, 'lothal': 4, 'mandalor': 4,
             'haven-class medical station': 5, 'vandor': 5, 'ring of kafrene': 5,
             'scarif': 6
+        };*/
+        // [plan 2]
+        // Round 1: DS 1 Mustafar, Mix 1 Corellia, LS 1 Coruscant
+        // Round 2: DS 2 Geonosis, Mix 2 Felucia, LS 2 Bracca
+        // Round 3: DS 3 Dathomir, Mix 3 Tatooine, LS 3 Kashyyyk, LS 3 Zeffo
+        // Round 4: DS 4 Haven-Class Medical Station, Mix 4 Kessel, LS 4 Lothal, Mix 4 Mandalor
+        // Round 5: Mix 5 Vandor, LS 5 Ring of Cafrene
+        // Round 6: DS 5 Malachor, LS 6 Scarif
+        const planetToRoundMap = {
+            'mustafar': 1, 'corellia': 1, 'coruscant': 1,
+            'geonosis': 2, 'felucia': 2, 'bracca': 2,
+            'dathomir': 3, 'tatooine': 3, 'kashyyyk': 3, 'zeffo': 3,
+            'kessel': 4, 'lothal': 4, 'mandalor': 4,
+            'haven-class medical station': 4, 'vandor': 5, 'ring of kafrene': 5,
+            'scarif': 6, 'malachor': 6
         };
 
         const phaseToRelic = { 1: 5, 2: 6, 3: 7, 4: 8, 5: 9, 6: 9 };
