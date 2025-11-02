@@ -95,6 +95,7 @@
             <label style="margin-left: 10px;"><input type="checkbox" data-group="conquest" checked> Conquest</label>
             <label style="margin-left: 10px;"><input type="checkbox" data-group="tb"> TB Platoons</label>
             <label style="margin-left: 10px;"><input type="checkbox" data-group="tb-rare" checked> TB - Rare Chars</label>
+            <label style="margin-left: 10px; border-left: 2px solid #ccc; padding-left: 10px;"><input type="checkbox" data-group="debug"> Show Debug Table</label>
         </div>
         <div id="progress-container" style="display: none;">
             <div id="progress-bar">0%</div>
@@ -166,6 +167,25 @@
                 </table>
             </div>
         </div>
+    </div>
+
+    <div id="debug-container" class="col-debug" style="margin: 2em auto; max-width: 95%; background: white; padding: 1em; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h2>Territory Battle - Platoon Requirements Debug</h2>
+        <table id="debug-table" style="width: 50%; margin-top: 1em;">
+            <thead>
+                <tr>
+                    <th>Round</th>
+                    <th>Planet Phase</th>
+                    <th>Alignment</th>
+                    <th>Planet</th>
+                    <th>Relic Req.</th>
+                    <th>Unit Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Debug data will be inserted here -->
+            </tbody>
+        </table>
     </div>
 
     <div id="rare-char-modal" class="modal">

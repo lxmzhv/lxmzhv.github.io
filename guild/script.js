@@ -6,6 +6,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('rare-char-modal');
     const modalBody = document.getElementById('modal-body');
     const closeButton = document.querySelector('.close-button');
+    const columnCheckboxes = document.querySelectorAll('#column-controls input[type="checkbox"]');
+
+    // Load checkbox states from localStorage
+    function loadCheckboxStates() {
+        columnCheckboxes.forEach(checkbox => {
+            const group = checkbox.dataset.group;
+            const savedState = localStorage.getItem(`checkbox-${group}`);
+            if (savedState !== null) {
+                checkbox.checked = savedState === 'true';
+            }
+            toggleColumnGroup(group, checkbox.checked);
+        });
+    }
+
+    // Save checkbox states to localStorage
+    function saveCheckboxStates() {
+        columnCheckboxes.forEach(checkbox => {
+            const group = checkbox.dataset.group;
+            localStorage.setItem(`checkbox-${group}`, checkbox.checked);
+        });
+    }
+
+    function toggleColumnGroup(group, show) {
+        document.querySelectorAll(`.col-${group}`).forEach(el => {
+            el.style.display = show ? '' : 'none';
+        });
+    }
+
+    loadCheckboxStates(); // Load states on page load
 
     if(closeButton) {
         closeButton.onclick = function() {
@@ -21,7 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let players = [];
     let selectedPlayerId = null;
+    selectedPlayerId = localStorage.getItem('selectedPlayerId');
     let tbColumns = [];
+    let allPlatoonRequirements = [];
+    let planetStats = {};
 
     const platoonToRosterIdMap = {
         'arc170clonesergeant': 'clonesergeantphasei'
@@ -86,6 +118,38 @@ document.addEventListener('DOMContentLoaded', () => {
         return lowercasedUnitId.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     }
 
+    function getPlayerUnitInfo(player, unitId) {
+        if (player.roster === undefined) {
+            return { display: '', type: 0, level: 0, rarity: 0 };
+        }
+
+        if (player.roster === null || !player.roster[unitId]) {
+            return { display: '-', type: 1, level: 0, rarity: 0 };
+        }
+
+        const unit = player.roster[unitId];
+
+        let display, type, level, rarity;
+
+        rarity = unit.currentRarity || 0;
+
+        if (unit.relic && unit.relic.currentTier >= 2) {
+            type = 3; // 'R'
+            level = unit.relic.currentTier - 2;
+            display = `R${level}`;
+        } else {
+            type = 2; // 'G'
+            level = unit.currentTier;
+            display = `G${level}`;
+        }
+
+        if (rarity > 0 && rarity < 7) {
+            display += `, ${rarity}*`;
+        }
+
+        return { display, type, level, rarity };
+    }
+
     function calculateGuildAvailability(players, requirements) {
         const availability = {};
         Object.values(requirements).forEach(phaseReqs => {
@@ -104,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     count++;
                                 }
                             } else {
-                                const unitInfo = getGLInfo(player, unitId);
+                                const unitInfo = getPlayerUnitInfo(player, unitId);
                                 if (unitInfo.type === 3 && unitInfo.level >= level) {
                                     count++;
                                 }
@@ -231,38 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return shipInfo;
     }
 
-    function getGLInfo(player, glName) {
-        let glInfo;
-        if (player.roster === undefined) {
-            glInfo = { display: '', type: 0, level: 0, rarity: 7 }; // No player file
-        } else if (player.roster === null || !player.roster[glName]) {
-            glInfo = { display: '-', type: 1, level: 0, rarity: 7 }; // Player file, but no GL
-        } else {
-            const gl = player.roster[glName];
-            let display, type, level, rarity;
-
-            rarity = gl.currentRarity || 7;
-
-            if (gl.relic && gl.relic.currentTier >= 2) {
-                type = 3; // 'R'
-                level = gl.relic.currentTier - 2;
-                display = `R${level}`;
-            } else {
-                type = 2; // 'G'
-                level = gl.currentTier;
-                display = `G${level}`;
-            }
-
-            if (rarity > 0 && rarity < 7) {
-                display += `, ${rarity}*`;
-            }
-
-            glInfo = { display, type, level, rarity };
-        }
-        return glInfo;
-    }
-
-    function getShipBackgroundColor(shipInfo) {
+    function getShipBGColor(shipInfo) {
         if (shipInfo.type === 0) return 'black'; // No info
         if (shipInfo.type === 1) return '#FF9999'; // No ship
         if (shipInfo.type === 2) {
@@ -284,14 +317,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return ''; // Default
     }
 
-    function getGLBackgroundColor(glInfo) {
-        if (glInfo.type === 0) return 'black'; // No info
-        if (glInfo.type === 1) return '#FF9999'; // No legend (brighter red)
-        if (glInfo.type === 2) return 'orange'; // G level (less than R0)
-        if (glInfo.type === 3) {
-            if (glInfo.level < 7) return 'yellow'; // R0-R6
-            if (glInfo.level < 9) return 'lightgreen'; // R7-R8
-            if (glInfo.level === 9) return '#7ACC7A'; // R9 (slightly darker green)
+    function getUnitBGColor(unitInfo) {
+        if (unitInfo.type === 0) return 'black'; // No info
+        if (unitInfo.type === 1) return '#FF9999'; // No legend (brighter red)
+        if (unitInfo.type === 2) return 'orange'; // G level (less than R0)
+        if (unitInfo.type === 3) {
+            if (unitInfo.level < 7) return 'yellow'; // R0-R6
+            if (unitInfo.level < 9) return 'lightgreen'; // R7-R8
+            if (unitInfo.level === 9) return '#7ACC7A'; // R9 (slightly darker green)
         }
         return ''; // Default or unknown
     }
@@ -396,8 +429,82 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(([allPlayerData, platoonRequirements]) => {
             progressContainer.style.display = 'none';
 
-            const guildAvailability = calculateGuildAvailability(allPlayerData, platoonRequirements);
-            tbColumns = determineTbColumns(platoonRequirements, guildAvailability);
+            // TB Rare Characters Calculation
+            function calculateGuildWideAvailability(players, platoonCharIds) {
+                const availability = {};
+                platoonCharIds.forEach(unitId => {
+                    availability[unitId] = { 5: 0, 6: 0, 7: 0, 8: 0, 9: 0 };
+                    players.forEach(player => {
+                        const unitInfo = getPlayerUnitInfo(player, unitId);
+                        if (unitInfo.type === 3 && unitInfo.rarity === 7) {
+                            if (unitInfo.level >= 5) availability[unitId][5]++;
+                            if (unitInfo.level >= 6) availability[unitId][6]++;
+                            if (unitInfo.level >= 7) availability[unitId][7]++;
+                            if (unitInfo.level >= 8) availability[unitId][8]++;
+                            if (unitInfo.level >= 9) availability[unitId][9]++;
+                        }
+                    });
+                });
+                return availability;
+            }
+
+            function identifyRareCharacters(availability, totalRequirements) {
+                const rareCharacters = [];
+                const rareCheck = new Set();
+
+                for (const unitId in totalRequirements) {
+                    let usedSoFar = 0;
+                    for (let relic = 9; relic >= 5; relic--) {
+                        const requiredCount = totalRequirements[unitId][relic] || 0;
+                        if (requiredCount === 0) continue;
+
+                        const availableCount = availability[unitId]?.[relic] || 0;
+                        const correctedAvailability = availableCount - usedSoFar;
+
+                        if (correctedAvailability <= requiredCount + 2) {
+                            const key = `${unitId}-${relic}`;
+                            if (!rareCheck.has(key)) {
+                                rareCharacters.push({ unitId: unitId, level: relic, type: 'char' });
+                                rareCheck.add(key);
+                            }
+                        }
+
+                        const usedForThisRelic = Math.min(Math.max(0, correctedAvailability), requiredCount);
+                        usedSoFar += usedForThisRelic;
+                    }
+                }
+                return rareCharacters;
+            }
+
+            const guildAvailabilityForPlatoons = calculateGuildAvailability(allPlayerData, platoonRequirements);
+            tbColumns = determineTbColumns(platoonRequirements, guildAvailabilityForPlatoons);
+
+            const platoonCharIds = new Set();
+            Object.values(platoonRequirements).forEach(phaseReqs => {
+                Object.keys(phaseReqs).forEach(unitId => {
+                    if (!shipBaseIds.has(unitId)) {
+                        platoonCharIds.add(unitId);
+                    }
+                });
+            });
+
+            const guildWideAvailability = calculateGuildWideAvailability(allPlayerData, Array.from(platoonCharIds));
+
+            const masterRareCheck = new Set();
+            const masterRareList = [];
+
+            for (let round = 1; round <= 6; round++) {
+                const rareForThisRound = identifyRareCharacters(guildWideAvailability, platoonRequirements[round]);
+
+                rareForThisRound.forEach(rareChar => {
+                    const key = `${rareChar.unitId}-${rareChar.level}`;
+                    if (!masterRareCheck.has(key)) {
+                        masterRareList.push(rareChar);
+                        masterRareCheck.add(key);
+                    }
+                });
+            }
+            allPlatoonRequirements = masterRareList; // Overwrite the global variable
 
             players = allPlayerData.map(player => {
                 const playerInfo = {
@@ -411,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 galacticLegends.forEach(glName => {
-                    playerInfo[glName] = getGLInfo(player, glName);
+                    playerInfo[glName] = getPlayerUnitInfo(player, glName);
                 });
 
                 ships.forEach(shipName => {
@@ -419,57 +526,55 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 pilots.forEach(pilotName => {
-                    playerInfo[pilotName] = getGLInfo(player, pilotName);
+                    playerInfo[pilotName] = getPlayerUnitInfo(player, pilotName);
                 });
 
                 conquestUnitsOrder.forEach(unitName => {
                     if (conquestCharactersSet.has(unitName)) {
-                        playerInfo[unitName] = getGLInfo(player, unitName);
+                        playerInfo[unitName] = getPlayerUnitInfo(player, unitName);
                     } else if (conquestShipsMap[unitName]) {
                         playerInfo[unitName] = getShipInfo(player, unitName);
                     }
                 });
 
-                const unitsCountedForRelic = { 9: new Set(), 8: new Set(), 7: new Set(), 6: new Set(), 5: new Set() };
-                tbColumns.forEach(col => {
-                    if (col.type === 'char') {
-                        const requiredRelic = parseInt(col.level, 10);
-                        const unitInfo = getGLInfo(player, col.unitId);
-                        if (unitInfo.type === 3 && unitInfo.level >= requiredRelic) {
-                            if (unitsCountedForRelic[requiredRelic] !== undefined) {
-                                unitsCountedForRelic[requiredRelic].add(col.unitId);
-                            }
+                const unitsMeetingRequirement = { 9: new Set(), 8: new Set(), 7: new Set(), 6: new Set(), 5: new Set() };
+                allPlatoonRequirements.forEach(req => {
+                    const requiredRelic = req.level;
+                    const unitInfo = getPlayerUnitInfo(player, req.unitId);
+                    if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= requiredRelic) {
+                        if (unitsMeetingRequirement[requiredRelic]) {
+                            unitsMeetingRequirement[requiredRelic].add(req.unitId);
                         }
                     }
                 });
 
-                playerInfo.rareR9 = unitsCountedForRelic[9].size;
-                playerInfo.rareR8 = unitsCountedForRelic[8].size;
-                playerInfo.rareR7 = unitsCountedForRelic[7].size;
-                playerInfo.rareR6 = unitsCountedForRelic[6].size;
-                playerInfo.rareR5 = unitsCountedForRelic[5].size;
+                playerInfo.rareR9 = unitsMeetingRequirement[9].size;
+                playerInfo.rareR8 = unitsMeetingRequirement[8].size;
+                playerInfo.rareR7 = unitsMeetingRequirement[7].size;
+                playerInfo.rareR6 = unitsMeetingRequirement[6].size;
+                playerInfo.rareR5 = unitsMeetingRequirement[5].size;
 
                 const allRareUnits = new Set();
-                tbColumns.forEach(col => {
-                    if (col.type === 'char') {
-                        const requiredRelic = parseInt(col.level, 10);
-                        if (requiredRelic < 5) return;
-                        const unitInfo = getGLInfo(player, col.unitId);
-                        if (unitInfo.type === 3 && unitInfo.level >= requiredRelic) {
-                            allRareUnits.add(col.unitId);
-                        }
-                    }
+                Object.values(unitsMeetingRequirement).forEach(unitSet => {
+                    unitSet.forEach(unitId => allRareUnits.add(unitId));
                 });
                 playerInfo.rareRTotal = allRareUnits.size;
 
                 return playerInfo;
             });
-            sortAndRender('memberLevel', 'asc');
-            const roleHeader = document.querySelector('th[data-sort="memberLevel"]');
-            if (roleHeader) {
-                roleHeader.classList.add('sort-asc');
-                roleHeader.dataset.direction = 'asc';
+
+            const savedSortKey = localStorage.getItem('sortKey') || 'memberLevel';
+            const savedSortDirection = localStorage.getItem('sortDirection') || 'asc';
+
+            sortAndRender(savedSortKey, savedSortDirection);
+
+            const sortedHeader = document.querySelector(`th[data-sort="${savedSortKey}"]`);
+            if (sortedHeader) {
+                sortedHeader.classList.add(savedSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+                sortedHeader.dataset.direction = savedSortDirection;
             }
+
+            renderDebugTable();
         })
         .catch(error => {
             console.error('Error loading guild data:', error);
@@ -477,56 +582,77 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     function loadPlatoonData() {
-        const platoonPromises = [];
-        for (let i = 1; i <= 6; i++) {
-            platoonPromises.push(
-                fetch(`../data/tb/hatori/platoons/wookieebot-ops-P${i}.json`)
-                    .then(response => {
-                        if (!response.ok) return null;
-                        return response.json();
-                    })
-                    .catch(() => null)
-            );
-        }
+        const planetToRoundMap = {
+            'mustafar': 1, 'corellia': 1, 'coruscant': 1,
+            'geonosis': 2, 'felucia': 2, 'bracca': 2,
+            'dathomir': 3, 'tatooine': 3, 'kashyyyk': 3, 'zeffo': 3,
+            'kessel': 4, 'lothal': 4, 'mandalor': 4,
+            'haven-class medical station': 5, 'vandor': 5, 'ring of kafrene': 5,
+            'scarif': 6
+        };
 
         const phaseToRelic = { 1: 5, 2: 6, 3: 7, 4: 8, 5: 9, 6: 9 };
 
-        return Promise.all(platoonPromises).then(platoonFiles => {
-            const platoonRequirements = { 1: {}, 2: {}, 3: {}, 4: {}, 5: {}, 6: {} };
+        return fetch('../data/tb/rote_platoons.tsv')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load rote_platoons.tsv');
+                }
+                return response.text();
+            })
+            .then(tsvData => {
+                const platoonRequirements = { 1: {}, 2: {}, 3: {}, 4: {}, 5: {}, 6: {} };
+                const lines = tsvData.split('\n');
 
-            platoonFiles.forEach((fileData, index) => {
-                if (!fileData || !fileData.platoonAssignments) return;
+                lines.forEach(line => {
+                    const columns = line.split('\t');
+                    if (columns.length < 8) {
+                        console.log("Wrong number of fields: ", columns.length, " (8 expected), skipping line: ", line);
+                        return;
+                    }
 
-                const topLevelPhase = index + 1;
+                    const alignment = columns[0];
+                    const planetPhase = parseInt(columns[1], 10);
+                    const planetName = columns[2].replace(/"/g, '');
+                    let unitId = columns[7].toLowerCase();
 
-                fileData.platoonAssignments.forEach(assignment => {
-                    const match = assignment.zoneId.match(/phase0(\d)/);
-                    if (!match || !match[1]) return;
+                    const round = planetToRoundMap[planetName.toLowerCase()];
+                    if (!round) return;
 
-                    let unitId = assignment.unitBaseId.toLowerCase();
                     if (platoonToRosterIdMap[unitId]) {
                         unitId = platoonToRosterIdMap[unitId];
                     }
 
                     const isShip = shipBaseIds.has(unitId);
-                    const assignmentPhase = parseInt(match[1], 10);
-                    const requiredLevel = isShip ? 7 : phaseToRelic[assignmentPhase];
+                    const requiredLevel = isShip ? 7 : phaseToRelic[planetPhase];
 
                     if (!requiredLevel) return;
-                    
-                    const reqs = platoonRequirements[topLevelPhase];
 
-                    if (!reqs[unitId]) {
-                        reqs[unitId] = {};
-                    }
-                    if (!reqs[unitId][requiredLevel]) {
-                        reqs[unitId][requiredLevel] = 0;
-                    }
+                    // For main platoon requirement logic
+                    const reqs = platoonRequirements[round];
+                    if (!reqs[unitId]) reqs[unitId] = {};
+                    if (!reqs[unitId][requiredLevel]) reqs[unitId][requiredLevel] = 0;
                     reqs[unitId][requiredLevel]++;
+
+                    // For debug table
+                    if (!planetStats[planetName]) {
+                        const planetRelicReq = phaseToRelic[planetPhase];
+                        planetStats[planetName] = {
+                            alignment: alignment,
+                            phase: planetPhase,
+                            round: round,
+                            relic: `R${planetRelicReq}`,
+                            units: []
+                        };
+                    }
+                    planetStats[planetName].units.push({
+                        unitId: unitId,
+                        name: getUnitDisplayName(unitId)
+                    });
                 });
+
+                return platoonRequirements;
             });
-            return platoonRequirements;
-        });
     }
 
     table.querySelectorAll('th[data-sort]').forEach(headerCell => {
@@ -548,6 +674,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function sortAndRender(key, direction) {
+        localStorage.setItem('sortKey', key);
+        localStorage.setItem('sortDirection', direction);
+
         const sortedData = [...players].sort((a, b) => {
             if (ships.includes(key) || conquestShips.includes(key)) {
                 const valA_ship = a[key];
@@ -587,7 +716,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const indexB = roleOrder.indexOf(valB);
                 if (indexA < indexB) return direction === 'asc' ? -1 : 1;
                 if (indexA > indexB) return direction === 'asc' ? 1 : -1;
-                
+
                 // Secondary sort by playerName, always ascending
                 if (a.playerName.toLowerCase() < b.playerName.toLowerCase()) return -1;
                 if (a.playerName.toLowerCase() > b.playerName.toLowerCase()) return 1;
@@ -614,16 +743,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showRareCharsPopup(player, relicLevel) {
-        const rareChars = tbColumns.filter(c => c.type === 'char');
         let charsToList = [];
         const uniqueCharNames = new Set();
 
         if (relicLevel === 'total') {
-            rareChars.forEach(rareChar => {
-                const unitInfo = getGLInfo(player, rareChar.unitId);
-                const requiredRelic = parseInt(rareChar.level, 10);
-                if (unitInfo.type === 3 && unitInfo.level >= requiredRelic && requiredRelic >= 5) {
-                    const charName = getUnitDisplayName(rareChar.unitId);
+            allPlatoonRequirements.forEach(req => {
+                if (req.level < 5) return;
+
+                const unitInfo = getPlayerUnitInfo(player, req.unitId);
+                if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= req.level) {
+                    const charName = getUnitDisplayName(req.unitId);
                     if (!uniqueCharNames.has(charName)) {
                         charsToList.push({
                             name: charName,
@@ -634,27 +763,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         } else {
-            rareChars.forEach(rareChar => {
-                const requiredRelic = parseInt(rareChar.level, 10);
-                if (requiredRelic !== relicLevel) {
-                    return;
-                }
+            allPlatoonRequirements.forEach(req => {
+                if (req.level !== relicLevel) return;
 
-                const unitInfo = getGLInfo(player, rareChar.unitId);
-                if (unitInfo.type === 3 && unitInfo.level >= requiredRelic) {
-                    const charName = getUnitDisplayName(rareChar.unitId);
-                    if (!uniqueCharNames.has(charName)) {
-                        charsToList.push({
-                            name: charName,
-                            relic: unitInfo.level
-                        });
-                        uniqueCharNames.add(charName);
-                    }
+                const unitInfo = getPlayerUnitInfo(player, req.unitId);
+                if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= req.level) {
+                    charsToList.push({
+                        name: getUnitDisplayName(req.unitId),
+                        relic: unitInfo.level
+                    });
                 }
             });
         }
 
-        let popupContent = `<h2>${player.playerName} - Rare Characters (R${relicLevel === 'total' ? '5+' : relicLevel}+)</h2>`;
+        let popupContent = `<h2>${player.playerName} - Platoon Characters (Required at R${relicLevel === 'total' ? '5+' : relicLevel})</h2>`;
         if (charsToList.length > 0) {
             popupContent += '<ul>';
             charsToList.sort((a, b) => b.relic - a.relic || a.name.localeCompare(b.name));
@@ -663,9 +785,57 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             popupContent += '</ul>';
         } else {
-            popupContent += '<p>No rare characters at this relic level.</p>';
+            popupContent += `<p>No platoon characters meeting this requirement.</p>`;
         }
 
+        modalBody.innerHTML = popupContent;
+        modal.style.display = 'block';
+    }
+
+    function renderDebugTable() {
+        const debugTbody = document.getElementById('debug-table').querySelector('tbody');
+        debugTbody.innerHTML = '';
+
+        const sortedPlanets = Object.keys(planetStats).sort((a, b) => {
+            const statsA = planetStats[a];
+            const statsB = planetStats[b];
+            if (statsA.round !== statsB.round) {
+                return statsA.round - statsB.round;
+            }
+            return a.localeCompare(b);
+        });
+
+        sortedPlanets.forEach(planetName => {
+            const stats = planetStats[planetName];
+            const row = debugTbody.insertRow();
+            row.insertCell().textContent = stats.round;
+            row.insertCell().textContent = stats.phase;
+            row.insertCell().textContent = stats.alignment;
+            row.insertCell().textContent = planetName;
+            row.insertCell().textContent = stats.relic;
+
+            const countCell = row.insertCell();
+            countCell.textContent = stats.units.length;
+            countCell.style.cursor = 'pointer';
+            countCell.style.textDecoration = 'underline';
+            countCell.addEventListener('click', () => {
+                showPlanetUnitsPopup(planetName, stats);
+            });
+        });
+    }
+
+    function showPlanetUnitsPopup(planetName, stats) {
+        let popupContent = `<h2>${planetName} - Required Units</h2>`;
+        if (stats.units.length > 0) {
+            popupContent += '<ul>';
+            stats.units.sort((a, b) => a.name.localeCompare(b.name));
+            stats.units.forEach(unit => {
+                popupContent += `<li>${unit.name}</li>`;
+            });
+            popupContent += '</ul>';
+        } else {
+            popupContent += '<p>No units listed for this planet.</p>';
+        }
         modalBody.innerHTML = popupContent;
         modal.style.display = 'block';
     }
@@ -738,8 +908,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 row.classList.toggle('selected');
                 if (row.classList.contains('selected')) {
                     selectedPlayerId = player.playerId;
+                    localStorage.setItem('selectedPlayerId', selectedPlayerId);
                 } else {
                     selectedPlayerId = null;
+                    localStorage.removeItem('selectedPlayerId');
                 }
             });
 
@@ -777,7 +949,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 glCell.classList.add('col-gl');
                 if (idx === 0) glCell.classList.add('separator-left');
                 glCell.textContent = player[glName].display;
-                glCell.style.backgroundColor = getGLBackgroundColor(player[glName]);
+                glCell.style.backgroundColor = getUnitBGColor(player[glName]);
                 if (idx === galacticLegends.length - 1) glCell.classList.add('separator-right');
             });
 
@@ -786,7 +958,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 shipCell.classList.add('col-ships');
                 if (idx === 0) shipCell.classList.add('separator-left');
                 shipCell.textContent = player[shipName].display;
-                shipCell.style.backgroundColor = getShipBackgroundColor(player[shipName]);
+                shipCell.style.backgroundColor = getShipBGColor(player[shipName]);
             });
 
             pilots.forEach(pilotName => {
@@ -802,10 +974,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (idx === 0) cell.classList.add('separator-left');
                 if (conquestCharactersSet.has(unitName)) {
                     cell.textContent = player[unitName].display;
-                    cell.style.backgroundColor = getGLBackgroundColor(player[unitName]);
+                    cell.style.backgroundColor = getUnitBGColor(player[unitName]);
                 } else if (conquestShipsMap[unitName]) {
                     cell.textContent = player[unitName].display;
-                    cell.style.backgroundColor = getShipBackgroundColor(player[unitName]);
+                    cell.style.backgroundColor = getShipBGColor(player[unitName]);
                 }
                 if (idx === conquestUnitsOrder.length - 1) cell.classList.add('separator-right');
             });
@@ -851,7 +1023,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         tbCell.style.backgroundColor = '#FF9999'; // Red
                     }
                 } else { // character
-                    const unitInfo = getGLInfo(player, col.unitId);
+                    const unitInfo = getPlayerUnitInfo(player, col.unitId);
                     tbCell.textContent = unitInfo.display;
                     if (unitInfo.type === 3 && unitInfo.level >= col.level) {
                         tbCell.style.backgroundColor = '#7ACC7A'; // Green
@@ -866,23 +1038,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Re-apply column visibility
-        document.querySelectorAll('#column-controls input[type="checkbox"]').forEach(checkbox => {
+        // Re-apply column visibility based on current checkbox state
+        columnCheckboxes.forEach(checkbox => {
             const group = checkbox.dataset.group;
-            const show = checkbox.checked;
-            document.querySelectorAll(`.col-${group}`).forEach(el => {
-                el.style.display = show ? '' : 'none';
-            });
+            toggleColumnGroup(group, checkbox.checked);
         });
     }
 
-    document.querySelectorAll('#column-controls input[type="checkbox"]').forEach(checkbox => {
+    columnCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', () => {
             const group = checkbox.dataset.group;
-            const show = checkbox.checked;
-            document.querySelectorAll(`.col-${group}`).forEach(el => {
-                el.style.display = show ? '' : 'none';
-            });
+            toggleColumnGroup(group, checkbox.checked);
+            saveCheckboxStates(); // Save state on change
         });
     });
 });
