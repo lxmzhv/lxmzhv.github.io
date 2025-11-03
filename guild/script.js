@@ -783,6 +783,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const planet = planetStats[planetName];
             planet.units.forEach(unit => {
                 unit.assignedPlayerName = null;
+                unit.assignedInRound = null;
             });
             planet.missingCount = 0;
             planet.candidateCount = 0;
@@ -821,6 +822,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             const shipInfo = getShipInfo(player, unit.unitId);
                             if (shipInfo.rarity === 7) {
                                 unit.assignedPlayerName = player.playerName;
+                                unit.assignedInRound = round;
                                 assignedUnitsThisRound.add(assignmentKey);
                                 break;
                             }
@@ -828,6 +830,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             const unitInfo = getPlayerUnitInfo(player, unit.unitId);
                             if (unitInfo.type === 3 && unitInfo.level >= relicLevel) {
                                 unit.assignedPlayerName = player.playerName;
+                                unit.assignedInRound = round;
                                 assignedUnitsThisRound.add(assignmentKey);
                                 break;
                             }
@@ -955,24 +958,42 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('debugSortKey', key);
         localStorage.setItem('debugSortDirection', direction);
 
-        const sortedPlanets = Object.keys(planetStats).sort((a, b) => {
-            const statsA = planetStats[a];
-            const statsB = planetStats[b];
+        const planetRounds = [];
+        for (const planetName in planetStats) {
+            const planet = planetStats[planetName];
+            planet.rounds.forEach(round => {
+                planetRounds.push({
+                    planetName: planetName,
+                    round: round,
+                    stats: planet
+                });
+            });
+        }
 
+        const sortedPlanetRounds = planetRounds.sort((a, b) => {
+            const statsA = a.stats;
+            const statsB = b.stats;
             let valA, valB;
 
-            if (key === 'planet') {
-                valA = a;
-                valB = b;
+            if (key === 'round') {
+                valA = a.round;
+                valB = b.round;
+            } else if (key === 'planet') {
+                valA = a.planetName;
+                valB = b.planetName;
             } else if (key === 'unitCount') {
                 valA = statsA.units.length;
                 valB = statsB.units.length;
             } else if (key === 'missing') {
-                valA = statsA.missingCount || 0;
-                valB = statsB.missingCount || 0;
+                const isLastA = a.round === Math.max(...statsA.rounds);
+                const isLastB = b.round === Math.max(...statsB.rounds);
+                valA = isLastA ? (statsA.missingCount || 0) : -1;
+                valB = isLastB ? (statsB.missingCount || 0) : -1;
             } else if (key === 'candidates') {
-                valA = statsA.candidateCount || 0;
-                valB = statsB.candidateCount || 0;
+                const isLastA = a.round === Math.max(...statsA.rounds);
+                const isLastB = b.round === Math.max(...statsB.rounds);
+                valA = isLastA ? (statsA.candidateCount || 0) : -1;
+                valB = isLastB ? (statsB.candidateCount || 0) : -1;
             } else if (key === 'relic') {
                 valA = parseInt(statsA.relic.substring(1));
                 valB = parseInt(statsB.relic.substring(1));
@@ -981,25 +1002,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 valB = statsB[key];
             }
 
-            if (typeof valA === 'number') {
-                if (valA < valB) return direction === 'asc' ? -1 : 1;
-                if (valA > valB) return direction === 'asc' ? 1 : -1;
-            } else {
-                if (String(valA).toLowerCase() < String(valB).toLowerCase()) {
-                    return direction === 'asc' ? -1 : 1;
-                }
-                if (String(valA).toLowerCase() > String(valB).toLowerCase()) {
-                    return direction === 'asc' ? 1 : -1;
-                }
-            }
+            if (valA < valB) return direction === 'asc' ? -1 : 1;
+            if (valA > valB) return direction === 'asc' ? 1 : -1;
 
-            if (a.toLowerCase() < b.toLowerCase()) return -1;
-            if (a.toLowerCase() > b.toLowerCase()) return 1;
+            if (a.round < b.round) return -1;
+            if (a.round > b.round) return 1;
+            if (a.planetName.toLowerCase() < b.planetName.toLowerCase()) return -1;
+            if (a.planetName.toLowerCase() > b.planetName.toLowerCase()) return 1;
 
             return 0;
         });
 
-        renderDebugTable(sortedPlanets);
+        renderDebugTable(sortedPlanetRounds);
     }
 
     function showRareCharsPopup(player, relicLevel) {
@@ -1052,43 +1066,49 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
-    function renderDebugTable(sortedPlanets) {
+    function renderDebugTable(sortedPlanetRounds) {
         const debugTbody = document.getElementById('debug-table').querySelector('tbody');
         debugTbody.innerHTML = '';
 
-        if (!sortedPlanets) {
-            sortedPlanets = Object.keys(planetStats).sort((a, b) => {
-                const statsA = planetStats[a];
-                const statsB = planetStats[b];
-                if (statsA.round !== statsB.round) {
-                    return statsA.round - statsB.round;
-                }
-                return a.localeCompare(b);
+        if (!sortedPlanetRounds) {
+            const planetRounds = [];
+            for (const planetName in planetStats) {
+                const planet = planetStats[planetName];
+                planet.rounds.forEach(round => {
+                    planetRounds.push({ planetName, round, stats: planet });
+                });
+            }
+            sortedPlanetRounds = planetRounds.sort((a, b) => {
+                if (a.round !== b.round) return a.round - b.round;
+                return a.planetName.localeCompare(b.planetName);
             });
         }
 
-        sortedPlanets.forEach(planetName => {
-            const stats = planetStats[planetName];
+        sortedPlanetRounds.forEach(planetRound => {
+            const { planetName, round, stats } = planetRound;
             const row = debugTbody.insertRow();
-            row.insertCell().textContent = stats.rounds.join(', ');
+            row.insertCell().textContent = round;
             row.insertCell().textContent = stats.alignment;
             row.insertCell().textContent = stats.phase;
             row.insertCell().textContent = planetName;
             row.insertCell().textContent = stats.relic;
 
             const countCell = row.insertCell();
-            countCell.textContent = stats.units.length;
+            const unitsAssignedThisRound = stats.units.filter(u => u.assignedInRound === round).length;
+            countCell.textContent = `${unitsAssignedThisRound}/${stats.units.length}`;
             countCell.style.cursor = 'pointer';
             countCell.style.textDecoration = 'underline';
             countCell.addEventListener('click', () => {
-                showPlanetUnitsPopup(planetName, stats);
+                showPlanetUnitsPopup(planetName, stats, round);
             });
 
+            const isLastActiveRound = round === Math.max(...stats.rounds);
+
             const missingCell = row.insertCell();
-            const missingCount = stats.missingCount || 0;
+            const missingCount = isLastActiveRound ? (stats.missingCount || 0) : '-';
             missingCell.textContent = missingCount;
 
-            if (missingCount > 0) {
+            if (isLastActiveRound && missingCount > 0) {
                 missingCell.style.color = 'red';
                 missingCell.style.cursor = 'pointer';
                 missingCell.style.textDecoration = 'underline';
@@ -1099,9 +1119,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const candidateCell = row.insertCell();
-            const candidateCount = stats.candidateCount || 0;
+            const candidateCount = isLastActiveRound ? (stats.candidateCount || 0) : '-';
             candidateCell.textContent = candidateCount;
-            if (candidateCount > 0) {
+            if (isLastActiveRound && candidateCount > 0) {
                 candidateCell.style.color = 'orange';
                 candidateCell.style.cursor = 'pointer';
                 candidateCell.style.textDecoration = 'underline';
@@ -1248,17 +1268,41 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
-    function showPlanetUnitsPopup(planetName, stats) {
-        let popupContent = `<h2>${planetName} - Required Units</h2>`;
+    function showPlanetUnitsPopup(planetName, stats, currentRound) {
+        let popupContent = `<h2>${planetName} - Required Units (Round ${currentRound})</h2>`;
         if (stats.units.length > 0) {
             popupContent += '<ul>';
-            stats.units.sort((a, b) => a.name.localeCompare(b.name));
-            stats.units.forEach(unit => {
-                let assignmentText = ` - <span style="color: red;">Missing</span>`;
-                if (unit.assignedPlayerName) {
-                    assignmentText = ` - ${unit.assignedPlayerName}`;
+            const lastActiveRound = Math.max(...stats.rounds);
+
+            const unitsForDisplay = stats.units.filter(unit => {
+                // Show units assigned in this specific round
+                if (unit.assignedPlayerName && unit.assignedInRound === currentRound) {
+                    return true;
                 }
-                popupContent += `<li>${unit.name} ${stats.relic}${assignmentText}</li>`;
+                // Show unassigned units that are rolling over (not assigned yet, and planet is active in a future round)
+                if (!unit.assignedPlayerName && currentRound < lastActiveRound && stats.rounds.includes(currentRound + 1)) {
+                    return true;
+                }
+                // Show unassigned units that are finally missing (last active round)
+                if (!unit.assignedPlayerName && currentRound === lastActiveRound) {
+                    return true;
+                }
+                return false;
+            }).sort((a, b) => a.name.localeCompare(b.name));
+
+
+            unitsForDisplay.forEach(unit => {
+                let statusText = '';
+
+                if (unit.assignedPlayerName && unit.assignedInRound === currentRound) {
+                    statusText = ` - ${unit.assignedPlayerName}`;
+                } else if (!unit.assignedPlayerName && currentRound === lastActiveRound) {
+                    statusText = ` - <span style="color: red;">Missing</span>`;
+                } else if (!unit.assignedPlayerName && currentRound < lastActiveRound && stats.rounds.includes(currentRound + 1)) {
+                    statusText = ` - <span style="color: green;">Rollover</span>`;
+                }
+
+                popupContent += `<li>${unit.name} ${stats.relic}${statusText}</li>`;
             });
             popupContent += '</ul>';
         } else {
