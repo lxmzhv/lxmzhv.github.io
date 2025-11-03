@@ -379,7 +379,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 guildSelector.appendChild(option);
             });
 
+            const urlParams = new URLSearchParams(window.location.search);
+
             let selectedGuildFile = localStorage.getItem('selectedGuildFile');
+
+            const guildFileFromUrl = urlParams.get('guild');
+            if (guildFileFromUrl) {
+                selectedGuildFile = `guild_${guildFileFromUrl}.json`;
+            }
+
             if (!guilds.some(g => g.fileName === selectedGuildFile)) {
                 selectedGuildFile = guilds[0]?.fileName;
             }
