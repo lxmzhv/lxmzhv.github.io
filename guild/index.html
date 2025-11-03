@@ -111,7 +111,7 @@
                             <th colspan="10" class="separator-left separator-right col-gl">Galactic Legends</th>
                             <th colspan="8" class="separator-left col-ships">Ships</th>
                             <th colspan="17" class="separator-left separator-right col-conquest">Conquest</th>
-                            <th colspan="6" class="separator-left separator-right col-tb-rare">Territory Battle - Rare Characters</th>
+                            <th colspan="7" class="separator-left separator-right col-tb-rare">TB Rare Units</th>
                         </tr>
                         <tr>
                             <th data-sort="allyCode" class="separator-left col-player-info">Ally Code</th>
@@ -158,7 +158,8 @@
                             <th data-sort="rareR7" class="col-tb-rare">R7</th>
                             <th data-sort="rareR8" class="col-tb-rare">R8</th>
                             <th data-sort="rareR9" class="col-tb-rare">R9</th>
-                            <th data-sort="rareRTotal" class="separator-right col-tb-rare">Total</th>
+                            <th data-sort="rareRTotal" class="col-tb-rare">Total</th>
+                            <th class="separator-right col-tb-rare">New</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -184,6 +185,18 @@
                     <th data-sort="candidates">Candidates</th>
                 </tr>
             </thead>
+            <tfoot>
+                <tr style="font-weight: bold; background-color: #f0f0f0;">
+                    <td>All</td>
+                    <td>All</td>
+                    <td>All</td>
+                    <td>All</td>
+                    <td>All</td>
+                    <td id="total-units" style="cursor: pointer; text-decoration: underline;">0</td>
+                    <td id="total-missing" style="cursor: pointer; text-decoration: underline;">0</td>
+                    <td id="total-candidates" style="cursor: pointer; text-decoration: underline;">0</td>
+                </tr>
+            </tfoot>
             <tbody>
                 <!-- Debug data will be inserted here -->
             </tbody>
