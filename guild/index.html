@@ -96,6 +96,10 @@
             <label style="margin-left: 10px;"><input type="checkbox" data-group="tb"> TB Platoons</label>
             <label style="margin-left: 10px;"><input type="checkbox" data-group="tb-rare" checked> TB Rare Units</label>
             <label style="margin-left: 10px; border-left: 2px solid #ccc; padding-left: 10px;"><input type="checkbox" data-group="debug"> TB Planets</label>
+            <div style="display: inline-block; margin-left: 20px; border-left: 2px solid #ccc; padding-left: 10px;">
+                <label for="rareUnitThreshold">Rare Unit Threshold:</label>
+                <input type="number" id="rareUnitThreshold" min="-50" max="50" value="2" style="width: 60px; text-align: center;">
+            </div>
         </div>
         <div id="progress-container" style="display: none;">
             <div id="progress-bar">0%</div>
