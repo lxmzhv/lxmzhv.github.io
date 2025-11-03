@@ -1169,9 +1169,9 @@ document.addEventListener('DOMContentLoaded', () => {
             totalUnits += planet.units.length;
             totalMissing += planet.missingCount;
             totalCandidates += planet.candidateCount;
-            if (planetsByRound[planet.round]) {
-                planetsByRound[planet.round].push(planetStats[planetName]);
-            }
+            planet.rounds.forEach(round => {
+                planetsByRound[round].push(planetStats[planetName]);
+            });
         }
 
         const totalUnitsCell = document.getElementById('total-units');
@@ -1190,12 +1190,39 @@ document.addEventListener('DOMContentLoaded', () => {
     function showAllUnitsPopup(planetsByRound) {
         let popupContent = `<h2>All Required Units by Round</h2>`;
         for (let round = 1; round <= 6; round++) {
-            if (planetsByRound[round].length > 0) {
+            const planetsInThisRound = planetsByRound[round].filter(planet => planet.rounds.includes(round));
+
+            if (planetsInThisRound.length > 0) {
                 popupContent += `<h3>Round ${round}</h3>`;
-                planetsByRound[round].forEach(planet => {
+                planetsInThisRound.forEach(planet => {
                     popupContent += `<h4>${planet.name} (${planet.relic})</h4><ul>`;
-                    planet.units.forEach(unit => {
-                        let assignmentText = unit.assignedPlayerName ? ` - ${unit.assignedPlayerName}` : ` - <span style="color: red;">Missing</span>`;
+                    const lastActiveRound = Math.max(...planet.rounds);
+
+                    const unitsForDisplay = planet.units.filter(unit => {
+                        // Show units assigned in this specific round
+                        if (unit.assignedPlayerName && unit.assignedInRound === round) {
+                            return true;
+                        }
+                        // Show unassigned units that are finally missing (last active round)
+                        if (!unit.assignedPlayerName && round === lastActiveRound) {
+                            return true;
+                        }
+                        // Show unassigned units that are rolling over (not assigned yet, and planet is active in a future round)
+                        if (!unit.assignedPlayerName && round < lastActiveRound && planet.rounds.includes(round + 1)) {
+                            return true;
+                        }
+                        return false;
+                    }).sort((a, b) => a.name.localeCompare(b.name));
+
+                    unitsForDisplay.forEach(unit => {
+                        let assignmentText = '';
+                        if (unit.assignedPlayerName && unit.assignedInRound === round) {
+                            assignmentText = ` - ${unit.assignedPlayerName}`;
+                        } else if (!unit.assignedPlayerName && round === lastActiveRound) {
+                            assignmentText = ` - <span style="color: red;">Missing</span>`;
+                        } else if (!unit.assignedPlayerName && round < lastActiveRound && planet.rounds.includes(round + 1)) {
+                            assignmentText = ` - <span style="color: green;">Rollover</span>`;
+                        }
                         popupContent += `<li>${unit.name}${assignmentText}</li>`;
                     });
                     popupContent += `</ul>`;
