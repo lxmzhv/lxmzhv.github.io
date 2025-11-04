@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let guilds = [];
 
     function loadGuilds() {
-        const promises = guildFiles.map(file => fetch(`../cache/${file}`).then(res => res.json()));
+        const promises = guildFiles.map(file => fetch(`guilds/${file}`).then(res => res.json()));
 
         Promise.all(promises).then(guildDataArray => {
             guilds = guildDataArray.map(data => ({
@@ -374,38 +374,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
             guilds.forEach(guild => {
                 const option = document.createElement('option');
-                option.value = guild.fileName;
+                option.value = guild.id;
                 option.textContent = guild.name;
                 guildSelector.appendChild(option);
             });
 
             const urlParams = new URLSearchParams(window.location.search);
 
-            let selectedGuildFile = localStorage.getItem('selectedGuildFile');
+            let selectedGuildId = localStorage.getItem('selectedGuildId');
 
-            const guildFileFromUrl = urlParams.get('guild');
-            if (guildFileFromUrl) {
-                selectedGuildFile = `guild_${guildFileFromUrl}.json`;
+            const guildIdFromUrl = urlParams.get('guild');
+            if (guildIdFromUrl) {
+                selectedGuildId = guildIdFromUrl;
             }
 
-            if (!guilds.some(g => g.fileName === selectedGuildFile)) {
-                selectedGuildFile = guilds[0]?.fileName;
+            if (!guilds.some(g => g.id === selectedGuildId)) {
+                selectedGuildId = guilds[0]?.id;
             }
 
-            if (selectedGuildFile) {
-                guildSelector.value = selectedGuildFile;
-                loadAndRenderGuildData(selectedGuildFile);
-            }
+            guildSelector.value = selectedGuildId;
+            loadAndRenderGuildData(selectedGuildId);
         }).catch(error => console.error('Error loading guild names:', error));
     }
 
     guildSelector.addEventListener('change', () => {
-        const selectedGuildFile = guildSelector.value;
-        localStorage.setItem('selectedGuildFile', selectedGuildFile);
-        loadAndRenderGuildData(selectedGuildFile);
+        const selectedGuildId = guildSelector.value;
+        localStorage.setItem('selectedGuildId', selectedGuildId);
+
+        const url = new URL(window.location);
+        url.searchParams.set('guild', selectedGuildId);
+        window.history.replaceState({}, '', url);
+
+        loadAndRenderGuildData(selectedGuildId);
     });
 
-    function loadAndRenderGuildData(guildFile) {
+    function loadAndRenderGuildData(guildId) {
+        let guildFile = `guild_${guildId}.json`;
+
         // Reset state
         guildInfoDiv.innerHTML = '';
         tbody.innerHTML = '';
@@ -419,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
         planetStats = {};
         shipBaseIds = new Set();
 
-        fetch(`../cache/${guildFile}`)
+        fetch(`guilds/${guildFile}`)
             .then(response => response.json())
             .then(guildData => {
                 const guildName = guildData.profile.name;
@@ -452,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const playerPromises = guildData.member.map(player => {
                     const playerId = player.playerId;
-                    return fetch(`../cache/player_id_${playerId}.json`)
+                    return fetch(`guilds/player_id_${playerId}.json`)
                         .then(response => {
                             if (!response.ok) {
                                 return { ...player, allyCode: '' }; // Player file not found
@@ -571,6 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         playerName: player.playerName,
                         playerId: player.playerId,
                         allyCode: player.allyCode || '',
+                        modsRating: player.modsRating,
                         memberLevel: rankMap[player.memberLevel] || player.memberLevel.replace('GUILD_', '').toLowerCase(),
                         galacticPower: Number(player.galacticPower),
                         joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime)*1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
@@ -819,7 +825,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR')) {
+            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating') {
                 const numA = Number(valA);
                 const numB = Number(valB);
                 if (numA < numB) return direction === 'asc' ? -1 : 1;
@@ -1503,6 +1509,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const joinedCell = row.insertCell();
             joinedCell.textContent = player.joined;
             joinedCell.classList.add('col-player-info');
+
+            const modsCell = row.insertCell();
+            modsCell.textContent = player.modsRating ? player.modsRating.toFixed(1) : '-';
+            modsCell.classList.add('col-player-info');
 
             galacticLegends.forEach((glName, idx) => {
                 const glCell = row.insertCell();
