@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const guildSelector = document.getElementById('guild-selector');
     const guildInfoDiv = document.getElementById('guild-info');
 
+    // TB Plan Modal elements
+    const tbPlanBtn = document.getElementById('tb-plan-btn');
+    const tbPlanModal = document.getElementById('tb-plan-modal');
+    const tbPlanCloseButton = document.getElementById('tb-plan-close-button');
+    const tbPlanSaveBtn = document.getElementById('tb-plan-save-btn');
+    const tbPlanCancelBtn = document.getElementById('tb-plan-cancel-btn');
+    const tbPlanResetBtn = document.getElementById('tb-plan-reset-btn');
+    let tempPlanetConfig = {};
+
     // Load checkbox states from localStorage
     function loadCheckboxStates() {
         columnCheckboxes.forEach(checkbox => {
@@ -48,6 +57,45 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target == modal) {
             modal.style.display = "none";
         }
+        if (event.target == tbPlanModal) {
+            tbPlanModal.style.display = "none";
+        }
+    }
+
+    if (tbPlanBtn) {
+        tbPlanBtn.addEventListener('click', () => {
+            tempPlanetConfig = getPlanetRoundMap();
+            updatePlanetConfigUI(tempPlanetConfig);
+            tbPlanModal.style.display = 'block';
+        });
+    }
+
+    if (tbPlanCloseButton) {
+        tbPlanCloseButton.addEventListener('click', () => {
+            tbPlanModal.style.display = 'none';
+        });
+    }
+
+    if (tbPlanCancelBtn) {
+        tbPlanCancelBtn.addEventListener('click', () => {
+            tbPlanModal.style.display = 'none';
+        });
+    }
+
+    if (tbPlanSaveBtn) {
+        tbPlanSaveBtn.addEventListener('click', () => {
+            savePlanetRoundMap(tempPlanetConfig);
+            tbPlanModal.style.display = 'none';
+            const selectedGuildId = guildSelector.value;
+            loadAndRenderGuildData(selectedGuildId);
+        });
+    }
+
+    if (tbPlanResetBtn) {
+        tbPlanResetBtn.addEventListener('click', () => {
+            tempPlanetConfig = getDefaultPlanetRoundMap();
+            updatePlanetConfigUI(tempPlanetConfig);
+        });
     }
 
     let players = [];
@@ -571,6 +619,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 allPlatoonRequirements = masterRareList; // Overwrite the global variable
 
+                renderPlanetConfigTable();
+
                 players = allPlayerData.map(player => {
                     const playerInfo = {
                         playerName: player.playerName,
@@ -660,16 +710,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function loadPlatoonData() {
-        const planetToRoundMap = {
-            'mustafar': [1], 'corellia': [1], 'coruscant': [1],
-            'geonosis': [2], 'felucia': [2], 'bracca': [2],
-            'dathomir': [3], 'tatooine': [3], 'kashyyyk': [3],
-            'kessel': [4], 'lothal': [4], 'haven-class medical station': [4,5],
-            'vandor': [5,6], 'ring of kafrene': [5],
-            'scarif': [6], 'malachor': [6],
-            'zeffo': [3,4,5,6],
-            'mandalor': [4,5,6],
-        };
+        const planetToRoundMap = getPlanetRoundMap();
 
         const phaseToRelic = { 1: 5, 2: 6, 3: 7, 4: 8, 5: 9, 6: 9 };
 
@@ -687,7 +728,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 lines.forEach(line => {
                     const columns = line.split('\t');
                     if (columns.length < 8) {
-                        console.log("Wrong number of fields: ", columns.length, " (8 expected), skipping line: ", line);
+                        // console.log("Wrong number of fields: ", columns.length, " (8 expected), skipping line: ", line);
                         return;
                     }
 
@@ -696,9 +737,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const planetName = columns[2].replace(/"/g, '');
                     let unitId = columns[7].toLowerCase();
 
-                    const rounds = planetToRoundMap[planetName.toLowerCase()];
-                    if (!rounds || rounds.length === 0) return;
-                    const round = rounds[0];
+                    const rounds = planetToRoundMap[planetName.toLowerCase()] || [];
+                    const firstActiveRound = rounds.length > 0 ? rounds[0] : 0;
 
                     if (platoonToRosterIdMap[unitId]) {
                         unitId = platoonToRosterIdMap[unitId];
@@ -709,25 +749,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (!requiredLevel) return;
 
-                    // For main platoon requirement logic
-                    const reqs = platoonRequirements[round];
-                    if (!reqs[unitId]) reqs[unitId] = {};
-                    if (!reqs[unitId][requiredLevel]) reqs[unitId][requiredLevel] = 0;
-                    reqs[unitId][requiredLevel]++;
+                    // For main platoon requirement logic - only add if planet is active
+                    if (firstActiveRound > 0 && platoonRequirements[firstActiveRound]) {
+                        const reqs = platoonRequirements[firstActiveRound];
+                        if (!reqs[unitId]) reqs[unitId] = {};
+                        if (!reqs[unitId][requiredLevel]) reqs[unitId][requiredLevel] = 0;
+                        reqs[unitId][requiredLevel]++;
+                    }
 
-                    // For debug table
+                    // For debug table and planet config - always populate
                     if (!planetStats[planetName]) {
                         const planetRelicReq = phaseToRelic[planetPhase];
                         planetStats[planetName] = {
                             name: planetName,
                             alignment: alignment,
                             phase: planetPhase,
-                            round: round,
-                            rounds: rounds,
                             relic: `R${planetRelicReq}`,
                             units: []
                         };
                     }
+                    // Always update rounds and firstActiveRound as they are dynamic
+                    planetStats[planetName].round = firstActiveRound;
+                    planetStats[planetName].rounds = rounds;
+
                     planetStats[planetName].units.push({
                         unitId: unitId,
                         name: getUnitDisplayName(unitId)
@@ -1630,6 +1674,244 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleColumnGroup(group, checkbox.checked);
         });
     }
+
+    // ========================================================================
+    // Planet Configuration Logic
+    // ========================================================================
+
+    function getDefaultPlanetRoundMap() {
+        // Default configuration, matching the original hardcoded map
+        return {
+            'mustafar': [1], 'corellia': [1], 'coruscant': [1],
+            'geonosis': [2], 'felucia': [2], 'bracca': [2],
+            'dathomir': [3], 'tatooine': [3], 'kashyyyk': [3],
+            'kessel': [4], 'lothal': [4], 'haven-class medical station': [4,5],
+            'vandor': [5,6], 'ring of kafrene': [5],
+            'scarif': [6], 'malachor': [6],
+            'zeffo': [3,4,5,6],
+            'mandalor': [4,5,6],
+        };
+    }
+
+    function getPlanetRoundMap() {
+        const savedConfig = localStorage.getItem('planetRoundConfig');
+        if (savedConfig) {
+            try {
+                return JSON.parse(savedConfig);
+            } catch (e) {
+                console.error("Error parsing planetRoundConfig from localStorage", e);
+            }
+        }
+        return getDefaultPlanetRoundMap();
+    }
+
+    function savePlanetRoundMap(config) {
+        localStorage.setItem('planetRoundConfig', JSON.stringify(config));
+    }
+
+    function renderPlanetConfigTable() {
+        const container = document.getElementById('planet-config-table-container');
+        if (!container || Object.keys(planetStats).length === 0) return;
+
+        const planets = Object.values(planetStats).map(p => ({...p}));
+        const alignmentOrder = { 'DS': 1, 'Mix': 2, 'LS': 3 };
+        planets.sort((a, b) => {
+            if (a.phase !== b.phase) return a.phase - b.phase;
+            return (alignmentOrder[a.alignment] || 99) - (alignmentOrder[b.alignment] || 99);
+        });
+
+        let tableHTML = `
+            <thead>
+                <tr>
+                    <th style="min-width: 60px;">Round</th>
+                    ${planets.map(p => `<th title="${p.alignment} - Phase ${p.phase}">${p.name}</th>`).join('')}
+                </tr>
+            </thead>
+            <tbody>
+        `;
+
+        for (let round = 1; round <= 6; round++) {
+            tableHTML += `<tr><td>${round}</td>`;
+            planets.forEach(planet => {
+                const planetNameId = planet.name.replace(/["\s-]/g, '_');
+                const checkboxId = `cfg-chk-${round}-${planetNameId}`;
+                tableHTML += `<td><input type="checkbox" id="${checkboxId}" data-round="${round}" data-planet="${planet.name}"></td>`;
+            });
+            tableHTML += `</tr>`;
+        }
+        tableHTML += `</tbody>`;
+
+        const table = document.getElementById('planet-config-table');
+        table.innerHTML = tableHTML;
+
+        table.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', handlePlanetCheckboxChange);
+        });
+
+        updatePlanetConfigUI(getPlanetRoundMap());
+    }
+
+    function handlePlanetCheckboxChange() {
+        // 1. Create a map of the current state from the UI
+        let currentConfig = {};
+        document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
+            const pName = cb.dataset.planet;
+            const r = parseInt(cb.dataset.round, 10);
+            if (!currentConfig[pName]) currentConfig[pName] = {1:false, 2:false, 3:false, 4:false, 5:false, 6:false};
+            currentConfig[pName][r] = cb.checked;
+        });
+
+        // 2. Apply rules sequentially to correct the state
+        const planetsMap = new Map(Object.values(planetStats).map(p => [p.name, p]));
+        const planetsByAlignmentAndPhase = {};
+        for (const planet of planetsMap.values()) {
+            if (!planetsByAlignmentAndPhase[planet.alignment]) planetsByAlignmentAndPhase[planet.alignment] = {};
+            planetsByAlignmentAndPhase[planet.alignment][planet.phase] = planet;
+        }
+        const exceptionPlanets = new Set(['Zeffo', 'Mandalore']);
+
+        // Rule: Round 1 is always fixed
+        planetsMap.forEach(p => {
+            const isR1Planet = ['Mustafar', 'Corellia', 'Coruscant'].includes(p.name);
+            currentConfig[p.name][1] = isR1Planet;
+        });
+
+        // Run multiple passes to ensure all rules propagate
+        for (let i = 0; i < 6; i++) { // 6 passes should be enough for changes to propagate
+            // Rule: Consecutive rounds (if a gap exists, uncheck everything after the gap)
+            planetsMap.forEach(p => {
+                let firstActive = 0;
+                for(let r = 1; r <= 6; r++) {
+                    if (currentConfig[p.name][r]) {
+                        firstActive = r;
+                        break;
+                    }
+                }
+
+                if (firstActive > 0) {
+                    let gapFound = false;
+                    for (let r = firstActive + 1; r <= 6; r++) {
+                        if (!currentConfig[p.name][r-1] && currentConfig[p.name][r]) {
+                            gapFound = true;
+                        }
+                        if (gapFound) {
+                            currentConfig[p.name][r] = false;
+                        }
+                    }
+                }
+            });
+
+            // Rule: Unlocking (a planet can only be active if its prereq was active in the previous round)
+            for (let r = 2; r <= 6; r++) {
+                planetsMap.forEach(p => {
+                    const isFirstActive = currentConfig[p.name][r] && !currentConfig[p.name][r-1];
+                    if (isFirstActive) {
+                        const prereqPhase = p.phase - 1;
+                        if (prereqPhase > 0) {
+                            const prereqPlanet = planetsByAlignmentAndPhase[p.alignment]?.[prereqPhase];
+                            if (prereqPlanet && !currentConfig[prereqPlanet.name][r-1]) {
+                                currentConfig[p.name][r] = false; // Prereq not met, deactivate
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Rule: Locking (when a planet unlocks, its prereq is locked out from that round onwards)
+            planetsMap.forEach(p => {
+                if (exceptionPlanets.has(p.name)) return;
+                const prereqPhase = p.phase - 1;
+                if (prereqPhase > 0) {
+                    const prereqPlanet = planetsByAlignmentAndPhase[p.alignment]?.[prereqPhase];
+                    if (prereqPlanet) {
+                        for (let r = 2; r <= 6; r++) {
+                            const isFirstActive = currentConfig[p.name][r] && !currentConfig[p.name][r-1];
+                            if (isFirstActive) {
+                                for (let lockRound = r; lockRound <= 6; lockRound++) {
+                                    currentConfig[prereqPlanet.name][lockRound] = false;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 3. Convert the validated config map back to the storable format
+        const newPlanetRoundMap = {};
+        for (const pName in currentConfig) {
+            const rounds = [];
+            for (let r = 1; r <= 6; r++) {
+                if (currentConfig[pName][r]) rounds.push(r);
+            }
+            if (rounds.length > 0) {
+                newPlanetRoundMap[pName.toLowerCase()] = rounds;
+            }
+        }
+
+        // 4. Save the new config to temp variable
+        tempPlanetConfig = newPlanetRoundMap;
+
+        // 5. Update UI to reflect validated changes
+        updatePlanetConfigUI(tempPlanetConfig);
+    }
+
+    function updatePlanetConfigUI(config) {
+        const planetsMap = new Map(Object.values(planetStats).map(p => [p.name, p]));
+        const planetsByAlignmentAndPhase = {};
+        for (const planet of planetsMap.values()) {
+            if (!planetsByAlignmentAndPhase[planet.alignment]) planetsByAlignmentAndPhase[planet.alignment] = {};
+            planetsByAlignmentAndPhase[planet.alignment][planet.phase] = planet;
+        }
+        const exceptionPlanets = new Set(['Zeffo', 'Mandalore']);
+
+        document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
+            const planetName = cb.dataset.planet;
+            const round = parseInt(cb.dataset.round, 10);
+
+            const lowerCasePlanetName = planetName.toLowerCase();
+            const isActive = config[lowerCasePlanetName]?.includes(round) || false;
+            cb.checked = isActive;
+            cb.disabled = false; // Reset disabled state
+
+            // Rule: Round 1 is fixed
+            if (round === 1) {
+                cb.disabled = true;
+                return;
+            }
+
+            // Determine if a checkbox should be disabled
+            const planet = planetsMap.get(planetName);
+            const prereqPhase = planet.phase - 1;
+            if (prereqPhase > 0) {
+                const prereqPlanet = planetsByAlignmentAndPhase[planet.alignment]?.[prereqPhase];
+                if (prereqPlanet) {
+                    // Check if prereq is active in previous round
+                    const prereqActive = config[prereqPlanet.name.toLowerCase()]?.includes(round - 1);
+                    // Check if this planet is already active in a previous round
+                    const alreadyActive = config[lowerCasePlanetName]?.includes(round - 1);
+
+                    if (!alreadyActive && !prereqActive) {
+                        cb.disabled = true; // Cannot unlock without prereq
+                    }
+                }
+            }
+
+            // Check for locking
+            for (const p of planetsMap.values()) {
+                if (exceptionPlanets.has(p.name)) continue;
+                if (p.alignment === planet.alignment && p.phase === planet.phase + 1) {
+                    const lockingPlanet = p;
+                    const unlockRound = config[lockingPlanet.name.toLowerCase()]?.[0];
+                    if (unlockRound && round >= unlockRound) {
+                        cb.disabled = true;
+                    }
+                }
+            }
+        });
+    }
+
+    // ========================================================================
 
     columnCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', () => {

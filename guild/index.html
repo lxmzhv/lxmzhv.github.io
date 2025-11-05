@@ -104,6 +104,7 @@
                 <label for="rareUnitThreshold">Rare Unit Threshold:</label>
                 <input type="number" id="rareUnitThreshold" min="-50" max="50" value="2" style="width: 60px; text-align: center;">
             </div>
+            <button id="tb-plan-btn" style="margin-left: 10px;">TB Plan</button>
         </div>
         <div id="progress-container" style="display: none;">
             <div id="progress-bar">0%</div>
@@ -216,6 +217,27 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="tb-plan-modal" class="modal">
+        <div class="modal-content" style="width: 90%; max-width: 1200px;">
+            <span id="tb-plan-close-button" class="close-button">&times;</span>
+            <div id="tb-plan-modal-body">
+                <div id="planet-config-container" style="margin: 0; max-width: 100%; background: none; padding: 0; border-radius: 0; box-shadow: none;">
+                    <h2>Territory Battle - Planet Configuration</h2>
+                    <div id="planet-config-table-container" style="overflow-x: auto;">
+                        <table id="planet-config-table" style="width: 100%; margin-top: 1em;">
+                            <!-- Planet config table will be generated here by script.js -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="tb-plan-modal-footer" style="text-align: right; margin-top: 20px;">
+                <button id="tb-plan-reset-btn">Reset</button>
+                <button id="tb-plan-cancel-btn" style="margin-left: 10px;">Cancel</button>
+                <button id="tb-plan-save-btn" style="margin-left: 10px;">Save</button>
+            </div>
         </div>
     </div>
 
