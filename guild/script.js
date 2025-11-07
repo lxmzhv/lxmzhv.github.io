@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const columnCheckboxes = document.querySelectorAll('#column-controls input[type="checkbox"]');
     const guildSelector = document.getElementById('guild-selector');
     const guildInfoDiv = document.getElementById('guild-info');
+    const rareUnitThresholdInput = document.getElementById('rareUnitThreshold');
 
     // TB Plan Modal elements
     const tbPlanBtn = document.getElementById('tb-plan-btn');
@@ -17,7 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const tbPlanSaveBtn = document.getElementById('tb-plan-save-btn');
     const tbPlanCancelBtn = document.getElementById('tb-plan-cancel-btn');
     const tbPlanResetBtn = document.getElementById('tb-plan-reset-btn');
+    let rareUnitAvailabilityThreshold = 2;
+    if (rareUnitThresholdInput) {
+        const initialThreshold = parseInt(rareUnitThresholdInput.value, 10);
+        if (!isNaN(initialThreshold)) {
+            rareUnitAvailabilityThreshold = initialThreshold;
+        }
+    }
+
     let tempPlanetConfig = {};
+    let rawPlayerData = [];
+    let allTbPlatoonRequirements = {};
 
     // Load checkbox states from localStorage
     function loadCheckboxStates() {
@@ -95,6 +106,18 @@ document.addEventListener('DOMContentLoaded', () => {
         tbPlanResetBtn.addEventListener('click', () => {
             tempPlanetConfig = getDefaultPlanetRoundMap();
             updatePlanetConfigUI(tempPlanetConfig);
+        });
+    }
+
+    if (rareUnitThresholdInput) {
+        rareUnitThresholdInput.addEventListener('change', () => {
+            const value = parseInt(rareUnitThresholdInput.value, 10);
+            if (!isNaN(value)) {
+                rareUnitAvailabilityThreshold = value;
+                if (rawPlayerData.length > 0) {
+                    recalculateAndRenderDashboard();
+                }
+            }
         });
     }
 
@@ -242,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const requiredCount = phaseReqs[unitId][level];
                     const availableCount = availability[unitId]?.[level] || 0;
 
-                    if (availableCount - requiredCount <= 2) {
+                    if (availableCount - requiredCount <= rareUnitAvailabilityThreshold) {
                         phaseColumns.push({
                             phase: phase,
                             unitId: unitId,
@@ -540,173 +563,181 @@ document.addEventListener('DOMContentLoaded', () => {
                 return Promise.all([Promise.resolve(allPlayerData), platoonPromise]);
             })
             .then(([allPlayerData, platoonRequirements]) => {
-                progressContainer.style.display = 'none';
-
-                // TB Rare Characters Calculation
-                function calculateGuildWideAvailability(players, platoonCharIds) {
-                    const availability = {};
-                    platoonCharIds.forEach(unitId => {
-                        availability[unitId] = { 5: 0, 6: 0, 7: 0, 8: 0, 9: 0 };
-                        players.forEach(player => {
-                            const unitInfo = getPlayerUnitInfo(player, unitId);
-                            if (unitInfo.type === 3 && unitInfo.rarity === 7) {
-                                if (unitInfo.level >= 5) availability[unitId][5]++;
-                                if (unitInfo.level >= 6) availability[unitId][6]++;
-                                if (unitInfo.level >= 7) availability[unitId][7]++;
-                                if (unitInfo.level >= 8) availability[unitId][8]++;
-                                if (unitInfo.level >= 9) availability[unitId][9]++;
-                            }
-                        });
-                    });
-                    return availability;
-                }
-
-                function identifyRareCharacters(availability, totalRequirements) {
-                    const rareCharacters = [];
-                    const rareCheck = new Set();
-
-                    for (const unitId in totalRequirements) {
-                        let usedSoFar = 0;
-                        for (let relic = 9; relic >= 5; relic--) {
-                            const requiredCount = totalRequirements[unitId][relic] || 0;
-                            if (requiredCount === 0) continue;
-
-                            const availableCount = availability[unitId]?.[relic] || 0;
-                            const correctedAvailability = availableCount - usedSoFar;
-
-                            if (correctedAvailability <= requiredCount + 2) {
-                                const key = `${unitId}-${relic}`;
-                                if (!rareCheck.has(key)) {
-                                    rareCharacters.push({ unitId: unitId, level: relic, type: 'char' });
-                                    rareCheck.add(key);
-                                }
-                            }
-
-                            const usedForThisRelic = Math.min(Math.max(0, correctedAvailability), requiredCount);
-                            usedSoFar += usedForThisRelic;
-                        }
-                    }
-                    return rareCharacters;
-                }
-
-                const guildAvailabilityForPlatoons = calculateGuildAvailability(allPlayerData, platoonRequirements);
-                tbColumns = determineTbColumns(platoonRequirements, guildAvailabilityForPlatoons);
-
-                const platoonCharIds = new Set();
-                Object.values(platoonRequirements).forEach(phaseReqs => {
-                    Object.keys(phaseReqs).forEach(unitId => {
-                        if (!shipBaseIds.has(unitId)) {
-                            platoonCharIds.add(unitId);
-                        }
-                    });
-                });
-
-                const guildWideAvailability = calculateGuildWideAvailability(allPlayerData, Array.from(platoonCharIds));
-
-                const masterRareCheck = new Set();
-                const masterRareList = [];
-
-                for (let round = 1; round <= 6; round++) {
-                    const rareForThisRound = identifyRareCharacters(guildWideAvailability, platoonRequirements[round]);
-
-                    rareForThisRound.forEach(rareChar => {
-                        const key = `${rareChar.unitId}-${rareChar.level}`;
-                        if (!masterRareCheck.has(key)) {
-                            masterRareList.push(rareChar);
-                            masterRareCheck.add(key);
-                        }
-                    });
-                }
-                allPlatoonRequirements = masterRareList; // Overwrite the global variable
-
-                renderPlanetConfigTable();
-
-                players = allPlayerData.map(player => {
-                    const playerInfo = {
-                        playerName: player.playerName,
-                        playerId: player.playerId,
-                        allyCode: player.allyCode || '',
-                        modsRating: player.modsRating,
-                        memberLevel: rankMap[player.memberLevel] || player.memberLevel.replace('GUILD_', '').toLowerCase(),
-                        galacticPower: Number(player.galacticPower),
-                        joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime)*1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
-                        roster: player.roster,
-                        isNew: localStorage.getItem(`isNew-${player.playerId}`) !== 'false'
-                    };
-
-                    galacticLegends.forEach(glName => {
-                        playerInfo[glName] = getPlayerUnitInfo(player, glName);
-                    });
-
-                    ships.forEach(shipName => {
-                        playerInfo[shipName] = getShipInfo(player, shipName);
-                    });
-
-                    pilots.forEach(pilotName => {
-                        playerInfo[pilotName] = getPlayerUnitInfo(player, pilotName);
-                    });
-
-                    conquestUnitsOrder.forEach(unitName => {
-                        if (conquestCharactersSet.has(unitName)) {
-                            playerInfo[unitName] = getPlayerUnitInfo(player, unitName);
-                        } else if (conquestShipsMap[unitName]) {
-                            playerInfo[unitName] = getShipInfo(player, unitName);
-                        }
-                    });
-
-                    const unitsMeetingRequirement = { 9: new Set(), 8: new Set(), 7: new Set(), 6: new Set(), 5: new Set() };
-                    allPlatoonRequirements.forEach(req => {
-                        const requiredRelic = req.level;
-                        const unitInfo = getPlayerUnitInfo(player, req.unitId);
-                        if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= requiredRelic) {
-                            if (unitsMeetingRequirement[requiredRelic]) {
-                                unitsMeetingRequirement[requiredRelic].add(req.unitId);
-                            }
-                        }
-                    });
-
-                    playerInfo.rareR9 = unitsMeetingRequirement[9].size;
-                    playerInfo.rareR8 = unitsMeetingRequirement[8].size;
-                    playerInfo.rareR7 = unitsMeetingRequirement[7].size;
-                    playerInfo.rareR6 = unitsMeetingRequirement[6].size;
-                    playerInfo.rareR5 = unitsMeetingRequirement[5].size;
-
-                    const allRareUnits = new Set();
-                    Object.values(unitsMeetingRequirement).forEach(unitSet => {
-                        unitSet.forEach(unitId => allRareUnits.add(unitId));
-                    });
-                    playerInfo.rareRTotal = allRareUnits.size;
-
-                    return playerInfo;
-                });
-
-                assignPlatoons(players, planetStats);
-
-                const savedSortKey = localStorage.getItem('sortKey') || 'memberLevel';
-                const savedSortDirection = localStorage.getItem('sortDirection') || 'asc';
-
-                sortAndRender(savedSortKey, savedSortDirection);
-
-                const sortedHeader = document.querySelector(`th[data-sort="${savedSortKey}"]`);
-                if (sortedHeader) {
-                    sortedHeader.classList.add(savedSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
-                    sortedHeader.dataset.direction = savedSortDirection;
-                }
-
-                const savedDebugSortKey = localStorage.getItem('debugSortKey') || 'round';
-                const savedDebugSortDirection = localStorage.getItem('debugSortDirection') || 'asc';
-                sortAndRenderDebug(savedDebugSortKey, savedDebugSortDirection);
-                const debugTable = document.getElementById('debug-table');
-                const sortedDebugHeader = debugTable.querySelector(`th[data-sort="${savedDebugSortKey}"]`);
-                if (sortedDebugHeader) {
-                    sortedDebugHeader.classList.add(savedDebugSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
-                    sortedDebugHeader.dataset.direction = savedDebugSortDirection;
-                }
+                rawPlayerData = allPlayerData;
+                allTbPlatoonRequirements = platoonRequirements;
+                recalculateAndRenderDashboard();
             })
             .catch(error => {
                 console.error('Error loading guild data:', error);
                 progressContainer.style.display = 'none';
             });
+    }
+
+    function recalculateAndRenderDashboard() {
+        const allPlayerData = rawPlayerData;
+        const platoonRequirements = allTbPlatoonRequirements;
+        progressContainer.style.display = 'none';
+
+        // TB Rare Characters Calculation
+        function calculateGuildWideAvailability(players, platoonCharIds) {
+            const availability = {};
+            platoonCharIds.forEach(unitId => {
+                availability[unitId] = { 5: 0, 6: 0, 7: 0, 8: 0, 9: 0 };
+                players.forEach(player => {
+                    const unitInfo = getPlayerUnitInfo(player, unitId);
+                    if (unitInfo.type === 3 && unitInfo.rarity === 7) {
+                        if (unitInfo.level >= 5) availability[unitId][5]++;
+                        if (unitInfo.level >= 6) availability[unitId][6]++;
+                        if (unitInfo.level >= 7) availability[unitId][7]++;
+                        if (unitInfo.level >= 8) availability[unitId][8]++;
+                        if (unitInfo.level >= 9) availability[unitId][9]++;
+                    }
+                });
+            });
+            return availability;
+        }
+
+        function identifyRareCharacters(availability, totalRequirements) {
+            const rareCharacters = [];
+            const rareCheck = new Set();
+
+            for (const unitId in totalRequirements) {
+                let usedSoFar = 0;
+                for (let relic = 9; relic >= 5; relic--) {
+                    const requiredCount = totalRequirements[unitId][relic] || 0;
+                    if (requiredCount === 0) continue;
+
+                    const availableCount = availability[unitId]?.[relic] || 0;
+                    const correctedAvailability = availableCount - usedSoFar;
+
+                    if (correctedAvailability - requiredCount <= rareUnitAvailabilityThreshold) {
+                        const key = `${unitId}-${relic}`;
+                        if (!rareCheck.has(key)) {
+                            rareCharacters.push({ unitId: unitId, level: relic, type: 'char' });
+                            rareCheck.add(key);
+                        }
+                    }
+
+                    const usedForThisRelic = Math.min(Math.max(0, correctedAvailability), requiredCount);
+                    usedSoFar += usedForThisRelic;
+                }
+            }
+            return rareCharacters;
+        }
+
+        const guildAvailabilityForPlatoons = calculateGuildAvailability(allPlayerData, platoonRequirements);
+        tbColumns = determineTbColumns(platoonRequirements, guildAvailabilityForPlatoons);
+
+        const platoonCharIds = new Set();
+        Object.values(platoonRequirements).forEach(phaseReqs => {
+            Object.keys(phaseReqs).forEach(unitId => {
+                if (!shipBaseIds.has(unitId)) {
+                    platoonCharIds.add(unitId);
+                }
+            });
+        });
+
+        const guildWideAvailability = calculateGuildWideAvailability(allPlayerData, Array.from(platoonCharIds));
+
+        const masterRareCheck = new Set();
+        const masterRareList = [];
+
+        for (let round = 1; round <= 6; round++) {
+            const rareForThisRound = identifyRareCharacters(guildWideAvailability, platoonRequirements[round]);
+
+            rareForThisRound.forEach(rareChar => {
+                const key = `${rareChar.unitId}-${rareChar.level}`;
+                if (!masterRareCheck.has(key)) {
+                    masterRareList.push(rareChar);
+                    masterRareCheck.add(key);
+                }
+            });
+        }
+        allPlatoonRequirements = masterRareList; // Overwrite the global variable
+
+        renderPlanetConfigTable();
+
+        players = allPlayerData.map(player => {
+            const playerInfo = {
+                playerName: player.playerName,
+                playerId: player.playerId,
+                allyCode: player.allyCode || '',
+                modsRating: player.modsRating,
+                memberLevel: rankMap[player.memberLevel] || player.memberLevel.replace('GUILD_', '').toLowerCase(),
+                galacticPower: Number(player.galacticPower),
+                joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime)*1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
+                roster: player.roster,
+                isNew: localStorage.getItem(`isNew-${player.playerId}`) !== 'false'
+            };
+
+            galacticLegends.forEach(glName => {
+                playerInfo[glName] = getPlayerUnitInfo(player, glName);
+            });
+
+            ships.forEach(shipName => {
+                playerInfo[shipName] = getShipInfo(player, shipName);
+            });
+
+            pilots.forEach(pilotName => {
+                playerInfo[pilotName] = getPlayerUnitInfo(player, pilotName);
+            });
+
+            conquestUnitsOrder.forEach(unitName => {
+                if (conquestCharactersSet.has(unitName)) {
+                    playerInfo[unitName] = getPlayerUnitInfo(player, unitName);
+                } else if (conquestShipsMap[unitName]) {
+                    playerInfo[unitName] = getShipInfo(player, unitName);
+                }
+            });
+
+            const unitsMeetingRequirement = { 9: new Set(), 8: new Set(), 7: new Set(), 6: new Set(), 5: new Set() };
+            allPlatoonRequirements.forEach(req => {
+                const requiredRelic = req.level;
+                const unitInfo = getPlayerUnitInfo(player, req.unitId);
+                if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= requiredRelic) {
+                    if (unitsMeetingRequirement[requiredRelic]) {
+                        unitsMeetingRequirement[requiredRelic].add(req.unitId);
+                    }
+                }
+            });
+
+            playerInfo.rareR9 = unitsMeetingRequirement[9].size;
+            playerInfo.rareR8 = unitsMeetingRequirement[8].size;
+            playerInfo.rareR7 = unitsMeetingRequirement[7].size;
+            playerInfo.rareR6 = unitsMeetingRequirement[6].size;
+            playerInfo.rareR5 = unitsMeetingRequirement[5].size;
+
+            const allRareUnits = new Set();
+            Object.values(unitsMeetingRequirement).forEach(unitSet => {
+                unitSet.forEach(unitId => allRareUnits.add(unitId));
+            });
+            playerInfo.rareRTotal = allRareUnits.size;
+
+            return playerInfo;
+        });
+
+        assignPlatoons(players, planetStats);
+
+        const savedSortKey = localStorage.getItem('sortKey') || 'memberLevel';
+        const savedSortDirection = localStorage.getItem('sortDirection') || 'asc';
+
+        sortAndRender(savedSortKey, savedSortDirection);
+
+        const sortedHeader = document.querySelector(`th[data-sort="${savedSortKey}"]`);
+        if (sortedHeader) {
+            sortedHeader.classList.add(savedSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+            sortedHeader.dataset.direction = savedSortDirection;
+        }
+
+        const savedDebugSortKey = localStorage.getItem('debugSortKey') || 'round';
+        const savedDebugSortDirection = localStorage.getItem('debugSortDirection') || 'asc';
+        sortAndRenderDebug(savedDebugSortKey, savedDebugSortDirection);
+        const debugTable = document.getElementById('debug-table');
+        const sortedDebugHeader = debugTable.querySelector(`th[data-sort="${savedDebugSortKey}"]`);
+        if (sortedDebugHeader) {
+            sortedDebugHeader.classList.add(savedDebugSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+            sortedDebugHeader.dataset.direction = savedDebugSortDirection;
+        }
     }
 
     function loadPlatoonData() {
@@ -1776,7 +1807,6 @@ document.addEventListener('DOMContentLoaded', () => {
             currentConfig[p.name][1] = isR1Planet;
         });
 
-        // Run multiple passes to ensure all rules propagate
         for (let i = 0; i < 6; i++) { // 6 passes should be enough for changes to propagate
             // Rule: Consecutive rounds (if a gap exists, uncheck everything after the gap)
             planetsMap.forEach(p => {
