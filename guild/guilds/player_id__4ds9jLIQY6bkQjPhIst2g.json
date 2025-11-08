@@ -1,6 +1,11 @@
 {
  "allyCode":"615836169",
- "modsRating":75.073207,
+ "requirements":{
+  "leia":{
+   "total_score":109.4
+  }
+ },
+ "modsRating":74.902017,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":8
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":6,
-   "currentTier":13,
-   "relic":{
-    "currentTier":6
    },
    "stats":{}
   },

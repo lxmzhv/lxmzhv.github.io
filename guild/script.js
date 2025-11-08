@@ -178,7 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "nightsisterzombie": "Zombie", "motherdalzin": "Talzin", "olddaka": "Daka", "talia": "Talia",
         "nightsisterinitiate": "Initiate", "nightsisteracolyte": "Acolyte", "rose": "Rose Tico",
         "amilynholdo": "Holdo", "reyjakku": "Scav Rey", "finn": "Finn", "poedameron": "Poe", "resistancepilot": "Res Pilot",
-        "resistancetrooper": "Res Trooper", "reyjeditraining": "RJ"
+        "resistancetrooper": "Res Trooper", "reyjeditraining": "RJ",
+        "r2d2_legendary": "R2-D2", "captaindrogan": "Drogan", "admiralraddus": "Raddus"
     };
 
     function getUnitDisplayName(unitId) {
@@ -307,9 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const shipsMap = {
         "capitalleviathan": "Levi",
         "capitalprofundity": "Prof",
-        "capitalexecutor": "Exec",
-        "punishingone": "PO",
-        "marauder": "Marauder"
+        "capitalexecutor": "Exec"
     };
     const ships = Object.keys(shipsMap);
 
@@ -351,6 +350,26 @@ document.addEventListener('DOMContentLoaded', () => {
         "trench", "darthbane", "queenamidala", "luthenrael",
         "ezraexile", "darkrey", "sm33", "jocastanu", "mazkanata"
     ];
+
+    const leiaTeamUnits = ["glleia", "r2d2_legendary", "captaindrogan", "admiralraddus", "jynerso"];
+
+    const leiaTeamUnitColorThresholds = {
+        "glleia": {
+            red: 5, orange: 7, yellow: 9, green: Infinity
+        },
+        "captaindrogan": {
+            red: 3, orange: 5, yellow: 8, green: Infinity
+        },
+        "r2d2_legendary": {
+            red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
+        },
+        "jynerso": {
+            red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
+        },
+        "admiralraddus": {
+            red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
+        }
+    };
 
     function getShipInfo(player, shipName) {
         let shipInfo;
@@ -399,6 +418,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (unitInfo.level === 9) return '#7ACC7A'; // R9 (slightly darker green)
         }
         return ''; // Default or unknown
+    }
+
+    function getReqBackgroundColor(score) {
+        if (score < 70) return '#FF9999'; // Red
+        if (score < 80) return 'orange';
+        if (score < 90) return 'yellow';
+        if (score < 100) return 'lightgreen';
+        return '#7ACC7A'; // Green
+    }
+
+    function getLeiaUnitBGColor(unitInfo, unitId) {
+        if (unitInfo.type !== 3) { // Not a relic
+            return getUnitBGColor(unitInfo);
+        }
+
+        const thresholds = leiaTeamUnitColorThresholds[unitId];
+        if (!thresholds) {
+            return getUnitBGColor(unitInfo); // Fallback for safety
+        }
+
+        const level = unitInfo.level;
+        if (level < thresholds.red) return '#FF9999';
+        if (level < thresholds.orange) return 'orange';
+        if (level < thresholds.yellow) return 'yellow';
+        if (thresholds.lightgreen && level < thresholds.lightgreen) return 'lightgreen';
+        return '#7ACC7A';
     }
 
     function getRoleBackgroundColor(role) {
@@ -667,6 +712,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 galacticPower: Number(player.galacticPower),
                 joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime)*1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
                 roster: player.roster,
+                requirements: player.requirements,
                 isNew: localStorage.getItem(`isNew-${player.playerId}`) !== 'false'
             };
 
@@ -712,6 +758,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 unitSet.forEach(unitId => allRareUnits.add(unitId));
             });
             playerInfo.rareRTotal = allRareUnits.size;
+
+            // Requirements
+            const leiaReqs = player.requirements?.leia;
+            playerInfo.reqLeiaTotal = leiaReqs?.total_score || 0;
+            leiaTeamUnits.forEach(unitId => {
+                playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
+            });
 
             return playerInfo;
         });
@@ -813,22 +866,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    table.querySelectorAll('th[data-sort]').forEach(headerCell => {
-        headerCell.addEventListener('click', () => {
-            const sortKey = headerCell.dataset.sort;
-            const currentDirection = headerCell.dataset.direction || 'desc';
-            const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
+    table.querySelector('thead').addEventListener('click', (event) => {
+        const headerCell = event.target.closest('th[data-sort]');
+        if (!headerCell) return;
 
-            table.querySelectorAll('th[data-sort]').forEach(th => {
-                delete th.dataset.direction;
-                th.classList.remove('sort-asc', 'sort-desc');
-            });
+        const sortKey = headerCell.dataset.sort;
+        const currentDirection = headerCell.dataset.direction || 'desc';
+        const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
 
-            headerCell.dataset.direction = newDirection;
-            headerCell.classList.add(newDirection === 'asc' ? 'sort-asc' : 'sort-desc');
-
-            sortAndRender(sortKey, newDirection);
+        table.querySelectorAll('th[data-sort]').forEach(th => {
+            delete th.dataset.direction;
+            th.classList.remove('sort-asc', 'sort-desc');
         });
+
+        headerCell.dataset.direction = newDirection;
+        headerCell.classList.add(newDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+
+        sortAndRender(sortKey, newDirection);
     });
 
     const debugTable = document.getElementById('debug-table');
@@ -868,7 +922,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (galacticLegends.includes(key) || pilots.includes(key) || conquestCharacters.includes(key)) {
+            if (galacticLegends.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic')) {
                 const valA_gl = a[key];
                 const valB_gl = b[key];
 
@@ -900,7 +954,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating') {
+            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('reqLeia')) {
                 const numA = Number(valA);
                 const numB = Number(valB);
                 if (numA < numB) return direction === 'asc' ? -1 : 1;
@@ -1697,6 +1751,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 const lastTbCell = row.cells[row.cells.length - 1];
                 lastTbCell.classList.add('separator-right');
             }
+
+            // Requirements
+            const reqLeiaTotalCell = row.insertCell();
+            reqLeiaTotalCell.classList.add('col-requirements', 'separator-left');
+            reqLeiaTotalCell.textContent = player.reqLeiaTotal.toFixed(0);
+            reqLeiaTotalCell.style.backgroundColor = getReqBackgroundColor(player.reqLeiaTotal);
+
+            leiaTeamUnits.forEach((unitId, idx) => {
+                const relicCell = row.insertCell();
+                relicCell.classList.add('col-requirements');
+                if (idx === leiaTeamUnits.length - 1) {
+                    relicCell.classList.add('separator-right');
+                }
+                const unitInfo = player[`reqLeia-${unitId}-relic`];
+                relicCell.textContent = unitInfo.display;
+                relicCell.style.backgroundColor = getLeiaUnitBGColor(unitInfo, unitId);
+            });
         });
 
         // Re-apply column visibility based on current checkbox state

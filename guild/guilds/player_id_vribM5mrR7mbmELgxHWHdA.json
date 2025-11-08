@@ -1,6 +1,11 @@
 {
  "allyCode":"572151227",
- "modsRating":81.803908,
+ "requirements":{
+  "leia":{
+   "total_score":103.2
+  }
+ },
+ "modsRating":81.733065,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -20,14 +25,6 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -3831,10 +3828,10 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":84710,
-     "Speed":64,
-     "Physical Damage":5756,
-     "Special Damage":22617,
+     "Health":85284,
+     "Speed":65,
+     "Physical Damage":5795,
+     "Special Damage":22770,
      "Armor":0,
      "Resistance":24,
      "Armor Penetration":0,
@@ -3842,12 +3839,12 @@
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":944,
+     "Special Critical Chance":951,
      "Critical Damage":0,
-     "Potency":0.49212405000000004,
-     "Tenacity":0.49212405000000004,
+     "Potency":0.49545738,
+     "Tenacity":0.49545738,
      "Health Steal":0,
-     "Protection":28236,
+     "Protection":28428,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

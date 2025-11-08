@@ -1,6 +1,11 @@
 {
  "allyCode":"127362733",
- "modsRating":40.112402,
+ "requirements":{
+  "leia":{
+   "total_score":70.8
+  }
+ },
+ "modsRating":39.992355,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -21,14 +26,6 @@
   "greefkarga":{
    "currentRarity":7,
    "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
-   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -1502,7 +1499,7 @@
   },
   "quiggold":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":8,
    "relic":{
     "currentTier":1
    },

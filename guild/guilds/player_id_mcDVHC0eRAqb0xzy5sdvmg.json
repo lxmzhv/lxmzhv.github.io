@@ -1,6 +1,11 @@
 {
  "allyCode":"756973116",
- "modsRating":50.609612,
+ "requirements":{
+  "leia":{
+   "total_score":94.8
+  }
+ },
+ "modsRating":50.578694,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -20,14 +25,6 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -244,7 +241,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":11
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1710,9 +1707,9 @@
   },
   "brutus":{
    "currentRarity":5,
-   "currentTier":13,
+   "currentTier":12,
    "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2496,7 +2493,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4359,7 +4356,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":13,
    "relic":{
     "currentTier":3

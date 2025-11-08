@@ -1,6 +1,11 @@
 {
  "allyCode":"685767227",
- "modsRating":23.902514,
+ "requirements":{
+  "leia":{
+   "total_score":99.0
+  }
+ },
+ "modsRating":23.58708,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -20,14 +25,6 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -408,7 +405,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":11
+    "currentTier":10
    },
    "stats":{}
   },
@@ -635,12 +632,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":32771,
-     "Speed":28,
-     "Physical Damage":3246,
+     "Health":31619,
+     "Speed":27,
+     "Physical Damage":3132,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":29,
+     "Resistance":28,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -648,10 +645,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.21468759,
-     "Tenacity":0.21468759,
+     "Potency":0.20714019,
+     "Tenacity":0.20714019,
      "Health Steal":0,
-     "Protection":21847,
+     "Protection":21079,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -853,21 +850,21 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":1,
-     "Speed":71,
-     "Physical Damage":8540,
+     "Health":0,
+     "Speed":66,
+     "Physical Damage":7979,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":82,
+     "Resistance":77,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":130,
+     "Physical Critical Chance":121,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.54223389,
-     "Tenacity":0.54223389,
+     "Potency":0.50662953,
+     "Tenacity":0.50662953,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -2493,7 +2490,7 @@
    "stats":{}
   },
   "ithano":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":13,
    "relic":{
     "currentTier":5
@@ -2612,9 +2609,9 @@
   },
   "moffgideons3":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2622,7 +2619,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":11
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4359,7 +4356,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":13,
    "relic":{
     "currentTier":3
@@ -4480,7 +4477,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":3
    },
    "stats":{}
   },

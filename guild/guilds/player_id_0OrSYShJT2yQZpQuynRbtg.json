@@ -1,6 +1,11 @@
 {
  "allyCode":"736484965",
- "modsRating":59.988075,
+ "requirements":{
+  "leia":{
+   "total_score":104.4
+  }
+ },
+ "modsRating":59.635049,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -20,14 +25,6 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -1475,9 +1472,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":90118,
-     "Speed":77,
-     "Physical Damage":10836,
+     "Health":88882,
+     "Speed":76,
+     "Physical Damage":10687,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1485,13 +1482,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":62,
+     "Physical Critical Chance":61,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.52349976,
+     "Potency":0.51632154,
      "Tenacity":0,
      "Health Steal":0,
-     "Protection":30039,
+     "Protection":29627,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2427,9 +2424,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":66432,
+     "Health":66684,
      "Speed":57,
-     "Physical Damage":7812,
+     "Physical Damage":7842,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -2440,10 +2437,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.43113624,
-     "Tenacity":0.43113624,
+     "Potency":0.43277151,
+     "Tenacity":0.43277151,
      "Health Steal":0,
-     "Protection":44288,
+     "Protection":44456,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -4359,10 +4356,10 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
-   "currentTier":13,
+   "currentRarity":5,
+   "currentTier":12,
    "relic":{
-    "currentTier":6
+    "currentTier":1
    },
    "stats":{}
   },

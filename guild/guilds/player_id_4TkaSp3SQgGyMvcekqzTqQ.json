@@ -1,6 +1,11 @@
 {
  "allyCode":"493344583",
- "modsRating":35.845289,
+ "requirements":{
+  "leia":{
+   "total_score":92.8
+  }
+ },
+ "modsRating":35.718188,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -21,14 +26,6 @@
   "greefkarga":{
    "currentRarity":7,
    "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
-   "currentTier":1,
    "relic":{
     "currentTier":1
    },
@@ -93,9 +90,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":16097,
-     "Speed":48,
-     "Physical Damage":3190,
+     "Health":15207,
+     "Speed":45,
+     "Physical Damage":3013,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -106,10 +103,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.33676194,
-     "Tenacity":0.33676194,
+     "Potency":0.31814202,
+     "Tenacity":0.31814202,
      "Health Steal":0,
-     "Protection":34605,
+     "Protection":32691,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -360,9 +357,9 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2073,23 +2070,23 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":73331,
-     "Speed":60,
-     "Physical Damage":4340,
-     "Special Damage":19760,
+     "Health":70181,
+     "Speed":58,
+     "Physical Damage":4154,
+     "Special Damage":18911,
      "Armor":0,
-     "Resistance":38,
+     "Resistance":36,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":456,
+     "Special Critical Chance":437,
      "Critical Damage":0,
-     "Potency":0.4756617,
-     "Tenacity":0.4756617,
+     "Potency":0.4552281,
+     "Tenacity":0.4552281,
      "Health Steal":0,
-     "Protection":48887,
+     "Protection":46787,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

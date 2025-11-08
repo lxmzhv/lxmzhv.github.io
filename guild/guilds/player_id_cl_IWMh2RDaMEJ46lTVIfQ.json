@@ -1,6 +1,11 @@
 {
  "allyCode":"678929358",
- "modsRating":54.843398,
+ "requirements":{
+  "leia":{
+   "total_score":80.8
+  }
+ },
+ "modsRating":54.495813,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":8
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
-   "currentTier":1,
-   "relic":{
-    "currentTier":1
    },
    "stats":{}
   },
@@ -115,9 +112,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":134465,
+     "Health":133804,
      "Speed":67,
-     "Physical Damage":23642,
+     "Physical Damage":23526,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -128,10 +125,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":1.30427602,
-     "Tenacity":1.30427602,
+     "Potency":1.2978577900000001,
+     "Tenacity":1.2978577900000001,
      "Health Steal":0,
-     "Protection":50809,
+     "Protection":50559,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -236,7 +233,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -619,9 +616,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":29545,
+     "Health":29736,
      "Speed":25,
-     "Physical Damage":2926,
+     "Physical Damage":2945,
      "Special Damage":0,
      "Armor":0,
      "Resistance":26,
@@ -632,10 +629,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.19355307,
-     "Tenacity":0.19355307,
+     "Potency":0.19480677,
+     "Tenacity":0.19480677,
      "Health Steal":0,
-     "Protection":19696,
+     "Protection":19824,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1771,7 +1768,7 @@
    "stats":{}
   },
   "kelleranbeq":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":10,
    "relic":{
     "currentTier":1
@@ -2016,7 +2013,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":9
+    "currentTier":8
    },
    "stats":{}
   },
@@ -2325,9 +2322,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":72313,
-     "Speed":62,
-     "Physical Damage":8504,
+     "Health":72817,
+     "Speed":63,
+     "Physical Damage":8563,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -2338,10 +2335,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.46930452,
-     "Tenacity":0.46930452,
+     "Potency":0.47257506,
+     "Tenacity":0.47257506,
      "Health Steal":0,
-     "Protection":48208,
+     "Protection":48544,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2698,7 +2695,7 @@
   },
   "embo":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":7,
    "relic":{
     "currentTier":1
    },
@@ -3433,9 +3430,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":73650,
-     "Speed":57,
-     "Physical Damage":7295,
+     "Health":73868,
+     "Speed":58,
+     "Physical Damage":7317,
      "Special Damage":0,
      "Armor":0,
      "Resistance":65,
@@ -3446,10 +3443,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.48206866000000004,
-     "Tenacity":0.48206866000000004,
+     "Potency":0.48349606,
+     "Tenacity":0.48349606,
      "Health Steal":0,
-     "Protection":49100,
+     "Protection":49245,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

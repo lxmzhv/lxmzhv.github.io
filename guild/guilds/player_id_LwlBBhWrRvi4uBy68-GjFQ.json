@@ -1,6 +1,11 @@
 {
  "allyCode":"888914217",
- "modsRating":34.422891,
+ "requirements":{
+  "leia":{
+   "total_score":99.8
+  }
+ },
+ "modsRating":34.303229,
  "roster":{
   "magmatrooper":{
    "currentRarity":6,
@@ -20,14 +25,6 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":8,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
    "currentTier":8,
    "relic":{
     "currentTier":1
@@ -464,7 +461,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2585,10 +2582,10 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":88569,
-     "Speed":60,
-     "Physical Damage":4497,
-     "Special Damage":20476,
+     "Health":87704,
+     "Speed":59,
+     "Physical Damage":4453,
+     "Special Damage":20276,
      "Armor":0,
      "Resistance":39,
      "Armor Penetration":0,
@@ -2596,12 +2593,12 @@
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":473,
+     "Special Critical Chance":468,
      "Critical Damage":0,
-     "Potency":0.49277737,
-     "Tenacity":0.49277737,
+     "Potency":0.48796575000000003,
+     "Tenacity":0.48796575000000003,
      "Health Steal":0,
-     "Protection":59046,
+     "Protection":58469,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2654,7 +2651,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2748,7 +2745,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4208,7 +4205,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":10
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4464,7 +4461,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":10
+    "currentTier":9
    },
    "stats":{}
   },

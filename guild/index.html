@@ -99,6 +99,7 @@
             <label style="margin-left: 10px;"><input type="checkbox" data-group="conquest" checked> Conquest</label>
             <label style="margin-left: 10px;"><input type="checkbox" data-group="tb"> TB Platoons</label>
             <label style="margin-left: 10px;"><input type="checkbox" data-group="tb-rare" checked> TB Rare Units</label>
+            <label style="margin-left: 10px;"><input type="checkbox" data-group="requirements"> Teams</label>
             <label style="margin-left: 10px; border-left: 2px solid #ccc; padding-left: 10px;"><input type="checkbox" data-group="debug"> TB Planets</label>
             <div style="display: inline-block; margin-left: 20px; border-left: 2px solid #ccc; padding-left: 10px;">
                 <label for="rareUnitThreshold">Rare Unit Threshold:</label>
@@ -118,9 +119,10 @@
                             <th rowspan="2" class="separator-right" data-sort="playerName">Player Name</th>
                             <th colspan="5" class="separator-left separator-right col-player-info">Player Info</th>
                             <th colspan="10" class="separator-left separator-right col-gl">Galactic Legends</th>
-                            <th colspan="8" class="separator-left col-ships">Ships</th>
+                            <th colspan="6" class="separator-left col-ships">Ships</th>
                             <th colspan="17" class="separator-left separator-right col-conquest">Conquest</th>
                             <th colspan="7" class="separator-left separator-right col-tb-rare">TB Rare Units</th>
+                            <th colspan="6" class="separator-left separator-right col-requirements">Teams</th>
                         </tr>
                         <tr>
                             <th data-sort="allyCode" class="separator-left col-player-info">Ally Code</th>
@@ -141,8 +143,6 @@
                             <th data-sort="capitalleviathan" class="separator-left col-ships">Levi</th>
                             <th data-sort="capitalprofundity" class="col-ships">Prof</th>
                             <th data-sort="capitalexecutor" class="col-ships">Exec</th>
-                            <th data-sort="punishingone" class="col-ships">PO</th>
-                            <th data-sort="marauder" class="col-ships">Marauder</th>
                             <th data-sort="badbatchhunter" class="col-ships">Hunter</th>
                             <th data-sort="badbatchtech" class="col-ships">Tech</th>
                             <th data-sort="badbatchwrecker" class="col-ships">Wrecker</th>
@@ -170,6 +170,12 @@
                             <th data-sort="rareR9" class="col-tb-rare">R9</th>
                             <th data-sort="rareRTotal" class="col-tb-rare">Total</th>
                             <th class="separator-right col-tb-rare">New</th>
+                            <th data-sort="reqLeiaTotal" class="separator-left col-requirements">Leia</th>
+                            <th data-sort="reqLeia-glleia-relic" class="col-requirements">GL Leia</th>
+                            <th data-sort="reqLeia-r2d2_legendary-relic" class="col-requirements">R2D2</th>
+                            <th data-sort="reqLeia-captaindrogan-relic" class="col-requirements">Drogan</th>
+                            <th data-sort="reqLeia-admiralraddus-relic" class="col-requirements">Raddus</th>
+                            <th data-sort="reqLeia-jynerso-relic" class="separator-right col-requirements">Jyn</th>
                         </tr>
                     </thead>
                     <tbody>

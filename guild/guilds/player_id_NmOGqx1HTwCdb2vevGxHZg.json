@@ -1,6 +1,11 @@
 {
  "allyCode":"524865533",
- "modsRating":55.259612,
+ "requirements":{
+  "leia":{
+   "total_score":100.2
+  }
+ },
+ "modsRating":54.94041,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":3
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
-   "currentTier":8,
-   "relic":{
-    "currentTier":1
    },
    "stats":{}
   },
@@ -751,9 +748,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":68511,
-     "Speed":61,
-     "Physical Damage":8057,
+     "Health":70543,
+     "Speed":63,
+     "Physical Damage":8296,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -764,10 +761,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.44465157,
-     "Tenacity":0.44465157,
+     "Potency":0.45783837,
+     "Tenacity":0.45783837,
      "Health Steal":0,
-     "Protection":45674,
+     "Protection":47029,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1518,7 +1515,7 @@
   },
   "4lom":{
    "currentRarity":3,
-   "currentTier":12,
+   "currentTier":11,
    "relic":{
     "currentTier":1
    },
@@ -1709,7 +1706,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":5,
+   "currentRarity":4,
    "currentTier":13,
    "relic":{
     "currentTier":2
@@ -2045,7 +2042,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":5,
    "currentTier":13,
    "relic":{
     "currentTier":2
@@ -2933,12 +2930,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":116834,
-     "Speed":75,
-     "Physical Damage":7872,
+     "Health":121002,
+     "Speed":78,
+     "Physical Damage":8153,
      "Special Damage":0,
-     "Armor":127,
-     "Resistance":209,
+     "Armor":131,
+     "Resistance":216,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -2946,8 +2943,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.52060806,
-     "Tenacity":0.52060806,
+     "Potency":0.53918298,
+     "Tenacity":0.53918298,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -3216,7 +3213,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":11,
    "relic":{
     "currentTier":1
    },
@@ -4352,9 +4349,9 @@
   },
   "vane":{
    "currentRarity":6,
-   "currentTier":13,
+   "currentTier":12,
    "relic":{
-    "currentTier":2
+    "currentTier":1
    },
    "stats":{}
   },
@@ -4368,7 +4365,7 @@
   },
   "jediknightguardian":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },

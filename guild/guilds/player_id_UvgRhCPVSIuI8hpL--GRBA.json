@@ -1,6 +1,11 @@
 {
  "allyCode":"272765393",
- "modsRating":40.866116,
+ "requirements":{
+  "leia":{
+   "total_score":95.4
+  }
+ },
+ "modsRating":41.18079,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -21,14 +26,6 @@
   "greefkarga":{
    "currentRarity":7,
    "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
-   "currentTier":7,
    "relic":{
     "currentTier":1
    },
@@ -161,12 +158,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":109321,
-     "Speed":64,
-     "Physical Damage":7366,
+     "Health":113490,
+     "Speed":66,
+     "Physical Damage":7646,
      "Special Damage":0,
-     "Armor":118,
-     "Resistance":195,
+     "Armor":123,
+     "Resistance":203,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -174,8 +171,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.48713238000000003,
-     "Tenacity":0.48713238000000003,
+     "Potency":0.5057073,
+     "Tenacity":0.5057073,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -854,20 +851,20 @@
    "stats":{
     "crew":{
      "Health":0,
-     "Speed":65,
-     "Physical Damage":7850,
+     "Speed":66,
+     "Physical Damage":7972,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":75,
+     "Resistance":76,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":119,
+     "Physical Critical Chance":121,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.49846104,
-     "Tenacity":0.49846104,
+     "Potency":0.50618997,
+     "Tenacity":0.50618997,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -1361,9 +1358,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":74493,
-     "Speed":57,
-     "Physical Damage":8957,
+     "Health":74736,
+     "Speed":58,
+     "Physical Damage":8986,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1374,10 +1371,10 @@
      "Physical Critical Chance":51,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.43223949,
-     "Tenacity":0.43223949,
+     "Potency":0.43364889,
+     "Tenacity":0.43364889,
      "Health Steal":0,
-     "Protection":24831,
+     "Protection":24912,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2073,10 +2070,10 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":72932,
-     "Speed":60,
-     "Physical Damage":4316,
-     "Special Damage":19653,
+     "Health":72117,
+     "Speed":59,
+     "Physical Damage":4268,
+     "Special Damage":19433,
      "Armor":0,
      "Resistance":37,
      "Armor Penetration":0,
@@ -2084,12 +2081,12 @@
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":454,
+     "Special Critical Chance":449,
      "Critical Damage":0,
-     "Potency":0.47307267000000003,
-     "Tenacity":0.47307267000000003,
+     "Potency":0.46779012000000003,
+     "Tenacity":0.46779012000000003,
      "Health Steal":0,
-     "Protection":48621,
+     "Protection":48078,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2738,7 +2735,7 @@
   },
   "starkiller":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":8,
    "relic":{
     "currentTier":1
    },
@@ -2803,23 +2800,23 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":86567,
-     "Speed":67,
-     "Physical Damage":7819,
+     "Health":88186,
+     "Speed":68,
+     "Physical Damage":7965,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":75,
+     "Resistance":76,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":119,
+     "Physical Critical Chance":121,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.49641984,
-     "Tenacity":0.49641984,
+     "Potency":0.5057073,
+     "Tenacity":0.5057073,
      "Health Steal":0,
-     "Protection":28855,
+     "Protection":29395,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -4001,9 +3998,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":61894,
-     "Speed":53,
-     "Physical Damage":6131,
+     "Health":62552,
+     "Speed":54,
+     "Physical Damage":6196,
      "Special Damage":0,
      "Armor":0,
      "Resistance":55,
@@ -4014,10 +4011,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.40547508,
-     "Tenacity":0.40547508,
+     "Potency":0.40978788,
+     "Tenacity":0.40978788,
      "Health Steal":0,
-     "Protection":41262,
+     "Protection":41701,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

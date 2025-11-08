@@ -1,6 +1,11 @@
 {
  "allyCode":"423992292",
- "modsRating":53.12405,
+ "requirements":{
+  "leia":{
+   "total_score":102.0
+  }
+ },
+ "modsRating":52.321687,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":7
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
-   "currentTier":12,
-   "relic":{
-    "currentTier":1
    },
    "stats":{}
   },
@@ -1288,7 +1285,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1518,9 +1515,9 @@
   },
   "4lom":{
    "currentRarity":5,
-   "currentTier":13,
+   "currentTier":12,
    "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1877,12 +1874,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":53094,
-     "Speed":41,
-     "Physical Damage":5259,
+     "Health":50793,
+     "Speed":39,
+     "Physical Damage":5031,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":47,
+     "Resistance":45,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1890,10 +1887,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.34752432,
-     "Tenacity":0.34752432,
+     "Potency":0.33246525,
+     "Tenacity":0.33246525,
      "Health Steal":0,
-     "Protection":35396,
+     "Protection":33862,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2048,7 +2045,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },

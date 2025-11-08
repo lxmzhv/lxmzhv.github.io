@@ -1,6 +1,11 @@
 {
  "allyCode":"389773368",
- "modsRating":60.505119,
+ "requirements":{
+  "leia":{
+   "total_score":99.0
+  }
+ },
+ "modsRating":59.787028,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":5
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
-   "currentTier":4,
-   "relic":{
-    "currentTier":1
    },
    "stats":{}
   },
@@ -635,9 +632,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":31766,
+     "Health":31446,
      "Speed":27,
-     "Physical Damage":3146,
+     "Physical Damage":3115,
      "Special Damage":0,
      "Armor":0,
      "Resistance":28,
@@ -648,10 +645,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.20810757,
-     "Tenacity":0.20810757,
+     "Potency":0.20601107,
+     "Tenacity":0.20601107,
      "Health Steal":0,
-     "Protection":21177,
+     "Protection":20964,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1016,7 +1013,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":7
+    "currentTier":6
    },
    "stats":{}
   },
@@ -1709,7 +1706,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":5,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -3744,7 +3741,7 @@
   },
   "trench":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -4284,7 +4281,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4359,7 +4356,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
+   "currentRarity":5,
    "currentTier":12,
    "relic":{
     "currentTier":1

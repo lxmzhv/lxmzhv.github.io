@@ -1,6 +1,11 @@
 {
  "allyCode":"582118265",
- "modsRating":64.91739,
+ "requirements":{
+  "leia":{
+   "total_score":104.4
+  }
+ },
+ "modsRating":64.851059,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -20,14 +25,6 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":8,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":4,
    "currentTier":8,
    "relic":{
     "currentTier":1
@@ -1320,7 +1317,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":7
+    "currentTier":6
    },
    "stats":{}
   },
@@ -1501,10 +1498,10 @@
    }
   },
   "quiggold":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":13,
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1869,12 +1866,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":54350,
+     "Health":53501,
      "Speed":42,
-     "Physical Damage":5383,
+     "Physical Damage":5299,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":48,
+     "Resistance":47,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1882,10 +1879,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.35574376,
-     "Tenacity":0.35574376,
+     "Potency":0.3501888,
+     "Tenacity":0.3501888,
      "Health Steal":0,
-     "Protection":36233,
+     "Protection":35667,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2357,7 +2354,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":10
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2386,7 +2383,7 @@
    "stats":{}
   },
   "hondo":{
-   "currentRarity":7,
+   "currentRarity":5,
    "currentTier":13,
    "relic":{
     "currentTier":3

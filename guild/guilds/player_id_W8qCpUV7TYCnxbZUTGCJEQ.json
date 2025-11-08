@@ -1,6 +1,11 @@
 {
  "allyCode":"322223318",
- "modsRating":75.513525,
+ "requirements":{
+  "leia":{
+   "total_score":99.8
+  }
+ },
+ "modsRating":75.103563,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1782,7 +1787,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":11
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2925,12 +2930,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":118597,
-     "Speed":76,
-     "Physical Damage":7991,
+     "Health":111085,
+     "Speed":71,
+     "Physical Damage":7484,
      "Special Damage":0,
-     "Armor":128,
-     "Resistance":212,
+     "Armor":120,
+     "Resistance":199,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -2938,8 +2943,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.52846668,
-     "Tenacity":0.52846668,
+     "Potency":0.494991,
+     "Tenacity":0.494991,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,

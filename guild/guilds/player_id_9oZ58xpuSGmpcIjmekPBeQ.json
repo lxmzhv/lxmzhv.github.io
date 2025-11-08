@@ -1,6 +1,11 @@
 {
  "allyCode":"663416566",
- "modsRating":69.805993,
+ "requirements":{
+  "leia":{
+   "total_score":93.2
+  }
+ },
+ "modsRating":69.498467,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":5
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
-   "currentTier":12,
-   "relic":{
-    "currentTier":1
    },
    "stats":{}
   },
@@ -1352,7 +1349,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":11
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1709,7 +1706,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":5,
+   "currentRarity":4,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -1877,12 +1874,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":56009,
+     "Health":56393,
      "Speed":44,
-     "Physical Damage":5548,
+     "Physical Damage":5586,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":49,
+     "Resistance":50,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1890,10 +1887,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.3666039,
-     "Tenacity":0.3666039,
+     "Potency":0.36911374,
+     "Tenacity":0.36911374,
      "Health Steal":0,
-     "Protection":37339,
+     "Protection":37595,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2933,12 +2930,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":122071,
-     "Speed":78,
-     "Physical Damage":8225,
+     "Health":118849,
+     "Speed":76,
+     "Physical Damage":8008,
      "Special Damage":0,
-     "Armor":132,
-     "Resistance":218,
+     "Armor":129,
+     "Resistance":212,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -2946,8 +2943,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.54394578,
-     "Tenacity":0.54394578,
+     "Potency":0.52958934,
+     "Tenacity":0.52958934,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -4359,7 +4356,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":5,
+   "currentRarity":4,
    "currentTier":12,
    "relic":{
     "currentTier":1

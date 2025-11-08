@@ -1,6 +1,11 @@
 {
  "allyCode":"764818721",
- "modsRating":29.792846,
+ "requirements":{
+  "leia":{
+   "total_score":96.8
+  }
+ },
+ "modsRating":29.591383,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -26,14 +31,6 @@
    },
    "stats":{}
   },
-  "zuckuss":{
-   "currentRarity":3,
-   "currentTier":8,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
   "zebs3":{
    "currentRarity":7,
    "currentTier":13,
@@ -54,7 +51,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1494,15 +1491,15 @@
   },
   "quiggold":{
    "currentRarity":6,
-   "currentTier":13,
+   "currentTier":12,
    "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
   "4lom":{
    "currentRarity":3,
-   "currentTier":12,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -2029,10 +2026,10 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":5,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":4
    },
    "stats":{}
   },
@@ -2724,7 +2721,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":9
+    "currentTier":8
    },
    "stats":{}
   },

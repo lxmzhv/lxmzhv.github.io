@@ -1,6 +1,11 @@
 {
  "allyCode":"216958469",
- "modsRating":63.272336,
+ "requirements":{
+  "leia":{
+   "total_score":100.4
+  }
+ },
+ "modsRating":63.244349,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -21,14 +26,6 @@
   "greefkarga":{
    "currentRarity":7,
    "currentTier":12,
-   "relic":{
-    "currentTier":1
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":3,
-   "currentTier":7,
    "relic":{
     "currentTier":1
    },
@@ -190,7 +187,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -215,23 +212,23 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":81889,
+     "Health":81122,
      "Speed":64,
-     "Physical Damage":7396,
+     "Physical Damage":7327,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":71,
+     "Resistance":70,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":112,
+     "Physical Critical Chance":111,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.46963323,
-     "Tenacity":0.46963323,
+     "Potency":0.46523763,
+     "Tenacity":0.46523763,
      "Health Steal":0,
-     "Protection":27296,
+     "Protection":27040,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -328,7 +325,7 @@
   },
   "captaintarpals":{
    "currentRarity":6,
-   "currentTier":11,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -532,7 +529,7 @@
   },
   "gunganphalanx":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -2692,7 +2689,7 @@
   },
   "bossnass":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -3475,9 +3472,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":83454,
+     "Health":82902,
      "Speed":70,
-     "Physical Damage":10035,
+     "Physical Damage":9968,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -3488,8 +3485,8 @@
      "Physical Critical Chance":57,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.48464689,
-     "Tenacity":0.48464689,
+     "Potency":0.48143778000000004,
+     "Tenacity":0.48143778000000004,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -3640,7 +3637,7 @@
   },
   "boomadier":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -4125,9 +4122,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":60642,
-     "Speed":53,
-     "Physical Damage":7131,
+     "Health":59977,
+     "Speed":52,
+     "Physical Damage":7053,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -4138,10 +4135,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.39356097,
-     "Tenacity":0.39356097,
+     "Potency":0.38924817,
+     "Tenacity":0.38924817,
      "Health Steal":0,
-     "Protection":40428,
+     "Protection":39985,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

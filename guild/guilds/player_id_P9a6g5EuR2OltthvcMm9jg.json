@@ -1,6 +1,11 @@
 {
  "allyCode":"119847435",
- "modsRating":34.315754,
+ "requirements":{
+  "leia":{
+   "total_score":101.0
+  }
+ },
+ "modsRating":34.130625,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -23,14 +28,6 @@
    "currentTier":13,
    "relic":{
     "currentTier":4
-   },
-   "stats":{}
-  },
-  "zuckuss":{
-   "currentRarity":5,
-   "currentTier":13,
-   "relic":{
-    "currentTier":2
    },
    "stats":{}
   },
@@ -2040,7 +2037,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":3
+    "currentTier":2
    },
    "stats":{}
   },
@@ -2397,7 +2394,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":11
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4343,7 +4340,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":13,
    "relic":{
     "currentTier":3
