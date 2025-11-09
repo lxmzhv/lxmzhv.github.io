@@ -1,0 +1,4526 @@
+{
+ "allyCode":"193844291",
+ "requirements":{
+  "jabba":{
+   "total_score":89.5
+  },
+  "gg":{
+   "total_score":84.4
+  },
+  "gas":{
+   "total_score":81.6
+  },
+  "inqs":{
+   "total_score":90.8
+  },
+  "reva":{
+   "total_score":92.2
+  },
+  "geos":{
+   "total_score":69.0
+  },
+  "drevan":{
+   "total_score":92.6
+  },
+  "amidala":{
+   "total_score":79.33
+  },
+  "gungans":{
+   "total_score":86.2
+  },
+  "leia":{
+   "total_score":93.4
+  },
+  "slkr":{
+   "total_score":93.14
+  },
+  "beq_raid":{
+   "total_score":87.0
+  }
+ },
+ "modsRating":42.962443,
+ "roster":{
+  "magmatrooper":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "hermityoda":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "greefkarga":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":3,
+   "currentTier":5,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zebs3":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "barrissoffee":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "firstordertieechelon":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":44554,
+     "Speed":59,
+     "Physical Damage":4927,
+     "Special Damage":0,
+     "Armor":178,
+     "Resistance":350,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.42116985,
+     "Tenacity":0.42116985,
+     "Health Steal":0,
+     "Protection":48660,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "ravensclaw":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":22187,
+     "Speed":66,
+     "Physical Damage":4396,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46415793,
+     "Tenacity":0.46415793,
+     "Health Steal":0,
+     "Protection":47696,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "marauder":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":144882,
+     "Speed":72,
+     "Physical Damage":25473,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":1.40531025,
+     "Tenacity":1.40531025,
+     "Health Steal":0,
+     "Protection":54745,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "thirdsister":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "capitalmalevolence":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":110711,
+     "Speed":65,
+     "Physical Damage":7459,
+     "Special Damage":0,
+     "Armor":120,
+     "Resistance":198,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.49332402000000003,
+     "Tenacity":0.49332402000000003,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "ct210408":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "b1battledroidv2":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "colonelstarck":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "tiefighterfosf":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":80726,
+     "Speed":63,
+     "Physical Damage":7291,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":70,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":111,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46296657,
+     "Tenacity":0.46296657,
+     "Health Steal":0,
+     "Protection":26908,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "vanguardtempleguard":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "bb8":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "pogglethelesser":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "firstorderspecialforcespilot":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "cerejunda":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "generalkenobi":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "millenniumfalcon":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":97523,
+     "Speed":62,
+     "Physical Damage":8008,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":77,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":122,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50816967,
+     "Tenacity":0.50816967,
+     "Health Steal":0,
+     "Protection":50239,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "jawascavenger":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "captaintarpals":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "l3_37":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "droideka":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ewokscout":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "k2so":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "sithinfiltrator":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":75485,
+     "Speed":65,
+     "Physical Damage":8877,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.48972505,
+     "Tenacity":0.48972505,
+     "Health Steal":0,
+     "Protection":50323,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "nightsisteracolyte":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "sithtrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "50rt":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "badbatchhunter":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig86sentineldroid":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "sithmarauder":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "reyjeditraining":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "c3pochewbacca":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "krrsantan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "batchers3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "kyloren":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "dengar":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "kiadimundi":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "arc170rex":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":77288,
+     "Speed":70,
+     "Physical Damage":7956,
+     "Special Damage":0,
+     "Armor":160,
+     "Resistance":211,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50495953,
+     "Tenacity":0.50495953,
+     "Health Steal":0,
+     "Protection":77288,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "gunganphalanx":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "tiefighterfirstorder":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":79691,
+     "Speed":68,
+     "Physical Damage":9582,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":55,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46296657,
+     "Tenacity":0.46296657,
+     "Health Steal":0,
+     "Protection":26563,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "bokatan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "magnaguard":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "millenniumfalconep7":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":81426,
+     "Speed":64,
+     "Physical Damage":9791,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":56,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.47266725,
+     "Tenacity":0.47266725,
+     "Health Steal":0,
+     "Protection":27142,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "mandalorbokatan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "fifthbrother":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "comeuppance":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":37788,
+     "Speed":32,
+     "Physical Damage":3743,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":33,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.24755472,
+     "Tenacity":0.24755472,
+     "Health Steal":0,
+     "Protection":25192,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "rangetrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "quigonjinn":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "royalguard":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "bastilashan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "geonosianspy":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "bt1":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jawa":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "sithfighter":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":79691,
+     "Speed":61,
+     "Physical Damage":9582,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":55,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46296657,
+     "Tenacity":0.46296657,
+     "Health Steal":0,
+     "Protection":26563,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "xwingresistance":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":70543,
+     "Speed":63,
+     "Physical Damage":8296,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.45783837,
+     "Tenacity":0.45783837,
+     "Health Steal":0,
+     "Protection":47029,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "qira":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "poe":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "badbatchomega":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "merrin":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "eighthbrother":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "talia":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "admiralraddus":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "nighttrooper":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "nightsisterzombie":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "sithsupremacyclass":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":0,
+     "Speed":64,
+     "Physical Damage":7657,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":73,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":116,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.48618999,
+     "Tenacity":0.48618999,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "stap":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "grandadmiralthrawn":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "scarifrebel":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jedistarfighteranakin":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":86539,
+     "Speed":65,
+     "Physical Damage":10405,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":60,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50256151,
+     "Tenacity":0.50256151,
+     "Health Steal":0,
+     "Protection":28846,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "imperialprobedroid":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "sabinewrens3":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "younghan":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "paploo":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "scouttrooper_v3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "ewokelder":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "epixpoe":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "queenamidala":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "crosshairs3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "chiefchirpa":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "padawansabine":{
+   "currentRarity":4,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "generalhux":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ct5555":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "visasmarr":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "commanderahsoka":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "lukeskywalker":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "capitalraddus":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":100488,
+     "Speed":65,
+     "Physical Damage":6770,
+     "Special Damage":0,
+     "Armor":109,
+     "Resistance":180,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.44777124,
+     "Tenacity":0.44777124,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "bensolo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "grandmasterluke":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "gamorreanguard":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "kitfisto":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "greatmothers":{
+   "currentRarity":5,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "houndstooth":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":72098,
+     "Speed":56,
+     "Physical Damage":5459,
+     "Special Damage":0,
+     "Armor":332,
+     "Resistance":362,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46663425000000003,
+     "Tenacity":0.46663425000000003,
+     "Health Steal":0,
+     "Protection":86518,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "administratorlando":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "anakinknight":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "admiralpiett":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "ig2000":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":80127,
+     "Speed":62,
+     "Physical Damage":9634,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":55,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46546164,
+     "Tenacity":0.46546164,
+     "Health Steal":0,
+     "Protection":26709,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "generalskywalker":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "nightsisterspirit":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "xanadublood":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":73876,
+     "Speed":60,
+     "Physical Damage":8687,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.47928661,
+     "Tenacity":0.47928661,
+     "Health Steal":0,
+     "Protection":49250,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "clonesergeantphasei":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "supremeleaderkyloren":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "admiralackbar":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "fulcrumahsoka":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "stormtrooper":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "hunters3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "sm33":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "scorch":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "luminaraunduli":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "jangofett":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "hothrebelscout":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ghost":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":65753,
+     "Speed":51,
+     "Physical Damage":7906,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":45,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.38152458,
+     "Tenacity":0.38152458,
+     "Health Steal":0,
+     "Protection":21917,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "tiebomberimperial":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":80740,
+     "Speed":54,
+     "Physical Damage":4794,
+     "Special Damage":0,
+     "Armor":291,
+     "Resistance":318,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.4096735,
+     "Tenacity":0.4096735,
+     "Health Steal":0,
+     "Protection":88181,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "nutegunray":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "disguisedclonetrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "slave1":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":91342,
+     "Speed":73,
+     "Physical Damage":8250,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":79,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":125,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.52380594,
+     "Tenacity":0.52380594,
+     "Health Steal":0,
+     "Protection":30447,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "tieadvanced":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":90118,
+     "Speed":77,
+     "Physical Damage":10836,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":62,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.52349976,
+     "Tenacity":0,
+     "Health Steal":0,
+     "Protection":30039,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "veers":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "quiggold":{
+   "currentRarity":5,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "4lom":{
+   "currentRarity":3,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "capitalleviathan":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":126332,
+     "Speed":79,
+     "Physical Damage":5080,
+     "Special Damage":26001,
+     "Armor":0,
+     "Resistance":216,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.55697544,
+     "Tenacity":0.55697544,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "captainenoch":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "appo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "jedimasterkenobi":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "pao":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "darthtalon":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig88":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "millenniumfalconpristine":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":81292,
+     "Speed":68,
+     "Physical Damage":9775,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":56,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.47189175,
+     "Tenacity":0.47189175,
+     "Health Steal":0,
+     "Protection":27097,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "ebonhawk":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":70974,
+     "Speed":60,
+     "Physical Damage":7030,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":63,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46472157000000003,
+     "Tenacity":0.46472157000000003,
+     "Health Steal":0,
+     "Protection":47316,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "rey":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "bladeofdorin":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":76768,
+     "Speed":71,
+     "Physical Damage":9028,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.49804759,
+     "Tenacity":0.49804759,
+     "Health Steal":0,
+     "Protection":51178,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "darthnihilus":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "brutus":{
+   "currentRarity":4,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "emperorpalpatine":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "hothhan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "monmothma":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "razorcrest":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":90268,
+     "Speed":76,
+     "Physical Damage":10854,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":62,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.5242142200000001,
+     "Tenacity":0.5242142200000001,
+     "Health Steal":0,
+     "Protection":30089,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "plokoon":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "daka":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "grandmofftarkin":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "logray":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "mg100starfortresssf17":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":58855,
+     "Speed":57,
+     "Physical Damage":6719,
+     "Special Damage":0,
+     "Armor":298,
+     "Resistance":435,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.8429638500000001,
+     "Tenacity":0.8429638500000001,
+     "Health Steal":0,
+     "Protection":43914,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "calkestis":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "kelleranbeq":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "geonosiansoldier":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "caradune":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "captainrex":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "scythe":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":55035,
+     "Speed":43,
+     "Physical Damage":5451,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":49,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.36022818,
+     "Tenacity":0.36022818,
+     "Health Steal":0,
+     "Protection":36690,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "vulturedroid":{
+   "currentRarity":6,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":56221,
+     "Speed":42,
+     "Physical Damage":6760,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":39,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.32649394,
+     "Tenacity":0.32649394,
+     "Health Steal":0,
+     "Protection":18740,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "lordvader":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "resistancetrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "hk47":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "tuskenraider":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "dashrendar":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "cassianandor":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "marrok":{
+   "currentRarity":5,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "darthtraya":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "epixfinn":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "bazemalbus":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "captaindrogan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "zaalbar":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "clonewarschewbacca":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "kix":{
+   "currentRarity":5,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "huyang":{
+   "currentRarity":5,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "commanderlukeskywalker":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "b2superbattledroid":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "uwingrogueone":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":73581,
+     "Speed":61,
+     "Physical Damage":4355,
+     "Special Damage":19828,
+     "Armor":0,
+     "Resistance":38,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":458,
+     "Critical Damage":0,
+     "Potency":0.4772871,
+     "Tenacity":0.4772871,
+     "Health Steal":0,
+     "Protection":49054,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "depabillaba":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "darthsidious":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "outrider":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":80801,
+     "Speed":75,
+     "Physical Damage":9502,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.5242142200000001,
+     "Tenacity":0.5242142200000001,
+     "Health Steal":0,
+     "Protection":53867,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "oldbenkenobi":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "kylorenunmasked":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "youngchewbacca":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "pazvizsla":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "younglando":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "hansolo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "armorer":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "deathtrooperperidea":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "smugglerhan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "badbatchwrecker":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "zoriibliss_v2":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "themandalorian":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ugnaught":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "fosithtrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "triplezero":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "umbaranstarfighter":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":78041,
+     "Speed":73,
+     "Physical Damage":5909,
+     "Special Damage":0,
+     "Armor":359,
+     "Resistance":391,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50495953,
+     "Tenacity":0.50495953,
+     "Health Steal":0,
+     "Protection":78041,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "wampa":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "smugglerchewbacca":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "bobafettscion":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "rogueoneship":{
+   "currentRarity":3,
+   "currentTier":1,
+   "stats":{}
+  },
+  "capitalexecutor":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":94024,
+     "Speed":76,
+     "Physical Damage":8492,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":81,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.53918298,
+     "Tenacity":0.53918298,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "operative":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "grandinquisitor":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "darktrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "darthrevan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "r2d2_legendary":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "hondo":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "bwingrebel":{
+   "currentRarity":3,
+   "currentTier":1,
+   "stats":{}
+  },
+  "jabbathehutt":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "humanthug":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "uwingscarif":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":56278,
+     "Speed":48,
+     "Physical Damage":6618,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.36524025,
+     "Tenacity":0.36524025,
+     "Health Steal":0,
+     "Protection":37519,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "captainsilvo":{
+   "currentRarity":4,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "themandalorianbeskararmor":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "garsaxon":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "coruscantunderworldpolice":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ithano":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "enfysnest":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "mothertalzin":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "morganelsbeth":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "biggsdarklighter":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":6
+   },
+   "stats":{}
+  },
+  "cc2224":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "c3polegendary":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "jediknightrevan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "padmeamidala":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "nightsisterinitiate":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ct7567":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "emperorsshuttle":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":87128,
+     "Speed":59,
+     "Physical Damage":4424,
+     "Special Damage":20143,
+     "Armor":0,
+     "Resistance":38,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":465,
+     "Critical Damage":0,
+     "Potency":0.484758,
+     "Tenacity":0.484758,
+     "Health Steal":0,
+     "Protection":58085,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "moffgideons3":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jedimastermacewindu":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "moffgideons1":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jawaengineer":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zamwesell":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "taronmalicos":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "jediknightcal":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "boushh":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "sanastarros":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "tuskenhuntress":{
+   "currentRarity":5,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jediknightluke":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "bossnass":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "capitalmoncalamaricruiser":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":101518,
+     "Speed":63,
+     "Physical Damage":4082,
+     "Special Damage":20894,
+     "Armor":0,
+     "Resistance":173,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.44744232,
+     "Tenacity":0.44744232,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "sunfac":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "starkiller":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "lobot":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "furyclassinterceptor":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":40775,
+     "Speed":35,
+     "Physical Damage":4039,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":36,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.26712405,
+     "Tenacity":0.26712405,
+     "Health Steal":0,
+     "Protection":27183,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "badbatchecho":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "embo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "imagundi":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ywingclonewars":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":58963,
+     "Speed":76,
+     "Physical Damage":4464,
+     "Special Damage":0,
+     "Armor":271,
+     "Resistance":296,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.38161845,
+     "Tenacity":0.38161845,
+     "Health Steal":0,
+     "Protection":70755,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "tiesilencer":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":84117,
+     "Speed":65,
+     "Physical Damage":7597,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":73,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":115,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.48236958,
+     "Tenacity":0.48236958,
+     "Health Steal":0,
+     "Protection":28039,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "xwingred3":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":69898,
+     "Speed":64,
+     "Physical Damage":7195,
+     "Special Damage":0,
+     "Armor":145,
+     "Resistance":190,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.45684936,
+     "Tenacity":0.45684936,
+     "Health Steal":0,
+     "Protection":69898,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "padawanobiwan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "eethkoth":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "fennecshand":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "capitalstardestroyer":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":121002,
+     "Speed":78,
+     "Physical Damage":8153,
+     "Special Damage":0,
+     "Armor":131,
+     "Resistance":216,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.53918298,
+     "Tenacity":0.53918298,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "t3_m4":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "xwingred2":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":78705,
+     "Speed":64,
+     "Physical Damage":9464,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":54,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.45706966,
+     "Tenacity":0.45706966,
+     "Health Steal":0,
+     "Protection":26235,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "omegas3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "ninthsister":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "jedistarfighterahsokatano":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":87092,
+     "Speed":73,
+     "Physical Damage":10472,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":60,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50577063,
+     "Tenacity":0.50577063,
+     "Health Steal":0,
+     "Protection":29030,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "hothrebelsoldier":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "asajventress":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "grievous":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "chirrutimwe":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "shinhati":{
+   "currentRarity":4,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "juhani":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "capitalnegotiator":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":90126,
+     "Speed":73,
+     "Physical Damage":8140,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":78,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.51683184,
+     "Tenacity":0.51683184,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "kananjarruss3":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jocastanu":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "rosetico":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "princesskneesaa":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "jediknightconsular":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ahsokatano":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "directorkrennic":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":6
+   },
+   "stats":{}
+  },
+  "tiefighterimperial":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":80265,
+     "Speed":69,
+     "Physical Damage":9651,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":318,
+     "Deflection Chance":318,
+     "Physical Critical Chance":55,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.4662999,
+     "Tenacity":0.4662999,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "sithpalpatine":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "stormtrooperhan":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "herasyndullas3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "bastilashandark":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "bossk":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "firstorderexecutioner":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "vader":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "tarfful":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jarjarbinks":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "countdooku":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "missionvao":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "arc170clonesergeant":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":73069,
+     "Speed":63,
+     "Physical Damage":5532,
+     "Special Damage":0,
+     "Armor":336,
+     "Resistance":367,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.47296656000000004,
+     "Tenacity":0.47296656000000004,
+     "Health Steal":0,
+     "Protection":87682,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "geonosianbroodalpha":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "joleebindo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "maul":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "chiefnebit":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "tuskenshaman":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "imperialsupercommando":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "tiedagger":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":83776,
+     "Speed":71,
+     "Physical Damage":10073,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":58,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.48651594000000004,
+     "Tenacity":0.48651594000000004,
+     "Health Steal":0,
+     "Protection":27925,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "punishingone":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":91310,
+     "Speed":69,
+     "Physical Damage":8247,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":79,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":125,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.52366248,
+     "Tenacity":0.52366248,
+     "Health Steal":0,
+     "Protection":30436,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "firstordertiepilot":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "darthsion":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "capitaljedicruiser":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":114305,
+     "Speed":69,
+     "Physical Damage":7701,
+     "Special Damage":0,
+     "Armor":124,
+     "Resistance":204,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50919133,
+     "Tenacity":0.50919133,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "idenversioempire":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "tieinterceptor":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":87049,
+     "Speed":73,
+     "Physical Damage":10467,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":60,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.50552377,
+     "Tenacity":0.50552377,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "capitalchimaera":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":112257,
+     "Speed":65,
+     "Physical Damage":4514,
+     "Special Damage":23104,
+     "Armor":0,
+     "Resistance":192,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.49492296,
+     "Tenacity":0.49492296,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "commandshuttle":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":72327,
+     "Speed":56,
+     "Physical Damage":7164,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":64,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.4734091,
+     "Tenacity":0.4734091,
+     "Health Steal":0,
+     "Protection":48218,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "firstordertrooper":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "phantom2":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":58885,
+     "Speed":48,
+     "Physical Damage":7080,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":40,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.34167379000000003,
+     "Tenacity":0.34167379000000003,
+     "Health Steal":0,
+     "Protection":19628,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "wreckers3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "greedo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "hothleia":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "generalsyndulla":{
+   "currentRarity":4,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "bodhirook":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "boomadier":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "chewbaccalegendary":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "choppers3":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "bobafett":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "wattambor":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "tuskenchieftain":{
+   "currentRarity":5,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "wedgeantilles":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "marajade":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "carthonasi":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "deathtrooper":{
+   "currentRarity":7,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "trench":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "arctrooper501st":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "wicket":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "geonosianstarfighter2":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":70066,
+     "Speed":53,
+     "Physical Damage":6328,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":61,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":96,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.4018311,
+     "Tenacity":0.4018311,
+     "Health Steal":0,
+     "Protection":23355,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "geonosianstarfighter1":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":62143,
+     "Speed":53,
+     "Physical Damage":4705,
+     "Special Damage":0,
+     "Armor":286,
+     "Resistance":312,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.40209153000000003,
+     "Tenacity":0.40209153000000003,
+     "Health Steal":0,
+     "Protection":62143,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "secondsister":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "geonosianstarfighter3":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":71891,
+     "Speed":55,
+     "Physical Damage":4885,
+     "Special Damage":19194,
+     "Armor":0,
+     "Resistance":20,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":801,
+     "Critical Damage":0,
+     "Potency":0.41765526000000003,
+     "Tenacity":0.41765526000000003,
+     "Health Steal":0,
+     "Protection":23963,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "macewindu":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "dathcha":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "masterquigon":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "jynerso":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "teebo":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "badbatchtech":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "xwingblackone":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":79629,
+     "Speed":69,
+     "Physical Damage":9574,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":55,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.46242994,
+     "Tenacity":0.46242994,
+     "Health Steal":0,
+     "Protection":26542,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "sithbomber":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":74897,
+     "Speed":53,
+     "Physical Damage":7709,
+     "Special Damage":0,
+     "Armor":155,
+     "Resistance":204,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.48952332,
+     "Tenacity":0.48952332,
+     "Health Steal":0,
+     "Protection":74897,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "glrey":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "amilynholdo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "glleia":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "urorrurrr":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":6
+   },
+   "stats":{}
+  },
+  "gauntletstarfighter":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":44196,
+     "Speed":38,
+     "Physical Damage":4377,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":39,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.28953264,
+     "Tenacity":0.28953264,
+     "Health Steal":0,
+     "Protection":29464,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "sithassassin":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "snowtrooper":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "shoretrooper":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "princessleia":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "savageopress":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "darthmalak":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "finn":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "phasma":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "undercoverlando":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "capitalfinalizer":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":107705,
+     "Speed":62,
+     "Physical Damage":8605,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":184,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.47464179,
+     "Tenacity":0.47464179,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "ezrabridgers3":{
+   "currentRarity":7,
+   "currentTier":10,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "tiereaper":{
+   "currentRarity":5,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":36316,
+     "Speed":32,
+     "Physical Damage":4270,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.23569152000000002,
+     "Tenacity":0.23569152000000002,
+     "Health Steal":0,
+     "Protection":24211,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "hyenabomber":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":71161,
+     "Speed":46,
+     "Physical Damage":4464,
+     "Special Damage":0,
+     "Armor":324,
+     "Resistance":348,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.38161845,
+     "Tenacity":0.38161845,
+     "Health Steal":0,
+     "Protection":92590,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "darkrey":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "jedistarfighterconsular":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":57675,
+     "Speed":51,
+     "Physical Damage":3413,
+     "Special Damage":15541,
+     "Armor":0,
+     "Resistance":29,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":359,
+     "Critical Damage":0,
+     "Potency":0.37432197,
+     "Tenacity":0.37432197,
+     "Health Steal":0,
+     "Protection":38450,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "firstorderofficermale":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "tiedefender":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":88859,
+     "Speed":76,
+     "Physical Damage":10684,
+     "Special Damage":0,
+     "Armor":0,
+     "Resistance":0,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":353,
+     "Deflection Chance":353,
+     "Physical Critical Chance":61,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.51622659,
+     "Tenacity":0.51622659,
+     "Health Steal":0,
+     "Protection":17074,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "aaylasecura":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ywingrebel":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":58963,
+     "Speed":76,
+     "Physical Damage":4464,
+     "Special Damage":0,
+     "Armor":271,
+     "Resistance":296,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.38161845,
+     "Tenacity":0.38161845,
+     "Health Steal":0,
+     "Protection":70755,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "seventhsister":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "darthmalgus":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "resistancepilot":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "kuiil":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "kylekatarn":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "vane":{
+   "currentRarity":4,
+   "currentTier":7,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "aurra_sing":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
+  "jediknightguardian":{
+   "currentRarity":7,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "canderousordo":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "mauls7":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "capitalprofundity":{
+   "currentRarity":7,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":118786,
+     "Speed":74,
+     "Physical Damage":4776,
+     "Special Damage":24448,
+     "Armor":0,
+     "Resistance":203,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.52370388,
+     "Tenacity":0.52370388,
+     "Health Steal":0,
+     "Protection":0,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "cadbane":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "sawgerrera":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "tiefighterpilot":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "grandmasteryoda":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
+  "darthbane":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
+  "ig12":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "shaakti":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "bistan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig11":{
+   "currentRarity":7,
+   "currentTier":11,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  }
+ }
+}
