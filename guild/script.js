@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const guildInfoDiv = document.getElementById('guild-info');
     const rareUnitThresholdInput = document.getElementById('rareUnitThreshold');
 
+    const teams = ["amidala", "beq_raid", "drevan", "gas", "geos", "gg", "gungans", "inqs", "jabba", "leia", "reva", "slkr"];
+
     // TB Plan Modal elements
     const tbPlanBtn = document.getElementById('tb-plan-btn');
     const tbPlanModal = document.getElementById('tb-plan-modal');
@@ -760,8 +762,10 @@ document.addEventListener('DOMContentLoaded', () => {
             playerInfo.rareRTotal = allRareUnits.size;
 
             // Requirements
-            const leiaReqs = player.requirements?.leia;
-            playerInfo.reqLeiaTotal = leiaReqs?.total_score || 0;
+            teams.forEach(team => {
+                const reqs = player.requirements?.[team];
+                playerInfo[`req${team}Total`] = reqs?.total_score || 0;
+            });
             leiaTeamUnits.forEach(unitId => {
                 playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
             });
@@ -954,7 +958,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('reqLeia')) {
+            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req')) {
                 const numA = Number(valA);
                 const numB = Number(valB);
                 if (numA < numB) return direction === 'asc' ? -1 : 1;
@@ -1753,20 +1757,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Requirements
+            // Leia's team score
             const reqLeiaTotalCell = row.insertCell();
             reqLeiaTotalCell.classList.add('col-requirements', 'separator-left');
-            reqLeiaTotalCell.textContent = player.reqLeiaTotal.toFixed(0);
-            reqLeiaTotalCell.style.backgroundColor = getReqBackgroundColor(player.reqLeiaTotal);
+            const leiaScore = player['reqleiaTotal'];
+            reqLeiaTotalCell.textContent = leiaScore.toFixed(0);
+            reqLeiaTotalCell.style.backgroundColor = getReqBackgroundColor(leiaScore);
 
+            // Leia's team units
             leiaTeamUnits.forEach((unitId, idx) => {
                 const relicCell = row.insertCell();
                 relicCell.classList.add('col-requirements');
-                if (idx === leiaTeamUnits.length - 1) {
-                    relicCell.classList.add('separator-right');
-                }
                 const unitInfo = player[`reqLeia-${unitId}-relic`];
                 relicCell.textContent = unitInfo.display;
                 relicCell.style.backgroundColor = getLeiaUnitBGColor(unitInfo, unitId);
+            });
+
+            // Other teams
+            const otherTeams = teams.filter(t => t !== 'leia');
+            otherTeams.forEach((team, idx) => {
+                const reqTotalCell = row.insertCell();
+                reqTotalCell.classList.add('col-requirements');
+                if (idx === otherTeams.length - 1) {
+                    reqTotalCell.classList.add('separator-right');
+                }
+                const score = player[`req${team}Total`];
+                reqTotalCell.textContent = score.toFixed(0);
+                reqTotalCell.style.backgroundColor = getReqBackgroundColor(score);
             });
         });
 

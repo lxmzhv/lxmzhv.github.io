@@ -1,11 +1,44 @@
 {
  "allyCode":"736484965",
  "requirements":{
+  "jabba":{
+   "total_score":87.5
+  },
+  "gg":{
+   "total_score":96.4
+  },
+  "gas":{
+   "total_score":92.4
+  },
+  "inqs":{
+   "total_score":74.2
+  },
+  "reva":{
+   "total_score":96.8
+  },
+  "geos":{
+   "total_score":73.5
+  },
+  "drevan":{
+   "total_score":98.8
+  },
+  "amidala":{
+   "total_score":102.33
+  },
+  "gungans":{
+   "total_score":95.4
+  },
   "leia":{
-   "total_score":104.4
+   "total_score":109.0
+  },
+  "slkr":{
+   "total_score":99.0
+  },
+  "beq_raid":{
+   "total_score":97.5
   }
  },
- "modsRating":59.635049,
+ "modsRating":60.1276,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -25,6 +58,14 @@
   },
   "greefkarga":{
    "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":3,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -1472,9 +1513,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":88882,
-     "Speed":76,
-     "Physical Damage":10687,
+     "Health":90118,
+     "Speed":77,
+     "Physical Damage":10836,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1482,13 +1523,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":61,
+     "Physical Critical Chance":62,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.51632154,
+     "Potency":0.52349976,
      "Tenacity":0,
      "Health Steal":0,
-     "Protection":29627,
+     "Protection":30039,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2424,9 +2465,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":66684,
+     "Health":66432,
      "Speed":57,
-     "Physical Damage":7842,
+     "Physical Damage":7812,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -2437,10 +2478,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.43277151,
-     "Tenacity":0.43277151,
+     "Potency":0.43113624,
+     "Tenacity":0.43113624,
      "Health Steal":0,
-     "Protection":44456,
+     "Protection":44288,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -4356,10 +4397,10 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":5,
-   "currentTier":12,
+   "currentRarity":6,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":6
    },
    "stats":{}
   },

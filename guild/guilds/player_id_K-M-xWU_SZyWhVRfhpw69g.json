@@ -1,11 +1,44 @@
 {
  "allyCode":"331173299",
  "requirements":{
+  "jabba":{
+   "total_score":88.83
+  },
+  "gg":{
+   "total_score":96.6
+  },
+  "gas":{
+   "total_score":90.2
+  },
+  "inqs":{
+   "total_score":62.2
+  },
+  "reva":{
+   "total_score":91.6
+  },
+  "geos":{
+   "total_score":94.0
+  },
+  "drevan":{
+   "total_score":104.6
+  },
+  "amidala":{
+   "total_score":98.0
+  },
+  "gungans":{
+   "total_score":104.6
+  },
   "leia":{
-   "total_score":94.4
+   "total_score":101.8
+  },
+  "slkr":{
+   "total_score":99.0
+  },
+  "beq_raid":{
+   "total_score":101.0
   }
  },
- "modsRating":54.086468,
+ "modsRating":52.223149,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -32,10 +65,10 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":2,
-   "currentTier":12,
+   "currentRarity":5,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -1333,7 +1366,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -1714,7 +1747,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "relic":{
     "currentTier":5
@@ -2169,7 +2202,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2824,23 +2857,23 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":88186,
-     "Speed":68,
-     "Physical Damage":7965,
+     "Health":90957,
+     "Speed":70,
+     "Physical Damage":8215,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":76,
+     "Resistance":79,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":121,
+     "Physical Critical Chance":125,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.5057073,
-     "Tenacity":0.5057073,
+     "Potency":0.52159464,
+     "Tenacity":0.52159464,
      "Health Steal":0,
-     "Protection":29395,
+     "Protection":30319,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -4364,7 +4397,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
     "currentTier":6

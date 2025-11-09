@@ -1,11 +1,44 @@
 {
  "allyCode":"127362733",
  "requirements":{
+  "jabba":{
+   "total_score":83.83
+  },
+  "gg":{
+   "total_score":87.0
+  },
+  "gas":{
+   "total_score":87.6
+  },
+  "inqs":{
+   "total_score":80.8
+  },
+  "reva":{
+   "total_score":94.0
+  },
+  "geos":{
+   "total_score":88.5
+  },
+  "drevan":{
+   "total_score":93.8
+  },
+  "amidala":{
+   "total_score":90.67
+  },
+  "gungans":{
+   "total_score":33.6
+  },
   "leia":{
    "total_score":70.8
+  },
+  "slkr":{
+   "total_score":91.71
+  },
+  "beq_raid":{
+   "total_score":93.0
   }
  },
- "modsRating":39.992355,
+ "modsRating":41.044629,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -26,6 +59,14 @@
   "greefkarga":{
    "currentRarity":7,
    "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":5,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -815,7 +856,7 @@
   },
   "talia":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -1499,7 +1540,7 @@
   },
   "quiggold":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },

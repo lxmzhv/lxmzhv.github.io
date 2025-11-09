@@ -1,11 +1,44 @@
 {
  "allyCode":"547729528",
  "requirements":{
+  "jabba":{
+   "total_score":77.83
+  },
+  "gg":{
+   "total_score":84.6
+  },
+  "gas":{
+   "total_score":82.4
+  },
+  "inqs":{
+   "total_score":69.6
+  },
+  "reva":{
+   "total_score":88.0
+  },
+  "geos":{
+   "total_score":94.5
+  },
+  "drevan":{
+   "total_score":99.6
+  },
+  "amidala":{
+   "total_score":29.33
+  },
+  "gungans":{
+   "total_score":28.6
+  },
   "leia":{
    "total_score":62.2
+  },
+  "slkr":{
+   "total_score":77.0
+  },
+  "beq_raid":{
+   "total_score":98.0
   }
  },
- "modsRating":30.364752,
+ "modsRating":30.908315,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -26,6 +59,14 @@
   "greefkarga":{
    "currentRarity":7,
    "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":3,
+   "currentTier":8,
    "relic":{
     "currentTier":1
    },
@@ -459,9 +500,9 @@
   },
   "batchers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -971,9 +1012,9 @@
   },
   "crosshairs3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2603,7 +2644,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2946,7 +2987,7 @@
    }
   },
   "omegas3":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
     "currentTier":3
@@ -4320,12 +4361,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":97187,
-     "Speed":60,
-     "Physical Damage":3908,
-     "Special Damage":20003,
+     "Health":98088,
+     "Speed":61,
+     "Physical Damage":3944,
+     "Special Damage":20188,
      "Armor":0,
-     "Resistance":166,
+     "Resistance":167,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -4333,8 +4374,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.4284819,
-     "Tenacity":0.4284819,
+     "Potency":0.4324509,
+     "Tenacity":0.4324509,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,

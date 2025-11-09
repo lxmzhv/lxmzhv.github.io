@@ -1,11 +1,44 @@
 {
  "allyCode":"476244446",
  "requirements":{
+  "jabba":{
+   "total_score":85.83
+  },
+  "gg":{
+   "total_score":89.8
+  },
+  "gas":{
+   "total_score":93.0
+  },
+  "inqs":{
+   "total_score":78.6
+  },
+  "reva":{
+   "total_score":96.2
+  },
+  "geos":{
+   "total_score":102.5
+  },
+  "drevan":{
+   "total_score":99.8
+  },
+  "amidala":{
+   "total_score":94.33
+  },
+  "gungans":{
+   "total_score":85.4
+  },
   "leia":{
    "total_score":101.2
+  },
+  "slkr":{
+   "total_score":100.57
+  },
+  "beq_raid":{
+   "total_score":99.5
   }
  },
- "modsRating":53.162136,
+ "modsRating":53.196471,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -28,6 +61,14 @@
    "currentTier":13,
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":3,
+   "currentTier":4,
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1333,7 +1374,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -1507,9 +1548,9 @@
   },
   "quiggold":{
    "currentRarity":4,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -1604,9 +1645,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":80524,
+     "Health":80889,
      "Speed":68,
-     "Physical Damage":9682,
+     "Physical Damage":9726,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1614,13 +1655,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":55,
+     "Physical Critical Chance":56,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.46743262,
-     "Tenacity":0.46743262,
+     "Potency":0.46954762,
+     "Tenacity":0.46954762,
      "Health Steal":0,
-     "Protection":26841,
+     "Protection":26963,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1707,7 +1748,7 @@
   },
   "brutus":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -3067,7 +3108,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":2
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4356,7 +4397,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":3,
+   "currentRarity":5,
    "currentTier":9,
    "relic":{
     "currentTier":1
@@ -4475,7 +4516,7 @@
   },
   "mazkanata":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },

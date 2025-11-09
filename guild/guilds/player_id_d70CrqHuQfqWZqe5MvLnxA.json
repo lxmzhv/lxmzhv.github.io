@@ -1,11 +1,44 @@
 {
  "allyCode":"582118265",
  "requirements":{
+  "jabba":{
+   "total_score":85.0
+  },
+  "gg":{
+   "total_score":92.8
+  },
+  "gas":{
+   "total_score":91.2
+  },
+  "inqs":{
+   "total_score":81.2
+  },
+  "reva":{
+   "total_score":96.4
+  },
+  "geos":{
+   "total_score":89.5
+  },
+  "drevan":{
+   "total_score":99.2
+  },
+  "amidala":{
+   "total_score":101.67
+  },
+  "gungans":{
+   "total_score":96.8
+  },
   "leia":{
    "total_score":104.4
+  },
+  "slkr":{
+   "total_score":101.14
+  },
+  "beq_raid":{
+   "total_score":95.0
   }
  },
- "modsRating":64.851059,
+ "modsRating":64.940897,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -25,6 +58,14 @@
   },
   "greefkarga":{
    "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":4,
    "currentTier":8,
    "relic":{
     "currentTier":1
@@ -1317,7 +1358,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1498,10 +1539,10 @@
    }
   },
   "quiggold":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1866,12 +1907,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":53501,
+     "Health":54350,
      "Speed":42,
-     "Physical Damage":5299,
+     "Physical Damage":5383,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":47,
+     "Resistance":48,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1879,10 +1920,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.3501888,
-     "Tenacity":0.3501888,
+     "Potency":0.35574376,
+     "Tenacity":0.35574376,
      "Health Steal":0,
-     "Protection":35667,
+     "Protection":36233,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2034,7 +2075,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
     "currentTier":5
@@ -2354,7 +2395,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2383,7 +2424,7 @@
    "stats":{}
   },
   "hondo":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
     "currentTier":3

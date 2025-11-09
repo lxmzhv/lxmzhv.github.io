@@ -1,11 +1,44 @@
 {
  "allyCode":"332323664",
  "requirements":{
+  "jabba":{
+   "total_score":90.83
+  },
+  "gg":{
+   "total_score":83.4
+  },
+  "gas":{
+   "total_score":89.6
+  },
+  "inqs":{
+   "total_score":68.0
+  },
+  "reva":{
+   "total_score":93.6
+  },
+  "geos":{
+   "total_score":92.0
+  },
+  "drevan":{
+   "total_score":100.8
+  },
+  "amidala":{
+   "total_score":99.67
+  },
+  "gungans":{
+   "total_score":101.0
+  },
   "leia":{
    "total_score":106.8
+  },
+  "slkr":{
+   "total_score":100.86
+  },
+  "beq_raid":{
+   "total_score":93.5
   }
  },
- "modsRating":74.96578,
+ "modsRating":75.299247,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -28,6 +61,14 @@
    "currentTier":13,
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":4,
+   "currentTier":13,
+   "relic":{
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1706,10 +1747,10 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":6
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2078,10 +2119,10 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":75285,
-     "Speed":62,
-     "Physical Damage":4456,
-     "Special Damage":20287,
+     "Health":75937,
+     "Speed":63,
+     "Physical Damage":4494,
+     "Special Damage":20462,
      "Armor":0,
      "Resistance":39,
      "Armor Penetration":0,
@@ -2089,12 +2130,12 @@
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":469,
+     "Special Critical Chance":473,
      "Critical Damage":0,
-     "Potency":0.48833982000000004,
-     "Tenacity":0.48833982000000004,
+     "Potency":0.49256586,
+     "Tenacity":0.49256586,
      "Health Steal":0,
-     "Protection":50190,
+     "Protection":50624,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -4356,10 +4397,10 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":6
+    "currentTier":9
    },
    "stats":{}
   },

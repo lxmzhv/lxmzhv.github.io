@@ -1,11 +1,44 @@
 {
  "allyCode":"523426916",
  "requirements":{
+  "jabba":{
+   "total_score":84.67
+  },
+  "gg":{
+   "total_score":79.6
+  },
+  "gas":{
+   "total_score":90.2
+  },
+  "inqs":{
+   "total_score":74.6
+  },
+  "reva":{
+   "total_score":94.4
+  },
+  "geos":{
+   "total_score":82.0
+  },
+  "drevan":{
+   "total_score":96.0
+  },
+  "amidala":{
+   "total_score":100.0
+  },
+  "gungans":{
+   "total_score":96.0
+  },
   "leia":{
    "total_score":102.0
+  },
+  "slkr":{
+   "total_score":91.43
+  },
+  "beq_raid":{
+   "total_score":95.5
   }
  },
- "modsRating":38.767297,
+ "modsRating":38.937606,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -25,6 +58,14 @@
   },
   "greefkarga":{
    "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":3,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -1515,7 +1556,7 @@
   },
   "4lom":{
    "currentRarity":3,
-   "currentTier":10,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -4356,7 +4397,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "relic":{
     "currentTier":3
@@ -4475,9 +4516,9 @@
   },
   "mazkanata":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

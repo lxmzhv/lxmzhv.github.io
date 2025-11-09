@@ -1,11 +1,44 @@
 {
  "allyCode":"279167353",
  "requirements":{
+  "jabba":{
+   "total_score":87.17
+  },
+  "gg":{
+   "total_score":82.8
+  },
+  "gas":{
+   "total_score":89.4
+  },
+  "inqs":{
+   "total_score":67.4
+  },
+  "reva":{
+   "total_score":92.6
+  },
+  "geos":{
+   "total_score":81.0
+  },
+  "drevan":{
+   "total_score":96.2
+  },
+  "amidala":{
+   "total_score":92.0
+  },
+  "gungans":{
+   "total_score":93.8
+  },
   "leia":{
    "total_score":99.4
+  },
+  "slkr":{
+   "total_score":93.29
+  },
+  "beq_raid":{
+   "total_score":94.5
   }
  },
- "modsRating":50.545496,
+ "modsRating":51.017243,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -25,6 +58,14 @@
   },
   "greefkarga":{
    "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":4,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -632,12 +673,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":30010,
-     "Speed":25,
-     "Physical Damage":2972,
+     "Health":31271,
+     "Speed":27,
+     "Physical Damage":3097,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":26,
+     "Resistance":27,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -645,10 +686,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.19659898,
-     "Tenacity":0.19659898,
+     "Potency":0.20486339,
+     "Tenacity":0.20486339,
      "Health Steal":0,
-     "Protection":20006,
+     "Protection":20847,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1506,7 +1547,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -1866,12 +1907,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":54604,
-     "Speed":42,
-     "Physical Damage":5408,
+     "Health":55544,
+     "Speed":43,
+     "Physical Damage":5502,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":48,
+     "Resistance":49,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1879,10 +1920,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.35740906,
-     "Tenacity":0.35740906,
+     "Potency":0.36355878,
+     "Tenacity":0.36355878,
      "Health Steal":0,
-     "Protection":36403,
+     "Protection":37029,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2034,7 +2075,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "relic":{
     "currentTier":1
@@ -2223,9 +2264,9 @@
   },
   "zoriibliss_v2":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -2362,7 +2403,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2475,9 +2516,9 @@
   },
   "ithano":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
