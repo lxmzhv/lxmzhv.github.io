@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return '#7ACC7A'; // Green
     }
 
-    const guildFiles = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json'];
+    const guildFiles = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json', 'guild_RiWsgx3BQXqZMepXXEb2Cg.json'];
     let guilds = [];
 
     function loadGuilds() {
