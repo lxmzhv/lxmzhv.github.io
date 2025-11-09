@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const guildInfoDiv = document.getElementById('guild-info');
     const rareUnitThresholdInput = document.getElementById('rareUnitThreshold');
 
-    const teams = ["amidala", "beq_raid", "drevan", "gas", "geos", "gg", "gungans", "inqs", "jabba", "leia", "reva", "slkr"];
+    const teams = ["amidala", "drevan", "gas", "geos", "gg", "gungans", "jabba", "leia", "reva", "slkr"];
 
     // TB Plan Modal elements
     const tbPlanBtn = document.getElementById('tb-plan-btn');
@@ -762,10 +762,19 @@ document.addEventListener('DOMContentLoaded', () => {
             playerInfo.rareRTotal = allRareUnits.size;
 
             // Requirements
+            let totalScore = 0;
+            let teamCount = 0;
             teams.forEach(team => {
                 const reqs = player.requirements?.[team];
-                playerInfo[`req${team}Total`] = reqs?.total_score || 0;
+                const score = reqs?.total_score || 0;
+                playerInfo[`req${team}Total`] = score;
+                if (score > 0) {
+                    totalScore += score;
+                    teamCount++;
+                }
             });
+            playerInfo.reqAverageTeamScore = teamCount > 0 ? Math.round(totalScore / teamCount) : 0;
+
             leiaTeamUnits.forEach(unitId => {
                 playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
             });
@@ -1757,9 +1766,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Requirements
+            // Average team score
+            const reqAverageScoreCell = row.insertCell();
+            reqAverageScoreCell.classList.add('col-requirements', 'separator-left');
+            const averageScore = player['reqAverageTeamScore'];
+            reqAverageScoreCell.textContent = averageScore.toFixed(0);
+            reqAverageScoreCell.style.backgroundColor = getReqBackgroundColor(averageScore);
+
             // Leia's team score
             const reqLeiaTotalCell = row.insertCell();
-            reqLeiaTotalCell.classList.add('col-requirements', 'separator-left');
+            reqLeiaTotalCell.classList.add('col-requirements');
             const leiaScore = player['reqleiaTotal'];
             reqLeiaTotalCell.textContent = leiaScore.toFixed(0);
             reqLeiaTotalCell.style.backgroundColor = getReqBackgroundColor(leiaScore);
