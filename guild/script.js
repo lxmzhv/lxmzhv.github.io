@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const teams = ["amidala", "drevan", "gas", "geos", "gg", "gungans", "jabba", "leia", "reva", "slkr"];
 
+    const assaultCharacters = [
+        'padawanobiwan',
+        'masterquigon',
+        'captainenoch',
+        'deathtrooperperidea',
+        'nighttrooper'
+    ];
+
     // TB Plan Modal elements
     const tbPlanBtn = document.getElementById('tb-plan-btn');
     const tbPlanModal = document.getElementById('tb-plan-modal');
@@ -181,6 +189,11 @@ document.addEventListener('DOMContentLoaded', () => {
         "nightsisterinitiate": "Initiate", "nightsisteracolyte": "Acolyte", "rose": "Rose Tico",
         "amilynholdo": "Holdo", "reyjakku": "Scav Rey", "finn": "Finn", "poedameron": "Poe", "resistancepilot": "Res Pilot",
         "resistancetrooper": "Res Trooper", "reyjeditraining": "RJ",
+        "padawanobiwan": "P. Obi-Wan",
+        "masterquigon": "M. Qui-Gon",
+        "captainenoch": "Enoch",
+        "deathtrooperperidea": "DT (Peridea)",
+        "nighttrooper": "Nighttrooper",
         "r2d2_legendary": "R2-D2", "captaindrogan": "Drogan", "admiralraddus": "Raddus"
     };
 
@@ -406,6 +419,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pilotInfo.level >= 5) return '#7ACC7A'; // R5+ (slightly darker green)
             if (pilotInfo.level >= 3) return 'lightgreen'; // R3-R4
             if (pilotInfo.level >= 0) return 'yellow'; // R0-R2
+        }
+        return ''; // Default
+    }
+
+    function getAssaultUnitBGColor(unitInfo) {
+        if (unitInfo.type === 0) return 'black'; // No info
+        if (unitInfo.type === 1) return '#FF9999'; // No unit (red)
+        if (unitInfo.type === 2) return '#FF9999'; // G level (red)
+        if (unitInfo.type === 3) { // Relic
+            if (unitInfo.level === 9) return '#7ACC7A'; // R9 (green)
+            if (unitInfo.level >= 5) return 'yellow'; // R5-R8
+            if (unitInfo.level >= 0) return 'orange'; // R0-R4
         }
         return ''; // Default
     }
@@ -935,9 +960,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (galacticLegends.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic')) {
-                const valA_gl = a[key];
-                const valB_gl = b[key];
+            if (galacticLegends.includes(key) || assaultCharacters.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic')) {
+                const valA_gl = a[key] || { type: 0, level: 0, rarity: 0 };
+                const valB_gl = b[key] || { type: 0, level: 0, rarity: 0 };
 
                 if (valA_gl.type < valB_gl.type) return direction === 'asc' ? -1 : 1;
                 if (valA_gl.type > valB_gl.type) return direction === 'asc' ? 1 : -1;
@@ -1654,7 +1679,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const modsCell = row.insertCell();
             modsCell.textContent = player.modsRating ? player.modsRating.toFixed(1) : '-';
-            modsCell.classList.add('col-player-info');
+            modsCell.classList.add('col-player-info', 'separator-right');
+
+            assaultCharacters.forEach((unitId, idx) => {
+                const cell = row.insertCell();
+                cell.classList.add('col-assaults');
+                if (idx === 0) cell.classList.add('separator-left');
+                const unitInfo = getPlayerUnitInfo(player, unitId);
+                cell.textContent = unitInfo.display;
+                cell.style.backgroundColor = getAssaultUnitBGColor(unitInfo);
+                if (idx === assaultCharacters.length - 1) cell.classList.add('separator-right');
+            });
 
             galacticLegends.forEach((glName, idx) => {
                 const glCell = row.insertCell();
