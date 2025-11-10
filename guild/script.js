@@ -916,15 +916,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentDirection = headerCell.dataset.direction || 'desc';
         const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
 
+        sortAndRender(sortKey, newDirection);
+
+        // After rendering, clear all sort indicators
         table.querySelectorAll('th[data-sort]').forEach(th => {
             delete th.dataset.direction;
             th.classList.remove('sort-asc', 'sort-desc');
         });
 
-        headerCell.dataset.direction = newDirection;
-        headerCell.classList.add(newDirection === 'asc' ? 'sort-asc' : 'sort-desc');
-
-        sortAndRender(sortKey, newDirection);
+        // Then, find the new header cell (it might have been recreated) and apply the indicator
+        const newHeaderCell = table.querySelector(`th[data-sort="${sortKey}"]`);
+        if (newHeaderCell) {
+            newHeaderCell.dataset.direction = newDirection;
+            newHeaderCell.classList.add(newDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+        }
     });
 
     const debugTable = document.getElementById('debug-table');
@@ -977,6 +982,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (valA_gl.rarity < valB_gl.rarity) return direction === 'asc' ? -1 : 1;
                 if (valA_gl.rarity > valB_gl.rarity) return direction === 'asc' ? 1 : -1;
 
+                return 0;
+            }
+
+            if (key.startsWith('tb-')) {
+                const parts = key.split('-'); // e.g., ['tb', 'padawanobiwan', '5']
+                const unitId = parts[1];
+                const requiredLevel = parseInt(parts[2], 10);
+
+                const isShip = shipBaseIds.has(unitId);
+
+                const getPlayerScore = (player) => {
+                    if (isShip) {
+                        const unitInfo = getShipInfo(player, unitId);
+                        if (unitInfo.rarity >= requiredLevel) return 2; // Meets requirement
+                        if (unitInfo.rarity > 0) return 1; // Has ship, but not at required rarity
+                        return 0; // Doesn't have ship
+                    } else { // Character
+                        const unitInfo = getPlayerUnitInfo(player, unitId);
+                        if (unitInfo.type === 3 && unitInfo.level >= requiredLevel) return 2; // Meets requirement
+                        if (unitInfo.type === 3) return 1; // Has relic, but not at required level
+                        if (unitInfo.type === 2) return 0.5; // Has gear, but not relic
+                        return 0; // Doesn't have character or not geared
+                    }
+                };
+
+                const scoreA = getPlayerScore(a);
+                const scoreB = getPlayerScore(b);
+
+                if (scoreA < scoreB) return direction === 'asc' ? -1 : 1;
+                if (scoreA > scoreB) return direction === 'asc' ? 1 : -1;
+
+                // If scores are equal, secondary sort by player name
+                if (a.playerName.toLowerCase() < b.playerName.toLowerCase()) {
+                    return direction === 'asc' ? -1 : 1;
+                }
+                if (a.playerName.toLowerCase() > b.playerName.toLowerCase()) {
+                    return direction === 'asc' ? 1 : -1;
+                }
                 return 0;
             }
 
@@ -1619,6 +1662,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tbColumns.forEach((col, idx) => {
                 const charHeader = document.createElement('th');
                 charHeader.className = 'col-tb';
+                charHeader.dataset.sort = `tb-${col.unitId}-${col.level}`;
                 if (idx === 0 || col.phase !== tbColumns[idx - 1].phase) {
                     charHeader.classList.add('separator-left');
                 }
@@ -1773,36 +1817,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             newCell.appendChild(newCheckbox);
 
-            tbColumns.forEach((col, idx) => {
-                const tbCell = row.insertCell();
-                tbCell.classList.add('col-tb');
-                if (idx === 0 || col.phase !== tbColumns[idx - 1].phase) {
-                    tbCell.classList.add('separator-left');
-                }
-
-                if (col.type === 'ship') {
-                    const unitInfo = getShipInfo(player, col.unitId);
-                    tbCell.textContent = unitInfo.display;
-                    if (unitInfo.rarity >= col.level) {
-                        tbCell.style.backgroundColor = '#7ACC7A'; // Green
-                    } else if (unitInfo.type > 1) {
-                        tbCell.style.backgroundColor = '#FF9999'; // Red
-                    }
-                } else { // character
-                    const unitInfo = getPlayerUnitInfo(player, col.unitId);
-                    tbCell.textContent = unitInfo.display;
-                    if (unitInfo.type === 3 && unitInfo.level >= col.level) {
-                        tbCell.style.backgroundColor = '#7ACC7A'; // Green
-                    } else if (unitInfo.type > 1) {
-                        tbCell.style.backgroundColor = '#FF9999'; // Red
-                    }
-                }
-            });
-            if (tbColumns.length > 0) {
-                const lastTbCell = row.cells[row.cells.length - 1];
-                lastTbCell.classList.add('separator-right');
-            }
-
             // Requirements
             // Average team score
             const reqAverageScoreCell = row.insertCell();
@@ -1839,6 +1853,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 reqTotalCell.textContent = score.toFixed(0);
                 reqTotalCell.style.backgroundColor = getReqBackgroundColor(score);
             });
+
+            tbColumns.forEach((col, idx) => {
+                const tbCell = row.insertCell();
+                tbCell.classList.add('col-tb');
+                if (idx === 0 || col.phase !== tbColumns[idx - 1].phase) {
+                    tbCell.classList.add('separator-left');
+                }
+
+                if (col.type === 'ship') {
+                    const unitInfo = getShipInfo(player, col.unitId);
+                    tbCell.textContent = unitInfo.display;
+                    if (unitInfo.rarity >= col.level) {
+                        tbCell.style.backgroundColor = '#7ACC7A'; // Green
+                    } else if (unitInfo.type > 1) {
+                        tbCell.style.backgroundColor = '#FF9999'; // Red
+                    }
+                } else { // character
+                    const unitInfo = getPlayerUnitInfo(player, col.unitId);
+                    tbCell.textContent = unitInfo.display;
+                    if (unitInfo.type === 3 && unitInfo.level >= col.level) {
+                        tbCell.style.backgroundColor = '#7ACC7A'; // Green
+                    } else if (unitInfo.type > 1) {
+                        tbCell.style.backgroundColor = '#FF9999'; // Red
+                    }
+                }
+            });
+            if (tbColumns.length > 0) {
+                const lastTbCell = row.cells[row.cells.length - 1];
+                lastTbCell.classList.add('separator-right');
+            }
         });
 
         // Re-apply column visibility based on current checkbox state
@@ -1934,14 +1978,18 @@ document.addEventListener('DOMContentLoaded', () => {
             currentConfig[pName][r] = cb.checked;
         });
 
+        const exceptionPlanets = new Set(['Zeffo', 'Mandalor']);
+
         // 2. Apply rules sequentially to correct the state
         const planetsMap = new Map(Object.values(planetStats).map(p => [p.name, p]));
         const planetsByAlignmentAndPhase = {};
         for (const planet of planetsMap.values()) {
-            if (!planetsByAlignmentAndPhase[planet.alignment]) planetsByAlignmentAndPhase[planet.alignment] = {};
+            if (exceptionPlanets.has(planet.name)) continue;
+            if (!planetsByAlignmentAndPhase[planet.alignment]) {
+                planetsByAlignmentAndPhase[planet.alignment] = {};
+            }
             planetsByAlignmentAndPhase[planet.alignment][planet.phase] = planet;
         }
-        const exceptionPlanets = new Set(['Zeffo', 'Mandalore']);
 
         // Rule: Round 1 is always fixed
         planetsMap.forEach(p => {
@@ -2029,13 +2077,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updatePlanetConfigUI(config) {
+        const exceptionPlanets = new Set(['Zeffo', 'Mandalor']);
+
         const planetsMap = new Map(Object.values(planetStats).map(p => [p.name, p]));
         const planetsByAlignmentAndPhase = {};
         for (const planet of planetsMap.values()) {
-            if (!planetsByAlignmentAndPhase[planet.alignment]) planetsByAlignmentAndPhase[planet.alignment] = {};
+            if (exceptionPlanets.has(planet.name)) continue;
+            if (!planetsByAlignmentAndPhase[planet.alignment]) {
+                planetsByAlignmentAndPhase[planet.alignment] = {};
+            }
             planetsByAlignmentAndPhase[planet.alignment][planet.phase] = planet;
         }
-        const exceptionPlanets = new Set(['Zeffo', 'Mandalore']);
 
         document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
             const planetName = cb.dataset.planet;
