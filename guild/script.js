@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('dev') === '1') {
+        document.getElementById('guild-selector-container').style.display = 'block';
+    }
+
     const table = document.getElementById('guild-table');
     const tbody = table.querySelector('tbody');
     const progressContainer = document.getElementById('progress-container');
@@ -523,20 +528,37 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const urlParams = new URLSearchParams(window.location.search);
+            const isDevMode = urlParams.get('dev') === '1';
 
-            let selectedGuildId = localStorage.getItem('selectedGuildId');
+            let selectedGuildId = null;
 
             const guildIdFromUrl = urlParams.get('guild');
             if (guildIdFromUrl) {
                 selectedGuildId = guildIdFromUrl;
+            } else if (localStorage.getItem('selectedGuildId')) {
+                selectedGuildId = localStorage.getItem('selectedGuildId');
             }
 
-            if (!guilds.some(g => g.id === selectedGuildId)) {
+            if (selectedGuildId && guilds.some(g => g.id === selectedGuildId)) {
+                guildSelector.value = selectedGuildId;
+                loadAndRenderGuildData(selectedGuildId);
+            } else if (isDevMode && guilds.length > 0) {
+                // If in dev mode and no guild is selected, default to the first guild
                 selectedGuildId = guilds[0]?.id;
+                guildSelector.value = selectedGuildId;
+                loadAndRenderGuildData(selectedGuildId);
+            } else {
+                // No guild selected, clear any previous data
+                guildInfoDiv.innerHTML = '<h1>No Guild Selected</h1><p>Please select a guild using the URL parameter, e.g., ?guild=YOUR_GUILD_ID</p>';
+                tbody.innerHTML = '';
+                const debugTbody = document.getElementById('debug-table').querySelector('tbody');
+                if (debugTbody) debugTbody.innerHTML = '';
+                progressContainer.style.display = 'none';
             }
 
-            guildSelector.value = selectedGuildId;
-            loadAndRenderGuildData(selectedGuildId);
+            if (!isDevMode) {
+                guildSelector.disabled = true;
+            }
         }).catch(error => console.error('Error loading guild names:', error));
     }
 
