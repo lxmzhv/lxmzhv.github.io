@@ -811,7 +811,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return playerInfo;
         });
 
-        assignPlatoons(players, planetStats);
+        assignPlatoons(players, planetStats, guildAvailabilityForPlatoons);
 
         const savedSortKey = localStorage.getItem('sortKey') || 'memberLevel';
         const savedSortDirection = localStorage.getItem('sortDirection') || 'asc';
@@ -1058,7 +1058,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(sortedData);
     }
 
-    function assignPlatoons(players, planetStats) {
+    function assignPlatoons(players, planetStats, guildAvailability) {
         // Initialize all units as unassigned and clear previous stats
         for (const planetName in planetStats) {
             const planet = planetStats[planetName];
@@ -1074,50 +1074,87 @@ document.addEventListener('DOMContentLoaded', () => {
         // Loop through each round from 1 to 6 to perform assignments
         for (let round = 1; round <= 6; round++) {
             const assignedUnitsThisRound = new Set(); // Tracks "playerId-unitId" for this round only.
+            const playerAssignmentsCountThisRound = {}; // Tracks assignments per player, per planet for this round.
 
             const planetsActiveThisRound = Object.keys(planetStats)
-                .filter(planetName => planetStats[planetName].rounds.includes(round))
-                .sort((a, b) => {
-                    const statsA = planetStats[a];
-                    const statsB = planetStats[b];
-                    const relicA = parseInt(statsA.relic.substring(1));
-                    const relicB = parseInt(statsB.relic.substring(1));
-                    if (relicA !== relicB) {
-                        return relicB - relicA;
-                    }
-                    return a.localeCompare(b);
-                });
+                .filter(planetName => planetStats[planetName].rounds.includes(round));
 
-            // Assignment phase for the current round
+            const unassignedUnitsForRound = [];
             planetsActiveThisRound.forEach(planetName => {
                 const planet = planetStats[planetName];
-                const relicLevel = parseInt(planet.relic.substring(1));
-
-                planet.units.filter(u => !u.assignedPlayerName).forEach(unit => {
-                    const isShip = shipBaseIds.has(unit.unitId);
-                    for (const player of players) {
-                        const assignmentKey = `${player.playerId}-${unit.unitId}`;
-                        if (assignedUnitsThisRound.has(assignmentKey)) continue;
-
-                        if (isShip) {
-                            const shipInfo = getShipInfo(player, unit.unitId);
-                            if (shipInfo.rarity === 7) {
-                                unit.assignedPlayerName = player.playerName;
-                                unit.assignedInRound = round;
-                                assignedUnitsThisRound.add(assignmentKey);
-                                break;
-                            }
-                        } else {
-                            const unitInfo = getPlayerUnitInfo(player, unit.unitId);
-                            if (unitInfo.type === 3 && unitInfo.level >= relicLevel) {
-                                unit.assignedPlayerName = player.playerName;
-                                unit.assignedInRound = round;
-                                assignedUnitsThisRound.add(assignmentKey);
-                                break;
-                            }
-                        }
+                planet.units.forEach(unit => {
+                    if (!unit.assignedPlayerName) {
+                        unassignedUnitsForRound.push({
+                            unit: unit,
+                            planet: planet,
+                            planetName: planetName
+                        });
                     }
                 });
+            });
+
+            unassignedUnitsForRound.sort((a, b) => {
+                const relicA = parseInt(a.planet.relic.substring(1));
+                const relicB = parseInt(b.planet.relic.substring(1));
+
+                const availabilityA = guildAvailability[a.unit.unitId]?.[relicA] || 0;
+                const availabilityB = guildAvailability[b.unit.unitId]?.[relicB] || 0;
+
+                if (availabilityA !== availabilityB) {
+                    return availabilityA - availabilityB; // Rarest first
+                }
+                if (relicB !== relicA) {
+                    return relicB - relicA; // Higher relic first
+                }
+                return a.planetName.localeCompare(b.planetName); // Then by planet name
+            });
+
+            // Assignment phase for the current round
+            unassignedUnitsForRound.forEach(({ unit, planet, planetName }) => {
+                const relicLevel = parseInt(planet.relic.substring(1));
+                const isShip = shipBaseIds.has(unit.unitId);
+
+                let eligiblePlayers = [];
+                for (const player of players) {
+                    const assignmentKey = `${player.playerId}-${unit.unitId}`;
+                    if (assignedUnitsThisRound.has(assignmentKey)) continue;
+
+                    const assignmentsOnPlanet = (playerAssignmentsCountThisRound[player.playerId] && playerAssignmentsCountThisRound[player.playerId][planetName]) || 0;
+                    if (assignmentsOnPlanet >= 10) continue;
+
+                    let canAssign = false;
+                    if (isShip) {
+                        const shipInfo = getShipInfo(player, unit.unitId);
+                        if (shipInfo.rarity === 7) {
+                            canAssign = true;
+                        }
+                    } else {
+                        const unitInfo = getPlayerUnitInfo(player, unit.unitId);
+                        if (unitInfo.type === 3 && unitInfo.level >= relicLevel) {
+                            canAssign = true;
+                        }
+                    }
+
+                    if (canAssign) {
+                        eligiblePlayers.push(player);
+                    }
+                }
+
+                if (eligiblePlayers.length > 0) {
+                    const chosenPlayer = eligiblePlayers[Math.floor(Math.random() * eligiblePlayers.length)];
+
+                    unit.assignedPlayerName = chosenPlayer.playerName;
+                    unit.assignedInRound = round;
+                    assignedUnitsThisRound.add(`${chosenPlayer.playerId}-${unit.unitId}`);
+
+                    if (!playerAssignmentsCountThisRound[chosenPlayer.playerId]) {
+                        playerAssignmentsCountThisRound[chosenPlayer.playerId] = {};
+                    }
+                    if (!playerAssignmentsCountThisRound[chosenPlayer.playerId][planetName]) {
+                        playerAssignmentsCountThisRound[chosenPlayer.playerId][planetName] = 0;
+                    }
+                    playerAssignmentsCountThisRound[chosenPlayer.playerId][planetName]++;
+                }
             });
 
             // Candidate and Missing calculation phase for the current round
@@ -1410,7 +1447,57 @@ document.addEventListener('DOMContentLoaded', () => {
                     showCandidatesPopup(planetName, stats);
                 });
             }
+
+            const playersCell = row.insertCell();
+            const assignedPlayers = new Set(
+                stats.units
+                    .filter(u => u.assignedInRound === round && u.assignedPlayerName)
+                    .map(u => u.assignedPlayerName)
+            );
+            playersCell.textContent = assignedPlayers.size > 0 ? assignedPlayers.size : '-';
+            if (assignedPlayers.size > 0) {
+                playersCell.style.cursor = 'pointer';
+                playersCell.style.textDecoration = 'underline';
+                playersCell.addEventListener('click', () => {
+                    showPlanetPlayersPopup(planetName, stats, round);
+                });
+            }
         });
+    }
+
+    function showPlanetPlayersPopup(planetName, stats, round) {
+        let popupContent = `<h2>${planetName} - Player Assignments (Round ${round})</h2>`;
+
+        const assignmentsByPlayer = {};
+        stats.units
+            .filter(u => u.assignedInRound === round && u.assignedPlayerName)
+            .forEach(u => {
+                if (!assignmentsByPlayer[u.assignedPlayerName]) {
+                    assignmentsByPlayer[u.assignedPlayerName] = [];
+                }
+                assignmentsByPlayer[u.assignedPlayerName].push(u.name);
+            });
+
+        const sortedPlayers = Object.keys(assignmentsByPlayer).sort((a, b) => a.localeCompare(b));
+
+        if (sortedPlayers.length > 0) {
+            sortedPlayers.forEach(playerName => {
+                const assignments = assignmentsByPlayer[playerName].sort((a, b) => a.localeCompare(b));
+                popupContent += `
+                    <div style="margin-top: 1em;">
+                        <strong>${playerName} - ${assignments.length} assignments</strong>
+                        <ul style="margin-top: 0.5em;">
+                            ${assignments.map(unitName => `<li>${unitName}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            });
+        } else {
+            popupContent += '<p>No players assigned for this planet and round.</p>';
+        }
+
+        modalBody.innerHTML = popupContent;
+        modal.style.display = 'block';
     }
 
     function showCandidatesPopup(planetName, stats) {
