@@ -755,6 +755,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 playerInfo[pilotName] = getPlayerUnitInfo(player, pilotName);
             });
 
+            assaultCharacters.forEach(unitId => {
+                playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
+            });
+
             conquestUnitsOrder.forEach(unitName => {
                 if (conquestCharactersSet.has(unitName)) {
                     playerInfo[unitName] = getPlayerUnitInfo(player, unitName);
@@ -1685,9 +1689,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cell = row.insertCell();
                 cell.classList.add('col-assaults');
                 if (idx === 0) cell.classList.add('separator-left');
-                const unitInfo = getPlayerUnitInfo(player, unitId);
-                cell.textContent = unitInfo.display;
-                cell.style.backgroundColor = getAssaultUnitBGColor(unitInfo);
+                cell.textContent = player[unitId].display;
+                cell.style.backgroundColor = getAssaultUnitBGColor(player[unitId]);
                 if (idx === assaultCharacters.length - 1) cell.classList.add('separator-right');
             });
 
