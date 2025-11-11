@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const guildInfoDiv = document.getElementById('guild-info');
     const rareUnitThresholdInput = document.getElementById('rareUnitThreshold');
 
-    const teams = ["amidala", "drevan", "gas", "geos", "gg", "gungans", "jabba", "leia", "reva", "slkr"];
+    const teams = ["leia", "jabba", "amidala", "drevan", "gas", "geos", "gg", "gungans", "reva", "slkr"];
 
     const assaultCharacters = [
         'padawanobiwan',
@@ -372,8 +372,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const leiaTeamUnits = ["glleia", "r2d2_legendary", "captaindrogan", "admiralraddus", "jynerso"];
+    const jabbaTeamUnits = ["jabbathehutt", "embo", "krrsantan", "boushh", "undercoverlando"];
 
-    const leiaTeamUnitColorThresholds = {
+    const reqTeamUnitColorThresholds = {
         "glleia": {
             red: 5, orange: 7, yellow: 9, green: Infinity
         },
@@ -388,7 +389,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         "admiralraddus": {
             red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
-        }
+        },
+        "jabbathehutt": { red: 5, orange: 7, yellow: 9, green: Infinity },
+        "embo": { red: 5, orange: 7, yellow: 9, green: Infinity },
+        "krrsantan": { red: 5, orange: 7, yellow: 9, green: Infinity },
+        "boushh": { red: 3, orange: 5, yellow: 8, green: Infinity },
+        "undercoverlando": { red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity }
     };
 
     function getShipInfo(player, shipName) {
@@ -460,12 +466,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return '#7ACC7A'; // Green
     }
 
-    function getLeiaUnitBGColor(unitInfo, unitId) {
+    function getReqUnitBGColor(unitInfo, unitId) {
         if (unitInfo.type !== 3) { // Not a relic
             return getUnitBGColor(unitInfo);
         }
 
-        const thresholds = leiaTeamUnitColorThresholds[unitId];
+        const thresholds = reqTeamUnitColorThresholds[unitId];
         if (!thresholds) {
             return getUnitBGColor(unitInfo); // Fallback for safety
         }
@@ -828,6 +834,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             leiaTeamUnits.forEach(unitId => {
                 playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
+            });
+
+            jabbaTeamUnits.forEach(unitId => {
+                playerInfo[`reqJabba-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
             });
 
             return playerInfo;
@@ -1934,33 +1944,41 @@ document.addEventListener('DOMContentLoaded', () => {
             reqAverageScoreCell.textContent = averageScore.toFixed(0);
             reqAverageScoreCell.style.backgroundColor = getReqBackgroundColor(averageScore);
 
-            // Leia's team score
-            const reqLeiaTotalCell = row.insertCell();
-            reqLeiaTotalCell.classList.add('col-requirements');
-            const leiaScore = player['reqleiaTotal'];
-            reqLeiaTotalCell.textContent = leiaScore.toFixed(0);
-            reqLeiaTotalCell.style.backgroundColor = getReqBackgroundColor(leiaScore);
-
-            // Leia's team units
-            leiaTeamUnits.forEach((unitId, idx) => {
-                const relicCell = row.insertCell();
-                relicCell.classList.add('col-requirements');
-                const unitInfo = player[`reqLeia-${unitId}-relic`];
-                relicCell.textContent = unitInfo.display;
-                relicCell.style.backgroundColor = getLeiaUnitBGColor(unitInfo, unitId);
-            });
-
-            // Other teams
-            const otherTeams = teams.filter(t => t !== 'leia');
-            otherTeams.forEach((team, idx) => {
+            teams.forEach((team, idx) => {
                 const reqTotalCell = row.insertCell();
                 reqTotalCell.classList.add('col-requirements');
-                if (idx === otherTeams.length - 1) {
+                reqTotalCell.classList.add('separator-left');
+                if (idx === teams.length - 1) {
                     reqTotalCell.classList.add('separator-right');
                 }
                 const score = player[`req${team}Total`];
                 reqTotalCell.textContent = score.toFixed(0);
                 reqTotalCell.style.backgroundColor = getReqBackgroundColor(score);
+
+                if (team === 'leia') {
+                    leiaTeamUnits.forEach((unitId, idx) => {
+                        const relicCell = row.insertCell();
+                        relicCell.classList.add('col-requirements');
+                        if (idx === leiaTeamUnits.length - 1) {
+                            relicCell.classList.add('separator-right');
+                        }
+                        const unitInfo = player[`reqLeia-${unitId}-relic`];
+                        relicCell.textContent = unitInfo.display;
+                        relicCell.style.backgroundColor = getReqUnitBGColor(unitInfo, unitId);
+                    });
+                }
+                else if (team === 'jabba') {
+                    jabbaTeamUnits.forEach(unitId => {
+                        const relicCell = row.insertCell();
+                        relicCell.classList.add('col-requirements');
+                        if (idx === jabbaTeamUnits.length - 1) {
+                            relicCell.classList.add('separator-right');
+                        }
+                        const unitInfo = player[`reqJabba-${unitId}-relic`];
+                        relicCell.textContent = unitInfo.display;
+                        relicCell.style.backgroundColor = getReqUnitBGColor(unitInfo, unitId);
+                    });
+                }
             });
 
             tbColumns.forEach((col, idx) => {
