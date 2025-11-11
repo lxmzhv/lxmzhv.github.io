@@ -2,7 +2,7 @@
  "allyCode":"279369294",
  "requirements":{
   "jabba":{
-   "total_score":24.83
+   "total_score":26.33
   },
   "gg":{
    "total_score":89.2
@@ -14,7 +14,7 @@
    "total_score":81.6
   },
   "reva":{
-   "total_score":89.2
+   "total_score":90.2
   },
   "geos":{
    "total_score":83.5
@@ -23,7 +23,7 @@
    "total_score":45.4
   },
   "amidala":{
-   "total_score":29.33
+   "total_score":38.0
   },
   "gungans":{
    "total_score":90.4
@@ -38,7 +38,7 @@
    "total_score":77.5
   }
  },
- "modsRating":12.715563,
+ "modsRating":12.780886,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -75,6 +75,14 @@
   "zebs3":{
    "currentRarity":7,
    "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":1,
    "relic":{
     "currentTier":1
    },
@@ -182,7 +190,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -306,7 +314,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":2
+    "currentTier":4
    },
    "stats":{}
   },
@@ -443,7 +451,7 @@
    "stats":{}
   },
   "50rt":{
-   "currentRarity":2,
+   "currentRarity":5,
    "currentTier":1,
    "relic":{
     "currentTier":1
@@ -800,7 +808,7 @@
   },
   "merrin":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -832,7 +840,7 @@
   },
   "talia":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":7,
    "relic":{
     "currentTier":1
    },
@@ -1007,6 +1015,14 @@
    "currentTier":13,
    "relic":{
     "currentTier":5
+   },
+   "stats":{}
+  },
+  "queenamidala":{
+   "currentRarity":7,
+   "currentTier":1,
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2672,7 +2688,7 @@
   },
   "embo":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":4,
    "relic":{
     "currentTier":1
    },
@@ -2940,7 +2956,7 @@
   },
   "chirrutimwe":{
    "currentRarity":5,
-   "currentTier":1,
+   "currentTier":4,
    "relic":{
     "currentTier":1
    },
@@ -2967,12 +2983,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":74067,
+     "Health":74607,
      "Speed":60,
-     "Physical Damage":6690,
+     "Physical Damage":6738,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":64,
+     "Resistance":65,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -2980,8 +2996,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.4247397,
-     "Tenacity":0.4247397,
+     "Potency":0.42783552,
+     "Tenacity":0.42783552,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -3237,13 +3253,13 @@
    "stats":{}
   },
   "tiedagger":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":74917,
-     "Speed":63,
-     "Physical Damage":9008,
+     "Health":83242,
+     "Speed":70,
+     "Physical Damage":10009,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -3251,13 +3267,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":52,
+     "Physical Critical Chance":57,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.43507135,
-     "Tenacity":0.43507135,
+     "Potency":0.48341262,
+     "Tenacity":0.48341262,
      "Health Steal":0,
-     "Protection":24972,
+     "Protection":27747,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -3496,7 +3512,7 @@
   },
   "greedo":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":11,
    "relic":{
     "currentTier":1
    },
@@ -4207,8 +4223,8 @@
    "stats":{}
   },
   "aurra_sing":{
-   "currentRarity":2,
-   "currentTier":1,
+   "currentRarity":3,
+   "currentTier":3,
    "relic":{
     "currentTier":1
    },

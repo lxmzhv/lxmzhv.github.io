@@ -38,7 +38,7 @@
    "total_score":92.0
   }
  },
- "modsRating":47.203952,
+ "modsRating":47.707286,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1845,12 +1845,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":58258,
+     "Health":58533,
      "Speed":57,
-     "Physical Damage":6651,
+     "Physical Damage":6683,
      "Special Damage":0,
-     "Armor":295,
-     "Resistance":431,
+     "Armor":297,
+     "Resistance":433,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1858,10 +1858,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.83442285,
-     "Tenacity":0.83442285,
+     "Potency":0.83836485,
+     "Tenacity":0.83836485,
      "Health Steal":0,
-     "Protection":43469,
+     "Protection":43674,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2500,7 +2500,7 @@
   },
   "captainsilvo":{
    "currentRarity":4,
-   "currentTier":9,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -3619,9 +3619,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":77683,
+     "Health":77926,
      "Speed":64,
-     "Physical Damage":9341,
+     "Physical Damage":9370,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -3629,13 +3629,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":53,
+     "Physical Critical Chance":54,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.45074961,
-     "Tenacity":0.45074961,
+     "Potency":0.45215901000000003,
+     "Tenacity":0.45215901000000003,
      "Health Steal":0,
-     "Protection":25894,
+     "Protection":25975,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -4397,10 +4397,10 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":13,
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4511,6 +4511,14 @@
    "currentTier":13,
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":8,
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

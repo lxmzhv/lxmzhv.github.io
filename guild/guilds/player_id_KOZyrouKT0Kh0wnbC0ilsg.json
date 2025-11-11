@@ -14,13 +14,13 @@
    "total_score":64.2
   },
   "reva":{
-   "total_score":89.8
+   "total_score":91.0
   },
   "geos":{
    "total_score":67.0
   },
   "drevan":{
-   "total_score":38.2
+   "total_score":48.6
   },
   "amidala":{
    "total_score":54.33
@@ -38,7 +38,7 @@
    "total_score":38.0
   }
  },
- "modsRating":13.502444,
+ "modsRating":13.6138,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1483,12 +1483,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":66057,
-     "Speed":56,
-     "Physical Damage":6543,
+     "Health":67960,
+     "Speed":57,
+     "Physical Damage":6731,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":58,
+     "Resistance":60,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1496,10 +1496,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.43252497,
-     "Tenacity":0.43252497,
+     "Potency":0.44498817,
+     "Tenacity":0.44498817,
      "Health Steal":0,
-     "Protection":44038,
+     "Protection":45307,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1814,7 +1814,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1822,7 +1822,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -1919,10 +1919,10 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":71339,
-     "Speed":59,
-     "Physical Damage":4222,
-     "Special Damage":19223,
+     "Health":72742,
+     "Speed":60,
+     "Physical Damage":4305,
+     "Special Damage":19601,
      "Armor":0,
      "Resistance":37,
      "Armor Penetration":0,
@@ -1930,12 +1930,12 @@
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":444,
+     "Special Critical Chance":453,
      "Critical Damage":0,
-     "Potency":0.46273977,
-     "Tenacity":0.46273977,
+     "Potency":0.47184201000000003,
+     "Tenacity":0.47184201000000003,
      "Health Steal":0,
-     "Protection":47559,
+     "Protection":48494,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1965,9 +1965,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":68304,
-     "Speed":63,
-     "Physical Damage":8032,
+     "Health":69522,
+     "Speed":64,
+     "Physical Damage":8175,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1978,10 +1978,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.44313999,
-     "Tenacity":0.44313999,
+     "Potency":0.45103935,
+     "Tenacity":0.45103935,
      "Health Steal":0,
-     "Protection":45536,
+     "Protection":46348,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2455,12 +2455,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":102854,
-     "Speed":64,
-     "Physical Damage":4135,
-     "Special Damage":21169,
+     "Health":101894,
+     "Speed":63,
+     "Physical Damage":4097,
+     "Special Damage":20971,
      "Armor":0,
-     "Resistance":175,
+     "Resistance":174,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -2468,8 +2468,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.45333157,
-     "Tenacity":0.45333157,
+     "Potency":0.44909977,
+     "Tenacity":0.44909977,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -3647,7 +3647,7 @@
    "stats":{}
   },
   "urorrurrr":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "relic":{
     "currentTier":1
@@ -3719,6 +3719,14 @@
   "savageopress":{
    "currentRarity":6,
    "currentTier":1,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "darthmalak":{
+   "currentRarity":5,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },

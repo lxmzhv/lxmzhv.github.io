@@ -5,16 +5,16 @@
    "total_score":81.83
   },
   "gg":{
-   "total_score":73.6
+   "total_score":65.6
   },
   "gas":{
-   "total_score":69.4
+   "total_score":79.6
   },
   "inqs":{
-   "total_score":79.8
+   "total_score":77.8
   },
   "reva":{
-   "total_score":92.4
+   "total_score":93.0
   },
   "geos":{
    "total_score":93.0
@@ -38,7 +38,7 @@
    "total_score":85.0
   }
  },
- "modsRating":26.579749,
+ "modsRating":26.577597,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -199,12 +199,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":104481,
-     "Speed":61,
-     "Physical Damage":7039,
+     "Health":98984,
+     "Speed":58,
+     "Physical Damage":6669,
      "Special Damage":0,
-     "Armor":113,
-     "Resistance":187,
+     "Armor":107,
+     "Resistance":177,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -212,8 +212,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.4655637,
-     "Tenacity":0.4655637,
+     "Potency":0.4410693,
+     "Tenacity":0.4410693,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -1252,6 +1252,14 @@
     }
    }
   },
+  "generalskywalker":{
+   "currentRarity":5,
+   "currentTier":9,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "nightsisterspirit":{
    "currentRarity":7,
    "currentTier":7,
@@ -2108,7 +2116,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2618,7 +2626,7 @@
   },
   "jedimastermacewindu":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },

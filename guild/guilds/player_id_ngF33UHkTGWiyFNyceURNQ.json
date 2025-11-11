@@ -2,7 +2,7 @@
  "allyCode":"542397987",
  "requirements":{
   "jabba":{
-   "total_score":59.17
+   "total_score":72.67
   },
   "gg":{
    "total_score":81.4
@@ -14,7 +14,7 @@
    "total_score":60.6
   },
   "reva":{
-   "total_score":76.2
+   "total_score":76.6
   },
   "geos":{
    "total_score":87.0
@@ -38,7 +38,7 @@
    "total_score":78.0
   }
  },
- "modsRating":9.719746,
+ "modsRating":10.105549,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -152,7 +152,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -293,9 +293,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":94959,
+     "Health":95865,
      "Speed":60,
-     "Physical Damage":7797,
+     "Physical Damage":7871,
      "Special Damage":0,
      "Armor":0,
      "Resistance":75,
@@ -303,13 +303,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":118,
+     "Physical Critical Chance":119,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.49480635,
-     "Tenacity":0.49480635,
+     "Potency":0.49953198,
+     "Tenacity":0.49953198,
      "Health Steal":0,
-     "Protection":48918,
+     "Protection":49385,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -709,13 +709,13 @@
    "stats":{}
   },
   "sithfighter":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":61734,
-     "Speed":47,
-     "Physical Damage":7423,
+     "Health":68594,
+     "Speed":52,
+     "Physical Damage":8248,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -723,13 +723,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":42,
+     "Physical Critical Chance":47,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.35864799,
-     "Tenacity":0.35864799,
+     "Potency":0.39849777000000003,
+     "Tenacity":0.39849777000000003,
      "Health Steal":0,
-     "Protection":20578,
+     "Protection":22864,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1052,6 +1052,14 @@
    },
    "stats":{}
   },
+  "bensolo":{
+   "currentRarity":7,
+   "currentTier":1,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "gamorreanguard":{
    "currentRarity":7,
    "currentTier":13,
@@ -1069,7 +1077,7 @@
    "stats":{}
   },
   "greatmothers":{
-   "currentRarity":3,
+   "currentRarity":7,
    "currentTier":3,
    "relic":{
     "currentTier":1
@@ -1921,7 +1929,7 @@
    "stats":{}
   },
   "clonewarschewbacca":{
-   "currentRarity":3,
+   "currentRarity":7,
    "currentTier":1,
    "relic":{
     "currentTier":1
@@ -2296,6 +2304,14 @@
   "bwingrebel":{
    "currentRarity":4,
    "currentTier":1,
+   "stats":{}
+  },
+  "jabbathehutt":{
+   "currentRarity":7,
+   "currentTier":13,
+   "relic":{
+    "currentTier":9
+   },
    "stats":{}
   },
   "humanthug":{
@@ -4165,7 +4181,7 @@
    "stats":{}
   },
   "jediknightguardian":{
-   "currentRarity":4,
+   "currentRarity":7,
    "currentTier":5,
    "relic":{
     "currentTier":1
