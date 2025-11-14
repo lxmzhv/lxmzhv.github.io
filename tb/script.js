@@ -1092,13 +1092,15 @@ function renderDashboard(playerData, guildActivePhases) {
                 }
             };
 
+            const gp = isDiffMode ? p.current.galacticPower : p.galacticPower;
+
             if (showTotals) {
                 if (showWaves) html += renderCell(p.totalWaves, p.current?.totalWaves, p.baseline?.totalWaves, getWaveCountGroupInfo, p.normalizedTotalWaves);
                 if (showUnits) html += renderCell(p.totalUnits, p.current?.totalUnits, p.baseline?.totalUnits, getUnitsInfo);
-                if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', totalTargetMissionScore + p.galacticPower * Math.max(state.visiblePhases.size, 1));
+                if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', totalTargetMissionScore + gp * Math.max(state.visiblePhases.size, 1));
                 if (showMissionsScore) html += renderScoreCell(p.totalMissionsScore, p.current?.totalMissionsScore, p.baseline?.totalMissionsScore, getScoreInfo, 'Missions Score', totalTargetMissionScore);
-                if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
-                if (showUndeployed) html += renderScoreCell(p.totalUndeployed, p.current?.totalUndeployed, p.baseline?.totalUndeployed, getUndeployedInfo, p.galacticPower * Math.max(state.visiblePhases.size, 1));
+                if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, gp * Math.max(state.visiblePhases.size, 1));
+                if (showUndeployed) html += renderScoreCell(p.totalUndeployed, p.current?.totalUndeployed, p.baseline?.totalUndeployed, getUndeployedInfo, gp * Math.max(state.visiblePhases.size, 1));
             }
 
             for (let i = 1; i <= 6; i++) {
@@ -1109,10 +1111,10 @@ function renderDashboard(playerData, guildActivePhases) {
                     
                     if (showWaves) html += renderCell(phase.waves, currentPhase?.waves, baselinePhase?.waves, getWaveCountGroupInfo);
                     if (showUnits) html += renderCell(phase.units, currentPhase?.units, baselinePhase?.units, getUnitsInfo);
-                    if (showScore) html += renderScoreCell(phase.score, currentPhase?.score, baselinePhase?.score, getScoreInfo, 'Score', (TargetMissionScores[i] || 0) + p.galacticPower);
+                    if (showScore) html += renderScoreCell(phase.score, currentPhase?.score, baselinePhase?.score, getScoreInfo, 'Score', (TargetMissionScores[i] || 0) + gp);
                     if (showMissionsScore) html += renderScoreCell(phase.missionsScore, currentPhase?.missionsScore, baselinePhase?.missionsScore, getScoreInfo, 'Missions Score', TargetMissionScores[i] || 0);
-                    if (showDeployed) html += renderScoreCell(phase.deployed, currentPhase?.deployed, baselinePhase?.deployed, getDeployedInfo, p.galacticPower);
-                    if (showUndeployed) html += renderScoreCell(phase.undeployed, currentPhase?.undeployed, baselinePhase?.undeployed, getUndeployedInfo, p.galacticPower);
+                    if (showDeployed) html += renderScoreCell(phase.deployed, currentPhase?.deployed, baselinePhase?.deployed, getDeployedInfo, gp);
+                    if (showUndeployed) html += renderScoreCell(phase.undeployed, currentPhase?.undeployed, baselinePhase?.undeployed, getUndeployedInfo, gp);
                 }
             }
         }
