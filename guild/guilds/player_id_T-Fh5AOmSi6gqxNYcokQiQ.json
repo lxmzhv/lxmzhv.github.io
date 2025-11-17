@@ -38,7 +38,7 @@
    "total_score":85.0
   }
  },
- "modsRating":14.41444,
+ "modsRating":14.415077,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -926,7 +926,7 @@
   },
   "scarifrebel":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":2,
    "relic":{
     "currentTier":1
    },
@@ -1013,7 +1013,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "relic":{
     "currentTier":1
@@ -1124,7 +1124,7 @@
   },
   "greatmothers":{
    "currentRarity":5,
-   "currentTier":6,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -1485,7 +1485,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "relic":{
     "currentTier":1
@@ -1881,7 +1881,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":6,
    "relic":{
     "currentTier":1
@@ -2311,9 +2311,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":36621,
-     "Speed":31,
-     "Physical Damage":4306,
+     "Health":43563,
+     "Speed":37,
+     "Physical Damage":5123,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -2324,10 +2324,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.23767122000000002,
-     "Tenacity":0.23767122000000002,
+     "Potency":0.28272201,
+     "Tenacity":0.28272201,
      "Health Steal":0,
-     "Protection":24414,
+     "Protection":29042,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2537,6 +2537,14 @@
   "taronmalicos":{
    "currentRarity":7,
    "currentTier":1,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jediknightcal":{
+   "currentRarity":7,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },
@@ -3102,7 +3110,7 @@
   },
   "tarfful":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -4262,7 +4270,7 @@
   },
   "ig12":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "relic":{
     "currentTier":1
    },

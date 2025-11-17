@@ -23,7 +23,7 @@
    "total_score":48.6
   },
   "amidala":{
-   "total_score":54.33
+   "total_score":57.33
   },
   "gungans":{
    "total_score":20.2
@@ -38,7 +38,7 @@
    "total_score":38.0
   }
  },
- "modsRating":13.6138,
+ "modsRating":13.646916,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -293,23 +293,23 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":79352,
-     "Speed":50,
-     "Physical Damage":6515,
+     "Health":80282,
+     "Speed":51,
+     "Physical Damage":6592,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":62,
+     "Resistance":63,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":99,
+     "Physical Critical Chance":100,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.41348397000000003,
-     "Tenacity":0.41348397000000003,
+     "Potency":0.41833077,
+     "Tenacity":0.41833077,
      "Health Steal":0,
-     "Protection":40878,
+     "Protection":41357,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1521,9 +1521,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":70783,
-     "Speed":66,
-     "Physical Damage":8324,
+     "Health":66869,
+     "Speed":62,
+     "Physical Damage":7863,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1534,10 +1534,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.45922083,
-     "Tenacity":0.45922083,
+     "Potency":0.43383003000000003,
+     "Tenacity":0.43383003000000003,
      "Health Steal":0,
-     "Protection":47189,
+     "Protection":44579,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1547,7 +1547,7 @@
    }
   },
   "darthnihilus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "relic":{
     "currentTier":1
@@ -1814,7 +1814,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1827,7 +1827,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":4,
+   "currentRarity":6,
    "currentTier":9,
    "relic":{
     "currentTier":1
@@ -1919,10 +1919,10 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":72742,
+     "Health":72993,
      "Speed":60,
-     "Physical Damage":4305,
-     "Special Damage":19601,
+     "Physical Damage":4320,
+     "Special Damage":19669,
      "Armor":0,
      "Resistance":37,
      "Armor Penetration":0,
@@ -1930,12 +1930,12 @@
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":453,
+     "Special Critical Chance":454,
      "Critical Damage":0,
-     "Potency":0.47184201000000003,
-     "Tenacity":0.47184201000000003,
+     "Potency":0.47346741000000003,
+     "Tenacity":0.47346741000000003,
      "Health Steal":0,
-     "Protection":48494,
+     "Protection":48662,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1965,9 +1965,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":69522,
-     "Speed":64,
-     "Physical Damage":8175,
+     "Health":72865,
+     "Speed":68,
+     "Physical Damage":8569,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1978,10 +1978,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.45103935,
-     "Tenacity":0.45103935,
+     "Potency":0.47272732,
+     "Tenacity":0.47272732,
      "Health Steal":0,
-     "Protection":46348,
+     "Protection":48576,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2007,7 +2007,7 @@
    "stats":{}
   },
   "pazvizsla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "relic":{
     "currentTier":1
@@ -2024,9 +2024,9 @@
   },
   "hansolo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -2773,7 +2773,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "relic":{
     "currentTier":1
@@ -3816,6 +3816,36 @@
      "Tenacity":0.35216767,
      "Health Steal":0,
      "Protection":36176,
+     "Protection Ignore":0,
+     "Physical Accuracy":0,
+     "Special Accuracy":0,
+     "Physical Critical Avoidance":0,
+     "Special Critical Avoidance":0
+    }
+   }
+  },
+  "hyenabomber":{
+   "currentRarity":2,
+   "currentTier":1,
+   "stats":{
+    "crew":{
+     "Health":1299,
+     "Speed":0,
+     "Physical Damage":81,
+     "Special Damage":0,
+     "Armor":5,
+     "Resistance":6,
+     "Armor Penetration":0,
+     "Resistance Penetration":0,
+     "Dodge Chance":0,
+     "Deflection Chance":0,
+     "Physical Critical Chance":0,
+     "Special Critical Chance":0,
+     "Critical Damage":0,
+     "Potency":0.00696748,
+     "Tenacity":0.00696748,
+     "Health Steal":0,
+     "Protection":1690,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

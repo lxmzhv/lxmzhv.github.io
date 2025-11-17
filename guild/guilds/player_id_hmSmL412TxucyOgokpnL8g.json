@@ -8,7 +8,7 @@
    "total_score":88.8
   },
   "gas":{
-   "total_score":85.8
+   "total_score":87.6
   },
   "inqs":{
    "total_score":20.2
@@ -17,7 +17,7 @@
    "total_score":29.2
   },
   "geos":{
-   "total_score":90.0
+   "total_score":90.5
   },
   "drevan":{
    "total_score":19.6
@@ -29,7 +29,7 @@
    "total_score":4.2
   },
   "leia":{
-   "total_score":65.4
+   "total_score":65.6
   },
   "slkr":{
    "total_score":76.71
@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":18.081477,
+ "modsRating":18.170228,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -212,7 +212,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1012,6 +1012,14 @@
    },
    "stats":{}
   },
+  "greatmothers":{
+   "currentRarity":4,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "houndstooth":{
    "currentRarity":7,
    "currentTier":1,
@@ -1623,16 +1631,16 @@
    "stats":{}
   },
   "mg100starfortresssf17":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":45368,
-     "Speed":44,
-     "Physical Damage":5180,
+     "Health":49313,
+     "Speed":48,
+     "Physical Damage":5630,
      "Special Damage":0,
-     "Armor":230,
-     "Resistance":335,
+     "Armor":250,
+     "Resistance":364,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1640,10 +1648,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.64979818,
-     "Tenacity":0.64979818,
+     "Potency":0.7063023700000001,
+     "Tenacity":0.7063023700000001,
      "Health Steal":0,
-     "Protection":33851,
+     "Protection":36794,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -2367,12 +2375,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":100718,
-     "Speed":63,
-     "Physical Damage":4050,
-     "Special Damage":20729,
+     "Health":102638,
+     "Speed":64,
+     "Physical Damage":4127,
+     "Special Damage":21125,
      "Armor":0,
-     "Resistance":172,
+     "Resistance":175,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -2380,8 +2388,8 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.44391582,
-     "Tenacity":0.44391582,
+     "Potency":0.45237942000000003,
+     "Tenacity":0.45237942000000003,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -3262,7 +3270,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

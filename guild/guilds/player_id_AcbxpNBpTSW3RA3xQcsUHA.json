@@ -2,7 +2,7 @@
  "allyCode":"435795126",
  "requirements":{
   "jabba":{
-   "total_score":56.33
+   "total_score":70.33
   },
   "gg":{
    "total_score":72.4
@@ -23,7 +23,7 @@
    "total_score":96.2
   },
   "amidala":{
-   "total_score":90.67
+   "total_score":89.33
   },
   "gungans":{
    "total_score":90.6
@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":23.005039,
+ "modsRating":23.600846,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -2208,7 +2208,7 @@
   },
   "deathtrooperperidea":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -2412,6 +2412,14 @@
    "currentTier":1,
    "stats":{}
   },
+  "jabbathehutt":{
+   "currentRarity":7,
+   "currentTier":12,
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "humanthug":{
    "currentRarity":7,
    "currentTier":13,
@@ -2467,7 +2475,7 @@
    "stats":{}
   },
   "garsaxon":{
-   "currentRarity":2,
+   "currentRarity":7,
    "currentTier":1,
    "relic":{
     "currentTier":1
@@ -3975,12 +3983,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":1155,
-     "Speed":0,
-     "Physical Damage":114,
+     "Health":6538,
+     "Speed":5,
+     "Physical Damage":647,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":1,
+     "Resistance":5,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -3988,10 +3996,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.00757255,
-     "Tenacity":0.00757255,
+     "Potency":0.04283149,
+     "Tenacity":0.04283149,
      "Health Steal":0,
-     "Protection":770,
+     "Protection":4358,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,

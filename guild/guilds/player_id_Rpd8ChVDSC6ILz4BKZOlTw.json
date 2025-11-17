@@ -23,7 +23,7 @@
    "total_score":42.6
   },
   "amidala":{
-   "total_score":38.33
+   "total_score":37.67
   },
   "gungans":{
    "total_score":24.2
@@ -524,9 +524,9 @@
   },
   "dengar":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -654,9 +654,9 @@
   },
   "mandalorbokatan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1140,7 +1140,7 @@
   },
   "greatmothers":{
    "currentRarity":6,
-   "currentTier":9,
+   "currentTier":12,
    "relic":{
     "currentTier":1
    },
@@ -1151,12 +1151,12 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":62988,
-     "Speed":49,
-     "Physical Damage":4769,
+     "Health":69789,
+     "Speed":55,
+     "Physical Damage":5284,
      "Special Damage":0,
-     "Armor":290,
-     "Resistance":316,
+     "Armor":321,
+     "Resistance":350,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
@@ -1164,10 +1164,10 @@
      "Physical Critical Chance":0,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.4076685,
-     "Tenacity":0.4076685,
+     "Potency":0.4516875,
+     "Tenacity":0.4516875,
      "Health Steal":0,
-     "Protection":75585,
+     "Protection":83747,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1196,7 +1196,7 @@
    "currentRarity":7,
    "currentTier":13,
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -1205,9 +1205,9 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":68092,
-     "Speed":53,
-     "Physical Damage":8187,
+     "Health":75506,
+     "Speed":58,
+     "Physical Damage":9079,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
@@ -1215,13 +1215,13 @@
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":47,
+     "Physical Critical Chance":52,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.39555054,
-     "Tenacity":0.39555054,
+     "Potency":0.43861986000000003,
+     "Tenacity":0.43861986000000003,
      "Health Steal":0,
-     "Protection":22697,
+     "Protection":25168,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -1558,9 +1558,9 @@
   },
   "ig88":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2453,27 +2453,27 @@
    "stats":{}
   },
   "emperorsshuttle":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":62792,
-     "Speed":42,
-     "Physical Damage":3188,
-     "Special Damage":14517,
+     "Health":65647,
+     "Speed":44,
+     "Physical Damage":3333,
+     "Special Damage":15177,
      "Armor":0,
-     "Resistance":27,
+     "Resistance":29,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
      "Physical Critical Chance":0,
-     "Special Critical Chance":335,
+     "Special Critical Chance":350,
      "Critical Damage":0,
-     "Potency":0.34936275,
-     "Tenacity":0.34936275,
+     "Potency":0.36524287,
+     "Tenacity":0.36524287,
      "Health Steal":0,
-     "Protection":41861,
+     "Protection":43764,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
@@ -3045,21 +3045,21 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":70359,
-     "Speed":60,
-     "Physical Damage":8460,
+     "Health":71242,
+     "Speed":61,
+     "Physical Damage":8566,
      "Special Damage":0,
      "Armor":0,
      "Resistance":0,
      "Armor Penetration":0,
      "Resistance Penetration":0,
-     "Dodge Chance":279,
-     "Deflection Chance":279,
-     "Physical Critical Chance":48,
+     "Dodge Chance":283,
+     "Deflection Chance":283,
+     "Physical Critical Chance":49,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.40875417000000003,
-     "Tenacity":0.40875417000000003,
+     "Potency":0.41388237,
+     "Tenacity":0.41388237,
      "Health Steal":0,
      "Protection":0,
      "Protection Ignore":0,
@@ -3104,9 +3104,9 @@
   },
   "bossk":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3263,23 +3263,23 @@
    "currentTier":1,
    "stats":{
     "crew":{
-     "Health":79264,
-     "Speed":60,
-     "Physical Damage":7159,
+     "Health":87822,
+     "Speed":66,
+     "Physical Damage":7932,
      "Special Damage":0,
      "Armor":0,
-     "Resistance":69,
+     "Resistance":76,
      "Armor Penetration":0,
      "Resistance Penetration":0,
      "Dodge Chance":0,
      "Deflection Chance":0,
-     "Physical Critical Chance":109,
+     "Physical Critical Chance":120,
      "Special Critical Chance":0,
      "Critical Damage":0,
-     "Potency":0.4545783,
-     "Tenacity":0.4545783,
+     "Potency":0.5036625,
+     "Tenacity":0.5036625,
      "Health Steal":0,
-     "Protection":26421,
+     "Protection":29274,
      "Protection Ignore":0,
      "Physical Accuracy":0,
      "Special Accuracy":0,
