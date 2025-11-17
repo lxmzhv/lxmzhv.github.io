@@ -211,6 +211,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return lowercasedUnitId.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     }
 
+    function hasOmicron(player, unitId, skillId) {
+        if (!player.roster || !player.roster[unitId] || !player.roster[unitId].skill) {
+            return false;
+        }
+        const skill = player.roster[unitId].skill.find(s => s.id === skillId);
+        return !!(skill && skill.tier >= 6);
+    }
+
     function getPlayerUnitInfo(player, unitId) {
         if (player.roster === undefined) {
             return { display: '', type: 0, level: 0, rarity: 0 };
@@ -786,6 +794,9 @@ document.addEventListener('DOMContentLoaded', () => {
             assaultCharacters.forEach(unitId => {
                 playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
             });
+
+            playerInfo.generalsyndullaOmicron = hasOmicron(player, 'generalsyndulla', 'uniqueskill_GENERALSYNDULLA01');
+            playerInfo.padawansabineOmicron = hasOmicron(player, 'padawansabine', 'uniqueskill_PADAWANSABINE01');
 
             conquestUnitsOrder.forEach(unitName => {
                 if (conquestCharactersSet.has(unitName)) {
@@ -1880,6 +1891,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 pilotCell.textContent = player[pilotName].display;
                 pilotCell.style.backgroundColor = getPilotBackgroundColor(player[pilotName]);
             });
+
+            const syndullaCell = row.insertCell();
+            syndullaCell.classList.add('col-tw-omicrons', 'separator-left');
+            syndullaCell.textContent = player.generalsyndullaOmicron ? 'Yes' : 'No';
+            syndullaCell.style.backgroundColor = player.generalsyndullaOmicron ? '#7ACC7A' : '#FF9999';
+
+            const sabineCell = row.insertCell();
+            sabineCell.classList.add('col-tw-omicrons', 'separator-right');
+            sabineCell.textContent = player.padawansabineOmicron ? 'Yes' : 'No';
+            sabineCell.style.backgroundColor = player.padawansabineOmicron ? '#7ACC7A' : '#FF9999';
 
             conquestUnitsOrder.forEach((unitName, idx) => {
                 const cell = row.insertCell();
