@@ -199,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "captainenoch": "Enoch",
         "deathtrooperperidea": "DT (Peridea)",
         "nighttrooper": "Nighttrooper",
+        "greatmothers": "Great Mothers",
         "r2d2_legendary": "R2-D2", "captaindrogan": "Drogan", "admiralraddus": "Raddus"
     };
 
@@ -211,12 +212,57 @@ document.addEventListener('DOMContentLoaded', () => {
         return lowercasedUnitId.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     }
 
-    function hasOmicron(player, unitId, skillId) {
+    const omicronSkillMap = {
+        'generalsyndulla': [
+            { skillId: 'uniqueskill_GENERALSYNDULLA01', displayName: 'unique 1' }
+        ],
+        'padawansabine': [
+            { skillId: 'uniqueskill_PADAWANSABINE01', displayName: 'unique 1' }
+        ],
+        'greatmothers': [
+            { skillId: 'leaderskill_GREATMOTHERS', displayName: 'leader' },
+            { skillId: 'uniqueskill_GREATMOTHERS01', displayName: 'unique 1' }
+        ]
+    };
+
+    function getOmicronDetails(player, unitId, skills) {
+        const details = [];
+        if (!player.roster || !player.roster[unitId]) {
+            return skills.map(s => ({ name: s.displayName, hasOmicron: false }));
+        }
+
+        skills.forEach(skillInfo => {
+            const skill = player.roster[unitId].skill?.find(s => s.id === skillInfo.skillId);
+            const hasOmicron = !!(skill && skill.tier >= 6);
+            details.push({ name: skillInfo.displayName, hasOmicron: hasOmicron });
+        });
+
+        return details;
+    }
+
+    function showOmicronPopup(playerName, unitDisplayName, details) {
+        let popupContent = `<h2>${playerName} - ${unitDisplayName} Omicrons</h2>`;
+        if (details.length > 0) {
+            popupContent += '<ul>';
+            details.forEach(detail => {
+                const status = detail.hasOmicron ? '<span style="color: green;">Yes</span>' : '<span style="color: red;">No</span>';
+                popupContent += `<li>${detail.name}: ${status}</li>`;
+            });
+            popupContent += '</ul>';
+        } else {
+            popupContent += `<p>No omicron skills for this unit.</p>`;
+        }
+
+        modalBody.innerHTML = popupContent;
+        modal.style.display = 'block';
+    }
+
+    function getOmicronCountForSkill(player, unitId, skillId) {
         if (!player.roster || !player.roster[unitId] || !player.roster[unitId].skill) {
-            return false;
+            return 0;
         }
         const skill = player.roster[unitId].skill.find(s => s.id === skillId);
-        return !!(skill && skill.tier >= 6);
+        return (skill && skill.tier >= 6) ? 1 : 0;
     }
 
     function getPlayerUnitInfo(player, unitId) {
@@ -795,8 +841,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
             });
 
-            playerInfo.generalsyndullaOmicron = hasOmicron(player, 'generalsyndulla', 'uniqueskill_GENERALSYNDULLA01');
-            playerInfo.padawansabineOmicron = hasOmicron(player, 'padawansabine', 'uniqueskill_PADAWANSABINE01');
+            playerInfo.generalsyndullaOmicron = getOmicronCountForSkill(player, 'generalsyndulla', 'uniqueskill_GENERALSYNDULLA01');
+            playerInfo.padawansabineOmicron = getOmicronCountForSkill(player, 'padawansabine', 'uniqueskill_PADAWANSABINE01');
+            playerInfo.greatmothersOmicron = getOmicronCountForSkill(player, 'greatmothers', 'leaderskill_GREATMOTHERS') +
+                                            getOmicronCountForSkill(player, 'greatmothers', 'uniqueskill_GREATMOTHERS01');
+            playerInfo.totalOmicrons = playerInfo.generalsyndullaOmicron +
+                                     playerInfo.padawansabineOmicron +
+                                     playerInfo.greatmothersOmicron;
 
             conquestUnitsOrder.forEach(unitName => {
                 if (conquestCharactersSet.has(unitName)) {
@@ -1082,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req')) {
+            if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron')) {
                 const numA = Number(valA);
                 const numB = Number(valB);
                 if (numA < numB) return direction === 'asc' ? -1 : 1;
@@ -1892,15 +1943,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 pilotCell.style.backgroundColor = getPilotBackgroundColor(player[pilotName]);
             });
 
+            const totalOmicronsCell = row.insertCell();
+            totalOmicronsCell.classList.add('col-tw-omicrons', 'separator-left');
+            totalOmicronsCell.textContent = player.totalOmicrons;
+            totalOmicronsCell.style.backgroundColor = player.totalOmicrons > 0 ? '#7ACC7A' : '#FF9999';
+
             const syndullaCell = row.insertCell();
-            syndullaCell.classList.add('col-tw-omicrons', 'separator-left');
-            syndullaCell.textContent = player.generalsyndullaOmicron ? 'Yes' : 'No';
-            syndullaCell.style.backgroundColor = player.generalsyndullaOmicron ? '#7ACC7A' : '#FF9999';
+            syndullaCell.classList.add('col-tw-omicrons');
+            syndullaCell.textContent = player.generalsyndullaOmicron;
+            syndullaCell.style.backgroundColor = player.generalsyndullaOmicron >= 1 ? '#7ACC7A' : '#FF9999';
+            syndullaCell.style.cursor = 'pointer';
+            syndullaCell.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const details = getOmicronDetails(player, 'generalsyndulla', omicronSkillMap['generalsyndulla']);
+                showOmicronPopup(player.playerName, 'Hera Syndulla', details);
+            });
 
             const sabineCell = row.insertCell();
-            sabineCell.classList.add('col-tw-omicrons', 'separator-right');
-            sabineCell.textContent = player.padawansabineOmicron ? 'Yes' : 'No';
-            sabineCell.style.backgroundColor = player.padawansabineOmicron ? '#7ACC7A' : '#FF9999';
+            sabineCell.classList.add('col-tw-omicrons');
+            sabineCell.textContent = player.padawansabineOmicron;
+            sabineCell.style.backgroundColor = player.padawansabineOmicron >= 1 ? '#7ACC7A' : '#FF9999';
+            sabineCell.style.cursor = 'pointer';
+            sabineCell.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const details = getOmicronDetails(player, 'padawansabine', omicronSkillMap['padawansabine']);
+                showOmicronPopup(player.playerName, 'Sabine Wren', details);
+            });
+
+            const greatMothersCell = row.insertCell();
+            greatMothersCell.classList.add('col-tw-omicrons', 'separator-right');
+            greatMothersCell.textContent = player.greatmothersOmicron;
+            greatMothersCell.style.backgroundColor = player.greatmothersOmicron > 0 ? '#7ACC7A' : '#FF9999';
+            greatMothersCell.style.cursor = 'pointer';
+            greatMothersCell.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const details = getOmicronDetails(player, 'greatmothers', omicronSkillMap['greatmothers']);
+                showOmicronPopup(player.playerName, 'Great Mothers', details);
+            });
 
             conquestUnitsOrder.forEach((unitName, idx) => {
                 const cell = row.insertCell();
