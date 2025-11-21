@@ -129,7 +129,32 @@
   "zuckuss":{
    "currentRarity":5,
    "currentTier":12,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_ZUCKUSS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ZUCKUSS01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ZUCKUSS02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_ZUCKUSS",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_ZUCKUSS01",
+     "tier":4
+    },
+    {
+     "id":"contractskill_zuckuss",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -234,32 +259,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":43768,
-     "Speed":58,
-     "Physical Damage":4840,
-     "Special Damage":0,
-     "Armor":175,
-     "Resistance":344,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.41374575,
-     "Tenacity":0.41374575,
-     "Health Steal":0,
-     "Protection":47802,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "ravensclaw":{
    "currentRarity":7,
@@ -286,32 +286,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":24573,
-     "Speed":74,
-     "Physical Damage":4870,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.51409317,
-     "Tenacity":0.51409317,
-     "Health Steal":0,
-     "Protection":52827,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "thirdsister":{
    "currentRarity":7,
@@ -376,32 +351,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":146525,
-     "Speed":73,
-     "Physical Damage":25762,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":1.42125003,
-     "Tenacity":1.42125003,
-     "Health Steal":0,
-     "Protection":55366,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "capitalmalevolence":{
    "currentRarity":7,
@@ -428,32 +378,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":113490,
-     "Speed":66,
-     "Physical Damage":7646,
-     "Special Damage":0,
-     "Armor":123,
-     "Resistance":203,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.5057073,
-     "Tenacity":0.5057073,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "ct210408":{
    "currentRarity":7,
@@ -554,32 +479,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":78593,
-     "Speed":62,
-     "Physical Damage":7099,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":68,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":108,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.45073215,
-     "Tenacity":0.45073215,
-     "Health Steal":0,
-     "Protection":26197,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "vanguardtempleguard":{
    "currentRarity":7,
@@ -770,32 +670,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":95709,
-     "Speed":60,
-     "Physical Damage":7859,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":75,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":119,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.49871841,
-     "Tenacity":0.49871841,
-     "Health Steal":0,
-     "Protection":49305,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "jawascavenger":{
    "currentRarity":7,
@@ -970,32 +845,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":73615,
-     "Speed":64,
-     "Physical Damage":8657,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.47759389,
-     "Tenacity":0.47759389,
-     "Health Steal":0,
-     "Protection":49077,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "nightsisteracolyte":{
    "currentRarity":7,
@@ -1372,32 +1222,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":80235,
-     "Speed":73,
-     "Physical Damage":8259,
-     "Special Damage":0,
-     "Armor":166,
-     "Resistance":219,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.5242142200000001,
-     "Tenacity":0.5242142200000001,
-     "Health Steal":0,
-     "Protection":80235,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "gunganphalanx":{
    "currentRarity":7,
@@ -1446,32 +1271,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":76702,
-     "Speed":65,
-     "Physical Damage":9223,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":53,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.44560395,
-     "Tenacity":0.44560395,
-     "Health Steal":0,
-     "Protection":25567,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "bokatan":{
    "currentRarity":7,
@@ -1550,32 +1350,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":82255,
-     "Speed":64,
-     "Physical Damage":9890,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":57,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.47747887,
-     "Tenacity":0.47747887,
-     "Health Steal":0,
-     "Protection":27418,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "mandalorbokatan":{
    "currentRarity":7,
@@ -1666,32 +1441,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":38537,
-     "Speed":33,
-     "Physical Damage":3817,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":34,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.25246053,
-     "Tenacity":0.25246053,
-     "Health Steal":0,
-     "Protection":25691,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "rangetrooper":{
    "currentRarity":7,
@@ -1892,32 +1642,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":79691,
-     "Speed":61,
-     "Physical Damage":9582,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":55,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.46296657,
-     "Tenacity":0.46296657,
-     "Health Steal":0,
-     "Protection":26563,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "xwingresistance":{
    "currentRarity":7,
@@ -1940,32 +1665,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":64595,
-     "Speed":57,
-     "Physical Damage":7596,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.41923035000000003,
-     "Tenacity":0.41923035000000003,
-     "Health Steal":0,
-     "Protection":43063,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "qira":{
    "currentRarity":7,
@@ -2246,32 +1946,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":0,
-     "Speed":64,
-     "Physical Damage":7657,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":73,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":116,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.48618999,
-     "Tenacity":0.48618999,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "stap":{
    "currentRarity":7,
@@ -2372,32 +2047,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":87092,
-     "Speed":65,
-     "Physical Damage":10472,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":60,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.50577063,
-     "Tenacity":0.50577063,
-     "Health Steal":0,
-     "Protection":29030,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "imperialprobedroid":{
    "currentRarity":7,
@@ -2882,32 +2532,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":107413,
-     "Speed":69,
-     "Physical Damage":7237,
-     "Special Damage":0,
-     "Armor":116,
-     "Resistance":192,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.47862738,
-     "Tenacity":0.47862738,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "bensolo":{
    "currentRarity":7,
@@ -3072,32 +2697,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":75377,
-     "Speed":59,
-     "Physical Damage":5707,
-     "Special Damage":0,
-     "Armor":347,
-     "Resistance":378,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.48785535,
-     "Tenacity":0.48785535,
-     "Health Steal":0,
-     "Protection":90453,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "administratorlando":{
    "currentRarity":7,
@@ -3202,32 +2802,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":80660,
-     "Speed":62,
-     "Physical Damage":9699,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":56,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.46855746000000004,
-     "Tenacity":0.46855746000000004,
-     "Health Steal":0,
-     "Protection":26886,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "generalskywalker":{
    "currentRarity":7,
@@ -3306,32 +2881,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":74865,
-     "Speed":61,
-     "Physical Damage":8804,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.48570484,
-     "Tenacity":0.48570484,
-     "Health Steal":0,
-     "Protection":49910,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "clonesergeantphasei":{
    "currentRarity":7,
@@ -3690,32 +3240,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":77388,
-     "Speed":60,
-     "Physical Damage":9305,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":53,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.44903484,
-     "Tenacity":0.44903484,
-     "Health Steal":0,
-     "Protection":25796,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "tiebomberimperial":{
    "currentRarity":7,
@@ -3846,32 +3371,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":90263,
-     "Speed":72,
-     "Physical Damage":8153,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":78,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":124,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.5176143,
-     "Tenacity":0.5176143,
-     "Health Steal":0,
-     "Protection":30087,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "veers":{
    "currentRarity":7,
@@ -3920,32 +3420,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":90118,
-     "Speed":77,
-     "Physical Damage":10836,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":62,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.52349976,
-     "Tenacity":0,
-     "Health Steal":0,
-     "Protection":30039,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "quiggold":{
    "currentRarity":6,
@@ -3965,7 +3440,7 @@
     },
     {
      "id":"uniqueskill_QUIGGOLD02",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4032,32 +3507,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":126332,
-     "Speed":79,
-     "Physical Damage":5080,
-     "Special Damage":26001,
-     "Armor":0,
-     "Resistance":216,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.55697544,
-     "Tenacity":0.55697544,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "captainenoch":{
    "currentRarity":7,
@@ -4201,6 +3651,28 @@
    },
    "stats":{}
   },
+  "stormtrooperluke":{
+   "currentRarity":4,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"specialskill_STORMTROOPERLUKE01",
+     "tier":0
+    },
+    {
+     "id":"specialskill_STORMTROOPERLUKE02",
+     "tier":0
+    },
+    {
+     "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "ig88":{
    "currentRarity":7,
    "currentTier":13,
@@ -4256,32 +3728,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":78633,
-     "Speed":66,
-     "Physical Damage":9455,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":54,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.45645225,
-     "Tenacity":0.45645225,
-     "Health Steal":0,
-     "Protection":26211,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "ebonhawk":{
    "currentRarity":7,
@@ -4308,32 +3755,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":63836,
-     "Speed":54,
-     "Physical Damage":6323,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":56,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.41798457,
-     "Tenacity":0.41798457,
-     "Health Steal":0,
-     "Protection":42557,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "rey":{
    "currentRarity":7,
@@ -4382,32 +3804,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":76768,
-     "Speed":71,
-     "Physical Damage":9028,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.49804759,
-     "Tenacity":0.49804759,
-     "Health Steal":0,
-     "Protection":51178,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "darthnihilus":{
    "currentRarity":7,
@@ -4576,32 +3973,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":89162,
-     "Speed":75,
-     "Physical Damage":10721,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":61,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.51779599,
-     "Tenacity":0.51779599,
-     "Health Steal":0,
-     "Protection":29720,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "plokoon":{
    "currentRarity":7,
@@ -4736,32 +4108,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":58533,
-     "Speed":57,
-     "Physical Damage":6683,
-     "Special Damage":0,
-     "Armor":297,
-     "Resistance":433,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.83836485,
-     "Tenacity":0.83836485,
-     "Health Steal":0,
-     "Protection":43674,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "calkestis":{
    "currentRarity":7,
@@ -4918,32 +4265,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":53425,
-     "Speed":42,
-     "Physical Damage":5292,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":47,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.34968921000000003,
-     "Tenacity":0.34968921000000003,
-     "Health Steal":0,
-     "Protection":35616,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "vulturedroid":{
    "currentRarity":7,
@@ -5399,7 +4721,7 @@
     },
     {
      "id":"specialskill_KIX02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KIX01",
@@ -5526,32 +4848,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":74607,
-     "Speed":61,
-     "Physical Damage":4416,
-     "Special Damage":20104,
-     "Armor":0,
-     "Resistance":38,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":464,
-     "Critical Damage":0,
-     "Potency":0.48393963,
-     "Tenacity":0.48393963,
-     "Health Steal":0,
-     "Protection":49738,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "depabillaba":{
    "currentRarity":7,
@@ -5630,32 +4927,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":77072,
-     "Speed":72,
-     "Physical Damage":9063,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.50002243,
-     "Tenacity":0.50002243,
-     "Health Steal":0,
-     "Protection":51381,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "oldbenkenobi":{
    "currentRarity":7,
@@ -6084,32 +5356,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":81017,
-     "Speed":76,
-     "Physical Damage":6134,
-     "Special Damage":0,
-     "Armor":373,
-     "Resistance":406,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.5242142200000001,
-     "Tenacity":0.5242142200000001,
-     "Health Steal":0,
-     "Protection":81017,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "wampa":{
    "currentRarity":7,
@@ -6253,32 +5500,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":94024,
-     "Speed":76,
-     "Physical Damage":8492,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":81,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.53918298,
-     "Tenacity":0.53918298,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "operative":{
    "currentRarity":7,
@@ -6550,32 +5772,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":67841,
-     "Speed":59,
-     "Physical Damage":7978,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.44028297,
-     "Tenacity":0.44028297,
-     "Health Steal":0,
-     "Protection":45227,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "humanthug":{
    "currentRarity":7,
@@ -7050,32 +6247,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":87556,
-     "Speed":59,
-     "Physical Damage":4446,
-     "Special Damage":20242,
-     "Armor":0,
-     "Resistance":39,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":468,
-     "Critical Damage":0,
-     "Potency":0.48713737,
-     "Tenacity":0.48713737,
-     "Health Steal":0,
-     "Protection":58370,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "moffgideons3":{
    "currentRarity":7,
@@ -7169,7 +6341,7 @@
   },
   "jawaengineer":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_JAWAENGINEER",
@@ -7189,7 +6361,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -7466,32 +6638,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":101518,
-     "Speed":63,
-     "Physical Damage":4082,
-     "Special Damage":20894,
-     "Armor":0,
-     "Resistance":173,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.44744232,
-     "Tenacity":0.44744232,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "sunfac":{
    "currentRarity":7,
@@ -7604,32 +6751,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":39905,
-     "Speed":34,
-     "Physical Damage":3952,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":35,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.26142756,
-     "Tenacity":0.26142756,
-     "Health Steal":0,
-     "Protection":26603,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "badbatchecho":{
    "currentRarity":7,
@@ -7734,32 +6856,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":87107,
-     "Speed":67,
-     "Physical Damage":7868,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":75,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":119,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.49951566000000003,
-     "Tenacity":0.49951566000000003,
-     "Health Steal":0,
-     "Protection":29035,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "ywingclonewars":{
    "currentRarity":7,
@@ -7830,32 +6927,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":72610,
-     "Speed":67,
-     "Physical Damage":7474,
-     "Special Damage":0,
-     "Armor":150,
-     "Resistance":198,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.47457828,
-     "Tenacity":0.47457828,
-     "Health Steal":0,
-     "Protection":72610,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "padawanobiwan":{
    "currentRarity":7,
@@ -7964,32 +7036,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":121002,
-     "Speed":78,
-     "Physical Damage":8153,
-     "Special Damage":0,
-     "Armor":131,
-     "Resistance":216,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.53918298,
-     "Tenacity":0.53918298,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "t3_m4":{
    "currentRarity":7,
@@ -8042,32 +7089,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":77048,
-     "Speed":63,
-     "Physical Damage":9264,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":53,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.44744232,
-     "Tenacity":0.44744232,
-     "Health Steal":0,
-     "Protection":25682,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "omegas3":{
    "currentRarity":7,
@@ -8154,32 +7176,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":93067,
-     "Speed":78,
-     "Physical Damage":11190,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":64,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.54047139,
-     "Tenacity":0.54047139,
-     "Health Steal":0,
-     "Protection":31022,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "hothrebelsoldier":{
    "currentRarity":7,
@@ -8374,32 +7371,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":93193,
-     "Speed":75,
-     "Physical Damage":8417,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":81,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.53442018,
-     "Tenacity":0.53442018,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "kananjarruss3":{
    "currentRarity":7,
@@ -8604,32 +7576,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":79691,
-     "Speed":68,
-     "Physical Damage":9582,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":316,
-     "Deflection Chance":316,
-     "Physical Critical Chance":55,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.46296657,
-     "Tenacity":0.46296657,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "sithpalpatine":{
    "currentRarity":7,
@@ -8978,32 +7925,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":71524,
-     "Speed":62,
-     "Physical Damage":5415,
-     "Special Damage":0,
-     "Armor":329,
-     "Resistance":359,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.46296657,
-     "Tenacity":0.46296657,
-     "Health Steal":0,
-     "Protection":85829,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "geonosianbroodalpha":{
    "currentRarity":7,
@@ -9097,7 +8019,7 @@
   },
   "chiefnebit":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHIEFNEBIT",
@@ -9117,7 +8039,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9194,32 +8116,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":87092,
-     "Speed":73,
-     "Physical Damage":10472,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":60,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.50577063,
-     "Tenacity":0.50577063,
-     "Health Steal":0,
-     "Protection":29030,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "punishingone":{
    "currentRarity":7,
@@ -9246,32 +8143,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":91872,
-     "Speed":69,
-     "Physical Damage":8298,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":80,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":126,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.52688592,
-     "Tenacity":0.52688592,
-     "Health Steal":0,
-     "Protection":30624,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "firstordertiepilot":{
    "currentRarity":7,
@@ -9350,32 +8222,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":113585,
-     "Speed":68,
-     "Physical Damage":7653,
-     "Special Damage":0,
-     "Armor":123,
-     "Resistance":203,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.50598222,
-     "Tenacity":0.50598222,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "tieinterceptor":{
    "currentRarity":7,
@@ -9402,32 +8249,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":89812,
-     "Speed":76,
-     "Physical Damage":10799,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":62,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.52156935,
-     "Tenacity":0.52156935,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "idenversioempire":{
    "currentRarity":7,
@@ -9484,32 +8306,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":113623,
-     "Speed":66,
-     "Physical Damage":4568,
-     "Special Damage":23386,
-     "Armor":0,
-     "Resistance":194,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.5009445,
-     "Tenacity":0.5009445,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "commandshuttle":{
    "currentRarity":7,
@@ -9540,32 +8337,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":74135,
-     "Speed":58,
-     "Physical Damage":7343,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":66,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.48524463,
-     "Tenacity":0.48524463,
-     "Health Steal":0,
-     "Protection":49423,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "firstordertrooper":{
    "currentRarity":7,
@@ -9618,32 +8390,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":77886,
-     "Speed":64,
-     "Physical Damage":9365,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":54,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.45192411,
-     "Tenacity":0.45192411,
-     "Health Steal":0,
-     "Protection":25962,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "wreckers3":{
    "currentRarity":7,
@@ -10158,32 +8905,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":79174,
-     "Speed":59,
-     "Physical Damage":7151,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":69,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":108,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.45406548,
-     "Tenacity":0.45406548,
-     "Health Steal":0,
-     "Protection":26391,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "geonosianstarfighter1":{
    "currentRarity":7,
@@ -10206,32 +8928,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":70410,
-     "Speed":60,
-     "Physical Damage":5331,
-     "Special Damage":0,
-     "Armor":324,
-     "Resistance":353,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.45558853,
-     "Tenacity":0.45558853,
-     "Health Steal":0,
-     "Protection":70410,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "secondsister":{
    "currentRarity":7,
@@ -10288,32 +8985,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":85378,
-     "Speed":65,
-     "Physical Damage":5802,
-     "Special Damage":22795,
-     "Armor":0,
-     "Resistance":24,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":952,
-     "Critical Damage":0,
-     "Potency":0.49600683,
-     "Tenacity":0.49600683,
-     "Health Steal":0,
-     "Protection":28459,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "macewindu":{
    "currentRarity":7,
@@ -10534,32 +9206,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":79076,
-     "Speed":68,
-     "Physical Damage":9508,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":54,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.45922083,
-     "Tenacity":0.45922083,
-     "Health Steal":0,
-     "Protection":26358,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "sithbomber":{
    "currentRarity":7,
@@ -10582,32 +9229,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":77447,
-     "Speed":55,
-     "Physical Damage":7972,
-     "Special Damage":0,
-     "Armor":160,
-     "Resistance":211,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.50618997,
-     "Tenacity":0.50618997,
-     "Health Steal":0,
-     "Protection":77447,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "glrey":{
    "currentRarity":7,
@@ -10754,32 +9376,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":65106,
-     "Speed":56,
-     "Physical Damage":6449,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":58,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.42651795000000003,
-     "Tenacity":0.42651795000000003,
-     "Health Steal":0,
-     "Protection":43404,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "sithassassin":{
    "currentRarity":7,
@@ -11032,32 +9629,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":112257,
-     "Speed":65,
-     "Physical Damage":8968,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":192,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.49470474000000003,
-     "Tenacity":0.49470474000000003,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "ezrabridgers3":{
    "currentRarity":7,
@@ -11110,32 +9682,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":68871,
-     "Speed":60,
-     "Physical Damage":8099,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.44696781,
-     "Tenacity":0.44696781,
-     "Health Steal":0,
-     "Protection":45914,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "hyenabomber":{
    "currentRarity":7,
@@ -11236,32 +9783,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":66141,
-     "Speed":59,
-     "Physical Damage":3914,
-     "Special Damage":17823,
-     "Armor":0,
-     "Resistance":34,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":412,
-     "Critical Damage":0,
-     "Potency":0.42926697,
-     "Tenacity":0.42926697,
-     "Health Steal":0,
-     "Protection":44094,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "firstorderofficermale":{
    "currentRarity":7,
@@ -11310,32 +9832,7 @@
      "tier":1
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":84754,
-     "Speed":72,
-     "Physical Damage":10191,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":336,
-     "Deflection Chance":336,
-     "Physical Critical Chance":58,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.49238046,
-     "Tenacity":0.49238046,
-     "Health Steal":0,
-     "Protection":16285,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "aaylasecura":{
    "currentRarity":7,
@@ -11716,32 +10213,7 @@
      "tier":6
     }
    ],
-   "stats":{
-    "crew":{
-     "Health":122296,
-     "Speed":76,
-     "Physical Damage":4917,
-     "Special Damage":25171,
-     "Armor":0,
-     "Resistance":209,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.53918298,
-     "Tenacity":0.53918298,
-     "Health Steal":0,
-     "Protection":0,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   "stats":{}
   },
   "cadbane":{
    "currentRarity":7,

@@ -16,15 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const guildInfoDiv = document.getElementById('guild-info');
     const rareUnitThresholdInput = document.getElementById('rareUnitThreshold');
 
-    const teams = ["leia", "jabba", "amidala", "drevan", "gas", "geos", "gg", "gungans", "reva", "slkr"];
-
-    const assaultCharacters = [
-        'padawanobiwan',
-        'masterquigon',
-        'captainenoch',
-        'deathtrooperperidea',
-        'nighttrooper'
-    ];
+    const galacticLegends = Object.keys(GALACTIC_LEGENDS_MAP);
+    const ships = Object.keys(SHIPS_MAP);
+    const pilots = Object.keys(PILOTS_MAP);
+    const conquestCharacters = [...CONQUEST_CHARACTERS_SET];
+    const conquestShips = Object.keys(CONQUEST_SHIPS_MAP);
 
     // TB Plan Modal elements
     const tbPlanBtn = document.getElementById('tb-plan-btn');
@@ -142,90 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let allPlatoonRequirements = [];
     let planetStats = {};
 
-    const platoonToRosterIdMap = {
-        'arc170clonesergeant': 'clonesergeantphasei'
-    };
-
     let shipBaseIds = new Set();
-
-    const unitNameMap = {
-        "clonesergeantphasei": "Clone Sergeant",
-        "ahsokatanosjedistarfighter": "Ahsoka's Starfighter", "anakinseta2starfighter": "Anakin's Starfighter",
-        "b28extinctionclassbomber": "B-28 Bomber", "btlbywingstarfighter": "BTL-B Y-wing", "biggsdarklighterxwing": "Biggs' X-wing",
-        "bistansuwing": "Bistan's U-wing", "cassiansuwing": "Cassian's U-wing", "chimaera": "Chimaera",
-        "clonesergeantsarc170": "Clone Sergeant's ARC-170", "comeuppance": "Comeuppance", "ebonhawk": "Ebon Hawk",
-        "emperorsshuttle": "Emperor's Shuttle", "endurance": "Endurance", "executor": "Executor", "executrix": "Executrix",
-        "finalizer": "Finalizer", "firstordersftiefighter": "FO SF TIE Fighter", "firstordertiefighter": "FO TIE Fighter",
-        "furyclassinterceptor": "Fury-class Interceptor", "gauntletstarfighter": "Gauntlet Starfighter",
-        "geonosiansoldiersstarfighter": "Geonosian Soldier's Starfighter", "geonosianspysstarfighter": "Geonosian Spy's Starfighter",
-        "ghost": "Ghost", "hansmillenniumfalcon": "Han's Millennium Falcon", "homeone": "Home One", "houndstooth": "Hound's Tooth",
-        "hyenabomber": "Hyena Bomber", "ig2000": "IG-2000", "imperialtiebomber": "Imperial TIE Bomber",
-        "imperialtiefighter": "Imperial TIE Fighter", "jediconsularsstarfighter": "Jedi Consular's Starfighter",
-        "kylorenscommandshuttle": "Kylo's Command Shuttle", "landosmillenniumfalcon": "Lando's Millennium Falcon",
-        "leviathan": "Leviathan", "mg100starfortresssf17": "MG-100 StarFortress", "malevolence": "Malevolence",
-        "marauder": "Marauder", "markviinterceptor": "Mark VI Interceptor", "negotiator": "Negotiator", "outrider": "Outrider",
-        "phantomii": "Phantom II", "plokoonsjedistarfighter": "Plo Koon's Starfighter", "poedameronsxwing": "Poe's X-wing",
-        "profundity": "Profundity", "punishingone": "Punishing One", "raddus": "Raddus", "ravensclaw": "Raven's Claw",
-        "razorcrest": "Razor Crest", "rebelbwing": "B-wing", "rebelywing": "Y-wing", "resistancexwing": "Resistance X-wing",
-        "rexsarc170": "Rex's ARC-170", "reysmillenniumfalcon": "Rey's Millennium Falcon", "rogueone": "Rogue One",
-        "scimitar": "Scimitar", "scythe": "Scythe", "sithfighter": "Sith Fighter", "slavei": "Slave I",
-        "sunfacsgeonosianstarfighter": "Sun Fac's Starfighter", "tieadvancedx1": "TIE Advanced x1", "tiedagger": "TIE Dagger",
-        "tiedefender": "TIE Defender", "tieechelon": "TIE Echelon", "tiereaper": "TIE Reaper", "tiesilencer": "TIE Silencer",
-        "tieininterceptorprototype": "TIE Interceptor Prototype", "umbaranstarfighter": "Umbaran Starfighter",
-        "vulturedroid": "Vulture Droid", "wedgeantillesxwing": "Wedge's X-wing", "xanadublood": "Xanadu Blood",
-        "glrey": "Rey", "supremeleaderkyloren": "SLKR", "grandmasterluke": "JML", "sithpalpatine": "SEE",
-        "jedimasterkenobi": "JMK", "lordvader": "LV", "glleia": "Leia", "jabbathehutt": "Jabba",
-        "glahsokatano": "Ahsoka", "glhondo": "Hondo", "capitalleviathan": "Levi", "capitalprofundity": "Prof",
-        "capitalexecutor": "Exec", "punishingone": "PO", "marauder": "Marauder", "badbatchhunter": "Hunter",
-        "badbatchtech": "Tech", "badbatchwrecker": "Wrecker", "tieinterceptor": "TIE Int",
-        "commanderahsoka": "CAT", "mauls7": "Maul", "maul": "Darth Maul", "bobafettscion": "Boba Fett, Scion of Jango", "darthmalgus": "Malgus",
-        "trench": "Trench", "darthbane": "Bane", "queenamidala": "Amidala", "luthenrael": "Luthen",
-        "ezraexile": "Ezra", "darkrey": "DRey", "sm33": "SM33", "jocastanu": "Jocasta", "mazkanata": "Maz",
-        "bensolo": "Ben Solo", "taronmalicos": "Taron Malicos", "moffgideons3": "Moff Gideon S3",
-        "jediknightluke": "JKL", "generalskywalker": "GAS", "wampa": "Wampa", "hermityoda": "Hermit",
-        "darthrevan": "DRevan", "bastilashanfallen": "BSF", "darthmalak": "Malak", "kiadimundi": "KAM",
-        "monmothma": "Mon Mothma", "chewbacca": "Chewie", "c3po": "C-3PO", "padmeamidala": "Padme",
-        "grandmofftarkin": "Tarkin", "sabinewren": "Sabine", "kananjarrus": "Kanan", "herasyndulla": "Hera",
-        "chopper": "Chopper", "zeborrelios": "Zeb", "bodhirook": "Bodhi", "pao": "Pao", "bistan": "Bistan",
-        "cassianandor": "Cassian", "k2so": "K-2SO", "jynerso": "Jyn", "chirrutimwe": "Chirrut", "bazemalbus": "Baze",
-        "dengar": "Dengar", "bossk": "Bossk", "ig88": "IG-88", "bobafett": "Boba Fett", "greedo": "Greedo",
-        "gamorreanguard": "Gam Guard", "mobenfocer": "Mob Enforcer", "nightsisterspirit": "Spirit",
-        "nightsisterzombie": "Zombie", "motherdalzin": "Talzin", "olddaka": "Daka", "talia": "Talia",
-        "nightsisterinitiate": "Initiate", "nightsisteracolyte": "Acolyte", "rose": "Rose Tico",
-        "amilynholdo": "Holdo", "reyjakku": "Scav Rey", "finn": "Finn", "poedameron": "Poe", "resistancepilot": "Res Pilot",
-        "resistancetrooper": "Res Trooper", "reyjeditraining": "RJ",
-        "padawanobiwan": "P. Obi-Wan",
-        "masterquigon": "M. Qui-Gon",
-        "captainenoch": "Enoch",
-        "deathtrooperperidea": "DT (Peridea)",
-        "nighttrooper": "Nighttrooper",
-        "greatmothers": "Great Mothers",
-        "r2d2_legendary": "R2-D2", "captaindrogan": "Drogan", "admiralraddus": "Raddus"
-    };
 
     function getUnitDisplayName(unitId) {
         const lowercasedUnitId = unitId.toLowerCase();
-        if (unitNameMap[lowercasedUnitId]) {
-            return unitNameMap[lowercasedUnitId];
+        if (UNIT_NAME_MAP[lowercasedUnitId]) {
+            return UNIT_NAME_MAP[lowercasedUnitId];
         }
         // Fallback for unmapped units: capitalize first letter of each word
         return lowercasedUnitId.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     }
 
-    const omicronSkillMap = {
-        'generalsyndulla': [
-            { skillId: 'uniqueskill_GENERALSYNDULLA01', displayName: 'unique 1' }
-        ],
-        'padawansabine': [
-            { skillId: 'uniqueskill_PADAWANSABINE01', displayName: 'unique 1' }
-        ],
-        'greatmothers': [
-            { skillId: 'leaderskill_GREATMOTHERS', displayName: 'leader' },
-            { skillId: 'uniqueskill_GREATMOTHERS01', displayName: 'unique 1' }
-        ]
-    };
 
-    function getOmicronDetails(player, unitId, skills) {
+    function getOmicronDetails(player, unitId, skills, omicronSkillLevel) {
         const details = [];
         if (!player.roster || !player.roster[unitId]) {
             return skills.map(s => ({ name: s.displayName, hasOmicron: false }));
@@ -233,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         skills.forEach(skillInfo => {
             const skill = player.roster[unitId].skill?.find(s => s.id === skillInfo.skillId);
-            const hasOmicron = !!(skill && skill.tier >= 6);
+            const hasOmicron = !!(skill && skill.tier >= omicronSkillLevel);
             details.push({ name: skillInfo.displayName, hasOmicron: hasOmicron });
         });
 
@@ -257,12 +182,12 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
-    function getOmicronCountForSkill(player, unitId, skillId) {
+    function getOmicronCountForSkill(player, unitId, skillId, omicronSkillLevel) {
         if (!player.roster || !player.roster[unitId] || !player.roster[unitId].skill) {
             return 0;
         }
         const skill = player.roster[unitId].skill.find(s => s.id === skillId);
-        return (skill && skill.tier >= 6) ? 1 : 0;
+        return (skill && skill.tier >= omicronSkillLevel) ? 1 : 0;
     }
 
     function getPlayerUnitInfo(player, unitId) {
@@ -359,97 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return columns;
     }
 
-    const rankMap = {
-        'GUILD_LEADER': 'leader',
-        'GUILD_OFFICER': 'officer',
-        'GUILD_MEMBER': 'member',
-    };
 
-    const galacticLegendsMap = {
-        "glrey": "Rey",
-        "supremeleaderkyloren": "SLKR",
-        "grandmasterluke": "JML",
-        "sithpalpatine": "SEE",
-        "jedimasterkenobi": "JMK",
-        "lordvader": "LV",
-        "glleia": "Leia",
-        "jabbathehutt": "Jabba",
-        "glahsokatano": "Ahsoka",
-        "glhondo": "Hondo"
-    };
-    const galacticLegends = Object.keys(galacticLegendsMap);
-
-    const shipsMap = {
-        "capitalleviathan": "Levi",
-        "capitalprofundity": "Prof",
-        "capitalexecutor": "Exec"
-    };
-    const ships = Object.keys(shipsMap);
-
-    const pilotsMap = {
-        "badbatchhunter": "Hunter",
-        "badbatchtech": "Tech",
-        "badbatchwrecker": "Wrecker"
-    };
-    const pilots = Object.keys(pilotsMap);
-
-    const conquestCharactersSet = new Set([
-        "mauls7",
-        "bobafettscion",
-        "darthmalgus",
-        "trench",
-        "darthbane",
-        "queenamidala",
-        "luthenrael",
-        "ezraexile",
-        "darkrey",
-        "sm33",
-        "jocastanu",
-        "mazkanata",
-        "bensolo",
-        "taronmalicos",
-        "moffgideons3",
-    ]);
-    const conquestCharacters = [...conquestCharactersSet];
-
-    const conquestShipsMap = {
-        "scythe": "Scythe",
-        "furyclassinterceptor": "Fury"
-    };
-    const conquestShips = Object.keys(conquestShipsMap);
-
-    const conquestUnitsOrder = [
-        "mauls7", "bobafettscion", "scythe",
-        "darthmalgus", "bensolo", "furyclassinterceptor", "taronmalicos", "moffgideons3",
-        "trench", "darthbane", "queenamidala", "luthenrael",
-        "ezraexile", "darkrey", "sm33", "jocastanu", "mazkanata"
-    ];
-
-    const leiaTeamUnits = ["glleia", "r2d2_legendary", "captaindrogan", "admiralraddus", "jynerso"];
-    const jabbaTeamUnits = ["jabbathehutt", "embo", "krrsantan", "boushh", "undercoverlando"];
-
-    const reqTeamUnitColorThresholds = {
-        "glleia": {
-            red: 5, orange: 7, yellow: 9, green: Infinity
-        },
-        "captaindrogan": {
-            red: 3, orange: 5, yellow: 8, green: Infinity
-        },
-        "r2d2_legendary": {
-            red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
-        },
-        "jynerso": {
-            red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
-        },
-        "admiralraddus": {
-            red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
-        },
-        "jabbathehutt": { red: 5, orange: 7, yellow: 9, green: Infinity },
-        "embo": { red: 5, orange: 7, yellow: 9, green: Infinity },
-        "krrsantan": { red: 5, orange: 7, yellow: 9, green: Infinity },
-        "boushh": { red: 3, orange: 5, yellow: 8, green: Infinity },
-        "undercoverlando": { red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity }
-    };
 
     function getShipInfo(player, shipName) {
         let shipInfo;
@@ -525,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return getUnitBGColor(unitInfo);
         }
 
-        const thresholds = reqTeamUnitColorThresholds[unitId];
+        const thresholds = REQ_TEAM_UNIT_COLOR_THRESHOLDS[unitId];
         if (!thresholds) {
             return getUnitBGColor(unitInfo); // Fallback for safety
         }
@@ -567,11 +402,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return '#7ACC7A'; // Green
     }
 
-    const guildFiles = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json', 'guild_RiWsgx3BQXqZMepXXEb2Cg.json', 'guild_oy2awPmqRYyCKPvgJNjPIQ.json'];
     let guilds = [];
 
     function loadGuilds() {
-        const promises = guildFiles.map(file => fetch(`guilds/${file}`).then(res => res.json()));
+        const promises = GUILD_FILES.map(file => fetch(`guilds/${file}`).then(res => res.json()));
 
         Promise.all(promises).then(guildDataArray => {
             guilds = guildDataArray.map(data => ({
@@ -817,7 +651,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 playerId: player.playerId,
                 allyCode: player.allyCode || '',
                 modsRating: player.modsRating,
-                memberLevel: rankMap[player.memberLevel] || player.memberLevel.replace('GUILD_', '').toLowerCase(),
+                memberLevel: RANK_MAP[player.memberLevel] || player.memberLevel.replace('GUILD_', '').toLowerCase(),
                 galacticPower: Number(player.galacticPower),
                 joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime)*1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
                 roster: player.roster,
@@ -837,22 +671,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 playerInfo[pilotName] = getPlayerUnitInfo(player, pilotName);
             });
 
-            assaultCharacters.forEach(unitId => {
+            ASSAULT_CHARACTERS.forEach(unitId => {
                 playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
             });
 
-            playerInfo.generalsyndullaOmicron = getOmicronCountForSkill(player, 'generalsyndulla', 'uniqueskill_GENERALSYNDULLA01');
-            playerInfo.padawansabineOmicron = getOmicronCountForSkill(player, 'padawansabine', 'uniqueskill_PADAWANSABINE01');
-            playerInfo.greatmothersOmicron = getOmicronCountForSkill(player, 'greatmothers', 'leaderskill_GREATMOTHERS') +
-                                            getOmicronCountForSkill(player, 'greatmothers', 'uniqueskill_GREATMOTHERS01');
+            playerInfo.generalsyndullaOmicron = getOmicronCountForSkill(player, 'generalsyndulla', 'uniqueskill_GENERALSYNDULLA01', 6);
+            playerInfo.padawansabineOmicron = getOmicronCountForSkill(player, 'padawansabine', 'uniqueskill_PADAWANSABINE01', 6);
+            playerInfo.greatmothersOmicron = getOmicronCountForSkill(player, 'greatmothers', 'leaderskill_GREATMOTHERS', 6) +
+                                            getOmicronCountForSkill(player, 'greatmothers', 'uniqueskill_GREATMOTHERS01', 6);
+            playerInfo.jynersoOmicron = getOmicronCountForSkill(player, 'jynerso', 'uniqueskill_JYNERSO01', 7);
             playerInfo.totalOmicrons = playerInfo.generalsyndullaOmicron +
                                      playerInfo.padawansabineOmicron +
-                                     playerInfo.greatmothersOmicron;
+                                     playerInfo.greatmothersOmicron +
+                                     playerInfo.jynersoOmicron;
 
-            conquestUnitsOrder.forEach(unitName => {
-                if (conquestCharactersSet.has(unitName)) {
+            CONQUEST_UNITS_ORDER.forEach(unitName => {
+                if (CONQUEST_CHARACTERS_SET.has(unitName)) {
                     playerInfo[unitName] = getPlayerUnitInfo(player, unitName);
-                } else if (conquestShipsMap[unitName]) {
+                } else if (CONQUEST_SHIPS_MAP[unitName]) {
                     playerInfo[unitName] = getShipInfo(player, unitName);
                 }
             });
@@ -883,7 +719,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Requirements
             let totalScore = 0;
             let teamCount = 0;
-            teams.forEach(team => {
+            TEAMS.forEach(team => {
                 const reqs = player.requirements?.[team];
                 const score = reqs?.total_score || 0;
                 playerInfo[`req${team}Total`] = score;
@@ -894,11 +730,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             playerInfo.reqAverageTeamScore = teamCount > 0 ? Math.round(totalScore / teamCount) : 0;
 
-            leiaTeamUnits.forEach(unitId => {
+            LEIA_TEAM_UNITS.forEach(unitId => {
                 playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
             });
 
-            jabbaTeamUnits.forEach(unitId => {
+            JABBA_TEAM_UNITS.forEach(unitId => {
                 playerInfo[`reqJabba-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
             });
 
@@ -960,8 +796,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const rounds = planetToRoundMap[planetName.toLowerCase()] || [];
                     const firstActiveRound = rounds.length > 0 ? rounds[0] : 0;
 
-                    if (platoonToRosterIdMap[unitId]) {
-                        unitId = platoonToRosterIdMap[unitId];
+                    if (PLATOON_TO_ROSTER_ID_MAP[unitId]) {
+                        unitId = PLATOON_TO_ROSTER_ID_MAP[unitId];
                     }
 
                     const isShip = shipBaseIds.has(unitId);
@@ -1063,7 +899,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             }
 
-            if (galacticLegends.includes(key) || assaultCharacters.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic')) {
+            if (galacticLegends.includes(key) || ASSAULT_CHARACTERS.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic')) {
                 const valA_gl = a[key] || { type: 0, level: 0, rarity: 0 };
                 const valB_gl = b[key] || { type: 0, level: 0, rarity: 0 };
 
@@ -1910,13 +1746,13 @@ document.addEventListener('DOMContentLoaded', () => {
             modsCell.textContent = player.modsRating ? player.modsRating.toFixed(1) : '-';
             modsCell.classList.add('col-player-info', 'separator-right');
 
-            assaultCharacters.forEach((unitId, idx) => {
+            ASSAULT_CHARACTERS.forEach((unitId, idx) => {
                 const cell = row.insertCell();
                 cell.classList.add('col-assaults');
                 if (idx === 0) cell.classList.add('separator-left');
                 cell.textContent = player[unitId].display;
                 cell.style.backgroundColor = getAssaultUnitBGColor(player[unitId]);
-                if (idx === assaultCharacters.length - 1) cell.classList.add('separator-right');
+                if (idx === ASSAULT_CHARACTERS.length - 1) cell.classList.add('separator-right');
             });
 
             galacticLegends.forEach((glName, idx) => {
@@ -1955,7 +1791,7 @@ document.addEventListener('DOMContentLoaded', () => {
             syndullaCell.style.cursor = 'pointer';
             syndullaCell.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const details = getOmicronDetails(player, 'generalsyndulla', omicronSkillMap['generalsyndulla']);
+                const details = getOmicronDetails(player, 'generalsyndulla', OMICRON_SKILL_MAP['generalsyndulla'], 6);
                 showOmicronPopup(player.playerName, 'Hera Syndulla', details);
             });
 
@@ -1966,33 +1802,45 @@ document.addEventListener('DOMContentLoaded', () => {
             sabineCell.style.cursor = 'pointer';
             sabineCell.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const details = getOmicronDetails(player, 'padawansabine', omicronSkillMap['padawansabine']);
+                const details = getOmicronDetails(player, 'padawansabine', OMICRON_SKILL_MAP['padawansabine'], 6);
                 showOmicronPopup(player.playerName, 'Sabine Wren', details);
             });
 
             const greatMothersCell = row.insertCell();
-            greatMothersCell.classList.add('col-tw-omicrons', 'separator-right');
+            greatMothersCell.classList.add('col-tw-omicrons');
             greatMothersCell.textContent = player.greatmothersOmicron;
-            greatMothersCell.style.backgroundColor = player.greatmothersOmicron > 0 ? '#7ACC7A' : '#FF9999';
+            greatMothersCell.style.backgroundColor = player.greatmothersOmicron >= 2 ? '#7ACC7A' :
+                                                     player.greatmothersOmicron >= 1 ? '#AAFFAA' : '#FF9999';
             greatMothersCell.style.cursor = 'pointer';
             greatMothersCell.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const details = getOmicronDetails(player, 'greatmothers', omicronSkillMap['greatmothers']);
+                const details = getOmicronDetails(player, 'greatmothers', OMICRON_SKILL_MAP['greatmothers'], 6);
                 showOmicronPopup(player.playerName, 'Great Mothers', details);
             });
 
-            conquestUnitsOrder.forEach((unitName, idx) => {
+            const jynersoCell = row.insertCell();
+            jynersoCell.classList.add('col-tw-omicrons', 'separator-right');
+            jynersoCell.textContent = player.jynersoOmicron;
+            jynersoCell.style.backgroundColor = player.jynersoOmicron >= 1 ? '#7ACC7A' : '#FF9999';
+            jynersoCell.style.cursor = 'pointer';
+            jynersoCell.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const details = getOmicronDetails(player, 'jynerso', OMICRON_SKILL_MAP['jynerso'], 7);
+                showOmicronPopup(player.playerName, 'Jyn Erso', details);
+            });
+
+            CONQUEST_UNITS_ORDER.forEach((unitName, idx) => {
                 const cell = row.insertCell();
                 cell.classList.add('col-conquest');
                 if (idx === 0) cell.classList.add('separator-left');
-                if (conquestCharactersSet.has(unitName)) {
+                if (CONQUEST_CHARACTERS_SET.has(unitName)) {
                     cell.textContent = player[unitName].display;
                     cell.style.backgroundColor = getUnitBGColor(player[unitName]);
-                } else if (conquestShipsMap[unitName]) {
+                } else if (CONQUEST_SHIPS_MAP[unitName]) {
                     cell.textContent = player[unitName].display;
                     cell.style.backgroundColor = getShipBGColor(player[unitName]);
                 }
-                if (idx === conquestUnitsOrder.length - 1) cell.classList.add('separator-right');
+                if (idx === CONQUEST_UNITS_ORDER.length - 1) cell.classList.add('separator-right');
             });
 
             const rareRelicLevels = [5, 6, 7, 8, 9];
@@ -2044,11 +1892,11 @@ document.addEventListener('DOMContentLoaded', () => {
             reqAverageScoreCell.textContent = averageScore.toFixed(0);
             reqAverageScoreCell.style.backgroundColor = getReqBackgroundColor(averageScore);
 
-            teams.forEach((team, idx) => {
+            TEAMS.forEach((team, idx) => {
                 const reqTotalCell = row.insertCell();
                 reqTotalCell.classList.add('col-requirements');
                 reqTotalCell.classList.add('separator-left');
-                if (idx === teams.length - 1) {
+                if (idx === TEAMS.length - 1) {
                     reqTotalCell.classList.add('separator-right');
                 }
                 const score = player[`req${team}Total`];
@@ -2056,10 +1904,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 reqTotalCell.style.backgroundColor = getReqBackgroundColor(score);
 
                 if (team === 'leia') {
-                    leiaTeamUnits.forEach((unitId, idx) => {
+                    LEIA_TEAM_UNITS.forEach((unitId, idx) => {
                         const relicCell = row.insertCell();
                         relicCell.classList.add('col-requirements');
-                        if (idx === leiaTeamUnits.length - 1) {
+                        if (idx === LEIA_TEAM_UNITS.length - 1) {
                             relicCell.classList.add('separator-right');
                         }
                         const unitInfo = player[`reqLeia-${unitId}-relic`];
@@ -2068,10 +1916,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
                 else if (team === 'jabba') {
-                    jabbaTeamUnits.forEach(unitId => {
+                    JABBA_TEAM_UNITS.forEach(unitId => {
                         const relicCell = row.insertCell();
                         relicCell.classList.add('col-requirements');
-                        if (idx === jabbaTeamUnits.length - 1) {
+                        if (idx === JABBA_TEAM_UNITS.length - 1) {
                             relicCell.classList.add('separator-right');
                         }
                         const unitInfo = player[`reqJabba-${unitId}-relic`];
