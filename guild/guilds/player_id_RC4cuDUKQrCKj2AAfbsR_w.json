@@ -2,7 +2,7 @@
  "allyCode":"859139593",
  "requirements":{
   "jabba":{
-   "total_score":32.33
+   "total_score":24.33
   },
   "gg":{
    "total_score":85.4
@@ -23,22 +23,22 @@
    "total_score":77.0
   },
   "amidala":{
-   "total_score":44.0
+   "total_score":44.67
   },
   "gungans":{
-   "total_score":28.4
+   "total_score":29.0
   },
   "leia":{
-   "total_score":35.0
+   "total_score":26.0
   },
   "slkr":{
-   "total_score":75.57
+   "total_score":75.86
   },
   "beq_raid":{
    "total_score":35.0
   }
  },
- "modsRating":8.256607,
+ "modsRating":8.205603,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -157,8 +157,7 @@
    ],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "zebs3":{
    "currentRarity":7,
@@ -232,8 +231,7 @@
      "id":"basicskill_FIRSTORDERTIEECHELON",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "ravensclaw":{
    "currentRarity":4,
@@ -259,8 +257,7 @@
      "id":"uniqueskill_RAVENSCLAW01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "marauder":{
    "currentRarity":4,
@@ -290,8 +287,7 @@
      "id":"basicskill_MARAUDER",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "thirdsister":{
    "currentRarity":7,
@@ -351,8 +347,7 @@
      "id":"specialskill_CAPITALMALEVOLENCE03",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "ct210408":{
    "currentRarity":7,
@@ -452,11 +447,10 @@
      "id":"hardwareskill_TIEFIGHTERFOSF01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "vanguardtempleguard":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -477,7 +471,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -643,8 +637,7 @@
      "id":"uniqueskill_MILLENNIUMFALCON01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "jawascavenger":{
    "currentRarity":7,
@@ -652,12 +645,11 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "captaintarpals":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINTARPALS01",
@@ -775,8 +767,7 @@
      "id":"hardwareskill_SITHINFILTRATOR01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "k2so":{
    "currentRarity":7,
@@ -793,8 +784,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "sithtrooper":{
    "currentRarity":7,
@@ -824,8 +814,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "badbatchhunter":{
    "currentRarity":7,
@@ -937,8 +926,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "krrsantan":{
    "currentRarity":4,
@@ -946,8 +934,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "batchers3":{
    "currentRarity":7,
@@ -1037,7 +1024,7 @@
   },
   "kiadimundi":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_kiadimundi02",
@@ -1085,8 +1072,7 @@
      "id":"basicskill_arc170rex",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "gunganphalanx":{
    "currentRarity":4,
@@ -1117,8 +1103,7 @@
      "id":"hardwareskill_TIEFIGHTERFIRSTORDER01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "bokatan":{
    "currentRarity":7,
@@ -1196,8 +1181,7 @@
      "id":"specialskill_MILLENNIUMFALCONEP701",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "mandalorbokatan":{
    "currentRarity":7,
@@ -1287,8 +1271,7 @@
      "id":"specialskill_COMEUPPANCE01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "rangetrooper":{
    "currentRarity":6,
@@ -1296,8 +1279,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "quigonjinn":{
    "currentRarity":7,
@@ -1413,8 +1395,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "sithfighter":{
    "currentRarity":7,
@@ -1436,8 +1417,7 @@
      "id":"specialskill_SITHFIGHTER01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "jawa":{
    "currentRarity":7,
@@ -1445,8 +1425,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "xwingresistance":{
    "currentRarity":7,
@@ -1468,8 +1447,7 @@
      "id":"hardwareskill_XWINGRESISTANCE01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "qira":{
    "currentRarity":7,
@@ -1758,8 +1736,7 @@
      "id":"basicskill_SITHSUPREMACYCLASS",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "grandadmiralthrawn":{
    "currentRarity":7,
@@ -1833,8 +1810,7 @@
      "id":"uniqueskill_JEDISTARFIGHTERANAKIN01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "imperialprobedroid":{
    "currentRarity":7,
@@ -1842,8 +1818,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "sabinewrens3":{
    "currentRarity":7,
@@ -1929,8 +1904,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "ewokelder":{
    "currentRarity":7,
@@ -1960,8 +1934,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "crosshairs3":{
    "currentRarity":7,
@@ -1991,7 +1964,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_QUEENAMIDALA",
@@ -2224,8 +2197,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "kitfisto":{
    "currentRarity":7,
@@ -2249,7 +2221,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2299,8 +2271,7 @@
      "id":"hardwareskill_HOUNDSTOOTH01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "administratorlando":{
    "currentRarity":7,
@@ -2404,8 +2375,7 @@
      "id":"hardwareskill_IG20001",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "generalskywalker":{
    "currentRarity":7,
@@ -2483,8 +2453,7 @@
      "id":"hardwareskill_XANADUBLOOD01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "clonesergeantphasei":{
    "currentRarity":7,
@@ -2668,7 +2637,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2782,8 +2751,7 @@
      "id":"hardwareskill_GHOST01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "tiebomberimperial":{
    "currentRarity":7,
@@ -2805,33 +2773,7 @@
      "id":"basicskill_TIEBOMBERIMPERIAL",
      "tier":6
     }
-   ],
-   "stats":{
-    "crew":{
-     "Health":80740,
-     "Speed":54,
-     "Physical Damage":4794,
-     "Special Damage":0,
-     "Armor":291,
-     "Resistance":318,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.4096735,
-     "Tenacity":0.4096735,
-     "Health Steal":0,
-     "Protection":88181,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   ]
   },
   "nutegunray":{
    "currentRarity":7,
@@ -2913,8 +2855,7 @@
      "id":"uniqueskill_slave101",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "tieadvanced":{
    "currentRarity":7,
@@ -2936,8 +2877,7 @@
      "id":"hardwareskill_TIEADVANCED01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "veers":{
    "currentRarity":7,
@@ -3117,8 +3057,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "darthtalon":{
    "currentRarity":7,
@@ -3196,8 +3135,7 @@
      "id":"specialskill_MILLENNIUMFALCONPRISTINE01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "ig88":{
    "currentRarity":7,
@@ -3253,8 +3191,7 @@
      "id":"hardwareskill_EBONHAWK01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "rey":{
    "currentRarity":7,
@@ -3302,8 +3239,7 @@
      "id":"specialskill_BLADEOFDORIN01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "darthnihilus":{
    "currentRarity":7,
@@ -3336,7 +3272,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -3471,8 +3407,7 @@
      "id":"uniqueskill_RAZORCREST01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "plokoon":{
    "currentRarity":7,
@@ -3606,8 +3541,7 @@
      "id":"uniqueskill_MG100STARFORTRESSSF1701",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "calkestis":{
    "currentRarity":7,
@@ -3763,8 +3697,7 @@
      "id":"basicskill_SCYTHE",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "vulturedroid":{
    "currentRarity":7,
@@ -3786,33 +3719,7 @@
      "id":"hardwareskill_VULTUREDROID01",
      "tier":1
     }
-   ],
-   "stats":{
-    "crew":{
-     "Health":70544,
-     "Speed":53,
-     "Physical Damage":8482,
-     "Special Damage":0,
-     "Armor":0,
-     "Resistance":0,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":49,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.4096735,
-     "Tenacity":0.4096735,
-     "Health Steal":0,
-     "Protection":23514,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   ]
   },
   "lordvader":{
    "currentRarity":7,
@@ -3854,8 +3761,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "hk47":{
    "currentRarity":7,
@@ -4018,8 +3924,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "bazemalbus":{
    "currentRarity":7,
@@ -4261,8 +4166,7 @@
      "id":"specialskill_uwingrogueone03",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "depabillaba":{
    "currentRarity":7,
@@ -4340,8 +4244,7 @@
      "id":"basicskill_OUTRIDER",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "oldbenkenobi":{
    "currentRarity":7,
@@ -4409,8 +4312,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "pazvizsla":{
    "currentRarity":7,
@@ -4604,8 +4506,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "themandalorian":{
    "currentRarity":7,
@@ -4643,8 +4544,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "fosithtrooper":{
    "currentRarity":7,
@@ -4678,8 +4578,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -4701,8 +4600,7 @@
      "id":"uniqueskill_UMBARANSTARFIGHTER01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "wampa":{
    "currentRarity":7,
@@ -4818,8 +4716,7 @@
      "id":"specialskill_ROGUEONESHIP02",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "capitalexecutor":{
    "currentRarity":7,
@@ -4845,8 +4742,7 @@
      "id":"specialskill_CAPITALEXECUTOR03",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "operative":{
    "currentRarity":7,
@@ -5035,8 +4931,7 @@
      "id":"basicskill_BWINGREBEL",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "humanthug":{
    "currentRarity":7,
@@ -5084,12 +4979,11 @@
      "id":"uniqueskill_UWINGSCARIF01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "captainsilvo":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINSILVO01",
@@ -5179,8 +5073,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "ithano":{
    "currentRarity":4,
@@ -5520,8 +5413,7 @@
      "id":"basicskill_emperorsshuttle",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "moffgideons3":{
    "currentRarity":7,
@@ -5623,8 +5515,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "taronmalicos":{
    "currentRarity":7,
@@ -5696,8 +5587,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "sanastarros":{
    "currentRarity":4,
@@ -5714,8 +5604,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "jediknightluke":{
    "currentRarity":7,
@@ -5748,7 +5637,7 @@
    "stats":{}
   },
   "bossnass":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -5801,8 +5690,7 @@
      "id":"specialskill_CAPITALMONCALAMARICRUISER02",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "sunfac":{
    "currentRarity":7,
@@ -5836,8 +5724,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "furyclassinterceptor":{
    "currentRarity":7,
@@ -5863,8 +5750,7 @@
      "id":"hardwareskill_FURYCLASSINTERCEPTOR",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "badbatchecho":{
    "currentRarity":7,
@@ -5942,8 +5828,7 @@
      "id":"hardwareskill_TIESILENCER01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "ywingclonewars":{
    "currentRarity":7,
@@ -5965,33 +5850,7 @@
      "id":"hardwareskill_YWINGCLONEWARS",
      "tier":1
     }
-   ],
-   "stats":{
-    "crew":{
-     "Health":58963,
-     "Speed":76,
-     "Physical Damage":4464,
-     "Special Damage":0,
-     "Armor":271,
-     "Resistance":296,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.38161845,
-     "Tenacity":0.38161845,
-     "Health Steal":0,
-     "Protection":70755,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   ]
   },
   "imagundi":{
    "currentRarity":7,
@@ -6039,8 +5898,7 @@
      "id":"hardwareskill_XWINGRED301",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "padawanobiwan":{
    "currentRarity":6,
@@ -6100,8 +5958,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "capitalstardestroyer":{
    "currentRarity":7,
@@ -6127,8 +5984,7 @@
      "id":"basicskill_CAPITALSTARDESTROYER",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "t3_m4":{
    "currentRarity":7,
@@ -6180,8 +6036,7 @@
      "id":"hardwareskill_XWINGRED201",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "omegas3":{
    "currentRarity":7,
@@ -6267,8 +6122,7 @@
      "id":"hardwareskill_JEDISTARFIGHTERAHSOKATANO01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "hothrebelsoldier":{
    "currentRarity":7,
@@ -6458,8 +6312,7 @@
      "id":"uniqueskill_CAPITALNEGOTIATOR01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "kananjarruss3":{
    "currentRarity":7,
@@ -6493,8 +6346,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "princesskneesaa":{
    "currentRarity":5,
@@ -6502,12 +6354,11 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "jediknightconsular":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_JEDIKNIGHTCONSULAR02",
@@ -6523,7 +6374,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -6603,8 +6454,7 @@
      "id":"hardwareskill_TIEFIGHTERIMPERIAL01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "sithpalpatine":{
    "currentRarity":7,
@@ -6922,8 +6772,7 @@
      "id":"hardwareskill_ARC170CLONESERGEANT01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "geonosianbroodalpha":{
    "currentRarity":7,
@@ -7021,8 +6870,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "tuskenshaman":{
    "currentRarity":7,
@@ -7030,8 +6878,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "imperialsupercommando":{
    "currentRarity":7,
@@ -7039,8 +6886,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "tiedagger":{
    "currentRarity":6,
@@ -7066,8 +6912,7 @@
      "id":"basicskill_TIEDAGGER",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "punishingone":{
    "currentRarity":7,
@@ -7093,8 +6938,7 @@
      "id":"uniqueskill_PUNISHINGONE01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "darthsion":{
    "currentRarity":7,
@@ -7172,8 +7016,7 @@
      "id":"uniqueskill_CAPITALJEDICRUISER01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "idenversioempire":{
    "currentRarity":6,
@@ -7181,8 +7024,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "tieinterceptor":{
    "currentRarity":6,
@@ -7208,8 +7050,7 @@
      "id":"uniqueskill_TIEINTERCEPTOR01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "capitalchimaera":{
    "currentRarity":7,
@@ -7235,8 +7076,7 @@
      "id":"uniqueskill_CAPITALCHIMAERA01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "commandshuttle":{
    "currentRarity":7,
@@ -7266,8 +7106,7 @@
      "id":"uniqueskill_commandshuttle01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "phantom2":{
    "currentRarity":7,
@@ -7297,8 +7136,7 @@
      "id":"specialskill_PHANTOM201",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "firstordertrooper":{
    "currentRarity":7,
@@ -7440,12 +7278,11 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "boomadier":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"uniqueskill_BOOMADIER01",
@@ -7591,8 +7428,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "wedgeantilles":{
    "currentRarity":7,
@@ -7792,8 +7628,7 @@
      "id":"specialskill_GEONOSIANSTARFIGHTER201",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "geonosianstarfighter1":{
    "currentRarity":7,
@@ -7815,8 +7650,7 @@
      "id":"hardwareskill_GEONOSIANSTARFIGHTER101",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "secondsister":{
    "currentRarity":7,
@@ -7872,8 +7706,7 @@
      "id":"specialskill_GEONOSIANSTARFIGHTER301",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "macewindu":{
    "currentRarity":7,
@@ -7915,8 +7748,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "masterquigon":{
    "currentRarity":6,
@@ -7950,8 +7782,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "teebo":{
    "currentRarity":7,
@@ -8025,8 +7856,7 @@
      "id":"hardwareskill_XWINGBLACKONE01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "sithbomber":{
    "currentRarity":5,
@@ -8048,8 +7878,7 @@
      "id":"hardwareskill_sithbomber01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "amilynholdo":{
    "currentRarity":7,
@@ -8083,8 +7912,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "gauntletstarfighter":{
    "currentRarity":7,
@@ -8110,8 +7938,7 @@
      "id":"specialskill_GAUNTLETSTARFIGHTER02",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "sithassassin":{
    "currentRarity":7,
@@ -8163,8 +7990,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "princessleia":{
    "currentRarity":7,
@@ -8306,8 +8132,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "capitalfinalizer":{
    "currentRarity":7,
@@ -8333,8 +8158,7 @@
      "id":"specialskill_CAPITALFINALIZER03",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "ezrabridgers3":{
    "currentRarity":7,
@@ -8386,8 +8210,7 @@
      "id":"specialskill_TIEREAPER01",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "hyenabomber":{
    "currentRarity":7,
@@ -8409,37 +8232,11 @@
      "id":"hardwareskill_HYENABOMBER01",
      "tier":1
     }
-   ],
-   "stats":{
-    "crew":{
-     "Health":71161,
-     "Speed":46,
-     "Physical Damage":4464,
-     "Special Damage":0,
-     "Armor":324,
-     "Resistance":348,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.38161845,
-     "Tenacity":0.38161845,
-     "Health Steal":0,
-     "Protection":92590,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   ]
   },
   "darkrey":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_DARKREY",
@@ -8487,8 +8284,7 @@
      "id":"hardwareskill_JEDISTARFIGHTERCONSULAR01",
      "tier":1
     }
-   ],
-   "stats":{}
+   ]
   },
   "firstorderofficermale":{
    "currentRarity":7,
@@ -8536,8 +8332,7 @@
      "id":"basicskill_TIEDEFENDER",
      "tier":6
     }
-   ],
-   "stats":{}
+   ]
   },
   "aaylasecura":{
    "currentRarity":7,
@@ -8589,33 +8384,7 @@
      "id":"basicskill_YWINGREBEL",
      "tier":6
     }
-   ],
-   "stats":{
-    "crew":{
-     "Health":58963,
-     "Speed":76,
-     "Physical Damage":4464,
-     "Special Damage":0,
-     "Armor":271,
-     "Resistance":296,
-     "Armor Penetration":0,
-     "Resistance Penetration":0,
-     "Dodge Chance":0,
-     "Deflection Chance":0,
-     "Physical Critical Chance":0,
-     "Special Critical Chance":0,
-     "Critical Damage":0,
-     "Potency":0.38161845,
-     "Tenacity":0.38161845,
-     "Health Steal":0,
-     "Protection":70755,
-     "Protection Ignore":0,
-     "Physical Accuracy":0,
-     "Special Accuracy":0,
-     "Physical Critical Avoidance":0,
-     "Special Critical Avoidance":0
-    }
-   }
+   ]
   },
   "seventhsister":{
    "currentRarity":7,
@@ -8787,8 +8556,7 @@
    "skill":[],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "jediknightguardian":{
    "currentRarity":7,
