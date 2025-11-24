@@ -23,32 +23,43 @@
         #guild-table th:nth-child(1), #guild-table td:nth-child(1) {
             position: sticky;
             left: 0;
-            z-index: 3; /* Higher z-index for the first column */
-            width: 45px; /* Fixed width for '#' column */
-            min-width: 45px;
-            background-color: #e9e9e9; /* Ensure background for sticky header */
+            z-index: 4; /* Highest z-index for the first column */
+            width: 30px; /* Fixed width for 'Active' column */
+            min-width: 30px;
+            background-color: #e9e9e9;
         }
         #guild-table td:nth-child(1) {
-            background-color: white; /* Ensure background for sticky data cell */
+            background-color: white;
         }
         #guild-table th:nth-child(2), #guild-table td:nth-child(2) {
             position: sticky;
-            left: 45px; /* Position after the first column */
-            z-index: 2; /* Slightly lower than the first column */
-            background-color: #e9e9e9; /* Ensure background for sticky header */
+            left: 30px; /* Position after the first column */
+            z-index: 3;
+            width: 45px; /* Fixed width for '#' column */
+            min-width: 45px;
+            background-color: #e9e9e9;
         }
         #guild-table td:nth-child(2) {
-            background-color: white; /* Ensure background for sticky data cell */
+            background-color: white;
+        }
+        #guild-table th:nth-child(3), #guild-table td:nth-child(3) {
+            position: sticky;
+            left: 75px; /* Position after first two columns (30 + 45) */
+            z-index: 2;
+            background-color: #e9e9e9;
+        }
+        #guild-table td:nth-child(3) {
+            background-color: white;
         }
         #guild-table thead th {
             background-color: #e9e9e9;
-            z-index: 1; /* Default z-index for other headers */
+            z-index: 1;
         }
-        #guild-table thead th:nth-child(1), #guild-table thead th:nth-child(2) {
-            z-index: 3; /* Ensure these are on top of other headers */
+        #guild-table thead th:nth-child(1), #guild-table thead th:nth-child(2), #guild-table thead th:nth-child(3) {
+            z-index: 5; /* Ensure these are on top of other headers */
         }
         #guild-table thead th.col-player-info, #guild-table thead th.col-gl, #guild-table thead th.col-ships, #guild-table thead th.col-conquest, #guild-table thead th.col-tb {
-            z-index: 1; /* Ensure group headers are below sticky individual headers */
+            z-index: 1;
         }
         .modal {
             display: none;
@@ -117,6 +128,7 @@
                 <table id="guild-table">
                     <thead>
                         <tr>
+                            <th rowspan="2">✅</th>
                             <th rowspan="2">#</th>
                             <th rowspan="2" class="separator-right" data-sort="playerName">Player Name</th>
                             <th colspan="5" class="separator-left separator-right col-player-info">Player Info</th>
@@ -193,7 +205,7 @@
                             <th data-sort="rareR8" class="col-tb-rare">R8</th>
                             <th data-sort="rareR9" class="col-tb-rare">R9</th>
                             <th data-sort="rareRTotal" class="col-tb-rare">Total</th>
-                            <th class="separator-right col-tb-rare">New</th>
+                            <th class="separator-right col-tb-rare">New Units</th>
                             <th data-sort="reqAverageTeamScore" class="col-requirements separator-right separator-left">Score</th>
                             <th data-sort="reqleiaTotal" class="col-requirements separator-left">Score</th>
                             <th data-sort="reqLeia-glleia-relic" class="col-requirements">GL Leia</th>
@@ -288,7 +300,6 @@
         </div>
     </div>
 
-    <script src="constants.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
