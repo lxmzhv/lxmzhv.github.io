@@ -113,7 +113,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -3458,7 +3458,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3470,6 +3470,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5372,7 +5380,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5510,7 +5518,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5928,7 +5936,7 @@
     },
     {
      "id":"specialskill_MOFFGIDEONS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MOFFGIDEONS302",

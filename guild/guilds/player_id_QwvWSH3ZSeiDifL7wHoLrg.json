@@ -11,10 +11,10 @@
    "total_score":92.0
   },
   "inqs":{
-   "total_score":79.6
+   "total_score":72.0
   },
   "reva":{
-   "total_score":97.8
+   "total_score":89.6
   },
   "geos":{
    "total_score":94.0
@@ -26,7 +26,7 @@
    "total_score":100.0
   },
   "gungans":{
-   "total_score":100.2
+   "total_score":91.4
   },
   "leia":{
    "total_score":100.0
@@ -38,7 +38,7 @@
    "total_score":96.0
   }
  },
- "modsRating":50.95905,
+ "modsRating":50.249034,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3384,7 +3384,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -5504,7 +5504,7 @@
   },
   "morganelsbeth":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MORGANELSBETH",
@@ -5512,7 +5512,7 @@
     },
     {
      "id":"uniqueskill_MORGANELSBETH01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MORGANELSBETH01",
@@ -5524,7 +5524,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },

@@ -8,7 +8,7 @@
    "total_score":89.8
   },
   "gas":{
-   "total_score":23.2
+   "total_score":26.6
   },
   "inqs":{
    "total_score":79.2
@@ -20,7 +20,7 @@
    "total_score":83.5
   },
   "drevan":{
-   "total_score":84.0
+   "total_score":84.2
   },
   "amidala":{
    "total_score":29.67
@@ -32,13 +32,13 @@
    "total_score":61.4
   },
   "slkr":{
-   "total_score":98.57
+   "total_score":99.0
   },
   "beq_raid":{
    "total_score":70.5
   }
  },
- "modsRating":21.24749,
+ "modsRating":21.415354,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -284,7 +284,7 @@
     },
     {
      "id":"uniqueskill_THIRDSISTER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_INQUISITOR01_THIRDSISTER",
@@ -909,7 +909,7 @@
    "stats":{}
   },
   "krrsantan":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -3037,7 +3037,7 @@
    "stats":{}
   },
   "stormtrooperluke":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":4,
    "skill":[
     {
@@ -4244,7 +4244,7 @@
   },
   "pazvizsla":{
    "currentRarity":6,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_PAZVIZSLA",
@@ -8550,7 +8550,7 @@
   },
   "ig12":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_IG12",
@@ -8567,6 +8567,36 @@
     {
      "id":"uniqueskill_IG1201",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":10,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":4
     }
    ],
    "relic":{

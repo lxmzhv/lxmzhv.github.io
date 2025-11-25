@@ -29,7 +29,7 @@
    "total_score":81.6
   },
   "leia":{
-   "total_score":61.4
+   "total_score":65.0
   },
   "slkr":{
    "total_score":88.86
@@ -38,7 +38,7 @@
    "total_score":88.5
   }
  },
- "modsRating":17.958504,
+ "modsRating":17.959763,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3596,7 +3596,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3674,7 +3674,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":6
    },
    "stats":{}
   },
@@ -5398,7 +5398,7 @@
   },
   "r2d2_legendary":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_R2D2_LEGENDARY",
@@ -5422,7 +5422,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5594,7 +5594,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -7396,7 +7396,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8393,8 +8393,8 @@
    "stats":{}
   },
   "marajade":{
-   "currentRarity":4,
-   "currentTier":6,
+   "currentRarity":5,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_MARAJADE",
@@ -8406,6 +8406,10 @@
     },
     {
      "id":"specialskill_MARAJADE01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MARAJADE02",
      "tier":5
     }
    ],

@@ -3183,7 +3183,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":10,
    "skill":[
     {
@@ -3386,7 +3386,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3398,6 +3398,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4797,7 +4805,7 @@
    "stats":{}
   },
   "zoriibliss_v2":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -5321,7 +5329,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":12,
    "skill":[
     {

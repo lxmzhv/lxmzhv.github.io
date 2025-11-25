@@ -38,7 +38,7 @@
    "total_score":85.0
   }
  },
- "modsRating":14.426024,
+ "modsRating":14.444725,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -5741,7 +5741,24 @@
   "ywingclonewars":{
    "currentRarity":2,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"basicskill_YWINGCLONEWARS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_YWINGCLONEWARS01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_YWINGCLONEWARS01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_YWINGCLONEWARS",
+     "tier":1
+    }
+   ]
   },
   "xwingred3":{
    "currentRarity":7,
@@ -6425,7 +6442,7 @@
     },
     {
      "id":"specialskill_HERASYNDULLAS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_HERASYNDULLAS3",

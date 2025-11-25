@@ -8,7 +8,7 @@
    "total_score":83.6
   },
   "gas":{
-   "total_score":63.2
+   "total_score":63.8
   },
   "inqs":{
    "total_score":24.8
@@ -38,7 +38,7 @@
    "total_score":91.5
   }
  },
- "modsRating":59.478692,
+ "modsRating":59.560927,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -636,7 +636,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2783,7 +2783,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3339,7 +3339,7 @@
   },
   "quiggold":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3359,7 +3359,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3580,6 +3580,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -3683,7 +3691,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5427,7 +5435,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7311,11 +7319,11 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_STORMTROOPERHAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_STORMTROOPERHAN",
@@ -7323,7 +7331,7 @@
     },
     {
      "id":"specialskill_STORMTROOPERHAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_STORMTROOPERHAN01",
@@ -7425,7 +7433,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9267,7 +9275,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

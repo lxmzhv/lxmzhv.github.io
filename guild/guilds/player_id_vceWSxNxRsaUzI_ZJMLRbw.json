@@ -2778,7 +2778,7 @@
     },
     {
      "id":"uniqueskill_GENERALSKYWALKER02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3514,6 +3514,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5196,7 +5204,7 @@
   },
   "bobafettscion":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BOBAFETTSCION",

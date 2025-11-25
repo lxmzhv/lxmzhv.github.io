@@ -11,10 +11,10 @@
    "total_score":77.2
   },
   "inqs":{
-   "total_score":27.0
+   "total_score":31.0
   },
   "reva":{
-   "total_score":51.4
+   "total_score":53.0
   },
   "geos":{
    "total_score":70.0
@@ -38,7 +38,7 @@
    "total_score":88.5
   }
  },
- "modsRating":11.446592,
+ "modsRating":11.49767,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1104,7 +1104,7 @@
   },
   "fifthbrother":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_FIFTHBROTHER",
@@ -2596,6 +2596,10 @@
     {
      "id":"uniqueskill_DISGUISEDCLONETROOPER02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_DISGUISEDCLONETROOPER01",
+     "tier":5
     }
    ],
    "relic":{
@@ -3588,7 +3592,7 @@
   },
   "marrok":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -3612,7 +3616,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

@@ -8,7 +8,7 @@
    "total_score":86.8
   },
   "gas":{
-   "total_score":89.8
+   "total_score":90.4
   },
   "inqs":{
    "total_score":87.2
@@ -38,7 +38,7 @@
    "total_score":97.0
   }
  },
- "modsRating":56.620541,
+ "modsRating":55.591532,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -2812,7 +2812,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3612,6 +3612,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5730,7 +5738,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":4
    },
    "stats":{}
   },

@@ -38,7 +38,7 @@
    "total_score":96.5
   }
  },
- "modsRating":21.376195,
+ "modsRating":21.396768,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -944,7 +944,11 @@
     },
     {
      "id":"uniqueskill_TIEFIGHTERFIRSTORDER01",
-     "tier":5
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_TIEFIGHTERFIRSTORDER01",
+     "tier":1
     }
    ]
   },
@@ -2952,6 +2956,10 @@
     {
      "id":"uniqueskill_RAZORCREST02",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_RAZORCREST",
+     "tier":1
     }
    ]
   },
@@ -3657,7 +3665,7 @@
     },
     {
      "id":"hardwareskill_OUTRIDER",
-     "tier":0
+     "tier":1
     }
    ]
   },
@@ -4636,19 +4644,19 @@
    "skill":[
     {
      "id":"specialskill_emperorsshuttle01",
-     "tier":2
+     "tier":4
     },
     {
      "id":"specialskill_emperorsshuttle02",
-     "tier":2
+     "tier":4
     },
     {
      "id":"basicskill_emperorsshuttle",
-     "tier":3
+     "tier":5
     },
     {
      "id":"uniqueskill_emperorsshuttle01",
-     "tier":3
+     "tier":4
     },
     {
      "id":"hardwareskill_emperorsshuttle01",
@@ -6339,7 +6347,7 @@
    "skill":[
     {
      "id":"basicskill_commandshuttle",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_commandshuttle03",
@@ -6347,15 +6355,15 @@
     },
     {
      "id":"specialskill_commandshuttle02",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_commandshuttle01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_commandshuttle01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_commandshuttle",
@@ -6454,7 +6462,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -7287,7 +7295,7 @@
    "stats":{}
   },
   "tiereaper":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[
     {
@@ -7479,6 +7487,10 @@
     {
      "id":"basicskill_YWINGREBEL",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_YWINGREBEL",
+     "tier":1
     }
    ]
   },

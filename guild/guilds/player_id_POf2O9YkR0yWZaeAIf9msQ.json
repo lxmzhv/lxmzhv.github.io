@@ -38,7 +38,7 @@
    "total_score":95.5
   }
  },
- "modsRating":29.580772,
+ "modsRating":29.908688,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3085,6 +3085,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -3524,7 +3532,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6196,7 +6204,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
