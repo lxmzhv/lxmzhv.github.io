@@ -55,14 +55,24 @@ export function createPlayerSorter(key, direction, shipBaseIds) {
             const getPlayerScore = (player) => {
                 if (isShip) {
                     const unitInfo = getShipInfo(player, unitId);
-                    if (unitInfo.rarity >= requiredLevel) return 2; // Meets requirement
-                    if (unitInfo.rarity > 0) return 1; // Has ship, but not at required rarity
+                    if (unitInfo.rarity >= requiredLevel) return 20 + unitInfo.rarity; // Meets requirement (20-27)
+                    if (unitInfo.rarity > 0) return 10 + unitInfo.rarity; // Has ship, but not at required rarity (10-17)
                     return 0; // Doesn't have ship
                 } else { // Character
                     const unitInfo = getPlayerUnitInfo(player, unitId);
-                    if (unitInfo.type === 3 && unitInfo.level >= requiredLevel) return 2; // Meets requirement
-                    if (unitInfo.type === 3) return 1; // Has relic, but not at required level
-                    if (unitInfo.type === 2) return 0.5; // Has gear, but not relic
+                    // Type 3 = Relic, Type 2 = Gear
+                    // We want to sort by: Meets Req > Has Relic > Has Gear > None
+                    // Within Meets Req: Sort by Relic Level
+
+                    if (unitInfo.type === 3) { // Relic
+                        if (unitInfo.level >= requiredLevel) {
+                            return 200 + unitInfo.level; // Meets requirement (200 + RelicLevel)
+                        }
+                        return 100 + unitInfo.level; // Has relic, but not at required level (100 + RelicLevel)
+                    }
+                    if (unitInfo.type === 2) { // Gear
+                        return unitInfo.level; // Has gear (Level is usually 1-13)
+                    }
                     return 0; // Doesn't have character or not geared
                 }
             };

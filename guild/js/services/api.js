@@ -1,4 +1,4 @@
-import { GUILD_FILES, PLATOON_TO_ROSTER_ID_MAP } from '../constants.js';
+import { GUILD_FILES } from '../constants.js';
 import { getUnitDisplayName } from '../logic/player.js';
 
 export function fetchGuildList() {
@@ -105,10 +105,6 @@ export function processPlatoonData(tsvData, planetToRoundMap, shipBaseIds) {
 
     const rounds = planetToRoundMap[planetName.toLowerCase()] || [];
     const firstActiveRound = rounds.length > 0 ? rounds[0] : 0;
-
-    if (PLATOON_TO_ROSTER_ID_MAP[unitId]) {
-      unitId = PLATOON_TO_ROSTER_ID_MAP[unitId];
-    }
 
     const isShip = shipBaseIds.has(unitId);
     const requiredLevel = isShip ? 7 : phaseToRelic[planetPhase];

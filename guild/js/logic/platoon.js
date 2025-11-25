@@ -1,4 +1,3 @@
-import { PLATOON_TO_ROSTER_ID_MAP } from '../constants.js';
 import { getPlayerUnitInfo, getShipInfo, getUnitDisplayName } from './player.js';
 
 export function calculateGuildAvailability(players, requirements, shipBaseIds) {
