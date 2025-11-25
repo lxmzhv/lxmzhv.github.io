@@ -8,10 +8,6 @@ export const ASSAULT_CHARACTERS = [
     'nighttrooper'
 ];
 
-export const PLATOON_TO_ROSTER_ID_MAP = {
-    'arc170clonesergeant': 'clonesergeantphasei'
-};
-
 export const UNIT_NAME_MAP = {
     "clonesergeantphasei": "Clone Sergeant",
     "ahsokatanosjedistarfighter": "Ahsoka's Starfighter", "anakinseta2starfighter": "Anakin's Starfighter",

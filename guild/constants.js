@@ -1,6 +1,6 @@
-const TEAMS = ["leia", "jabba", "amidala", "drevan", "gas", "geos", "gg", "gungans", "reva", "slkr"];
+export const TEAMS = ["leia", "jabba", "amidala", "drevan", "gas", "geos", "gg", "gungans", "reva", "slkr"];
 
-const ASSAULT_CHARACTERS = [
+export const ASSAULT_CHARACTERS = [
     'padawanobiwan',
     'masterquigon',
     'captainenoch',
@@ -8,11 +8,7 @@ const ASSAULT_CHARACTERS = [
     'nighttrooper'
 ];
 
-const PLATOON_TO_ROSTER_ID_MAP = {
-    'arc170clonesergeant': 'clonesergeantphasei'
-};
-
-const UNIT_NAME_MAP = {
+export const UNIT_NAME_MAP = {
     "clonesergeantphasei": "Clone Sergeant",
     "ahsokatanosjedistarfighter": "Ahsoka's Starfighter", "anakinseta2starfighter": "Anakin's Starfighter",
     "b28extinctionclassbomber": "B-28 Bomber", "btlbywingstarfighter": "BTL-B Y-wing", "biggsdarklighterxwing": "Biggs' X-wing",
@@ -67,7 +63,7 @@ const UNIT_NAME_MAP = {
     "r2d2_legendary": "R2-D2", "captaindrogan": "Drogan", "admiralraddus": "Raddus"
 };
 
-const OMICRON_SKILL_MAP = {
+export const OMICRON_SKILL_MAP = {
     'generalsyndulla': [
         { skillId: 'uniqueskill_GENERALSYNDULLA01', displayName: 'unique 1' }
     ],
@@ -83,13 +79,13 @@ const OMICRON_SKILL_MAP = {
     ],
 };
 
-const RANK_MAP = {
+export const RANK_MAP = {
     'GUILD_LEADER': 'leader',
     'GUILD_OFFICER': 'officer',
     'GUILD_MEMBER': 'member',
 };
 
-const GALACTIC_LEGENDS_MAP = {
+export const GALACTIC_LEGENDS_MAP = {
     "glrey": "Rey",
     "supremeleaderkyloren": "SLKR",
     "grandmasterluke": "JML",
@@ -102,19 +98,19 @@ const GALACTIC_LEGENDS_MAP = {
     "glhondo": "Hondo"
 };
 
-const SHIPS_MAP = {
+export const SHIPS_MAP = {
     "capitalleviathan": "Levi",
     "capitalprofundity": "Prof",
     "capitalexecutor": "Exec"
 };
 
-const PILOTS_MAP = {
+export const PILOTS_MAP = {
     "badbatchhunter": "Hunter",
     "badbatchtech": "Tech",
     "badbatchwrecker": "Wrecker"
 };
 
-const CONQUEST_CHARACTERS_SET = new Set([
+export const CONQUEST_CHARACTERS_SET = new Set([
     "mauls7",
     "bobafettscion",
     "darthmalgus",
@@ -132,22 +128,22 @@ const CONQUEST_CHARACTERS_SET = new Set([
     "moffgideons3",
 ]);
 
-const CONQUEST_SHIPS_MAP = {
+export const CONQUEST_SHIPS_MAP = {
     "scythe": "Scythe",
     "furyclassinterceptor": "Fury"
 };
 
-const CONQUEST_UNITS_ORDER = [
+export const CONQUEST_UNITS_ORDER = [
     "mauls7", "bobafettscion", "scythe",
     "darthmalgus", "bensolo", "furyclassinterceptor", "taronmalicos", "moffgideons3",
     "trench", "darthbane", "queenamidala", "luthenrael",
     "ezraexile", "darkrey", "sm33", "jocastanu", "mazkanata"
 ];
 
-const LEIA_TEAM_UNITS = ["glleia", "r2d2_legendary", "captaindrogan", "admiralraddus", "jynerso"];
-const JABBA_TEAM_UNITS = ["jabbathehutt", "embo", "krrsantan", "boushh", "undercoverlando"];
+export const LEIA_TEAM_UNITS = ["glleia", "r2d2_legendary", "captaindrogan", "admiralraddus", "jynerso"];
+export const JABBA_TEAM_UNITS = ["jabbathehutt", "embo", "krrsantan", "boushh", "undercoverlando"];
 
-const REQ_TEAM_UNIT_COLOR_THRESHOLDS = {
+export const REQ_TEAM_UNIT_COLOR_THRESHOLDS = {
     "glleia": {
         red: 5, orange: 7, yellow: 9, green: Infinity
     },
@@ -170,4 +166,4 @@ const REQ_TEAM_UNIT_COLOR_THRESHOLDS = {
     "undercoverlando": { red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity }
 };
 
-const GUILD_FILES = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json', 'guild_RiWsgx3BQXqZMepXXEb2Cg.json', 'guild_oy2awPmqRYyCKPvgJNjPIQ.json'];
+export const GUILD_FILES = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json', 'guild_RiWsgx3BQXqZMepXXEb2Cg.json', 'guild_oy2awPmqRYyCKPvgJNjPIQ.json'];
