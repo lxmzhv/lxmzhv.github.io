@@ -111,10 +111,20 @@ export function renderTable(data, tbody, tbColumns, selectedPlayerId, callbacks)
       if (idx === ASSAULT_CHARACTERS.length - 1) cell.classList.add('separator-right');
     });
 
+    const glAverageCell = row.insertCell();
+    glAverageCell.classList.add('col-gl', 'separator-left');
+    if (player.glAverage > 0) {
+        glAverageCell.textContent = `R${player.glAverage.toFixed(1)}`;
+        const fakeUnitInfo = { type: 3, level: player.glAverage };
+        setBgColor(glAverageCell, getUnitBGColor(fakeUnitInfo));
+    } else {
+        glAverageCell.textContent = '-';
+        setBgColor(glAverageCell, '');
+    }
+
     galacticLegends.forEach((glName, idx) => {
       const glCell = row.insertCell();
       glCell.classList.add('col-gl');
-      if (idx === 0) glCell.classList.add('separator-left');
       glCell.textContent = player[glName].display;
       setBgColor(glCell, getUnitBGColor(player[glName]));
       if (idx === galacticLegends.length - 1) glCell.classList.add('separator-right');

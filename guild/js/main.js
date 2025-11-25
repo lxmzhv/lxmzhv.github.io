@@ -432,9 +432,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Galactic Legends
-    Object.keys(GALACTIC_LEGENDS_MAP).forEach(unitId => {
-      playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
+    let glRelicSum = 0;
+    const glIds = Object.keys(GALACTIC_LEGENDS_MAP);
+    glIds.forEach(unitId => {
+        const unitInfo = getPlayerUnitInfo(player, unitId);
+        playerInfo[unitId] = unitInfo;
+        if (unitInfo.type === 3) { // Relic
+            glRelicSum += unitInfo.level;
+        }
     });
+    playerInfo.glAverage = glIds.length > 0 ? glRelicSum / glIds.length : 0;
 
     // Ships
     Object.keys(SHIPS_MAP).forEach(unitId => {

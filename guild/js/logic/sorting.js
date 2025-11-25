@@ -109,7 +109,7 @@ export function createPlayerSorter(key, direction, shipBaseIds) {
             return 0;
         }
 
-        if (key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron')) {
+        if (key === 'glAverage' || key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron')) {
             const numA = Number(valA);
             const numB = Number(valB);
             if (numA < numB) return direction === 'asc' ? -1 : 1;
