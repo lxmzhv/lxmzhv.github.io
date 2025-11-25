@@ -108,6 +108,7 @@ export function getAssaultUnitBGColor(unitInfo) {
     if (unitInfo.type === 1) return '#FF9999'; // No unit (red)
     if (unitInfo.type === 2) return '#FF9999'; // G level (red)
     if (unitInfo.type === 3) { // Relic
+        if (unitInfo.level === 10) return '#00CC00'; // R10
         if (unitInfo.level === 9) return '#7ACC7A'; // R9 (green)
         if (unitInfo.level >= 5) return 'yellow'; // R5-R8
         if (unitInfo.level >= 0) return 'orange'; // R0-R4
@@ -123,6 +124,7 @@ export function getUnitBGColor(unitInfo) {
         if (unitInfo.level < 7) return 'yellow'; // R0-R6
         if (unitInfo.level < 9) return 'lightgreen'; // R7-R8
         if (unitInfo.level === 9) return '#7ACC7A'; // R9 (slightly darker green)
+        if (unitInfo.level === 10) return '#00CC00'; // R10
     }
     return ''; // Default or unknown
 }

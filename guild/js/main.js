@@ -307,7 +307,11 @@ document.addEventListener('DOMContentLoaded', () => {
             players.forEach(player => {
                 if (player.roster) {
                     for (const unitId in player.roster) {
-                        if (player.roster[unitId].stats.crew) {
+                        if (player.roster[unitId]?.stats?.crew || (
+                            !player.roster[unitId]?.stats && (
+                                unitId.toLowerCase().startsWith('capital') ||
+                                player.roster[unitId].skill.some(skill => skill.id.startsWith("hardwareskill"))
+                            ))) {
                             shipBaseIds.add(unitId.toLowerCase());
                         }
                     }
