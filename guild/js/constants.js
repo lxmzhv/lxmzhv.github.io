@@ -166,4 +166,4 @@ export const REQ_TEAM_UNIT_COLOR_THRESHOLDS = {
     "undercoverlando": { red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity }
 };
 
-export const GUILD_FILES = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json', 'guild_RiWsgx3BQXqZMepXXEb2Cg.json', 'guild_oy2awPmqRYyCKPvgJNjPIQ.json'];
+export const GUILD_FILES = ['guild_LVmIG5W_RSCmvZYOxdyH_Q.json', 'guild_IVgWpcsTSgKbtd7uoTiTAg.json', 'guild_RiWsgx3BQXqZMepXXEb2Cg.json', 'guild_oy2awPmqRYyCKPvgJNjPIQ.json', 'guild_CryCXYUbSm2dWZhTI1LwvA.json];

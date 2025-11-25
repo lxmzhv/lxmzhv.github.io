@@ -1,64 +1,64 @@
 {
- "allyCode":"955531992",
+ "allyCode":"648542712",
  "requirements":{
   "jabba":{
-   "total_score":85.5
+   "total_score":11.17
   },
   "gg":{
-   "total_score":92.2
-  },
-  "gas":{
-   "total_score":86.0
-  },
-  "inqs":{
    "total_score":79.8
   },
+  "gas":{
+   "total_score":63.2
+  },
+  "inqs":{
+   "total_score":66.8
+  },
   "reva":{
-   "total_score":94.8
+   "total_score":62.4
   },
   "geos":{
-   "total_score":104.0
+   "total_score":80.5
   },
   "drevan":{
-   "total_score":99.0
+   "total_score":99.6
   },
   "amidala":{
-   "total_score":91.33
+   "total_score":57.0
   },
   "gungans":{
-   "total_score":94.8
+   "total_score":82.4
   },
   "leia":{
-   "total_score":96.6
+   "total_score":36.4
   },
   "slkr":{
-   "total_score":97.86
+   "total_score":93.14
   },
   "beq_raid":{
-   "total_score":89.0
+   "total_score":75.0
   }
  },
- "modsRating":41.619025,
+ "modsRating":9.655563,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":5,
    "skill":[
     {
-     "id":"uniqueskill_MAGMATROOPER01",
-     "tier":6
-    },
-    {
      "id":"specialskill_MAGMATROOPER01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"basicskill_MAGMATROOPER",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MAGMATROOPER01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
@@ -71,6 +71,10 @@
      "tier":6
     },
     {
+     "id":"uniqueskill_HERMITYODA01",
+     "tier":6
+    },
+    {
      "id":"specialskill_HERMITYODA01",
      "tier":6
     },
@@ -79,16 +83,12 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_HERMITYODA01",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_HERMITYODA02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":7
    },
    "stats":{}
   },
@@ -101,50 +101,50 @@
      "tier":6
     },
     {
-     "id":"specialskill_GREEFKARGA01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_GREEFKARGA02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_GREEFKARGA",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_GREEFKARGA01",
      "tier":6
     },
     {
+     "id":"specialskill_GREEFKARGA01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_GREEFKARGA02",
+     "tier":5
+    },
+    {
      "id":"contractskill_GREEFKARGA01",
      "tier":1
+    },
+    {
+     "id":"leaderskill_GREEFKARGA",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":3,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_ZUCKUSS01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_ZUCKUSS02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_ZUCKUSS",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_ZUCKUSS01",
@@ -157,15 +157,14 @@
    ],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "zebs3":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_ZEBS301",
+     "id":"basicskill_ZEBS3",
      "tier":6
     },
     {
@@ -173,16 +172,16 @@
      "tier":6
     },
     {
-     "id":"specialskill_ZEBS301",
+     "id":"uniqueskill_ZEBS301",
      "tier":6
     },
     {
-     "id":"basicskill_ZEBS3",
-     "tier":6
+     "id":"specialskill_ZEBS301",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -213,7 +212,7 @@
   },
   "barrissoffee":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_BARRISSOFFEE",
@@ -229,38 +228,16 @@
     },
     {
      "id":"uniqueskill_BARRISSOFFEE01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
-  "firstordertieechelon":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"basicskill_FIRSTORDERTIEECHELON",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_FIRSTORDERTIEECHELON01",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_FIRSTORDERTIEECHELON",
-     "tier":1
-    },
-    {
-     "id":"specialskill_FIRSTORDERTIEECHELON01",
-     "tier":6
-    }
-   ]
-  },
   "ravensclaw":{
-   "currentRarity":7,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -268,11 +245,7 @@
      "tier":6
     },
     {
-     "id":"hardwareskill_RAVENSCLAW",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_RAVENSCLAW01",
+     "id":"basicskill_RAVENSCLAW",
      "tier":6
     },
     {
@@ -280,8 +253,12 @@
      "tier":6
     },
     {
-     "id":"basicskill_RAVENSCLAW",
+     "id":"uniqueskill_RAVENSCLAW01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_RAVENSCLAW",
+     "tier":1
     }
    ]
   },
@@ -289,6 +266,14 @@
    "currentRarity":7,
    "currentTier":1,
    "skill":[
+    {
+     "id":"specialskill_MARAUDER02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARAUDER02",
+     "tier":6
+    },
     {
      "id":"basicskill_MARAUDER",
      "tier":6
@@ -304,53 +289,11 @@
     {
      "id":"specialskill_MARAUDER01",
      "tier":6
-    },
-    {
-     "id":"specialskill_MARAUDER02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_MARAUDER02",
-     "tier":6
     }
    ]
   },
-  "thirdsister":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_THIRDSISTER",
-     "tier":6
-    },
-    {
-     "id":"specialskill_THIRDSISTER01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_THIRDSISTER02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_THIRDSISTER",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_THIRDSISTER01",
-     "tier":5
-    },
-    {
-     "id":"uniqueskill_INQUISITOR01_THIRDSISTER",
-     "tier":1
-    }
-   ],
-   "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
   "capitalmalevolence":{
-   "currentRarity":7,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -358,26 +301,26 @@
      "tier":6
     },
     {
-     "id":"basicskill_CAPITALMALEVOLENCE",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALMALEVOLENCE01",
-     "tier":6
+     "id":"specialskill_CAPITALMALEVOLENCE03",
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALMALEVOLENCE02",
-     "tier":6
+     "tier":4
     },
     {
-     "id":"specialskill_CAPITALMALEVOLENCE03",
-     "tier":6
+     "id":"specialskill_CAPITALMALEVOLENCE01",
+     "tier":4
+    },
+    {
+     "id":"basicskill_CAPITALMALEVOLENCE",
+     "tier":4
     }
    ]
   },
   "ct210408":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CT210408",
@@ -393,11 +336,11 @@
     },
     {
      "id":"uniqueskill_ct21040802",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -410,15 +353,15 @@
      "tier":6
     },
     {
+     "id":"uniqueskill_b1battledroidv2_02",
+     "tier":6
+    },
+    {
      "id":"specialskill_b1battledroidv2_01",
      "tier":6
     },
     {
      "id":"uniqueskill_b1battledroidv2_01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_b1battledroidv2_02",
      "tier":6
     }
    ],
@@ -433,10 +376,10 @@
    "skill":[
     {
      "id":"uniqueskill_COLONELSTARCK01",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_COLONELSTARCK",
+     "id":"specialskill_COLONELSTARCK02",
      "tier":6
     },
     {
@@ -444,12 +387,12 @@
      "tier":6
     },
     {
-     "id":"specialskill_COLONELSTARCK02",
+     "id":"basicskill_COLONELSTARCK",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":5
    },
    "stats":{}
   },
@@ -458,15 +401,15 @@
    "currentTier":1,
    "skill":[
     {
+     "id":"specialskill_TIEFIGHTERFOSF02",
+     "tier":6
+    },
+    {
      "id":"basicskill_TIEFIGHTERFOSF",
      "tier":6
     },
     {
      "id":"specialskill_TIEFIGHTERFOSF01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_TIEFIGHTERFOSF02",
      "tier":6
     },
     {
@@ -484,16 +427,16 @@
      "tier":6
     },
     {
-     "id":"specialskill_VANGUARDTEMPLEGUARD01",
-     "tier":6
-    },
-    {
      "id":"specialskill_VANGUARDTEMPLEGUARD02",
      "tier":6
     },
     {
      "id":"uniqueskill_VANGUARDTEMPLEGUARD01",
      "tier":5
+    },
+    {
+     "id":"specialskill_VANGUARDTEMPLEGUARD01",
+     "tier":6
     }
    ],
    "relic":{
@@ -503,37 +446,37 @@
   },
   "bb8":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_BB8",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_BB801",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_BB802",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_BB801",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_BB802",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
   "pogglethelesser":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_POGGLETHELESSER",
@@ -553,7 +496,37 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "cerejunda":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_CEREJUNDA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CEREJUNDA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CEREJUNDA02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_CEREJUNDA01",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_CEREJUNDA",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":11
    },
    "stats":{}
   },
@@ -579,36 +552,6 @@
    },
    "stats":{}
   },
-  "cerejunda":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_CEREJUNDA",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CEREJUNDA01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CEREJUNDA02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_CEREJUNDA",
-     "tier":5
-    },
-    {
-     "id":"uniqueskill_CEREJUNDA01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
   "generalkenobi":{
    "currentRarity":7,
    "currentTier":13,
@@ -626,16 +569,16 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_GENERALKENOBI01",
-     "tier":6
-    },
-    {
      "id":"leaderskill_GENERALKENOBI",
      "tier":5
+    },
+    {
+     "id":"uniqueskill_GENERALKENOBI01",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -667,7 +610,7 @@
   },
   "jawascavenger":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_JAWASCAVENGER",
@@ -687,7 +630,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -709,7 +652,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINTARPALS01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
@@ -726,64 +669,63 @@
      "tier":6
     },
     {
-     "id":"specialskill_DROIDEKA01",
-     "tier":6
-    },
-    {
      "id":"specialskill_DROIDEKA02",
      "tier":6
     },
     {
+     "id":"specialskill_DROIDEKA01",
+     "tier":6
+    },
+    {
      "id":"uniqueskill_DROIDEKA01",
-     "tier":7
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
   "l3_37":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":3,
+   "currentTier":1,
    "skill":[
     {
-     "id":"specialskill_l3_37_01",
-     "tier":6
+     "id":"basicskill_l3_37",
+     "tier":5
     },
     {
-     "id":"basicskill_l3_37",
-     "tier":6
+     "id":"specialskill_l3_37_01",
+     "tier":5
     },
     {
      "id":"uniqueskill_l3_37_01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_l3_37_02",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "ewokscout":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":11,
    "skill":[
     {
+     "id":"basicskill_EWOKSCOUT",
+     "tier":6
+    },
+    {
      "id":"specialskill_EWOKSCOUT01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_EWOKSCOUT01",
-     "tier":1
-    },
-    {
-     "id":"basicskill_EWOKSCOUT",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
@@ -793,27 +735,27 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_K2SO",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_K2SO01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_K2SO02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_K2SO01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_K2SO02",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -822,11 +764,11 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"basicskill_SITHINFILTRATOR",
+     "id":"specialskill_SITHINFILTRATOR01",
      "tier":6
     },
     {
-     "id":"specialskill_SITHINFILTRATOR01",
+     "id":"basicskill_SITHINFILTRATOR",
      "tier":6
     },
     {
@@ -842,7 +784,20 @@
   "nightsisteracolyte":{
    "currentRarity":7,
    "currentTier":1,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_NIGHTSISTERACOLYTE",
+     "tier":5
+    },
+    {
+     "id":"specialskill_NIGHTSISTERACOLYTE01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_NIGHTSISTERACOLYTE01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
    }
@@ -879,7 +834,7 @@
     },
     {
      "id":"specialskill_50RT01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_50RT02",
@@ -887,7 +842,7 @@
     },
     {
      "id":"leaderskill_50RT",
-     "tier":5
+     "tier":4
     },
     {
      "id":"uniqueskill_50RT01",
@@ -901,7 +856,7 @@
   },
   "badbatchhunter":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BADBATCHHUNTER",
@@ -917,29 +872,29 @@
     },
     {
      "id":"leaderskill_BADBATCHHUNTER",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":6,
    "skill":[
     {
-     "id":"uniqueskill_IG86SENTINELDROID01",
-     "tier":6
-    },
-    {
      "id":"specialskill_IG86SENTINELDROID01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"basicskill_IG86SENTINELDROID",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_IG86SENTINELDROID01",
+     "tier":5
     }
    ],
    "relic":{
@@ -983,7 +938,7 @@
     },
     {
      "id":"specialskill_C3POCHEWBACCA02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_C3POCHEWBACCA",
@@ -991,7 +946,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1030,62 +985,61 @@
    "stats":{}
   },
   "krrsantan":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":3,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_KRRSANTAN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_KRRSANTAN01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_KRRSANTAN02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_KRRSANTAN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_KRRSANTAN01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"contractskill_KRRSANTAN01",
-     "tier":1
+     "tier":0
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "batchers3":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":8,
    "skill":[
-    {
-     "id":"basicskill_BATCHERS3",
-     "tier":6
-    },
     {
      "id":"specialskill_BATCHERS301",
      "tier":6
     },
     {
-     "id":"specialskill_BATCHERS302",
-     "tier":5
+     "id":"basicskill_BATCHERS3",
+     "tier":6
     },
     {
      "id":"uniqueskill_BATCHERS301",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_BATCHERS302",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1098,7 +1052,7 @@
      "tier":6
     },
     {
-     "id":"specialskill_KYLOREN01",
+     "id":"uniqueskill_KYLOREN01",
      "tier":6
     },
     {
@@ -1106,7 +1060,7 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_KYLOREN01",
+     "id":"specialskill_KYLOREN01",
      "tier":6
     }
    ],
@@ -1117,35 +1071,35 @@
   },
   "dengar":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":3,
    "skill":[
     {
      "id":"basicskill_DENGAR",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_DENGAR01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_DENGAR02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_DENGAR01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_DENGAR",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DENGAR01",
+     "tier":5
     },
     {
      "id":"contractskill_DENGAR01",
-     "tier":1
+     "tier":0
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1167,7 +1121,7 @@
     },
     {
      "id":"uniqueskill_kiadimundi01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"basicskill_kiadimundi",
@@ -1175,7 +1129,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1184,20 +1138,20 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_arc170rex",
-     "tier":1
-    },
-    {
-     "id":"specialskill_arc170rex",
-     "tier":6
-    },
-    {
      "id":"basicskill_arc170rex",
      "tier":6
     },
     {
      "id":"uniqueskill_arc170rex",
      "tier":6
+    },
+    {
+     "id":"specialskill_arc170rex",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_arc170rex",
+     "tier":1
     }
    ]
   },
@@ -1219,7 +1173,7 @@
     },
     {
      "id":"uniqueskill_GUNGANPHALANX01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
@@ -1232,6 +1186,10 @@
    "currentTier":1,
    "skill":[
     {
+     "id":"specialskill_TIEFIGHTERFIRSTORDER01",
+     "tier":6
+    },
+    {
      "id":"basicskill_TIEFIGHTERFIRSTORDER",
      "tier":6
     },
@@ -1242,10 +1200,6 @@
     {
      "id":"hardwareskill_TIEFIGHTERFIRSTORDER01",
      "tier":1
-    },
-    {
-     "id":"specialskill_TIEFIGHTERFIRSTORDER01",
-     "tier":6
     }
    ]
   },
@@ -1262,11 +1216,11 @@
      "tier":6
     },
     {
-     "id":"leaderskill_BOKATAN",
-     "tier":6
+     "id":"uniqueskill_BOKATAN01",
+     "tier":5
     },
     {
-     "id":"uniqueskill_BOKATAN01",
+     "id":"leaderskill_BOKATAN",
      "tier":6
     }
    ],
@@ -1288,12 +1242,12 @@
      "tier":6
     },
     {
-     "id":"specialskill_MAGNAGUARD02",
+     "id":"uniqueskill_MAGNAGUARD01",
      "tier":6
     },
     {
-     "id":"uniqueskill_MAGNAGUARD01",
-     "tier":6
+     "id":"specialskill_MAGNAGUARD02",
+     "tier":5
     }
    ],
    "relic":{
@@ -1302,28 +1256,28 @@
    "stats":{}
   },
   "millenniumfalconep7":{
-   "currentRarity":7,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
-    {
-     "id":"basicskill_MILLENNIUMFALCONEP7",
-     "tier":6
-    },
     {
      "id":"hardwareskill_MILLENNIUMFALCONEP701",
      "tier":1
     },
     {
      "id":"uniqueskill_MILLENNIUMFALCONEP701",
-     "tier":6
+     "tier":4
     },
     {
-     "id":"specialskill_MILLENNIUMFALCONEP702",
-     "tier":6
+     "id":"basicskill_MILLENNIUMFALCONEP7",
+     "tier":5
     },
     {
      "id":"specialskill_MILLENNIUMFALCONEP701",
-     "tier":6
+     "tier":4
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONEP702",
+     "tier":4
     }
    ]
   },
@@ -1344,12 +1298,12 @@
      "tier":6
     },
     {
-     "id":"leaderskill_FIFTHBROTHER",
-     "tier":5
-    },
-    {
      "id":"uniqueskill_FIFTHBROTHER",
      "tier":6
+    },
+    {
+     "id":"leaderskill_FIFTHBROTHER",
+     "tier":5
     },
     {
      "id":"uniqueskill_INQUISITOR01_SUPPORT",
@@ -1357,12 +1311,12 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
   "comeuppance":{
-   "currentRarity":7,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
     {
@@ -1371,43 +1325,42 @@
     },
     {
      "id":"uniqueskill_COMEUPPANCE01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"specialskill_COMEUPPANCE01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"basicskill_COMEUPPANCE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_COMEUPPANCE02",
-     "tier":6
+     "tier":4
     }
    ]
   },
   "rangetrooper":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":4,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_RANGETROOPER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_RANGETROOPER01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_RANGETROOPER01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "quigonjinn":{
    "currentRarity":7,
@@ -1427,11 +1380,11 @@
     },
     {
      "id":"leaderskill_QUIGONJINN",
-     "tier":7
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1440,7 +1393,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_ROYALGUARD01",
+     "id":"basicskill_ROYALGUARD",
      "tier":6
     },
     {
@@ -1448,8 +1401,8 @@
      "tier":6
     },
     {
-     "id":"basicskill_ROYALGUARD",
-     "tier":6
+     "id":"uniqueskill_ROYALGUARD01",
+     "tier":5
     }
    ],
    "relic":{
@@ -1513,21 +1466,13 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":5
    },
    "stats":{}
   },
-  "bt1":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
-   "relic":{
-    "currentTier":1
-   }
-  },
   "jawa":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_JAWA",
@@ -1543,7 +1488,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1575,67 +1520,66 @@
    "skill":[
     {
      "id":"basicskill_XWINGRESISTANCE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_XWINGRESISTANCE02",
-     "tier":6
+     "tier":4
+    },
+    {
+     "id":"specialskill_XWINGRESISTANCE01",
+     "tier":4
     },
     {
      "id":"hardwareskill_XWINGRESISTANCE01",
      "tier":1
-    },
-    {
-     "id":"specialskill_XWINGRESISTANCE01",
-     "tier":6
     }
    ]
   },
   "qira":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
-     "id":"leaderskill_QIRA",
-     "tier":6
+     "id":"basicskill_QIRA",
+     "tier":5
     },
     {
-     "id":"uniqueskill_QIRA01",
+     "id":"specialskill_QIRA01",
      "tier":5
     },
     {
      "id":"specialskill_QIRA02",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"specialskill_QIRA01",
-     "tier":6
+     "id":"leaderskill_QIRA",
+     "tier":5
     },
     {
-     "id":"basicskill_QIRA",
-     "tier":6
+     "id":"uniqueskill_QIRA01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "poe":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_POE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_POE01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"basicskill_POE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_POE01",
@@ -1643,33 +1587,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "badbatchomega":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_BADBATCHOMEGA",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_BADBATCHOMEGA01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BADBATCHOMEGA02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BADBATCHOMEGA01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1703,6 +1621,31 @@
    },
    "stats":{}
   },
+  "badbatchomega":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_BADBATCHOMEGA",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BADBATCHOMEGA01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BADBATCHOMEGA02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BADBATCHOMEGA01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "eighthbrother":{
    "currentRarity":7,
    "currentTier":13,
@@ -1720,12 +1663,12 @@
      "tier":6
     },
     {
-     "id":"leaderskill_EIGHTHBROTHER",
-     "tier":5
-    },
-    {
      "id":"uniqueskill_EIGHTHBROTHER01",
      "tier":6
+    },
+    {
+     "id":"leaderskill_EIGHTHBROTHER",
+     "tier":5
     },
     {
      "id":"uniqueskill_INQUISITOR01_EIGHTHBROTHER",
@@ -1733,25 +1676,25 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
   "talia":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_TALIA01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"basicskill_TALIA",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_TALIA02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_TALIA",
@@ -1759,43 +1702,13 @@
     }
    ],
    "relic":{
-    "currentTier":11
-   },
-   "stats":{}
-  },
-  "admiralraddus":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_ADMIRALRADDUS",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ADMIRALRADDUS01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ADMIRALRADDUS02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_ADMIRALRADDUS",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_ADMIRALRADDUS01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":11
+    "currentTier":1
    },
    "stats":{}
   },
   "nighttrooper":{
-   "currentRarity":5,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_NIGHTTROOPER",
@@ -1806,22 +1719,52 @@
      "tier":5
     },
     {
-     "id":"specialskill_NIGHTTROOPER02",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_NIGHTTROOPER01",
      "tier":4
+    },
+    {
+     "id":"specialskill_NIGHTTROOPER02",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "admiralraddus":{
+   "currentRarity":4,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"uniqueskill_ADMIRALRADDUS01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ADMIRALRADDUS02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ADMIRALRADDUS01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_ADMIRALRADDUS",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_ADMIRALRADDUS",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
   "nightsisterzombie":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_NIGHTSISTERZOMBIE",
@@ -1841,7 +1784,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1873,7 +1816,7 @@
   },
   "stap":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1889,33 +1832,11 @@
     },
     {
      "id":"uniqueskill_STAP01",
-     "tier":6
+     "tier":4
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "scarifrebel":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"specialskill_SCARIFREBEL01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_SCARIFREBEL01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_SCARIFREBEL",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -1937,15 +1858,15 @@
     },
     {
      "id":"leaderskill_GRANDADMIRALTHRAWN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_GRANDADMIRALTHRAWN01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1971,16 +1892,37 @@
     }
    ]
   },
+  "scarifrebel":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_SCARIFREBEL",
+     "tier":5
+    },
+    {
+     "id":"specialskill_SCARIFREBEL01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_SCARIFREBEL01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "imperialprobedroid":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_IMPERIALPROBEDROID",
-     "tier":6
+     "id":"uniqueskill_IMPERIALPROBEDROID01",
+     "tier":5
     },
     {
-     "id":"specialskill_IMPERIALPROBEDROID01",
+     "id":"basicskill_IMPERIALPROBEDROID",
      "tier":6
     },
     {
@@ -1988,12 +1930,12 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_IMPERIALPROBEDROID01",
+     "id":"specialskill_IMPERIALPROBEDROID01",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2002,11 +1944,11 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_SABINEWRENS3",
+     "id":"specialskill_SABINEWRENS301",
      "tier":6
     },
     {
-     "id":"specialskill_SABINEWRENS301",
+     "id":"specialskill_SABINEWRENS302",
      "tier":6
     },
     {
@@ -2014,12 +1956,12 @@
      "tier":6
     },
     {
-     "id":"specialskill_SABINEWRENS302",
+     "id":"basicskill_SABINEWRENS3",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2041,29 +1983,29 @@
     },
     {
      "id":"uniqueskill_PAPLOO01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
   "younghan":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_YOUNGHAN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_YOUNGHAN01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_YOUNGHAN02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_YOUNGHAN01",
@@ -2071,35 +2013,33 @@
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "scouttrooper_v3":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_SCOUTTROOPER_V3",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_SCOUTTROOPER_V301",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_SCOUTTROOPER_V302",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_SCOUTTROOPER_V301",
-     "tier":7
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "ewokelder":{
    "currentRarity":7,
@@ -2119,65 +2059,38 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
   "epixpoe":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":5,
+   "currentTier":1,
    "skill":[
     {
-     "id":"specialskill_EPIXPOE02",
-     "tier":6
-    },
-    {
      "id":"basicskill_EPIXPOE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_EPIXPOE01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_EPIXPOE02",
+     "tier":5
     },
     {
      "id":"uniqueskill_EPIXPOE01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "crosshairs3":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_CROSSHAIRS3",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CROSSHAIRS301",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CROSSHAIRS302",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_CROSSHAIRS301",
      "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_QUEENAMIDALA",
@@ -2193,15 +2106,41 @@
     },
     {
      "id":"leaderskill_QUEENAMIDALA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_QUEENAMIDALA01",
-     "tier":4
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "crosshairs3":{
+   "currentRarity":6,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"basicskill_CROSSHAIRS3",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_CROSSHAIRS301",
+     "tier":4
+    },
+    {
+     "id":"specialskill_CROSSHAIRS301",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CROSSHAIRS302",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2218,22 +2157,22 @@
      "tier":6
     },
     {
-     "id":"specialskill_CHIEFCHIRPA02",
-     "tier":6
+     "id":"leaderskill_CHIEFCHIRPA",
+     "tier":5
     },
     {
-     "id":"leaderskill_CHIEFCHIRPA",
-     "tier":7
+     "id":"specialskill_CHIEFCHIRPA02",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":5,
-   "currentTier":7,
+   "currentRarity":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -2283,7 +2222,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2291,10 +2230,6 @@
    "currentRarity":7,
    "currentTier":13,
    "skill":[
-    {
-     "id":"basicskill_CT5555",
-     "tier":6
-    },
     {
      "id":"specialskill_CT555501",
      "tier":6
@@ -2304,11 +2239,41 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_CT555501",
+     "id":"basicskill_CT5555",
      "tier":6
     },
     {
+     "id":"uniqueskill_CT555501",
+     "tier":5
+    },
+    {
      "id":"uniqueskill_CT555502",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "visasmarr":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_VISASMARR",
+     "tier":6
+    },
+    {
+     "id":"specialskill_VISASMARR01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_VISASMARR02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_VISASMARR01",
      "tier":6
     }
    ],
@@ -2339,39 +2304,13 @@
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
-  "visasmarr":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_VISASMARR",
-     "tier":6
-    },
-    {
-     "id":"specialskill_VISASMARR01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_VISASMARR02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_VISASMARR01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
   "lukeskywalker":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_LUKESKYWALKER01",
@@ -2391,63 +2330,37 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
-  "capitalraddus":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"uniqueskill_CAPITALRADDUS01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALRADDUS02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALRADDUS01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALRADDUS03",
-     "tier":6
-    },
-    {
-     "id":"basicskill_CAPITALRADDUS",
-     "tier":6
-    }
-   ]
-  },
   "bensolo":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":2,
    "skill":[
     {
      "id":"basicskill_BENSOLO",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BENSOLO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BENSOLO02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_BENSOLO01",
-     "tier":6
+     "tier":4
+    },
+    {
+     "id":"specialskill_BENSOLO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BENSOLO02",
+     "tier":5
     },
     {
      "id":"uniqueskill_BENSOLO02",
-     "tier":6
+     "tier":4
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2468,15 +2381,15 @@
      "tier":1
     },
     {
-     "id":"leaderskill_GRANDMASTERLUKE",
-     "tier":1
-    },
-    {
      "id":"uniqueskill_GRANDMASTERLUKE01",
      "tier":1
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GRANDMASTERLUKE",
      "tier":1
     }
    ],
@@ -2487,33 +2400,32 @@
   },
   "gamorreanguard":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_GAMORREANGUARD",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_GAMORREANGUARD01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_GAMORREANGUARD02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_GAMORREANGUARD01",
-     "tier":6
+     "tier":4
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "kitfisto":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_KITFISTO",
@@ -2533,37 +2445,55 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "greatmothers":{
    "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_GREATMOTHERS",
+     "tier":5
+    },
+    {
+     "id":"specialskill_GREATMOTHERS01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_GREATMOTHERS01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_GREATMOTHERS",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "houndstooth":{
    "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_HOUNDSTOOTH01",
-     "tier":6
-    },
-    {
      "id":"basicskill_HOUNDSTOOTH",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HOUNDSTOOTH01",
      "tier":6
     },
     {
      "id":"hardwareskill_HOUNDSTOOTH01",
      "tier":1
+    },
+    {
+     "id":"uniqueskill_HOUNDSTOOTH01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HOUNDSTOOTH01",
+     "tier":6
     }
    ]
   },
@@ -2602,20 +2532,20 @@
      "tier":6
     },
     {
-     "id":"specialskill_ADMINISTRATORLANDO01",
-     "tier":6
-    },
-    {
      "id":"leaderskill_ADMINISTRATORLANDO",
      "tier":5
     },
     {
      "id":"uniqueskill_ADMINISTRATORLANDO01",
      "tier":5
+    },
+    {
+     "id":"specialskill_ADMINISTRATORLANDO01",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2633,7 +2563,7 @@
     },
     {
      "id":"specialskill_ADMIRALPIETT02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_ADMIRALPIETT",
@@ -2641,29 +2571,29 @@
     },
     {
      "id":"uniqueskill_ADMIRALPIETT01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":7
    },
    "stats":{}
   },
   "ig2000":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
+     "id":"specialskill_IG20001",
+     "tier":5
+    },
+    {
      "id":"uniqueskill_IG20001",
-     "tier":6
+     "tier":4
     },
     {
      "id":"basicskill_IG2000",
-     "tier":6
-    },
-    {
-     "id":"specialskill_IG20001",
-     "tier":6
+     "tier":5
     },
     {
      "id":"hardwareskill_IG20001",
@@ -2701,29 +2631,29 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":3
    },
    "stats":{}
   },
   "nightsisterspirit":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
-     "id":"uniqueskill_NIGHTSISTERSPIRIT01",
-     "tier":6
+     "id":"basicskill_NIGHTSISTERSPIRIT",
+     "tier":5
     },
     {
      "id":"specialskill_NIGHTSISTERSPIRIT01",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_NIGHTSISTERSPIRIT",
-     "tier":6
+     "id":"uniqueskill_NIGHTSISTERSPIRIT01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2732,11 +2662,11 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_XANADUBLOOD01",
+     "id":"basicskill_XANADUBLOOD",
      "tier":6
     },
     {
-     "id":"basicskill_XANADUBLOOD",
+     "id":"uniqueskill_XANADUBLOOD01",
      "tier":6
     },
     {
@@ -2754,7 +2684,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_CLONESERGEANTPHASEI01",
+     "id":"basicskill_CLONESERGEANTPHASEI",
      "tier":6
     },
     {
@@ -2762,7 +2692,7 @@
      "tier":6
     },
     {
-     "id":"basicskill_CLONESERGEANTPHASEI",
+     "id":"uniqueskill_CLONESERGEANTPHASEI01",
      "tier":6
     }
    ],
@@ -2801,7 +2731,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2810,11 +2740,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"leaderskill_ADMIRALACKBAR",
-     "tier":5
-    },
-    {
-     "id":"specialskill_ADMIRALACKBAR02",
+     "id":"basicskill_ADMIRALACKBAR",
      "tier":6
     },
     {
@@ -2822,12 +2748,16 @@
      "tier":6
     },
     {
-     "id":"basicskill_ADMIRALACKBAR",
+     "id":"specialskill_ADMIRALACKBAR02",
      "tier":6
+    },
+    {
+     "id":"leaderskill_ADMIRALACKBAR",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2845,43 +2775,43 @@
     },
     {
      "id":"uniqueskill_FULCRUMAHSOKA01",
-     "tier":7
+     "tier":6
     },
     {
      "id":"specialskill_FULCRUMAHSOKA02",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":5
    },
    "stats":{}
   },
   "stormtrooper":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
-     "id":"uniqueskill_STORMTROOPER01",
-     "tier":6
+     "id":"basicskill_STORMTROOPER01",
+     "tier":5
     },
     {
      "id":"specialskill_STORMTROOPER01",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_STORMTROOPER01",
-     "tier":6
+     "id":"uniqueskill_STORMTROOPER01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "hunters3":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_HUNTERS3",
@@ -2892,46 +2822,20 @@
      "tier":6
     },
     {
-     "id":"specialskill_HUNTERS302",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_HUNTERS301",
-     "tier":6
+     "tier":4
     },
     {
      "id":"uniqueskill_HUNTERS302",
      "tier":1
+    },
+    {
+     "id":"specialskill_HUNTERS302",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
-  "sm33":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_SM33",
-     "tier":5
-    },
-    {
-     "id":"specialskill_SM3301",
-     "tier":5
-    },
-    {
-     "id":"specialskill_SM3302",
-     "tier":4
-    },
-    {
-     "id":"uniqueskill_SM3301",
-     "tier":4
-    }
-   ],
-   "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
@@ -2939,6 +2843,10 @@
    "currentRarity":7,
    "currentTier":13,
    "skill":[
+    {
+     "id":"uniqueskill_SCORCH01",
+     "tier":5
+    },
     {
      "id":"basicskill_SCORCH",
      "tier":6
@@ -2950,10 +2858,6 @@
     {
      "id":"specialskill_SCORCH02",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_SCORCH01",
-     "tier":5
     }
    ],
    "relic":{
@@ -2963,18 +2867,18 @@
   },
   "luminaraunduli":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_LUMINARAUNDULI",
      "tier":6
     },
     {
-     "id":"specialskill_LUMINARAUNDULI01",
+     "id":"specialskill_LUMINARAUNDULI02",
      "tier":6
     },
     {
-     "id":"specialskill_LUMINARAUNDULI02",
+     "id":"specialskill_LUMINARAUNDULI01",
      "tier":6
     },
     {
@@ -2983,7 +2887,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -3000,16 +2904,16 @@
      "tier":6
     },
     {
+     "id":"leaderskill_JANGOFETT",
+     "tier":5
+    },
+    {
      "id":"specialskill_JANGOFETT02",
      "tier":6
     },
     {
-     "id":"leaderskill_JANGOFETT",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_JANGOFETT01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"contractskill_JANGOFETT01",
@@ -3027,15 +2931,15 @@
    "skill":[
     {
      "id":"basicskill_HOTHREBELSCOUT",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HOTHREBELSCOUT01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_HOTHREBELSCOUT01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_HOTHREBELSCOUT01",
+     "tier":5
     }
    ],
    "relic":{
@@ -3047,10 +2951,6 @@
    "currentRarity":7,
    "currentTier":1,
    "skill":[
-    {
-     "id":"specialskill_GHOST01",
-     "tier":6
-    },
     {
      "id":"specialskill_GHOST02",
      "tier":6
@@ -3068,6 +2968,10 @@
      "tier":6
     },
     {
+     "id":"specialskill_GHOST01",
+     "tier":6
+    },
+    {
      "id":"hardwareskill_GHOST01",
      "tier":1
     }
@@ -3077,10 +2981,6 @@
    "currentRarity":7,
    "currentTier":1,
    "skill":[
-    {
-     "id":"hardwareskill_TIEBOMBERIMPERIAL",
-     "tier":1
-    },
     {
      "id":"basicskill_TIEBOMBERIMPERIAL",
      "tier":6
@@ -3092,6 +2992,10 @@
     {
      "id":"uniqueskill_TIEBOMBERIMPERIAL01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_TIEBOMBERIMPERIAL",
+     "tier":1
     }
    ]
   },
@@ -3108,20 +3012,20 @@
      "tier":6
     },
     {
-     "id":"specialskill_NUTEGUNRAY02",
-     "tier":6
-    },
-    {
      "id":"leaderskill_NUTEGUNRAY",
      "tier":6
     },
     {
      "id":"uniqueskill_NUTEGUNRAY01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_NUTEGUNRAY02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3134,11 +3038,11 @@
      "tier":6
     },
     {
-     "id":"specialskill_DISGUISEDCLONETROOPER01",
+     "id":"uniqueskill_DISGUISEDCLONETROOPER02",
      "tier":6
     },
     {
-     "id":"uniqueskill_DISGUISEDCLONETROOPER02",
+     "id":"specialskill_DISGUISEDCLONETROOPER01",
      "tier":6
     },
     {
@@ -3168,12 +3072,12 @@
      "tier":6
     },
     {
-     "id":"hardwareskill_slave101",
-     "tier":1
-    },
-    {
      "id":"uniqueskill_slave101",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_slave101",
+     "tier":1
     }
    ]
   },
@@ -3182,15 +3086,15 @@
    "currentTier":1,
    "skill":[
     {
+     "id":"specialskill_TIEADVANCED01",
+     "tier":6
+    },
+    {
      "id":"basicskill_TIEADVANCED",
      "tier":6
     },
     {
      "id":"uniqueskill_TIEADVANCED01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_TIEADVANCED01",
      "tier":6
     },
     {
@@ -3204,7 +3108,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_VEERS",
+     "id":"leaderskill_VEERS",
      "tier":6
     },
     {
@@ -3212,29 +3116,25 @@
      "tier":6
     },
     {
-     "id":"leaderskill_VEERS",
-     "tier":6
+     "id":"uniqueskill_VEERS01",
+     "tier":5
     },
     {
-     "id":"uniqueskill_VEERS01",
+     "id":"basicskill_VEERS",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
   "quiggold":{
-   "currentRarity":5,
-   "currentTier":12,
+   "currentRarity":4,
+   "currentTier":6,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
-     "tier":6
-    },
-    {
-     "id":"specialskill_QUIGGOLD01",
      "tier":6
     },
     {
@@ -3244,6 +3144,10 @@
     {
      "id":"uniqueskill_QUIGGOLD02",
      "tier":4
+    },
+    {
+     "id":"specialskill_QUIGGOLD01",
+     "tier":6
     }
    ],
    "relic":{
@@ -3253,7 +3157,7 @@
   },
   "4lom":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_4LOM",
@@ -3312,8 +3216,8 @@
    ]
   },
   "captainenoch":{
-   "currentRarity":5,
-   "currentTier":13,
+   "currentRarity":4,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CAPTAINENOCH",
@@ -3333,7 +3237,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
@@ -3351,11 +3255,11 @@
     },
     {
      "id":"specialskill_APPO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_APPO01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -3369,6 +3273,10 @@
    "skill":[
     {
      "id":"basicskill_JEDIMASTERKENOBI",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
      "tier":1
     },
     {
@@ -3386,32 +3294,28 @@
     {
      "id":"uniqueskill_JEDIMASTERKENOBI01",
      "tier":1
-    },
-    {
-     "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":1
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
   "pao":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_PAO",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_PAO01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_PAO02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_PAO01",
@@ -3419,9 +3323,8 @@
     }
    ],
    "relic":{
-    "currentTier":3
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "darthtalon":{
    "currentRarity":7,
@@ -3432,49 +3335,41 @@
      "tier":6
     },
     {
-     "id":"specialskill_DARTHTALON01",
+     "id":"uniqueskill_DARTHTALON01",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_DARTHTALON02",
+     "tier":5
     },
     {
      "id":"specialskill_DARTHTALON02",
      "tier":6
     },
     {
-     "id":"uniqueskill_DARTHTALON01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_DARTHTALON02",
+     "id":"specialskill_DARTHTALON01",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
   "stormtrooperluke":{
-   "currentRarity":4,
-   "currentTier":4,
+   "currentRarity":3,
+   "currentTier":2,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
-    },
-    {
-     "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
-    },
-    {
-     "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
-    },
-    {
-     "id":"leaderskill_STORMTROOPERLUKE",
      "tier":0
     },
     {
-     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "id":"specialskill_STORMTROOPERLUKE02",
+     "tier":0
+    },
+    {
+     "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
     }
    ],
@@ -3485,57 +3380,57 @@
   },
   "ig88":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
-    {
-     "id":"basicskill_IG88",
-     "tier":6
-    },
-    {
-     "id":"specialskill_IG8801",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_IG8801",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_IG88",
-     "tier":6
-    },
     {
      "id":"contractskill_IG8801",
      "tier":1
+    },
+    {
+     "id":"uniqueskill_IG8801",
+     "tier":5
+    },
+    {
+     "id":"basicskill_IG88",
+     "tier":5
+    },
+    {
+     "id":"specialskill_IG8801",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_IG88",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "millenniumfalconpristine":{
-   "currentRarity":7,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
     {
-     "id":"basicskill_MILLENNIUMFALCONPRISTINE",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MILLENNIUMFALCONPRISTINE01",
-     "tier":6
+     "id":"hardwareskill_MILLENNIUMFALCONPRISTINE01",
+     "tier":1
     },
     {
      "id":"uniqueskill_MILLENNIUMFALCONPRISTINE01",
-     "tier":6
+     "tier":4
+    },
+    {
+     "id":"basicskill_MILLENNIUMFALCONPRISTINE",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONPRISTINE01",
+     "tier":4
     },
     {
      "id":"specialskill_MILLENNIUMFALCONPRISTINE02",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_MILLENNIUMFALCONPRISTINE01",
-     "tier":1
+     "tier":4
     }
    ]
   },
@@ -3544,11 +3439,15 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"specialskill_EBONHAWK02",
-     "tier":6
+     "id":"hardwareskill_EBONHAWK01",
+     "tier":1
     },
     {
      "id":"specialskill_EBONHAWK01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EBONHAWK02",
      "tier":6
     },
     {
@@ -3558,16 +3457,34 @@
     {
      "id":"uniqueskill_EBONHAWK01",
      "tier":6
+    }
+   ]
+  },
+  "bladeofdorin":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_BLADEOFDORIN",
+     "tier":6
     },
     {
-     "id":"hardwareskill_EBONHAWK01",
+     "id":"specialskill_BLADEOFDORIN02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BLADEOFDORIN01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_BLADEOFDORIN01",
      "tier":1
     }
    ]
   },
   "rey":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_REY",
@@ -3583,46 +3500,28 @@
     },
     {
      "id":"uniqueskill_REY01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
-  },
-  "bladeofdorin":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"hardwareskill_BLADEOFDORIN01",
-     "tier":1
-    },
-    {
-     "id":"basicskill_BLADEOFDORIN",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BLADEOFDORIN02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BLADEOFDORIN01",
-     "tier":6
-    }
-   ]
   },
   "darthnihilus":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
+     "id":"leaderskill_DARTHNIHILUS",
+     "tier":5
+    },
+    {
      "id":"basicskill_DARTHNIHILUS",
      "tier":6
     },
     {
-     "id":"specialskill_DARTHNIHILUS01",
+     "id":"uniqueskill_DARTHNIHILUS01",
      "tier":6
     },
     {
@@ -3630,22 +3529,18 @@
      "tier":6
     },
     {
-     "id":"leaderskill_DARTHNIHILUS",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_DARTHNIHILUS01",
+     "id":"specialskill_DARTHNIHILUS01",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":5
    },
    "stats":{}
   },
   "brutus":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":3,
    "skill":[
     {
      "id":"basicskill_BRUTUS",
@@ -3699,36 +3594,14 @@
    },
    "stats":{}
   },
-  "hothhan":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_HOTHHAN",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HOTHHAN01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HOTHHAN02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_HOTHHAN01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
   "monmothma":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
+    {
+     "id":"uniqueskill_MONMOTHMA01",
+     "tier":5
+    },
     {
      "id":"basicskill_MONMOTHMA",
      "tier":6
@@ -3744,10 +3617,6 @@
     {
      "id":"leaderskill_MONMOTHMA",
      "tier":5
-    },
-    {
-     "id":"uniqueskill_MONMOTHMA01",
-     "tier":5
     }
    ],
    "relic":{
@@ -3760,15 +3629,7 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_RAZORCREST01",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_RAZORCREST",
-     "tier":1
-    },
-    {
-     "id":"basicskill_RAZORCREST",
+     "id":"uniqueskill_RAZORCREST02",
      "tier":6
     },
     {
@@ -3776,10 +3637,44 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_RAZORCREST02",
+     "id":"basicskill_RAZORCREST",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_RAZORCREST",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_RAZORCREST01",
+     "tier":5
     }
    ]
+  },
+  "hothhan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_HOTHHAN02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HOTHHAN01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_HOTHHAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_HOTHHAN01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
   },
   "plokoon":{
    "currentRarity":7,
@@ -3803,33 +3698,33 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":5
    },
    "stats":{}
   },
   "daka":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
-    {
-     "id":"specialskill_DAKA01",
-     "tier":6
-    },
     {
      "id":"basicskill_DAKA",
      "tier":6
     },
     {
-     "id":"uniqueskill_DAKA01",
+     "id":"specialskill_DAKA01",
      "tier":6
     },
     {
      "id":"leaderskill_DAKA",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_DAKA01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -3851,7 +3746,7 @@
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_GRANDMOFFTARKIN01",
@@ -3859,7 +3754,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3881,43 +3776,17 @@
     },
     {
      "id":"uniqueskill_LOGRAY01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":5
    },
    "stats":{}
   },
-  "mg100starfortresssf17":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"specialskill_MG100STARFORTRESSSF1701",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MG100STARFORTRESSSF1702",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_MG100STARFORTRESSSF1701",
-     "tier":6
-    },
-    {
-     "id":"basicskill_MG100STARFORTRESSSF17",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_MG100STARFORTRESSSF17",
-     "tier":1
-    }
-   ]
-  },
   "calkestis":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CALKESTIS",
@@ -3929,15 +3798,15 @@
     },
     {
      "id":"specialskill_CALKESTIS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CALKESTIS01",
-     "tier":4
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3946,7 +3815,15 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_KELLERANBEQ",
+     "id":"leaderskill_KELLERANBEQ",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_KELLERANBEQ01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_KELLERANBEQ02",
      "tier":6
     },
     {
@@ -3954,26 +3831,18 @@
      "tier":6
     },
     {
-     "id":"specialskill_KELLERANBEQ02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_KELLERANBEQ",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_KELLERANBEQ01",
+     "id":"basicskill_KELLERANBEQ",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":3
    },
    "stats":{}
   },
   "geonosiansoldier":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_GEONOSIANSOLDIER",
@@ -3989,13 +3858,13 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
   "caradune":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CARADUNE",
@@ -4006,42 +3875,42 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_CARADUNE01",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_CARADUNE02",
      "tier":5
+    },
+    {
+     "id":"uniqueskill_CARADUNE01",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
      "tier":6
     },
     {
+     "id":"uniqueskill_CAPTAINREX01",
+     "tier":4
+    },
+    {
      "id":"specialskill_CAPTAINREX01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINREX02",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_CAPTAINREX01",
-     "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -4050,11 +3919,7 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_SCYTHE",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_SCYTHE01",
+     "id":"specialskill_SCYTHE02",
      "tier":6
     },
     {
@@ -4062,8 +3927,12 @@
      "tier":6
     },
     {
-     "id":"specialskill_SCYTHE02",
+     "id":"uniqueskill_SCYTHE01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_SCYTHE",
+     "tier":1
     },
     {
      "id":"specialskill_SCYTHE01",
@@ -4072,38 +3941,38 @@
    ]
   },
   "vulturedroid":{
-   "currentRarity":7,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_VULTUREDROID01",
-     "tier":1
-    },
-    {
      "id":"basicskill_VULTUREDROID",
-     "tier":6
-    },
-    {
-     "id":"specialskill_VULTUREDROID01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_VULTUREDROID01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_VULTUREDROID01",
+     "tier":5
+    },
+    {
+     "id":"hardwareskill_VULTUREDROID01",
+     "tier":1
     }
    ]
   },
   "resistancetrooper":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_RESISTANCETROOPER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_RESISTANCETROOPER01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_RESISTANCETROOPER01",
@@ -4111,7 +3980,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -4120,7 +3989,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_HK4701",
+     "id":"basicskill_HK47",
      "tier":6
     },
     {
@@ -4128,11 +3997,11 @@
      "tier":6
     },
     {
-     "id":"basicskill_HK47",
+     "id":"leaderskill_HK47",
      "tier":6
     },
     {
-     "id":"leaderskill_HK47",
+     "id":"uniqueskill_HK4701",
      "tier":6
     },
     {
@@ -4151,23 +4020,23 @@
   },
   "tuskenraider":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_TUSKENRAIDER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_TUSKENRAIDER01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_TUSKENRAIDER01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -4176,12 +4045,16 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"leaderskill_DASHRENDAR",
+     "id":"basicskill_DASHRENDAR",
      "tier":6
     },
     {
      "id":"uniqueskill_DASHRENDAR",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"leaderskill_DASHRENDAR",
+     "tier":5
     },
     {
      "id":"specialskill_DASHRENDAR02",
@@ -4190,55 +4063,77 @@
     {
      "id":"specialskill_DASHRENDAR01",
      "tier":6
-    },
-    {
-     "id":"basicskill_DASHRENDAR",
-     "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
   "cassianandor":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_CASSIANANDOR",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CASSIANANDOR01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CASSIANANDOR02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_CASSIANANDOR01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_CASSIANANDOR01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_CASSIANANDOR02",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":1
    },
    "stats":{}
   },
   "marrok":{
    "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"basicskill_MARROK",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MARROK01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARROK02",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_INQUISITOR01_MARROK",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_MARROK01",
+     "tier":4
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "darthtraya":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
+    {
+     "id":"leaderskill_DARTHTRAYA",
+     "tier":6
+    },
     {
      "id":"basicskill_DARTHTRAYA",
      "tier":6
@@ -4252,10 +4147,6 @@
      "tier":6
     },
     {
-     "id":"leaderskill_DARTHTRAYA",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_DARTHTRAYA01",
      "tier":7
     }
@@ -4265,21 +4156,51 @@
    },
    "stats":{}
   },
-  "bazemalbus":{
+  "ezraexile":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"basicskill_EZRAEXILE",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_EZRAEXILE01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_EZRAEXILE02",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "bazemalbus":{
+   "currentRarity":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BAZEMALBUS",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BAZEMALBUS01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_BAZEMALBUS02",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_BAZEMALBUS01",
+     "tier":5
     },
     {
      "id":"uniqueskill_BAZEMALBUS01",
@@ -4291,65 +4212,64 @@
     }
    ],
    "relic":{
-    "currentTier":3
-   },
-   "stats":{}
-  },
-  "epixfinn":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_EPIXFINN",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_EPIXFINN01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_EPIXFINN02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_EPIXFINN01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "captaindrogan":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":6
+     "tier":4
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
+  "epixfinn":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_EPIXFINN",
+     "tier":5
+    },
+    {
+     "id":"specialskill_EPIXFINN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_EPIXFINN02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_EPIXFINN01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "zaalbar":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ZAALBAR",
@@ -4365,43 +4285,43 @@
     },
     {
      "id":"uniqueskill_ZAALBAR02",
-     "tier":7
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
   "clonewarschewbacca":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":6,
    "skill":[
     {
-     "id":"leaderskill_CLONEWARSCHEWBACCA",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CLONEWARSCHEWBACCA01",
+     "id":"basicskill_CLONEWARSCHEWBACCA",
      "tier":5
     },
     {
      "id":"specialskill_CLONEWARSCHEWBACCA02",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_CLONEWARSCHEWBACCA",
-     "tier":6
+     "id":"leaderskill_CLONEWARSCHEWBACCA",
+     "tier":5
+    },
+    {
+     "id":"specialskill_CLONEWARSCHEWBACCA01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":1
    },
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":4,
+   "currentTier":6,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4426,12 +4346,16 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":3,
-   "currentTier":7,
+   "currentRarity":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"basicskill_HUYANG",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_HUYANG01",
+     "tier":5
     },
     {
      "id":"specialskill_HUYANG01",
@@ -4439,10 +4363,6 @@
     },
     {
      "id":"specialskill_HUYANG02",
-     "tier":5
-    },
-    {
-     "id":"uniqueskill_HUYANG01",
      "tier":5
     }
    ],
@@ -4460,6 +4380,10 @@
      "tier":6
     },
     {
+     "id":"leaderskill_COMMANDERLUKESKYWALKER",
+     "tier":5
+    },
+    {
      "id":"specialskill_COMMANDERLUKESKYWALKER01",
      "tier":6
     },
@@ -4469,19 +4393,15 @@
     },
     {
      "id":"uniqueskill_COMMANDERLUKESKYWALKER01",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_COMMANDERLUKESKYWALKER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_COMMANDERLUKESKYWALKER02",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":6
    },
    "stats":{}
   },
@@ -4490,24 +4410,24 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_B2SUPERBATTLEDROID",
-     "tier":6
-    },
-    {
-     "id":"specialskill_B2SUPERBATTLEDROID01",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_B2SUPERBATTLEDROID01",
      "tier":6
     },
     {
      "id":"uniqueskill_B2SUPERBATTLEDROID02",
      "tier":6
+    },
+    {
+     "id":"basicskill_B2SUPERBATTLEDROID",
+     "tier":6
+    },
+    {
+     "id":"specialskill_B2SUPERBATTLEDROID01",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4524,7 +4444,7 @@
      "tier":6
     },
     {
-     "id":"specialskill_uwingrogueone01",
+     "id":"basicskill_uwingrogueone",
      "tier":6
     },
     {
@@ -4532,7 +4452,7 @@
      "tier":6
     },
     {
-     "id":"basicskill_uwingrogueone",
+     "id":"specialskill_uwingrogueone01",
      "tier":6
     },
     {
@@ -4546,6 +4466,10 @@
    "currentTier":13,
    "skill":[
     {
+     "id":"uniqueskill_DEPABILLABA01",
+     "tier":5
+    },
+    {
      "id":"basicskill_DEPABILLABA",
      "tier":6
     },
@@ -4556,10 +4480,6 @@
     {
      "id":"specialskill_DEPABILLABA02",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_DEPABILLABA01",
-     "tier":5
     }
    ],
    "relic":{
@@ -4585,7 +4505,7 @@
     },
     {
      "id":"uniqueskill_DARTHSIDIOUS01",
-     "tier":7
+     "tier":6
     }
    ],
    "relic":{
@@ -4594,15 +4514,15 @@
    "stats":{}
   },
   "outrider":{
-   "currentRarity":7,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
     {
-     "id":"specialskill_OUTRIDER02",
-     "tier":6
+     "id":"hardwareskill_OUTRIDER",
+     "tier":1
     },
     {
-     "id":"basicskill_OUTRIDER",
+     "id":"uniqueskill_OUTRIDER01",
      "tier":6
     },
     {
@@ -4610,12 +4530,12 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_OUTRIDER01",
+     "id":"basicskill_OUTRIDER",
      "tier":6
     },
     {
-     "id":"hardwareskill_OUTRIDER",
-     "tier":1
+     "id":"specialskill_OUTRIDER02",
+     "tier":6
     }
    ]
   },
@@ -4632,7 +4552,7 @@
      "tier":6
     },
     {
-     "id":"specialskill_OLDBENKENOBI02",
+     "id":"leaderskill_OLDBENKENOBI",
      "tier":6
     },
     {
@@ -4640,12 +4560,12 @@
      "tier":6
     },
     {
-     "id":"leaderskill_OLDBENKENOBI",
+     "id":"specialskill_OLDBENKENOBI02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4679,76 +4599,88 @@
    },
    "stats":{}
   },
-  "youngchewbacca":{
-   "currentRarity":7,
-   "currentTier":13,
+  "pazvizsla":{
+   "currentRarity":4,
+   "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_YOUNGCHEWBACCA02",
-     "tier":6
+     "id":"basicskill_PAZVIZSLA",
+     "tier":5
+    },
+    {
+     "id":"specialskill_PAZVIZSLA01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_PAZVIZSLA02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_PAZVIZSLA01",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
+  "youngchewbacca":{
+   "currentRarity":7,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"basicskill_YOUNGCHEWBACCA",
+     "tier":5
+    },
+    {
+     "id":"specialskill_YOUNGCHEWBACCA01",
+     "tier":5
     },
     {
      "id":"uniqueskill_YOUNGCHEWBACCA01",
      "tier":6
     },
     {
-     "id":"specialskill_YOUNGCHEWBACCA01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_YOUNGCHEWBACCA",
-     "tier":6
+     "id":"uniqueskill_YOUNGCHEWBACCA02",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
-  "pazvizsla":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
-   "relic":{
-    "currentTier":1
-   }
-  },
   "younglando":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":2,
+   "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_YOUNGLANDO_01",
-     "tier":6
-    },
-    {
      "id":"basicskill_YOUNGLANDO",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_YOUNGLANDO_01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_YOUNGLANDO_02",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_YOUNGLANDO_01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "hansolo":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_HANSOLO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HANSOLO02",
+     "id":"basicskill_HANSOLO",
      "tier":6
     },
     {
@@ -4756,48 +4688,51 @@
      "tier":6
     },
     {
-     "id":"basicskill_HANSOLO",
+     "id":"specialskill_HANSOLO02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_HANSOLO01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":8
    },
    "stats":{}
   },
   "armorer":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":5,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_ARMORER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_ARMORER01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_ARMORER02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_ARMORER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_ARMORER01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "deathtrooperperidea":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":5,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_DEATHTROOPERPERIDEA",
@@ -4826,10 +4761,6 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_SMUGGLERHAN",
-     "tier":6
-    },
-    {
      "id":"specialskill_SMUGGLERHAN01",
      "tier":6
     },
@@ -4839,6 +4770,10 @@
     },
     {
      "id":"uniqueskill_SMUGGLERHAN01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_SMUGGLERHAN",
      "tier":6
     }
    ],
@@ -4849,7 +4784,7 @@
   },
   "badbatchwrecker":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BADBATCHWRECKER",
@@ -4860,48 +4795,47 @@
      "tier":6
     },
     {
-     "id":"specialskill_BADBATCHWRECKER02",
-     "tier":6
+     "id":"uniqueskill_BADBATCHWRECKER01",
+     "tier":5
     },
     {
-     "id":"uniqueskill_BADBATCHWRECKER01",
+     "id":"specialskill_BADBATCHWRECKER02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "zoriibliss_v2":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":3,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_ZORIIBLISS_V2",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_ZORIIBLISS_V201",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_ZORIIBLISS_V202",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_ZORIIBLISS_V201",
-     "tier":6
+     "tier":4
     },
     {
      "id":"uniqueskill_ZORIIBLISS_V202",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "themandalorian":{
    "currentRarity":7,
@@ -4917,37 +4851,15 @@
     },
     {
      "id":"leaderskill_THEMANDALORIAN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_THEMANDALORIAN01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"contractskill_THEMANDALORIAN",
      "tier":1
-    }
-   ],
-   "relic":{
-    "currentTier":10
-   },
-   "stats":{}
-  },
-  "ugnaught":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_UGNAUGHT",
-     "tier":6
-    },
-    {
-     "id":"specialskill_UGNAUGHT01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_UGNAUGHT01",
-     "tier":5
     }
    ],
    "relic":{
@@ -4981,13 +4893,52 @@
    },
    "stats":{}
   },
-  "triplezero":{
-   "currentRarity":3,
+  "ugnaught":{
+   "currentRarity":7,
    "currentTier":1,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_UGNAUGHT",
+     "tier":5
+    },
+    {
+     "id":"specialskill_UGNAUGHT01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_UGNAUGHT01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
    }
+  },
+  "triplezero":{
+   "currentRarity":2,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -5016,6 +4967,14 @@
    "currentTier":13,
    "skill":[
     {
+     "id":"uniqueskill_WAMPA01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_WAMPA02",
+     "tier":7
+    },
+    {
      "id":"basicskill_WAMPA",
      "tier":6
     },
@@ -5026,14 +4985,6 @@
     {
      "id":"specialskill_WAMPA02",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_WAMPA01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_WAMPA02",
-     "tier":7
     }
    ],
    "relic":{
@@ -5043,113 +4994,87 @@
   },
   "smugglerchewbacca":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
-     "id":"basicskill_SMUGGLERCHEWBACCA",
-     "tier":6
+     "id":"uniqueskill_SMUGGLERCHEWBACCA01",
+     "tier":5
     },
     {
      "id":"specialskill_SMUGGLERCHEWBACCA01",
      "tier":6
     },
     {
-     "id":"uniqueskill_SMUGGLERCHEWBACCA02",
+     "id":"basicskill_SMUGGLERCHEWBACCA",
      "tier":6
     },
     {
-     "id":"uniqueskill_SMUGGLERCHEWBACCA01",
+     "id":"uniqueskill_SMUGGLERCHEWBACCA02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
   "bobafettscion":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":6,
    "skill":[
     {
      "id":"basicskill_BOBAFETTSCION",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BOBAFETTSCION01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BOBAFETTSCION02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_BOBAFETTSCION",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_BOBAFETTSCION01",
-     "tier":6
+     "tier":4
+    },
+    {
+     "id":"specialskill_BOBAFETTSCION01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BOBAFETTSCION02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_BOBAFETTSCION",
+     "tier":5
     },
     {
      "id":"contractskill_BOBAFETTSCION01",
-     "tier":1
+     "tier":0
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
   "rogueoneship":{
-   "currentRarity":4,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_ROGUEONESHIP",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_ROGUEONESHIP01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_ROGUEONESHIP",
-     "tier":6
+     "id":"specialskill_ROGUEONESHIP01",
+     "tier":4
     },
     {
      "id":"specialskill_ROGUEONESHIP02",
-     "tier":6
+     "tier":4
     },
     {
-     "id":"specialskill_ROGUEONESHIP01",
-     "tier":6
-    }
-   ]
-  },
-  "capitalexecutor":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"uniqueskill_CAPITALEXECUTOR01",
-     "tier":6
+     "id":"basicskill_ROGUEONESHIP",
+     "tier":5
     },
     {
-     "id":"specialskill_CAPITALEXECUTOR03",
-     "tier":6
+     "id":"uniqueskill_ROGUEONESHIP01",
+     "tier":4
     },
     {
-     "id":"specialskill_CAPITALEXECUTOR02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALEXECUTOR01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_CAPITALEXECUTOR",
-     "tier":6
+     "id":"hardwareskill_ROGUEONESHIP",
+     "tier":1
     }
    ]
   },
@@ -5158,19 +5083,19 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_OPERATIVE02",
+     "id":"basicskill_OPERATIVE",
      "tier":6
     },
     {
-     "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "id":"uniqueskill_OPERATIVE02",
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
      "tier":6
     },
     {
-     "id":"basicskill_OPERATIVE",
+     "id":"uniqueskill_OPERATIVE01",
      "tier":6
     }
    ],
@@ -5184,58 +5109,58 @@
    "currentTier":13,
    "skill":[
     {
+     "id":"basicskill_GRANDINQUISITOR",
+     "tier":6
+    },
+    {
      "id":"uniqueskill_INQUISITOR01_GRANDINQUISITOR",
      "tier":1
-    },
-    {
-     "id":"leaderskill_GRANDINQUISITOR",
-     "tier":5
-    },
-    {
-     "id":"specialskill_GRANDINQUISITOR02",
-     "tier":6
     },
     {
      "id":"specialskill_GRANDINQUISITOR01",
      "tier":6
     },
     {
-     "id":"basicskill_GRANDINQUISITOR",
-     "tier":6
+     "id":"specialskill_GRANDINQUISITOR02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_GRANDINQUISITOR",
+     "tier":5
     },
     {
      "id":"uniqueskill_GRANDINQUISITOR01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
   "darktrooper":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_DARKTROOPER",
-     "tier":6
-    },
-    {
-     "id":"specialskill_DARKTROOPER01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_DARKTROOPER02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_DARKTROOPER01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARKTROOPER01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARKTROOPER02",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5243,6 +5168,18 @@
    "currentRarity":7,
    "currentTier":13,
    "skill":[
+    {
+     "id":"basicskill_DARTHREVAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHREVAN01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHREVAN02",
+     "tier":6
+    },
     {
      "id":"leaderskill_DARTHREVAN",
      "tier":6
@@ -5253,18 +5190,6 @@
     },
     {
      "id":"uniqueskill_DARTHREVAN02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_DARTHREVAN02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_DARTHREVAN01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_DARTHREVAN",
      "tier":6
     }
    ],
@@ -5291,105 +5216,11 @@
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY02",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":10
-   },
-   "stats":{}
-  },
-  "hondo":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_HONDO",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_HONDO02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_HONDO01",
-     "tier":4
-    },
-    {
-     "id":"specialskill_HONDO02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HONDO01",
      "tier":5
-    }
-   ],
-   "relic":{
-    "currentTier":3
-   },
-   "stats":{}
-  },
-  "bwingrebel":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"specialskill_BWINGREBEL02",
-     "tier":6
-    },
-    {
-     "id":"basicskill_BWINGREBEL",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BWINGREBEL01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_BWINGREBEL01",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_BWINGREBEL",
-     "tier":1
-    }
-   ]
-  },
-  "jabbathehutt":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_JABBATHEHUTT",
-     "tier":1
-    },
-    {
-     "id":"specialskill_JABBATHEHUTT01",
-     "tier":1
-    },
-    {
-     "id":"specialskill_JABBATHEHUTT02",
-     "tier":1
-    },
-    {
-     "id":"leaderskill_JABBATHEHUTT",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_JABBATHEHUTT01",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":1
-    },
-    {
-     "id":"contractskill_JABBATHEHUTT01",
-     "tier":1
     }
    ],
    "relic":{
@@ -5397,25 +5228,81 @@
    },
    "stats":{}
   },
-  "humanthug":{
-   "currentRarity":7,
-   "currentTier":13,
+  "hondo":{
+   "currentRarity":5,
+   "currentTier":12,
    "skill":[
     {
-     "id":"uniqueskill_HUMANTHUG01",
+     "id":"basicskill_HONDO",
      "tier":6
     },
     {
-     "id":"specialskill_HUMANTHUG01",
+     "id":"uniqueskill_HONDO01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_HONDO02",
      "tier":6
     },
     {
-     "id":"basicskill_HUMANTHUG",
+     "id":"specialskill_HONDO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_HONDO02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "bwingrebel":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"hardwareskill_BWINGREBEL",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_BWINGREBEL01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_BWINGREBEL01",
+     "tier":4
+    },
+    {
+     "id":"basicskill_BWINGREBEL",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BWINGREBEL02",
+     "tier":4
+    }
+   ]
+  },
+  "humanthug":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_HUMANTHUG",
+     "tier":5
+    },
+    {
+     "id":"specialskill_HUMANTHUG01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_HUMANTHUG01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5425,15 +5312,11 @@
    "skill":[
     {
      "id":"basicskill_UWINGSCARIF",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_UWINGSCARIF02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_UWINGSCARIF01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"hardwareskill_UWINGSCARIF01",
@@ -5441,13 +5324,17 @@
     },
     {
      "id":"specialskill_UWINGSCARIF01",
-     "tier":6
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_UWINGSCARIF01",
+     "tier":4
     }
    ]
   },
   "captainsilvo":{
-   "currentRarity":5,
-   "currentTier":7,
+   "currentRarity":4,
+   "currentTier":2,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
@@ -5477,97 +5364,88 @@
   },
   "themandalorianbeskararmor":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
-     "id":"leaderskill_THEMANDALORIANBESKARARMOR",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_THEMANDALORIANBESKARARMOR01",
-     "tier":6
-    },
-    {
      "id":"basicskill_THEMANDALORIANBESKARARMOR",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_THEMANDALORIANBESKARARMOR01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_THEMANDALORIANBESKARARMOR02",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"leaderskill_THEMANDALORIANBESKARARMOR",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_THEMANDALORIANBESKARARMOR01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "garsaxon":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":3,
    "skill":[
     {
      "id":"basicskill_GARSAXON",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_GARSAXON01",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_GARSAXON",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_GARSAXON01",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"leaderskill_GARSAXON",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "coruscantunderworldpolice":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":5,
    "skill":[
     {
-     "id":"specialskill_CORUSCANTUNDERWORLDPOLICE01",
-     "tier":6
+     "id":"basicskill_CORUSCANTUNDERWORLDPOLICE",
+     "tier":5
     },
     {
-     "id":"basicskill_CORUSCANTUNDERWORLDPOLICE",
-     "tier":6
+     "id":"specialskill_CORUSCANTUNDERWORLDPOLICE01",
+     "tier":5
     },
     {
      "id":"uniqueskill_CORUSCANTUNDERWORLDPOLICE01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":1
    },
    "stats":{}
   },
   "ithano":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":4,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_ITHANO",
      "tier":6
-    },
-    {
-     "id":"specialskill_ITHANO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ITHANO02",
-     "tier":5
     },
     {
      "id":"leaderskill_ITHANO",
@@ -5576,23 +5454,27 @@
     {
      "id":"uniqueskill_ITHANO01",
      "tier":4
+    },
+    {
+     "id":"specialskill_ITHANO01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ITHANO02",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":1
    },
    "stats":{}
   },
   "enfysnest":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":7,
    "skill":[
     {
-     "id":"uniqueskill_ENFYSNEST01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ENFYSNEST02",
+     "id":"basicskill_ENFYSNEST",
      "tier":6
     },
     {
@@ -5600,27 +5482,23 @@
      "tier":6
     },
     {
-     "id":"basicskill_ENFYSNEST",
+     "id":"specialskill_ENFYSNEST02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_ENFYSNEST01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "mothertalzin":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
-    {
-     "id":"leaderskill_MOTHERTALZIN",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MOTHERTALZIN02",
-     "tier":6
-    },
     {
      "id":"specialskill_MOTHERTALZIN01",
      "tier":6
@@ -5630,22 +5508,48 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_MOTHERTALZIN01",
+     "id":"specialskill_MOTHERTALZIN02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_MOTHERTALZIN01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_MOTHERTALZIN",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":5,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"uniqueskill_MORGANELSBETH01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_MORGANELSBETH",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MORGANELSBETH01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MORGANELSBETH02",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "biggsdarklighter":{
    "currentRarity":7,
@@ -5705,7 +5609,7 @@
     },
     {
      "id":"specialskill_C3POLEGENDARY01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_C3POLEGENDARY01",
@@ -5713,7 +5617,7 @@
     },
     {
      "id":"uniqueskill_C3POLEGENDARY02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_C3POLEGENDARY03",
@@ -5729,7 +5633,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5737,18 +5641,6 @@
    "currentRarity":7,
    "currentTier":13,
    "skill":[
-    {
-     "id":"basicskill_JEDIKNIGHTREVAN",
-     "tier":6
-    },
-    {
-     "id":"specialskill_JEDIKNIGHTREVAN01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_JEDIKNIGHTREVAN02",
-     "tier":6
-    },
     {
      "id":"leaderskill_JEDIKNIGHTREVAN",
      "tier":6
@@ -5758,12 +5650,24 @@
      "tier":6
     },
     {
+     "id":"specialskill_JEDIKNIGHTREVAN02",
+     "tier":6
+    },
+    {
+     "id":"basicskill_JEDIKNIGHTREVAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JEDIKNIGHTREVAN01",
+     "tier":6
+    },
+    {
      "id":"uniqueskill_JEDIKNIGHTREVAN02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5793,17 +5697,35 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":5
    },
    "stats":{}
   },
   "nightsisterinitiate":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"basicskill_NIGHTSISTERINITIATE",
+     "tier":5
+    },
+    {
+     "id":"specialskill_NIGHTSISTERINITIATE01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_NIGHTSISTERINITIATE02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_NIGHTSISTERINITIATE01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "ct7567":{
    "currentRarity":7,
@@ -5827,43 +5749,17 @@
     },
     {
      "id":"uniqueskill_REX01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":3
    },
    "stats":{}
   },
-  "emperorsshuttle":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"specialskill_emperorsshuttle01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_emperorsshuttle02",
-     "tier":6
-    },
-    {
-     "id":"basicskill_emperorsshuttle",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_emperorsshuttle01",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_emperorsshuttle01",
-     "tier":1
-    }
-   ]
-  },
   "moffgideons3":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_MOFFGIDEONS3",
@@ -5871,25 +5767,50 @@
     },
     {
      "id":"uniqueskill_MOFFGIDEONS301",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_MOFFGIDEONS3",
-     "tier":7
-    },
-    {
-     "id":"specialskill_MOFFGIDEONS302",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_MOFFGIDEONS301",
      "tier":5
+    },
+    {
+     "id":"specialskill_MOFFGIDEONS302",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_MOFFGIDEONS3",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
+  },
+  "emperorsshuttle":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"hardwareskill_emperorsshuttle01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_emperorsshuttle01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_emperorsshuttle",
+     "tier":6
+    },
+    {
+     "id":"specialskill_emperorsshuttle02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_emperorsshuttle01",
+     "tier":6
+    }
+   ]
   },
   "jedimastermacewindu":{
    "currentRarity":7,
@@ -5909,7 +5830,7 @@
     },
     {
      "id":"leaderskill_JEDIMASTERMACEWINDU",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_JEDIMASTERMACEWINDU01",
@@ -5917,43 +5838,76 @@
     }
    ],
    "relic":{
-    "currentTier":3
-   },
-   "stats":{}
-  },
-  "moffgideons1":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_MOFFGIDEONS1",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MOFFGIDEONS101",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MOFFGIDEONS102",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_MOFFGIDEONS1",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_MOFFGIDEONS101",
-     "tier":6
-    }
-   ],
-   "relic":{
     "currentTier":7
    },
    "stats":{}
   },
+  "moffgideons1":{
+   "currentRarity":5,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"basicskill_MOFFGIDEONS1",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MOFFGIDEONS101",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MOFFGIDEONS101",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MOFFGIDEONS102",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_MOFFGIDEONS1",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "zamwesell":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_ZAMWESELL",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ZAMWESELL01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ZAMWESELL02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_ZAMWESELL",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_ZAMWESELL01",
+     "tier":5
+    },
+    {
+     "id":"contractskill_ZAMWESELL01",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "jawaengineer":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_JAWAENGINEER",
@@ -5973,51 +5927,39 @@
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "zamwesell":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_ZAMWESELL",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ZAMWESELL01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ZAMWESELL02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_ZAMWESELL",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_ZAMWESELL01",
-     "tier":5
-    },
-    {
-     "id":"contractskill_ZAMWESELL01",
-     "tier":1
-    }
-   ],
-   "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
   "taronmalicos":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_TARONMALICOS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_TARONMALICOS01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_TARONMALICOS02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TARONMALICOS01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TARONMALICOS02",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":5
+   },
+   "stats":{}
   },
   "jediknightcal":{
    "currentRarity":7,
@@ -6041,7 +5983,7 @@
     },
     {
      "id":"leaderskill_JEDIKNIGHTCAL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_JEDIKNIGHTCAL01",
@@ -6049,13 +5991,13 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
   "boushh":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":5,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_BOUSHH",
@@ -6071,7 +6013,7 @@
     },
     {
      "id":"uniqueskill_BOUSHH01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_BOUSHH02",
@@ -6083,32 +6025,31 @@
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "sanastarros":{
-   "currentRarity":7,
-   "currentTier":12,
+   "currentRarity":4,
+   "currentTier":3,
    "skill":[
-    {
-     "id":"leaderskill_SANASTARROS",
-     "tier":4
-    },
-    {
-     "id":"uniqueskill_SANASTARROS01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_SANASTARROS02",
-     "tier":6
-    },
     {
      "id":"basicskill_SANASTARROS",
      "tier":6
     },
     {
      "id":"specialskill_SANASTARROS01",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_SANASTARROS",
+     "tier":4
+    },
+    {
+     "id":"specialskill_SANASTARROS02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_SANASTARROS01",
      "tier":6
     }
    ],
@@ -6118,12 +6059,12 @@
    "stats":{}
   },
   "tuskenhuntress":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":3,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_TUSKENHUNTRESS",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_TUSKENHUNTRESS01",
@@ -6139,7 +6080,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6178,7 +6119,11 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"leaderskill_JEDIKNIGHTLUKE",
+     "id":"basicskill_JEDIKNIGHTLUKE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JEDIKNIGHTLUKE01",
      "tier":6
     },
     {
@@ -6186,11 +6131,7 @@
      "tier":6
     },
     {
-     "id":"basicskill_JEDIKNIGHTLUKE",
-     "tier":6
-    },
-    {
-     "id":"specialskill_JEDIKNIGHTLUKE01",
+     "id":"leaderskill_JEDIKNIGHTLUKE",
      "tier":6
     },
     {
@@ -6216,22 +6157,22 @@
      "tier":6
     },
     {
+     "id":"specialskill_CAPITALMONCALAMARICRUISER01",
+     "tier":6
+    },
+    {
      "id":"specialskill_CAPITALMONCALAMARICRUISER02",
      "tier":6
     },
     {
      "id":"specialskill_CAPITALMONCALAMARICRUISER03",
      "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALMONCALAMARICRUISER01",
-     "tier":6
     }
    ]
   },
   "sunfac":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SUNFAC",
@@ -6251,7 +6192,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6260,7 +6201,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_STARKILLER02",
+     "id":"basicskill_STARKILLER",
      "tier":6
     },
     {
@@ -6268,52 +6209,51 @@
      "tier":6
     },
     {
-     "id":"specialskill_STARKILLER02",
-     "tier":6
-    },
-    {
      "id":"specialskill_STARKILLER01",
      "tier":6
     },
     {
-     "id":"basicskill_STARKILLER",
+     "id":"specialskill_STARKILLER02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_STARKILLER02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":10
    },
    "stats":{}
   },
   "lobot":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_LOBOT02",
-     "tier":6
+     "id":"basicskill_LOBOT",
+     "tier":5
     },
     {
-     "id":"uniqueskill_LOBOT01",
-     "tier":6
+     "id":"specialskill_LOBOT01",
+     "tier":5
     },
     {
      "id":"leaderskill_LOBOT",
      "tier":5
     },
     {
-     "id":"specialskill_LOBOT01",
-     "tier":6
+     "id":"uniqueskill_LOBOT01",
+     "tier":5
     },
     {
-     "id":"basicskill_LOBOT",
+     "id":"uniqueskill_LOBOT02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "furyclassinterceptor":{
    "currentRarity":7,
@@ -6343,7 +6283,7 @@
   },
   "badbatchecho":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BADBATCHECHO",
@@ -6359,25 +6299,25 @@
     },
     {
      "id":"uniqueskill_BADBATCHECHO01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "embo":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_EMBO",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_EMBO01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_EMBO",
@@ -6385,17 +6325,16 @@
     },
     {
      "id":"uniqueskill_EMBO01",
-     "tier":7
+     "tier":5
     },
     {
      "id":"contractskill_EMBO01",
-     "tier":1
+     "tier":0
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "tiesilencer":{
    "currentRarity":7,
@@ -6410,17 +6349,17 @@
      "tier":6
     },
     {
-     "id":"hardwareskill_TIESILENCER01",
-     "tier":1
-    },
-    {
      "id":"uniqueskill_TIESILENCER01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_TIESILENCER01",
+     "tier":1
     }
    ]
   },
   "ywingclonewars":{
-   "currentRarity":7,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -6443,26 +6382,44 @@
   },
   "imagundi":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"basicskill_IMAGUNDI",
+     "tier":6
+    },
+    {
+     "id":"specialskill_IMAGUNDI01",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_IMAGUNDI",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_IMAGUNDI01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "xwingred3":{
    "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_XWINGRED301",
-     "tier":6
-    },
-    {
      "id":"basicskill_XWINGRED3",
      "tier":6
     },
     {
      "id":"specialskill_XWINGRED301",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_XWINGRED301",
      "tier":6
     },
     {
@@ -6473,7 +6430,7 @@
   },
   "padawanobiwan":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_PADAWANOBIWAN",
@@ -6489,49 +6446,67 @@
     },
     {
      "id":"uniqueskill_PADAWANOBIWAN01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "fennecshand":{
+   "currentRarity":7,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"contractskill_FENNECSHAND",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_FENNECSHAND01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_FENNECSHAND01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_FENNECSHAND01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_FENNECSHAND",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
   "eethkoth":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
-   "relic":{
-    "currentTier":1
-   }
-  },
-  "fennecshand":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
-     "id":"basicskill_FENNECSHAND",
+     "id":"leaderskill_EETHKOTH",
+     "tier":5
+    },
+    {
+     "id":"specialskill_EETHKOTH01",
      "tier":6
     },
     {
-     "id":"specialskill_FENNECSHAND01",
+     "id":"basicskill_EETHKOTH",
      "tier":6
     },
     {
-     "id":"leaderskill_FENNECSHAND01",
+     "id":"uniqueskill_EETHKOTH01",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_FENNECSHAND01",
-     "tier":6
-    },
-    {
-     "id":"contractskill_FENNECSHAND",
-     "tier":1
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6540,11 +6515,11 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_CAPITALSTARDESTROYER01",
+     "id":"basicskill_CAPITALSTARDESTROYER",
      "tier":6
     },
     {
-     "id":"basicskill_CAPITALSTARDESTROYER",
+     "id":"specialskill_CAPITALSTARDESTROYER01",
      "tier":6
     },
     {
@@ -6556,14 +6531,14 @@
      "tier":6
     },
     {
-     "id":"specialskill_CAPITALSTARDESTROYER01",
+     "id":"uniqueskill_CAPITALSTARDESTROYER01",
      "tier":6
     }
    ]
   },
   "t3_m4":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_t3_m4",
@@ -6579,15 +6554,15 @@
     },
     {
      "id":"uniqueskill_t3_m4_01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_t3_m4_02",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6600,11 +6575,11 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_XWINGRED201",
+     "id":"specialskill_XWINGRED201",
      "tier":6
     },
     {
-     "id":"specialskill_XWINGRED201",
+     "id":"uniqueskill_XWINGRED201",
      "tier":6
     },
     {
@@ -6614,32 +6589,32 @@
    ]
   },
   "omegas3":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_OMEGAS3",
-     "tier":6
-    },
-    {
-     "id":"specialskill_OMEGAS301",
-     "tier":6
-    },
-    {
-     "id":"specialskill_OMEGAS302",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_OMEGAS3",
-     "tier":5
+     "tier":4
     },
     {
      "id":"uniqueskill_OMEGAS301",
      "tier":6
+    },
+    {
+     "id":"specialskill_OMEGAS301",
+     "tier":5
+    },
+    {
+     "id":"specialskill_OMEGAS302",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6656,16 +6631,16 @@
      "tier":6
     },
     {
+     "id":"uniqueskill_NINTHSISTER01",
+     "tier":6
+    },
+    {
      "id":"specialskill_NINTHSISTER02",
      "tier":6
     },
     {
      "id":"leaderskill_NINTHSISTER",
-     "tier":5
-    },
-    {
-     "id":"uniqueskill_NINTHSISTER01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"uniqueskill_INQUISITOR01_TANK",
@@ -6673,7 +6648,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6686,11 +6661,11 @@
      "tier":6
     },
     {
-     "id":"specialskill_JEDISTARFIGHTERAHSOKATANO01",
+     "id":"basicskill_JEDISTARFIGHTERAHSOKATANO",
      "tier":6
     },
     {
-     "id":"basicskill_JEDISTARFIGHTERAHSOKATANO",
+     "id":"specialskill_JEDISTARFIGHTERAHSOKATANO01",
      "tier":6
     },
     {
@@ -6704,16 +6679,16 @@
    "currentTier":8,
    "skill":[
     {
-     "id":"uniqueskill_HOTHREBELSOLDIER01",
-     "tier":6
+     "id":"basicskill_HOTHREBELSOLDIER",
+     "tier":5
     },
     {
      "id":"specialskill_HOTHREBELSOLDIER01",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_HOTHREBELSOLDIER",
-     "tier":6
+     "id":"uniqueskill_HOTHREBELSOLDIER01",
+     "tier":5
     }
    ],
    "relic":{
@@ -6726,10 +6701,6 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_ASAJVENTRESS",
-     "tier":6
-    },
-    {
      "id":"specialskill_ASAJVENTRESS01",
      "tier":6
     },
@@ -6739,15 +6710,19 @@
     },
     {
      "id":"leaderskill_ASAJVENTRESS",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_ASAJVENTRESS01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_ASAJVENTRESS",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6755,10 +6730,6 @@
    "currentRarity":7,
    "currentTier":13,
    "skill":[
-    {
-     "id":"basicskill_GRIEVOUS",
-     "tier":6
-    },
     {
      "id":"specialskill_GRIEVOUS01",
      "tier":6
@@ -6768,12 +6739,16 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_GRIEVOUS01",
+     "id":"basicskill_GRIEVOUS",
      "tier":6
     },
     {
      "id":"leaderskill_GRIEVOUS",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_GRIEVOUS01",
+     "tier":5
     }
    ],
    "relic":{
@@ -6783,26 +6758,26 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":8,
    "skill":[
     {
-     "id":"basicskill_CHIRRUTIMWE",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CHIRRUTIMWE01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CHIRRUTIMWE02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_CHIRRUTIMWE01",
+     "id":"uniqueskill_CHIRRUTIMWE02",
      "tier":5
     },
     {
-     "id":"uniqueskill_CHIRRUTIMWE02",
+     "id":"specialskill_CHIRRUTIMWE01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_CHIRRUTIMWE",
+     "tier":5
+    },
+    {
+     "id":"specialskill_CHIRRUTIMWE02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_CHIRRUTIMWE01",
      "tier":5
     }
    ],
@@ -6812,42 +6787,38 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
-   "relic":{
-    "currentTier":1
-   }
-  },
-  "capitalnegotiator":{
-   "currentRarity":7,
-   "currentTier":1,
+   "currentRarity":4,
+   "currentTier":8,
    "skill":[
     {
-     "id":"uniqueskill_CAPITALNEGOTIATOR01",
+     "id":"basicskill_SHINHATI",
      "tier":6
     },
     {
-     "id":"basicskill_CAPITALNEGOTIATOR",
+     "id":"uniqueskill_SHINHATI02",
+     "tier":1
+    },
+    {
+     "id":"specialskill_SHINHATI01",
      "tier":6
     },
     {
-     "id":"specialskill_CAPITALNEGOTIATOR01",
+     "id":"specialskill_SHINHATI02",
      "tier":6
     },
     {
-     "id":"specialskill_CAPITALNEGOTIATOR02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALNEGOTIATOR03",
-     "tier":6
+     "id":"uniqueskill_SHINHATI01",
+     "tier":4
     }
-   ]
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "juhani":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_juhani",
@@ -6863,24 +6834,46 @@
     },
     {
      "id":"uniqueskill_juhani01",
-     "tier":7
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
+  },
+  "capitalnegotiator":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_CAPITALNEGOTIATOR01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CAPITALNEGOTIATOR01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CAPITALNEGOTIATOR03",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CAPITALNEGOTIATOR02",
+     "tier":6
+    },
+    {
+     "id":"basicskill_CAPITALNEGOTIATOR",
+     "tier":6
+    }
+   ]
   },
   "kananjarruss3":{
    "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_KANANJARRUSS301",
-     "tier":6
-    },
-    {
-     "id":"specialskill_KANANJARRUSS302",
+     "id":"basicskill_KANANJARRUSS3",
      "tier":6
     },
     {
@@ -6888,12 +6881,16 @@
      "tier":6
     },
     {
-     "id":"basicskill_KANANJARRUSS3",
+     "id":"uniqueskill_KANANJARRUSS301",
      "tier":6
+    },
+    {
+     "id":"specialskill_KANANJARRUSS302",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":5
    },
    "stats":{}
   },
@@ -6903,11 +6900,11 @@
    "skill":[
     {
      "id":"basicskill_JOCASTANU",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_JOCASTANU01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_JOCASTANU02",
@@ -6915,69 +6912,68 @@
     },
     {
      "id":"uniqueskill_JOCASTANU01",
-     "tier":5
-    }
-   ],
-   "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
-  "rosetico":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_ROSETICO",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_ROSETICO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ROSETICO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_ROSETICO02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
   "princesskneesaa":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":5,
+   "currentTier":8,
    "skill":[
     {
-     "id":"basicskill_PRINCESSKNEESAA",
-     "tier":6
-    },
-    {
-     "id":"specialskill_PRINCESSKNEESAA01",
-     "tier":6
+     "id":"uniqueskill_PRINCESSKNEESAA01",
+     "tier":5
     },
     {
      "id":"specialskill_PRINCESSKNEESAA02",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"uniqueskill_PRINCESSKNEESAA01",
+     "id":"specialskill_PRINCESSKNEESAA01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_PRINCESSKNEESAA",
      "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
+  "rosetico":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_ROSETICO",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ROSETICO01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_ROSETICO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ROSETICO02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "jediknightconsular":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"specialskill_JEDIKNIGHTCONSULAR01",
@@ -6993,7 +6989,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7001,6 +6997,10 @@
    "currentRarity":7,
    "currentTier":13,
    "skill":[
+    {
+     "id":"basicskill_AHSOKATANO",
+     "tier":6
+    },
     {
      "id":"specialskill_AHSOKATANO01",
      "tier":6
@@ -7012,14 +7012,10 @@
     {
      "id":"uniqueskill_AHSOKATANO01",
      "tier":6
-    },
-    {
-     "id":"basicskill_AHSOKATANO",
-     "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":5
    },
    "stats":{}
   },
@@ -7041,11 +7037,11 @@
     },
     {
      "id":"leaderskill_DIRECTORKRENNIC",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_DIRECTORKRENNIC01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
@@ -7058,16 +7054,16 @@
    "currentTier":1,
    "skill":[
     {
+     "id":"uniqueskill_TIEFIGHTERIMPERIAL02",
+     "tier":4
+    },
+    {
      "id":"basicskill_TIEFIGHTERIMPERIAL",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_TIEFIGHTERIMPERIAL01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_TIEFIGHTERIMPERIAL02",
-     "tier":6
+     "tier":4
     },
     {
      "id":"hardwareskill_TIEFIGHTERIMPERIAL01",
@@ -7111,16 +7107,8 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":8,
    "skill":[
-    {
-     "id":"uniqueskill_STORMTROOPERHAN01",
-     "tier":5
-    },
-    {
-     "id":"specialskill_STORMTROOPERHAN01",
-     "tier":6
-    },
     {
      "id":"basicskill_STORMTROOPERHAN",
      "tier":6
@@ -7128,36 +7116,18 @@
     {
      "id":"leaderskill_STORMTROOPERHAN",
      "tier":5
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERHAN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_STORMTROOPERHAN01",
+     "tier":5
     }
    ],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
-  },
-  "herasyndullas3":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"leaderskill_HERASYNDULLAS3",
-     "tier":7
-    },
-    {
-     "id":"specialskill_HERASYNDULLAS302",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HERASYNDULLAS301",
-     "tier":6
-    },
-    {
-     "id":"basicskill_HERASYNDULLAS3",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
    },
    "stats":{}
   },
@@ -7191,7 +7161,33 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
+   },
+   "stats":{}
+  },
+  "herasyndullas3":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_HERASYNDULLAS3",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_HERASYNDULLAS3",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HERASYNDULLAS302",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HERASYNDULLAS301",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":5
    },
    "stats":{}
   },
@@ -7204,28 +7200,28 @@
      "tier":6
     },
     {
-     "id":"specialskill_BOSSK01",
-     "tier":6
-    },
-    {
      "id":"specialskill_BOSSK02",
      "tier":6
     },
     {
-     "id":"leaderskill_BOSSK",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_BOSSK01",
+     "id":"specialskill_BOSSK01",
      "tier":6
     },
     {
      "id":"contractskill_BOSSK01",
      "tier":1
+    },
+    {
+     "id":"leaderskill_BOSSK",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BOSSK01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7269,7 +7265,7 @@
     },
     {
      "id":"leaderskill_VADER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_VADER01",
@@ -7328,15 +7324,15 @@
      "tier":6
     },
     {
-     "id":"specialskill_JARJARBINKS02",
-     "tier":6
-    },
-    {
      "id":"uniqueskill_JARJARBINKS01",
      "tier":6
     },
     {
      "id":"uniqueskill_JARJARBINKS02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JARJARBINKS02",
      "tier":6
     }
    ],
@@ -7358,26 +7354,26 @@
      "tier":6
     },
     {
-     "id":"specialskill_COUNTDOOKU02",
-     "tier":6
-    },
-    {
      "id":"leaderskill_COUNTDOOKU",
      "tier":6
     },
     {
      "id":"uniqueskill_COUNTDOOKU01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_COUNTDOOKU02",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":8
    },
    "stats":{}
   },
   "missionvao":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MISSIONVAO",
@@ -7397,7 +7393,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7414,12 +7410,12 @@
      "tier":6
     },
     {
-     "id":"hardwareskill_ARC170CLONESERGEANT01",
-     "tier":1
-    },
-    {
      "id":"specialskill_ARC170CLONESERGEANT01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_ARC170CLONESERGEANT01",
+     "tier":1
     }
    ]
   },
@@ -7428,15 +7424,15 @@
    "currentTier":13,
    "skill":[
     {
+     "id":"uniqueskill_GEONOSIANBROODALPHA01",
+     "tier":6
+    },
+    {
      "id":"uniqueskill_GEONOSIANBROODALPHA02",
      "tier":1
     },
     {
-     "id":"basicskill_GEONOSIANBROODALPHA",
-     "tier":6
-    },
-    {
-     "id":"specialskill_GEONOSIANBROODALPHA01",
+     "id":"leaderskill_GEONOSIANBROODALPHA",
      "tier":6
     },
     {
@@ -7444,16 +7440,46 @@
      "tier":6
     },
     {
-     "id":"leaderskill_GEONOSIANBROODALPHA",
+     "id":"specialskill_GEONOSIANBROODALPHA01",
      "tier":6
     },
     {
-     "id":"uniqueskill_GEONOSIANBROODALPHA01",
+     "id":"basicskill_GEONOSIANBROODALPHA",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "joleebindo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_JOLEEBINDO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JOLEEBINDO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_JOLEEBINDO01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JOLEEBINDO02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_JOLEEBINDO02",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7471,7 +7497,7 @@
     },
     {
      "id":"leaderskill_MAUL",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_MAUL01",
@@ -7483,43 +7509,17 @@
    },
    "stats":{}
   },
-  "joleebindo":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_JOLEEBINDO",
-     "tier":6
-    },
-    {
-     "id":"specialskill_JOLEEBINDO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_JOLEEBINDO02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_JOLEEBINDO01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_JOLEEBINDO02",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":8
-   },
-   "stats":{}
-  },
   "chiefnebit":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CHIEFNEBIT",
      "tier":6
+    },
+    {
+     "id":"leaderskill_CHIEFNEBIT",
+     "tier":5
     },
     {
      "id":"specialskill_CHIEFNEBIT01",
@@ -7528,62 +7528,32 @@
     {
      "id":"specialskill_CHIEFNEBIT02",
      "tier":6
-    },
-    {
-     "id":"leaderskill_CHIEFNEBIT",
-     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "tuskenshaman":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_TUSKENSHAMAN",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_TUSKENSHAMAN01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_TUSKENSHAMAN01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "imperialsupercommando":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_IMPERIALSUPERCOMMANDO",
-     "tier":6
-    },
-    {
-     "id":"specialskill_IMPERIALSUPERCOMMANDO01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_IMPERIALSUPERCOMMANDO01",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_IMPERIALSUPERCOMMANDO02",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7592,15 +7562,11 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_TIEDAGGER",
-     "tier":1
-    },
-    {
      "id":"uniqueskill_TIEDAGGER02",
      "tier":6
     },
     {
-     "id":"uniqueskill_TIEDAGGER01",
+     "id":"basicskill_TIEDAGGER",
      "tier":6
     },
     {
@@ -7608,17 +7574,46 @@
      "tier":6
     },
     {
-     "id":"basicskill_TIEDAGGER",
+     "id":"uniqueskill_TIEDAGGER01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_TIEDAGGER",
+     "tier":1
     }
    ]
   },
-  "punishingone":{
+  "imperialsupercommando":{
    "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_PUNISHINGONE01",
+     "id":"basicskill_IMPERIALSUPERCOMMANDO",
+     "tier":5
+    },
+    {
+     "id":"specialskill_IMPERIALSUPERCOMMANDO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_IMPERIALSUPERCOMMANDO01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_IMPERIALSUPERCOMMANDO02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
+  "punishingone":{
+   "currentRarity":4,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_PUNISHINGONE",
      "tier":6
     },
     {
@@ -7626,16 +7621,16 @@
      "tier":6
     },
     {
-     "id":"basicskill_PUNISHINGONE",
-     "tier":6
-    },
-    {
-     "id":"specialskill_PUNISHINGONE02",
+     "id":"uniqueskill_PUNISHINGONE01",
      "tier":6
     },
     {
      "id":"hardwareskill_PUNISHINGONE",
      "tier":1
+    },
+    {
+     "id":"specialskill_PUNISHINGONE02",
+     "tier":5
     }
    ]
   },
@@ -7653,11 +7648,11 @@
     },
     {
      "id":"uniqueskill_FIRSTORDERTIEPILOT01",
-     "tier":7
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7687,7 +7682,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -7700,7 +7695,7 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_CAPITALJEDICRUISER01",
+     "id":"basicskill_CAPITALJEDICRUISER",
      "tier":6
     },
     {
@@ -7712,48 +7707,48 @@
      "tier":6
     },
     {
-     "id":"basicskill_CAPITALJEDICRUISER",
+     "id":"uniqueskill_CAPITALJEDICRUISER01",
      "tier":6
     }
    ]
   },
   "idenversioempire":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_IDENVERSIOEMPIRE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_IDENVERSIOEMPIRE01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_IDENVERSIOEMPIRE02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_IDENVERSIOEMPIRE",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_IDENVERSIOEMPIRE01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "tieinterceptor":{
-   "currentRarity":7,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_TIEINTERCEPTOR",
-     "tier":1
+     "id":"specialskill_TIEINTERCEPTOR02",
+     "tier":6
     },
     {
      "id":"basicskill_TIEINTERCEPTOR",
@@ -7768,8 +7763,8 @@
      "tier":6
     },
     {
-     "id":"specialskill_TIEINTERCEPTOR02",
-     "tier":6
+     "id":"hardwareskill_TIEINTERCEPTOR",
+     "tier":1
     }
    ]
   },
@@ -7782,11 +7777,7 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_CAPITALCHIMAERA01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALCHIMAERA02",
+     "id":"basicskill_CAPITALCHIMAERA",
      "tier":6
     },
     {
@@ -7794,7 +7785,11 @@
      "tier":6
     },
     {
-     "id":"basicskill_CAPITALCHIMAERA",
+     "id":"specialskill_CAPITALCHIMAERA02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_CAPITALCHIMAERA01",
      "tier":6
     }
    ]
@@ -7804,11 +7799,15 @@
    "currentTier":1,
    "skill":[
     {
-     "id":"specialskill_commandshuttle01",
+     "id":"hardwareskill_commandshuttle",
+     "tier":1
+    },
+    {
+     "id":"specialskill_commandshuttle03",
      "tier":6
     },
     {
-     "id":"specialskill_commandshuttle02",
+     "id":"uniqueskill_commandshuttle01",
      "tier":6
     },
     {
@@ -7816,16 +7815,42 @@
      "tier":6
     },
     {
-     "id":"specialskill_commandshuttle03",
+     "id":"specialskill_commandshuttle02",
      "tier":6
     },
     {
-     "id":"hardwareskill_commandshuttle",
+     "id":"specialskill_commandshuttle01",
+     "tier":6
+    }
+   ]
+  },
+  "phantom2":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"specialskill_PHANTOM202",
+     "tier":6
+    },
+    {
+     "id":"basicskill_PHANTOM2",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PHANTOM202",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PHANTOM201",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PHANTOM201",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_PHANTOM201",
      "tier":1
-    },
-    {
-     "id":"uniqueskill_commandshuttle01",
-     "tier":6
     }
    ]
   },
@@ -7843,7 +7868,7 @@
     },
     {
      "id":"uniqueskill_FIRSTORDERTROOPER01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
@@ -7851,40 +7876,18 @@
    },
    "stats":{}
   },
-  "phantom2":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"specialskill_PHANTOM202",
-     "tier":6
-    },
-    {
-     "id":"specialskill_PHANTOM201",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_PHANTOM201",
-     "tier":6
-    },
-    {
-     "id":"basicskill_PHANTOM2",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_PHANTOM202",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_PHANTOM201",
-     "tier":1
-    }
-   ]
-  },
   "wreckers3":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":10,
    "skill":[
+    {
+     "id":"uniqueskill_WRECKERS302",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_WRECKERS301",
+     "tier":4
+    },
     {
      "id":"basicskill_WRECKERS3",
      "tier":6
@@ -7895,51 +7898,17 @@
     },
     {
      "id":"specialskill_WRECKERS302",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_WRECKERS301",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_WRECKERS302",
-     "tier":1
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
-  "hothleia":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"leaderskill_HOTHLEIA",
-     "tier":7
-    },
-    {
-     "id":"uniqueskill_HOTHLEIA01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_HOTHLEIA01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_HOTHLEIA",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
   "greedo":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_GREEDO",
@@ -7959,7 +7928,7 @@
     },
     {
      "id":"specialskill_GREEDO02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"contractskill_GREEDO01",
@@ -7967,63 +7936,88 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "hothleia":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"leaderskill_HOTHLEIA",
+     "tier":6
+    },
+    {
+     "id":"basicskill_HOTHLEIA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HOTHLEIA01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_HOTHLEIA01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":7
    },
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
-   "currentTier":6,
+   "currentRarity":4,
+   "currentTier":1,
    "skill":[
     {
-     "id":"basicskill_GENERALSYNDULLA",
-     "tier":6
+     "id":"uniqueskill_GENERALSYNDULLA01",
+     "tier":4
     },
     {
-     "id":"specialskill_GENERALSYNDULLA01",
-     "tier":6
+     "id":"basicskill_GENERALSYNDULLA",
+     "tier":5
     },
     {
      "id":"specialskill_GENERALSYNDULLA02",
      "tier":5
     },
     {
-     "id":"leaderskill_GENERALSYNDULLA",
-     "tier":6
+     "id":"specialskill_GENERALSYNDULLA01",
+     "tier":5
     },
     {
-     "id":"uniqueskill_GENERALSYNDULLA01",
-     "tier":4
+     "id":"leaderskill_GENERALSYNDULLA",
+     "tier":5
     }
    ],
    "relic":{
     "currentTier":1
-   },
-   "stats":{}
+   }
   },
   "bodhirook":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":5,
    "skill":[
     {
      "id":"basicskill_BODHIROOK",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_BODHIROOK01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_BODHIROOK02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_BODHIROOK01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8071,15 +8065,15 @@
     },
     {
      "id":"uniqueskill_CHEWBACCALEGENDARY01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_CHEWBACCALEGENDARY02",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8088,7 +8082,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"specialskill_CHOPPERS302",
+     "id":"basicskill_CHOPPERS3",
      "tier":6
     },
     {
@@ -8096,7 +8090,7 @@
      "tier":6
     },
     {
-     "id":"basicskill_CHOPPERS3",
+     "id":"specialskill_CHOPPERS302",
      "tier":6
     },
     {
@@ -8105,7 +8099,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -8127,7 +8121,7 @@
     },
     {
      "id":"uniqueskill_BOBAFETT01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_BOBAFETT02",
@@ -8139,7 +8133,33 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "tuskenchieftain":{
+   "currentRarity":3,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"basicskill_TUSKENCHIEFTAIN",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TUSKENCHIEFTAIN01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_TUSKENCHIEFTAIN01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_TUSKENCHIEFTAIN",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8148,7 +8168,11 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"uniqueskill_WATTAMBOR02",
+     "id":"basicskill_WATTAMBOR",
+     "tier":6
+    },
+    {
+     "id":"specialskill_WATTAMBOR01",
      "tier":6
     },
     {
@@ -8156,42 +8180,12 @@
      "tier":6
     },
     {
-     "id":"basicskill_WATTAMBOR",
-     "tier":6
-    },
-    {
-     "id":"specialskill_WATTAMBOR01",
-     "tier":6
+     "id":"uniqueskill_WATTAMBOR02",
+     "tier":5
     }
    ],
    "relic":{
     "currentTier":9
-   },
-   "stats":{}
-  },
-  "tuskenchieftain":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_TUSKENCHIEFTAIN",
-     "tier":5
-    },
-    {
-     "id":"specialskill_TUSKENCHIEFTAIN01",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_TUSKENCHIEFTAIN",
-     "tier":5
-    },
-    {
-     "id":"uniqueskill_TUSKENCHIEFTAIN01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":7
    },
    "stats":{}
   },
@@ -8200,15 +8194,15 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_WEDGEANTILLES",
-     "tier":6
-    },
-    {
      "id":"specialskill_WEDGEANTILLES01",
      "tier":6
     },
     {
      "id":"uniqueskill_WEDGEANTILLES01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_WEDGEANTILLES",
      "tier":6
     },
     {
@@ -8247,35 +8241,9 @@
    },
    "stats":{}
   },
-  "deathtrooper":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_DEATHTROOPER",
-     "tier":6
-    },
-    {
-     "id":"specialskill_DEATHTROOPER01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_DEATHTROOPER02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_DEATHTROOPER01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":8
-   },
-   "stats":{}
-  },
   "carthonasi":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_carthonasi",
@@ -8287,7 +8255,7 @@
     },
     {
      "id":"leaderskill_carthonasi",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_carthonasi",
@@ -8295,13 +8263,39 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "deathtrooper":{
+   "currentRarity":7,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"specialskill_DEATHTROOPER01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DEATHTROOPER02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DEATHTROOPER01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_DEATHTROOPER",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
   "arctrooper501st":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ARCTROOPER501ST",
@@ -8313,37 +8307,37 @@
     },
     {
      "id":"uniqueskill_ARCTROOPER501ST01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":1
    },
    "stats":{}
   },
   "trench":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
-     "id":"leaderskill_TRENCH",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_TRENCH01",
+     "id":"basicskill_TRENCH",
      "tier":5
     },
     {
      "id":"specialskill_TRENCH01",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_TRENCH",
-     "tier":5
+     "id":"leaderskill_TRENCH",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_TRENCH01",
+     "tier":4
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8352,7 +8346,11 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_WICKET",
+     "id":"uniqueskill_WICKET01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_WICKET02",
      "tier":6
     },
     {
@@ -8360,16 +8358,12 @@
      "tier":6
     },
     {
-     "id":"specialskill_WICKET02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_WICKET01",
+     "id":"basicskill_WICKET",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
@@ -8377,6 +8371,10 @@
    "currentRarity":7,
    "currentTier":1,
    "skill":[
+    {
+     "id":"specialskill_GEONOSIANSTARFIGHTER201",
+     "tier":6
+    },
     {
      "id":"basicskill_GEONOSIANSTARFIGHTER2",
      "tier":6
@@ -8387,32 +8385,6 @@
     },
     {
      "id":"hardwareskill_GEONOSIANSTARFIGHTER201",
-     "tier":1
-    },
-    {
-     "id":"specialskill_GEONOSIANSTARFIGHTER201",
-     "tier":6
-    }
-   ]
-  },
-  "geonosianstarfighter1":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"basicskill_GEONOSIANSTARFIGHTER1",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_GEONOSIANSTARFIGHTER101",
-     "tier":6
-    },
-    {
-     "id":"specialskill_GEONOSIANSTARFIGHTER101",
-     "tier":6
-    },
-    {
-     "id":"hardwareskill_GEONOSIANSTARFIGHTER101",
      "tier":1
     }
    ]
@@ -8434,12 +8406,12 @@
      "tier":6
     },
     {
-     "id":"leaderskill_SECONDSISTER",
-     "tier":5
-    },
-    {
      "id":"uniqueskill_SECONDSISTER01",
      "tier":6
+    },
+    {
+     "id":"leaderskill_SECONDSISTER",
+     "tier":5
     },
     {
      "id":"uniqueskill_INQUISITOR01_SECONDSISTER",
@@ -8447,20 +8419,38 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
+  },
+  "geonosianstarfighter1":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"specialskill_GEONOSIANSTARFIGHTER101",
+     "tier":6
+    },
+    {
+     "id":"basicskill_GEONOSIANSTARFIGHTER1",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_GEONOSIANSTARFIGHTER101",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_GEONOSIANSTARFIGHTER101",
+     "tier":1
+    }
+   ]
   },
   "geonosianstarfighter3":{
    "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
-     "id":"hardwareskill_GEONOSIANSTARFIGHTER301",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_GEONOSIANSTARFIGHTER301",
+     "id":"specialskill_GEONOSIANSTARFIGHTER301",
      "tier":6
     },
     {
@@ -8468,8 +8458,12 @@
      "tier":6
     },
     {
-     "id":"specialskill_GEONOSIANSTARFIGHTER301",
+     "id":"uniqueskill_GEONOSIANSTARFIGHTER301",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_GEONOSIANSTARFIGHTER301",
+     "tier":1
     }
    ]
   },
@@ -8478,19 +8472,19 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_MACEWINDU",
+     "id":"specialskill_MACEWINDU02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_MACEWINDU02",
+     "tier":7
     },
     {
      "id":"specialskill_MACEWINDU01",
      "tier":6
     },
     {
-     "id":"specialskill_MACEWINDU02",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_MACEWINDU",
+     "id":"basicskill_MACEWINDU",
      "tier":6
     },
     {
@@ -8498,18 +8492,18 @@
      "tier":6
     },
     {
-     "id":"uniqueskill_MACEWINDU02",
+     "id":"leaderskill_MACEWINDU",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":5
    },
    "stats":{}
   },
   "dathcha":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_DATHCHA",
@@ -8529,18 +8523,14 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "masterquigon":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
-    {
-     "id":"basicskill_MASTERQUIGON",
-     "tier":6
-    },
     {
      "id":"specialskill_MASTERQUIGON01",
      "tier":6
@@ -8550,42 +8540,46 @@
      "tier":6
     },
     {
+     "id":"basicskill_MASTERQUIGON",
+     "tier":6
+    },
+    {
      "id":"uniqueskill_MASTERQUIGON01",
      "tier":5
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":1
    },
    "stats":{}
   },
   "jynerso":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
-     "id":"basicskill_JYNERSO",
-     "tier":6
+     "id":"specialskill_JYNERSO02",
+     "tier":5
     },
     {
      "id":"specialskill_JYNERSO01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_JYNERSO02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_JYNERSO01",
-     "tier":7
+     "tier":5
     },
     {
      "id":"leaderskill_JYNERSO",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"basicskill_JYNERSO",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_JYNERSO01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8611,13 +8605,13 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":5
    },
    "stats":{}
   },
   "badbatchtech":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BADBATCHTECH",
@@ -8633,11 +8627,11 @@
     },
     {
      "id":"uniqueskill_BADBATCHTECH01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8647,15 +8641,15 @@
    "skill":[
     {
      "id":"specialskill_XWINGBLACKONE01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_XWINGBLACKONE02",
-     "tier":6
+     "tier":4
     },
     {
      "id":"basicskill_XWINGBLACKONE",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_XWINGBLACKONE02",
+     "tier":4
     },
     {
      "id":"hardwareskill_XWINGBLACKONE01",
@@ -8685,111 +8679,42 @@
     }
    ]
   },
-  "glrey":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"leaderskill_GLREY",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_GLREY01",
-     "tier":1
-    },
-    {
-     "id":"specialskill_GLREY02",
-     "tier":1
-    },
-    {
-     "id":"specialskill_GLREY01",
-     "tier":1
-    },
-    {
-     "id":"basicskill_GLREY",
-     "tier":1
-    }
-   ],
-   "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
   "amilynholdo":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":1,
    "skill":[
     {
-     "id":"specialskill_AMILYNHOLDO02",
-     "tier":6
+     "id":"basicskill_AMILYNHOLDO",
+     "tier":5
     },
     {
      "id":"specialskill_AMILYNHOLDO01",
-     "tier":6
+     "tier":5
     },
     {
-     "id":"basicskill_AMILYNHOLDO",
-     "tier":6
+     "id":"specialskill_AMILYNHOLDO02",
+     "tier":5
     },
     {
      "id":"uniqueskill_AMILYNHOLDO01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "glleia":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":1
-    },
-    {
-     "id":"uniqueskill_GLLEIA01",
-     "tier":1
-    },
-    {
-     "id":"leaderskill_GLLEIA",
-     "tier":1
-    },
-    {
-     "id":"specialskill_GLLEIA02",
-     "tier":1
-    },
-    {
-     "id":"specialskill_GLLEIA01",
-     "tier":1
-    },
-    {
-     "id":"basicskill_GLLEIA",
-     "tier":1
-    }
-   ],
-   "relic":{
-    "currentTier":9
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "urorrurrr":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_URORRURRR",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_URORRURRR01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_URORRURRR",
@@ -8797,11 +8722,11 @@
     },
     {
      "id":"uniqueskill_URORRURRR01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8811,23 +8736,23 @@
    "skill":[
     {
      "id":"basicskill_GAUNTLETSTARFIGHTER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_GAUNTLETSTARFIGHTER01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_GAUNTLETSTARFIGHTER01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_GAUNTLETSTARFIGHTER02",
-     "tier":6
+     "tier":4
     },
     {
      "id":"hardwareskill_GAUNTLETSTARFIGHTER01",
      "tier":1
+    },
+    {
+     "id":"specialskill_GAUNTLETSTARFIGHTER01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_GAUNTLETSTARFIGHTER02",
+     "tier":4
     }
    ]
   },
@@ -8849,51 +8774,51 @@
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":7
    },
    "stats":{}
   },
   "snowtrooper":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_SNOWTROOPER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_SNOWTROOPER01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_SNOWTROOPER",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
   "shoretrooper":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":6,
+   "currentTier":8,
    "skill":[
     {
-     "id":"basicskill_SHORETROOPER",
-     "tier":6
+     "id":"specialskill_SHORETROOPER01",
+     "tier":5
     },
     {
-     "id":"specialskill_SHORETROOPER01",
-     "tier":6
+     "id":"basicskill_SHORETROOPER",
+     "tier":5
     },
     {
      "id":"uniqueskill_SHORETROOPER01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8915,7 +8840,7 @@
     },
     {
      "id":"uniqueskill_PRINCESSLEIA01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
@@ -8925,29 +8850,28 @@
   },
   "savageopress":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":1,
    "skill":[
     {
-     "id":"uniqueskill_SAVAGEOPRESS01",
-     "tier":7
+     "id":"basicskill_SAVAGEOPRESS",
+     "tier":5
     },
     {
      "id":"specialskill_SAVAGEOPRESS01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_SAVAGEOPRESS",
-     "tier":6
+     "tier":5
     },
     {
      "id":"leaderskill_SAVAGEOPRESS",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_SAVAGEOPRESS01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "darthmalak":{
    "currentRarity":7,
@@ -8981,27 +8905,27 @@
   },
   "finn":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"leaderskill_FINN",
-     "tier":6
-    },
-    {
-     "id":"specialskill_FINN02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_FINN01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"basicskill_FINN",
-     "tier":6
+     "tier":5
+    },
+    {
+     "id":"specialskill_FINN02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_FINN01",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9010,7 +8934,7 @@
    "currentTier":13,
    "skill":[
     {
-     "id":"specialskill_PHASMA02",
+     "id":"basicskill_PHASMA",
      "tier":6
     },
     {
@@ -9018,12 +8942,12 @@
      "tier":6
     },
     {
-     "id":"basicskill_PHASMA",
+     "id":"specialskill_PHASMA02",
      "tier":6
     },
     {
      "id":"leaderskill_PHASMA",
-     "tier":7
+     "tier":5
     }
    ],
    "relic":{
@@ -9032,8 +8956,8 @@
    "stats":{}
   },
   "undercoverlando":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":3,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_UNDERCOVERLANDO",
@@ -9041,21 +8965,20 @@
     },
     {
      "id":"specialskill_UNDERCOVERLANDO01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_UNDERCOVERLANDO02",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_UNDERCOVERLANDO01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "capitalfinalizer":{
    "currentRarity":7,
@@ -9074,11 +8997,11 @@
      "tier":6
     },
     {
-     "id":"specialskill_CAPITALFINALIZER01",
+     "id":"specialskill_CAPITALFINALIZER02",
      "tier":6
     },
     {
-     "id":"specialskill_CAPITALFINALIZER02",
+     "id":"specialskill_CAPITALFINALIZER01",
      "tier":6
     }
    ]
@@ -9101,55 +9024,55 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":5
    },
    "stats":{}
   },
   "tiereaper":{
-   "currentRarity":7,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
-    {
-     "id":"specialskill_TIEREAPER02",
-     "tier":6
-    },
-    {
-     "id":"basicskill_TIEREAPER",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_TIEREAPER01",
-     "tier":6
-    },
     {
      "id":"hardwareskill_TIEREAPER01",
      "tier":1
     },
     {
+     "id":"uniqueskill_TIEREAPER01",
+     "tier":4
+    },
+    {
+     "id":"basicskill_TIEREAPER",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TIEREAPER02",
+     "tier":4
+    },
+    {
      "id":"specialskill_TIEREAPER01",
-     "tier":6
+     "tier":4
     }
    ]
   },
   "hyenabomber":{
-   "currentRarity":7,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[
     {
      "id":"basicskill_HYENABOMBER",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_HYENABOMBER01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"uniqueskill_HYENABOMBER01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"hardwareskill_HYENABOMBER01",
@@ -9166,24 +9089,24 @@
      "tier":6
     },
     {
+     "id":"uniqueskill_DARKREY01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARKREY02",
+     "tier":6
+    },
+    {
      "id":"specialskill_DARKREY01",
      "tier":6
     },
     {
      "id":"specialskill_DARKREY02",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_DARKREY01",
-     "tier":5
-    },
-    {
-     "id":"uniqueskill_DARKREY02",
-     "tier":5
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9196,11 +9119,11 @@
      "tier":6
     },
     {
-     "id":"basicskill_JEDISTARFIGHTERCONSULAR",
+     "id":"specialskill_JEDISTARFIGHTERCONSULAR01",
      "tier":6
     },
     {
-     "id":"specialskill_JEDISTARFIGHTERCONSULAR01",
+     "id":"basicskill_JEDISTARFIGHTERCONSULAR",
      "tier":6
     },
     {
@@ -9227,17 +9150,17 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
   "tiedefender":{
-   "currentRarity":7,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
      "id":"specialskill_TIEDEFENDER01",
-     "tier":6
+     "tier":4
     },
     {
      "id":"basicskill_TIEDEFENDER",
@@ -9283,7 +9206,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9291,6 +9214,10 @@
    "currentRarity":7,
    "currentTier":1,
    "skill":[
+    {
+     "id":"hardwareskill_YWINGREBEL",
+     "tier":1
+    },
     {
      "id":"basicskill_YWINGREBEL",
      "tier":6
@@ -9302,10 +9229,6 @@
     {
      "id":"uniqueskill_YWINGREBEL01",
      "tier":6
-    },
-    {
-     "id":"hardwareskill_YWINGREBEL",
-     "tier":1
     }
    ]
   },
@@ -9327,7 +9250,7 @@
     },
     {
      "id":"leaderskill_SEVENTHSISTER",
-     "tier":5
+     "tier":4
     },
     {
      "id":"uniqueskill_SEVENTHSISTER04",
@@ -9339,7 +9262,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9369,21 +9292,21 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
   "resistancepilot":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":8,
    "skill":[
     {
-     "id":"specialskill_RESISTANCEPILOT01",
-     "tier":6
+     "id":"basicskill_RESISTANCEPILOT",
+     "tier":5
     },
     {
-     "id":"basicskill_RESISTANCEPILOT",
-     "tier":6
+     "id":"specialskill_RESISTANCEPILOT01",
+     "tier":5
     },
     {
      "id":"uniqueskill_RESISTANCEPILOT01",
@@ -9391,33 +9314,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
-   },
-   "stats":{}
-  },
-  "kuiil":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_KUIIL",
-     "tier":6
-    },
-    {
-     "id":"specialskill_KUIIL01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_KUIIL02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_KUIIL01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":8
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9430,26 +9327,52 @@
      "tier":6
     },
     {
-     "id":"specialskill_KYLEKATARN01",
-     "tier":6
-    },
-    {
      "id":"specialskill_KYLEKATARN02",
      "tier":5
     },
     {
      "id":"uniqueskill_KYLEKATARN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_KYLEKATARN01",
      "tier":6
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":7
+   },
+   "stats":{}
+  },
+  "kuiil":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_KUIIL02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_KUIIL01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_KUIIL",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_KUIIL01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":7
    },
    "stats":{}
   },
   "vane":{
-   "currentRarity":5,
-   "currentTier":6,
+   "currentRarity":3,
+   "currentTier":2,
    "skill":[
     {
      "id":"basicskill_VANE",
@@ -9474,16 +9397,16 @@
    "stats":{}
   },
   "aurra_sing":{
-   "currentRarity":7,
-   "currentTier":13,
+   "currentRarity":3,
+   "currentTier":1,
    "skill":[
     {
      "id":"basicskill_AURRA_SING",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_AURRA_SING01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_AURRA_SING02",
@@ -9495,29 +9418,42 @@
     },
     {
      "id":"uniqueskill_AURRA_SING01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"contractskill_AURRA_SING01",
-     "tier":1
+     "tier":0
     }
    ],
-   "relic":{
-    "currentTier":8
-   },
-   "stats":{}
-  },
-  "jediknightguardian":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
    "relic":{
     "currentTier":1
    }
   },
+  "jediknightguardian":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_JEDIKNIGHTGUARDIAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JEDIKNIGHTGUARDIAN01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_JEDIKNIGHTGUARDIAN01",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "canderousordo":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CANDEROUSORDO",
@@ -9533,69 +9469,13 @@
     },
     {
      "id":"uniqueskill_CANDEROUSORDO01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
-  },
-  "mauls7":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_MAULS7",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MAULS701",
-     "tier":6
-    },
-    {
-     "id":"specialskill_MAULS702",
-     "tier":6
-    },
-    {
-     "id":"leaderskill_MAULS7",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_MAULS701",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":8
-   },
-   "stats":{}
-  },
-  "capitalprofundity":{
-   "currentRarity":7,
-   "currentTier":1,
-   "skill":[
-    {
-     "id":"uniqueskill_CAPITALPROFUNDITY01",
-     "tier":6
-    },
-    {
-     "id":"basicskill_CAPITALPROFUNDITY",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALPROFUNDITY01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALPROFUNDITY02",
-     "tier":6
-    },
-    {
-     "id":"specialskill_CAPITALPROFUNDITY03",
-     "tier":6
-    }
-   ]
   },
   "cadbane":{
    "currentRarity":7,
@@ -9623,7 +9503,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9655,23 +9535,23 @@
   },
   "tiefighterpilot":{
    "currentRarity":7,
-   "currentTier":13,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_TIEFIGHTERPILOT",
-     "tier":6
+     "tier":5
     },
     {
      "id":"specialskill_TIEFIGHTERPILOT01",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_TIEFIGHTERPILOT01",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9692,11 +9572,11 @@
      "tier":6
     },
     {
-     "id":"specialskill_GRANDMASTERYODA03",
-     "tier":6
+     "id":"leaderskill_GRANDMASTERYODA",
+     "tier":5
     },
     {
-     "id":"leaderskill_GRANDMASTERYODA",
+     "id":"specialskill_GRANDMASTERYODA03",
      "tier":6
     }
    ],
@@ -9718,60 +9598,47 @@
      "tier":6
     },
     {
+     "id":"uniqueskill_DARTHBANE01",
+     "tier":6
+    },
+    {
      "id":"specialskill_DARTHBANE02",
      "tier":6
     },
     {
      "id":"leaderskill_DARTHBANE",
      "tier":6
-    },
-    {
-     "id":"uniqueskill_DARTHBANE01",
-     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":11
    },
    "stats":{}
   },
   "ig12":{
-   "currentRarity":7,
+   "currentRarity":4,
    "currentTier":1,
-   "skill":[],
-   "relic":{
-    "currentTier":1
-   }
-  },
-  "mazkanata":{
-   "currentRarity":7,
-   "currentTier":13,
    "skill":[
     {
-     "id":"basicskill_MAZKANATA",
+     "id":"basicskill_IG12",
      "tier":6
     },
     {
-     "id":"specialskill_MAZKANATA01",
-     "tier":6
+     "id":"specialskill_IG1201",
+     "tier":5
     },
     {
-     "id":"specialskill_MAZKANATA02",
-     "tier":4
+     "id":"specialskill_IG1202",
+     "tier":5
     },
     {
-     "id":"leaderskill_MAZKANATA",
-     "tier":4
-    },
-    {
-     "id":"uniqueskill_MAZKANATA01",
-     "tier":4
+     "id":"uniqueskill_IG1201",
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":3
-   },
-   "stats":{}
+    "currentTier":1
+   }
   },
   "shaakti":{
    "currentRarity":7,
@@ -9791,41 +9658,15 @@
     },
     {
      "id":"leaderskill_SHAAKTI",
-     "tier":6
+     "tier":5
     },
     {
      "id":"uniqueskill_SHAAKTI01",
-     "tier":6
-    }
-   ],
-   "relic":{
-    "currentTier":9
-   },
-   "stats":{}
-  },
-  "bistan":{
-   "currentRarity":7,
-   "currentTier":13,
-   "skill":[
-    {
-     "id":"basicskill_BISTAN",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BISTAN01",
-     "tier":6
-    },
-    {
-     "id":"specialskill_BISTAN02",
-     "tier":6
-    },
-    {
-     "id":"uniqueskill_BISTAN01",
      "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9847,11 +9688,37 @@
     },
     {
      "id":"uniqueskill_IG1101",
-     "tier":6
+     "tier":5
     }
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "bistan":{
+   "currentRarity":7,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"basicskill_BISTAN",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BISTAN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BISTAN02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BISTAN01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   }
