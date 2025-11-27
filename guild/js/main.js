@@ -302,6 +302,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             guildInfoDiv.appendChild(guildTitle);
 
+            const dataDate = guildData.date;
+            if (dataDate) {
+                const dateSpan = document.createElement('span');
+                dateSpan.textContent = `Data as of: ${dataDate}`;
+                dateSpan.style.fontSize = '1em';
+                dateSpan.style.fontWeight = 'normal';
+                dateSpan.style.color = '#555';
+                guildInfoDiv.appendChild(dateSpan);
+            }
+
             // Populate shipBaseIds
             const shipBaseIds = new Set();
             players.forEach(player => {
