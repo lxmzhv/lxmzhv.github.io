@@ -2,7 +2,7 @@
  "allyCode":"546836949",
  "requirements":{
   "jabba":{
-   "total_score":79.83
+   "total_score":81.33
   },
   "gg":{
    "total_score":88.0
@@ -23,7 +23,7 @@
    "total_score":60.2
   },
   "amidala":{
-   "total_score":92.67
+   "total_score":89.0
   },
   "gungans":{
    "total_score":15.0
@@ -38,7 +38,7 @@
    "total_score":85.5
   }
  },
- "modsRating":23.107567,
+ "modsRating":22.762926,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -114,19 +114,19 @@
   },
   "zuckuss":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZUCKUSS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZUCKUSS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_ZUCKUSS",
@@ -138,7 +138,7 @@
     },
     {
      "id":"contractskill_zuckuss",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -964,7 +964,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3101,7 +3101,7 @@
   },
   "4lom":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_4LOM",
@@ -3277,19 +3277,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3466,7 +3466,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -5172,7 +5172,7 @@
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"contractskill_JABBATHEHUTT01",
@@ -5192,7 +5192,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5815,7 +5815,7 @@
     },
     {
      "id":"leaderskill_BOUSHH",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_BOUSHH",

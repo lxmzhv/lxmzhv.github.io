@@ -26,7 +26,7 @@
    "total_score":86.33
   },
   "gungans":{
-   "total_score":89.0
+   "total_score":89.4
   },
   "leia":{
    "total_score":93.6
@@ -38,7 +38,7 @@
    "total_score":90.0
   }
  },
- "modsRating":24.726887,
+ "modsRating":24.89562,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -270,7 +270,7 @@
     },
     {
      "id":"basicskill_RAVENSCLAW",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_RAVENSCLAW01",
@@ -1393,7 +1393,7 @@
    "stats":{}
   },
   "comeuppance":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -1972,7 +1972,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2282,7 +2282,7 @@
   },
   "padawansabine":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -2302,7 +2302,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -2869,6 +2869,40 @@
    ],
    "relic":{
     "currentTier":10
+   },
+   "stats":{}
+  },
+  "baylanskoll":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_BAYLANSKOLL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL02",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_BAYLANSKOLL",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL02",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -3522,7 +3556,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4330,19 +4364,19 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":2,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARROK",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MARROK01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_MARROK01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_MARROK02",
@@ -4354,7 +4388,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -7132,7 +7166,7 @@
     },
     {
      "id":"uniqueskill_SHINHATI01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SHINHATI02",
@@ -7140,7 +7174,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8664,7 +8698,7 @@
     },
     {
      "id":"uniqueskill_TRENCH01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

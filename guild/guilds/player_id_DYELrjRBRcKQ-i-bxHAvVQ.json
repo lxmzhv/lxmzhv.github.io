@@ -35,10 +35,10 @@
    "total_score":89.14
   },
   "beq_raid":{
-   "total_score":92.5
+   "total_score":92.0
   }
  },
- "modsRating":48.59523,
+ "modsRating":48.534517,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -5734,7 +5734,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9857,7 +9857,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -9874,11 +9874,11 @@
     },
     {
      "id":"uniqueskill_VANE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },

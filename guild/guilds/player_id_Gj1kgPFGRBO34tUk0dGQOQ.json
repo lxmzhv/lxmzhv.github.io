@@ -11,10 +11,10 @@
    "total_score":43.0
   },
   "inqs":{
-   "total_score":67.2
+   "total_score":67.4
   },
   "reva":{
-   "total_score":75.6
+   "total_score":75.8
   },
   "geos":{
    "total_score":95.0
@@ -38,7 +38,7 @@
    "total_score":7.5
   }
  },
- "modsRating":6.299326,
+ "modsRating":6.302311,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2593,7 +2593,7 @@
    "stats":{}
   },
   "xanadublood":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -3230,18 +3230,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3307,7 +3315,7 @@
    ]
   },
   "ebonhawk":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
     {
@@ -8852,7 +8860,7 @@
     },
     {
      "id":"specialskill_MAULS702",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_MAULS7",

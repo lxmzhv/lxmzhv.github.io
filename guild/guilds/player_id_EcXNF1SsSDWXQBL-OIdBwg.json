@@ -8,7 +8,7 @@
    "total_score":85.8
   },
   "gas":{
-   "total_score":52.4
+   "total_score":52.6
   },
   "inqs":{
    "total_score":10.6
@@ -32,13 +32,13 @@
    "total_score":35.4
   },
   "slkr":{
-   "total_score":94.29
+   "total_score":94.43
   },
   "beq_raid":{
    "total_score":89.5
   }
  },
- "modsRating":13.544236,
+ "modsRating":13.773223,
  "roster":{
   "magmatrooper":{
    "currentRarity":6,
@@ -735,20 +735,20 @@
    "stats":{}
   },
   "sithtrooper":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":7,
    "skill":[
     {
      "id":"basicskill_SITHTROOPER",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_SITHTROOPER01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_SITHTROOPER01",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
@@ -1350,15 +1350,19 @@
    "skill":[
     {
      "id":"basicskill_SITHFIGHTER",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_SITHFIGHTER01",
-     "tier":1
+     "tier":4
     },
     {
      "id":"hardwareskill_SITHFIGHTER01",
      "tier":1
+    },
+    {
+     "id":"specialskill_SITHFIGHTER01",
+     "tier":6
     }
    ]
   },
@@ -1575,7 +1579,7 @@
    "stats":{}
   },
   "nighttrooper":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -1845,7 +1849,7 @@
   },
   "scouttrooper_v3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SCOUTTROOPER_V3",
@@ -3099,7 +3103,7 @@
    "stats":{}
   },
   "millenniumfalconpristine":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -5196,7 +5200,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -7662,19 +7666,19 @@
   },
   "sithassassin":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_SITHASSASSIN",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_SITHASSASSIN01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_SITHASSASSIN02",
-     "tier":2
+     "tier":6
     }
    ],
    "relic":{

@@ -29,7 +29,7 @@
    "total_score":104.8
   },
   "leia":{
-   "total_score":109.8
+   "total_score":109.4
   },
   "slkr":{
    "total_score":109.29
@@ -38,7 +38,7 @@
    "total_score":100.5
   }
  },
- "modsRating":119.567024,
+ "modsRating":119.438895,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -3396,7 +3396,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3617,6 +3617,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -3806,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5768,7 +5776,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },

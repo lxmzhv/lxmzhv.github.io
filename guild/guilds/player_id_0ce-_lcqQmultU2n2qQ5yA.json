@@ -23,13 +23,13 @@
    "total_score":84.0
   },
   "amidala":{
-   "total_score":84.0
+   "total_score":86.0
   },
   "gungans":{
    "total_score":30.8
   },
   "leia":{
-   "total_score":52.8
+   "total_score":54.0
   },
   "slkr":{
    "total_score":86.86
@@ -38,7 +38,7 @@
    "total_score":85.5
   }
  },
- "modsRating":19.347697,
+ "modsRating":19.538848,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1879,7 +1879,7 @@
    "skill":[
     {
      "id":"uniqueskill_QUEENAMIDALA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_QUEENAMIDALA02",
@@ -2665,11 +2665,11 @@
     },
     {
      "id":"specialskill_GHOST03",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_GHOST02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"uniqueskill_GHOST01",
@@ -2933,7 +2933,7 @@
     },
     {
      "id":"uniqueskill_APPO01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"basicskill_APPO",
@@ -3041,18 +3041,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3713,7 +3721,7 @@
   },
   "cassianandor":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CASSIANANDOR01",
@@ -3733,7 +3741,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -4160,7 +4168,7 @@
    }
   },
   "pazvizsla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -6250,7 +6258,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":6
    },
    "stats":{}
   },
@@ -6868,7 +6876,7 @@
    "skill":[
     {
      "id":"specialskill_PHANTOM202",
-     "tier":2
+     "tier":6
     },
     {
      "id":"basicskill_PHANTOM2",
@@ -6880,7 +6888,7 @@
     },
     {
      "id":"uniqueskill_PHANTOM201",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_PHANTOM201",
@@ -6888,7 +6896,7 @@
     },
     {
      "id":"specialskill_PHANTOM201",
-     "tier":1
+     "tier":6
     }
    ]
   },
@@ -7530,7 +7538,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -7560,7 +7568,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7695,7 +7703,7 @@
     },
     {
      "id":"specialskill_GAUNTLETSTARFIGHTER02",
-     "tier":4
+     "tier":6
     }
    ]
   },
@@ -8004,7 +8012,7 @@
     },
     {
      "id":"specialskill_JEDISTARFIGHTERCONSULAR02",
-     "tier":4
+     "tier":6
     }
    ]
   },
@@ -8441,7 +8449,7 @@
    "stats":{}
   },
   "ig12":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {

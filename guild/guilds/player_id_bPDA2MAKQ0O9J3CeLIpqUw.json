@@ -38,7 +38,7 @@
    "total_score":45.5
   }
  },
- "modsRating":15.39411,
+ "modsRating":15.513854,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -427,12 +427,12 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_VANGUARDTEMPLEGUARD01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_VANGUARDTEMPLEGUARD02",
@@ -448,7 +448,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1289,11 +1289,11 @@
     },
     {
      "id":"leaderskill_QUIGONJINN",
-     "tier":6
+     "tier":7
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -2830,7 +2830,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -3007,18 +3007,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4893,7 +4901,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -8582,7 +8590,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":5,
    "skill":[
     {

@@ -38,7 +38,7 @@
    "total_score":95.5
   }
  },
- "modsRating":55.279411,
+ "modsRating":56.16175,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -126,7 +126,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":6,
    "skill":[
     {
@@ -3327,7 +3327,7 @@
    "stats":{}
   },
   "quiggold":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3568,6 +3568,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5514,7 +5522,7 @@
   },
   "hondo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HONDO",
@@ -5538,7 +5546,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -9689,7 +9697,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {

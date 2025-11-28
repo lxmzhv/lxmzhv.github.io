@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":60.652765,
+ "modsRating":60.916881,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2037,7 +2037,7 @@
   },
   "sabinewrens3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SABINEWRENS3",
@@ -2053,11 +2053,11 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -3376,7 +3376,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":10,
    "skill":[
     {
@@ -3579,7 +3579,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3591,6 +3591,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3760,7 +3768,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3777,11 +3785,11 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4765,7 +4773,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5684,7 +5692,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5709,7 +5717,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },

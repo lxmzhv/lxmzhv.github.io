@@ -14,7 +14,7 @@
    "total_score":53.4
   },
   "reva":{
-   "total_score":61.6
+   "total_score":64.4
   },
   "geos":{
    "total_score":84.5
@@ -23,7 +23,7 @@
    "total_score":80.4
   },
   "amidala":{
-   "total_score":56.0
+   "total_score":56.33
   },
   "gungans":{
    "total_score":69.8
@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":8.660411,
+ "modsRating":8.785372,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -128,23 +128,23 @@
   },
   "zuckuss":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZUCKUSS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZUCKUSS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_ZUCKUSS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_ZUCKUSS01",
@@ -292,7 +292,7 @@
   },
   "thirdsister":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_THIRDSISTER",
@@ -320,7 +320,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -451,7 +451,7 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -502,7 +502,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1870,7 +1870,7 @@
     },
     {
      "id":"basicskill_SITHSUPREMACYCLASS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_SITHSUPREMACYCLASS",
@@ -2184,7 +2184,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_QUEENAMIDALA",
@@ -2403,7 +2403,7 @@
    "stats":{}
   },
   "capitalraddus":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -2412,19 +2412,19 @@
     },
     {
      "id":"basicskill_CAPITALRADDUS",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALRADDUS01",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALRADDUS02",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALRADDUS03",
-     "tier":3
+     "tier":4
     }
    ]
   },
@@ -3188,19 +3188,19 @@
    "skill":[
     {
      "id":"basicskill_4LOM",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_4LOM01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_4LOM02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_4LOM",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_4LOM01",
@@ -3549,8 +3549,8 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
-   "currentTier":8,
+   "currentRarity":5,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_BRUTUS",
@@ -5815,7 +5815,7 @@
   },
   "taronmalicos":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TARONMALICOS",
@@ -5839,7 +5839,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },

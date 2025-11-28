@@ -38,7 +38,7 @@
    "total_score":44.5
   }
  },
- "modsRating":28.856772,
+ "modsRating":28.994647,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1909,7 +1909,7 @@
    "stats":{}
   },
   "sithsupremacyclass":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -3446,7 +3446,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3458,6 +3458,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -6127,7 +6135,7 @@
     },
     {
      "id":"specialskill_TUSKENHUNTRESS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TUSKENHUNTRESS01",

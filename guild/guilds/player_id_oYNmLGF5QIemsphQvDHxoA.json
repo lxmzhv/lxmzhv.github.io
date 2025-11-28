@@ -2,7 +2,7 @@
  "allyCode":"285563313",
  "requirements":{
   "jabba":{
-   "total_score":36.17
+   "total_score":45.67
   },
   "gg":{
    "total_score":82.8
@@ -38,7 +38,7 @@
    "total_score":42.5
   }
  },
- "modsRating":15.750537,
+ "modsRating":15.841374,
  "roster":{
   "magmatrooper":{
    "currentRarity":2,
@@ -3060,7 +3060,7 @@
    "stats":{}
   },
   "stormtrooperluke":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":4,
    "skill":[
     {
@@ -4801,15 +4801,15 @@
     },
     {
      "id":"specialskill_BWINGREBEL01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"basicskill_BWINGREBEL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BWINGREBEL02",
-     "tier":4
+     "tier":6
     }
    ]
   },
@@ -5485,11 +5485,33 @@
   },
   "boushh":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"specialskill_BOUSHH01",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_BOUSHH",
+     "tier":1
+    },
+    {
+     "id":"basicskill_BOUSHH",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_BOUSHH01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_BOUSHH02",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "tuskenhuntress":{
    "currentRarity":2,
@@ -5518,7 +5540,7 @@
    "stats":{}
   },
   "bossnass":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":7,
    "skill":[
     {
@@ -5972,7 +5994,7 @@
    ]
   },
   "omegas3":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -6221,11 +6243,29 @@
   },
   "princesskneesaa":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_PRINCESSKNEESAA",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_PRINCESSKNEESAA01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_PRINCESSKNEESAA01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_PRINCESSKNEESAA02",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "jediknightconsular":{
    "currentRarity":7,
@@ -7168,7 +7208,7 @@
    "stats":{}
   },
   "bodhirook":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -7363,7 +7403,7 @@
   },
   "wedgeantilles":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_WEDGEANTILLES",

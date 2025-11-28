@@ -11,10 +11,10 @@
    "total_score":89.8
   },
   "inqs":{
-   "total_score":82.0
+   "total_score":76.4
   },
   "reva":{
-   "total_score":93.2
+   "total_score":84.6
   },
   "geos":{
    "total_score":85.5
@@ -23,7 +23,7 @@
    "total_score":87.0
   },
   "amidala":{
-   "total_score":49.0
+   "total_score":50.33
   },
   "gungans":{
    "total_score":81.6
@@ -38,7 +38,7 @@
    "total_score":88.5
   }
  },
- "modsRating":17.959763,
+ "modsRating":18.241806,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2978,7 +2978,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3294,7 +3294,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3485,6 +3485,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -3653,7 +3661,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5194,13 +5202,13 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
   "bobafettscion":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_BOBAFETTSCION",
@@ -5216,6 +5224,10 @@
     },
     {
      "id":"specialskill_BOBAFETTSCION02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_BOBAFETTSCION",
      "tier":5
     }
    ],
@@ -5569,7 +5581,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -6022,7 +6034,7 @@
   },
   "moffgideons3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_MOFFGIDEONS3",
@@ -6642,7 +6654,7 @@
   },
   "padawanobiwan":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_PADAWANOBIWAN",
@@ -7156,7 +7168,7 @@
   },
   "princesskneesaa":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_PRINCESSKNEESAA",
@@ -8143,7 +8155,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":11,
    "skill":[
     {
@@ -8394,7 +8406,7 @@
   },
   "marajade":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MARAJADE",

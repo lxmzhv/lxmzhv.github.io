@@ -3431,18 +3431,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3612,7 +3620,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -4230,7 +4238,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":3,
+   "currentRarity":6,
    "currentTier":7,
    "skill":[
     {
@@ -4311,7 +4319,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6817,7 +6825,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":4,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {

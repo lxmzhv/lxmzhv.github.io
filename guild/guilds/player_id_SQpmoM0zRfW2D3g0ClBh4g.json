@@ -8,10 +8,10 @@
    "total_score":91.8
   },
   "gas":{
-   "total_score":89.8
+   "total_score":90.6
   },
   "inqs":{
-   "total_score":71.4
+   "total_score":71.2
   },
   "reva":{
    "total_score":94.8
@@ -38,7 +38,7 @@
    "total_score":93.5
   }
  },
- "modsRating":55.29662,
+ "modsRating":55.308065,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2765,7 +2765,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2868,6 +2868,39 @@
     "currentTier":11
    },
    "stats":{}
+  },
+  "baylanskoll":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_BAYLANSKOLL02",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_BAYLANSKOLL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_BAYLANSKOLL",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
   },
   "admiralackbar":{
    "currentRarity":7,
@@ -3519,19 +3552,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4551,11 +4584,11 @@
   },
   "kix":{
    "currentRarity":6,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_KIX01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_KIX02",
@@ -5241,7 +5274,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5733,7 +5766,7 @@
   },
   "ithano":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -5757,7 +5790,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5839,7 +5872,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

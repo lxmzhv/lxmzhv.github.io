@@ -387,7 +387,7 @@
    "stats":{}
   },
   "vanguardtempleguard":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -2350,7 +2350,7 @@
    "stats":{}
   },
   "disguisedclonetrooper":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -2485,8 +2485,8 @@
    ]
   },
   "appo":{
-   "currentRarity":3,
-   "currentTier":12,
+   "currentRarity":4,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_APPO",
@@ -2506,7 +2506,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3933,8 +3933,8 @@
    ]
   },
   "operative":{
-   "currentRarity":3,
-   "currentTier":8,
+   "currentRarity":4,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_OPERATIVE02",

@@ -38,7 +38,7 @@
    "total_score":65.0
   }
  },
- "modsRating":18.616068,
+ "modsRating":18.745284,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -256,6 +256,32 @@
     },
     {
      "id":"hardwareskill_FIRSTORDERTIEECHELON",
+     "tier":1
+    }
+   ]
+  },
+  "ravensclaw":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_RAVENSCLAW02",
+     "tier":6
+    },
+    {
+     "id":"basicskill_RAVENSCLAW",
+     "tier":6
+    },
+    {
+     "id":"specialskill_RAVENSCLAW01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_RAVENSCLAW01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_RAVENSCLAW",
      "tier":1
     }
    ]
@@ -407,7 +433,7 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -2568,20 +2594,20 @@
    "stats":{}
   },
   "scorch":{
-   "currentRarity":3,
-   "currentTier":8,
+   "currentRarity":4,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_SCORCH",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SCORCH01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SCORCH02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SCORCH01",
@@ -2759,18 +2785,22 @@
   },
   "disguisedclonetrooper":{
    "currentRarity":3,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_DISGUISEDCLONETROOPER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DISGUISEDCLONETROOPER01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_DISGUISEDCLONETROOPER02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DISGUISEDCLONETROOPER01",
      "tier":4
     }
    ],
@@ -2854,7 +2884,7 @@
    "stats":{}
   },
   "quiggold":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -2966,7 +2996,7 @@
    "stats":{}
   },
   "appo":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -3419,7 +3449,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3989,7 +4019,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -4647,16 +4677,16 @@
    ]
   },
   "operative":{
-   "currentRarity":3,
-   "currentTier":6,
+   "currentRarity":4,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_OPERATIVE",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_OPERATIVE01",
@@ -4664,7 +4694,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE02",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -6297,7 +6327,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7213,7 +7243,7 @@
   },
   "generalsyndulla":{
    "currentRarity":4,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_GENERALSYNDULLA",
@@ -8227,12 +8257,12 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
   "tiereaper":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -8253,7 +8283,7 @@
     },
     {
      "id":"hardwareskill_TIEREAPER01",
-     "tier":0
+     "tier":1
     }
    ]
   },

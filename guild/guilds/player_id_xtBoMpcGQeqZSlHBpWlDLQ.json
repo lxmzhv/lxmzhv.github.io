@@ -2,7 +2,7 @@
  "allyCode":"279369294",
  "requirements":{
   "jabba":{
-   "total_score":26.0
+   "total_score":27.33
   },
   "gg":{
    "total_score":89.2
@@ -38,7 +38,7 @@
    "total_score":77.5
   }
  },
- "modsRating":12.944068,
+ "modsRating":12.953803,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,8 +127,8 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":4,
-   "currentTier":5,
+   "currentRarity":5,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
@@ -910,7 +910,7 @@
    "stats":{}
   },
   "krrsantan":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -1589,7 +1589,7 @@
    "stats":{}
   },
   "sithsupremacyclass":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[]
   },
@@ -2637,7 +2637,7 @@
     },
     {
      "id":"uniqueskill_DISGUISEDCLONETROOPER01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -2747,7 +2747,7 @@
   },
   "4lom":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_4LOM",
@@ -3056,7 +3056,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -3813,7 +3813,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4966,7 +4966,32 @@
   "zamwesell":{
    "currentRarity":7,
    "currentTier":1,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_ZAMWESELL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ZAMWESELL01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ZAMWESELL02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_ZAMWESELL",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_ZAMWESELL01",
+     "tier":5
+    },
+    {
+     "id":"contractskill_ZAMWESELL01",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
    }
@@ -5040,7 +5065,7 @@
    "stats":{}
   },
   "boushh":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":3,
    "skill":[
     {
@@ -5182,7 +5207,7 @@
   },
   "embo":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_EMBO",

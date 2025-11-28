@@ -38,7 +38,7 @@
    "total_score":94.5
   }
  },
- "modsRating":27.499974,
+ "modsRating":27.515801,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1890,7 +1890,7 @@
   },
   "sabinewrens3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SABINEWRENS301",
@@ -1906,11 +1906,11 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2118,7 +2118,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3835,7 +3835,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -4375,19 +4375,23 @@
   },
   "depabillaba":{
    "currentRarity":7,
-   "currentTier":4,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_DEPABILLABA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DEPABILLABA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_DEPABILLABA01",
      "tier":4
+    },
+    {
+     "id":"specialskill_DEPABILLABA02",
+     "tier":5
     }
    ],
    "relic":{
@@ -5713,7 +5717,7 @@
     },
     {
      "id":"uniqueskill_JEDIKNIGHTCAL01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

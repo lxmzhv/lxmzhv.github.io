@@ -20,16 +20,16 @@
    "total_score":95.5
   },
   "drevan":{
-   "total_score":107.6
+   "total_score":107.4
   },
   "amidala":{
    "total_score":102.33
   },
   "gungans":{
-   "total_score":104.2
+   "total_score":104.4
   },
   "leia":{
-   "total_score":111.6
+   "total_score":111.2
   },
   "slkr":{
    "total_score":107.71
@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":120.10528,
+ "modsRating":120.829525,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4966,6 +4966,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":13,
@@ -5703,7 +5737,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5728,7 +5762,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

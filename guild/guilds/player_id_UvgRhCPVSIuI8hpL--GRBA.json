@@ -2,7 +2,7 @@
  "allyCode":"272765393",
  "requirements":{
   "jabba":{
-   "total_score":90.83
+   "total_score":91.17
   },
   "gg":{
    "total_score":68.6
@@ -38,7 +38,7 @@
    "total_score":94.0
   }
  },
- "modsRating":41.826046,
+ "modsRating":41.788022,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -623,7 +623,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3294,7 +3294,7 @@
   },
   "quiggold":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3522,19 +3522,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4554,7 +4554,7 @@
   },
   "kix":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4574,7 +4574,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4712,7 +4712,7 @@
     },
     {
      "id":"uniqueskill_DEPABILLABA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5604,8 +5604,8 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":5,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
@@ -5712,7 +5712,7 @@
    "stats":{}
   },
   "ithano":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -9691,8 +9691,8 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":5,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_VANE",

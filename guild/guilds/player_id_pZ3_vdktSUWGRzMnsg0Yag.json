@@ -8,7 +8,7 @@
    "total_score":83.0
   },
   "gas":{
-   "total_score":66.4
+   "total_score":66.6
   },
   "inqs":{
    "total_score":65.0
@@ -38,7 +38,7 @@
    "total_score":59.5
   }
  },
- "modsRating":13.476678,
+ "modsRating":13.479175,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -451,7 +451,7 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -3281,7 +3281,7 @@
    "stats":{}
   },
   "appo":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -3398,19 +3398,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -7939,7 +7939,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -8290,7 +8290,7 @@
   },
   "trench":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_TRENCH",
@@ -9004,7 +9004,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },

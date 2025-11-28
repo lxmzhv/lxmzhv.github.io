@@ -8,7 +8,7 @@
    "total_score":84.8
   },
   "gas":{
-   "total_score":88.0
+   "total_score":87.8
   },
   "inqs":{
    "total_score":82.0
@@ -20,7 +20,7 @@
    "total_score":83.0
   },
   "drevan":{
-   "total_score":99.6
+   "total_score":99.0
   },
   "amidala":{
    "total_score":96.67
@@ -29,7 +29,7 @@
    "total_score":95.8
   },
   "leia":{
-   "total_score":104.2
+   "total_score":104.4
   },
   "slkr":{
    "total_score":95.86
@@ -38,7 +38,7 @@
    "total_score":87.5
   }
  },
- "modsRating":45.36359,
+ "modsRating":45.524033,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2998,15 +2998,15 @@
     },
     {
      "id":"specialskill_SM3302",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SM3301",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3327,7 +3327,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -3530,7 +3530,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4856,6 +4856,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":1,
@@ -5410,7 +5444,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":11
    },
    "stats":{}
   },

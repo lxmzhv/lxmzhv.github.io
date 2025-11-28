@@ -14,7 +14,7 @@
    "total_score":87.0
   },
   "reva":{
-   "total_score":90.6
+   "total_score":90.8
   },
   "geos":{
    "total_score":94.5
@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":28.11369,
+ "modsRating":28.33466,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2601,7 +2601,7 @@
    "stats":{}
   },
   "greatmothers":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3536,19 +3536,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3725,8 +3725,8 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BRUTUS",
@@ -3746,7 +3746,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5674,7 +5674,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6156,7 +6156,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7544,7 +7544,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8261,7 +8261,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":7,
    "skill":[
     {
@@ -10116,7 +10116,7 @@
     },
     {
      "id":"uniqueskill_MAZKANATA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

@@ -29,7 +29,7 @@
    "total_score":94.4
   },
   "leia":{
-   "total_score":97.8
+   "total_score":94.6
   },
   "slkr":{
    "total_score":94.29
@@ -38,7 +38,7 @@
    "total_score":91.5
   }
  },
- "modsRating":30.818387,
+ "modsRating":30.67361,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2922,7 +2922,7 @@
    "skill":[
     {
      "id":"basicskill_SM33",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SM3301",
@@ -2930,7 +2930,7 @@
     },
     {
      "id":"specialskill_SM3302",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SM3301",
@@ -2938,7 +2938,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3234,7 +3234,7 @@
   },
   "quiggold":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3254,7 +3254,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3462,18 +3462,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":3,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3586,7 +3594,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3660,7 +3668,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4485,8 +4493,8 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
-   "currentTier":11,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4506,7 +4514,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5144,7 +5152,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5384,7 +5392,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5514,7 +5522,7 @@
     },
     {
      "id":"specialskill_CAPTAINSILVO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_CAPTAINSILVO",
@@ -5526,7 +5534,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5610,7 +5618,7 @@
   },
   "ithano":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -5634,7 +5642,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -7318,7 +7326,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":10
    },
    "stats":{}
   },
@@ -9172,7 +9180,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -9510,7 +9518,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

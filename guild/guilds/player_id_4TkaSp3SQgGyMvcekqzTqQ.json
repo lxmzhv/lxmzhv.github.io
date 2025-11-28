@@ -2,7 +2,7 @@
  "allyCode":"493344583",
  "requirements":{
   "jabba":{
-   "total_score":73.17
+   "total_score":74.0
   },
   "gg":{
    "total_score":77.0
@@ -38,7 +38,7 @@
    "total_score":95.5
   }
  },
- "modsRating":36.500052,
+ "modsRating":36.508207,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -8409,7 +8409,7 @@
    "stats":{}
   },
   "tuskenchieftain":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -9709,8 +9709,8 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":5,
-   "currentTier":8,
+   "currentRarity":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_VANE",
@@ -9757,6 +9757,10 @@
     {
      "id":"contractskill_AURRA_SING01",
      "tier":1
+    },
+    {
+     "id":"leaderskill_AURRA_SING",
+     "tier":6
     }
    ],
    "relic":{

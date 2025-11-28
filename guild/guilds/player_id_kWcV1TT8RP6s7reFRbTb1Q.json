@@ -35,10 +35,10 @@
    "total_score":104.29
   },
   "beq_raid":{
-   "total_score":94.0
+   "total_score":94.5
   }
  },
- "modsRating":94.086756,
+ "modsRating":94.626225,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3793,7 +3793,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5717,7 +5717,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5742,7 +5742,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":8
    },
    "stats":{}
   },

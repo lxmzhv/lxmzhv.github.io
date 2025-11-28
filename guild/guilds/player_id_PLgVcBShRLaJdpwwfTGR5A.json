@@ -2,7 +2,7 @@
  "allyCode":"175552954",
  "requirements":{
   "jabba":{
-   "total_score":70.33
+   "total_score":68.17
   },
   "gg":{
    "total_score":82.8
@@ -29,16 +29,16 @@
    "total_score":0.0
   },
   "leia":{
-   "total_score":38.8
+   "total_score":39.8
   },
   "slkr":{
-   "total_score":89.86
+   "total_score":88.14
   },
   "beq_raid":{
    "total_score":39.5
   }
  },
- "modsRating":14.556348,
+ "modsRating":15.114463,
  "roster":{
   "magmatrooper":{
    "currentRarity":5,
@@ -2613,7 +2613,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2625,6 +2625,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4120,11 +4128,11 @@
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -6226,7 +6234,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },

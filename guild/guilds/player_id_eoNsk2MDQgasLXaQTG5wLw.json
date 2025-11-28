@@ -29,7 +29,7 @@
    "total_score":31.0
   },
   "leia":{
-   "total_score":62.6
+   "total_score":65.2
   },
   "slkr":{
    "total_score":48.0
@@ -889,7 +889,7 @@
    "stats":{}
   },
   "badbatchhunter":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -2621,7 +2621,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4340,11 +4340,23 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":0
+     "tier":1
+    },
+    {
+     "id":"specialskill_CAPTAINDROGAN01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_CAPTAINDROGAN02",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_CAPTAINDROGAN01",
+     "tier":1
     }
    ],
    "relic":{
@@ -5617,7 +5629,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

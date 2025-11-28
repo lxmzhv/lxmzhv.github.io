@@ -38,7 +38,7 @@
    "total_score":43.0
   }
  },
- "modsRating":28.343548,
+ "modsRating":28.669955,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -128,7 +128,7 @@
   },
   "zuckuss":{
    "currentRarity":4,
-   "currentTier":1,
+   "currentTier":2,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
@@ -157,7 +157,8 @@
    ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "zebs3":{
    "currentRarity":7,
@@ -476,7 +477,7 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -3285,7 +3286,7 @@
   },
   "4lom":{
    "currentRarity":3,
-   "currentTier":1,
+   "currentTier":5,
    "skill":[
     {
      "id":"contractskill_4LOM",
@@ -3314,7 +3315,8 @@
    ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "capitalleviathan":{
    "currentRarity":7,
@@ -3498,6 +3500,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4138,7 +4148,7 @@
     },
     {
      "id":"uniqueskill_LORDVADER01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
@@ -4146,7 +4156,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":8
    },
    "stats":{}
   },

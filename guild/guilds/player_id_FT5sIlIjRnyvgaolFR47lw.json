@@ -38,7 +38,7 @@
    "total_score":33.5
   }
  },
- "modsRating":6.485871,
+ "modsRating":6.50272,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -452,7 +452,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"specialskill_VANGUARDTEMPLEGUARD02",
@@ -2098,7 +2098,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -3235,7 +3235,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3247,6 +3247,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5224,7 +5232,7 @@
   },
   "ithano":{
    "currentRarity":4,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"leaderskill_ITHANO",
@@ -5248,7 +5256,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },

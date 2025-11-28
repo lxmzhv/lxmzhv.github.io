@@ -2,7 +2,7 @@
  "allyCode":"463236954",
  "requirements":{
   "jabba":{
-   "total_score":64.33
+   "total_score":65.33
   },
   "gg":{
    "total_score":78.0
@@ -38,7 +38,7 @@
    "total_score":78.5
   }
  },
- "modsRating":15.756647,
+ "modsRating":16.164418,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2444,7 +2444,7 @@
   },
   "grandmasterluke":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_GRANDMASTERLUKE",
@@ -2472,7 +2472,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3434,19 +3434,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",

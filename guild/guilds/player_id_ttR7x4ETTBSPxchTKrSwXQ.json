@@ -38,7 +38,7 @@
    "total_score":41.0
   }
  },
- "modsRating":21.420104,
+ "modsRating":21.442431,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1324,7 +1324,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3014,7 +3014,7 @@
    "stats":{}
   },
   "disguisedclonetrooper":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -3521,7 +3521,7 @@
   },
   "brutus":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_BRUTUS01",
@@ -4720,7 +4720,7 @@
   },
   "zoriibliss_v2":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_ZORIIBLISS_V2",
@@ -5285,6 +5285,14 @@
     {
      "id":"hardwareskill_UWINGSCARIF01",
      "tier":1
+    },
+    {
+     "id":"specialskill_UWINGSCARIF01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_UWINGSCARIF01",
+     "tier":6
     }
    ]
   },
@@ -6849,7 +6857,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"leaderskill_STORMTROOPERHAN",

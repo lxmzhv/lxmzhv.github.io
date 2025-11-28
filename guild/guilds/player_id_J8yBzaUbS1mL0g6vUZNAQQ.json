@@ -2,7 +2,7 @@
  "allyCode":"666522771",
  "requirements":{
   "jabba":{
-   "total_score":36.17
+   "total_score":38.0
   },
   "gg":{
    "total_score":81.2
@@ -38,7 +38,7 @@
    "total_score":35.0
   }
  },
- "modsRating":12.934537,
+ "modsRating":12.941033,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -433,7 +433,7 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -2062,7 +2062,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3378,7 +3378,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3390,6 +3390,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5349,12 +5357,12 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CAPTAINSILVO01",
@@ -5934,7 +5942,7 @@
   },
   "boushh":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BOUSHH",
@@ -5946,7 +5954,7 @@
     },
     {
      "id":"leaderskill_BOUSHH",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_BOUSHH02",
@@ -5962,7 +5970,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -6170,7 +6178,7 @@
    "skill":[
     {
      "id":"basicskill_LOBOT",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_LOBOT",
@@ -6178,15 +6186,15 @@
     },
     {
      "id":"specialskill_LOBOT01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_LOBOT01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_LOBOT02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

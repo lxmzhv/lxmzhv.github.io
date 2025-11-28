@@ -339,7 +339,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":6,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_VANGUARDTEMPLEGUARD",
@@ -1702,7 +1702,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -2652,23 +2652,23 @@
   },
   "4lom":{
    "currentRarity":3,
-   "currentTier":7,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_4LOM",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_4LOM01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_4LOM02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_4LOM",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_4LOM01",
@@ -2676,7 +2676,7 @@
     },
     {
      "id":"contractskill_4LOM",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -2711,7 +2711,7 @@
    "stats":{}
   },
   "appo":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":10,
    "skill":[
     {
@@ -2827,7 +2827,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3621,7 +3621,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -4245,16 +4245,16 @@
    ]
   },
   "operative":{
-   "currentRarity":5,
-   "currentTier":7,
+   "currentRarity":6,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_OPERATIVE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_OPERATIVE01",
@@ -4541,7 +4541,7 @@
    "stats":{}
   },
   "ithano":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":7,
    "skill":[
     {
@@ -4550,7 +4550,7 @@
     },
     {
      "id":"specialskill_ITHANO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ITHANO02",

@@ -2,7 +2,7 @@
  "allyCode":"888914217",
  "requirements":{
   "jabba":{
-   "total_score":88.0
+   "total_score":88.17
   },
   "gg":{
    "total_score":91.2
@@ -23,22 +23,22 @@
    "total_score":99.6
   },
   "amidala":{
-   "total_score":90.33
+   "total_score":94.67
   },
   "gungans":{
-   "total_score":93.2
+   "total_score":93.6
   },
   "leia":{
-   "total_score":99.8
+   "total_score":100.2
   },
   "slkr":{
-   "total_score":97.86
+   "total_score":98.29
   },
   "beq_raid":{
    "total_score":91.0
   }
  },
- "modsRating":34.716321,
+ "modsRating":35.424747,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3395,8 +3395,8 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":4,
-   "currentTier":9,
+   "currentRarity":5,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_4LOM",
@@ -4957,6 +4957,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":8,
@@ -5706,7 +5740,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5731,7 +5765,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6824,7 +6858,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -8537,7 +8571,7 @@
    "stats":{}
   },
   "tuskenchieftain":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -8920,7 +8954,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },

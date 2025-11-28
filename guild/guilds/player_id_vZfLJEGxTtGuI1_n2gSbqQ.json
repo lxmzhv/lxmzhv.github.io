@@ -11,7 +11,7 @@
    "total_score":100.0
   },
   "inqs":{
-   "total_score":68.0
+   "total_score":69.6
   },
   "reva":{
    "total_score":102.4
@@ -38,7 +38,7 @@
    "total_score":101.5
   }
  },
- "modsRating":149.272469,
+ "modsRating":149.485864,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3617,6 +3617,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -4955,6 +4963,40 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":10
    },
    "stats":{}
   },

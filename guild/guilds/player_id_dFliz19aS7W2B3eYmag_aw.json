@@ -11,10 +11,10 @@
    "total_score":49.8
   },
   "inqs":{
-   "total_score":69.0
+   "total_score":68.8
   },
   "reva":{
-   "total_score":79.0
+   "total_score":79.6
   },
   "geos":{
    "total_score":64.5
@@ -29,7 +29,7 @@
    "total_score":23.2
   },
   "leia":{
-   "total_score":63.8
+   "total_score":64.4
   },
   "slkr":{
    "total_score":27.71
@@ -38,7 +38,7 @@
    "total_score":77.5
   }
  },
- "modsRating":7.798433,
+ "modsRating":8.112719,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -254,7 +254,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2077,7 +2077,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2459,7 +2459,7 @@
   },
   "fulcrumahsoka":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_FULCRUMAHSOKA01",
@@ -3055,19 +3055,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -6083,7 +6083,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },

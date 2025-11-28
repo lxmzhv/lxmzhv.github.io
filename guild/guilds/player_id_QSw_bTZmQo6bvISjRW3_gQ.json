@@ -38,7 +38,7 @@
    "total_score":84.5
   }
  },
- "modsRating":33.59522,
+ "modsRating":33.679871,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -636,7 +636,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3458,7 +3458,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3470,6 +3470,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3842,7 +3850,7 @@
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":6
+     "tier":7
     },
     {
      "id":"basicskill_GRANDMOFFTARKIN",
@@ -5213,7 +5221,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
@@ -5496,8 +5504,8 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINSILVO01",
@@ -5509,7 +5517,7 @@
     },
     {
      "id":"specialskill_CAPTAINSILVO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINSILVO01",
@@ -5521,7 +5529,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -9115,7 +9123,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

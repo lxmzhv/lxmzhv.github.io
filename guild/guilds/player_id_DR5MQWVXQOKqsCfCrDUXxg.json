@@ -2,7 +2,7 @@
  "allyCode":"998982641",
  "requirements":{
   "jabba":{
-   "total_score":91.33
+   "total_score":91.5
   },
   "gg":{
    "total_score":90.0
@@ -29,7 +29,7 @@
    "total_score":97.2
   },
   "leia":{
-   "total_score":115.0
+   "total_score":115.6
   },
   "slkr":{
    "total_score":98.0
@@ -38,7 +38,7 @@
    "total_score":101.5
   }
  },
- "modsRating":87.571846,
+ "modsRating":87.401817,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3385,7 +3385,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":10,
    "skill":[
     {
@@ -7684,7 +7684,23 @@
    "skill":[
     {
      "id":"basicskill_TARFFUL",
-     "tier":0
+     "tier":6
+    },
+    {
+     "id":"specialskill_TARFFUL01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_TARFFUL02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_TARFFUL",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_TARFFUL01",
+     "tier":5
     }
    ],
    "relic":{

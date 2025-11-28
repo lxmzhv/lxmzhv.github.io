@@ -29,16 +29,16 @@
    "total_score":88.4
   },
   "leia":{
-   "total_score":92.2
+   "total_score":99.8
   },
   "slkr":{
    "total_score":102.0
   },
   "beq_raid":{
-   "total_score":69.5
+   "total_score":86.5
   }
  },
- "modsRating":75.142191,
+ "modsRating":74.792194,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -498,7 +498,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3375,8 +3375,8 @@
    ]
   },
   "quiggold":{
-   "currentRarity":3,
-   "currentTier":9,
+   "currentRarity":4,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -5717,7 +5717,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":12,
    "skill":[
     {
@@ -5730,7 +5730,7 @@
     },
     {
      "id":"specialskill_CAPTAINSILVO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_CAPTAINSILVO",
@@ -9700,7 +9700,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9865,7 +9865,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {

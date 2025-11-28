@@ -38,7 +38,7 @@
    "total_score":40.0
   }
  },
- "modsRating":41.041626,
+ "modsRating":41.045167,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2216,7 +2216,7 @@
   },
   "padawansabine":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -2836,7 +2836,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3384,6 +3384,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4210,7 +4218,7 @@
   },
   "ezraexile":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRAEXILE",
@@ -4234,7 +4242,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

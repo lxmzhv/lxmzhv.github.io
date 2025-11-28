@@ -23,7 +23,7 @@
    "total_score":37.2
   },
   "amidala":{
-   "total_score":75.0
+   "total_score":81.67
   },
   "gungans":{
    "total_score":92.8
@@ -38,7 +38,7 @@
    "total_score":86.5
   }
  },
- "modsRating":21.00217,
+ "modsRating":21.110555,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1759,7 +1759,7 @@
   },
   "sabinewrens3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SABINEWRENS3",
@@ -1775,11 +1775,11 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -1875,7 +1875,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_QUEENAMIDALA",
@@ -1895,11 +1895,11 @@
     },
     {
      "id":"uniqueskill_QUEENAMIDALA01",
-     "tier":4
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2143,7 +2143,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3039,7 +3039,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -8456,8 +8456,8 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_VANE",

@@ -2,7 +2,7 @@
  "allyCode":"683192997",
  "requirements":{
   "jabba":{
-   "total_score":94.33
+   "total_score":94.67
   },
   "gg":{
    "total_score":97.4
@@ -38,7 +38,7 @@
    "total_score":98.0
   }
  },
- "modsRating":124.92391,
+ "modsRating":125.090237,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -494,7 +494,7 @@
     },
     {
      "id":"uniqueskill_VANGUARDTEMPLEGUARD01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -2222,7 +2222,7 @@
     },
     {
      "id":"specialskill_QUEENAMIDALA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_QUEENAMIDALA02",
@@ -2528,7 +2528,7 @@
     },
     {
      "id":"specialskill_BENSOLO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BENSOLO02",
@@ -2934,7 +2934,7 @@
     },
     {
      "id":"specialskill_BAYLANSKOLL02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_BAYLANSKOLL",
@@ -3401,8 +3401,8 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
-   "currentTier":12,
+   "currentRarity":4,
+   "currentTier":13,
    "skill":[
     {
      "id":"contractskill_4LOM",
@@ -3430,7 +3430,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3616,6 +3616,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5464,7 +5472,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_OPERATIVE02",
@@ -6250,7 +6258,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -6438,7 +6446,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -9912,7 +9920,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },

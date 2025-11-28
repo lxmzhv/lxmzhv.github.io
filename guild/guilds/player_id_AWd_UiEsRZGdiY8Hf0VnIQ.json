@@ -2,7 +2,7 @@
  "allyCode":"476886975",
  "requirements":{
   "jabba":{
-   "total_score":67.17
+   "total_score":75.33
   },
   "gg":{
    "total_score":83.0
@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":15.226001,
+ "modsRating":15.230269,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":4,
    "skill":[
     {
@@ -5417,6 +5417,44 @@
     }
    ]
   },
+  "jabbathehutt":{
+   "currentRarity":7,
+   "currentTier":11,
+   "skill":[
+    {
+     "id":"basicskill_JABBATHEHUTT",
+     "tier":0
+    },
+    {
+     "id":"specialskill_JABBATHEHUTT01",
+     "tier":0
+    },
+    {
+     "id":"specialskill_JABBATHEHUTT02",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_JABBATHEHUTT",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_JABBATHEHUTT01",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":0
+    },
+    {
+     "id":"contractskill_JABBATHEHUTT01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "humanthug":{
    "currentRarity":7,
    "currentTier":13,
@@ -6161,7 +6199,7 @@
    "stats":{}
   },
   "sanastarros":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -6264,7 +6302,7 @@
     },
     {
      "id":"leaderskill_JEDIKNIGHTLUKE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_JEDIKNIGHTLUKE01",
@@ -6466,7 +6504,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":9
    },
    "stats":{}
   },
@@ -7454,7 +7492,7 @@
     },
     {
      "id":"uniqueskill_JARJARBINKS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_JARJARBINKS02",

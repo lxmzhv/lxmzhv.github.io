@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":26.525188,
+ "modsRating":26.65766,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -160,7 +160,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1750,7 +1750,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },
@@ -2132,7 +2132,7 @@
   },
   "padawansabine":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -2152,7 +2152,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -6778,7 +6778,7 @@
     },
     {
      "id":"uniqueskill_JARJARBINKS01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_JARJARBINKS01",
@@ -7389,12 +7389,13 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":6,
-   "currentTier":1,
+   "currentRarity":7,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "boomadier":{
    "currentRarity":7,

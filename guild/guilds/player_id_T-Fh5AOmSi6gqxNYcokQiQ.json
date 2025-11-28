@@ -8,10 +8,10 @@
    "total_score":59.2
   },
   "gas":{
-   "total_score":14.6
+   "total_score":17.2
   },
   "inqs":{
-   "total_score":23.6
+   "total_score":24.2
   },
   "reva":{
    "total_score":40.8
@@ -20,7 +20,7 @@
    "total_score":63.5
   },
   "drevan":{
-   "total_score":50.0
+   "total_score":51.8
   },
   "amidala":{
    "total_score":18.67
@@ -29,7 +29,7 @@
    "total_score":15.8
   },
   "leia":{
-   "total_score":70.4
+   "total_score":77.4
   },
   "slkr":{
    "total_score":82.0
@@ -38,7 +38,7 @@
    "total_score":85.0
   }
  },
- "modsRating":14.444725,
+ "modsRating":15.04372,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -292,7 +292,7 @@
    "skill":[
     {
      "id":"uniqueskill_MARAUDER01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"basicskill_MARAUDER",
@@ -304,11 +304,15 @@
     },
     {
      "id":"uniqueskill_MARAUDER02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_MARAUDER01",
-     "tier":4
+     "tier":5
+    },
+    {
+     "id":"specialskill_MARAUDER02",
+     "tier":5
     }
    ]
   },
@@ -840,8 +844,25 @@
   },
   "badbatchhunter":{
    "currentRarity":6,
-   "currentTier":5,
-   "skill":[],
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_BADBATCHHUNTER",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BADBATCHHUNTER01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BADBATCHHUNTER02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_BADBATCHHUNTER",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -1754,7 +1775,7 @@
   },
   "scarifrebel":{
    "currentRarity":7,
-   "currentTier":2,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_SCARIFREBEL",
@@ -1977,7 +1998,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -4054,7 +4075,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4370,7 +4391,7 @@
   },
   "badbatchwrecker":{
    "currentRarity":6,
-   "currentTier":3,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_BADBATCHWRECKER",
@@ -5405,7 +5426,7 @@
     },
     {
      "id":"leaderskill_JEDIKNIGHTCAL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_JEDIKNIGHTCAL01",
@@ -5739,7 +5760,7 @@
    "stats":{}
   },
   "ywingclonewars":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[
     {
@@ -7767,7 +7788,7 @@
   },
   "badbatchtech":{
    "currentRarity":6,
-   "currentTier":3,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BADBATCHTECH",
@@ -7983,11 +8004,25 @@
   },
   "sithassassin":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"basicskill_SITHASSASSIN",
+     "tier":5
+    },
+    {
+     "id":"specialskill_SITHASSASSIN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_SITHASSASSIN02",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "snowtrooper":{
    "currentRarity":7,
@@ -8246,7 +8281,7 @@
    "stats":{}
   },
   "tiereaper":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -8563,19 +8598,19 @@
    "skill":[
     {
      "id":"uniqueskill_KYLEKATARN01",
-     "tier":3
+     "tier":5
     },
     {
      "id":"specialskill_KYLEKATARN02",
-     "tier":3
+     "tier":5
     },
     {
      "id":"specialskill_KYLEKATARN01",
-     "tier":2
+     "tier":5
     },
     {
      "id":"basicskill_KYLEKATARN",
-     "tier":3
+     "tier":5
     }
    ],
    "relic":{

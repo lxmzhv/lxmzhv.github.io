@@ -38,7 +38,7 @@
    "total_score":82.0
   }
  },
- "modsRating":11.717016,
+ "modsRating":11.741969,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -618,7 +618,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2217,7 +2217,12 @@
   "commanderahsoka":{
    "currentRarity":7,
    "currentTier":12,
-   "skill":[],
+   "skill":[
+    {
+     "id":"specialskill_COMMANDERAHSOKA02",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -7521,7 +7526,7 @@
     },
     {
      "id":"uniqueskill_CAPITALCHIMAERA01",
-     "tier":2
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALCHIMAERA01",
@@ -7877,7 +7882,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8143,15 +8148,15 @@
   },
   "macewindu":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MACEWINDU",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MACEWINDU01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MACEWINDU02",
@@ -8757,7 +8762,7 @@
    "stats":{}
   },
   "tiereaper":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[]
   },
@@ -9340,7 +9345,7 @@
    "stats":{}
   },
   "ig12":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[],
    "relic":{

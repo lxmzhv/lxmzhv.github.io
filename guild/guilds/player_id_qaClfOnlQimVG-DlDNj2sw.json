@@ -38,7 +38,7 @@
    "total_score":82.5
   }
  },
- "modsRating":47.876352,
+ "modsRating":48.705761,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3814,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4966,6 +4966,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":13,
@@ -5695,7 +5729,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5708,7 +5742,7 @@
     },
     {
      "id":"specialskill_CAPTAINSILVO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_CAPTAINSILVO",
@@ -5720,7 +5754,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":9
    },
    "stats":{}
   },

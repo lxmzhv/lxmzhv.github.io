@@ -38,7 +38,7 @@
    "total_score":90.0
   }
  },
- "modsRating":27.82213,
+ "modsRating":27.832778,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -443,7 +443,7 @@
    ]
   },
   "vanguardtempleguard":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -2961,7 +2961,7 @@
     },
     {
      "id":"uniqueskill_DISGUISEDCLONETROOPER01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -3273,19 +3273,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4397,7 +4397,7 @@
   },
   "depabillaba":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DEPABILLABA",
@@ -4417,7 +4417,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4963,11 +4963,11 @@
    "skill":[
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_OPERATIVE02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
@@ -5717,6 +5717,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "zamwesell":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "jediknightcal":{
    "currentRarity":7,
