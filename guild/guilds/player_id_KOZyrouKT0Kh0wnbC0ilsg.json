@@ -29,16 +29,16 @@
    "total_score":20.2
   },
   "leia":{
-   "total_score":61.4
+   "total_score":42.0
   },
   "slkr":{
-   "total_score":71.14
+   "total_score":74.86
   },
   "beq_raid":{
    "total_score":38.0
   }
  },
- "modsRating":13.854552,
+ "modsRating":13.965942,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1549,7 +1549,7 @@
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":12
    },
    "stats":{}
   },
@@ -1562,7 +1562,7 @@
    }
   },
   "stap":{
-   "currentRarity":3,
+   "currentRarity":5,
    "currentTier":10,
    "skill":[
     {
@@ -2383,7 +2383,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2949,15 +2949,15 @@
    "skill":[
     {
      "id":"basicskill_PAO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_PAO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_PAO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_PAO01",
@@ -3238,15 +3238,15 @@
    "skill":[
     {
      "id":"specialskill_HOTHHAN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HOTHHAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_HOTHHAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_HOTHHAN01",
@@ -3571,7 +3571,7 @@
    ]
   },
   "vulturedroid":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[]
   },
@@ -3701,7 +3701,7 @@
     },
     {
      "id":"uniqueskill_DASHRENDAR",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DASHRENDAR02",
@@ -3952,7 +3952,7 @@
   },
   "commanderlukeskywalker":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_COMMANDERLUKESKYWALKER",
@@ -3980,7 +3980,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4526,11 +4526,11 @@
     },
     {
      "id":"specialskill_ROGUEONESHIP01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_ROGUEONESHIP02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_ROGUEONESHIP",
@@ -5294,6 +5294,36 @@
    "currentRarity":7,
    "currentTier":6,
    "skill":[],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jediknightluke":{
+   "currentRarity":7,
+   "currentTier":11,
+   "skill":[
+    {
+     "id":"basicskill_JEDIKNIGHTLUKE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JEDIKNIGHTLUKE01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JEDIKNIGHTLUKE02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_JEDIKNIGHTLUKE",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_JEDIKNIGHTLUKE01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -6812,15 +6842,15 @@
    "skill":[
     {
      "id":"leaderskill_HOTHLEIA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_HOTHLEIA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HOTHLEIA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_HOTHLEIA01",
@@ -6894,15 +6924,15 @@
    "skill":[
     {
      "id":"specialskill_BODHIROOK01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_BODHIROOK",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BODHIROOK02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_BODHIROOK01",
@@ -8089,6 +8119,32 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "capitalprofundity":{
+   "currentRarity":5,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_CAPITALPROFUNDITY",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_CAPITALPROFUNDITY01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CAPITALPROFUNDITY03",
+     "tier":4
+    },
+    {
+     "id":"specialskill_CAPITALPROFUNDITY02",
+     "tier":4
+    },
+    {
+     "id":"specialskill_CAPITALPROFUNDITY01",
+     "tier":4
+    }
+   ]
   },
   "cadbane":{
    "currentRarity":7,

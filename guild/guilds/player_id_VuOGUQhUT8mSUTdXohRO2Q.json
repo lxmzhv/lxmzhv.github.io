@@ -38,7 +38,7 @@
    "total_score":88.0
   }
  },
- "modsRating":15.560833,
+ "modsRating":15.81632,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1075,9 +1075,26 @@
   "bokatan":{
    "currentRarity":7,
    "currentTier":13,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_BOKATAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BOKATAN01",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_BOKATAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BOKATAN01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1132,6 +1149,36 @@
      "tier":6
     }
    ]
+  },
+  "mandalorbokatan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MANDALORBOKATAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MANDALORBOKATAN01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MANDALORBOKATAN02",
+     "tier":7
+    },
+    {
+     "id":"leaderskill_MANDALORBOKATAN",
+     "tier":7
+    },
+    {
+     "id":"uniqueskill_MANDALORBOKATAN01",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
   },
   "comeuppance":{
    "currentRarity":5,
@@ -3900,11 +3947,11 @@
     },
     {
      "id":"specialskill_PAZVIZSLA02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_PAZVIZSLA01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -7910,7 +7957,7 @@
     },
     {
      "id":"uniqueskill_IG1201",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

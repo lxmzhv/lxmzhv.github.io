@@ -23,7 +23,7 @@
    "total_score":94.8
   },
   "amidala":{
-   "total_score":48.0
+   "total_score":50.33
   },
   "gungans":{
    "total_score":93.2
@@ -2214,7 +2214,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"leaderskill_QUEENAMIDALA",
@@ -3557,6 +3557,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -3746,7 +3754,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5060,7 +5068,7 @@
   },
   "zoriibliss_v2":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_ZORIIBLISS_V202",
@@ -5674,7 +5682,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -6722,7 +6730,7 @@
   },
   "padawanobiwan":{
    "currentRarity":6,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_PADAWANOBIWAN01",
@@ -8824,7 +8832,7 @@
   },
   "masterquigon":{
    "currentRarity":6,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_MASTERQUIGON01",

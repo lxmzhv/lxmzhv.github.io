@@ -2,7 +2,7 @@
  "allyCode":"238224446",
  "requirements":{
   "jabba":{
-   "total_score":57.0
+   "total_score":57.67
   },
   "gg":{
    "total_score":70.6
@@ -14,7 +14,7 @@
    "total_score":60.6
   },
   "reva":{
-   "total_score":89.4
+   "total_score":89.6
   },
   "geos":{
    "total_score":66.5
@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":13.090527,
+ "modsRating":13.356812,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1030,7 +1030,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3329,7 +3329,7 @@
    "stats":{}
   },
   "stormtrooperluke":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":5,
    "skill":[
     {
@@ -3904,7 +3904,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX01",
@@ -5540,7 +5540,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5799,7 +5799,7 @@
   },
   "jediknightcal":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"leaderskill_JEDIKNIGHTCAL",
@@ -6664,7 +6664,7 @@
    "stats":{}
   },
   "rosetico":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":10,
    "skill":[],
    "relic":{
@@ -8522,6 +8522,10 @@
     },
     {
      "id":"basicskill_SAVAGEOPRESS",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_SAVAGEOPRESS",
      "tier":6
     }
    ],

@@ -5,7 +5,7 @@
    "total_score":80.17
   },
   "gg":{
-   "total_score":76.2
+   "total_score":75.6
   },
   "gas":{
    "total_score":70.8
@@ -23,7 +23,7 @@
    "total_score":95.2
   },
   "amidala":{
-   "total_score":36.33
+   "total_score":36.0
   },
   "gungans":{
    "total_score":24.8
@@ -38,7 +38,7 @@
    "total_score":14.5
   }
  },
- "modsRating":20.769831,
+ "modsRating":21.06138,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -4088,6 +4088,40 @@
      "tier":1
     }
    ]
+  },
+  "lordvader":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_LORDVADER",
+     "tier":1
+    },
+    {
+     "id":"specialskill_LORDVADER01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_LORDVADER02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_LORDVADER",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_LORDVADER01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "resistancetrooper":{
    "currentRarity":7,

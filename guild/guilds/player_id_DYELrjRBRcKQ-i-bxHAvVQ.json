@@ -8,7 +8,7 @@
    "total_score":83.0
   },
   "gas":{
-   "total_score":84.6
+   "total_score":85.0
   },
   "inqs":{
    "total_score":66.4
@@ -38,7 +38,7 @@
    "total_score":92.0
   }
  },
- "modsRating":48.534517,
+ "modsRating":48.855136,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3060,7 +3060,7 @@
   },
   "sm33":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SM33",
@@ -3080,7 +3080,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3616,6 +3616,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -8970,7 +8978,7 @@
   },
   "teebo":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_TEEBO",
@@ -9878,7 +9886,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

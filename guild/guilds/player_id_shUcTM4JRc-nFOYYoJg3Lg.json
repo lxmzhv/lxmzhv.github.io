@@ -38,7 +38,7 @@
    "total_score":83.0
   }
  },
- "modsRating":9.802392,
+ "modsRating":9.79439,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1986,7 +1986,7 @@
   },
   "epixpoe":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_EPIXPOE",
@@ -3258,27 +3258,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3390,7 +3390,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":6
    },
    "stats":{}
   },
@@ -9120,7 +9120,7 @@
   },
   "resistancepilot":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_RESISTANCEPILOT",
@@ -9136,7 +9136,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

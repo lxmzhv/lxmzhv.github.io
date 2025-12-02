@@ -23,7 +23,7 @@
    "total_score":91.2
   },
   "amidala":{
-   "total_score":83.67
+   "total_score":82.0
   },
   "gungans":{
    "total_score":91.2
@@ -38,7 +38,7 @@
    "total_score":88.5
   }
  },
- "modsRating":22.020014,
+ "modsRating":22.068916,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1564,7 +1564,7 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -2261,6 +2261,40 @@
     {
      "id":"specialskill_CROSSHAIRS302",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "glahsokatano":{
+   "currentRarity":7,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"basicskill_GLAHSOKATANO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLAHSOKATANO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLAHSOKATANO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLAHSOKATANO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLAHSOKATANO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
     }
    ],
    "relic":{
@@ -3691,7 +3725,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -4310,7 +4344,7 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -4334,7 +4368,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5134,7 +5168,7 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
@@ -7070,7 +7104,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8248,7 +8282,7 @@
     },
     {
      "id":"uniqueskill_GENERALSYNDULLA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

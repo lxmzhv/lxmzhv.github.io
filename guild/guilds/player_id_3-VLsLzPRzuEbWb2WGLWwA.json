@@ -2,7 +2,7 @@
  "allyCode":"547729528",
  "requirements":{
   "jabba":{
-   "total_score":77.83
+   "total_score":78.17
   },
   "gg":{
    "total_score":84.6
@@ -23,7 +23,7 @@
    "total_score":99.6
   },
   "amidala":{
-   "total_score":70.0
+   "total_score":90.33
   },
   "gungans":{
    "total_score":28.6
@@ -38,7 +38,7 @@
    "total_score":98.0
   }
  },
- "modsRating":32.181036,
+ "modsRating":32.262295,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3252,7 +3252,7 @@
   },
   "quiggold":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3480,19 +3480,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3670,7 +3670,7 @@
   },
   "brutus":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BRUTUS",
@@ -4278,7 +4278,7 @@
     },
     {
      "id":"uniqueskill_CASSIANANDOR01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5510,7 +5510,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5564,7 +5564,7 @@
   },
   "captainsilvo":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
@@ -5672,7 +5672,7 @@
   },
   "ithano":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -6190,7 +6190,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6456,7 +6456,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -9588,7 +9588,7 @@
   },
   "vane":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_VANE",

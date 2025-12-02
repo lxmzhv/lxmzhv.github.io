@@ -20,7 +20,7 @@
    "total_score":87.0
   },
   "drevan":{
-   "total_score":71.0
+   "total_score":71.8
   },
   "amidala":{
    "total_score":76.0
@@ -38,7 +38,7 @@
    "total_score":78.0
   }
  },
- "modsRating":10.405295,
+ "modsRating":10.376806,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -4502,12 +4502,34 @@
    "stats":{}
   },
   "armorer":{
-   "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"leaderskill_ARMORER",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_ARMORER01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_ARMORER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ARMORER02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ARMORER01",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "deathtrooperperidea":{
    "currentRarity":6,
@@ -4935,15 +4957,15 @@
     },
     {
      "id":"specialskill_R2D2_LEGENDARY01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_R2D2_LEGENDARY02",
-     "tier":3
+     "tier":5
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY02",
@@ -5146,7 +5168,7 @@
    "stats":{}
   },
   "ithano":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -6782,7 +6804,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },

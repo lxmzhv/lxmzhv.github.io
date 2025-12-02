@@ -35,10 +35,10 @@
    "total_score":95.57
   },
   "beq_raid":{
-   "total_score":72.0
+   "total_score":72.5
   }
  },
- "modsRating":11.83641,
+ "modsRating":11.84416,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -435,7 +435,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":6,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_VANGUARDTEMPLEGUARD",
@@ -2703,11 +2703,23 @@
   },
   "scorch":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_SCORCH",
-     "tier":2
+     "tier":6
+    },
+    {
+     "id":"specialskill_SCORCH01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SCORCH02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_SCORCH01",
+     "tier":4
     }
    ],
    "relic":{
@@ -2867,8 +2879,25 @@
   },
   "disguisedclonetrooper":{
    "currentRarity":4,
-   "currentTier":6,
-   "skill":[],
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_DISGUISEDCLONETROOPER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DISGUISEDCLONETROOPER01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DISGUISEDCLONETROOPER01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_DISGUISEDCLONETROOPER02",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -3116,7 +3145,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7525,19 +7554,19 @@
   },
   "bodhirook":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_BODHIROOK",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BODHIROOK01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BODHIROOK02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_BODHIROOK01",

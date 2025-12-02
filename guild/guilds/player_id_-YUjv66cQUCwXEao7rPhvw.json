@@ -3308,7 +3308,7 @@
   },
   "quiggold":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3328,7 +3328,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3502,27 +3502,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3634,7 +3634,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5498,7 +5498,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5615,7 +5615,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -9837,24 +9837,24 @@
    "stats":{}
   },
   "capitalprofundity":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
      "id":"basicskill_CAPITALPROFUNDITY",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY03",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_CAPITALPROFUNDITY01",

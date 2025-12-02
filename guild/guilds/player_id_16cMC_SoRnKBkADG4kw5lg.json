@@ -2,7 +2,7 @@
  "allyCode":"654121444",
  "requirements":{
   "jabba":{
-   "total_score":74.0
+   "total_score":79.17
   },
   "gg":{
    "total_score":81.8
@@ -14,13 +14,13 @@
    "total_score":58.6
   },
   "reva":{
-   "total_score":63.8
+   "total_score":66.6
   },
   "geos":{
    "total_score":86.5
   },
   "drevan":{
-   "total_score":78.0
+   "total_score":69.6
   },
   "amidala":{
    "total_score":44.67
@@ -29,16 +29,16 @@
    "total_score":58.8
   },
   "leia":{
-   "total_score":83.0
+   "total_score":90.4
   },
   "slkr":{
-   "total_score":82.14
+   "total_score":72.86
   },
   "beq_raid":{
    "total_score":42.5
   }
  },
- "modsRating":18.713719,
+ "modsRating":18.973028,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1320,7 +1320,7 @@
     },
     {
      "id":"leaderskill_MANDALORBOKATAN",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_MANDALORBOKATAN01",
@@ -3177,7 +3177,7 @@
    ]
   },
   "quiggold":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -4550,7 +4550,7 @@
   },
   "depabillaba":{
    "currentRarity":6,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_DEPABILLABA01",
@@ -5585,7 +5585,7 @@
   },
   "ithano":{
    "currentRarity":4,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -8848,7 +8848,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -9492,7 +9492,7 @@
   },
   "vane":{
    "currentRarity":3,
-   "currentTier":1,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_VANE",
@@ -9513,7 +9513,8 @@
    ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "aurra_sing":{
    "currentRarity":7,

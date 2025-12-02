@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":26.65766,
+ "modsRating":27.024169,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1750,7 +1750,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4472,7 +4472,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":6
    },
    "stats":{}
   },
@@ -7391,7 +7391,28 @@
   "generalsyndulla":{
    "currentRarity":7,
    "currentTier":12,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_GENERALSYNDULLA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_GENERALSYNDULLA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_GENERALSYNDULLA02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_GENERALSYNDULLA01",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_GENERALSYNDULLA",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
    },

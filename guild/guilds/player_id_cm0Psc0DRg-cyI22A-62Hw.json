@@ -32,13 +32,13 @@
    "total_score":90.4
   },
   "slkr":{
-   "total_score":69.57
+   "total_score":82.14
   },
   "beq_raid":{
    "total_score":88.0
   }
  },
- "modsRating":37.159771,
+ "modsRating":37.476403,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -188,7 +188,7 @@
   },
   "luthenrael":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_LUTHENRAEL",
@@ -2852,6 +2852,40 @@
    },
    "stats":{}
   },
+  "supremeleaderkyloren":{
+   "currentRarity":7,
+   "currentTier":11,
+   "skill":[
+    {
+     "id":"specialskill_SUPREMELEADERKYLOREN01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_SUPREMELEADERKYLOREN",
+     "tier":1
+    },
+    {
+     "id":"specialskill_SUPREMELEADERKYLOREN02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_SUPREMELEADERKYLOREN",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_SUPREMELEADERKYLOREN01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "admiralackbar":{
    "currentRarity":7,
    "currentTier":13,
@@ -2958,7 +2992,7 @@
   },
   "sm33":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SM33",
@@ -3665,7 +3699,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":10,
    "skill":[
     {
@@ -5128,7 +5162,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5589,8 +5623,8 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":3,
-   "currentTier":9,
+   "currentRarity":4,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
@@ -8228,7 +8262,7 @@
   },
   "generalsyndulla":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_GENERALSYNDULLA",
@@ -9841,7 +9875,7 @@
    "stats":{}
   },
   "capitalprofundity":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -9850,19 +9884,19 @@
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY03",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPITALPROFUNDITY",
-     "tier":5
+     "tier":6
     }
    ]
   },

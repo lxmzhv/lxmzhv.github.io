@@ -23,7 +23,7 @@
    "total_score":94.6
   },
   "amidala":{
-   "total_score":40.33
+   "total_score":44.33
   },
   "gungans":{
    "total_score":93.6
@@ -38,7 +38,7 @@
    "total_score":43.0
   }
  },
- "modsRating":28.669955,
+ "modsRating":28.686466,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2222,7 +2222,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":2,
+   "currentTier":8,
    "skill":[
     {
      "id":"uniqueskill_QUEENAMIDALA01",
@@ -3180,8 +3180,8 @@
    "stats":{}
   },
   "disguisedclonetrooper":{
-   "currentRarity":3,
-   "currentTier":4,
+   "currentRarity":4,
+   "currentTier":9,
    "skill":[],
    "relic":{
     "currentTier":1
@@ -3372,7 +3372,7 @@
   },
   "appo":{
    "currentRarity":4,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"uniqueskill_APPO01",
@@ -3452,7 +3452,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3488,19 +3488,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4140,7 +4140,7 @@
     },
     {
      "id":"specialskill_LORDVADER02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_LORDVADER",
@@ -4156,7 +4156,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4515,7 +4515,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -6626,7 +6626,7 @@
   },
   "padawanobiwan":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_PADAWANOBIWAN01",
@@ -7646,7 +7646,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

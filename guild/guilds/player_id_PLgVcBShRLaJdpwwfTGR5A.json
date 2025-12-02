@@ -2,7 +2,7 @@
  "allyCode":"175552954",
  "requirements":{
   "jabba":{
-   "total_score":68.17
+   "total_score":70.0
   },
   "gg":{
    "total_score":82.8
@@ -29,16 +29,16 @@
    "total_score":0.0
   },
   "leia":{
-   "total_score":39.8
+   "total_score":41.0
   },
   "slkr":{
-   "total_score":88.14
+   "total_score":89.86
   },
   "beq_raid":{
    "total_score":39.5
   }
  },
- "modsRating":15.114463,
+ "modsRating":15.255999,
  "roster":{
   "magmatrooper":{
    "currentRarity":5,
@@ -2909,7 +2909,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3352,7 +3352,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -4124,7 +4124,7 @@
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY02",
@@ -4846,7 +4846,7 @@
   },
   "lobot":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_LOBOT02",
@@ -4870,7 +4870,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -6146,7 +6146,7 @@
    "skill":[
     {
      "id":"uniqueskill_PHANTOM201",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_PHANTOM202",
@@ -6158,11 +6158,11 @@
     },
     {
      "id":"specialskill_PHANTOM202",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_PHANTOM201",
-     "tier":1
+     "tier":6
     },
     {
      "id":"hardwareskill_PHANTOM201",

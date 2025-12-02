@@ -26,7 +26,7 @@
    "total_score":86.67
   },
   "gungans":{
-   "total_score":33.8
+   "total_score":36.8
   },
   "leia":{
    "total_score":88.8
@@ -1218,7 +1218,7 @@
   },
   "gunganphalanx":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_GUNGANPHALANX",
@@ -3396,7 +3396,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5717,7 +5717,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {

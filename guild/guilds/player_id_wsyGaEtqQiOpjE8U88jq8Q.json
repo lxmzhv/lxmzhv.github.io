@@ -3275,7 +3275,7 @@
   },
   "quiggold":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3287,11 +3287,11 @@
     },
     {
      "id":"uniqueskill_QUIGGOLD01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_QUIGGOLD02",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -3503,19 +3503,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -5707,7 +5707,7 @@
   },
   "morganelsbeth":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MORGANELSBETH",
@@ -5727,7 +5727,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },

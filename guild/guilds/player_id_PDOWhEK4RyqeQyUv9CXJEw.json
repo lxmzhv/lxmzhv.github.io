@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":107.676717,
+ "modsRating":107.68539,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -88,7 +88,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3500,11 +3500,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5521,7 +5521,28 @@
   "captainsilvo":{
    "currentRarity":6,
    "currentTier":12,
-   "skill":[],
+   "skill":[
+    {
+     "id":"uniqueskill_CAPTAINSILVO01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_CAPTAINSILVO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CAPTAINSILVO02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CAPTAINSILVO01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_CAPTAINSILVO",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
    },

@@ -1630,11 +1630,21 @@
   },
   "poe":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"specialskill_POE01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_POE01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "badbatchomega":{
    "currentRarity":7,
@@ -3455,7 +3465,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3939,12 +3949,18 @@
    "stats":{}
   },
   "resistancetrooper":{
-   "currentRarity":2,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"uniqueskill_RESISTANCETROOPER01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "hk47":{
    "currentRarity":7,
@@ -8609,7 +8625,7 @@
   },
   "princessleia":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_PRINCESSLEIA",
@@ -9055,7 +9071,7 @@
   },
   "resistancepilot":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_RESISTANCEPILOT01",

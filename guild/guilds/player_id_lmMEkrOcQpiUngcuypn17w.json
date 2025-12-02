@@ -38,7 +38,7 @@
    "total_score":90.0
   }
  },
- "modsRating":33.839272,
+ "modsRating":34.262885,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3316,7 +3316,7 @@
   },
   "quiggold":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_QUIGGOLD02",
@@ -3336,7 +3336,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3544,7 +3544,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3556,6 +3556,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5649,7 +5657,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -7080,7 +7088,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHIRRUTIMWE",
@@ -7104,7 +7112,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -9798,7 +9806,7 @@
   },
   "vane":{
    "currentRarity":4,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_VANE",

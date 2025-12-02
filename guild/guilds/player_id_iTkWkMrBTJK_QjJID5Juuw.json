@@ -8,7 +8,7 @@
    "total_score":100.0
   },
   "gas":{
-   "total_score":95.8
+   "total_score":96.0
   },
   "inqs":{
    "total_score":83.0
@@ -23,7 +23,7 @@
    "total_score":99.0
   },
   "amidala":{
-   "total_score":83.33
+   "total_score":100.33
   },
   "gungans":{
    "total_score":93.6
@@ -35,10 +35,10 @@
    "total_score":98.29
   },
   "beq_raid":{
-   "total_score":87.0
+   "total_score":98.5
   }
  },
- "modsRating":49.377415,
+ "modsRating":51.351943,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2882,7 +2882,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3604,27 +3604,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -7818,7 +7818,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

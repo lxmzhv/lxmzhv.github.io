@@ -2,22 +2,22 @@
  "allyCode":"275119983",
  "requirements":{
   "jabba":{
-   "total_score":91.17
+   "total_score":91.0
   },
   "gg":{
-   "total_score":95.0
+   "total_score":94.6
   },
   "gas":{
-   "total_score":93.4
+   "total_score":93.2
   },
   "inqs":{
-   "total_score":63.8
+   "total_score":61.4
   },
   "reva":{
-   "total_score":98.8
+   "total_score":98.0
   },
   "geos":{
-   "total_score":98.0
+   "total_score":97.5
   },
   "drevan":{
    "total_score":105.0
@@ -26,19 +26,19 @@
    "total_score":100.33
   },
   "gungans":{
-   "total_score":98.6
+   "total_score":99.4
   },
   "leia":{
-   "total_score":109.4
+   "total_score":105.6
   },
   "slkr":{
-   "total_score":105.43
+   "total_score":105.86
   },
   "beq_raid":{
-   "total_score":94.0
+   "total_score":96.0
   }
  },
- "modsRating":119.531214,
+ "modsRating":120.507574,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3589,6 +3589,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -5821,7 +5829,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

@@ -35,10 +35,10 @@
    "total_score":92.0
   },
   "beq_raid":{
-   "total_score":36.5
+   "total_score":39.5
   }
  },
- "modsRating":17.530999,
+ "modsRating":17.702304,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -933,7 +933,7 @@
    "stats":{}
   },
   "batchers3":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -1989,8 +1989,8 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":5,
-   "currentTier":8,
+   "currentRarity":6,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_PADAWANSABINE01",
@@ -2010,7 +2010,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2950,7 +2950,7 @@
    "stats":{}
   },
   "appo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3066,8 +3066,8 @@
    "stats":{}
   },
   "stormtrooperluke":{
-   "currentRarity":3,
-   "currentTier":4,
+   "currentRarity":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3437,11 +3437,11 @@
     },
     {
      "id":"uniqueskill_GRANDMOFFTARKIN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3553,7 +3553,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4147,6 +4147,14 @@
     }
    ]
   },
+  "depabillaba":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "darthsidious":{
    "currentRarity":7,
    "currentTier":13,
@@ -4289,7 +4297,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7311,7 +7319,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":3,
    "skill":[
     {

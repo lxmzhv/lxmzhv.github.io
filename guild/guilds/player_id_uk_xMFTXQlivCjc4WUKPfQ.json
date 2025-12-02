@@ -38,7 +38,7 @@
    "total_score":82.0
   }
  },
- "modsRating":11.741969,
+ "modsRating":11.751763,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1161,11 +1161,12 @@
   },
   "bokatan":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "magnaguard":{
    "currentRarity":7,
@@ -2623,7 +2624,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6850,7 +6851,7 @@
    "skill":[
     {
      "id":"basicskill_SITHPALPATINE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_SITHPALPATINE01",
@@ -7526,7 +7527,7 @@
     },
     {
      "id":"uniqueskill_CAPITALCHIMAERA01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALCHIMAERA01",
@@ -7882,7 +7883,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9310,7 +9311,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

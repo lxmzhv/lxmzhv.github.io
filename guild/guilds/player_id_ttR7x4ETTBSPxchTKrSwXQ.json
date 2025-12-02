@@ -38,7 +38,7 @@
    "total_score":41.0
   }
  },
- "modsRating":21.442431,
+ "modsRating":21.451783,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3114,7 +3114,7 @@
    "stats":{}
   },
   "quiggold":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -3339,7 +3339,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3351,6 +3351,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3520,8 +3528,8 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
-   "currentTier":9,
+   "currentRarity":5,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_BRUTUS01",
@@ -5465,7 +5473,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6357,7 +6365,7 @@
     },
     {
      "id":"specialskill_CAPITALSTARDESTROYER03",
-     "tier":4
+     "tier":5
     }
    ]
   },
@@ -6857,7 +6865,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"leaderskill_STORMTROOPERHAN",
@@ -9029,7 +9037,12 @@
   "vane":{
    "currentRarity":3,
    "currentTier":8,
-   "skill":[],
+   "skill":[
+    {
+     "id":"uniqueskill_VANE01",
+     "tier":4
+    }
+   ],
    "relic":{
     "currentTier":1
    },

@@ -26,7 +26,7 @@
    "total_score":78.33
   },
   "gungans":{
-   "total_score":27.2
+   "total_score":27.0
   },
   "leia":{
    "total_score":69.6
@@ -38,7 +38,7 @@
    "total_score":42.5
   }
  },
- "modsRating":15.841374,
+ "modsRating":15.845566,
  "roster":{
   "magmatrooper":{
    "currentRarity":2,
@@ -2589,7 +2589,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3061,7 +3061,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":4,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3077,11 +3077,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3439,7 +3439,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4048,7 +4048,7 @@
    ]
   },
   "depabillaba":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -4609,7 +4609,7 @@
   },
   "operative":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_OPERATIVE02",
@@ -4629,7 +4629,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8193,7 +8193,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8201,7 +8201,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -8213,7 +8213,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

@@ -38,7 +38,7 @@
    "total_score":44.5
   }
  },
- "modsRating":7.71789,
+ "modsRating":7.77009,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2556,7 +2556,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2992,11 +2992,29 @@
   },
   "calkestis":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_CALKESTIS",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_CALKESTIS01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_CALKESTIS01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CALKESTIS02",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":7
+   },
+   "stats":{}
   },
   "kelleranbeq":{
    "currentRarity":7,
@@ -3708,7 +3726,7 @@
   },
   "hansolo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HANSOLO",
@@ -3724,11 +3742,11 @@
     },
     {
      "id":"uniqueskill_HANSOLO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5639,7 +5657,7 @@
    "stats":{}
   },
   "tarfful":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -5837,6 +5855,11 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "tiedagger":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[]
   },
   "punishingone":{
    "currentRarity":7,

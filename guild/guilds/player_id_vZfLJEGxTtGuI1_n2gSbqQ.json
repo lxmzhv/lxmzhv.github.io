@@ -11,7 +11,7 @@
    "total_score":100.0
   },
   "inqs":{
-   "total_score":69.6
+   "total_score":68.6
   },
   "reva":{
    "total_score":102.4
@@ -38,7 +38,7 @@
    "total_score":101.5
   }
  },
- "modsRating":149.485864,
+ "modsRating":149.519416,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3814,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4996,7 +4996,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5776,7 +5776,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7100,7 +7100,7 @@
   },
   "hothrebelsoldier":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_HOTHREBELSOLDIER",

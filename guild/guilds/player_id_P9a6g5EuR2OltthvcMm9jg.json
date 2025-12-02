@@ -38,7 +38,7 @@
    "total_score":101.5
   }
  },
- "modsRating":34.618134,
+ "modsRating":34.774886,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1660,7 +1660,7 @@
   },
   "poe":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_POE",
@@ -2126,11 +2126,12 @@
   },
   "epixpoe":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "queenamidala":{
    "currentRarity":7,
@@ -2440,11 +2441,12 @@
   },
   "bensolo":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "grandmasterluke":{
    "currentRarity":7,
@@ -3256,7 +3258,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3464,27 +3466,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3652,7 +3654,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4108,11 +4110,12 @@
   },
   "resistancetrooper":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "hk47":{
    "currentRarity":7,
@@ -4344,11 +4347,12 @@
   },
   "epixfinn":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "captaindrogan":{
    "currentRarity":7,
@@ -5096,7 +5100,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5504,7 +5508,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -6902,7 +6906,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7042,11 +7046,12 @@
   },
   "rosetico":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "princesskneesaa":{
    "currentRarity":7,
@@ -8794,7 +8799,7 @@
   },
   "amilynholdo":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_AMILYNHOLDO01",
@@ -9054,7 +9059,7 @@
   },
   "finn":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_FINN",
@@ -9448,7 +9453,7 @@
   },
   "resistancepilot":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_RESISTANCEPILOT",
@@ -9542,7 +9547,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },

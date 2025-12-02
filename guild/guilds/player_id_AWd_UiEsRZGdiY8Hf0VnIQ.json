@@ -2,7 +2,7 @@
  "allyCode":"476886975",
  "requirements":{
   "jabba":{
-   "total_score":75.33
+   "total_score":78.17
   },
   "gg":{
    "total_score":83.0
@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":15.230269,
+ "modsRating":15.361578,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2058,7 +2058,7 @@
   },
   "sabinewrens3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SABINEWRENS3",
@@ -2078,7 +2078,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2845,7 +2845,7 @@
   },
   "admiralackbar":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ADMIRALACKBAR",
@@ -2865,7 +2865,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3467,7 +3467,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3479,6 +3479,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5419,7 +5427,7 @@
   },
   "jabbathehutt":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_JABBATHEHUTT",
@@ -5695,7 +5703,7 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -6670,7 +6678,7 @@
     },
     {
      "id":"uniqueskill_FENNECSHAND01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"contractskill_FENNECSHAND",
@@ -9097,7 +9105,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

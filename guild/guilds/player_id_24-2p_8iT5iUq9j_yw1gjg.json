@@ -35,7 +35,7 @@
    "total_score":68.86
   },
   "beq_raid":{
-   "total_score":41.5
+   "total_score":61.5
   }
  },
  "modsRating":4.962005,
@@ -2976,7 +2976,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3050,6 +3050,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -6051,6 +6059,32 @@
     {
      "id":"specialskill_KANANJARRUSS302",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "jocastanu":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"uniqueskill_JOCASTANU01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_JOCASTANU02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_JOCASTANU01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_JOCASTANU",
+     "tier":5
     }
    ],
    "relic":{

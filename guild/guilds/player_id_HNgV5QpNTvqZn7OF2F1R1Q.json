@@ -38,7 +38,7 @@
    "total_score":87.0
   }
  },
- "modsRating":13.911314,
+ "modsRating":13.95036,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -567,7 +567,7 @@
    }
   },
   "captaintarpals":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -1161,7 +1161,7 @@
    "stats":{}
   },
   "comeuppance":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -3027,7 +3027,7 @@
   },
   "rey":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_REY",
@@ -3047,7 +3047,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3570,7 +3570,7 @@
   },
   "resistancetrooper":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_RESISTANCETROOPER01",
@@ -4187,7 +4187,7 @@
    "stats":{}
   },
   "deathtrooperperidea":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":10,
    "skill":[
     {
@@ -4266,11 +4266,33 @@
   },
   "zoriibliss_v2":{
    "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"uniqueskill_ZORIIBLISS_V201",
+     "tier":1
+    },
+    {
+     "id":"specialskill_ZORIIBLISS_V201",
+     "tier":1
+    },
+    {
+     "id":"specialskill_ZORIIBLISS_V202",
+     "tier":1
+    },
+    {
+     "id":"basicskill_ZORIIBLISS_V2",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_ZORIIBLISS_V202",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "themandalorian":{
    "currentRarity":7,

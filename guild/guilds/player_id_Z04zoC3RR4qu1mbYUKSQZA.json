@@ -29,7 +29,7 @@
    "total_score":69.8
   },
   "leia":{
-   "total_score":82.8
+   "total_score":84.6
   },
   "slkr":{
    "total_score":77.57
@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":8.785372,
+ "modsRating":8.837725,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2157,7 +2157,7 @@
    "stats":{}
   },
   "crosshairs3":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":11,
    "skill":[
     {
@@ -2239,7 +2239,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -5281,7 +5281,7 @@
   },
   "captainsilvo":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
@@ -6097,7 +6097,7 @@
     },
     {
      "id":"specialskill_FURYCLASSINTERCEPTOR01",
-     "tier":5
+     "tier":6
     }
    ]
   },
@@ -7679,7 +7679,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":7,
    "skill":[
     {
@@ -8391,6 +8391,40 @@
      "tier":1
     }
    ]
+  },
+  "glrey":{
+   "currentRarity":7,
+   "currentTier":10,
+   "skill":[
+    {
+     "id":"basicskill_GLREY",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLREY01",
+     "tier":0
+    },
+    {
+     "id":"specialskill_GLREY02",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_GLREY",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLREY01",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "amilynholdo":{
    "currentRarity":7,
@@ -9201,6 +9235,32 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "capitalprofundity":{
+   "currentRarity":4,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_CAPITALPROFUNDITY01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_CAPITALPROFUNDITY",
+     "tier":3
+    },
+    {
+     "id":"specialskill_CAPITALPROFUNDITY01",
+     "tier":3
+    },
+    {
+     "id":"specialskill_CAPITALPROFUNDITY02",
+     "tier":3
+    },
+    {
+     "id":"specialskill_CAPITALPROFUNDITY03",
+     "tier":3
+    }
+   ]
   },
   "cadbane":{
    "currentRarity":7,

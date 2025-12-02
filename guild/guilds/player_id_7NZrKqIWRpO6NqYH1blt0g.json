@@ -29,7 +29,7 @@
    "total_score":32.4
   },
   "leia":{
-   "total_score":103.0
+   "total_score":103.2
   },
   "slkr":{
    "total_score":98.14
@@ -38,7 +38,7 @@
    "total_score":96.0
   }
  },
- "modsRating":39.478348,
+ "modsRating":39.807509,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -754,7 +754,7 @@
   },
   "ewokscout":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_EWOKSCOUT",
@@ -766,7 +766,7 @@
     },
     {
      "id":"uniqueskill_EWOKSCOUT01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -1078,11 +1078,11 @@
     },
     {
      "id":"uniqueskill_BATCHERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1544,6 +1544,14 @@
    },
    "stats":{}
   },
+  "bt1":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "jawa":{
    "currentRarity":7,
    "currentTier":13,
@@ -1668,7 +1676,7 @@
   },
   "badbatchomega":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BADBATCHOMEGA",
@@ -2198,11 +2206,11 @@
     },
     {
      "id":"uniqueskill_CROSSHAIRS301",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2866,7 +2874,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3350,7 +3358,7 @@
     },
     {
      "id":"uniqueskill_PAO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3406,11 +3414,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4918,6 +4926,14 @@
    },
    "stats":{}
   },
+  "triplezero":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5026,7 +5042,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -7789,7 +7805,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7879,7 +7895,7 @@
     },
     {
      "id":"uniqueskill_BODHIROOK01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

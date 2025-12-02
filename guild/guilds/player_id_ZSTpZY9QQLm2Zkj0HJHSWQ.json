@@ -2,7 +2,7 @@
  "allyCode":"648542712",
  "requirements":{
   "jabba":{
-   "total_score":11.67
+   "total_score":12.67
   },
   "gg":{
    "total_score":79.8
@@ -29,16 +29,16 @@
    "total_score":82.4
   },
   "leia":{
-   "total_score":36.4
+   "total_score":42.8
   },
   "slkr":{
    "total_score":79.14
   },
   "beq_raid":{
-   "total_score":75.5
+   "total_score":76.5
   }
  },
- "modsRating":9.684027,
+ "modsRating":9.719316,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -450,15 +450,15 @@
    "skill":[
     {
      "id":"basicskill_BB8",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BB801",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BB802",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_BB801",
@@ -1071,7 +1071,7 @@
   },
   "dengar":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_DENGAR",
@@ -1470,6 +1470,31 @@
    },
    "stats":{}
   },
+  "bt1":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_BT1",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BT101",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BT101",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_BT102",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "jawa":{
    "currentRarity":7,
    "currentTier":11,
@@ -1571,15 +1596,15 @@
    "skill":[
     {
      "id":"leaderskill_POE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_POE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_POE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_POE01",
@@ -2171,7 +2196,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -3357,20 +3382,20 @@
    "stats":{}
   },
   "stormtrooperluke":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3388,7 +3413,7 @@
   },
   "ig88":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"contractskill_IG8801",
@@ -3828,7 +3853,7 @@
     },
     {
      "id":"uniqueskill_KELLERANBEQ01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_KELLERANBEQ02",
@@ -3844,7 +3869,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4923,7 +4948,7 @@
    }
   },
   "triplezero":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":2,
    "skill":[
     {
@@ -7063,15 +7088,15 @@
    "skill":[
     {
      "id":"uniqueskill_TIEFIGHTERIMPERIAL02",
-     "tier":4
-    },
-    {
-     "id":"basicskill_TIEFIGHTERIMPERIAL",
      "tier":5
     },
     {
+     "id":"basicskill_TIEFIGHTERIMPERIAL",
+     "tier":6
+    },
+    {
      "id":"specialskill_TIEFIGHTERIMPERIAL01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"hardwareskill_TIEFIGHTERIMPERIAL01",
@@ -7549,15 +7574,15 @@
    "skill":[
     {
      "id":"basicskill_TUSKENSHAMAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_TUSKENSHAMAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TUSKENSHAMAN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -7975,7 +8000,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -8141,7 +8166,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8567,11 +8592,11 @@
    "skill":[
     {
      "id":"specialskill_JYNERSO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_JYNERSO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_JYNERSO",
@@ -8579,7 +8604,7 @@
     },
     {
      "id":"basicskill_JYNERSO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_JYNERSO01",
@@ -8921,15 +8946,15 @@
     },
     {
      "id":"basicskill_FINN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_FINN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_FINN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
