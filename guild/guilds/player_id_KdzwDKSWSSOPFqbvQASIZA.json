@@ -3545,7 +3545,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3561,11 +3561,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5186,6 +5186,36 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7487,7 +7517,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -9393,7 +9423,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9931,11 +9961,11 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SAWGERRERA01",
@@ -9947,11 +9977,11 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

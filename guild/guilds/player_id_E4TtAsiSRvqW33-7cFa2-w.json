@@ -35,10 +35,10 @@
    "total_score":87.0
   },
   "beq_raid":{
-   "total_score":92.5
+   "total_score":72.5
   }
  },
- "modsRating":29.92631,
+ "modsRating":29.491533,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2964,7 +2964,7 @@
   },
   "sm33":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_SM3301",
@@ -3508,19 +3508,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3697,7 +3697,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -5113,6 +5113,32 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -9134,7 +9160,7 @@
   },
   "savageopress":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_SAVAGEOPRESS",

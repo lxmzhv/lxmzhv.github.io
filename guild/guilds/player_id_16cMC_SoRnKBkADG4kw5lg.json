@@ -11,10 +11,10 @@
    "total_score":74.6
   },
   "inqs":{
-   "total_score":58.6
+   "total_score":61.2
   },
   "reva":{
-   "total_score":66.6
+   "total_score":81.6
   },
   "geos":{
    "total_score":86.5
@@ -26,10 +26,10 @@
    "total_score":44.67
   },
   "gungans":{
-   "total_score":58.8
+   "total_score":74.4
   },
   "leia":{
-   "total_score":90.4
+   "total_score":77.6
   },
   "slkr":{
    "total_score":72.86
@@ -38,7 +38,7 @@
    "total_score":42.5
   }
  },
- "modsRating":18.973028,
+ "modsRating":19.480252,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -452,11 +452,11 @@
   },
   "vanguardtempleguard":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_VANGUARDTEMPLEGUARD01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_VANGUARDTEMPLEGUARD02",
@@ -472,7 +472,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2021,7 +2021,7 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3178,7 +3178,7 @@
   },
   "quiggold":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3406,7 +3406,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4550,15 +4550,15 @@
   },
   "depabillaba":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_DEPABILLABA01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_DEPABILLABA02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DEPABILLABA01",
@@ -4570,7 +4570,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5019,6 +5019,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5193,7 +5219,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
@@ -5585,7 +5611,7 @@
   },
   "ithano":{
    "currentRarity":4,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -7388,6 +7414,36 @@
    },
    "stats":{}
   },
+  "jarjarbinks":{
+   "currentRarity":7,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"uniqueskill_JARJARBINKS02",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_JARJARBINKS01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_JARJARBINKS02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_JARJARBINKS01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_JARJARBINKS",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "countdooku":{
    "currentRarity":7,
    "currentTier":13,
@@ -9174,7 +9230,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9686,15 +9742,15 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_SAWGERRERA01",
@@ -9706,7 +9762,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

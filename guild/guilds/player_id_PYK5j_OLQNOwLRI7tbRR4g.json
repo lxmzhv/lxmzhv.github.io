@@ -38,7 +38,7 @@
    "total_score":99.5
   }
  },
- "modsRating":53.69253,
+ "modsRating":53.748512,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3757,8 +3757,8 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
-   "currentTier":12,
+   "currentRarity":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BRUTUS",
@@ -3770,7 +3770,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_BRUTUS02",
@@ -3778,7 +3778,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -5203,6 +5203,15 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":2,
+   "skill":[],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9828,7 +9837,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },

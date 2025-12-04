@@ -2,7 +2,7 @@
  "allyCode":"435795126",
  "requirements":{
   "jabba":{
-   "total_score":74.83
+   "total_score":75.17
   },
   "gg":{
    "total_score":72.4
@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":24.325626,
+ "modsRating":24.350056,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -2004,7 +2004,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3586,7 +3586,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
@@ -4459,6 +4459,32 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -8465,12 +8491,30 @@
    "stats":{}
   },
   "kylekatarn":{
-   "currentRarity":6,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_KYLEKATARN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_KYLEKATARN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_KYLEKATARN02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_KYLEKATARN01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":2
+   },
+   "stats":{}
   },
   "vane":{
    "currentRarity":3,

@@ -2,7 +2,7 @@
  "allyCode":"134925963",
  "requirements":{
   "jabba":{
-   "total_score":91.83
+   "total_score":92.17
   },
   "gg":{
    "total_score":89.4
@@ -20,13 +20,13 @@
    "total_score":98.0
   },
   "drevan":{
-   "total_score":76.6
+   "total_score":76.8
   },
   "amidala":{
    "total_score":103.33
   },
   "gungans":{
-   "total_score":94.0
+   "total_score":94.4
   },
   "leia":{
    "total_score":70.4
@@ -38,7 +38,7 @@
    "total_score":103.0
   }
  },
- "modsRating":38.704502,
+ "modsRating":38.710413,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3522,11 +3522,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4084,7 +4084,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINREX",
@@ -4537,7 +4537,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -5162,6 +5162,36 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5620,7 +5650,7 @@
   },
   "captainsilvo":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINSILVO01",
@@ -6280,7 +6310,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -9700,7 +9730,7 @@
   },
   "vane":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_VANE01",
@@ -9893,8 +9923,8 @@
    "stats":{}
   },
   "sawgerrera":{
-   "currentRarity":5,
-   "currentTier":10,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -9906,15 +9936,15 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

@@ -38,7 +38,7 @@
    "total_score":70.5
   }
  },
- "modsRating":10.405886,
+ "modsRating":10.426326,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -455,7 +455,7 @@
    "stats":{}
   },
   "tiefighterfosf":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -771,7 +771,7 @@
    "stats":{}
   },
   "ewokscout":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -2024,6 +2024,14 @@
    },
    "stats":{}
   },
+  "younghan":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "scouttrooper_v3":{
    "currentRarity":7,
    "currentTier":13,
@@ -3234,7 +3242,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3322,19 +3330,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3710,7 +3718,7 @@
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":6
+     "tier":7
     },
     {
      "id":"specialskill_GRANDMOFFTARKIN02",
@@ -3731,7 +3739,7 @@
    "stats":{}
   },
   "logray":{
-   "currentRarity":4,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -3857,7 +3865,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3927,15 +3935,15 @@
    "skill":[
     {
      "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_LORDVADER01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_LORDVADER",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_LORDVADER02",
@@ -3943,7 +3951,7 @@
     },
     {
      "id":"specialskill_LORDVADER01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_LORDVADER",
@@ -4829,6 +4837,36 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4977,7 +5015,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_OPERATIVE01",
@@ -8758,7 +8796,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -9233,11 +9271,11 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

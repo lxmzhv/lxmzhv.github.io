@@ -4774,6 +4774,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4944,7 +4970,7 @@
    "skill":[
     {
      "id":"basicskill_GRANDINQUISITOR",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GRANDINQUISITOR01",
@@ -4960,7 +4986,7 @@
     },
     {
      "id":"uniqueskill_GRANDINQUISITOR01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_INQUISITOR01_GRANDINQUISITOR",
@@ -5378,7 +5404,7 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {
@@ -8754,7 +8780,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9311,7 +9337,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

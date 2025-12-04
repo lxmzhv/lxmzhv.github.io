@@ -38,7 +38,7 @@
    "total_score":44.0
   }
  },
- "modsRating":13.355529,
+ "modsRating":13.427066,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -4215,10 +4215,31 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":12,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MARROK",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MARROK01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARROK01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MARROK02",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_INQUISITOR01_MARROK",
+     "tier":1
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5026,6 +5047,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

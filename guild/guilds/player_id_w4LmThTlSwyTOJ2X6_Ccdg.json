@@ -387,7 +387,7 @@
    "stats":{}
   },
   "vanguardtempleguard":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -2193,7 +2193,7 @@
   },
   "scorch":{
    "currentRarity":4,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SCORCH",
@@ -2371,7 +2371,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3484,8 +3484,8 @@
    ]
   },
   "depabillaba":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":5,
+   "currentTier":8,
    "skill":[
     {
      "id":"uniqueskill_DEPABILLABA01",
@@ -3820,6 +3820,36 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -3934,7 +3964,7 @@
   },
   "operative":{
    "currentRarity":4,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_OPERATIVE02",
@@ -3954,7 +3984,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -6090,7 +6120,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS302",
@@ -6110,7 +6140,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -6851,7 +6881,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_EZRABRIDGERS301",
@@ -6867,11 +6897,11 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -7310,11 +7340,29 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_SAWGERRERA01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_SAWGERRERA01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_SAWGERRERA",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_SAWGERRERA",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":2
+   },
+   "stats":{}
   },
   "tiefighterpilot":{
    "currentRarity":7,

@@ -4184,6 +4184,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -7936,6 +7962,15 @@
    ],
    "relic":{
     "currentTier":5
+   },
+   "stats":{}
+  },
+  "darthbane":{
+   "currentRarity":7,
+   "currentTier":4,
+   "skill":[],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

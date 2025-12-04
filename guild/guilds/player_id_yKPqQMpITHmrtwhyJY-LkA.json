@@ -38,7 +38,7 @@
    "total_score":40.5
   }
  },
- "modsRating":13.319533,
+ "modsRating":13.386046,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -799,11 +799,25 @@
   },
   "nightsisteracolyte":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_NIGHTSISTERACOLYTE",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_NIGHTSISTERACOLYTE01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_NIGHTSISTERACOLYTE01",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "sithtrooper":{
    "currentRarity":7,
@@ -1727,23 +1741,23 @@
   },
   "talia":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_TALIA01",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_TALIA02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"basicskill_TALIA",
-     "tier":2
+     "tier":6
     },
     {
      "id":"leaderskill_TALIA",
-     "tier":1
+     "tier":5
     }
    ],
    "relic":{
@@ -2593,7 +2607,7 @@
   },
   "nightsisterspirit":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_NIGHTSISTERSPIRIT01",
@@ -3675,11 +3689,11 @@
     },
     {
      "id":"uniqueskill_GRANDMOFFTARKIN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4385,7 +4399,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4808,6 +4822,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4986,7 +5026,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_OPERATIVE02",
@@ -4994,7 +5034,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -5125,7 +5165,28 @@
   "hondo":{
    "currentRarity":7,
    "currentTier":9,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_HONDO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HONDO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_HONDO02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_HONDO01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_HONDO02",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -6785,7 +6846,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_STORMTROOPERHAN",
@@ -6793,7 +6854,7 @@
     },
     {
      "id":"specialskill_STORMTROOPERHAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_STORMTROOPERHAN",
@@ -6811,7 +6872,7 @@
   },
   "herasyndullas3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_HERASYNDULLAS302",
@@ -6831,7 +6892,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

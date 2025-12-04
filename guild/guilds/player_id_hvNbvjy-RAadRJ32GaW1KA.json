@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG86SENTINELDROID",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2468,7 +2468,7 @@
   },
   "lukeskywalker":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_LUKESKYWALKER01",
@@ -2488,7 +2488,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4466,7 +4466,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5294,6 +5294,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5880,7 +5906,7 @@
     },
     {
      "id":"uniqueskill_ITHANO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9678,7 +9704,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

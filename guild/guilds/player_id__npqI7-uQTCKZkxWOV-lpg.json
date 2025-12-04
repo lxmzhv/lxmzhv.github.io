@@ -38,7 +38,7 @@
    "total_score":96.5
   }
  },
- "modsRating":131.789521,
+ "modsRating":131.986523,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -156,7 +156,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -858,7 +858,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3430,7 +3430,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4996,7 +4996,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5291,6 +5291,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7728,7 +7758,7 @@
     },
     {
      "id":"uniqueskill_TARFFUL01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9920,7 +9950,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

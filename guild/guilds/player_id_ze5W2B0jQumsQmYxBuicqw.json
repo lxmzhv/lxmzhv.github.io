@@ -38,7 +38,7 @@
    "total_score":101.5
   }
  },
- "modsRating":92.878254,
+ "modsRating":92.90397,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,27 +3604,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -5260,6 +5260,36 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5334,7 +5364,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5742,7 +5772,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":8
    },
    "stats":{}
   },

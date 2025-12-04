@@ -29,7 +29,7 @@
    "total_score":98.2
   },
   "leia":{
-   "total_score":109.4
+   "total_score":110.2
   },
   "slkr":{
    "total_score":105.71
@@ -196,11 +196,11 @@
     },
     {
      "id":"basicskill_LUTHENRAEL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_LUTHENRAEL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_LUTHENRAEL02",
@@ -4652,7 +4652,7 @@
     },
     {
      "id":"uniqueskill_KIX01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5294,6 +5294,36 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":6,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5864,7 +5894,7 @@
    "skill":[
     {
      "id":"uniqueskill_ITHANO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_ITHANO",
@@ -9002,11 +9032,11 @@
     },
     {
      "id":"uniqueskill_JYNERSO01",
-     "tier":6
+     "tier":7
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

@@ -3576,19 +3576,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3782,7 +3782,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5250,6 +5250,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

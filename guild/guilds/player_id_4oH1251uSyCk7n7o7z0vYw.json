@@ -38,7 +38,7 @@
    "total_score":89.0
   }
  },
- "modsRating":59.822321,
+ "modsRating":59.864892,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -942,19 +942,19 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_IG86SENTINELDROID01",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_IG86SENTINELDROID01",
-     "tier":3
+     "tier":6
     },
     {
      "id":"basicskill_IG86SENTINELDROID",
-     "tier":3
+     "tier":6
     }
    ],
    "relic":{
@@ -3548,7 +3548,7 @@
   },
   "pao":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PAO",
@@ -3568,7 +3568,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3608,15 +3608,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4528,7 +4528,7 @@
   },
   "bazemalbus":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BAZEMALBUS",
@@ -4552,7 +4552,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5260,6 +5260,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5742,7 +5768,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8472,7 +8498,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS301",
@@ -8492,7 +8518,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9518,7 +9544,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

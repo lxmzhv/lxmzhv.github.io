@@ -14,7 +14,7 @@
    "total_score":78.4
   },
   "reva":{
-   "total_score":88.8
+   "total_score":89.0
   },
   "geos":{
    "total_score":83.0
@@ -29,7 +29,7 @@
    "total_score":30.8
   },
   "leia":{
-   "total_score":54.0
+   "total_score":54.4
   },
   "slkr":{
    "total_score":86.86
@@ -1535,12 +1535,12 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
   "nighttrooper":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -3741,7 +3741,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4169,7 +4169,7 @@
   },
   "pazvizsla":{
    "currentRarity":6,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_PAZVIZSLA",
@@ -4384,6 +4384,32 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,

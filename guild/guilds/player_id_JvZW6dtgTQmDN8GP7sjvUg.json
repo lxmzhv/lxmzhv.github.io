@@ -29,7 +29,7 @@
    "total_score":40.0
   },
   "leia":{
-   "total_score":49.8
+   "total_score":56.6
   },
   "slkr":{
    "total_score":77.86
@@ -38,7 +38,7 @@
    "total_score":40.5
   }
  },
- "modsRating":12.145338,
+ "modsRating":12.184368,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1952,7 +1952,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4310,27 +4310,27 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5012,6 +5012,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5564,7 +5590,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5646,7 +5672,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6828,7 +6854,7 @@
   },
   "shinhati":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SHINHATI02",
@@ -6836,7 +6862,7 @@
     },
     {
      "id":"uniqueskill_SHINHATI01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_SHINHATI02",
@@ -6852,7 +6878,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -8040,7 +8066,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS302",
@@ -8060,7 +8086,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

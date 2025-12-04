@@ -38,7 +38,7 @@
    "total_score":81.0
   }
  },
- "modsRating":22.689878,
+ "modsRating":22.681234,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2974,7 +2974,7 @@
   },
   "sm33":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SM3301",
@@ -2994,7 +2994,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -4084,7 +4084,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINREX01",
@@ -4104,7 +4104,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5160,6 +5160,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5684,7 +5710,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5710,7 +5736,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -8246,7 +8272,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8266,7 +8292,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

@@ -2976,7 +2976,7 @@
     },
     {
      "id":"uniqueskill_SCORCH01",
-     "tier":4
+     "tier":6
     }
    ],
    "relic":{
@@ -3358,7 +3358,7 @@
   },
   "appo":{
    "currentRarity":5,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_APPO",
@@ -3870,7 +3870,7 @@
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":5
+     "tier":7
     },
     {
      "id":"specialskill_GRANDMOFFTARKIN01",
@@ -5031,6 +5031,32 @@
    ],
    "relic":{
     "currentTier":11
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6382,11 +6408,11 @@
     },
     {
      "id":"specialskill_BADBATCHECHO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BADBATCHECHO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_BADBATCHECHO01",
@@ -9168,7 +9194,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_EZRABRIDGERS301",

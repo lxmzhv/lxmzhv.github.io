@@ -38,7 +38,7 @@
    "total_score":44.5
   }
  },
- "modsRating":7.77009,
+ "modsRating":7.778393,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -608,12 +608,34 @@
    }
   },
   "50rt":{
-   "currentRarity":2,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":4,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_50RT01",
+     "tier":2
+    },
+    {
+     "id":"specialskill_50RT02",
+     "tier":2
+    },
+    {
+     "id":"leaderskill_50RT",
+     "tier":2
+    },
+    {
+     "id":"basicskill_50RT",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_50RT01",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "badbatchhunter":{
    "currentRarity":7,
@@ -1286,28 +1308,28 @@
    }
   },
   "stap":{
-   "currentRarity":4,
-   "currentTier":10,
+   "currentRarity":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_STAP01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_STAP02",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_STAP01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"basicskill_STAP",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1681,7 +1703,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2572,11 +2594,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -3931,6 +3953,36 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":5,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

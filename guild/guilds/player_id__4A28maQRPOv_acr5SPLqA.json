@@ -38,7 +38,7 @@
    "total_score":89.0
   }
  },
- "modsRating":33.601835,
+ "modsRating":33.621015,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -2739,7 +2739,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3419,6 +3419,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "wampa":{
    "currentRarity":7,
    "currentTier":13,
@@ -3649,7 +3675,7 @@
     },
     {
      "id":"basicskill_BWINGREBEL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BWINGREBEL01",
@@ -4027,7 +4053,7 @@
   },
   "jediknightcal":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTCAL",
@@ -4043,7 +4069,7 @@
     },
     {
      "id":"specialskill_JEDIKNIGHTCAL03",
-     "tier":4
+     "tier":5
     },
     {
      "id":"leaderskill_JEDIKNIGHTCAL",
@@ -4051,11 +4077,11 @@
     },
     {
      "id":"uniqueskill_JEDIKNIGHTCAL01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6245,7 +6271,7 @@
    "skill":[
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_EZRABRIDGERS3",

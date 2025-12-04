@@ -2476,11 +2476,11 @@
     },
     {
      "id":"leaderskill_LUKESKYWALKER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_LUKESKYWALKER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_LUKESKYWALKER01",
@@ -5294,6 +5294,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -6532,7 +6558,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },

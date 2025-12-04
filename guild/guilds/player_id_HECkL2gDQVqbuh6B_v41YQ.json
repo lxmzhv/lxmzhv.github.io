@@ -29,7 +29,7 @@
    "total_score":0.0
   },
   "leia":{
-   "total_score":36.8
+   "total_score":40.6
   },
   "slkr":{
    "total_score":74.71
@@ -1324,32 +1324,32 @@
    "stats":{}
   },
   "admiralraddus":{
-   "currentRarity":4,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_ADMIRALRADDUS01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"basicskill_ADMIRALRADDUS",
-     "tier":2
+     "tier":6
     },
     {
      "id":"leaderskill_ADMIRALRADDUS",
-     "tier":2
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -2545,11 +2545,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -2947,8 +2947,8 @@
    "stats":{}
   },
   "captainrex":{
-   "currentRarity":6,
-   "currentTier":11,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -2968,7 +2968,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -3749,6 +3749,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6071,7 +6097,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -6091,7 +6117,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -6893,7 +6919,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -6901,7 +6927,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -6913,7 +6939,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -7345,6 +7371,15 @@
    ],
    "relic":{
     "currentTier":10
+   },
+   "stats":{}
+  },
+  "darthbane":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

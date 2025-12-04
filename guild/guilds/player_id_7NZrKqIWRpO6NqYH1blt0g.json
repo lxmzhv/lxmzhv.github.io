@@ -38,7 +38,7 @@
    "total_score":96.0
   }
  },
- "modsRating":39.807509,
+ "modsRating":39.882067,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1048,7 +1048,7 @@
     },
     {
      "id":"uniqueskill_KRRSANTAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"contractskill_KRRSANTAN01",
@@ -2866,7 +2866,7 @@
     },
     {
      "id":"uniqueskill_HUNTERS301",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_HUNTERS302",
@@ -4934,6 +4934,36 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -6643,11 +6673,25 @@
   },
   "hothrebelsoldier":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_HOTHREBELSOLDIER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HOTHREBELSOLDIER01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_HOTHREBELSOLDIER01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":2
+   },
+   "stats":{}
   },
   "asajventress":{
    "currentRarity":7,

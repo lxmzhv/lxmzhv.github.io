@@ -2,19 +2,19 @@
  "allyCode":"417122353",
  "requirements":{
   "jabba":{
-   "total_score":89.33
+   "total_score":86.17
   },
   "gg":{
    "total_score":96.8
   },
   "gas":{
-   "total_score":92.0
+   "total_score":82.6
   },
   "inqs":{
-   "total_score":80.0
+   "total_score":73.0
   },
   "reva":{
-   "total_score":97.8
+   "total_score":88.0
   },
   "geos":{
    "total_score":94.0
@@ -26,19 +26,19 @@
    "total_score":100.0
   },
   "gungans":{
-   "total_score":100.2
+   "total_score":96.2
   },
   "leia":{
-   "total_score":100.0
+   "total_score":98.6
   },
   "slkr":{
-   "total_score":99.29
+   "total_score":96.57
   },
   "beq_raid":{
-   "total_score":96.0
+   "total_score":99.0
   }
  },
- "modsRating":51.11761,
+ "modsRating":46.595984,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2636,7 +2636,7 @@
   },
   "nightsisterspirit":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"uniqueskill_NIGHTSISTERSPIRIT01",
@@ -4358,13 +4358,13 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
   "huyang":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4901,6 +4901,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5442,7 +5468,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

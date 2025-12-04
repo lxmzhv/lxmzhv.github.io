@@ -38,7 +38,7 @@
    "total_score":91.0
   }
  },
- "modsRating":37.127323,
+ "modsRating":37.13622,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3337,7 +3337,7 @@
   },
   "quiggold":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3357,7 +3357,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3565,19 +3565,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4596,7 +4596,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -4617,7 +4617,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5221,6 +5221,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5765,7 +5791,7 @@
   },
   "ithano":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -5789,7 +5815,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

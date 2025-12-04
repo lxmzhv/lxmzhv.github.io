@@ -38,7 +38,7 @@
    "total_score":90.5
   }
  },
- "modsRating":63.046508,
+ "modsRating":63.052846,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3051,15 +3051,15 @@
     },
     {
      "id":"uniqueskill_SM3301",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_SM3302",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4944,7 +4944,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5209,6 +5209,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8329,7 +8355,7 @@
   },
   "bodhirook":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BODHIROOK",
@@ -10133,7 +10159,7 @@
   },
   "mazkanata":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MAZKANATA",
@@ -10157,7 +10183,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

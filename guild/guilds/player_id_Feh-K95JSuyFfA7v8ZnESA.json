@@ -158,7 +158,7 @@
    ]
   },
   "ravensclaw":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[]
   },
@@ -3487,19 +3487,19 @@
   },
   "marrok":{
    "currentRarity":6,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MARROK",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_MARROK01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"uniqueskill_MARROK01",
-     "tier":2
+     "tier":4
     },
     {
      "id":"uniqueskill_MARROK02",
@@ -4113,6 +4113,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -5558,7 +5566,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {

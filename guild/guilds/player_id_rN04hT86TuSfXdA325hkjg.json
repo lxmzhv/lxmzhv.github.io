@@ -29,7 +29,7 @@
    "total_score":25.6
   },
   "leia":{
-   "total_score":67.6
+   "total_score":73.0
   },
   "slkr":{
    "total_score":91.57
@@ -38,7 +38,7 @@
    "total_score":44.0
   }
  },
- "modsRating":15.673308,
+ "modsRating":15.712438,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -94,7 +94,7 @@
   },
   "greefkarga":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"uniqueskill_GREEFKARGA01",
@@ -2188,15 +2188,15 @@
     },
     {
      "id":"specialskill_PADAWANSABINE02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_PADAWANSABINE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_PADAWANSABINE",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -2654,7 +2654,7 @@
     },
     {
      "id":"uniqueskill_GENERALSKYWALKER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_GENERALSKYWALKER",
@@ -2676,15 +2676,15 @@
    "skill":[
     {
      "id":"basicskill_NIGHTSISTERSPIRIT",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_NIGHTSISTERSPIRIT01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_NIGHTSISTERSPIRIT01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3165,7 +3165,7 @@
    ]
   },
   "quiggold":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":9,
    "skill":[
     {
@@ -3364,15 +3364,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3726,7 +3726,7 @@
     },
     {
      "id":"leaderskill_DAKA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_DAKA01",
@@ -4224,27 +4224,27 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINDROGAN02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4327,7 +4327,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":7,
    "skill":[
     {
@@ -4904,6 +4904,36 @@
    "currentRarity":7,
    "currentTier":9,
    "skill":[],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -5516,11 +5546,11 @@
    "skill":[
     {
      "id":"basicskill_MORGANELSBETH",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MORGANELSBETH01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MORGANELSBETH02",
@@ -5648,7 +5678,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7869,7 +7899,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":7,
    "skill":[
     {
@@ -8964,7 +8994,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9575,6 +9605,36 @@
     {
      "id":"specialskill_GRANDMASTERYODA03",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "darthbane":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"uniqueskill_DARTHBANE01",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_DARTHBANE",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARTHBANE02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARTHBANE01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_DARTHBANE",
+     "tier":5
     }
    ],
    "relic":{

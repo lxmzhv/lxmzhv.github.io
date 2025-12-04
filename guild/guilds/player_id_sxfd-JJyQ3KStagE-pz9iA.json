@@ -35,10 +35,10 @@
    "total_score":96.14
   },
   "beq_raid":{
-   "total_score":104.0
+   "total_score":87.5
   }
  },
- "modsRating":55.009827,
+ "modsRating":54.850061,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -261,7 +261,7 @@
    ]
   },
   "ravensclaw":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_IG86SENTINELDROID01",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1936,7 +1936,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_STAP01",
@@ -1956,7 +1956,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3608,15 +3608,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3840,7 +3840,7 @@
     },
     {
      "id":"uniqueskill_EMPERORPALPATINE01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4992,11 +4992,11 @@
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5291,6 +5291,36 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":3
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":3
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5756,7 +5786,7 @@
    "skill":[
     {
      "id":"uniqueskill_CAPTAINSILVO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_CAPTAINSILVO",
@@ -5764,7 +5794,7 @@
     },
     {
      "id":"specialskill_CAPTAINSILVO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINSILVO01",
@@ -7310,7 +7340,7 @@
     },
     {
      "id":"specialskill_KANANJARRUSS302",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

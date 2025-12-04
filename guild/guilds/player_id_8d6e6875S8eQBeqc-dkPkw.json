@@ -20,7 +20,7 @@
    "total_score":105.0
   },
   "drevan":{
-   "total_score":104.8
+   "total_score":84.6
   },
   "amidala":{
    "total_score":104.0
@@ -32,13 +32,13 @@
    "total_score":107.6
   },
   "slkr":{
-   "total_score":98.86
+   "total_score":99.57
   },
   "beq_raid":{
    "total_score":105.0
   }
  },
- "modsRating":116.857986,
+ "modsRating":117.007181,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -5222,7 +5222,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5271,6 +5271,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":6,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5554,7 +5584,7 @@
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":12
    },
    "stats":{}
   },

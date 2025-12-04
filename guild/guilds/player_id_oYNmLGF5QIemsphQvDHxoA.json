@@ -38,7 +38,7 @@
    "total_score":42.5
   }
  },
- "modsRating":15.845566,
+ "modsRating":15.851407,
  "roster":{
   "magmatrooper":{
    "currentRarity":2,
@@ -123,7 +123,7 @@
   },
   "zebs3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ZEBS3",
@@ -2918,7 +2918,7 @@
    "stats":{}
   },
   "captainenoch":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":11,
    "skill":[
     {
@@ -3065,15 +3065,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3311,7 +3311,7 @@
   },
   "hothhan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HOTHHAN",
@@ -3327,11 +3327,11 @@
     },
     {
      "id":"uniqueskill_HOTHHAN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3583,7 +3583,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3591,7 +3591,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4462,6 +4462,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -6217,7 +6243,7 @@
   },
   "kananjarruss3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_KANANJARRUSS301",
@@ -7291,7 +7317,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -7311,7 +7337,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

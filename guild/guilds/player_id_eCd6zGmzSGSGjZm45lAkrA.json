@@ -23,7 +23,7 @@
    "total_score":82.2
   },
   "amidala":{
-   "total_score":62.0
+   "total_score":66.0
   },
   "gungans":{
    "total_score":31.2
@@ -860,7 +860,7 @@
   },
   "50rt":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_50RT01",
@@ -884,7 +884,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1330,7 +1330,7 @@
     },
     {
      "id":"leaderskill_MANDALORBOKATAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MANDALORBOKATAN02",
@@ -2214,7 +2214,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"uniqueskill_QUEENAMIDALA01",
@@ -2428,7 +2428,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3500,11 +3500,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4512,7 +4512,7 @@
   },
   "huyang":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4532,7 +4532,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5107,6 +5107,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6140,7 +6166,7 @@
   },
   "taronmalicos":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_TARONMALICOS02",
@@ -6660,7 +6686,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },

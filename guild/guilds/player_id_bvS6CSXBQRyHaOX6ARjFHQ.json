@@ -11,10 +11,10 @@
    "total_score":77.2
   },
   "inqs":{
-   "total_score":34.8
+   "total_score":43.4
   },
   "reva":{
-   "total_score":54.8
+   "total_score":59.0
   },
   "geos":{
    "total_score":70.0
@@ -1104,7 +1104,7 @@
   },
   "fifthbrother":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_FIFTHBROTHER",
@@ -1132,7 +1132,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4278,6 +4278,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -6472,7 +6498,7 @@
     },
     {
      "id":"specialskill_WRECKERS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_WRECKERS301",
@@ -7569,27 +7595,27 @@
   },
   "seventhsister":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SEVENTHSISTER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SEVENTHSISTER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SEVENTHSISTER02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_SEVENTHSISTER",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SEVENTHSISTER04",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_INQUISITOR01_HEALER",

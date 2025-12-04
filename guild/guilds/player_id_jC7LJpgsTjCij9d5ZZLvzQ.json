@@ -38,7 +38,7 @@
    "total_score":99.5
   }
  },
- "modsRating":28.405552,
+ "modsRating":28.43419,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1936,7 +1936,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1956,7 +1956,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3320,7 +3320,7 @@
     },
     {
      "id":"uniqueskill_QUIGGOLD01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_QUIGGOLD02",
@@ -3328,7 +3328,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4594,7 +4594,7 @@
   },
   "huyang":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4614,7 +4614,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5189,6 +5189,36 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":6,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":3
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":3
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":4
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9424,7 +9454,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9974,11 +10004,11 @@
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -10108,7 +10138,7 @@
     },
     {
      "id":"specialskill_MAZKANATA02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_MAZKANATA",

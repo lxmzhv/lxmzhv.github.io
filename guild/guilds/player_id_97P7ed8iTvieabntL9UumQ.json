@@ -38,7 +38,7 @@
    "total_score":95.0
   }
  },
- "modsRating":45.883857,
+ "modsRating":45.898185,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3578,19 +3578,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3784,7 +3784,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5227,6 +5227,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -8446,7 +8472,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8466,7 +8492,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9454,7 +9480,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -10004,7 +10030,7 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -10016,15 +10042,15 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

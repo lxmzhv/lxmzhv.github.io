@@ -2,7 +2,7 @@
  "allyCode":"546836949",
  "requirements":{
   "jabba":{
-   "total_score":83.0
+   "total_score":84.0
   },
   "gg":{
    "total_score":88.0
@@ -23,13 +23,13 @@
    "total_score":60.2
   },
   "amidala":{
-   "total_score":89.0
+   "total_score":92.67
   },
   "gungans":{
    "total_score":15.0
   },
   "leia":{
-   "total_score":64.0
+   "total_score":67.2
   },
   "slkr":{
    "total_score":90.14
@@ -38,7 +38,7 @@
    "total_score":85.5
   }
  },
- "modsRating":22.778006,
+ "modsRating":23.252195,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1448,11 +1448,11 @@
     },
     {
      "id":"specialskill_SITHFIGHTER01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"basicskill_SITHFIGHTER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SITHFIGHTER01",
@@ -1720,11 +1720,11 @@
     },
     {
      "id":"specialskill_SITHSUPREMACYCLASS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_SITHSUPREMACYCLASS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_SITHSUPREMACYCLASS",
@@ -1732,7 +1732,7 @@
     },
     {
      "id":"uniqueskill_SITHSUPREMACYCLASS01",
-     "tier":4
+     "tier":6
     }
    ]
   },
@@ -4154,11 +4154,11 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
@@ -4166,15 +4166,15 @@
     },
     {
      "id":"specialskill_CAPTAINDROGAN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -4814,6 +4814,36 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5184,7 +5214,7 @@
     },
     {
      "id":"specialskill_JABBATHEHUTT01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_JABBATHEHUTT",
@@ -5361,7 +5391,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -6133,7 +6163,7 @@
     },
     {
      "id":"uniqueskill_EMBO01",
-     "tier":5
+     "tier":7
     },
     {
      "id":"specialskill_EMBO01",
@@ -8676,7 +8706,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9339,11 +9369,11 @@
     },
     {
      "id":"specialskill_MAZKANATA02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"leaderskill_MAZKANATA",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_MAZKANATA01",
@@ -9351,7 +9381,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":7
    },
    "stats":{}
   },

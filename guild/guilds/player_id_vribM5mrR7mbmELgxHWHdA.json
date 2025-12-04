@@ -2,7 +2,7 @@
  "allyCode":"572151227",
  "requirements":{
   "jabba":{
-   "total_score":87.5
+   "total_score":87.67
   },
   "gg":{
    "total_score":86.0
@@ -32,13 +32,13 @@
    "total_score":99.0
   },
   "slkr":{
-   "total_score":97.57
+   "total_score":98.86
   },
   "beq_raid":{
    "total_score":92.0
   }
  },
- "modsRating":84.141849,
+ "modsRating":84.215008,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3602,11 +3602,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3792,7 +3792,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4126,11 +4126,11 @@
   },
   "caradune":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CARADUNE02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CARADUNE01",
@@ -4146,7 +4146,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5259,6 +5259,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8442,7 +8468,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8462,7 +8488,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },

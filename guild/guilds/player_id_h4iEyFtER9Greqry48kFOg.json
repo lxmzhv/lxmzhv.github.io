@@ -32,13 +32,13 @@
    "total_score":92.8
   },
   "slkr":{
-   "total_score":90.71
+   "total_score":91.14
   },
   "beq_raid":{
    "total_score":93.0
   }
  },
- "modsRating":32.674902,
+ "modsRating":32.681544,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1978,7 +1978,7 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4824,6 +4824,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5620,7 +5646,7 @@
     },
     {
      "id":"specialskill_MOFFGIDEONS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_MOFFGIDEONS3",
@@ -6656,7 +6682,7 @@
     },
     {
      "id":"uniqueskill_JOCASTANU01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -6760,7 +6786,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -8802,7 +8828,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -8884,7 +8910,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },

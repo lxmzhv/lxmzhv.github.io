@@ -23,13 +23,13 @@
    "total_score":94.6
   },
   "amidala":{
-   "total_score":44.33
+   "total_score":45.0
   },
   "gungans":{
    "total_score":93.6
   },
   "leia":{
-   "total_score":97.4
+   "total_score":97.6
   },
   "slkr":{
    "total_score":93.29
@@ -38,7 +38,7 @@
    "total_score":43.0
   }
  },
- "modsRating":28.686466,
+ "modsRating":28.737714,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2222,7 +2222,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_QUEENAMIDALA01",
@@ -2930,7 +2930,7 @@
   },
   "fulcrumahsoka":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_FULCRUMAHSOKA01",
@@ -2946,11 +2946,11 @@
     },
     {
      "id":"specialskill_FULCRUMAHSOKA02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4136,7 +4136,7 @@
     },
     {
      "id":"specialskill_LORDVADER01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_LORDVADER02",
@@ -4632,7 +4632,7 @@
   },
   "depabillaba":{
    "currentRarity":4,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_DEPABILLABA",
@@ -5111,6 +5111,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8139,7 +8165,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":2,
    "skill":[],
    "relic":{
@@ -9273,7 +9299,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

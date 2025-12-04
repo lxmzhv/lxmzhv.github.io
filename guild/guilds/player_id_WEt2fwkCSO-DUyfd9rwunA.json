@@ -8,7 +8,7 @@
    "total_score":75.8
   },
   "gas":{
-   "total_score":64.8
+   "total_score":66.0
   },
   "inqs":{
    "total_score":68.0
@@ -321,7 +321,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1793,7 +1793,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -4116,6 +4116,14 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4906,7 +4914,7 @@
   },
   "jediknightcal":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTCAL",

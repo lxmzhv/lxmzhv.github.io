@@ -38,7 +38,7 @@
    "total_score":87.0
   }
  },
- "modsRating":31.220339,
+ "modsRating":31.424652,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -208,7 +208,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1564,7 +1564,7 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -1584,7 +1584,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2614,11 +2614,11 @@
     },
     {
      "id":"leaderskill_GREATMOTHERS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_GREATMOTHERS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -2934,7 +2934,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3536,7 +3536,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4428,7 +4428,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4990,7 +4990,7 @@
     },
     {
      "id":"specialskill_DEATHTROOPERPERIDEA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DEATHTROOPERPERIDEA02",
@@ -5185,6 +5185,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -5611,7 +5637,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {

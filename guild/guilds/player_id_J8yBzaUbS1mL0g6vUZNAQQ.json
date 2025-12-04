@@ -14,7 +14,7 @@
    "total_score":79.2
   },
   "reva":{
-   "total_score":89.8
+   "total_score":89.0
   },
   "geos":{
    "total_score":88.0
@@ -32,13 +32,13 @@
    "total_score":64.8
   },
   "slkr":{
-   "total_score":75.43
+   "total_score":82.0
   },
   "beq_raid":{
    "total_score":35.0
   }
  },
- "modsRating":12.957882,
+ "modsRating":12.902409,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3378,19 +3378,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4935,6 +4935,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7934,7 +7960,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -7954,7 +7980,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8866,7 +8892,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8882,11 +8908,11 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8937,6 +8963,36 @@
      "tier":1
     }
    ]
+  },
+  "darkrey":{
+   "currentRarity":7,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_DARKREY",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARKREY02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DARKREY01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARKREY02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARKREY01",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "jedistarfighterconsular":{
    "currentRarity":7,

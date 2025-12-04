@@ -38,7 +38,7 @@
    "total_score":78.5
   }
  },
- "modsRating":16.164418,
+ "modsRating":16.168355,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2842,7 +2842,7 @@
   },
   "fulcrumahsoka":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_FULCRUMAHSOKA",
@@ -3700,7 +3700,7 @@
     },
     {
      "id":"uniqueskill_EMPERORPALPATINE01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4182,7 +4182,7 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -4375,7 +4375,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -4997,6 +4997,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6782,7 +6808,7 @@
   },
   "shinhati":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SHINHATI",
@@ -8042,27 +8068,27 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CHOPPERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CHOPPERS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CHOPPERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9020,27 +9046,27 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

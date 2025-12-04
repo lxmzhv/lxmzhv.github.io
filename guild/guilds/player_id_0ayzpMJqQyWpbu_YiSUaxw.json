@@ -8,7 +8,7 @@
    "total_score":85.6
   },
   "gas":{
-   "total_score":84.4
+   "total_score":78.6
   },
   "inqs":{
    "total_score":87.8
@@ -38,7 +38,7 @@
    "total_score":85.0
   }
  },
- "modsRating":23.860283,
+ "modsRating":23.676462,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1930,7 +1930,7 @@
   },
   "sabinewrens3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SABINEWRENS3",
@@ -1942,7 +1942,7 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SABINEWRENS301",
@@ -1950,7 +1950,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2696,7 +2696,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3336,7 +3336,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3352,11 +3352,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4368,7 +4368,7 @@
   },
   "kix":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4938,6 +4938,36 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5258,23 +5288,23 @@
    "skill":[
     {
      "id":"basicskill_HONDO",
-     "tier":2
+     "tier":6
     },
     {
      "id":"uniqueskill_HONDO02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"uniqueskill_HONDO01",
-     "tier":2
+     "tier":4
     },
     {
      "id":"specialskill_HONDO02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_HONDO01",
-     "tier":2
+     "tier":6
     }
    ],
    "relic":{
@@ -5535,7 +5565,7 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -5556,7 +5586,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -6675,7 +6705,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":13,
    "skill":[
     {

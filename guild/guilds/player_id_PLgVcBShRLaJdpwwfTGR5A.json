@@ -29,7 +29,7 @@
    "total_score":0.0
   },
   "leia":{
-   "total_score":41.0
+   "total_score":42.6
   },
   "slkr":{
    "total_score":89.86
@@ -38,7 +38,7 @@
    "total_score":39.5
   }
  },
- "modsRating":15.255999,
+ "modsRating":15.256546,
  "roster":{
   "magmatrooper":{
    "currentRarity":5,
@@ -1617,11 +1617,12 @@
   },
   "scouttrooper_v3":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":10,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "epixpoe":{
    "currentRarity":7,
@@ -2613,7 +2614,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3352,7 +3353,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3871,6 +3872,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

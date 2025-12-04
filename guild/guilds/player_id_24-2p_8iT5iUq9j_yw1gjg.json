@@ -2,7 +2,7 @@
  "allyCode":"696515724",
  "requirements":{
   "jabba":{
-   "total_score":35.5
+   "total_score":35.83
   },
   "gg":{
    "total_score":85.2
@@ -26,7 +26,7 @@
    "total_score":26.0
   },
   "gungans":{
-   "total_score":31.8
+   "total_score":32.0
   },
   "leia":{
    "total_score":35.6
@@ -1855,7 +1855,7 @@
    "stats":{}
   },
   "scouttrooper_v3":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":5,
    "skill":[],
    "relic":{
@@ -3038,7 +3038,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4475,6 +4475,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5294,7 +5320,7 @@
   },
   "boushh":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"contractskill_BOUSHH",
@@ -7044,7 +7070,7 @@
   },
   "boomadier":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_BOOMADIER01",

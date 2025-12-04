@@ -2,7 +2,7 @@
  "allyCode":"775541661",
  "requirements":{
   "jabba":{
-   "total_score":85.83
+   "total_score":85.17
   },
   "gg":{
    "total_score":89.4
@@ -38,7 +38,7 @@
    "total_score":84.0
   }
  },
- "modsRating":64.963691,
+ "modsRating":64.965591,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3560,11 +3560,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5200,6 +5200,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5540,7 +5566,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

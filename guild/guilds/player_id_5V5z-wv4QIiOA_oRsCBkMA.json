@@ -38,7 +38,7 @@
    "total_score":97.0
   }
  },
- "modsRating":55.748957,
+ "modsRating":55.7872,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -200,7 +200,7 @@
     },
     {
      "id":"uniqueskill_LUTHENRAEL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_LUTHENRAEL02",
@@ -740,7 +740,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5291,6 +5291,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":6,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":3
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":3
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":3
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":3
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

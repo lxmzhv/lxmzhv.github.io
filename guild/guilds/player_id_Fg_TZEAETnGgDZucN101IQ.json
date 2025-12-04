@@ -26,7 +26,7 @@
    "total_score":83.67
   },
   "gungans":{
-   "total_score":18.6
+   "total_score":18.8
   },
   "leia":{
    "total_score":95.0
@@ -38,7 +38,7 @@
    "total_score":88.0
   }
  },
- "modsRating":22.938157,
+ "modsRating":23.098391,
  "roster":{
   "magmatrooper":{
    "currentRarity":6,
@@ -1889,7 +1889,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1909,7 +1909,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2800,6 +2800,40 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "baylanskoll":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_BAYLANSKOLL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_BAYLANSKOLL",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL02",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4511,7 +4545,7 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4531,7 +4565,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5118,6 +5152,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7016,7 +7080,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -7041,7 +7105,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8198,7 +8262,7 @@
    "stats":{}
   },
   "boomadier":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":7,
    "skill":[
     {

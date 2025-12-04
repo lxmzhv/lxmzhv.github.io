@@ -38,7 +38,7 @@
    "total_score":41.0
   }
  },
- "modsRating":21.451783,
+ "modsRating":21.454674,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1680,7 +1680,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1822,7 +1822,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3015,7 +3015,7 @@
   },
   "disguisedclonetrooper":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DISGUISEDCLONETROOPER",
@@ -3035,7 +3035,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3339,19 +3339,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4848,6 +4848,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5018,7 +5044,7 @@
    "skill":[
     {
      "id":"uniqueskill_OPERATIVE02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_OPERATIVE",
@@ -6769,7 +6795,7 @@
   },
   "jediknightconsular":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_JEDIKNIGHTCONSULAR02",
@@ -6785,7 +6811,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -6865,7 +6891,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"leaderskill_STORMTROOPERHAN",

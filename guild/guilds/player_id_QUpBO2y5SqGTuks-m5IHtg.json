@@ -38,7 +38,7 @@
    "total_score":68.5
   }
  },
- "modsRating":15.991451,
+ "modsRating":16.315876,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -478,7 +478,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_VANGUARDTEMPLEGUARD",
@@ -2295,8 +2295,8 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":6,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -3367,7 +3367,7 @@
    "stats":{}
   },
   "appo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -3500,11 +3500,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4292,7 +4292,7 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -5103,6 +5103,36 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6152,7 +6182,7 @@
     },
     {
      "id":"specialskill_TARONMALICOS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TARONMALICOS01",
@@ -9794,7 +9824,7 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -9806,15 +9836,15 @@
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

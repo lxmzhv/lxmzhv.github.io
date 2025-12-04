@@ -38,7 +38,7 @@
    "total_score":94.5
   }
  },
- "modsRating":33.639178,
+ "modsRating":33.767446,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3217,7 +3217,7 @@
    ]
   },
   "quiggold":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -4606,7 +4606,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -5061,6 +5061,32 @@
     {
      "id":"basicskill_TRIPLEZERO",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -9148,7 +9174,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -9168,7 +9194,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9482,7 +9508,7 @@
   },
   "vane":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_VANE",

@@ -35,10 +35,10 @@
    "total_score":86.14
   },
   "beq_raid":{
-   "total_score":82.5
+   "total_score":83.5
   }
  },
- "modsRating":19.249972,
+ "modsRating":19.419233,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3774,7 +3774,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3828,11 +3828,11 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3840,7 +3840,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINREX",
@@ -3848,7 +3848,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -4794,6 +4794,36 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5281,7 +5311,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -7693,7 +7723,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CHOPPERS301",
@@ -7713,7 +7743,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8602,11 +8632,11 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8622,7 +8652,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8980,7 +9010,7 @@
   },
   "jediknightguardian":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_JEDIKNIGHTGUARDIAN01",
@@ -8996,7 +9026,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

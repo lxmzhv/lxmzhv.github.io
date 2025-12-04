@@ -32,13 +32,13 @@
    "total_score":93.8
   },
   "slkr":{
-   "total_score":99.14
+   "total_score":95.57
   },
   "beq_raid":{
-   "total_score":91.5
+   "total_score":90.0
   }
  },
- "modsRating":48.655859,
+ "modsRating":48.359653,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3814,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4966,6 +4966,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":0
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":0
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":6
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":4,
@@ -5227,6 +5261,32 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,

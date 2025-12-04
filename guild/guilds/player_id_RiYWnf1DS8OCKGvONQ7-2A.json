@@ -20,7 +20,7 @@
    "total_score":109.0
   },
   "drevan":{
-   "total_score":105.0
+   "total_score":105.4
   },
   "amidala":{
    "total_score":100.67
@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":95.636843,
+ "modsRating":95.687595,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4966,6 +4966,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":13,
@@ -5257,6 +5291,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

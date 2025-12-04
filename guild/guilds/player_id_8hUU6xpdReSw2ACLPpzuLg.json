@@ -32,13 +32,13 @@
    "total_score":90.0
   },
   "slkr":{
-   "total_score":86.43
+   "total_score":86.71
   },
   "beq_raid":{
    "total_score":37.5
   }
  },
- "modsRating":10.015127,
+ "modsRating":10.02468,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1567,11 +1567,11 @@
     },
     {
      "id":"uniqueskill_MERRIN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MERRIN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4503,7 +4503,7 @@
   },
   "pazvizsla":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PAZVIZSLA",
@@ -4523,7 +4523,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4782,6 +4782,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5233,7 +5259,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8675,7 +8701,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },

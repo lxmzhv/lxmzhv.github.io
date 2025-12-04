@@ -38,7 +38,7 @@
    "total_score":99.5
   }
  },
- "modsRating":74.258228,
+ "modsRating":74.700686,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -4635,7 +4635,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -5260,6 +5260,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5717,7 +5743,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -9866,7 +9892,7 @@
   },
   "vane":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_VANE",
@@ -9886,7 +9912,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },

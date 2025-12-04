@@ -8,7 +8,7 @@
    "total_score":83.0
   },
   "gas":{
-   "total_score":66.6
+   "total_score":66.8
   },
   "inqs":{
    "total_score":65.0
@@ -23,13 +23,13 @@
    "total_score":83.2
   },
   "amidala":{
-   "total_score":39.0
+   "total_score":40.0
   },
   "gungans":{
    "total_score":36.6
   },
   "leia":{
-   "total_score":53.8
+   "total_score":57.8
   },
   "slkr":{
    "total_score":55.86
@@ -38,7 +38,7 @@
    "total_score":59.5
   }
  },
- "modsRating":13.564586,
+ "modsRating":13.572173,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1772,7 +1772,7 @@
   },
   "admiralraddus":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ADMIRALRADDUS",
@@ -1796,7 +1796,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3398,7 +3398,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3414,11 +3414,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4750,7 +4750,7 @@
   },
   "armorer":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"specialskill_ARMORER02",
@@ -4966,7 +4966,7 @@
   },
   "triplezero":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
@@ -4983,6 +4983,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -5804,7 +5830,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -6476,7 +6502,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7952,7 +7978,7 @@
     },
     {
      "id":"uniqueskill_GENERALSYNDULLA01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_GENERALSYNDULLA02",
@@ -8052,7 +8078,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS301",
@@ -8072,7 +8098,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8290,7 +8316,7 @@
   },
   "trench":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_TRENCH",

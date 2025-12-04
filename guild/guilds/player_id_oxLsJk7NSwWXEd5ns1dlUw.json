@@ -35,10 +35,10 @@
    "total_score":89.29
   },
   "beq_raid":{
-   "total_score":81.0
+   "total_score":81.5
   }
  },
- "modsRating":30.429078,
+ "modsRating":30.498666,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -464,7 +464,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_VANGUARDTEMPLEGUARD",
@@ -484,7 +484,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2896,7 +2896,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3272,7 +3272,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3938,7 +3938,7 @@
     },
     {
      "id":"specialskill_VULTUREDROID01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"hardwareskill_VULTUREDROID01",
@@ -3952,7 +3952,7 @@
    "skill":[
     {
      "id":"basicskill_LORDVADER",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_LORDVADER01",
@@ -3976,7 +3976,7 @@
     }
    ],
    "relic":{
-    "currentTier":11
+    "currentTier":12
    },
    "stats":{}
   },
@@ -4895,6 +4895,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -6349,7 +6375,7 @@
    "skill":[
     {
      "id":"specialskill_CAPITALSTARDESTROYER01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALSTARDESTROYER03",
@@ -6361,11 +6387,11 @@
     },
     {
      "id":"basicskill_CAPITALSTARDESTROYER",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_CAPITALSTARDESTROYER01",
-     "tier":4
+     "tier":6
     }
    ]
   },
@@ -7714,7 +7740,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {

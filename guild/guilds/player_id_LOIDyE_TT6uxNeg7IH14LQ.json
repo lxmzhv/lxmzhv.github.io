@@ -2699,18 +2699,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3933,6 +3941,14 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4594,6 +4610,14 @@
      "tier":6
     }
    ]
+  },
+  "moffgideons3":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "moffgideons1":{
    "currentRarity":6,

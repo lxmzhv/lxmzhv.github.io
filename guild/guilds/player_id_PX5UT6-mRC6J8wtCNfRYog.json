@@ -38,7 +38,7 @@
    "total_score":89.0
   }
  },
- "modsRating":41.724091,
+ "modsRating":42.247084,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -4093,6 +4093,40 @@
     }
    ]
   },
+  "lordvader":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_LORDVADER",
+     "tier":1
+    },
+    {
+     "id":"specialskill_LORDVADER01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_LORDVADER02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_LORDVADER",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_LORDVADER01",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "resistancetrooper":{
    "currentRarity":7,
    "currentTier":13,
@@ -4988,6 +5022,36 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,

@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":60.996453,
+ "modsRating":61.266046,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3579,7 +3579,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4967,11 +4967,11 @@
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5266,6 +5266,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

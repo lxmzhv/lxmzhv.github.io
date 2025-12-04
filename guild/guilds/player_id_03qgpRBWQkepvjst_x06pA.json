@@ -38,7 +38,7 @@
    "total_score":89.0
   }
  },
- "modsRating":66.869817,
+ "modsRating":66.93947,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -1503,7 +1503,7 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -3300,7 +3300,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3508,7 +3508,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3524,11 +3524,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4544,7 +4544,7 @@
     },
     {
      "id":"specialskill_KIX02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KIX01",
@@ -5139,7 +5139,7 @@
    "stats":{}
   },
   "triplezero":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -5153,6 +5153,36 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":5,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -8208,7 +8238,7 @@
     },
     {
      "id":"uniqueskill_GENERALSYNDULLA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -8930,7 +8960,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -9312,7 +9342,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -9998,7 +10028,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

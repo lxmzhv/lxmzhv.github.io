@@ -32,13 +32,13 @@
    "total_score":65.2
   },
   "slkr":{
-   "total_score":86.86
+   "total_score":90.86
   },
   "beq_raid":{
    "total_score":81.0
   }
  },
- "modsRating":26.35933,
+ "modsRating":26.438936,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1564,15 +1564,15 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BT1",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BT101",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_BT101",
@@ -1580,11 +1580,11 @@
     },
     {
      "id":"uniqueskill_BT102",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4534,7 +4534,7 @@
   },
   "kix":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_KIX01",
@@ -4554,7 +4554,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -5134,15 +5134,15 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TRIPLEZERO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_TRIPLEZERO01",
@@ -5151,6 +5151,36 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":5
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":5,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
     }
    ],
    "relic":{
@@ -5498,7 +5528,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7046,7 +7076,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHIRRUTIMWE",
@@ -7070,7 +7100,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -9348,7 +9378,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_EZRABRIDGERS3",

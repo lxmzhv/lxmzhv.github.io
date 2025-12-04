@@ -2246,7 +2246,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2752,7 +2752,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3354,18 +3354,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4390,7 +4398,7 @@
     },
     {
      "id":"specialskill_HUYANG01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HUYANG02",
@@ -4398,7 +4406,7 @@
     },
     {
      "id":"uniqueskill_HUYANG01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4977,6 +4985,24 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7863,7 +7889,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -8979,7 +9005,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8999,7 +9025,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },

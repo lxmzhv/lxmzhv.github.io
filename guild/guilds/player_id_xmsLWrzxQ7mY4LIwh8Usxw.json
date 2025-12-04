@@ -20,7 +20,7 @@
    "total_score":101.0
   },
   "drevan":{
-   "total_score":103.8
+   "total_score":104.4
   },
   "amidala":{
    "total_score":102.33
@@ -38,7 +38,7 @@
    "total_score":96.0
   }
  },
- "modsRating":81.913918,
+ "modsRating":82.271221,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3616,6 +3616,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3785,7 +3793,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3806,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4958,6 +4966,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":13,
@@ -5245,6 +5287,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9874,7 +9942,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },

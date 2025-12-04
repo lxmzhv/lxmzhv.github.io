@@ -29,7 +29,7 @@
    "total_score":99.2
   },
   "leia":{
-   "total_score":92.0
+   "total_score":98.2
   },
   "slkr":{
    "total_score":87.86
@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":31.413099,
+ "modsRating":31.732132,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -5160,6 +5160,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{

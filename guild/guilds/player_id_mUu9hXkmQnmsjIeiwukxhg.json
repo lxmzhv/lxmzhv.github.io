@@ -38,7 +38,7 @@
    "total_score":40.0
   }
  },
- "modsRating":41.045167,
+ "modsRating":41.051202,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2216,7 +2216,7 @@
   },
   "padawansabine":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -2236,7 +2236,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2836,7 +2836,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3372,19 +3372,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4949,6 +4949,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

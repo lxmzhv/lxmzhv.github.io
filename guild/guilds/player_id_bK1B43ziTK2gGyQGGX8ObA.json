@@ -38,7 +38,7 @@
    "total_score":94.5
   }
  },
- "modsRating":70.017402,
+ "modsRating":70.09833,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1498,11 +1498,29 @@
   },
   "bt1":{
    "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_BT102",
+     "tier":6
+    },
+    {
+     "id":"basicskill_BT1",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BT101",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BT101",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":5
+   },
+   "stats":{}
   },
   "sithfighter":{
    "currentRarity":7,
@@ -4860,7 +4878,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5112,11 +5130,29 @@
   },
   "triplezero":{
    "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "ugnaught":{
    "currentRarity":7,
@@ -5125,6 +5161,36 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":3
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":3
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -9767,7 +9833,7 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -9787,7 +9853,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

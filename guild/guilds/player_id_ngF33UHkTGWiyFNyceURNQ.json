@@ -38,7 +38,7 @@
    "total_score":78.0
   }
  },
- "modsRating":10.376806,
+ "modsRating":10.383614,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3168,15 +3168,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":4
+     "tier":5
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3392,7 +3392,7 @@
     },
     {
      "id":"leaderskill_EMPERORPALPATINE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_EMPERORPALPATINE01",
@@ -4689,6 +4689,36 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":10,
+   "skill":[
+    {
+     "id":"contractskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":4
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":4
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4751,11 +4781,11 @@
     },
     {
      "id":"specialskill_SMUGGLERCHEWBACCA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_SMUGGLERCHEWBACCA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SMUGGLERCHEWBACCA02",
@@ -6102,11 +6132,11 @@
     },
     {
      "id":"basicskill_FENNECSHAND",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_FENNECSHAND01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_FENNECSHAND01",
@@ -8313,7 +8343,7 @@
   },
   "sithassassin":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SITHASSASSIN",
@@ -8329,7 +8359,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8637,6 +8667,14 @@
     }
    ]
   },
+  "darkrey":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "jedistarfighterconsular":{
    "currentRarity":7,
    "currentTier":1,
@@ -8842,28 +8880,28 @@
    "stats":{}
   },
   "kylekatarn":{
-   "currentRarity":4,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KYLEKATARN",
-     "tier":2
+     "tier":6
     },
     {
      "id":"uniqueskill_KYLEKATARN01",
-     "tier":2
+     "tier":5
     },
     {
      "id":"specialskill_KYLEKATARN02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_KYLEKATARN01",
-     "tier":2
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

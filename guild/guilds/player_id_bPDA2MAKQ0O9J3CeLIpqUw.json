@@ -38,7 +38,7 @@
    "total_score":45.5
   }
  },
- "modsRating":15.799482,
+ "modsRating":16.044487,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3448,11 +3448,29 @@
   },
   "calkestis":{
    "currentRarity":6,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_CALKESTIS",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_CALKESTIS01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_CALKESTIS01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_CALKESTIS02",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "kelleranbeq":{
    "currentRarity":7,
@@ -4441,6 +4459,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -8784,28 +8828,28 @@
    "stats":{}
   },
   "sawgerrera":{
-   "currentRarity":6,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

@@ -38,7 +38,7 @@
    "total_score":93.5
   }
  },
- "modsRating":31.909191,
+ "modsRating":32.148911,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3552,11 +3552,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3742,7 +3742,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4593,7 +4593,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {
@@ -4898,6 +4898,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":7
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":13,
@@ -5189,6 +5223,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5532,7 +5596,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5670,7 +5734,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINSILVO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -7109,7 +7173,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -8291,7 +8355,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {

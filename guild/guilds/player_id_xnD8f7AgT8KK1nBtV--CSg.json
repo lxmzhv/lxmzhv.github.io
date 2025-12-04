@@ -2,7 +2,7 @@
  "allyCode":"935543324",
  "requirements":{
   "jabba":{
-   "total_score":53.83
+   "total_score":54.0
   },
   "gg":{
    "total_score":95.4
@@ -29,7 +29,7 @@
    "total_score":36.4
   },
   "leia":{
-   "total_score":97.8
+   "total_score":98.0
   },
   "slkr":{
    "total_score":91.29
@@ -38,7 +38,7 @@
    "total_score":98.0
   }
  },
- "modsRating":31.634536,
+ "modsRating":31.645682,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1041,7 +1041,7 @@
     },
     {
      "id":"uniqueskill_KRRSANTAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"leaderskill_KRRSANTAN",
@@ -3569,11 +3569,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5177,6 +5177,32 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -6027,7 +6053,7 @@
   },
   "moffgideons3":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MOFFGIDEONS3",
@@ -6257,7 +6283,7 @@
     },
     {
      "id":"uniqueskill_BOUSHH01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_BOUSHH",
@@ -7203,7 +7229,7 @@
   },
   "jediknightconsular":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_JEDIKNIGHTCONSULAR01",
@@ -7245,7 +7271,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8281,7 +8307,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS302",
@@ -8301,7 +8327,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -9001,7 +9027,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -9311,7 +9337,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -9327,11 +9353,11 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -9869,7 +9895,7 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -9881,15 +9907,15 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

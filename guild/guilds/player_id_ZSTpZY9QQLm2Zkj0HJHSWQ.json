@@ -38,7 +38,7 @@
    "total_score":76.5
   }
  },
- "modsRating":9.719316,
+ "modsRating":9.719324,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1071,7 +1071,7 @@
   },
   "dengar":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_DENGAR",
@@ -1471,8 +1471,8 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":2,
-   "currentTier":1,
+   "currentRarity":3,
+   "currentTier":2,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -1493,7 +1493,8 @@
    ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "jawa":{
    "currentRarity":7,
@@ -2145,7 +2146,7 @@
   },
   "crosshairs3":{
    "currentRarity":6,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_CROSSHAIRS3",
@@ -2600,7 +2601,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3383,7 +3384,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3399,11 +3400,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3413,7 +3414,7 @@
   },
   "ig88":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"contractskill_IG8801",
@@ -3649,7 +3650,7 @@
     },
     {
      "id":"leaderskill_MONMOTHMA",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4379,7 +4380,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":5,
    "skill":[
     {
@@ -4949,7 +4950,7 @@
   },
   "triplezero":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
@@ -4966,6 +4967,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -5867,7 +5894,7 @@
     },
     {
      "id":"uniqueskill_JEDIMASTERMACEWINDU01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9057,7 +9084,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9568,7 +9595,7 @@
   },
   "tiefighterpilot":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TIEFIGHTERPILOT",
@@ -9584,7 +9611,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

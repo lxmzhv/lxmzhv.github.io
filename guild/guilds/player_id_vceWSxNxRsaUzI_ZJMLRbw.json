@@ -8,7 +8,7 @@
    "total_score":85.0
   },
   "gas":{
-   "total_score":87.6
+   "total_score":88.0
   },
   "inqs":{
    "total_score":77.8
@@ -29,16 +29,16 @@
    "total_score":91.8
   },
   "leia":{
-   "total_score":53.8
+   "total_score":56.0
   },
   "slkr":{
-   "total_score":86.14
+   "total_score":90.29
   },
   "beq_raid":{
    "total_score":85.0
   }
  },
- "modsRating":27.424033,
+ "modsRating":27.48481,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2782,7 +2782,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4198,7 +4198,7 @@
   },
   "tuskenraider":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_TUSKENRAIDER",
@@ -4422,27 +4422,27 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CAPTAINDROGAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -5124,6 +5124,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5224,7 +5250,7 @@
     },
     {
      "id":"uniqueskill_BOBAFETTSCION01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"contractskill_BOBAFETTSCION01",
@@ -5720,7 +5746,7 @@
   },
   "enfysnest":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_ENFYSNEST",
@@ -5912,7 +5938,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -6120,7 +6146,7 @@
   },
   "zamwesell":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ZAMWESELL",
@@ -8135,7 +8161,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":7,
    "skill":[
     {
@@ -9230,7 +9256,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

@@ -8,7 +8,7 @@
    "total_score":77.2
   },
   "gas":{
-   "total_score":81.6
+   "total_score":82.4
   },
   "inqs":{
    "total_score":72.4
@@ -38,7 +38,7 @@
    "total_score":89.0
   }
  },
- "modsRating":64.206438,
+ "modsRating":64.2471,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -636,7 +636,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2346,7 +2346,7 @@
     },
     {
      "id":"uniqueskill_PADAWANSABINE01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -2816,7 +2816,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4300,7 +4300,7 @@
   },
   "tuskenraider":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_TUSKENRAIDER01",
@@ -4622,7 +4622,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5213,6 +5213,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5287,7 +5313,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -5695,7 +5721,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -6611,7 +6637,7 @@
   },
   "badbatchecho":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_BADBATCHECHO02",
@@ -7069,7 +7095,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_CHIRRUTIMWE",
@@ -7679,7 +7705,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8301,7 +8327,7 @@
     },
     {
      "id":"uniqueskill_GENERALSYNDULLA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

@@ -2,7 +2,7 @@
  "allyCode":"332323664",
  "requirements":{
   "jabba":{
-   "total_score":90.83
+   "total_score":91.83
   },
   "gg":{
    "total_score":83.4
@@ -162,7 +162,7 @@
   },
   "zebs3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ZEBS3",
@@ -178,11 +178,11 @@
     },
     {
      "id":"specialskill_ZEBS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3617,6 +3617,14 @@
     {
      "id":"basicskill_STORMTROOPERLUKE",
      "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
+     "tier":0
     }
    ],
    "relic":{
@@ -5283,6 +5291,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9496,7 +9530,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

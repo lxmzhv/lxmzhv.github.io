@@ -29,7 +29,7 @@
    "total_score":34.4
   },
   "leia":{
-   "total_score":35.4
+   "total_score":45.2
   },
   "slkr":{
    "total_score":94.43
@@ -38,7 +38,7 @@
    "total_score":89.5
   }
  },
- "modsRating":13.860812,
+ "modsRating":13.938532,
  "roster":{
   "magmatrooper":{
    "currentRarity":6,
@@ -736,7 +736,7 @@
   },
   "sithtrooper":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_SITHTROOPER",
@@ -1169,7 +1169,7 @@
     },
     {
      "id":"leaderskill_MANDALORBOKATAN",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_MANDALORBOKATAN01",
@@ -1605,32 +1605,32 @@
    "stats":{}
   },
   "admiralraddus":{
-   "currentRarity":3,
-   "currentTier":10,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_ADMIRALRADDUS01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS02",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"basicskill_ADMIRALRADDUS",
-     "tier":1
+     "tier":6
     },
     {
      "id":"leaderskill_ADMIRALRADDUS",
-     "tier":1
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -3052,7 +3052,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3064,6 +3064,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -3889,7 +3897,7 @@
   },
   "commanderlukeskywalker":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_COMMANDERLUKESKYWALKER",
@@ -3917,7 +3925,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4167,7 +4175,7 @@
    }
   },
   "deathtrooperperidea":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -4327,6 +4335,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7312,7 +7346,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },

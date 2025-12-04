@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":121.461544,
+ "modsRating":121.472101,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3814,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5280,6 +5280,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -6630,7 +6656,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -7086,7 +7112,7 @@
   },
   "hothrebelsoldier":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_HOTHREBELSOLDIER",

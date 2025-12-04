@@ -14,7 +14,7 @@
    "total_score":77.4
   },
   "reva":{
-   "total_score":91.0
+   "total_score":91.4
   },
   "geos":{
    "total_score":94.0
@@ -29,7 +29,7 @@
    "total_score":35.0
   },
   "leia":{
-   "total_score":61.4
+   "total_score":65.2
   },
   "slkr":{
    "total_score":85.43
@@ -38,7 +38,7 @@
    "total_score":86.5
   }
  },
- "modsRating":29.068045,
+ "modsRating":29.305475,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -346,7 +346,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3337,7 +3337,7 @@
    "stats":{}
   },
   "captainenoch":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":10,
    "skill":[
     {
@@ -4046,7 +4046,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -4054,11 +4054,11 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -4066,7 +4066,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4400,15 +4400,15 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
@@ -4420,7 +4420,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5095,6 +5095,36 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6414,7 +6444,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -6981,7 +7011,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -8133,7 +8163,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -8246,7 +8276,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS302",
@@ -8266,7 +8296,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9228,7 +9258,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9904,7 +9934,7 @@
   },
   "mazkanata":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MAZKANATA",
@@ -9928,7 +9958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

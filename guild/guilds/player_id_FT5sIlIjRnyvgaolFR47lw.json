@@ -38,7 +38,7 @@
    "total_score":33.5
   }
  },
- "modsRating":6.50272,
+ "modsRating":6.500285,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -308,7 +308,7 @@
     },
     {
      "id":"leaderskill_THIRDSISTER",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_THIRDSISTER01",
@@ -452,7 +452,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"specialskill_VANGUARDTEMPLEGUARD02",
@@ -3235,19 +3235,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3639,7 +3639,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4751,6 +4751,32 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4799,7 +4825,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4909,7 +4935,7 @@
   },
   "operative":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_OPERATIVE02",

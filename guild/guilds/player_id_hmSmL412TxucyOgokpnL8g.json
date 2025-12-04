@@ -38,7 +38,7 @@
    "total_score":86.0
   }
  },
- "modsRating":18.261254,
+ "modsRating":18.267896,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -142,7 +142,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -233,7 +233,7 @@
    ]
   },
   "capitalmalevolence":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -242,19 +242,19 @@
     },
     {
      "id":"basicskill_CAPITALMALEVOLENCE",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALMALEVOLENCE01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALMALEVOLENCE02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALMALEVOLENCE03",
-     "tier":4
+     "tier":5
     }
    ]
   },
@@ -2524,7 +2524,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -2780,7 +2780,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3176,7 +3176,7 @@
    "stats":{}
   },
   "mg100starfortresssf17":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -3332,7 +3332,7 @@
    "stats":{}
   },
   "vulturedroid":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -4184,6 +4184,32 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7387,7 +7413,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -7556,7 +7582,7 @@
   },
   "kylekatarn":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KYLEKATARN",
@@ -7564,7 +7590,7 @@
     },
     {
      "id":"specialskill_KYLEKATARN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KYLEKATARN01",
@@ -7576,7 +7602,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

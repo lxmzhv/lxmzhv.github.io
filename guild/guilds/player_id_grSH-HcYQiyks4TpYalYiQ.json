@@ -2,7 +2,7 @@
  "allyCode":"656495968",
  "requirements":{
   "jabba":{
-   "total_score":37.67
+   "total_score":37.83
   },
   "gg":{
    "total_score":72.2
@@ -29,7 +29,7 @@
    "total_score":89.0
   },
   "leia":{
-   "total_score":45.2
+   "total_score":45.6
   },
   "slkr":{
    "total_score":88.14
@@ -38,7 +38,7 @@
    "total_score":94.5
   }
  },
- "modsRating":27.698248,
+ "modsRating":27.711235,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -966,7 +966,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1101,7 +1101,7 @@
   },
   "kiadimundi":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_kiadimundi",
@@ -1125,7 +1125,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3277,18 +3277,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4172,7 +4180,7 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_CAPTAINDROGAN",
@@ -4313,7 +4321,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4804,6 +4812,32 @@
    "currentRarity":6,
    "currentTier":2,
    "skill":[],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -7590,7 +7624,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },

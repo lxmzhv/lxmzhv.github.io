@@ -924,23 +924,23 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":4,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG86SENTINELDROID",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_IG86SENTINELDROID01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_IG86SENTINELDROID01",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3050,7 +3050,7 @@
     },
     {
      "id":"specialskill_SM3302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SM3301",
@@ -3058,7 +3058,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4974,7 +4974,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5256,6 +5256,36 @@
    ],
    "relic":{
     "currentTier":10
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":5,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -9502,7 +9532,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

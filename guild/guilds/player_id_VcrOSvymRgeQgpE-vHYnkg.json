@@ -38,7 +38,7 @@
    "total_score":89.0
   }
  },
- "modsRating":33.131527,
+ "modsRating":33.312393,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -766,7 +766,7 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_K2SO",
@@ -782,11 +782,11 @@
     },
     {
      "id":"uniqueskill_K2SO02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -1321,7 +1321,7 @@
    "stats":{}
   },
   "comeuppance":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -2866,7 +2866,7 @@
     },
     {
      "id":"uniqueskill_FULCRUMAHSOKA01",
-     "tier":6
+     "tier":7
     }
    ],
    "relic":{
@@ -3656,7 +3656,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5037,6 +5037,36 @@
    ],
    "relic":{
     "currentTier":8
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -7308,7 +7338,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8132,7 +8162,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8152,7 +8182,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9119,7 +9149,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",

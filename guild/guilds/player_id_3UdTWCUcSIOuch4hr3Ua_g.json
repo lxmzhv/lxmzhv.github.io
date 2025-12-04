@@ -2,7 +2,7 @@
  "allyCode":"378462854",
  "requirements":{
   "jabba":{
-   "total_score":74.17
+   "total_score":74.5
   },
   "gg":{
    "total_score":93.8
@@ -20,7 +20,7 @@
    "total_score":85.5
   },
   "drevan":{
-   "total_score":89.4
+   "total_score":89.8
   },
   "amidala":{
    "total_score":0.0
@@ -38,7 +38,7 @@
    "total_score":0.0
   }
  },
- "modsRating":15.006692,
+ "modsRating":15.199219,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -765,7 +765,7 @@
   },
   "50rt":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_50RT",
@@ -789,7 +789,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":6
    },
    "stats":{}
   },
@@ -4175,6 +4175,24 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -7379,7 +7397,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

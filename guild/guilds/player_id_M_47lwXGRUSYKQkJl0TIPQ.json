@@ -38,7 +38,7 @@
    "total_score":86.5
   }
  },
- "modsRating":30.44706,
+ "modsRating":30.544078,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -204,7 +204,7 @@
     },
     {
      "id":"uniqueskill_LUTHENRAEL01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3341,7 +3341,7 @@
    "stats":{}
   },
   "quiggold":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3586,11 +3586,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4601,7 +4601,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -4622,7 +4622,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5226,6 +5226,36 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5708,7 +5738,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -5812,7 +5842,7 @@
     },
     {
      "id":"uniqueskill_ITHANO01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -7464,7 +7494,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STORMTROOPERHAN",
@@ -7480,11 +7510,11 @@
     },
     {
      "id":"uniqueskill_STORMTROOPERHAN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

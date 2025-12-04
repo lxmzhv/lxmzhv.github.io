@@ -23,22 +23,22 @@
    "total_score":97.4
   },
   "amidala":{
-   "total_score":97.0
+   "total_score":99.33
   },
   "gungans":{
-   "total_score":99.2
+   "total_score":101.2
   },
   "leia":{
-   "total_score":97.8
+   "total_score":99.8
   },
   "slkr":{
-   "total_score":98.57
+   "total_score":99.43
   },
   "beq_raid":{
    "total_score":95.5
   }
  },
- "modsRating":44.91952,
+ "modsRating":47.069722,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2583,7 +2583,7 @@
    "stats":{}
   },
   "greatmothers":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":9,
    "skill":[
     {
@@ -3275,7 +3275,7 @@
    ]
   },
   "quiggold":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -5095,7 +5095,7 @@
    "stats":{}
   },
   "triplezero":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -5113,6 +5113,32 @@
     {
      "id":"uniqueskill_TRIPLEZERO02",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -5444,7 +5470,7 @@
     },
     {
      "id":"uniqueskill_HONDO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HONDO02",
@@ -6985,7 +7011,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -8280,7 +8306,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8300,7 +8326,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9296,7 +9322,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

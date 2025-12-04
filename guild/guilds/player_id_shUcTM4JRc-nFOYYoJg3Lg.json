@@ -29,7 +29,7 @@
    "total_score":23.6
   },
   "leia":{
-   "total_score":75.0
+   "total_score":81.0
   },
   "slkr":{
    "total_score":87.0
@@ -38,7 +38,7 @@
    "total_score":83.0
   }
  },
- "modsRating":9.79439,
+ "modsRating":10.058194,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -188,7 +188,7 @@
   },
   "luthenrael":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_LUTHENRAEL",
@@ -1101,7 +1101,7 @@
    "stats":{}
   },
   "kiadimundi":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -1444,6 +1444,15 @@
    },
    "stats":{}
   },
+  "bt1":{
+   "currentRarity":4,
+   "currentTier":4,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "jawa":{
    "currentRarity":7,
    "currentTier":13,
@@ -1709,12 +1718,12 @@
    "stats":{}
   },
   "admiralraddus":{
-   "currentRarity":4,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_ADMIRALRADDUS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS02",
@@ -1722,7 +1731,7 @@
     },
     {
      "id":"specialskill_ADMIRALRADDUS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_ADMIRALRADDUS",
@@ -1734,7 +1743,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -2284,11 +2293,33 @@
   },
   "bensolo":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_BENSOLO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BENSOLO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BENSOLO02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BENSOLO01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_BENSOLO02",
+     "tier":4
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "grandmasterluke":{
    "currentRarity":7,
@@ -3390,7 +3421,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4116,11 +4147,29 @@
   },
   "epixfinn":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_EPIXFINN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_EPIXFINN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_EPIXFINN02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EPIXFINN01",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "bazemalbus":{
    "currentRarity":7,
@@ -4769,6 +4818,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":4,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6584,7 +6663,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_CHIRRUTIMWE",
@@ -7878,7 +7957,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -7898,7 +7977,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8830,7 +8909,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8846,11 +8925,11 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9236,7 +9315,7 @@
     },
     {
      "id":"leaderskill_AURRA_SING",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_AURRA_SING01",

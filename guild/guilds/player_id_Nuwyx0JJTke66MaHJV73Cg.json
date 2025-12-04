@@ -38,7 +38,7 @@
    "total_score":93.0
   }
  },
- "modsRating":63.289585,
+ "modsRating":63.3847,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -1936,7 +1936,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -4656,7 +4656,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5260,6 +5260,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -5718,7 +5744,7 @@
   },
   "captainsilvo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINSILVO",
@@ -5742,7 +5768,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9480,7 +9506,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -9852,7 +9878,7 @@
     },
     {
      "id":"uniqueskill_VANE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{

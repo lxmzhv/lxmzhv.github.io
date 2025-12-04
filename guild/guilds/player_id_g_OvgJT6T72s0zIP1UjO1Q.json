@@ -38,7 +38,7 @@
    "total_score":37.5
   }
  },
- "modsRating":16.811405,
+ "modsRating":16.828382,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2018,7 +2018,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2676,11 +2676,12 @@
   },
   "scorch":{
    "currentRarity":4,
-   "currentTier":1,
+   "currentTier":2,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "luminaraunduli":{
    "currentRarity":7,
@@ -3023,12 +3024,12 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
   "appo":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":10,
    "skill":[
     {
@@ -3123,18 +3124,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4134,16 +4143,16 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_HUYANG01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HUYANG01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_HUYANG",
@@ -4155,7 +4164,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4471,7 +4480,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4621,6 +4630,24 @@
     "currentTier":1
    }
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -4761,11 +4788,29 @@
   },
   "operative":{
    "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_OPERATIVE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_OPERATIVE01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_OPERATIVE01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_OPERATIVE02",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "grandinquisitor":{
    "currentRarity":7,
@@ -7305,7 +7350,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -7325,7 +7370,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -8093,7 +8138,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },

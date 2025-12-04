@@ -38,7 +38,7 @@
    "total_score":44.5
   }
  },
- "modsRating":28.994647,
+ "modsRating":30.018905,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2987,7 +2987,7 @@
    "stats":{}
   },
   "scorch":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -3446,7 +3446,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -5068,6 +5068,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -6122,7 +6148,7 @@
    "stats":{}
   },
   "tuskenhuntress":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -8134,7 +8160,7 @@
    "skill":[
     {
      "id":"basicskill_TUSKENCHIEFTAIN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_TUSKENCHIEFTAIN01",

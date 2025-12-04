@@ -14,7 +14,7 @@
    "total_score":79.8
   },
   "reva":{
-   "total_score":90.6
+   "total_score":91.2
   },
   "geos":{
    "total_score":85.5
@@ -29,7 +29,7 @@
    "total_score":0.0
   },
   "leia":{
-   "total_score":41.6
+   "total_score":41.8
   },
   "slkr":{
    "total_score":83.86
@@ -38,7 +38,7 @@
    "total_score":86.5
   }
  },
- "modsRating":10.095195,
+ "modsRating":10.212542,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -294,7 +294,7 @@
     },
     {
      "id":"leaderskill_THIRDSISTER",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_THIRDSISTER01",
@@ -306,7 +306,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1509,28 +1509,28 @@
    "stats":{}
   },
   "admiralraddus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_ADMIRALRADDUS01",
-     "tier":1
+     "tier":5
     },
     {
      "id":"specialskill_ADMIRALRADDUS02",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS01",
-     "tier":1
+     "tier":5
     },
     {
      "id":"basicskill_ADMIRALRADDUS",
-     "tier":1
+     "tier":6
     },
     {
      "id":"leaderskill_ADMIRALRADDUS",
-     "tier":1
+     "tier":5
     }
    ],
    "relic":{
@@ -1670,7 +1670,7 @@
   },
   "sabinewrens3":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SABINEWRENS3",
@@ -1690,7 +1690,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -2742,7 +2742,7 @@
    ]
   },
   "quiggold":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -2958,15 +2958,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3470,7 +3470,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -3478,11 +3478,11 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3490,7 +3490,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -4310,6 +4310,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -6836,7 +6862,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -6856,7 +6882,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7269,7 +7295,7 @@
   },
   "jynerso":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_JYNERSO",
@@ -7730,7 +7756,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -7750,7 +7776,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -8024,8 +8050,8 @@
    "stats":{}
   },
   "kylekatarn":{
-   "currentRarity":4,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KYLEKATARN",
@@ -8037,7 +8063,7 @@
     },
     {
      "id":"specialskill_KYLEKATARN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_KYLEKATARN01",
@@ -8045,7 +8071,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -8232,7 +8258,7 @@
   },
   "darthbane":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DARTHBANE",
@@ -8248,7 +8274,7 @@
     },
     {
      "id":"leaderskill_DARTHBANE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_DARTHBANE01",
@@ -8256,7 +8282,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },

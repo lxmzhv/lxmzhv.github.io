@@ -26,7 +26,7 @@
    "total_score":29.0
   },
   "gungans":{
-   "total_score":80.2
+   "total_score":80.4
   },
   "leia":{
    "total_score":32.0
@@ -2614,7 +2614,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5020,6 +5020,32 @@
    },
    "stats":{}
   },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "umbaranstarfighter":{
    "currentRarity":7,
    "currentTier":1,
@@ -7038,7 +7064,7 @@
     },
     {
      "id":"leaderskill_DIRECTORKRENNIC",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_DIRECTORKRENNIC01",

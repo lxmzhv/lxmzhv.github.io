@@ -3276,7 +3276,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4136,7 +4136,7 @@
   },
   "ezraexile":{
    "currentRarity":7,
-   "currentTier":2,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_EZRAEXILE02",
@@ -4819,6 +4819,32 @@
     {
      "id":"basicskill_TRIPLEZERO",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":5,
+   "currentTier":4,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
     }
    ],
    "relic":{
@@ -6586,12 +6612,22 @@
    "stats":{}
   },
   "chirrutimwe":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"uniqueskill_CHIRRUTIMWE02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_CHIRRUTIMWE01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "shinhati":{
    "currentRarity":7,
@@ -8811,7 +8847,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -8823,7 +8859,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_EZRABRIDGERS301",
@@ -8831,7 +8867,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
