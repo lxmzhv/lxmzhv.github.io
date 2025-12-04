@@ -173,4 +173,5 @@ export const GUILD_FILES = [
     'guild_oy2awPmqRYyCKPvgJNjPIQ.json',
     'guild_CryCXYUbSm2dWZhTI1LwvA.json',
     'guild_OjLlFWggT5yuH0ufYws1fA.json',
+    'guild_0ftcV359S4KiFpZ9Sl0kVQ.json',
 ];
