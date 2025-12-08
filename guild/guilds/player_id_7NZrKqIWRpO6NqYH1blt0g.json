@@ -2,43 +2,43 @@
  "allyCode":"715541846",
  "requirements":{
   "jabba":{
-   "total_score":85.67
+   "total_score":84.0
   },
   "gg":{
-   "total_score":93.8
+   "total_score":79.2
   },
   "gas":{
-   "total_score":89.2
+   "total_score":88.8
   },
   "inqs":{
    "total_score":75.2
   },
   "reva":{
-   "total_score":94.6
+   "total_score":94.4
   },
   "geos":{
-   "total_score":100.5
+   "total_score":93.5
   },
   "drevan":{
-   "total_score":79.0
+   "total_score":77.8
   },
   "amidala":{
    "total_score":92.33
   },
   "gungans":{
-   "total_score":32.4
+   "total_score":23.8
   },
   "leia":{
-   "total_score":103.2
+   "total_score":100.2
   },
   "slkr":{
-   "total_score":98.14
+   "total_score":95.86
   },
   "beq_raid":{
    "total_score":96.0
   }
  },
- "modsRating":39.882067,
+ "modsRating":39.9829,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2770,7 +2770,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3398,19 +3398,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4246,6 +4246,14 @@
    },
    "stats":{}
   },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "epixfinn":{
    "currentRarity":7,
    "currentTier":1,
@@ -4944,7 +4952,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4952,7 +4960,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -9660,6 +9668,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "shaakti":{
    "currentRarity":7,

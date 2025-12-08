@@ -2,13 +2,13 @@
  "allyCode":"632314717",
  "requirements":{
   "jabba":{
-   "total_score":36.5
+   "total_score":37.83
   },
   "gg":{
-   "total_score":88.4
+   "total_score":76.8
   },
   "gas":{
-   "total_score":90.4
+   "total_score":90.2
   },
   "inqs":{
    "total_score":85.8
@@ -17,28 +17,28 @@
    "total_score":95.8
   },
   "geos":{
-   "total_score":81.5
+   "total_score":75.0
   },
   "drevan":{
-   "total_score":100.0
+   "total_score":98.8
   },
   "amidala":{
-   "total_score":17.0
+   "total_score":16.67
   },
   "gungans":{
-   "total_score":92.4
+   "total_score":86.2
   },
   "leia":{
-   "total_score":96.0
+   "total_score":94.8
   },
   "slkr":{
-   "total_score":32.0
+   "total_score":26.86
   },
   "beq_raid":{
-   "total_score":25.0
+   "total_score":20.0
   }
  },
- "modsRating":21.145341,
+ "modsRating":21.329022,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2193,7 +2193,7 @@
   },
   "scorch":{
    "currentRarity":4,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SCORCH",
@@ -2213,7 +2213,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -2540,7 +2540,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2576,7 +2576,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2592,11 +2592,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3485,11 +3485,23 @@
   },
   "depabillaba":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_DEPABILLABA01",
      "tier":4
+    },
+    {
+     "id":"basicskill_DEPABILLABA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DEPABILLABA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DEPABILLABA02",
+     "tier":5
     }
    ],
    "relic":{
@@ -3822,7 +3834,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4475,6 +4487,14 @@
    },
    "stats":{}
   },
+  "moffgideons3":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "moffgideons1":{
    "currentRarity":7,
    "currentTier":11,
@@ -4538,6 +4558,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "taronmalicos":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "sanastarros":{
    "currentRarity":5,
@@ -5099,7 +5127,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {

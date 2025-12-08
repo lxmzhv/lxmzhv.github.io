@@ -2,13 +2,13 @@
  "allyCode":"422334146",
  "requirements":{
   "jabba":{
-   "total_score":16.0
+   "total_score":17.33
   },
   "gg":{
-   "total_score":68.2
+   "total_score":58.2
   },
   "gas":{
-   "total_score":71.6
+   "total_score":71.8
   },
   "inqs":{
    "total_score":78.2
@@ -17,25 +17,25 @@
    "total_score":85.8
   },
   "geos":{
-   "total_score":79.0
+   "total_score":73.5
   },
   "drevan":{
-   "total_score":85.4
+   "total_score":83.8
   },
   "amidala":{
-   "total_score":26.67
+   "total_score":26.33
   },
   "gungans":{
-   "total_score":0.0
+   "total_score":1.6
   },
   "leia":{
-   "total_score":40.6
+   "total_score":34.0
   },
   "slkr":{
-   "total_score":74.71
+   "total_score":73.57
   },
   "beq_raid":{
-   "total_score":0.0
+   "total_score":1.0
   }
  },
  "modsRating":6.73992,
@@ -794,7 +794,7 @@
   },
   "reyjeditraining":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[],
    "relic":{
     "currentTier":1
@@ -2529,19 +2529,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3754,11 +3754,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -3766,11 +3766,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4261,7 +4265,7 @@
   },
   "biggsdarklighter":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BIGGSDARKLIGHTER",
@@ -4277,7 +4281,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -7376,7 +7380,7 @@
   },
   "darthbane":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[],
    "relic":{
     "currentTier":1

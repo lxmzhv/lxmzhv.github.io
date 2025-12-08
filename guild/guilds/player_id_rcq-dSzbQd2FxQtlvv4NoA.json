@@ -2,43 +2,43 @@
  "allyCode":"161612793",
  "requirements":{
   "jabba":{
-   "total_score":79.33
+   "total_score":77.17
   },
   "gg":{
-   "total_score":86.2
+   "total_score":79.0
   },
   "gas":{
-   "total_score":82.8
+   "total_score":83.0
   },
   "inqs":{
    "total_score":78.6
   },
   "reva":{
-   "total_score":87.0
+   "total_score":86.8
   },
   "geos":{
-   "total_score":81.0
+   "total_score":74.0
   },
   "drevan":{
-   "total_score":93.4
+   "total_score":91.4
   },
   "amidala":{
-   "total_score":77.67
+   "total_score":77.0
   },
   "gungans":{
-   "total_score":87.4
+   "total_score":80.2
   },
   "leia":{
-   "total_score":98.6
+   "total_score":97.0
   },
   "slkr":{
-   "total_score":94.14
+   "total_score":92.0
   },
   "beq_raid":{
    "total_score":90.5
   }
  },
- "modsRating":37.258256,
+ "modsRating":37.266187,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -506,7 +506,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -906,11 +906,25 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_IG86SENTINELDROID01",
+     "tier":3
+    },
+    {
+     "id":"basicskill_IG86SENTINELDROID",
+     "tier":3
+    },
+    {
+     "id":"specialskill_IG86SENTINELDROID01",
+     "tier":3
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":5
+   },
+   "stats":{}
   },
   "sithmarauder":{
    "currentRarity":7,
@@ -1886,7 +1900,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1906,7 +1920,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3536,7 +3550,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -7446,7 +7460,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"leaderskill_STORMTROOPERHAN",
@@ -7458,11 +7472,11 @@
     },
     {
      "id":"basicskill_STORMTROOPERHAN",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_STORMTROOPERHAN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9822,7 +9836,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

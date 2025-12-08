@@ -2,13 +2,13 @@
  "allyCode":"432464295",
  "requirements":{
   "jabba":{
-   "total_score":59.5
+   "total_score":60.67
   },
   "gg":{
-   "total_score":78.8
+   "total_score":74.2
   },
   "gas":{
-   "total_score":87.8
+   "total_score":87.0
   },
   "inqs":{
    "total_score":0.0
@@ -17,28 +17,28 @@
    "total_score":6.0
   },
   "geos":{
-   "total_score":88.5
+   "total_score":82.5
   },
   "drevan":{
-   "total_score":86.0
+   "total_score":83.6
   },
   "amidala":{
-   "total_score":54.33
+   "total_score":54.0
   },
   "gungans":{
-   "total_score":22.0
+   "total_score":16.4
   },
   "leia":{
-   "total_score":67.6
+   "total_score":64.6
   },
   "slkr":{
-   "total_score":89.29
+   "total_score":87.14
   },
   "beq_raid":{
-   "total_score":81.5
+   "total_score":84.0
   }
  },
- "modsRating":30.498666,
+ "modsRating":31.083298,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -174,7 +174,7 @@
   },
   "luthenrael":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_LUTHENRAEL",
@@ -1828,7 +1828,7 @@
     },
     {
      "id":"specialskill_SITHSUPREMACYCLASS02",
-     "tier":3
+     "tier":4
     },
     {
      "id":"hardwareskill_SITHSUPREMACYCLASS",
@@ -1838,7 +1838,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1858,7 +1858,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2724,7 +2724,7 @@
     },
     {
      "id":"specialskill_CLONESERGEANTPHASEI01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CLONESERGEANTPHASEI",
@@ -2892,11 +2892,11 @@
     },
     {
      "id":"uniqueskill_SCORCH01",
-     "tier":4
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3086,7 +3086,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3225,7 +3225,7 @@
    "stats":{}
   },
   "captainenoch":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -3334,7 +3334,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3350,11 +3350,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4174,6 +4174,36 @@
    },
    "stats":{}
   },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":10,
+   "skill":[
+    {
+     "id":"basicskill_EZRAEXILE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EZRAEXILE01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_EZRAEXILE02",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "captaindrogan":{
    "currentRarity":7,
    "currentTier":13,
@@ -4336,7 +4366,7 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4344,19 +4374,19 @@
     },
     {
      "id":"specialskill_HUYANG01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_HUYANG02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_HUYANG01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4904,11 +4934,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4916,11 +4946,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5546,11 +5580,11 @@
    "skill":[
     {
      "id":"basicskill_CC2224",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CC222401",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_CC2224",
@@ -5558,7 +5592,7 @@
     },
     {
      "id":"specialskill_CC222402",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

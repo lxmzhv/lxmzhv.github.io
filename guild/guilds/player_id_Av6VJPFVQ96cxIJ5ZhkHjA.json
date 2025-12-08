@@ -2,43 +2,43 @@
  "allyCode":"249241915",
  "requirements":{
   "jabba":{
-   "total_score":88.67
+   "total_score":90.5
   },
   "gg":{
-   "total_score":97.4
+   "total_score":95.0
   },
   "gas":{
-   "total_score":90.8
+   "total_score":90.6
   },
   "inqs":{
-   "total_score":72.4
+   "total_score":72.2
   },
   "reva":{
-   "total_score":98.2
+   "total_score":99.0
   },
   "geos":{
-   "total_score":98.5
+   "total_score":94.5
   },
   "drevan":{
-   "total_score":102.8
+   "total_score":102.2
   },
   "amidala":{
    "total_score":103.0
   },
   "gungans":{
-   "total_score":96.8
+   "total_score":96.2
   },
   "leia":{
-   "total_score":96.4
+   "total_score":96.8
   },
   "slkr":{
-   "total_score":103.29
+   "total_score":100.0
   },
   "beq_raid":{
-   "total_score":96.0
+   "total_score":95.5
   }
  },
- "modsRating":111.525554,
+ "modsRating":112.851495,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4966,6 +4966,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":13,
@@ -5261,8 +5295,8 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
-   "currentTier":5,
+   "currentRarity":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5270,7 +5304,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5278,7 +5312,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",

@@ -2,13 +2,13 @@
  "allyCode":"322816527",
  "requirements":{
   "jabba":{
-   "total_score":85.67
+   "total_score":82.83
   },
   "gg":{
-   "total_score":85.6
+   "total_score":78.8
   },
   "gas":{
-   "total_score":89.4
+   "total_score":89.2
   },
   "inqs":{
    "total_score":81.2
@@ -17,28 +17,28 @@
    "total_score":93.8
   },
   "geos":{
-   "total_score":88.0
+   "total_score":83.0
   },
   "drevan":{
-   "total_score":96.8
+   "total_score":95.4
   },
   "amidala":{
-   "total_score":99.0
+   "total_score":98.67
   },
   "gungans":{
-   "total_score":93.0
+   "total_score":92.4
   },
   "leia":{
-   "total_score":93.8
+   "total_score":92.8
   },
   "slkr":{
-   "total_score":95.57
+   "total_score":96.43
   },
   "beq_raid":{
-   "total_score":90.0
+   "total_score":92.5
   }
  },
- "modsRating":48.359653,
+ "modsRating":49.162336,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1564,7 +1564,7 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -3608,15 +3608,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4272,7 +4272,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4992,11 +4992,11 @@
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5256,11 +5256,12 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":9,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "ig90":{
    "currentRarity":3,
@@ -5470,7 +5471,7 @@
     },
     {
      "id":"uniqueskill_OPERATIVE01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

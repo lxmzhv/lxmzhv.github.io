@@ -2,43 +2,43 @@
  "allyCode":"453987514",
  "requirements":{
   "jabba":{
-   "total_score":81.17
+   "total_score":80.33
   },
   "gg":{
-   "total_score":83.6
+   "total_score":75.0
   },
   "gas":{
-   "total_score":77.8
+   "total_score":78.2
   },
   "inqs":{
-   "total_score":67.0
+   "total_score":54.6
   },
   "reva":{
-   "total_score":76.4
+   "total_score":76.6
   },
   "geos":{
-   "total_score":88.0
+   "total_score":82.5
   },
   "drevan":{
-   "total_score":91.0
+   "total_score":89.4
   },
   "amidala":{
    "total_score":71.33
   },
   "gungans":{
-   "total_score":17.2
+   "total_score":13.4
   },
   "leia":{
    "total_score":69.2
   },
   "slkr":{
-   "total_score":91.71
+   "total_score":90.14
   },
   "beq_raid":{
-   "total_score":70.5
+   "total_score":64.5
   }
  },
- "modsRating":10.426326,
+ "modsRating":10.480297,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -208,7 +208,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1822,27 +1822,27 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_STAP01",
-     "tier":1
+     "tier":5
     },
     {
      "id":"specialskill_STAP02",
-     "tier":1
+     "tier":5
     },
     {
      "id":"uniqueskill_STAP01",
-     "tier":1
+     "tier":4
     },
     {
      "id":"basicskill_STAP",
-     "tier":1
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2276,7 +2276,7 @@
   },
   "visasmarr":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_VISASMARR",
@@ -2296,7 +2296,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2363,7 +2363,28 @@
   "bensolo":{
    "currentRarity":7,
    "currentTier":1,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_BENSOLO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BENSOLO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_BENSOLO02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_BENSOLO01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_BENSOLO02",
+     "tier":4
+    }
+   ],
    "relic":{
     "currentTier":1
    }
@@ -3330,7 +3351,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3749,7 +3770,28 @@
   "mg100starfortresssf17":{
    "currentRarity":2,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"specialskill_MG100STARFORTRESSSF1702",
+     "tier":3
+    },
+    {
+     "id":"hardwareskill_MG100STARFORTRESSSF17",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_MG100STARFORTRESSSF1701",
+     "tier":4
+    },
+    {
+     "id":"basicskill_MG100STARFORTRESSSF17",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MG100STARFORTRESSSF1701",
+     "tier":4
+    }
+   ]
   },
   "calkestis":{
    "currentRarity":7,
@@ -4157,6 +4199,14 @@
    },
    "stats":{}
   },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "bazemalbus":{
    "currentRarity":7,
    "currentTier":13,
@@ -4318,12 +4368,30 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":5,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_HUYANG02",
+     "tier":3
+    },
+    {
+     "id":"specialskill_HUYANG01",
+     "tier":3
+    },
+    {
+     "id":"uniqueskill_HUYANG01",
+     "tier":3
+    },
+    {
+     "id":"basicskill_HUYANG",
+     "tier":3
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":5
+   },
+   "stats":{}
   },
   "commanderlukeskywalker":{
    "currentRarity":7,
@@ -4839,11 +4907,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
@@ -4851,7 +4919,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
@@ -6125,7 +6193,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

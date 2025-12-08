@@ -2,10 +2,10 @@
  "allyCode":"372327922",
  "requirements":{
   "jabba":{
-   "total_score":83.67
+   "total_score":80.5
   },
   "gg":{
-   "total_score":77.2
+   "total_score":67.6
   },
   "gas":{
    "total_score":82.4
@@ -17,28 +17,28 @@
    "total_score":93.2
   },
   "geos":{
-   "total_score":74.0
+   "total_score":67.0
   },
   "drevan":{
-   "total_score":97.8
+   "total_score":96.2
   },
   "amidala":{
    "total_score":95.33
   },
   "gungans":{
-   "total_score":98.0
+   "total_score":95.6
   },
   "leia":{
-   "total_score":99.0
+   "total_score":96.6
   },
   "slkr":{
-   "total_score":88.71
+   "total_score":86.14
   },
   "beq_raid":{
-   "total_score":89.0
+   "total_score":89.5
   }
  },
- "modsRating":64.2471,
+ "modsRating":64.587759,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -5215,23 +5215,27 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -7559,7 +7563,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8419,7 +8423,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8439,7 +8443,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9993,7 +9997,7 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -10009,11 +10013,11 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

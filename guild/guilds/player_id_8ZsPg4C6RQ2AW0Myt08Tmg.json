@@ -2,13 +2,13 @@
  "allyCode":"455249841",
  "requirements":{
   "jabba":{
-   "total_score":81.33
+   "total_score":77.33
   },
   "gg":{
-   "total_score":85.6
+   "total_score":74.0
   },
   "gas":{
-   "total_score":75.0
+   "total_score":74.6
   },
   "inqs":{
    "total_score":68.4
@@ -17,28 +17,28 @@
    "total_score":96.4
   },
   "geos":{
-   "total_score":85.5
+   "total_score":79.0
   },
   "drevan":{
-   "total_score":100.4
+   "total_score":99.8
   },
   "amidala":{
    "total_score":90.33
   },
   "gungans":{
-   "total_score":28.0
+   "total_score":20.8
   },
   "leia":{
-   "total_score":64.6
+   "total_score":62.6
   },
   "slkr":{
-   "total_score":95.86
+   "total_score":93.86
   },
   "beq_raid":{
-   "total_score":90.0
+   "total_score":87.5
   }
  },
- "modsRating":27.84673,
+ "modsRating":27.984,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -188,7 +188,7 @@
   },
   "luthenrael":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_LUTHENRAEL01",
@@ -1438,6 +1438,32 @@
    },
    "stats":{}
   },
+  "bt1":{
+   "currentRarity":4,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_BT102",
+     "tier":2
+    },
+    {
+     "id":"basicskill_BT1",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_BT101",
+     "tier":2
+    },
+    {
+     "id":"specialskill_BT101",
+     "tier":2
+    }
+   ],
+   "relic":{
+    "currentTier":3
+   },
+   "stats":{}
+  },
   "jawa":{
    "currentRarity":7,
    "currentTier":13,
@@ -2063,7 +2089,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -3289,11 +3315,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4258,7 +4284,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -4284,8 +4310,8 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
-   "currentTier":6,
+   "currentRarity":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4298,10 +4324,14 @@
     {
      "id":"uniqueskill_HUYANG01",
      "tier":5
+    },
+    {
+     "id":"specialskill_HUYANG02",
+     "tier":3
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4842,7 +4872,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4850,11 +4880,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -7545,7 +7579,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":7,
    "skill":[
     {
@@ -9001,11 +9035,11 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SAWGERRERA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_SAWGERRERA",
@@ -9017,11 +9051,11 @@
     },
     {
      "id":"leaderskill_SAWGERRERA",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

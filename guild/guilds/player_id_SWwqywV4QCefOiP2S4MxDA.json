@@ -2,13 +2,13 @@
  "allyCode":"594779754",
  "requirements":{
   "jabba":{
-   "total_score":94.5
+   "total_score":96.0
   },
   "gg":{
-   "total_score":100.2
+   "total_score":97.2
   },
   "gas":{
-   "total_score":97.2
+   "total_score":96.6
   },
   "inqs":{
    "total_score":62.6
@@ -17,28 +17,28 @@
    "total_score":98.8
   },
   "geos":{
-   "total_score":103.5
+   "total_score":101.5
   },
   "drevan":{
-   "total_score":101.4
+   "total_score":96.2
   },
   "amidala":{
    "total_score":99.67
   },
   "gungans":{
-   "total_score":96.4
+   "total_score":94.4
   },
   "leia":{
-   "total_score":115.2
+   "total_score":107.2
   },
   "slkr":{
-   "total_score":103.43
+   "total_score":102.86
   },
   "beq_raid":{
    "total_score":96.5
   }
  },
- "modsRating":100.43974,
+ "modsRating":96.125163,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_IG86SENTINELDROID01",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3080,7 +3080,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -5296,11 +5296,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5308,11 +5308,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{

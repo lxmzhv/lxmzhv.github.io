@@ -2,10 +2,10 @@
  "allyCode":"871235414",
  "requirements":{
   "jabba":{
-   "total_score":94.67
+   "total_score":95.33
   },
   "gg":{
-   "total_score":95.2
+   "total_score":92.0
   },
   "gas":{
    "total_score":94.0
@@ -17,28 +17,28 @@
    "total_score":94.4
   },
   "geos":{
-   "total_score":87.5
+   "total_score":82.0
   },
   "drevan":{
-   "total_score":106.6
-  },
-  "amidala":{
-   "total_score":96.67
-  },
-  "gungans":{
-   "total_score":101.2
-  },
-  "leia":{
    "total_score":105.2
   },
+  "amidala":{
+   "total_score":97.0
+  },
+  "gungans":{
+   "total_score":99.2
+  },
+  "leia":{
+   "total_score":104.2
+  },
   "slkr":{
-   "total_score":102.86
+   "total_score":102.0
   },
   "beq_raid":{
-   "total_score":99.5
+   "total_score":99.0
   }
  },
- "modsRating":105.559884,
+ "modsRating":105.567807,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_IG86SENTINELDROID01",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -1762,7 +1762,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },
@@ -2230,7 +2230,7 @@
     },
     {
      "id":"leaderskill_QUEENAMIDALA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_QUEENAMIDALA01",
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3776,7 +3776,7 @@
     },
     {
      "id":"leaderskill_DARTHNIHILUS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DARTHNIHILUS02",
@@ -5204,7 +5204,7 @@
     },
     {
      "id":"leaderskill_THEMANDALORIAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_THEMANDALORIAN01",
@@ -5296,7 +5296,7 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5304,7 +5304,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5312,7 +5312,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -6774,7 +6774,7 @@
     },
     {
      "id":"leaderskill_EMBO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_EMBO01",
@@ -9816,7 +9816,7 @@
     },
     {
      "id":"leaderskill_SEVENTHSISTER",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -9968,7 +9968,7 @@
     },
     {
      "id":"specialskill_AURRA_SING02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_AURRA_SING",
@@ -10188,7 +10188,7 @@
     },
     {
      "id":"leaderskill_GRANDMASTERYODA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GRANDMASTERYODA03",
@@ -10210,7 +10210,7 @@
     },
     {
      "id":"specialskill_DARTHBANE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DARTHBANE02",

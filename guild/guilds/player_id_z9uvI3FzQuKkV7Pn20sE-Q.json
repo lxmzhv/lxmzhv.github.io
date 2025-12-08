@@ -2,10 +2,10 @@
  "allyCode":"278251217",
  "requirements":{
   "jabba":{
-   "total_score":48.0
+   "total_score":46.5
   },
   "gg":{
-   "total_score":93.4
+   "total_score":84.6
   },
   "gas":{
    "total_score":90.0
@@ -14,31 +14,31 @@
    "total_score":62.2
   },
   "reva":{
-   "total_score":81.6
+   "total_score":82.0
   },
   "geos":{
-   "total_score":68.5
+   "total_score":62.0
   },
   "drevan":{
-   "total_score":93.0
+   "total_score":90.6
   },
   "amidala":{
    "total_score":58.67
   },
   "gungans":{
-   "total_score":84.4
+   "total_score":86.2
   },
   "leia":{
-   "total_score":82.8
+   "total_score":84.2
   },
   "slkr":{
-   "total_score":72.86
+   "total_score":72.57
   },
   "beq_raid":{
-   "total_score":41.5
+   "total_score":43.0
   }
  },
- "modsRating":18.542663,
+ "modsRating":18.558725,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3280,15 +3280,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4828,11 +4828,11 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4840,11 +4840,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5232,8 +5236,8 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":4,
-   "currentTier":4,
+   "currentRarity":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINSILVO01",
@@ -5326,7 +5330,7 @@
    }
   },
   "ithano":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -9181,7 +9185,7 @@
   },
   "vane":{
    "currentRarity":4,
-   "currentTier":2,
+   "currentTier":8,
    "skill":[
     {
      "id":"uniqueskill_VANE01",

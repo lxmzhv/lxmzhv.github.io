@@ -2,10 +2,10 @@
  "allyCode":"693633633",
  "requirements":{
   "jabba":{
-   "total_score":80.67
+   "total_score":82.5
   },
   "gg":{
-   "total_score":89.8
+   "total_score":83.2
   },
   "gas":{
    "total_score":86.6
@@ -17,28 +17,28 @@
    "total_score":89.2
   },
   "geos":{
-   "total_score":92.5
+   "total_score":86.0
   },
   "drevan":{
-   "total_score":90.0
+   "total_score":88.2
   },
   "amidala":{
    "total_score":90.67
   },
   "gungans":{
-   "total_score":93.6
+   "total_score":88.8
   },
   "leia":{
-   "total_score":90.4
+   "total_score":89.8
   },
   "slkr":{
-   "total_score":82.29
+   "total_score":75.29
   },
   "beq_raid":{
-   "total_score":88.0
+   "total_score":90.0
   }
  },
- "modsRating":37.57866,
+ "modsRating":37.574945,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2854,7 +2854,7 @@
   },
   "supremeleaderkyloren":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_SUPREMELEADERKYLOREN01",
@@ -8197,7 +8197,7 @@
    ]
   },
   "wreckers3":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -9400,7 +9400,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -9420,7 +9420,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -10087,6 +10087,20 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

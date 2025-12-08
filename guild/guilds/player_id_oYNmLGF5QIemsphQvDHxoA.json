@@ -2,13 +2,13 @@
  "allyCode":"285563313",
  "requirements":{
   "jabba":{
-   "total_score":45.67
+   "total_score":41.17
   },
   "gg":{
-   "total_score":82.8
+   "total_score":70.6
   },
   "gas":{
-   "total_score":82.2
+   "total_score":82.0
   },
   "inqs":{
    "total_score":88.6
@@ -17,25 +17,25 @@
    "total_score":69.8
   },
   "geos":{
-   "total_score":91.0
+   "total_score":86.0
   },
   "drevan":{
-   "total_score":87.8
+   "total_score":84.2
   },
   "amidala":{
    "total_score":78.33
   },
   "gungans":{
-   "total_score":27.0
+   "total_score":26.0
   },
   "leia":{
-   "total_score":69.6
+   "total_score":66.4
   },
   "slkr":{
-   "total_score":77.0
+   "total_score":76.0
   },
   "beq_raid":{
-   "total_score":42.5
+   "total_score":43.5
   }
  },
  "modsRating":15.851407,
@@ -1031,7 +1031,7 @@
   },
   "gunganphalanx":{
    "currentRarity":7,
-   "currentTier":4,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_GUNGANPHALANX01",
@@ -1618,7 +1618,7 @@
    "stats":{}
   },
   "nighttrooper":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -4471,23 +4471,27 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5567,7 +5571,7 @@
   },
   "bossnass":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BOSSNASS",

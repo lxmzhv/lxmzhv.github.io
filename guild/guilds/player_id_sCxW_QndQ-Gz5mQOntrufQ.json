@@ -2,13 +2,13 @@
  "allyCode":"423656524",
  "requirements":{
   "jabba":{
-   "total_score":83.5
+   "total_score":80.17
   },
   "gg":{
-   "total_score":83.6
+   "total_score":71.6
   },
   "gas":{
-   "total_score":85.6
+   "total_score":85.8
   },
   "inqs":{
    "total_score":91.0
@@ -17,25 +17,25 @@
    "total_score":92.4
   },
   "geos":{
-   "total_score":83.5
+   "total_score":77.0
   },
   "drevan":{
-   "total_score":96.4
+   "total_score":95.6
   },
   "amidala":{
    "total_score":86.67
   },
   "gungans":{
-   "total_score":39.8
+   "total_score":29.2
   },
   "leia":{
-   "total_score":88.8
+   "total_score":88.6
   },
   "slkr":{
-   "total_score":91.43
+   "total_score":88.86
   },
   "beq_raid":{
-   "total_score":86.5
+   "total_score":87.0
   }
  },
  "modsRating":36.618011,
@@ -3608,15 +3608,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3793,7 +3793,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3814,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5262,7 +5262,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"contractskill_IG90",
@@ -5270,7 +5270,7 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
@@ -5278,7 +5278,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
@@ -5364,7 +5364,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9886,7 +9886,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

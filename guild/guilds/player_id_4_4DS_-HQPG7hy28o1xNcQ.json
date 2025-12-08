@@ -2,13 +2,13 @@
  "allyCode":"116158932",
  "requirements":{
   "jabba":{
-   "total_score":87.17
+   "total_score":89.67
   },
   "gg":{
-   "total_score":84.8
+   "total_score":78.2
   },
   "gas":{
-   "total_score":90.2
+   "total_score":90.4
   },
   "inqs":{
    "total_score":89.0
@@ -17,28 +17,28 @@
    "total_score":92.8
   },
   "geos":{
-   "total_score":94.0
+   "total_score":88.5
   },
   "drevan":{
-   "total_score":98.4
+   "total_score":96.8
   },
   "amidala":{
    "total_score":92.33
   },
   "gungans":{
-   "total_score":92.0
+   "total_score":85.0
   },
   "leia":{
-   "total_score":105.0
+   "total_score":103.0
   },
   "slkr":{
-   "total_score":95.43
+   "total_score":93.43
   },
   "beq_raid":{
-   "total_score":84.5
+   "total_score":86.0
   }
  },
- "modsRating":79.657909,
+ "modsRating":79.683106,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,18 +3604,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4972,7 +4980,7 @@
     },
     {
      "id":"specialskill_GLHONDO02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_GLHONDO",

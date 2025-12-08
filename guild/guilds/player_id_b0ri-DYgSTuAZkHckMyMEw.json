@@ -2,13 +2,13 @@
  "allyCode":"259176816",
  "requirements":{
   "jabba":{
-   "total_score":89.0
+   "total_score":88.17
   },
   "gg":{
-   "total_score":84.8
+   "total_score":74.0
   },
   "gas":{
-   "total_score":87.8
+   "total_score":88.2
   },
   "inqs":{
    "total_score":82.0
@@ -17,25 +17,25 @@
    "total_score":93.4
   },
   "geos":{
-   "total_score":83.0
+   "total_score":76.5
   },
   "drevan":{
-   "total_score":99.0
+   "total_score":97.6
   },
   "amidala":{
    "total_score":96.67
   },
   "gungans":{
-   "total_score":95.8
+   "total_score":94.2
   },
   "leia":{
-   "total_score":104.4
+   "total_score":101.2
   },
   "slkr":{
-   "total_score":95.86
+   "total_score":93.71
   },
   "beq_raid":{
-   "total_score":87.5
+   "total_score":88.0
   }
  },
  "modsRating":45.532839,
@@ -3006,7 +3006,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3474,7 +3474,7 @@
   },
   "pao":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PAO",
@@ -3490,11 +3490,11 @@
     },
     {
      "id":"uniqueskill_PAO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3530,7 +3530,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3740,7 +3740,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5132,7 +5132,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -5144,10 +5144,14 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
      "tier":0
     }
    ],
@@ -6013,7 +6017,7 @@
    "stats":{}
   },
   "emperorsshuttle":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {

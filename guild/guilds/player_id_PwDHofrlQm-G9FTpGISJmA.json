@@ -2,13 +2,13 @@
  "allyCode":"942876989",
  "requirements":{
   "jabba":{
-   "total_score":92.17
+   "total_score":91.67
   },
   "gg":{
-   "total_score":91.4
+   "total_score":90.4
   },
   "gas":{
-   "total_score":83.6
+   "total_score":83.8
   },
   "inqs":{
    "total_score":67.8
@@ -17,25 +17,25 @@
    "total_score":88.8
   },
   "geos":{
-   "total_score":96.0
+   "total_score":91.5
   },
   "drevan":{
-   "total_score":101.8
+   "total_score":100.6
   },
   "amidala":{
    "total_score":93.67
   },
   "gungans":{
-   "total_score":88.6
+   "total_score":90.2
   },
   "leia":{
-   "total_score":95.8
+   "total_score":95.2
   },
   "slkr":{
-   "total_score":95.71
+   "total_score":95.14
   },
   "beq_raid":{
-   "total_score":35.5
+   "total_score":38.5
   }
  },
  "modsRating":83.649806,
@@ -3544,7 +3544,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":2,
+   "currentTier":3,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3556,6 +3556,14 @@
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5193,12 +5201,30 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":4,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,

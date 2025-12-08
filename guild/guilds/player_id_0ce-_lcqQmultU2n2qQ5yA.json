@@ -2,13 +2,13 @@
  "allyCode":"423652133",
  "requirements":{
   "jabba":{
-   "total_score":31.33
+   "total_score":28.83
   },
   "gg":{
-   "total_score":95.4
+   "total_score":88.0
   },
   "gas":{
-   "total_score":84.6
+   "total_score":84.2
   },
   "inqs":{
    "total_score":78.4
@@ -17,28 +17,28 @@
    "total_score":89.0
   },
   "geos":{
-   "total_score":83.0
+   "total_score":76.5
   },
   "drevan":{
-   "total_score":84.0
+   "total_score":82.8
   },
   "amidala":{
    "total_score":86.0
   },
   "gungans":{
-   "total_score":30.8
+   "total_score":22.8
   },
   "leia":{
    "total_score":54.4
   },
   "slkr":{
-   "total_score":86.86
+   "total_score":84.14
   },
   "beq_raid":{
-   "total_score":85.5
+   "total_score":87.0
   }
  },
- "modsRating":19.552779,
+ "modsRating":19.565875,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -257,6 +257,10 @@
     {
      "id":"specialskill_MARAUDER01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_MARAUDER",
+     "tier":1
     }
    ]
   },
@@ -1157,7 +1161,24 @@
   "millenniumfalconep7":{
    "currentRarity":4,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"hardwareskill_MILLENNIUMFALCONEP701",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_MILLENNIUMFALCONEP701",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONEP701",
+     "tier":4
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONEP702",
+     "tier":1
+    }
+   ]
   },
   "fifthbrother":{
    "currentRarity":7,
@@ -1535,7 +1556,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1688,6 +1709,10 @@
     {
      "id":"specialskill_JEDISTARFIGHTERANAKIN01",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_JEDISTARFIGHTERANAKIN01",
+     "tier":1
     }
    ]
   },
@@ -3041,7 +3066,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3057,11 +3082,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3118,6 +3143,14 @@
     },
     {
      "id":"basicskill_EBONHAWK",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EBONHAWK02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EBONHAWK01",
      "tier":6
     }
    ]
@@ -3741,7 +3774,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -4387,7 +4420,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -4399,10 +4432,14 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
      "tier":0
     }
    ],
@@ -7673,7 +7710,7 @@
     },
     {
      "id":"hardwareskill_sithbomber01",
-     "tier":0
+     "tier":1
     }
    ]
   },
@@ -7973,7 +8010,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -7985,7 +8022,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_EZRABRIDGERS301",
@@ -7993,7 +8030,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -8039,6 +8076,10 @@
     {
      "id":"specialskill_JEDISTARFIGHTERCONSULAR02",
      "tier":6
+    },
+    {
+     "id":"hardwareskill_JEDISTARFIGHTERCONSULAR01",
+     "tier":1
     }
    ]
   },

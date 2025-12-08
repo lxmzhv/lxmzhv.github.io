@@ -2,10 +2,10 @@
  "allyCode":"279369294",
  "requirements":{
   "jabba":{
-   "total_score":27.33
+   "total_score":25.5
   },
   "gg":{
-   "total_score":89.2
+   "total_score":69.6
   },
   "gas":{
    "total_score":15.0
@@ -14,31 +14,31 @@
    "total_score":81.4
   },
   "reva":{
-   "total_score":90.2
+   "total_score":90.6
   },
   "geos":{
-   "total_score":83.5
+   "total_score":77.0
   },
   "drevan":{
-   "total_score":45.4
+   "total_score":43.6
   },
   "amidala":{
    "total_score":28.33
   },
   "gungans":{
-   "total_score":90.4
+   "total_score":81.8
   },
   "leia":{
-   "total_score":27.4
+   "total_score":23.4
   },
   "slkr":{
-   "total_score":95.43
+   "total_score":84.57
   },
   "beq_raid":{
-   "total_score":78.0
+   "total_score":74.5
   }
  },
- "modsRating":12.994824,
+ "modsRating":13.229463,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1589,9 +1589,30 @@
    "stats":{}
   },
   "sithsupremacyclass":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"basicskill_SITHSUPREMACYCLASS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SITHSUPREMACYCLASS02",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_SITHSUPREMACYCLASS",
+     "tier":1
+    },
+    {
+     "id":"specialskill_SITHSUPREMACYCLASS01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_SITHSUPREMACYCLASS01",
+     "tier":3
+    }
+   ]
   },
   "stap":{
    "currentRarity":5,
@@ -2867,7 +2888,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3364,7 +3385,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -3372,7 +3393,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3384,7 +3405,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -3931,11 +3952,12 @@
   },
   "pazvizsla":{
    "currentRarity":5,
-   "currentTier":1,
+   "currentTier":3,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "youngchewbacca":{
    "currentRarity":4,
@@ -4625,7 +4647,7 @@
    }
   },
   "ithano":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":9,
    "skill":[
     {
@@ -4991,7 +5013,7 @@
   },
   "zamwesell":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ZAMWESELL",
@@ -5020,7 +5042,8 @@
    ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "taronmalicos":{
    "currentRarity":7,
@@ -8245,6 +8268,15 @@
    "stats":{}
   },
   "ig12":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "mazkanata":{
    "currentRarity":7,
    "currentTier":1,
    "skill":[],

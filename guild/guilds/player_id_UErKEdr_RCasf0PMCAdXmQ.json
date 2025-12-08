@@ -2,43 +2,43 @@
  "allyCode":"619482179",
  "requirements":{
   "jabba":{
-   "total_score":82.0
+   "total_score":79.17
   },
   "gg":{
-   "total_score":83.6
+   "total_score":78.0
   },
   "gas":{
-   "total_score":84.8
+   "total_score":85.0
   },
   "inqs":{
    "total_score":66.4
   },
   "reva":{
-   "total_score":88.2
-  },
-  "geos":{
-   "total_score":75.5
-  },
-  "drevan":{
    "total_score":88.4
   },
+  "geos":{
+   "total_score":69.0
+  },
+  "drevan":{
+   "total_score":87.6
+  },
   "amidala":{
-   "total_score":69.67
+   "total_score":69.0
   },
   "gungans":{
-   "total_score":93.6
+   "total_score":92.6
   },
   "leia":{
-   "total_score":100.0
+   "total_score":97.8
   },
   "slkr":{
-   "total_score":81.57
+   "total_score":79.43
   },
   "beq_raid":{
-   "total_score":80.0
+   "total_score":82.0
   }
  },
- "modsRating":34.736106,
+ "modsRating":34.759998,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -178,6 +178,32 @@
     },
     {
      "id":"specialskill_ZEBS301",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":11,
+   "skill":[
+    {
+     "id":"basicskill_LUTHENRAEL",
+     "tier":5
+    },
+    {
+     "id":"specialskill_LUTHENRAEL01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_LUTHENRAEL02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_LUTHENRAEL01",
      "tier":5
     }
    ],
@@ -3256,7 +3282,7 @@
   },
   "quiggold":{
    "currentRarity":6,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_QUIGGOLD",
@@ -3484,19 +3510,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4292,7 +4318,7 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -4316,7 +4342,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5702,7 +5728,7 @@
   },
   "ithano":{
    "currentRarity":6,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -5808,7 +5834,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

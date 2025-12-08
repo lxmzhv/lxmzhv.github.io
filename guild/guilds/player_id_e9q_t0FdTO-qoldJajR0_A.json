@@ -2,10 +2,10 @@
  "allyCode":"578357938",
  "requirements":{
   "jabba":{
-   "total_score":43.67
+   "total_score":40.33
   },
   "gg":{
-   "total_score":86.4
+   "total_score":74.6
   },
   "gas":{
    "total_score":90.0
@@ -14,31 +14,31 @@
    "total_score":68.2
   },
   "reva":{
-   "total_score":90.4
+   "total_score":90.6
   },
   "geos":{
-   "total_score":79.0
+   "total_score":73.0
   },
   "drevan":{
-   "total_score":93.0
+   "total_score":92.4
   },
   "amidala":{
-   "total_score":82.0
+   "total_score":82.67
   },
   "gungans":{
-   "total_score":90.2
+   "total_score":90.4
   },
   "leia":{
-   "total_score":32.2
+   "total_score":27.2
   },
   "slkr":{
-   "total_score":87.43
+   "total_score":87.29
   },
   "beq_raid":{
-   "total_score":81.0
+   "total_score":84.0
   }
  },
- "modsRating":22.681234,
+ "modsRating":22.788613,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2994,7 +2994,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3650,7 +3650,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4242,7 +4242,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4550,7 +4550,7 @@
   },
   "kix":{
    "currentRarity":6,
-   "currentTier":8,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_KIX01",
@@ -5166,7 +5166,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5174,11 +5174,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -9606,7 +9610,7 @@
    "skill":[
     {
      "id":"uniqueskill_VANE01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_VANE02",
@@ -9899,6 +9903,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

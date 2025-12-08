@@ -2,43 +2,43 @@
  "allyCode":"282395774",
  "requirements":{
   "jabba":{
-   "total_score":55.67
+   "total_score":48.83
   },
   "gg":{
-   "total_score":79.6
+   "total_score":70.8
   },
   "gas":{
-   "total_score":81.2
+   "total_score":80.8
   },
   "inqs":{
-   "total_score":65.0
+   "total_score":52.8
   },
   "reva":{
-   "total_score":74.8
+   "total_score":74.4
   },
   "geos":{
-   "total_score":78.0
+   "total_score":72.0
   },
   "drevan":{
-   "total_score":94.4
+   "total_score":92.2
   },
   "amidala":{
    "total_score":81.33
   },
   "gungans":{
-   "total_score":89.4
+   "total_score":80.8
   },
   "leia":{
-   "total_score":94.6
+   "total_score":93.4
   },
   "slkr":{
-   "total_score":54.14
+   "total_score":53.86
   },
   "beq_raid":{
    "total_score":94.5
   }
  },
- "modsRating":33.767446,
+ "modsRating":34.022314,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2520,7 +2520,7 @@
   },
   "gamorreanguard":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_GAMORREANGUARD",
@@ -2540,7 +2540,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3462,11 +3462,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4606,7 +4606,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4822,7 +4822,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5074,7 +5074,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5082,11 +5082,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5513,7 +5517,7 @@
    ]
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -5814,7 +5818,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8002,7 +8006,7 @@
   },
   "greedo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_GREEDO01",
@@ -8030,7 +8034,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9245,6 +9249,36 @@
      "tier":1
     }
    ]
+  },
+  "darkrey":{
+   "currentRarity":7,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_DARKREY",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARKREY01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARKREY02",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_DARKREY01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_DARKREY02",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "jedistarfighterconsular":{
    "currentRarity":7,

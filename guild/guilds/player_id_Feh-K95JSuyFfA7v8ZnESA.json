@@ -2,10 +2,10 @@
  "allyCode":"348346922",
  "requirements":{
   "jabba":{
-   "total_score":35.5
+   "total_score":37.33
   },
   "gg":{
-   "total_score":80.6
+   "total_score":69.4
   },
   "gas":{
    "total_score":81.2
@@ -17,28 +17,28 @@
    "total_score":91.4
   },
   "geos":{
-   "total_score":95.5
+   "total_score":90.0
   },
   "drevan":{
-   "total_score":94.2
+   "total_score":92.2
   },
   "amidala":{
-   "total_score":19.0
+   "total_score":18.67
   },
   "gungans":{
-   "total_score":86.8
+   "total_score":79.0
   },
   "leia":{
-   "total_score":19.0
+   "total_score":16.6
   },
   "slkr":{
-   "total_score":89.29
+   "total_score":87.71
   },
   "beq_raid":{
-   "total_score":37.5
+   "total_score":40.0
   }
  },
- "modsRating":16.15868,
+ "modsRating":16.180558,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -3486,7 +3486,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -3632,7 +3632,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":3,
    "skill":[],
    "relic":{
@@ -4116,11 +4116,29 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":5,
+   "skill":[
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"specialskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -6723,7 +6741,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CHOPPERS301",
@@ -6743,7 +6761,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -7557,7 +7575,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -7573,11 +7591,11 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

@@ -2,13 +2,13 @@
  "allyCode":"793573758",
  "requirements":{
   "jabba":{
-   "total_score":75.0
+   "total_score":75.83
   },
   "gg":{
-   "total_score":79.4
+   "total_score":74.6
   },
   "gas":{
-   "total_score":90.0
+   "total_score":90.4
   },
   "inqs":{
    "total_score":64.4
@@ -17,25 +17,25 @@
    "total_score":82.6
   },
   "geos":{
-   "total_score":93.0
+   "total_score":87.0
   },
   "drevan":{
-   "total_score":72.2
+   "total_score":70.2
   },
   "amidala":{
-   "total_score":29.67
+   "total_score":29.0
   },
   "gungans":{
-   "total_score":38.2
+   "total_score":27.6
   },
   "leia":{
-   "total_score":93.8
+   "total_score":93.6
   },
   "slkr":{
-   "total_score":78.71
+   "total_score":77.14
   },
   "beq_raid":{
-   "total_score":29.5
+   "total_score":26.0
   }
  },
  "modsRating":26.603154,
@@ -415,6 +415,24 @@
      "tier":1
     }
    ]
+  },
+  "vanguardtempleguard":{
+   "currentRarity":2,
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"basicskill_VANGUARDTEMPLEGUARD",
+     "tier":6
+    },
+    {
+     "id":"specialskill_VANGUARDTEMPLEGUARD01",
+     "tier":2
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "bb8":{
    "currentRarity":7,
@@ -3178,18 +3196,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -4728,6 +4754,24 @@
     {
      "id":"uniqueskill_TRIPLEZERO01",
      "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "ig90":{
+   "currentRarity":3,
+   "currentTier":2,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
     }
    ],
    "relic":{

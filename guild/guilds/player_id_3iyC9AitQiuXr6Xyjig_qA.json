@@ -2,13 +2,13 @@
  "allyCode":"467397685",
  "requirements":{
   "jabba":{
-   "total_score":92.67
+   "total_score":91.83
   },
   "gg":{
-   "total_score":94.0
+   "total_score":89.6
   },
   "gas":{
-   "total_score":93.6
+   "total_score":93.4
   },
   "inqs":{
    "total_score":78.8
@@ -17,28 +17,28 @@
    "total_score":95.0
   },
   "geos":{
-   "total_score":101.5
+   "total_score":97.5
   },
   "drevan":{
-   "total_score":103.2
+   "total_score":102.4
   },
   "amidala":{
-   "total_score":99.0
+   "total_score":99.33
   },
   "gungans":{
-   "total_score":97.0
+   "total_score":95.2
   },
   "leia":{
-   "total_score":105.2
+   "total_score":103.4
   },
   "slkr":{
-   "total_score":102.71
+   "total_score":101.57
   },
   "beq_raid":{
    "total_score":97.5
   }
  },
- "modsRating":136.39898,
+ "modsRating":136.533768,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,27 +3604,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4648,7 +4648,7 @@
     },
     {
      "id":"specialskill_KIX02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KIX01",
@@ -5295,12 +5295,12 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":5,
-   "currentTier":6,
+   "currentRarity":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
@@ -5308,7 +5308,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
@@ -7366,7 +7366,7 @@
     },
     {
      "id":"uniqueskill_JOCASTANU01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -8712,7 +8712,7 @@
     },
     {
      "id":"uniqueskill_DEATHTROOPER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DEATHTROOPER02",
@@ -8954,7 +8954,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },

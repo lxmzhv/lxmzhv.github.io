@@ -2,10 +2,10 @@
  "allyCode":"398944985",
  "requirements":{
   "jabba":{
-   "total_score":86.0
+   "total_score":86.67
   },
   "gg":{
-   "total_score":93.0
+   "total_score":82.0
   },
   "gas":{
    "total_score":88.0
@@ -17,10 +17,10 @@
    "total_score":95.0
   },
   "geos":{
-   "total_score":91.0
+   "total_score":85.5
   },
   "drevan":{
-   "total_score":96.4
+   "total_score":95.0
   },
   "amidala":{
    "total_score":96.0
@@ -29,16 +29,16 @@
    "total_score":101.4
   },
   "leia":{
-   "total_score":96.2
+   "total_score":94.8
   },
   "slkr":{
-   "total_score":97.14
+   "total_score":95.43
   },
   "beq_raid":{
-   "total_score":82.5
+   "total_score":84.0
   }
  },
- "modsRating":48.929453,
+ "modsRating":48.938919,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -498,7 +498,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG86SENTINELDROID",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3076,7 +3076,7 @@
     },
     {
      "id":"uniqueskill_SM3301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3810,7 +3810,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5278,7 +5278,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5286,11 +5286,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5776,7 +5780,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINSILVO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9730,7 +9734,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -10226,7 +10230,7 @@
     },
     {
      "id":"leaderskill_MAZKANATA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_MAZKANATA01",

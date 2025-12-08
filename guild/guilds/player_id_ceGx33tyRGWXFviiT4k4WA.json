@@ -2,13 +2,13 @@
  "allyCode":"981321663",
  "requirements":{
   "jabba":{
-   "total_score":79.5
+   "total_score":81.5
   },
   "gg":{
-   "total_score":91.4
+   "total_score":82.8
   },
   "gas":{
-   "total_score":85.6
+   "total_score":85.8
   },
   "inqs":{
    "total_score":80.4
@@ -17,28 +17,28 @@
    "total_score":93.0
   },
   "geos":{
-   "total_score":96.5
+   "total_score":93.0
   },
   "drevan":{
-   "total_score":91.4
+   "total_score":90.2
   },
   "amidala":{
    "total_score":86.33
   },
   "gungans":{
-   "total_score":89.4
+   "total_score":81.0
   },
   "leia":{
-   "total_score":94.4
+   "total_score":94.2
   },
   "slkr":{
-   "total_score":96.0
+   "total_score":93.43
   },
   "beq_raid":{
-   "total_score":90.0
+   "total_score":90.5
   }
  },
- "modsRating":26.15246,
+ "modsRating":26.603483,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -188,7 +188,7 @@
   },
   "luthenrael":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_LUTHENRAEL",
@@ -3436,7 +3436,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINENOCH01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINENOCH01",
@@ -3444,11 +3444,11 @@
     },
     {
      "id":"leaderskill_CAPTAINENOCH",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3918,7 +3918,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5247,8 +5247,8 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"contractskill_IG90",
@@ -5272,7 +5272,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -8376,11 +8376,11 @@
   },
   "generalsyndulla":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_GENERALSYNDULLA",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_GENERALSYNDULLA01",
@@ -8388,7 +8388,7 @@
     },
     {
      "id":"specialskill_GENERALSYNDULLA01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GENERALSYNDULLA02",
@@ -8396,11 +8396,11 @@
     },
     {
      "id":"leaderskill_GENERALSYNDULLA",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8746,7 +8746,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -10205,6 +10205,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

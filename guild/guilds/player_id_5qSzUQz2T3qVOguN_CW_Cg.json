@@ -2,43 +2,43 @@
  "allyCode":"143518883",
  "requirements":{
   "jabba":{
-   "total_score":80.0
+   "total_score":77.5
   },
   "gg":{
-   "total_score":78.0
+   "total_score":73.8
   },
   "gas":{
-   "total_score":86.2
+   "total_score":86.4
   },
   "inqs":{
    "total_score":70.4
   },
   "reva":{
-   "total_score":92.2
+   "total_score":92.4
   },
   "geos":{
-   "total_score":83.5
+   "total_score":77.0
   },
   "drevan":{
-   "total_score":94.6
+   "total_score":92.2
   },
   "amidala":{
-   "total_score":45.0
+   "total_score":51.0
   },
   "gungans":{
-   "total_score":93.6
+   "total_score":92.6
   },
   "leia":{
-   "total_score":97.6
+   "total_score":96.0
   },
   "slkr":{
-   "total_score":93.29
+   "total_score":91.0
   },
   "beq_raid":{
-   "total_score":43.0
+   "total_score":45.0
   }
  },
- "modsRating":28.737714,
+ "modsRating":28.749409,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -128,7 +128,7 @@
   },
   "zuckuss":{
    "currentRarity":4,
-   "currentTier":2,
+   "currentTier":5,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
@@ -2222,7 +2222,7 @@
   },
   "queenamidala":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"uniqueskill_QUEENAMIDALA01",
@@ -2950,7 +2950,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3345,7 +3345,7 @@
    ]
   },
   "captainenoch":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -3371,7 +3371,7 @@
    "stats":{}
   },
   "appo":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":11,
    "skill":[
     {
@@ -3488,7 +3488,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4132,7 +4132,7 @@
    "skill":[
     {
      "id":"basicskill_LORDVADER",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_LORDVADER01",
@@ -4351,6 +4351,36 @@
    ],
    "relic":{
     "currentTier":5
+   },
+   "stats":{}
+  },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"uniqueskill_EZRAEXILE01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EZRAEXILE02",
+     "tier":4
+    },
+    {
+     "id":"specialskill_EZRAEXILE01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_EZRAEXILE",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -5116,7 +5146,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5305,7 +5335,7 @@
    ]
   },
   "operative":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":2,
    "skill":[],
    "relic":{
@@ -6652,7 +6682,7 @@
   },
   "padawanobiwan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_PADAWANOBIWAN01",
@@ -6672,7 +6702,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

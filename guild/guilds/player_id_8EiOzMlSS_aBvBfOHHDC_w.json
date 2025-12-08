@@ -2,43 +2,43 @@
  "allyCode":"434922182",
  "requirements":{
   "jabba":{
-   "total_score":86.67
+   "total_score":84.67
   },
   "gg":{
-   "total_score":91.6
+   "total_score":82.8
   },
   "gas":{
-   "total_score":74.8
+   "total_score":75.8
   },
   "inqs":{
-   "total_score":52.6
+   "total_score":49.4
   },
   "reva":{
-   "total_score":56.2
+   "total_score":56.0
   },
   "geos":{
-   "total_score":98.5
+   "total_score":96.5
   },
   "drevan":{
-   "total_score":97.8
+   "total_score":96.8
   },
   "amidala":{
    "total_score":48.67
   },
   "gungans":{
-   "total_score":33.8
+   "total_score":24.8
   },
   "leia":{
-   "total_score":103.8
+   "total_score":101.8
   },
   "slkr":{
-   "total_score":97.57
+   "total_score":96.29
   },
   "beq_raid":{
    "total_score":100.0
   }
  },
- "modsRating":20.562245,
+ "modsRating":20.743039,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -256,7 +256,7 @@
     },
     {
      "id":"specialskill_RAVENSCLAW01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_RAVENSCLAW01",
@@ -380,7 +380,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -1904,7 +1904,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1924,7 +1924,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2340,11 +2340,11 @@
     },
     {
      "id":"leaderskill_CT5555",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -2959,7 +2959,7 @@
    "stats":{}
   },
   "scorch":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -2980,7 +2980,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3046,23 +3046,23 @@
   },
   "hothrebelscout":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HOTHREBELSCOUT",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HOTHREBELSCOUT01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_HOTHREBELSCOUT01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3352,7 +3352,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3490,11 +3490,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4221,7 +4221,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -4472,11 +4472,11 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HUYANG01",
@@ -4492,7 +4492,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4858,7 +4858,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -5036,11 +5036,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5048,11 +5048,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5896,7 +5900,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -6780,15 +6784,15 @@
    "skill":[
     {
      "id":"basicskill_HOTHREBELSOLDIER",
-     "tier":1
+     "tier":5
     },
     {
      "id":"specialskill_HOTHREBELSOLDIER01",
-     "tier":1
+     "tier":5
     },
     {
      "id":"uniqueskill_HOTHREBELSOLDIER01",
-     "tier":1
+     "tier":5
     }
    ],
    "relic":{
@@ -8384,7 +8388,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -9869,6 +9873,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

@@ -2,10 +2,10 @@
  "allyCode":"572151227",
  "requirements":{
   "jabba":{
-   "total_score":87.67
+   "total_score":87.83
   },
   "gg":{
-   "total_score":86.0
+   "total_score":78.8
   },
   "gas":{
    "total_score":88.8
@@ -14,25 +14,25 @@
    "total_score":74.4
   },
   "reva":{
-   "total_score":90.8
+   "total_score":90.6
   },
   "geos":{
-   "total_score":91.0
+   "total_score":85.5
   },
   "drevan":{
-   "total_score":99.0
+   "total_score":97.4
   },
   "amidala":{
    "total_score":100.33
   },
   "gungans":{
-   "total_score":101.8
+   "total_score":99.8
   },
   "leia":{
-   "total_score":99.0
+   "total_score":97.2
   },
   "slkr":{
-   "total_score":98.86
+   "total_score":95.86
   },
   "beq_raid":{
    "total_score":92.0
@@ -5276,10 +5276,14 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
      "tier":0
     }
    ],

@@ -2,43 +2,43 @@
  "allyCode":"199275368",
  "requirements":{
   "jabba":{
-   "total_score":23.0
+   "total_score":25.17
   },
   "gg":{
-   "total_score":88.8
+   "total_score":79.0
   },
   "gas":{
-   "total_score":88.2
+   "total_score":87.8
   },
   "inqs":{
-   "total_score":20.2
+   "total_score":4.8
   },
   "reva":{
    "total_score":29.2
   },
   "geos":{
-   "total_score":90.5
+   "total_score":84.0
   },
   "drevan":{
-   "total_score":13.2
+   "total_score":12.2
   },
   "amidala":{
-   "total_score":55.67
+   "total_score":55.33
   },
   "gungans":{
-   "total_score":4.2
+   "total_score":4.4
   },
   "leia":{
-   "total_score":65.6
+   "total_score":61.6
   },
   "slkr":{
-   "total_score":76.71
+   "total_score":75.29
   },
   "beq_raid":{
-   "total_score":86.0
+   "total_score":84.0
   }
  },
- "modsRating":18.267896,
+ "modsRating":18.454176,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -966,11 +966,29 @@
   },
   "bokatan":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"uniqueskill_BOKATAN01",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_BOKATAN",
+     "tier":1
+    },
+    {
+     "id":"specialskill_BOKATAN01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_BOKATAN",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "magnaguard":{
    "currentRarity":7,
@@ -1419,7 +1437,7 @@
    "stats":{}
   },
   "nighttrooper":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":10,
    "skill":[
     {
@@ -2524,7 +2542,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2796,11 +2814,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3352,6 +3370,40 @@
      "tier":1
     }
    ]
+  },
+  "lordvader":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_LORDVADER",
+     "tier":0
+    },
+    {
+     "id":"specialskill_LORDVADER01",
+     "tier":0
+    },
+    {
+     "id":"specialskill_LORDVADER02",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_LORDVADER",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_LORDVADER01",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":0
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "resistancetrooper":{
    "currentRarity":7,
@@ -3998,7 +4050,7 @@
    "stats":{}
   },
   "deathtrooperperidea":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -4189,11 +4241,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4201,11 +4253,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4906,7 +4962,32 @@
   "zamwesell":{
    "currentRarity":7,
    "currentTier":13,
-   "skill":[],
+   "skill":[
+    {
+     "id":"basicskill_ZAMWESELL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ZAMWESELL01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ZAMWESELL02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_ZAMWESELL",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_ZAMWESELL01",
+     "tier":5
+    },
+    {
+     "id":"contractskill_ZAMWESELL01",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":9
    },
@@ -7883,6 +7964,32 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "ig12":{
+   "currentRarity":3,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"specialskill_IG1202",
+     "tier":1
+    },
+    {
+     "id":"basicskill_IG12",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_IG1201",
+     "tier":1
+    },
+    {
+     "id":"specialskill_IG1201",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

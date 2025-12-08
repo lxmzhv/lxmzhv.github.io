@@ -2,13 +2,13 @@
  "allyCode":"476886975",
  "requirements":{
   "jabba":{
-   "total_score":78.17
+   "total_score":77.0
   },
   "gg":{
-   "total_score":83.0
+   "total_score":85.8
   },
   "gas":{
-   "total_score":83.4
+   "total_score":83.8
   },
   "inqs":{
    "total_score":80.8
@@ -17,25 +17,25 @@
    "total_score":91.8
   },
   "geos":{
-   "total_score":103.0
+   "total_score":101.0
   },
   "drevan":{
-   "total_score":96.4
+   "total_score":96.0
   },
   "amidala":{
    "total_score":25.0
   },
   "gungans":{
-   "total_score":87.8
+   "total_score":88.6
   },
   "leia":{
-   "total_score":65.6
+   "total_score":67.2
   },
   "slkr":{
-   "total_score":76.0
+   "total_score":77.29
   },
   "beq_raid":{
-   "total_score":86.0
+   "total_score":86.5
   }
  },
  "modsRating":15.388024,
@@ -575,7 +575,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1932,8 +1932,8 @@
    ]
   },
   "stap":{
-   "currentRarity":5,
-   "currentTier":11,
+   "currentRarity":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_STAP01",
@@ -4033,7 +4033,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -4041,7 +4041,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -4049,11 +4049,11 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4354,12 +4354,12 @@
    "stats":{}
   },
   "captaindrogan":{
-   "currentRarity":6,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
@@ -4371,11 +4371,11 @@
     },
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5065,7 +5065,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5073,7 +5073,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5477,7 +5477,7 @@
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"contractskill_JABBATHEHUTT01",
@@ -8285,7 +8285,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8305,7 +8305,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9784,7 +9784,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

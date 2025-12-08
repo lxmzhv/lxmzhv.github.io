@@ -5,37 +5,37 @@
    "total_score":78.17
   },
   "gg":{
-   "total_score":84.6
+   "total_score":72.4
   },
   "gas":{
-   "total_score":82.4
+   "total_score":82.6
   },
   "inqs":{
    "total_score":68.2
   },
   "reva":{
-   "total_score":89.0
+   "total_score":90.0
   },
   "geos":{
-   "total_score":94.5
+   "total_score":91.5
   },
   "drevan":{
-   "total_score":99.6
+   "total_score":97.0
   },
   "amidala":{
    "total_score":90.33
   },
   "gungans":{
-   "total_score":28.6
+   "total_score":21.2
   },
   "leia":{
-   "total_score":62.2
+   "total_score":61.8
   },
   "slkr":{
-   "total_score":77.29
+   "total_score":75.43
   },
   "beq_raid":{
-   "total_score":98.0
+   "total_score":99.0
   }
  },
  "modsRating":32.681843,
@@ -320,7 +320,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1507,8 +1507,8 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":4,
-   "currentTier":6,
+   "currentRarity":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -1528,7 +1528,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2454,7 +2454,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3480,7 +3480,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4481,7 +4481,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -5081,8 +5081,8 @@
    "stats":{}
   },
   "triplezero":{
-   "currentRarity":3,
-   "currentTier":6,
+   "currentRarity":4,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
@@ -5102,7 +5102,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5112,7 +5112,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5120,11 +5120,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5783,7 +5787,7 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {
@@ -7049,7 +7053,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":7,
    "skill":[
     {
@@ -8201,7 +8205,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {

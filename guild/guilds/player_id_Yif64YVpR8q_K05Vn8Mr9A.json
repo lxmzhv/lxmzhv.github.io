@@ -2,13 +2,13 @@
  "allyCode":"341929179",
  "requirements":{
   "jabba":{
-   "total_score":14.33
+   "total_score":16.17
   },
   "gg":{
-   "total_score":72.4
+   "total_score":59.2
   },
   "gas":{
-   "total_score":76.8
+   "total_score":77.2
   },
   "inqs":{
    "total_score":81.0
@@ -17,28 +17,28 @@
    "total_score":91.6
   },
   "geos":{
-   "total_score":94.0
+   "total_score":90.0
   },
   "drevan":{
-   "total_score":54.6
+   "total_score":50.4
   },
   "amidala":{
    "total_score":13.67
   },
   "gungans":{
-   "total_score":9.0
+   "total_score":7.4
   },
   "leia":{
-   "total_score":47.0
+   "total_score":42.8
   },
   "slkr":{
-   "total_score":17.86
+   "total_score":14.86
   },
   "beq_raid":{
-   "total_score":44.5
+   "total_score":45.0
   }
  },
- "modsRating":19.785864,
+ "modsRating":19.821824,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2973,19 +2973,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3410,7 +3410,7 @@
   },
   "calkestis":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CALKESTIS",
@@ -3422,15 +3422,15 @@
     },
     {
      "id":"specialskill_CALKESTIS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CALKESTIS01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -4362,7 +4362,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -8298,7 +8298,7 @@
    "stats":{}
   },
   "sawgerrera":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {

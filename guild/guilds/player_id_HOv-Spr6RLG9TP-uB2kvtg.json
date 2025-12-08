@@ -2,43 +2,43 @@
  "allyCode":"717666519",
  "requirements":{
   "jabba":{
-   "total_score":26.17
+   "total_score":27.5
   },
   "gg":{
-   "total_score":68.4
+   "total_score":48.8
   },
   "gas":{
-   "total_score":34.8
+   "total_score":32.0
   },
   "inqs":{
    "total_score":72.4
   },
   "reva":{
-   "total_score":86.4
+   "total_score":86.6
   },
   "geos":{
-   "total_score":79.5
+   "total_score":73.0
   },
   "drevan":{
-   "total_score":92.6
+   "total_score":92.0
   },
   "amidala":{
-   "total_score":26.0
+   "total_score":25.67
   },
   "gungans":{
-   "total_score":84.2
+   "total_score":77.8
   },
   "leia":{
-   "total_score":76.0
+   "total_score":73.6
   },
   "slkr":{
-   "total_score":95.0
+   "total_score":92.86
   },
   "beq_raid":{
-   "total_score":96.5
+   "total_score":96.0
   }
  },
- "modsRating":21.590641,
+ "modsRating":21.7604,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -954,11 +954,25 @@
   },
   "bokatan":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_BOKATAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BOKATAN01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BOKATAN01",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "magnaguard":{
    "currentRarity":7,
@@ -2077,7 +2091,7 @@
   },
   "nightsisterspirit":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_NIGHTSISTERSPIRIT",
@@ -2093,7 +2107,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2710,7 +2724,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2726,11 +2740,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3753,7 +3767,7 @@
   },
   "pazvizsla":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PAZVIZSLA",
@@ -3773,7 +3787,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4023,11 +4037,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4035,11 +4049,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4237,7 +4255,7 @@
     },
     {
      "id":"basicskill_DARKTROOPER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_DARKTROOPER01",
@@ -4245,7 +4263,7 @@
     },
     {
      "id":"specialskill_DARKTROOPER02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4416,7 +4434,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7939,6 +7957,14 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "shaakti":{
    "currentRarity":7,

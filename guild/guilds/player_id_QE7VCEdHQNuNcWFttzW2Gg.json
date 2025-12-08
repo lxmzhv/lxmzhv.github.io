@@ -2,43 +2,43 @@
  "allyCode":"374223277",
  "requirements":{
   "jabba":{
-   "total_score":86.5
+   "total_score":87.67
   },
   "gg":{
-   "total_score":87.6
+   "total_score":77.2
   },
   "gas":{
-   "total_score":87.2
+   "total_score":87.4
   },
   "inqs":{
-   "total_score":71.2
+   "total_score":70.6
   },
   "reva":{
    "total_score":93.6
   },
   "geos":{
-   "total_score":85.0
+   "total_score":78.0
   },
   "drevan":{
-   "total_score":98.0
+   "total_score":96.6
   },
   "amidala":{
    "total_score":91.33
   },
   "gungans":{
-   "total_score":93.8
+   "total_score":92.6
   },
   "leia":{
-   "total_score":102.6
+   "total_score":100.6
   },
   "slkr":{
-   "total_score":94.71
+   "total_score":93.0
   },
   "beq_raid":{
-   "total_score":89.5
+   "total_score":91.5
   }
  },
- "modsRating":51.570071,
+ "modsRating":51.624032,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2488,7 +2488,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3080,7 +3080,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3810,7 +3810,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4980,7 +4980,7 @@
     },
     {
      "id":"specialskill_GLHONDO02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_GLHONDO",
@@ -5295,12 +5295,12 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5308,11 +5308,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{

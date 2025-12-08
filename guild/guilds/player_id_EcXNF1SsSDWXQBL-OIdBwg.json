@@ -2,43 +2,43 @@
  "allyCode":"215519267",
  "requirements":{
   "jabba":{
-   "total_score":29.83
+   "total_score":27.83
   },
   "gg":{
-   "total_score":85.4
+   "total_score":71.6
   },
   "gas":{
-   "total_score":52.6
+   "total_score":50.2
   },
   "inqs":{
-   "total_score":10.6
+   "total_score":4.8
   },
   "reva":{
-   "total_score":24.4
+   "total_score":24.0
   },
   "geos":{
-   "total_score":70.0
+   "total_score":63.0
   },
   "drevan":{
-   "total_score":62.4
+   "total_score":58.0
   },
   "amidala":{
-   "total_score":46.0
+   "total_score":45.67
   },
   "gungans":{
-   "total_score":34.4
+   "total_score":25.2
   },
   "leia":{
-   "total_score":45.2
+   "total_score":38.0
   },
   "slkr":{
-   "total_score":94.43
+   "total_score":92.86
   },
   "beq_raid":{
-   "total_score":89.5
+   "total_score":90.5
   }
  },
- "modsRating":13.938532,
+ "modsRating":13.947765,
  "roster":{
   "magmatrooper":{
    "currentRarity":6,
@@ -214,9 +214,34 @@
    "skill":[]
   },
   "marauder":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"basicskill_MARAUDER",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARAUDER01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MARAUDER01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_MARAUDER",
+     "tier":1
+    },
+    {
+     "id":"specialskill_MARAUDER02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARAUDER02",
+     "tier":6
+    }
+   ]
   },
   "thirdsister":{
    "currentRarity":7,
@@ -1354,7 +1379,7 @@
     },
     {
      "id":"uniqueskill_SITHFIGHTER01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_SITHFIGHTER01",
@@ -1961,7 +1986,7 @@
   },
   "chiefchirpa":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHIEFCHIRPA",
@@ -1981,7 +2006,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -2495,7 +2520,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3052,19 +3077,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3925,7 +3950,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -4340,7 +4365,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4348,7 +4373,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4356,7 +4381,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4633,7 +4658,7 @@
    "skill":[]
   },
   "humanthug":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":4,
    "skill":[
     {
@@ -4733,7 +4758,7 @@
    "stats":{}
   },
   "coruscantunderworldpolice":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -5115,7 +5140,7 @@
    "stats":{}
   },
   "moffgideons1":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -5877,7 +5902,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {

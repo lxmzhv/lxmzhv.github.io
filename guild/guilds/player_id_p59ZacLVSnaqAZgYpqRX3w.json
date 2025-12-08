@@ -2,13 +2,13 @@
  "allyCode":"537789614",
  "requirements":{
   "jabba":{
-   "total_score":48.0
+   "total_score":46.67
   },
   "gg":{
-   "total_score":95.0
+   "total_score":88.2
   },
   "gas":{
-   "total_score":90.0
+   "total_score":89.8
   },
   "inqs":{
    "total_score":74.4
@@ -17,28 +17,28 @@
    "total_score":95.0
   },
   "geos":{
-   "total_score":98.5
+   "total_score":94.5
   },
   "drevan":{
-   "total_score":97.4
+   "total_score":96.2
   },
   "amidala":{
    "total_score":99.33
   },
   "gungans":{
-   "total_score":101.2
+   "total_score":98.0
   },
   "leia":{
-   "total_score":99.8
+   "total_score":97.8
   },
   "slkr":{
-   "total_score":99.43
+   "total_score":96.71
   },
   "beq_raid":{
-   "total_score":95.5
+   "total_score":94.5
   }
  },
- "modsRating":47.069722,
+ "modsRating":47.257066,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3478,7 +3478,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4285,7 +4285,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -4535,7 +4535,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -5122,11 +5122,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5134,11 +5134,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -9669,7 +9673,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -9686,11 +9690,11 @@
     },
     {
      "id":"uniqueskill_VANE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":4
    },
    "stats":{}
   },

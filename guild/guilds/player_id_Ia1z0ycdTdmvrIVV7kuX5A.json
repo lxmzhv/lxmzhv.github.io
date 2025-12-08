@@ -2,10 +2,10 @@
  "allyCode":"169426185",
  "requirements":{
   "jabba":{
-   "total_score":80.5
+   "total_score":77.83
   },
   "gg":{
-   "total_score":79.6
+   "total_score":67.0
   },
   "gas":{
    "total_score":87.0
@@ -17,28 +17,28 @@
    "total_score":92.6
   },
   "geos":{
-   "total_score":85.0
+   "total_score":78.0
   },
   "drevan":{
-   "total_score":96.6
+   "total_score":95.4
   },
   "amidala":{
    "total_score":88.0
   },
   "gungans":{
-   "total_score":87.0
+   "total_score":79.4
   },
   "leia":{
-   "total_score":93.0
+   "total_score":92.0
   },
   "slkr":{
-   "total_score":95.29
+   "total_score":93.14
   },
   "beq_raid":{
-   "total_score":39.5
+   "total_score":41.5
   }
  },
- "modsRating":27.024892,
+ "modsRating":27.08111,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -137,6 +137,14 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "barrissoffee":{
    "currentRarity":7,
@@ -4089,7 +4097,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -4480,7 +4488,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4658,7 +4666,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -4666,6 +4674,14 @@
     },
     {
      "id":"basicskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
      "tier":0
     }
    ],
@@ -6317,7 +6333,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -6800,7 +6816,7 @@
    "skill":[
     {
      "id":"uniqueskill_JARJARBINKS02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_JARJARBINKS01",
@@ -7416,7 +7432,7 @@
   },
   "generalsyndulla":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_GENERALSYNDULLA",
@@ -7440,7 +7456,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -8529,7 +8545,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":7
    },
    "stats":{}
   },
@@ -9047,7 +9063,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },

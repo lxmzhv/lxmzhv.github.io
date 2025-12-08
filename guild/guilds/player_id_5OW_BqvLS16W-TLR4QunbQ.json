@@ -2,13 +2,13 @@
  "allyCode":"337255517",
  "requirements":{
   "jabba":{
-   "total_score":80.5
+   "total_score":80.67
   },
   "gg":{
-   "total_score":85.4
+   "total_score":82.4
   },
   "gas":{
-   "total_score":84.6
+   "total_score":85.0
   },
   "inqs":{
    "total_score":69.8
@@ -17,25 +17,25 @@
    "total_score":87.2
   },
   "geos":{
-   "total_score":94.0
+   "total_score":90.0
   },
   "drevan":{
-   "total_score":37.2
+   "total_score":35.8
   },
   "amidala":{
    "total_score":81.67
   },
   "gungans":{
-   "total_score":92.8
+   "total_score":92.0
   },
   "leia":{
-   "total_score":95.8
+   "total_score":94.4
   },
   "slkr":{
-   "total_score":14.71
+   "total_score":11.43
   },
   "beq_raid":{
-   "total_score":86.5
+   "total_score":87.5
   }
  },
  "modsRating":21.110555,
@@ -3039,7 +3039,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3978,7 +3978,7 @@
   },
   "kix":{
    "currentRarity":6,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4485,11 +4485,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4497,11 +4497,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4563,7 +4567,7 @@
   },
   "smugglerchewbacca":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_SMUGGLERCHEWBACCA",
@@ -5013,7 +5017,7 @@
     },
     {
      "id":"specialskill_ITHANO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_ITHANO",
@@ -6598,7 +6602,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

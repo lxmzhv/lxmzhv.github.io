@@ -2,13 +2,13 @@
  "allyCode":"764818721",
  "requirements":{
   "jabba":{
-   "total_score":57.83
+   "total_score":52.83
   },
   "gg":{
-   "total_score":92.8
+   "total_score":90.0
   },
   "gas":{
-   "total_score":87.6
+   "total_score":87.8
   },
   "inqs":{
    "total_score":65.6
@@ -17,28 +17,28 @@
    "total_score":91.6
   },
   "geos":{
-   "total_score":94.5
+   "total_score":90.5
   },
   "drevan":{
-   "total_score":94.8
+   "total_score":93.0
   },
   "amidala":{
    "total_score":94.33
   },
   "gungans":{
-   "total_score":86.8
+   "total_score":86.4
   },
   "leia":{
-   "total_score":97.2
+   "total_score":95.8
   },
   "slkr":{
-   "total_score":91.29
+   "total_score":91.14
   },
   "beq_raid":{
-   "total_score":87.0
+   "total_score":89.5
   }
  },
- "modsRating":31.424652,
+ "modsRating":31.654825,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -234,7 +234,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3552,11 +3552,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3725,7 +3725,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3742,7 +3742,7 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -5198,7 +5198,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5206,11 +5206,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5662,7 +5666,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -8304,7 +8308,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -9950,7 +9954,7 @@
   },
   "sawgerrera":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SAWGERRERA",
@@ -9970,7 +9974,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

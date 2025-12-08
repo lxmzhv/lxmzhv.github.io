@@ -2,43 +2,43 @@
  "allyCode":"459667588",
  "requirements":{
   "jabba":{
-   "total_score":90.17
+   "total_score":88.17
   },
   "gg":{
-   "total_score":94.8
+   "total_score":84.6
   },
   "gas":{
-   "total_score":89.6
+   "total_score":89.4
   },
   "inqs":{
-   "total_score":52.2
+   "total_score":8.8
   },
   "reva":{
    "total_score":66.0
   },
   "geos":{
-   "total_score":102.0
+   "total_score":96.0
   },
   "drevan":{
-   "total_score":98.2
+   "total_score":96.8
   },
   "amidala":{
    "total_score":99.67
   },
   "gungans":{
-   "total_score":103.6
+   "total_score":100.6
   },
   "leia":{
-   "total_score":107.8
+   "total_score":104.4
   },
   "slkr":{
-   "total_score":98.29
+   "total_score":94.14
   },
   "beq_raid":{
-   "total_score":101.5
+   "total_score":101.0
   }
  },
- "modsRating":105.91755,
+ "modsRating":106.873419,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2268,6 +2268,14 @@
    },
    "stats":{}
   },
+  "glahsokatano":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "chiefchirpa":{
    "currentRarity":7,
    "currentTier":13,
@@ -3536,18 +3544,26 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":2,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_STORMTROOPERLUKE",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_STORMTROOPERLUKE01",
      "tier":0
     }
    ],
@@ -5160,11 +5176,29 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":3,
+   "skill":[
+    {
+     "id":"specialskill_IG9001",
+     "tier":0
+    },
+    {
+     "id":"basicskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
+     "tier":0
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -10033,6 +10067,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "shaakti":{
    "currentRarity":7,

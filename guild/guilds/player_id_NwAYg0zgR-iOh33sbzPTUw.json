@@ -2,43 +2,43 @@
  "allyCode":"661434564",
  "requirements":{
   "jabba":{
-   "total_score":90.83
+   "total_score":89.67
   },
   "gg":{
-   "total_score":85.8
+   "total_score":79.4
   },
   "gas":{
-   "total_score":95.8
+   "total_score":95.6
   },
   "inqs":{
-   "total_score":59.4
+   "total_score":59.0
   },
   "reva":{
-   "total_score":94.2
+   "total_score":94.0
   },
   "geos":{
-   "total_score":90.5
+   "total_score":83.5
   },
   "drevan":{
-   "total_score":103.8
+   "total_score":102.4
   },
   "amidala":{
    "total_score":101.33
   },
   "gungans":{
-   "total_score":105.4
+   "total_score":102.2
   },
   "leia":{
-   "total_score":102.8
+   "total_score":101.0
   },
   "slkr":{
-   "total_score":104.43
+   "total_score":103.0
   },
   "beq_raid":{
-   "total_score":92.5
+   "total_score":94.0
   }
  },
- "modsRating":120.571229,
+ "modsRating":121.031491,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -208,7 +208,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5296,7 +5296,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -5308,10 +5308,14 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_IG9001",
+     "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
      "tier":0
     }
    ],
@@ -5724,7 +5728,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -9578,7 +9582,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

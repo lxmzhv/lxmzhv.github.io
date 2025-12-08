@@ -2,10 +2,10 @@
  "allyCode":"589213356",
  "requirements":{
   "jabba":{
-   "total_score":40.0
+   "total_score":37.5
   },
   "gg":{
-   "total_score":83.6
+   "total_score":74.0
   },
   "gas":{
    "total_score":63.0
@@ -17,28 +17,28 @@
    "total_score":89.6
   },
   "geos":{
-   "total_score":75.0
+   "total_score":69.5
   },
   "drevan":{
-   "total_score":88.8
+   "total_score":86.8
   },
   "amidala":{
    "total_score":74.67
   },
   "gungans":{
-   "total_score":92.2
+   "total_score":91.6
   },
   "leia":{
-   "total_score":94.2
+   "total_score":93.4
   },
   "slkr":{
-   "total_score":93.71
+   "total_score":90.29
   },
   "beq_raid":{
-   "total_score":84.5
+   "total_score":85.5
   }
  },
- "modsRating":27.855119,
+ "modsRating":27.84797,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1864,7 +1864,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1884,7 +1884,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3442,7 +3442,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3458,11 +3458,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5038,7 +5038,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5046,11 +5046,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -9400,7 +9404,7 @@
   },
   "kylekatarn":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_KYLEKATARN01",
@@ -9408,7 +9412,7 @@
     },
     {
      "id":"specialskill_KYLEKATARN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_KYLEKATARN01",
@@ -9420,7 +9424,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

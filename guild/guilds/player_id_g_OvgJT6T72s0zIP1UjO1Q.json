@@ -2,10 +2,10 @@
  "allyCode":"644419692",
  "requirements":{
   "jabba":{
-   "total_score":79.83
+   "total_score":79.5
   },
   "gg":{
-   "total_score":85.4
+   "total_score":80.2
   },
   "gas":{
    "total_score":83.6
@@ -17,28 +17,28 @@
    "total_score":93.4
   },
   "geos":{
-   "total_score":95.0
+   "total_score":91.0
   },
   "drevan":{
-   "total_score":98.0
+   "total_score":97.2
   },
   "amidala":{
    "total_score":81.67
   },
   "gungans":{
-   "total_score":17.2
+   "total_score":12.8
   },
   "leia":{
-   "total_score":86.6
+   "total_score":85.2
   },
   "slkr":{
-   "total_score":79.43
+   "total_score":77.43
   },
   "beq_raid":{
-   "total_score":37.5
+   "total_score":39.0
   }
  },
- "modsRating":16.828382,
+ "modsRating":17.660172,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2002,7 +2002,7 @@
    "skill":[
     {
      "id":"uniqueskill_PADAWANSABINE01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_PADAWANSABINE02",
@@ -2280,7 +2280,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4632,7 +4632,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -4640,6 +4640,14 @@
     },
     {
      "id":"basicskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_IG90",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_IG9001",
      "tier":0
     }
    ],
@@ -4787,7 +4795,7 @@
    ]
   },
   "operative":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -7470,11 +7478,29 @@
   },
   "marajade":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_MARAJADE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MARAJADE01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MARAJADE02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MARAJADE01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "arctrooper501st":{
    "currentRarity":7,
@@ -8442,7 +8468,7 @@
     },
     {
      "id":"uniqueskill_AAYLASECURA02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -8585,8 +8611,8 @@
    "stats":{}
   },
   "kylekatarn":{
-   "currentRarity":6,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KYLEKATARN",
@@ -8598,7 +8624,7 @@
     },
     {
      "id":"specialskill_KYLEKATARN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KYLEKATARN01",
@@ -8606,7 +8632,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

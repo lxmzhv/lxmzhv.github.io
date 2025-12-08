@@ -2,13 +2,13 @@
  "allyCode":"561225842",
  "requirements":{
   "jabba":{
-   "total_score":35.83
+   "total_score":35.17
   },
   "gg":{
-   "total_score":70.0
+   "total_score":60.8
   },
   "gas":{
-   "total_score":84.8
+   "total_score":85.0
   },
   "inqs":{
    "total_score":72.2
@@ -17,25 +17,25 @@
    "total_score":89.2
   },
   "geos":{
-   "total_score":77.5
+   "total_score":71.5
   },
   "drevan":{
-   "total_score":89.2
+   "total_score":89.4
   },
   "amidala":{
-   "total_score":80.33
+   "total_score":80.0
   },
   "gungans":{
-   "total_score":33.0
+   "total_score":24.4
   },
   "leia":{
-   "total_score":64.0
+   "total_score":62.0
   },
   "slkr":{
-   "total_score":76.0
+   "total_score":74.29
   },
   "beq_raid":{
-   "total_score":43.0
+   "total_score":44.0
   }
  },
  "modsRating":18.745198,
@@ -580,7 +580,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3431,7 +3431,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3447,11 +3447,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3913,7 +3913,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5049,7 +5049,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5057,7 +5057,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5065,7 +5065,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -7150,7 +7150,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_STORMTROOPERHAN",
@@ -7230,7 +7230,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },

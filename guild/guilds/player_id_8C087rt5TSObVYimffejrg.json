@@ -2,10 +2,10 @@
  "allyCode":"279167353",
  "requirements":{
   "jabba":{
-   "total_score":89.33
+   "total_score":88.83
   },
   "gg":{
-   "total_score":82.8
+   "total_score":72.0
   },
   "gas":{
    "total_score":90.0
@@ -17,25 +17,25 @@
    "total_score":92.6
   },
   "geos":{
-   "total_score":81.0
+   "total_score":75.5
   },
   "drevan":{
-   "total_score":96.2
+   "total_score":95.0
   },
   "amidala":{
    "total_score":92.0
   },
   "gungans":{
-   "total_score":93.8
+   "total_score":92.6
   },
   "leia":{
-   "total_score":100.8
+   "total_score":98.4
   },
   "slkr":{
-   "total_score":93.71
+   "total_score":91.29
   },
   "beq_raid":{
-   "total_score":94.5
+   "total_score":96.0
   }
  },
  "modsRating":51.880182,
@@ -636,7 +636,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3553,11 +3553,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5181,11 +5181,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5193,11 +5193,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5541,7 +5545,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5769,7 +5773,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },

@@ -2,43 +2,43 @@
  "allyCode":"955531992",
  "requirements":{
   "jabba":{
-   "total_score":85.5
+   "total_score":83.17
   },
   "gg":{
-   "total_score":92.2
+   "total_score":85.4
   },
   "gas":{
-   "total_score":87.2
+   "total_score":87.0
   },
   "inqs":{
    "total_score":79.8
   },
   "reva":{
-   "total_score":94.8
+   "total_score":94.4
   },
   "geos":{
-   "total_score":104.0
+   "total_score":102.0
   },
   "drevan":{
-   "total_score":99.0
+   "total_score":98.0
   },
   "amidala":{
-   "total_score":91.33
+   "total_score":93.0
   },
   "gungans":{
-   "total_score":94.8
+   "total_score":85.0
   },
   "leia":{
-   "total_score":96.6
+   "total_score":95.2
   },
   "slkr":{
-   "total_score":97.86
+   "total_score":97.71
   },
   "beq_raid":{
    "total_score":89.0
   }
  },
- "modsRating":42.247084,
+ "modsRating":42.489511,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1518,12 +1518,30 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":5,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_BT102",
+     "tier":3
+    },
+    {
+     "id":"basicskill_BT1",
+     "tier":3
+    },
+    {
+     "id":"uniqueskill_BT101",
+     "tier":3
+    },
+    {
+     "id":"specialskill_BT101",
+     "tier":3
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":5
+   },
+   "stats":{}
   },
   "jawa":{
    "currentRarity":7,
@@ -2193,7 +2211,7 @@
     },
     {
      "id":"leaderskill_QUEENAMIDALA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_QUEENAMIDALA01",
@@ -2201,7 +2219,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2538,7 +2556,7 @@
    "stats":{}
   },
   "greatmothers":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -3455,7 +3473,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3471,11 +3489,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3995,7 +4013,7 @@
   },
   "caradune":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CARADUNE",
@@ -4011,11 +4029,11 @@
     },
     {
      "id":"uniqueskill_CARADUNE02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -4095,7 +4113,7 @@
   },
   "lordvader":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_LORDVADER",
@@ -4123,7 +4141,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4460,7 +4478,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":7,
    "skill":[
     {
@@ -5016,16 +5034,34 @@
    "stats":{}
   },
   "triplezero":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":4,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":2
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":2
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5033,7 +5069,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5041,7 +5077,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -5704,7 +5740,7 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -8036,7 +8072,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":6,
    "skill":[
     {
@@ -8615,7 +8651,7 @@
     },
     {
      "id":"uniqueskill_MASTERQUIGON01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

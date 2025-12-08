@@ -2,10 +2,10 @@
  "allyCode":"824782653",
  "requirements":{
   "jabba":{
-   "total_score":43.17
+   "total_score":37.0
   },
   "gg":{
-   "total_score":90.6
+   "total_score":83.8
   },
   "gas":{
    "total_score":60.6
@@ -17,25 +17,25 @@
    "total_score":86.6
   },
   "geos":{
-   "total_score":82.5
+   "total_score":76.5
   },
   "drevan":{
-   "total_score":96.8
+   "total_score":95.0
   },
   "amidala":{
-   "total_score":30.0
+   "total_score":29.67
   },
   "gungans":{
-   "total_score":40.0
+   "total_score":29.2
   },
   "leia":{
-   "total_score":56.6
+   "total_score":50.4
   },
   "slkr":{
-   "total_score":77.86
+   "total_score":76.0
   },
   "beq_raid":{
-   "total_score":40.5
+   "total_score":42.5
   }
  },
  "modsRating":12.184368,
@@ -2536,7 +2536,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3420,7 +3420,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4194,7 +4194,7 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -4214,11 +4214,11 @@
     },
     {
      "id":"uniqueskill_MARROK01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -4387,7 +4387,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -5014,11 +5014,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5026,11 +5026,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6878,7 +6882,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7953,7 +7957,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {

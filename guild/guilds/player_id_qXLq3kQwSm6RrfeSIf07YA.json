@@ -2,13 +2,13 @@
  "allyCode":"395772746",
  "requirements":{
   "jabba":{
-   "total_score":95.83
+   "total_score":95.67
   },
   "gg":{
-   "total_score":99.4
+   "total_score":88.2
   },
   "gas":{
-   "total_score":97.4
+   "total_score":97.0
   },
   "inqs":{
    "total_score":70.4
@@ -17,28 +17,28 @@
    "total_score":99.0
   },
   "geos":{
-   "total_score":91.0
+   "total_score":85.5
   },
   "drevan":{
-   "total_score":104.0
+   "total_score":103.8
   },
   "amidala":{
    "total_score":103.0
   },
   "gungans":{
-   "total_score":107.0
+   "total_score":103.2
   },
   "leia":{
-   "total_score":110.0
+   "total_score":107.4
   },
   "slkr":{
-   "total_score":104.0
+   "total_score":102.0
   },
   "beq_raid":{
-   "total_score":97.0
+   "total_score":96.5
   }
  },
- "modsRating":113.147449,
+ "modsRating":113.536598,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -88,7 +88,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG86SENTINELDROID",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5300,7 +5300,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5308,11 +5308,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -9570,7 +9574,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -10278,7 +10282,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

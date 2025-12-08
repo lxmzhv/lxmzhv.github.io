@@ -2,13 +2,13 @@
  "allyCode":"438873114",
  "requirements":{
   "jabba":{
-   "total_score":20.33
+   "total_score":21.33
   },
   "gg":{
-   "total_score":87.2
+   "total_score":79.8
   },
   "gas":{
-   "total_score":49.8
+   "total_score":49.4
   },
   "inqs":{
    "total_score":68.8
@@ -17,28 +17,28 @@
    "total_score":79.8
   },
   "geos":{
-   "total_score":64.5
+   "total_score":58.5
   },
   "drevan":{
-   "total_score":84.4
+   "total_score":82.2
   },
   "amidala":{
    "total_score":21.0
   },
   "gungans":{
-   "total_score":23.2
+   "total_score":17.4
   },
   "leia":{
-   "total_score":66.6
+   "total_score":64.0
   },
   "slkr":{
-   "total_score":27.71
+   "total_score":23.86
   },
   "beq_raid":{
-   "total_score":77.5
+   "total_score":73.5
   }
  },
- "modsRating":8.12414,
+ "modsRating":8.12437,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -193,6 +193,32 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ravensclaw":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_RAVENSCLAW02",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_RAVENSCLAW",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_RAVENSCLAW01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_RAVENSCLAW01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_RAVENSCLAW",
+     "tier":6
+    }
+   ]
   },
   "marauder":{
    "currentRarity":6,
@@ -1379,7 +1405,7 @@
     },
     {
      "id":"specialskill_XWINGRESISTANCE01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_XWINGRESISTANCE02",
@@ -2913,7 +2939,7 @@
   },
   "captainenoch":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"leaderskill_CAPTAINENOCH",
@@ -3620,7 +3646,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4477,11 +4503,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4489,11 +4515,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6309,7 +6339,7 @@
   },
   "princesskneesaa":{
    "currentRarity":7,
-   "currentTier":4,
+   "currentTier":8,
    "skill":[],
    "relic":{
     "currentTier":1

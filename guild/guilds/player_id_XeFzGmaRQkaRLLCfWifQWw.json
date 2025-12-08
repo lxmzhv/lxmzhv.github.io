@@ -2,43 +2,43 @@
  "allyCode":"784938193",
  "requirements":{
   "jabba":{
-   "total_score":81.17
+   "total_score":83.17
   },
   "gg":{
-   "total_score":72.8
+   "total_score":57.0
   },
   "gas":{
-   "total_score":46.0
+   "total_score":43.6
   },
   "inqs":{
-   "total_score":66.8
+   "total_score":62.4
   },
   "reva":{
-   "total_score":81.0
+   "total_score":80.4
   },
   "geos":{
-   "total_score":86.0
+   "total_score":82.0
   },
   "drevan":{
-   "total_score":78.2
+   "total_score":75.8
   },
   "amidala":{
-   "total_score":44.0
+   "total_score":43.33
   },
   "gungans":{
-   "total_score":43.0
+   "total_score":31.4
   },
   "leia":{
-   "total_score":74.4
+   "total_score":72.2
   },
   "slkr":{
-   "total_score":46.43
+   "total_score":42.29
   },
   "beq_raid":{
-   "total_score":83.5
+   "total_score":84.5
   }
  },
- "modsRating":20.622964,
+ "modsRating":20.693611,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1196,7 +1196,7 @@
     },
     {
      "id":"specialskill_TIEFIGHTERFIRSTORDER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_TIEFIGHTERFIRSTORDER01",
@@ -1503,7 +1503,7 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -2232,7 +2232,7 @@
   },
   "padawansabine":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PADAWANSABINE",
@@ -2252,7 +2252,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3507,8 +3507,8 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
-   "currentTier":10,
+   "currentRarity":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BRUTUS",
@@ -4004,7 +4004,7 @@
     },
     {
      "id":"uniqueskill_HK4702",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4091,7 +4091,7 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -4316,7 +4316,7 @@
   },
   "kix":{
    "currentRarity":6,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4328,11 +4328,11 @@
     },
     {
      "id":"specialskill_KIX02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KIX01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4910,7 +4910,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4942,7 +4942,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -6490,7 +6490,7 @@
     },
     {
      "id":"specialskill_XWINGRED301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_XWINGRED301",
@@ -7746,6 +7746,32 @@
    },
    "stats":{}
   },
+  "tieinterceptor":{
+   "currentRarity":5,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"hardwareskill_TIEINTERCEPTOR",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_TIEINTERCEPTOR01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TIEINTERCEPTOR01",
+     "tier":4
+    },
+    {
+     "id":"basicskill_TIEINTERCEPTOR",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TIEINTERCEPTOR02",
+     "tier":4
+    }
+   ]
+  },
   "capitalchimaera":{
    "currentRarity":7,
    "currentTier":1,
@@ -8620,7 +8646,7 @@
    "skill":[
     {
      "id":"specialskill_XWINGBLACKONE01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_XWINGBLACKONE02",
@@ -9110,7 +9136,7 @@
     },
     {
      "id":"specialskill_JEDISTARFIGHTERCONSULAR02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_JEDISTARFIGHTERCONSULAR01",

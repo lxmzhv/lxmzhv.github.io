@@ -2,43 +2,43 @@
  "allyCode":"681194354",
  "requirements":{
   "jabba":{
-   "total_score":30.17
+   "total_score":30.33
   },
   "gg":{
-   "total_score":75.6
+   "total_score":70.2
   },
   "gas":{
-   "total_score":15.4
+   "total_score":15.6
   },
   "inqs":{
    "total_score":0.0
   },
   "reva":{
-   "total_score":6.8
+   "total_score":6.6
   },
   "geos":{
-   "total_score":68.5
+   "total_score":62.0
   },
   "drevan":{
-   "total_score":94.2
+   "total_score":92.2
   },
   "amidala":{
    "total_score":28.0
   },
   "gungans":{
-   "total_score":28.6
+   "total_score":21.6
   },
   "leia":{
-   "total_score":56.2
+   "total_score":54.4
   },
   "slkr":{
-   "total_score":87.43
+   "total_score":84.71
   },
   "beq_raid":{
-   "total_score":88.0
+   "total_score":86.0
   }
  },
- "modsRating":15.81632,
+ "modsRating":15.827947,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1094,7 +1094,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1694,7 +1694,7 @@
     },
     {
      "id":"specialskill_SABINEWRENS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SABINEWRENS301",
@@ -2800,7 +2800,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2816,11 +2816,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3348,7 +3348,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3365,9 +3365,26 @@
    "stats":{}
   },
   "vulturedroid":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"basicskill_VULTUREDROID",
+     "tier":5
+    },
+    {
+     "id":"specialskill_VULTUREDROID01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_VULTUREDROID01",
+     "tier":5
+    },
+    {
+     "id":"hardwareskill_VULTUREDROID01",
+     "tier":1
+    }
+   ]
   },
   "resistancetrooper":{
    "currentRarity":7,
@@ -3577,11 +3594,11 @@
   },
   "captaindrogan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINDROGAN01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
@@ -3593,11 +3610,11 @@
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -3775,7 +3792,7 @@
     },
     {
      "id":"specialskill_uwingrogueone01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_uwingrogueone02",
@@ -3783,11 +3800,11 @@
     },
     {
      "id":"basicskill_uwingrogueone",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_uwingrogueone01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_uwingrogueone01",
@@ -4190,7 +4207,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4198,11 +4215,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4612,15 +4633,15 @@
    "skill":[
     {
      "id":"specialskill_CORUSCANTUNDERWORLDPOLICE01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CORUSCANTUNDERWORLDPOLICE",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CORUSCANTUNDERWORLDPOLICE01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5958,7 +5979,7 @@
     },
     {
      "id":"specialskill_HERASYNDULLAS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HERASYNDULLAS302",
@@ -6993,7 +7014,7 @@
     },
     {
      "id":"basicskill_GEONOSIANSTARFIGHTER1",
-     "tier":3
+     "tier":5
     },
     {
      "id":"uniqueskill_GEONOSIANSTARFIGHTER101",
@@ -7001,7 +7022,7 @@
     },
     {
      "id":"hardwareskill_GEONOSIANSTARFIGHTER101",
-     "tier":0
+     "tier":1
     }
    ]
   },
@@ -7482,7 +7503,7 @@
     },
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -7967,8 +7988,29 @@
   },
   "darthbane":{
    "currentRarity":7,
-   "currentTier":4,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_DARTHBANE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHBANE01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHBANE02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_DARTHBANE",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DARTHBANE01",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
    },

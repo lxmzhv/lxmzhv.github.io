@@ -2,10 +2,10 @@
  "allyCode":"518792574",
  "requirements":{
   "jabba":{
-   "total_score":81.67
+   "total_score":80.67
   },
   "gg":{
-   "total_score":87.6
+   "total_score":80.2
   },
   "gas":{
    "total_score":85.4
@@ -17,25 +17,25 @@
    "total_score":89.4
   },
   "geos":{
-   "total_score":85.5
+   "total_score":79.0
   },
   "drevan":{
-   "total_score":96.4
+   "total_score":95.4
   },
   "amidala":{
    "total_score":92.67
   },
   "gungans":{
-   "total_score":91.0
+   "total_score":90.8
   },
   "leia":{
-   "total_score":102.2
+   "total_score":100.0
   },
   "slkr":{
-   "total_score":94.71
+   "total_score":92.71
   },
   "beq_raid":{
-   "total_score":97.0
+   "total_score":96.0
   }
  },
  "modsRating":54.245899,
@@ -4103,7 +4103,7 @@
   },
   "caradune":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CARADUNE",
@@ -4119,11 +4119,11 @@
     },
     {
      "id":"uniqueskill_CARADUNE02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5259,7 +5259,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5267,11 +5267,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5855,7 +5859,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -10223,7 +10227,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

@@ -2,43 +2,43 @@
  "allyCode":"542397987",
  "requirements":{
   "jabba":{
-   "total_score":76.67
+   "total_score":79.5
   },
   "gg":{
-   "total_score":81.4
+   "total_score":73.2
   },
   "gas":{
-   "total_score":82.4
+   "total_score":82.2
   },
   "inqs":{
-   "total_score":60.6
+   "total_score":60.2
   },
   "reva":{
-   "total_score":76.6
+   "total_score":76.4
   },
   "geos":{
-   "total_score":87.0
+   "total_score":81.0
   },
   "drevan":{
-   "total_score":71.8
+   "total_score":71.4
   },
   "amidala":{
    "total_score":76.0
   },
   "gungans":{
-   "total_score":78.4
+   "total_score":73.4
   },
   "leia":{
-   "total_score":65.6
+   "total_score":64.0
   },
   "slkr":{
-   "total_score":61.29
+   "total_score":59.86
   },
   "beq_raid":{
-   "total_score":78.0
+   "total_score":80.5
   }
  },
- "modsRating":10.383614,
+ "modsRating":10.429787,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -327,7 +327,7 @@
   },
   "b1battledroidv2":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_b1battledroidv2",
@@ -347,7 +347,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -791,7 +791,7 @@
   },
   "50rt":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_50RT",
@@ -815,7 +815,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3164,7 +3164,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3184,7 +3184,7 @@
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -3245,7 +3245,7 @@
    "stats":{}
   },
   "ebonhawk":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -4691,7 +4691,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"contractskill_IG90",
@@ -4703,7 +4703,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4711,7 +4711,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4991,7 +4991,7 @@
     },
     {
      "id":"specialskill_R2D2_LEGENDARY02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_R2D2_LEGENDARY01",
@@ -7946,6 +7946,14 @@
    },
    "stats":{}
   },
+  "trench":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "wicket":{
    "currentRarity":7,
    "currentTier":13,
@@ -8263,7 +8271,7 @@
    ]
   },
   "sithbomber":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -9187,7 +9195,7 @@
   },
   "ig12":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG12",
@@ -9207,9 +9215,17 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "shaakti":{
    "currentRarity":7,

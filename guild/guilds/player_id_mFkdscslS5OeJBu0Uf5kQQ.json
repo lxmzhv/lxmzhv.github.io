@@ -2,13 +2,13 @@
  "allyCode":"238224446",
  "requirements":{
   "jabba":{
-   "total_score":57.67
+   "total_score":55.0
   },
   "gg":{
-   "total_score":70.6
+   "total_score":50.4
   },
   "gas":{
-   "total_score":81.2
+   "total_score":80.2
   },
   "inqs":{
    "total_score":60.6
@@ -17,25 +17,25 @@
    "total_score":89.6
   },
   "geos":{
-   "total_score":66.5
+   "total_score":60.5
   },
   "drevan":{
-   "total_score":90.4
+   "total_score":88.2
   },
   "amidala":{
-   "total_score":57.33
+   "total_score":56.67
   },
   "gungans":{
-   "total_score":34.0
+   "total_score":25.0
   },
   "leia":{
-   "total_score":80.8
+   "total_score":85.4
   },
   "slkr":{
-   "total_score":79.0
+   "total_score":77.14
   },
   "beq_raid":{
-   "total_score":39.5
+   "total_score":41.5
   }
  },
  "modsRating":13.359703,
@@ -1121,7 +1121,7 @@
    "stats":{}
   },
   "kiadimundi":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {
@@ -2455,7 +2455,7 @@
    }
   },
   "greatmothers":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":6,
    "skill":[
     {
@@ -2845,7 +2845,7 @@
    "stats":{}
   },
   "scorch":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":9,
    "skill":[
     {
@@ -3330,7 +3330,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3346,11 +3346,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3947,7 +3947,7 @@
    ]
   },
   "vulturedroid":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[
     {
@@ -4772,7 +4772,7 @@
    "stats":{}
   },
   "zoriibliss_v2":{
-   "currentRarity":3,
+   "currentRarity":5,
    "currentTier":6,
    "skill":[],
    "relic":{
@@ -4846,15 +4846,16 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":2,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4862,7 +4863,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4870,7 +4871,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -5829,7 +5830,7 @@
   },
   "jediknightcal":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"leaderskill_JEDIKNIGHTCAL",
@@ -5857,7 +5858,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -6305,7 +6306,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -7752,7 +7753,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -7772,7 +7773,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9084,7 +9085,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },

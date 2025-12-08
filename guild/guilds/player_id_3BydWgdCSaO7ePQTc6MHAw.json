@@ -2,40 +2,40 @@
  "allyCode":"775541661",
  "requirements":{
   "jabba":{
-   "total_score":85.17
+   "total_score":83.17
   },
   "gg":{
-   "total_score":89.4
+   "total_score":82.8
   },
   "gas":{
-   "total_score":87.6
+   "total_score":88.0
   },
   "inqs":{
    "total_score":65.2
   },
   "reva":{
-   "total_score":89.8
+   "total_score":89.6
   },
   "geos":{
-   "total_score":87.0
+   "total_score":82.0
   },
   "drevan":{
-   "total_score":84.2
+   "total_score":83.6
   },
   "amidala":{
    "total_score":95.0
   },
   "gungans":{
-   "total_score":95.2
+   "total_score":94.4
   },
   "leia":{
-   "total_score":95.8
+   "total_score":94.8
   },
   "slkr":{
-   "total_score":95.14
+   "total_score":92.29
   },
   "beq_raid":{
-   "total_score":84.0
+   "total_score":86.5
   }
  },
  "modsRating":64.965591,
@@ -917,7 +917,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":4,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG86SENTINELDROID",
@@ -933,7 +933,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1967,7 +1967,7 @@
   },
   "scarifrebel":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SCARIFREBEL01",
@@ -1983,7 +1983,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -3698,7 +3698,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -4575,7 +4575,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":6,
    "skill":[
     {
@@ -5206,7 +5206,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5214,11 +5214,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5300,7 +5304,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -5566,7 +5570,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -6829,7 +6833,7 @@
   },
   "t3_m4":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_t3_m4",
@@ -6853,7 +6857,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },

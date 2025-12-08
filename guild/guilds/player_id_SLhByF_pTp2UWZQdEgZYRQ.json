@@ -2,40 +2,40 @@
  "allyCode":"463236954",
  "requirements":{
   "jabba":{
-   "total_score":65.33
+   "total_score":64.83
   },
   "gg":{
-   "total_score":78.0
+   "total_score":67.2
   },
   "gas":{
-   "total_score":71.0
+   "total_score":69.6
   },
   "inqs":{
-   "total_score":5.4
+   "total_score":4.2
   },
   "reva":{
-   "total_score":28.8
+   "total_score":28.4
   },
   "geos":{
-   "total_score":81.5
+   "total_score":75.0
   },
   "drevan":{
-   "total_score":92.0
+   "total_score":89.4
   },
   "amidala":{
-   "total_score":79.33
+   "total_score":79.0
   },
   "gungans":{
-   "total_score":28.8
+   "total_score":21.8
   },
   "leia":{
-   "total_score":88.2
+   "total_score":88.4
   },
   "slkr":{
-   "total_score":89.71
+   "total_score":88.43
   },
   "beq_raid":{
-   "total_score":78.5
+   "total_score":81.0
   }
  },
  "modsRating":16.168355,
@@ -5002,11 +5002,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5014,11 +5014,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5445,7 +5449,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":8,
    "skill":[
     {

@@ -2,13 +2,13 @@
  "allyCode":"756973116",
  "requirements":{
   "jabba":{
-   "total_score":83.67
+   "total_score":86.83
   },
   "gg":{
-   "total_score":71.6
+   "total_score":69.8
   },
   "gas":{
-   "total_score":84.8
+   "total_score":85.6
   },
   "inqs":{
    "total_score":71.4
@@ -17,28 +17,28 @@
    "total_score":95.6
   },
   "geos":{
-   "total_score":91.0
+   "total_score":88.0
   },
   "drevan":{
-   "total_score":95.2
+   "total_score":94.6
   },
   "amidala":{
    "total_score":96.0
   },
   "gungans":{
-   "total_score":96.2
+   "total_score":95.8
   },
   "leia":{
-   "total_score":94.8
+   "total_score":94.4
   },
   "slkr":{
-   "total_score":90.29
+   "total_score":88.86
   },
   "beq_raid":{
-   "total_score":94.0
+   "total_score":95.5
   }
  },
- "modsRating":52.742724,
+ "modsRating":52.757984,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3814,7 +3814,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4652,7 +4652,7 @@
     },
     {
      "id":"uniqueskill_KIX01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5262,11 +5262,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5274,11 +5274,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5356,7 +5360,7 @@
     },
     {
      "id":"uniqueskill_SMUGGLERCHEWBACCA01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5768,7 +5772,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },

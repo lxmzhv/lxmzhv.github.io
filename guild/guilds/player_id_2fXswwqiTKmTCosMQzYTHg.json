@@ -2,43 +2,43 @@
  "allyCode":"383131361",
  "requirements":{
   "jabba":{
-   "total_score":85.67
+   "total_score":84.17
   },
   "gg":{
-   "total_score":82.8
+   "total_score":70.0
   },
   "gas":{
-   "total_score":80.6
+   "total_score":80.4
   },
   "inqs":{
    "total_score":70.4
   },
   "reva":{
-   "total_score":93.8
+   "total_score":93.6
   },
   "geos":{
-   "total_score":70.5
+   "total_score":64.0
   },
   "drevan":{
-   "total_score":88.8
+   "total_score":86.8
   },
   "amidala":{
    "total_score":93.67
   },
   "gungans":{
-   "total_score":94.4
+   "total_score":93.2
   },
   "leia":{
-   "total_score":97.8
+   "total_score":96.0
   },
   "slkr":{
-   "total_score":94.29
+   "total_score":91.86
   },
   "beq_raid":{
-   "total_score":91.5
+   "total_score":92.5
   }
  },
- "modsRating":30.818387,
+ "modsRating":31.227691,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1503,6 +1503,32 @@
    ],
    "relic":{
     "currentTier":1
+   },
+   "stats":{}
+  },
+  "bt1":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_BT102",
+     "tier":6
+    },
+    {
+     "id":"basicskill_BT1",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BT101",
+     "tier":4
+    },
+    {
+     "id":"specialskill_BT101",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3462,7 +3488,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3651,7 +3677,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3672,7 +3698,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4824,6 +4850,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":9
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":9,
@@ -5079,28 +5139,58 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
-   "currentTier":5,
+   "currentRarity":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
     "currentTier":1
+   },
+   "stats":{}
+  },
+  "triplezero":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5418,7 +5508,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5729,7 +5819,7 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":12,
    "skill":[
     {
@@ -5985,6 +6075,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "moffgideons3":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "jedimastermacewindu":{
    "currentRarity":7,
@@ -6312,7 +6410,7 @@
     },
     {
      "id":"uniqueskill_CAPITALMONCALAMARICRUISER01",
-     "tier":2
+     "tier":6
     }
    ]
   },
@@ -8297,7 +8395,7 @@
    "stats":{}
   },
   "tuskenchieftain":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {

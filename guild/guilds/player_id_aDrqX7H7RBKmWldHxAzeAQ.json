@@ -2,10 +2,10 @@
  "allyCode":"953522714",
  "requirements":{
   "jabba":{
-   "total_score":53.83
+   "total_score":57.17
   },
   "gg":{
-   "total_score":83.6
+   "total_score":67.2
   },
   "gas":{
    "total_score":85.4
@@ -17,28 +17,28 @@
    "total_score":0.0
   },
   "geos":{
-   "total_score":86.5
+   "total_score":80.5
   },
   "drevan":{
-   "total_score":26.8
+   "total_score":25.8
   },
   "amidala":{
    "total_score":0.0
   },
   "gungans":{
-   "total_score":14.6
+   "total_score":11.2
   },
   "leia":{
-   "total_score":19.0
+   "total_score":16.6
   },
   "slkr":{
-   "total_score":45.57
+   "total_score":46.14
   },
   "beq_raid":{
-   "total_score":44.5
+   "total_score":45.0
   }
  },
- "modsRating":7.778393,
+ "modsRating":8.140612,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -737,7 +737,7 @@
     },
     {
      "id":"specialskill_C3POCHEWBACCA02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_C3POCHEWBACCA",
@@ -2578,19 +2578,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3609,7 +3609,7 @@
    "stats":{}
   },
   "outrider":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -3958,23 +3958,23 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -4616,6 +4616,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "moffgideons3":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "jedimastermacewindu":{
    "currentRarity":7,

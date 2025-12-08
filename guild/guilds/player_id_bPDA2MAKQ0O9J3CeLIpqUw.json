@@ -2,43 +2,43 @@
  "allyCode":"729314153",
  "requirements":{
   "jabba":{
-   "total_score":87.33
+   "total_score":88.33
   },
   "gg":{
-   "total_score":88.4
+   "total_score":74.4
   },
   "gas":{
-   "total_score":80.2
+   "total_score":80.0
   },
   "inqs":{
    "total_score":72.8
   },
   "reva":{
-   "total_score":92.0
+   "total_score":91.8
   },
   "geos":{
-   "total_score":90.0
+   "total_score":83.5
   },
   "drevan":{
-   "total_score":86.4
+   "total_score":82.8
   },
   "amidala":{
-   "total_score":23.0
+   "total_score":22.67
   },
   "gungans":{
-   "total_score":94.0
+   "total_score":92.8
   },
   "leia":{
-   "total_score":99.4
+   "total_score":97.8
   },
   "slkr":{
-   "total_score":89.71
+   "total_score":88.57
   },
   "beq_raid":{
-   "total_score":45.5
+   "total_score":46.0
   }
  },
- "modsRating":16.044487,
+ "modsRating":16.072908,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -532,11 +532,33 @@
   },
   "cerejunda":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"leaderskill_CEREJUNDA",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_CEREJUNDA01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_CEREJUNDA",
+     "tier":1
+    },
+    {
+     "id":"specialskill_CEREJUNDA02",
+     "tier":1
+    },
+    {
+     "id":"specialskill_CEREJUNDA01",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "generalkenobi":{
    "currentRarity":7,
@@ -1476,7 +1498,7 @@
   },
   "merrin":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MERRIN",
@@ -1492,6 +1514,10 @@
     },
     {
      "id":"uniqueskill_MERRIN02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MERRIN01",
      "tier":5
     }
    ],
@@ -2704,7 +2730,7 @@
    "stats":{}
   },
   "disguisedclonetrooper":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -2725,7 +2751,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3023,11 +3049,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4080,7 +4106,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4464,11 +4490,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4476,11 +4502,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6634,11 +6664,12 @@
   },
   "tarfful":{
    "currentRarity":5,
-   "currentTier":1,
+   "currentTier":4,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "jarjarbinks":{
    "currentRarity":7,

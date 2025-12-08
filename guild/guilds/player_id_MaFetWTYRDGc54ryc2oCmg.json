@@ -2,10 +2,10 @@
  "allyCode":"787361569",
  "requirements":{
   "jabba":{
-   "total_score":92.83
+   "total_score":93.83
   },
   "gg":{
-   "total_score":91.8
+   "total_score":86.2
   },
   "gas":{
    "total_score":90.2
@@ -14,31 +14,31 @@
    "total_score":73.2
   },
   "reva":{
-   "total_score":96.0
+   "total_score":95.8
   },
   "geos":{
-   "total_score":88.5
+   "total_score":82.0
   },
   "drevan":{
-   "total_score":101.8
+   "total_score":100.4
   },
   "amidala":{
    "total_score":105.0
   },
   "gungans":{
-   "total_score":98.2
+   "total_score":95.8
   },
   "leia":{
-   "total_score":99.0
+   "total_score":97.4
   },
   "slkr":{
-   "total_score":96.86
+   "total_score":94.0
   },
   "beq_raid":{
-   "total_score":87.5
+   "total_score":88.0
   }
  },
- "modsRating":91.38469,
+ "modsRating":91.419299,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_IG86SENTINELDROID01",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3604,27 +3604,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5296,7 +5296,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -6476,7 +6476,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -6992,7 +6992,7 @@
   },
   "t3_m4":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_t3_m4",
@@ -7008,15 +7008,15 @@
     },
     {
      "id":"uniqueskill_t3_m4_01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_t3_m4_02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -9426,7 +9426,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },

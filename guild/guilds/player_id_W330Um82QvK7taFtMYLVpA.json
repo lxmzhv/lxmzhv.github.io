@@ -2,10 +2,10 @@
  "allyCode":"465538342",
  "requirements":{
   "jabba":{
-   "total_score":61.33
+   "total_score":62.17
   },
   "gg":{
-   "total_score":81.6
+   "total_score":73.2
   },
   "gas":{
    "total_score":60.8
@@ -17,28 +17,28 @@
    "total_score":86.8
   },
   "geos":{
-   "total_score":81.0
+   "total_score":75.0
   },
   "drevan":{
-   "total_score":83.0
+   "total_score":81.2
   },
   "amidala":{
    "total_score":76.67
   },
   "gungans":{
-   "total_score":92.0
+   "total_score":91.4
   },
   "leia":{
-   "total_score":53.0
+   "total_score":54.8
   },
   "slkr":{
-   "total_score":72.86
+   "total_score":73.29
   },
   "beq_raid":{
-   "total_score":34.5
+   "total_score":37.5
   }
  },
- "modsRating":8.718318,
+ "modsRating":8.729827,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -1283,6 +1283,14 @@
    "currentRarity":7,
    "currentTier":1,
    "skill":[]
+  },
+  "qira":{
+   "currentRarity":6,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "poe":{
    "currentRarity":6,
@@ -2831,15 +2839,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3479,6 +3487,36 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "marrok":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MARROK",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MARROK01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARROK01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_MARROK02",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_INQUISITOR01_MARROK",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5598,12 +5636,34 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_SHINHATI",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SHINHATI01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SHINHATI02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_SHINHATI01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_SHINHATI02",
+     "tier":1
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "juhani":{
    "currentRarity":7,

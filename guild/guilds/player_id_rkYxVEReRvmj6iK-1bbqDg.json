@@ -2,22 +2,22 @@
  "allyCode":"762638536",
  "requirements":{
   "jabba":{
-   "total_score":85.67
+   "total_score":85.5
   },
   "gg":{
-   "total_score":81.2
+   "total_score":75.6
   },
   "gas":{
-   "total_score":81.8
+   "total_score":82.2
   },
   "inqs":{
    "total_score":69.4
   },
   "reva":{
-   "total_score":88.6
+   "total_score":88.4
   },
   "geos":{
-   "total_score":95.0
+   "total_score":89.0
   },
   "drevan":{
    "total_score":97.8
@@ -26,19 +26,19 @@
    "total_score":93.0
   },
   "gungans":{
-   "total_score":95.0
+   "total_score":95.2
   },
   "leia":{
-   "total_score":110.2
+   "total_score":107.6
   },
   "slkr":{
-   "total_score":96.0
+   "total_score":93.86
   },
   "beq_raid":{
-   "total_score":87.5
+   "total_score":88.5
   }
  },
- "modsRating":50.209094,
+ "modsRating":50.177195,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1134,7 +1134,7 @@
     },
     {
      "id":"uniqueskill_kiadimundi01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_kiadimundi",
@@ -3412,27 +3412,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -5085,24 +5085,24 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":6,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -5194,7 +5194,7 @@
   },
   "bobafettscion":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BOBAFETTSCION",
@@ -6198,7 +6198,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },

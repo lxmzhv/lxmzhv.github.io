@@ -2,40 +2,40 @@
  "allyCode":"454825615",
  "requirements":{
   "jabba":{
-   "total_score":32.5
+   "total_score":25.83
   },
   "gg":{
-   "total_score":61.4
+   "total_score":54.8
   },
   "gas":{
-   "total_score":43.0
+   "total_score":41.0
   },
   "inqs":{
    "total_score":67.4
   },
   "reva":{
-   "total_score":75.8
+   "total_score":76.0
   },
   "geos":{
-   "total_score":95.0
+   "total_score":90.0
   },
   "drevan":{
-   "total_score":49.4
+   "total_score":46.4
   },
   "amidala":{
    "total_score":25.0
   },
   "gungans":{
-   "total_score":65.4
+   "total_score":67.8
   },
   "leia":{
-   "total_score":32.6
+   "total_score":27.2
   },
   "slkr":{
-   "total_score":27.86
+   "total_score":25.0
   },
   "beq_raid":{
-   "total_score":7.5
+   "total_score":6.5
   }
  },
  "modsRating":6.35792,
@@ -2306,7 +2306,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3230,7 +3230,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3246,11 +3246,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4587,7 +4587,7 @@
    "stats":{}
   },
   "deathtrooperperidea":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":11,
    "skill":[
     {
@@ -4792,11 +4792,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4804,11 +4804,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -7486,7 +7490,7 @@
   },
   "generalsyndulla":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"basicskill_GENERALSYNDULLA",

@@ -2,13 +2,13 @@
  "allyCode":"712993541",
  "requirements":{
   "jabba":{
-   "total_score":87.17
+   "total_score":87.83
   },
   "gg":{
-   "total_score":80.2
+   "total_score":75.6
   },
   "gas":{
-   "total_score":87.4
+   "total_score":87.2
   },
   "inqs":{
    "total_score":66.4
@@ -17,28 +17,28 @@
    "total_score":92.6
   },
   "geos":{
-   "total_score":70.5
+   "total_score":63.5
   },
   "drevan":{
-   "total_score":96.6
+   "total_score":95.6
   },
   "amidala":{
    "total_score":100.67
   },
   "gungans":{
-   "total_score":88.8
+   "total_score":90.6
   },
   "leia":{
-   "total_score":94.6
+   "total_score":94.0
   },
   "slkr":{
-   "total_score":101.86
+   "total_score":101.14
   },
   "beq_raid":{
-   "total_score":94.5
+   "total_score":95.0
   }
  },
- "modsRating":71.222195,
+ "modsRating":71.223454,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -7058,7 +7058,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -10071,6 +10071,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":2
    },
    "stats":{}
   },

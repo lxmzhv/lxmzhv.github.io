@@ -2,13 +2,13 @@
  "allyCode":"983266236",
  "requirements":{
   "jabba":{
-   "total_score":83.0
+   "total_score":85.0
   },
   "gg":{
-   "total_score":54.8
+   "total_score":48.4
   },
   "gas":{
-   "total_score":83.8
+   "total_score":82.6
   },
   "inqs":{
    "total_score":79.0
@@ -17,22 +17,22 @@
    "total_score":94.4
   },
   "geos":{
-   "total_score":88.0
+   "total_score":83.0
   },
   "drevan":{
-   "total_score":89.0
+   "total_score":88.2
   },
   "amidala":{
-   "total_score":75.67
+   "total_score":75.33
   },
   "gungans":{
-   "total_score":21.2
+   "total_score":16.2
   },
   "leia":{
-   "total_score":67.8
+   "total_score":68.0
   },
   "slkr":{
-   "total_score":89.57
+   "total_score":87.57
   },
   "beq_raid":{
    "total_score":92.0
@@ -860,10 +860,31 @@
   },
   "50rt":{
    "currentRarity":7,
-   "currentTier":8,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_50RT01",
+     "tier":3
+    },
+    {
+     "id":"specialskill_50RT02",
+     "tier":3
+    },
+    {
+     "id":"leaderskill_50RT",
+     "tier":3
+    },
+    {
+     "id":"basicskill_50RT",
+     "tier":3
+    },
+    {
+     "id":"uniqueskill_50RT01",
+     "tier":3
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3355,11 +3376,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4299,10 +4320,27 @@
   },
   "huyang":{
    "currentRarity":4,
-   "currentTier":4,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_HUYANG02",
+     "tier":2
+    },
+    {
+     "id":"specialskill_HUYANG01",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_HUYANG01",
+     "tier":2
+    },
+    {
+     "id":"basicskill_HUYANG",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4856,7 +4894,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4864,11 +4902,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{

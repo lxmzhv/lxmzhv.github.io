@@ -2,43 +2,43 @@
  "allyCode":"347647463",
  "requirements":{
   "jabba":{
-   "total_score":81.67
+   "total_score":80.83
   },
   "gg":{
-   "total_score":87.0
+   "total_score":80.0
   },
   "gas":{
-   "total_score":83.4
+   "total_score":83.8
   },
   "inqs":{
-   "total_score":44.8
+   "total_score":6.8
   },
   "reva":{
-   "total_score":52.6
+   "total_score":53.0
   },
   "geos":{
-   "total_score":83.0
+   "total_score":76.5
   },
   "drevan":{
-   "total_score":71.2
+   "total_score":69.6
   },
   "amidala":{
    "total_score":25.33
   },
   "gungans":{
-   "total_score":25.6
+   "total_score":19.2
   },
   "leia":{
-   "total_score":73.0
+   "total_score":70.6
   },
   "slkr":{
-   "total_score":91.57
+   "total_score":89.71
   },
   "beq_raid":{
-   "total_score":44.0
+   "total_score":45.0
   }
  },
- "modsRating":15.712438,
+ "modsRating":15.799555,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2152,6 +2152,19 @@
    },
    "stats":{}
   },
+  "queenamidala":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_QUEENAMIDALA01",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "chiefchirpa":{
    "currentRarity":7,
    "currentTier":12,
@@ -2642,7 +2655,7 @@
    "skill":[
     {
      "id":"basicskill_GENERALSKYWALKER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GENERALSKYWALKER01",
@@ -2658,7 +2671,7 @@
     },
     {
      "id":"leaderskill_GENERALSKYWALKER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GENERALSKYWALKER02",
@@ -3251,7 +3264,7 @@
    ]
   },
   "captainenoch":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":10,
    "skill":[
     {
@@ -4919,7 +4932,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4927,7 +4940,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -5254,7 +5267,7 @@
    "skill":[
     {
      "id":"uniqueskill_BWINGREBEL01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_BWINGREBEL01",
@@ -5678,7 +5691,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9046,7 +9059,7 @@
     },
     {
      "id":"basicskill_HYENABOMBER",
-     "tier":5
+     "tier":6
     }
    ]
   },
@@ -9614,7 +9627,7 @@
   },
   "darthbane":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_DARTHBANE01",
@@ -9638,7 +9651,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
