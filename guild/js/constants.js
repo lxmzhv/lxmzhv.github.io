@@ -272,11 +272,11 @@ export const REQ_TEAM_UNIT_COLOR_THRESHOLDS = {
     "admiralraddus": {
         red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity
     },
-    "jabbathehutt": { red: 5, orange: 7, yellow: 9, green: Infinity },
-    "embo": { red: 5, orange: 7, yellow: 9, green: Infinity },
-    "krrsantan": { red: 5, orange: 7, yellow: 9, green: Infinity },
-    "boushh": { red: 3, orange: 5, yellow: 8, green: Infinity },
-    "undercoverlando": { red: 1, orange: 3, yellow: 5, lightgreen: 7, green: Infinity }
+    "jabbathehutt": { red: 1, orange: 5, yellow: 7, lightgreen: 9, green: Infinity },
+    "embo": { red: 1, orange: 5, yellow: 7, lightgreen: 9, green: Infinity },
+    "krrsantan": { red: 1, orange: 5, yellow: 7, lightgreen: 9, green: Infinity },
+    "boushh": { red: 1, orange: 5, yellow: 7, lightgreen: 9, green: Infinity },
+    "undercoverlando": { red: 1, orange: 5, yellow: 7, lightgreen: 9, green: Infinity },
 };
 
 export const GUILD_FILES = [
