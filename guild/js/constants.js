@@ -10,7 +10,7 @@ export const ASSAULT_CHARACTERS = [
 
 export const UNIT_NAME_MAP = {
     "administratorlando": "Lando Calrissian",
-    "admiralraddus": "Raddus"
+    "admiralraddus": "Raddus",
     "ahsokatanosjedistarfighter": "Ahsoka's Starfighter",
     "amilynholdo": "Holdo",
     "anakinseta2starfighter": "Anakin's Starfighter",
