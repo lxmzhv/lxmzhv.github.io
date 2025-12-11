@@ -38,7 +38,7 @@
    "total_score":93.0
   }
  },
- "modsRating":82.942261,
+ "modsRating":83.716572,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -4605,7 +4605,7 @@
    "stats":{}
   },
   "kix":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -4626,7 +4626,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4936,6 +4936,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":11,
@@ -5219,7 +5253,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -9765,7 +9799,7 @@
   },
   "kuiil":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KUIIL",
@@ -9773,19 +9807,19 @@
     },
     {
      "id":"specialskill_KUIIL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_KUIIL02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KUIIL01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -10143,6 +10177,36 @@
    },
    "stats":{}
   },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":10
+   },
+   "stats":{}
+  },
   "shaakti":{
    "currentRarity":7,
    "currentTier":13,
@@ -10201,11 +10265,11 @@
   },
   "ig11":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_IG1101",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_IG1102",
@@ -10221,7 +10285,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   }

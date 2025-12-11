@@ -192,7 +192,7 @@
    "skill":[
     {
      "id":"basicskill_LUTHENRAEL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_LUTHENRAEL01",
@@ -3289,19 +3289,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3421,7 +3421,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4284,8 +4284,8 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":5,
-   "currentTier":8,
+   "currentRarity":6,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4305,7 +4305,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4822,24 +4822,24 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":5,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"contractskill_IG90",
@@ -5466,8 +5466,8 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":5,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MORGANELSBETH",
@@ -5487,7 +5487,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -6508,7 +6508,7 @@
    ]
   },
   "omegas3":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -6692,7 +6692,7 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -9556,6 +9556,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

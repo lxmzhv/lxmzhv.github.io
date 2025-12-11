@@ -38,7 +38,7 @@
    "total_score":80.5
   }
  },
- "modsRating":19.297253,
+ "modsRating":19.343549,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3341,7 +3341,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -3544,7 +3544,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4906,6 +4906,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":11,
+   "skill":[
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":7,
@@ -5202,7 +5236,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5708,7 +5742,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

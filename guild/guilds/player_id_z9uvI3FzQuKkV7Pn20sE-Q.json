@@ -2694,7 +2694,7 @@
   },
   "fulcrumahsoka":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_FULCRUMAHSOKA01",
@@ -3276,7 +3276,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3292,11 +3292,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4285,8 +4285,8 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":6,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4306,7 +4306,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4827,8 +4827,8 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":5,
-   "currentTier":5,
+   "currentRarity":6,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4836,7 +4836,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4844,7 +4844,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -7885,7 +7885,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHOPPERS301",
@@ -7905,7 +7905,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },

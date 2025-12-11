@@ -38,7 +38,7 @@
    "total_score":77.5
   }
  },
- "modsRating":11.812339,
+ "modsRating":11.813402,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2222,6 +2222,18 @@
     {
      "id":"specialskill_COMMANDERAHSOKA02",
      "tier":5
+    },
+    {
+     "id":"basicskill_COMMANDERAHSOKA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_COMMANDERAHSOKA01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_COMMANDERAHSOKA01",
+     "tier":5
     }
    ],
    "relic":{
@@ -3228,11 +3240,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4208,7 +4220,7 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4228,7 +4240,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4776,7 +4788,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5124,19 +5136,19 @@
    "skill":[
     {
      "id":"basicskill_BWINGREBEL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BWINGREBEL01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"uniqueskill_BWINGREBEL01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_BWINGREBEL02",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_BWINGREBEL",
@@ -7557,7 +7569,7 @@
     },
     {
      "id":"specialskill_CAPITALCHIMAERA01",
-     "tier":1
+     "tier":3
     }
    ]
   },
@@ -9405,7 +9417,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },

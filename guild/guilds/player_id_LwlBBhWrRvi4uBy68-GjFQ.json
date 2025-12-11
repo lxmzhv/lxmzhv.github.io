@@ -8,7 +8,7 @@
    "total_score":79.4
   },
   "gas":{
-   "total_score":90.2
+   "total_score":90.8
   },
   "inqs":{
    "total_score":80.6
@@ -26,7 +26,7 @@
    "total_score":94.67
   },
   "gungans":{
-   "total_score":82.4
+   "total_score":84.8
   },
   "leia":{
    "total_score":98.0
@@ -38,7 +38,7 @@
    "total_score":92.0
   }
  },
- "modsRating":35.750878,
+ "modsRating":35.788074,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -814,7 +814,7 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_K2SO01",
@@ -830,11 +830,11 @@
     },
     {
      "id":"uniqueskill_K2SO02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1933,7 +1933,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1953,7 +1953,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2405,7 +2405,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3598,7 +3598,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3614,11 +3614,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5290,7 +5290,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5298,11 +5298,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6276,7 +6280,7 @@
   },
   "moffgideons1":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MOFFGIDEONS1",
@@ -6300,7 +6304,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -7770,7 +7774,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":8
    },
    "stats":{}
   },

@@ -11,10 +11,10 @@
    "total_score":93.4
   },
   "inqs":{
-   "total_score":70.0
+   "total_score":66.6
   },
   "reva":{
-   "total_score":96.8
+   "total_score":92.2
   },
   "geos":{
    "total_score":71.5
@@ -35,10 +35,10 @@
    "total_score":94.14
   },
   "beq_raid":{
-   "total_score":91.5
+   "total_score":86.0
   }
  },
- "modsRating":90.706516,
+ "modsRating":91.470013,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -942,7 +942,7 @@
   },
   "ig86sentineldroid":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG86SENTINELDROID",
@@ -958,7 +958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1917,8 +1917,8 @@
    ]
   },
   "stap":{
-   "currentRarity":5,
-   "currentTier":11,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1938,7 +1938,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3250,6 +3250,10 @@
     {
      "id":"uniqueskill_DISGUISEDCLONETROOPER02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_DISGUISEDCLONETROOPER01",
+     "tier":5
     }
    ],
    "relic":{
@@ -3561,7 +3565,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -5139,7 +5143,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5236,7 +5240,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -9356,7 +9360,7 @@
     },
     {
      "id":"uniqueskill_UNDERCOVERLANDO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

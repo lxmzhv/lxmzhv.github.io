@@ -14,7 +14,7 @@
    "total_score":49.2
   },
   "reva":{
-   "total_score":64.2
+   "total_score":64.6
   },
   "geos":{
    "total_score":79.0
@@ -38,7 +38,7 @@
    "total_score":37.5
   }
  },
- "modsRating":8.899799,
+ "modsRating":8.945424,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -320,7 +320,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -2416,7 +2416,7 @@
     },
     {
      "id":"specialskill_CAPITALRADDUS01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPITALRADDUS02",
@@ -2430,7 +2430,7 @@
   },
   "bensolo":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"basicskill_BENSOLO",
@@ -3364,15 +3364,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -6267,7 +6267,7 @@
     },
     {
      "id":"uniqueskill_XWINGRED301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_XWINGRED301",
@@ -8401,7 +8401,7 @@
    ]
   },
   "sithbomber":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -8444,7 +8444,7 @@
     },
     {
      "id":"uniqueskill_GLREY01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_GALACTICLEGEND01",
@@ -8452,7 +8452,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":11
    },
    "stats":{}
   },

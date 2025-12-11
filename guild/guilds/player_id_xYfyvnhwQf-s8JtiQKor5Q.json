@@ -23,7 +23,7 @@
    "total_score":82.4
   },
   "amidala":{
-   "total_score":75.33
+   "total_score":76.67
   },
   "gungans":{
    "total_score":1.6
@@ -38,7 +38,7 @@
    "total_score":42.0
   }
  },
- "modsRating":17.784565,
+ "modsRating":17.950303,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -111,6 +111,14 @@
     "currentTier":7
    },
    "stats":{}
+  },
+  "zuckuss":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "zebs3":{
    "currentRarity":7,
@@ -1359,7 +1367,7 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -1964,7 +1972,7 @@
    "skill":[
     {
      "id":"uniqueskill_QUEENAMIDALA01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"leaderskill_QUEENAMIDALA",
@@ -2923,6 +2931,14 @@
    },
    "stats":{}
   },
+  "4lom":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "capitalleviathan":{
    "currentRarity":4,
    "currentTier":1,
@@ -3280,6 +3296,14 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "brutus":{
+   "currentRarity":4,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "emperorpalpatine":{
    "currentRarity":7,
@@ -3641,7 +3665,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -4057,8 +4081,16 @@
     "currentTier":1
    }
   },
+  "kix":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -4587,7 +4619,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4595,7 +4627,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4603,7 +4635,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -4775,7 +4807,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4905,7 +4937,7 @@
   },
   "hondo":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HONDO",
@@ -4929,7 +4961,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5044,6 +5076,14 @@
      "tier":6
     }
    ]
+  },
+  "captainsilvo":{
+   "currentRarity":3,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "themandalorianbeskararmor":{
    "currentRarity":7,
@@ -5624,8 +5664,8 @@
    "stats":{}
   },
   "sanastarros":{
-   "currentRarity":4,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_SANASTARROS01",
@@ -5649,7 +5689,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -7186,7 +7226,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7393,7 +7433,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":3,
    "skill":[
     {
@@ -7500,7 +7540,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7875,7 +7915,7 @@
    }
   },
   "masterquigon":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -8432,7 +8472,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },

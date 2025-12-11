@@ -38,7 +38,7 @@
    "total_score":89.5
   }
  },
- "modsRating":34.33312,
+ "modsRating":34.65844,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2636,7 +2636,7 @@
   },
   "greatmothers":{
    "currentRarity":5,
-   "currentTier":2,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_GREATMOTHERS",
@@ -3560,11 +3560,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5206,7 +5206,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5214,11 +5214,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5300,7 +5304,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5452,7 +5456,7 @@
   },
   "darktrooper":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DARKTROOPER",
@@ -5472,7 +5476,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9831,7 +9835,7 @@
    "stats":{}
   },
   "vane":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {

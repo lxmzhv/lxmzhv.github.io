@@ -11,10 +11,10 @@
    "total_score":87.8
   },
   "inqs":{
-   "total_score":80.8
+   "total_score":80.4
   },
   "reva":{
-   "total_score":94.0
+   "total_score":93.8
   },
   "geos":{
    "total_score":83.0
@@ -32,13 +32,13 @@
    "total_score":93.0
   },
   "slkr":{
-   "total_score":86.43
+   "total_score":90.0
   },
   "beq_raid":{
    "total_score":93.5
   }
  },
- "modsRating":41.450908,
+ "modsRating":42.116482,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -720,11 +720,29 @@
   },
   "l3_37":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_l3_37_01",
+     "tier":2
+    },
+    {
+     "id":"basicskill_l3_37",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_l3_37_01",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_l3_37_02",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "droideka":{
    "currentRarity":7,
@@ -2853,6 +2871,40 @@
    },
    "stats":{}
   },
+  "baylanskoll":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_BAYLANSKOLL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BAYLANSKOLL02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_BAYLANSKOLL",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BAYLANSKOLL02",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "admiralackbar":{
    "currentRarity":7,
    "currentTier":13,
@@ -4305,7 +4357,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5086,24 +5138,24 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":5,
-   "currentTier":7,
+   "currentRarity":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"contractskill_IG90",
@@ -5757,7 +5809,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

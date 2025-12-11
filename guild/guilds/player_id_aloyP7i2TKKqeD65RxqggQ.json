@@ -2,7 +2,7 @@
  "allyCode":"461393311",
  "requirements":{
   "jabba":{
-   "total_score":84.33
+   "total_score":88.67
   },
   "gg":{
    "total_score":90.8
@@ -26,7 +26,7 @@
    "total_score":100.0
   },
   "gungans":{
-   "total_score":24.2
+   "total_score":35.2
   },
   "leia":{
    "total_score":99.2
@@ -38,7 +38,7 @@
    "total_score":95.5
   }
  },
- "modsRating":70.707617,
+ "modsRating":71.434031,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -261,7 +261,7 @@
    ]
   },
   "ravensclaw":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -3127,15 +3127,15 @@
     },
     {
      "id":"uniqueskill_GHOST01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GHOST02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GHOST03",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_GHOST01",
@@ -3525,27 +3525,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5204,23 +5204,23 @@
   },
   "ig90":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"contractskill_IG90",
@@ -5665,7 +5665,28 @@
   "uwingscarif":{
    "currentRarity":7,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"basicskill_UWINGSCARIF",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_UWINGSCARIF01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_UWINGSCARIF01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_UWINGSCARIF02",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_UWINGSCARIF01",
+     "tier":1
+    }
+   ]
   },
   "captainsilvo":{
    "currentRarity":7,
@@ -6425,7 +6446,7 @@
   },
   "bossnass":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BOSSNASS",
@@ -6449,7 +6470,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -6673,7 +6694,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -9365,7 +9386,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

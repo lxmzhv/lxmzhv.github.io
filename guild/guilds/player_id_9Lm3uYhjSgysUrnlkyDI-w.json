@@ -2,43 +2,43 @@
  "allyCode":"354238257",
  "requirements":{
   "jabba":{
-   "total_score":75.0
+   "total_score":75.33
   },
   "gg":{
-   "total_score":62.0
+   "total_score":61.2
   },
   "gas":{
-   "total_score":69.6
+   "total_score":70.0
   },
   "inqs":{
-   "total_score":60.8
+   "total_score":58.6
   },
   "reva":{
-   "total_score":81.2
+   "total_score":79.6
   },
   "geos":{
    "total_score":83.0
   },
   "drevan":{
-   "total_score":71.8
+   "total_score":81.0
   },
   "amidala":{
-   "total_score":17.0
+   "total_score":35.33
   },
   "gungans":{
-   "total_score":88.2
+   "total_score":89.2
   },
   "leia":{
-   "total_score":41.4
+   "total_score":42.4
   },
   "slkr":{
-   "total_score":77.57
+   "total_score":76.14
   },
   "beq_raid":{
-   "total_score":39.5
+   "total_score":37.5
   }
  },
- "modsRating":6.692993,
+ "modsRating":6.085992,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2190,6 +2190,36 @@
    },
    "stats":{}
   },
+  "queenamidala":{
+   "currentRarity":7,
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"basicskill_QUEENAMIDALA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_QUEENAMIDALA01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_QUEENAMIDALA02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_QUEENAMIDALA",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_QUEENAMIDALA01",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "chiefchirpa":{
    "currentRarity":7,
    "currentTier":12,
@@ -3360,7 +3390,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4927,7 +4957,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -6304,6 +6334,32 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "furyclassinterceptor":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"specialskill_FURYCLASSINTERCEPTOR01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_FURYCLASSINTERCEPTOR",
+     "tier":6
+    },
+    {
+     "id":"specialskill_FURYCLASSINTERCEPTOR02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_FURYCLASSINTERCEPTOR01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_FURYCLASSINTERCEPTOR",
+     "tier":1
+    }
+   ]
   },
   "badbatchecho":{
    "currentRarity":7,
@@ -8270,6 +8326,32 @@
    },
    "stats":{}
   },
+  "trench":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_TRENCH",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TRENCH01",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_TRENCH",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_TRENCH01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "wicket":{
    "currentRarity":7,
    "currentTier":12,
@@ -8458,7 +8540,7 @@
   },
   "masterquigon":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MASTERQUIGON",
@@ -8478,7 +8560,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8940,7 +9022,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8960,7 +9042,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -9165,6 +9247,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "darthmalgus":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_DARTHMALGUS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHMALGUS01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARTHMALGUS02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_DARTHMALGUS",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DARTHMALGUS01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },

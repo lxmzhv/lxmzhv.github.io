@@ -2,13 +2,13 @@
  "allyCode":"435795126",
  "requirements":{
   "jabba":{
-   "total_score":76.5
+   "total_score":77.0
   },
   "gg":{
    "total_score":59.8
   },
   "gas":{
-   "total_score":73.2
+   "total_score":73.4
   },
   "inqs":{
    "total_score":77.4
@@ -23,7 +23,7 @@
    "total_score":94.2
   },
   "amidala":{
-   "total_score":90.0
+   "total_score":90.33
   },
   "gungans":{
    "total_score":81.6
@@ -38,7 +38,7 @@
    "total_score":41.5
   }
  },
- "modsRating":24.381177,
+ "modsRating":24.955441,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -3016,7 +3016,7 @@
    ]
   },
   "captainenoch":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -3119,19 +3119,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3897,6 +3897,36 @@
     "currentTier":1
    }
   },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_EZRAEXILE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EZRAEXILE01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_EZRAEXILE02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_EZRAEXILE02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "bazemalbus":{
    "currentRarity":6,
    "currentTier":8,
@@ -4023,7 +4053,7 @@
   },
   "huyang":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4043,7 +4073,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4551,7 +4581,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4718,7 +4748,7 @@
    ]
   },
   "operative":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -5333,7 +5363,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -6105,7 +6135,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8267,7 +8297,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },

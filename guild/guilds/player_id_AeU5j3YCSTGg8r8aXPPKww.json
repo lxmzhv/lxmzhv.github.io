@@ -38,7 +38,7 @@
    "total_score":86.5
   }
  },
- "modsRating":23.271707,
+ "modsRating":23.240168,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -797,12 +797,34 @@
    }
   },
   "50rt":{
-   "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_50RT01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_50RT02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_50RT",
+     "tier":4
+    },
+    {
+     "id":"basicskill_50RT",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_50RT01",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "badbatchhunter":{
    "currentRarity":7,
@@ -2079,7 +2101,7 @@
    "stats":{}
   },
   "padawansabine":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":10,
    "skill":[
     {
@@ -3100,7 +3122,7 @@
     },
     {
      "id":"uniqueskill_QUIGGOLD01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_QUIGGOLD01",
@@ -3112,7 +3134,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3294,7 +3316,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4279,7 +4301,7 @@
   },
   "kix":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KIX",
@@ -4299,7 +4321,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4841,7 +4863,7 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
@@ -4849,7 +4871,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
@@ -9398,7 +9420,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

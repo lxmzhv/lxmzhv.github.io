@@ -2,7 +2,7 @@
  "allyCode":"632314717",
  "requirements":{
   "jabba":{
-   "total_score":37.83
+   "total_score":47.33
   },
   "gg":{
    "total_score":76.8
@@ -841,6 +841,40 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "krrsantan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_KRRSANTAN02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_KRRSANTAN01",
+     "tier":6
+    },
+    {
+     "id":"contractskill_KRRSANTAN01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_KRRSANTAN",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_KRRSANTAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_KRRSANTAN01",
+     "tier":4
+    }
+   ],
+   "relic":{
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3387,11 +3421,29 @@
   },
   "huyang":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_HUYANG02",
+     "tier":2
+    },
+    {
+     "id":"specialskill_HUYANG01",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_HUYANG01",
+     "tier":2
+    },
+    {
+     "id":"basicskill_HUYANG",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "commanderlukeskywalker":{
    "currentRarity":7,
@@ -3484,8 +3536,8 @@
    ]
   },
   "depabillaba":{
-   "currentRarity":5,
-   "currentTier":10,
+   "currentRarity":6,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_DEPABILLABA01",
@@ -3842,7 +3894,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -3850,7 +3902,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",

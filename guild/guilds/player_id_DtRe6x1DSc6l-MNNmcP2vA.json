@@ -38,7 +38,7 @@
    "total_score":87.0
   }
  },
- "modsRating":10.60253,
+ "modsRating":10.933056,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -172,6 +172,14 @@
    },
    "stats":{}
   },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "barrissoffee":{
    "currentRarity":7,
    "currentTier":13,
@@ -298,7 +306,7 @@
     },
     {
      "id":"uniqueskill_THIRDSISTER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_INQUISITOR01_THIRDSISTER",
@@ -2954,7 +2962,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2970,11 +2978,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3135,7 +3143,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -3939,7 +3947,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4315,7 +4323,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4336,6 +4344,32 @@
    ],
    "relic":{
     "currentTier":1
+   },
+   "stats":{}
+  },
+  "triplezero":{
+   "currentRarity":4,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":2
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":2
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":2
+    }
+   ],
+   "relic":{
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4637,8 +4671,29 @@
   },
   "hondo":{
    "currentRarity":2,
-   "currentTier":7,
-   "skill":[],
+   "currentTier":8,
+   "skill":[
+    {
+     "id":"basicskill_HONDO",
+     "tier":6
+    },
+    {
+     "id":"specialskill_HONDO01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_HONDO02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_HONDO01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_HONDO02",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
    },
@@ -4762,7 +4817,7 @@
   },
   "ithano":{
    "currentRarity":5,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_ITHANO",
@@ -5783,11 +5838,32 @@
    "stats":{}
   },
   "shinhati":{
-   "currentRarity":3,
-   "currentTier":8,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_SHINHATI01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_SHINHATI02",
+     "tier":1
+    },
+    {
+     "id":"basicskill_SHINHATI",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SHINHATI01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SHINHATI02",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -7798,7 +7874,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8300,7 +8376,7 @@
     },
     {
      "id":"uniqueskill_DARTHBANE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{

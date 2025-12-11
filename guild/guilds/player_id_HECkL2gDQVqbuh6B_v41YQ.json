@@ -35,10 +35,10 @@
    "total_score":73.57
   },
   "beq_raid":{
-   "total_score":1.0
+   "total_score":30.0
   }
  },
- "modsRating":6.73992,
+ "modsRating":6.824444,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2715,7 +2715,7 @@
   },
   "monmothma":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[],
    "relic":{
     "currentTier":1
@@ -2891,12 +2891,34 @@
    }
   },
   "kelleranbeq":{
-   "currentRarity":2,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_KELLERANBEQ02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_KELLERANBEQ01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_KELLERANBEQ",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_KELLERANBEQ",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_KELLERANBEQ01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "geonosiansoldier":{
    "currentRarity":7,
@@ -3719,12 +3741,30 @@
    }
   },
   "triplezero":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":4,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":2
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":2
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "fosithtrooper":{
    "currentRarity":7,
@@ -3762,7 +3802,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -3770,7 +3810,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -7380,10 +7420,31 @@
   },
   "darthbane":{
    "currentRarity":7,
-   "currentTier":11,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_DARTHBANE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHBANE01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHBANE02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_DARTHBANE",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARTHBANE01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":10
    },
    "stats":{}
   },

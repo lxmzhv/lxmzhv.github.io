@@ -23,7 +23,7 @@
    "total_score":102.2
   },
   "amidala":{
-   "total_score":95.0
+   "total_score":100.33
   },
   "gungans":{
    "total_score":98.6
@@ -32,13 +32,13 @@
    "total_score":99.6
   },
   "slkr":{
-   "total_score":100.29
+   "total_score":101.14
   },
   "beq_raid":{
-   "total_score":90.5
+   "total_score":92.0
   }
  },
- "modsRating":99.851167,
+ "modsRating":101.821348,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3608,15 +3608,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -5282,8 +5282,8 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":6,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"contractskill_IG90",
@@ -5295,7 +5295,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5303,7 +5303,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     }
    ],
    "relic":{
@@ -9977,7 +9977,7 @@
   },
   "jediknightguardian":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTGUARDIAN",
@@ -9993,7 +9993,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },

@@ -38,7 +38,7 @@
    "total_score":103.0
   }
  },
- "modsRating":39.364684,
+ "modsRating":39.854952,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -128,7 +128,7 @@
   },
   "zuckuss":{
    "currentRarity":5,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"uniqueskill_ZUCKUSS01",
@@ -3277,7 +3277,7 @@
    ]
   },
   "quiggold":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -3303,7 +3303,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":12,
    "skill":[
     {
@@ -3506,7 +3506,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3522,11 +3522,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4921,8 +4921,8 @@
    "stats":{}
   },
   "armorer":{
-   "currentRarity":5,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_ARMORER01",
@@ -4946,7 +4946,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5164,7 +5164,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5172,7 +5172,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5180,7 +5180,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"contractskill_IG90",
@@ -9318,7 +9318,7 @@
    "skill":[
     {
      "id":"uniqueskill_UNDERCOVERLANDO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_UNDERCOVERLANDO02",

@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":106.873419,
+ "modsRating":108.21506,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2270,11 +2270,37 @@
   },
   "glahsokatano":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLAHSOKATANO01",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLAHSOKATANO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLAHSOKATANO02",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLAHSOKATANO01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_GLAHSOKATANO",
+     "tier":1
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":11
+   },
+   "stats":{}
   },
   "chiefchirpa":{
    "currentRarity":7,
@@ -2320,7 +2346,7 @@
     },
     {
      "id":"uniqueskill_PADAWANSABINE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4580,7 +4606,7 @@
    "skill":[
     {
      "id":"uniqueskill_HUYANG01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HUYANG02",
@@ -4588,7 +4614,7 @@
     },
     {
      "id":"specialskill_HUYANG01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_HUYANG",
@@ -5176,7 +5202,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -8265,7 +8291,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -8274,11 +8300,11 @@
     },
     {
      "id":"uniqueskill_GENERALSYNDULLA01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_GENERALSYNDULLA02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_GENERALSYNDULLA01",

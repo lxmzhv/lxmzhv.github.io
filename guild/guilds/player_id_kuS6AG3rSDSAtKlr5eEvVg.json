@@ -2,7 +2,7 @@
  "allyCode":"518792574",
  "requirements":{
   "jabba":{
-   "total_score":80.67
+   "total_score":80.0
   },
   "gg":{
    "total_score":80.2
@@ -23,13 +23,13 @@
    "total_score":95.4
   },
   "amidala":{
-   "total_score":92.67
+   "total_score":91.67
   },
   "gungans":{
-   "total_score":90.8
+   "total_score":90.0
   },
   "leia":{
-   "total_score":100.0
+   "total_score":96.6
   },
   "slkr":{
    "total_score":92.71
@@ -38,7 +38,7 @@
    "total_score":96.0
   }
  },
- "modsRating":54.245899,
+ "modsRating":54.137379,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,8 +127,8 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
-   "currentTier":12,
+   "currentRarity":4,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
@@ -148,7 +148,7 @@
     },
     {
      "id":"uniqueskill_ZUCKUSS01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"contractskill_zuckuss",
@@ -156,7 +156,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3039,7 +3039,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -3381,7 +3381,7 @@
     },
     {
      "id":"uniqueskill_4LOM01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"contractskill_4LOM",
@@ -4961,7 +4961,7 @@
   },
   "younglando":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_YOUNGLANDO",
@@ -4981,7 +4981,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -10289,7 +10289,7 @@
   },
   "ig11":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG11",
@@ -10309,7 +10309,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   }

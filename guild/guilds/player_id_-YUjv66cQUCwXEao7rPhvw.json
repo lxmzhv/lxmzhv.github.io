@@ -38,7 +38,7 @@
    "total_score":83.0
   }
  },
- "modsRating":26.464637,
+ "modsRating":26.499329,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2382,7 +2382,7 @@
   },
   "visasmarr":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_VISASMARR",
@@ -2402,7 +2402,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3502,19 +3502,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":6,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -5160,7 +5160,7 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"contractskill_IG90",
@@ -5168,19 +5168,19 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     }
    ],
    "relic":{
@@ -5262,7 +5262,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -8287,7 +8287,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -9386,7 +9386,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":8
    },
    "stats":{}
   },

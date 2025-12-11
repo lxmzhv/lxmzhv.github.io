@@ -38,7 +38,7 @@
    "total_score":92.5
   }
  },
- "modsRating":45.431408,
+ "modsRating":45.53572,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":12,
    "skill":[
     {
@@ -1992,7 +1992,7 @@
   },
   "scarifrebel":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_SCARIFREBEL01",
@@ -2008,7 +2008,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5266,7 +5266,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5274,11 +5274,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5768,7 +5772,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

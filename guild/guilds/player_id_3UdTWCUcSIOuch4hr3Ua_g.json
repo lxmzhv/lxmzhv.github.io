@@ -23,7 +23,7 @@
    "total_score":90.6
   },
   "amidala":{
-   "total_score":0.0
+   "total_score":19.33
   },
   "gungans":{
    "total_score":7.8
@@ -5304,12 +5304,30 @@
    ]
   },
   "padawanobiwan":{
-   "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_PADAWANOBIWAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PADAWANOBIWAN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_PADAWANOBIWAN01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PADAWANOBIWAN02",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "fennecshand":{
    "currentRarity":7,
@@ -7059,7 +7077,7 @@
    "stats":{}
   },
   "masterquigon":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[],
    "relic":{

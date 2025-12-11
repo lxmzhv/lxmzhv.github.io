@@ -8,7 +8,7 @@
    "total_score":60.6
   },
   "gas":{
-   "total_score":21.2
+   "total_score":29.4
   },
   "inqs":{
    "total_score":75.8
@@ -261,7 +261,7 @@
    ]
   },
   "ravensclaw":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[
     {
@@ -814,11 +814,29 @@
   },
   "badbatchhunter":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"basicskill_BADBATCHHUNTER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BADBATCHHUNTER01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BADBATCHHUNTER02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_BADBATCHHUNTER",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "ig86sentineldroid":{
    "currentRarity":7,
@@ -1689,7 +1707,7 @@
   },
   "scarifrebel":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":10,
    "skill":[
     {
      "id":"specialskill_SCARIFREBEL01",
@@ -2346,6 +2364,36 @@
      "tier":1
     }
    ]
+  },
+  "generalskywalker":{
+   "currentRarity":5,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_GENERALSKYWALKER",
+     "tier":5
+    },
+    {
+     "id":"specialskill_GENERALSKYWALKER01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_GENERALSKYWALKER02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_GENERALSKYWALKER01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_GENERALSKYWALKER02",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
   },
   "nightsisterspirit":{
    "currentRarity":7,
@@ -3129,11 +3177,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4020,7 +4068,7 @@
   },
   "huyang":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4040,7 +4088,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4442,11 +4490,29 @@
   },
   "badbatchwrecker":{
    "currentRarity":6,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":6,
+   "skill":[
+    {
+     "id":"basicskill_BADBATCHWRECKER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BADBATCHWRECKER01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BADBATCHWRECKER02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BADBATCHWRECKER01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "themandalorian":{
    "currentRarity":7,
@@ -4544,7 +4610,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4552,11 +4618,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4971,7 +5041,28 @@
   "uwingscarif":{
    "currentRarity":7,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"specialskill_UWINGSCARIF01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_UWINGSCARIF01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_UWINGSCARIF",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_UWINGSCARIF02",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_UWINGSCARIF01",
+     "tier":1
+    }
+   ]
   },
   "captainsilvo":{
    "currentRarity":3,
@@ -5325,7 +5416,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5794,6 +5885,28 @@
    "relic":{
     "currentTier":1
    }
+  },
+  "ywingclonewars":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"basicskill_YWINGCLONEWARS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_YWINGCLONEWARS01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_YWINGCLONEWARS01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_YWINGCLONEWARS",
+     "tier":0
+    }
+   ]
   },
   "xwingred3":{
    "currentRarity":7,
@@ -7268,7 +7381,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {
@@ -7383,7 +7496,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7881,23 +7994,23 @@
   },
   "badbatchtech":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"basicskill_BADBATCHTECH",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_BADBATCHTECH01",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_BADBATCHTECH02",
-     "tier":3
+     "tier":6
     },
     {
      "id":"uniqueskill_BADBATCHTECH01",
-     "tier":3
+     "tier":5
     }
    ],
    "relic":{

@@ -8,7 +8,7 @@
    "total_score":70.6
   },
   "gas":{
-   "total_score":82.0
+   "total_score":82.4
   },
   "inqs":{
    "total_score":88.6
@@ -26,7 +26,7 @@
    "total_score":78.33
   },
   "gungans":{
-   "total_score":26.0
+   "total_score":35.6
   },
   "leia":{
    "total_score":66.4
@@ -38,7 +38,7 @@
    "total_score":43.5
   }
  },
- "modsRating":15.851407,
+ "modsRating":16.082321,
  "roster":{
   "magmatrooper":{
    "currentRarity":2,
@@ -594,28 +594,28 @@
    "stats":{}
   },
   "captaintarpals":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINTARPALS",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINTARPALS01",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINTARPALS02",
-     "tier":3
+     "tier":6
     },
     {
      "id":"uniqueskill_CAPTAINTARPALS01",
-     "tier":3
+     "tier":4
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1347,7 +1347,7 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -1367,7 +1367,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2589,7 +2589,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2945,7 +2945,7 @@
   },
   "appo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_APPO01",
@@ -2965,7 +2965,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3061,7 +3061,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":5,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3591,11 +3591,11 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5313,7 +5313,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },

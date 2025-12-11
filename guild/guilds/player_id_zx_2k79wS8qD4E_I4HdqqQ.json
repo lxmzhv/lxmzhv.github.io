@@ -2,7 +2,7 @@
  "allyCode":"416883696",
  "requirements":{
   "jabba":{
-   "total_score":95.5
+   "total_score":96.33
   },
   "gg":{
    "total_score":107.4
@@ -38,7 +38,7 @@
    "total_score":95.5
   }
  },
- "modsRating":127.964268,
+ "modsRating":128.103517,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3289,6 +3289,10 @@
     {
      "id":"uniqueskill_DISGUISEDCLONETROOPER02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_DISGUISEDCLONETROOPER01",
+     "tier":6
     }
    ],
    "relic":{
@@ -3600,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":12,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -6348,7 +6352,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -8586,7 +8590,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -9530,7 +9534,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -9986,7 +9990,7 @@
   },
   "jediknightguardian":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTGUARDIAN",
@@ -10002,7 +10006,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },

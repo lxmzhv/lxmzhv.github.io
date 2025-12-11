@@ -8,7 +8,7 @@
    "total_score":63.4
   },
   "gas":{
-   "total_score":59.6
+   "total_score":63.2
   },
   "inqs":{
    "total_score":4.8
@@ -38,7 +38,7 @@
    "total_score":42.0
   }
  },
- "modsRating":9.903136,
+ "modsRating":9.912798,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1433,7 +1433,7 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":10,
    "skill":[
     {
@@ -2449,8 +2449,8 @@
    "stats":{}
   },
   "greatmothers":{
-   "currentRarity":6,
-   "currentTier":9,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_GREATMOTHERS",
@@ -2470,7 +2470,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -2630,7 +2630,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3142,7 +3142,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -3257,7 +3257,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3319,7 +3319,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4287,11 +4287,11 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_HUYANG01",
@@ -4307,7 +4307,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4873,7 +4873,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -5737,7 +5737,7 @@
     },
     {
      "id":"basicskill_emperorsshuttle",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_emperorsshuttle01",
@@ -5853,7 +5853,7 @@
     },
     {
      "id":"specialskill_JEDIKNIGHTCAL02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_JEDIKNIGHTCAL03",
@@ -6848,7 +6848,7 @@
   },
   "herasyndullas3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HERASYNDULLAS3",
@@ -6868,7 +6868,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7627,7 +7627,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -7956,7 +7956,7 @@
   },
   "arctrooper501st":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_ARCTROOPER501ST01",
@@ -7969,6 +7969,32 @@
     {
      "id":"specialskill_ARCTROOPER501ST01",
      "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":3
+   },
+   "stats":{}
+  },
+  "trench":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_TRENCH",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TRENCH01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_TRENCH",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_TRENCH01",
+     "tier":4
     }
    ],
    "relic":{
@@ -8384,7 +8410,7 @@
     },
     {
      "id":"hardwareskill_GAUNTLETSTARFIGHTER01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_GAUNTLETSTARFIGHTER01",
@@ -8646,7 +8672,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -8666,7 +8692,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

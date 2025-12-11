@@ -38,7 +38,7 @@
    "total_score":92.5
   }
  },
- "modsRating":49.162336,
+ "modsRating":49.431877,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1564,7 +1564,7 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -1584,7 +1584,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3401,7 +3401,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4272,7 +4272,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4980,7 +4980,7 @@
     },
     {
      "id":"specialskill_GLHONDO02",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_GLHONDO",
@@ -4996,7 +4996,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5256,16 +5256,33 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":9,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5767,7 +5784,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINSILVO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

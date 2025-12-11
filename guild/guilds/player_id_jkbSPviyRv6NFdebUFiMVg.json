@@ -8,7 +8,7 @@
    "total_score":73.0
   },
   "gas":{
-   "total_score":78.2
+   "total_score":78.4
   },
   "inqs":{
    "total_score":81.2
@@ -32,13 +32,13 @@
    "total_score":90.6
   },
   "slkr":{
-   "total_score":88.0
+   "total_score":88.71
   },
   "beq_raid":{
    "total_score":88.5
   }
  },
- "modsRating":21.544916,
+ "modsRating":21.63706,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1564,19 +1564,23 @@
   },
   "bt1":{
    "currentRarity":7,
-   "currentTier":4,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BT1",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_BT101",
-     "tier":0
+     "tier":6
     },
     {
      "id":"uniqueskill_BT101",
-     "tier":0
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_BT102",
+     "tier":6
     }
    ],
    "relic":{
@@ -2294,7 +2298,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":4
    },
    "stats":{}
   },
@@ -2974,7 +2978,7 @@
   },
   "scorch":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SCORCH",
@@ -2994,7 +2998,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3289,7 +3293,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -3466,27 +3470,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4274,7 +4278,7 @@
   },
   "marrok":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARROK",
@@ -4298,7 +4302,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4510,11 +4514,11 @@
     },
     {
      "id":"specialskill_KIX02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KIX01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -4544,7 +4548,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5141,23 +5145,23 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"contractskill_IG90",
@@ -6047,7 +6051,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6082,7 +6086,7 @@
    "stats":{}
   },
   "emperorsshuttle":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[
     {
@@ -6229,7 +6233,7 @@
   },
   "jediknightcal":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTCAL",

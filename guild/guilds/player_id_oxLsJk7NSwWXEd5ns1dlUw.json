@@ -14,7 +14,7 @@
    "total_score":0.0
   },
   "reva":{
-   "total_score":6.0
+   "total_score":7.8
   },
   "geos":{
    "total_score":82.5
@@ -29,7 +29,7 @@
    "total_score":16.4
   },
   "leia":{
-   "total_score":64.6
+   "total_score":65.4
   },
   "slkr":{
    "total_score":87.14
@@ -38,7 +38,7 @@
    "total_score":84.0
   }
  },
- "modsRating":31.083298,
+ "modsRating":31.247938,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1491,7 +1491,7 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -1820,7 +1820,7 @@
     },
     {
      "id":"basicskill_SITHSUPREMACYCLASS",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_SITHSUPREMACYCLASS01",
@@ -2896,7 +2896,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3086,7 +3086,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -3264,7 +3264,7 @@
     },
     {
      "id":"specialskill_APPO02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_APPO01",
@@ -3338,15 +3338,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4116,7 +4116,7 @@
   },
   "marrok":{
    "currentRarity":6,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"uniqueskill_MARROK01",
@@ -4176,7 +4176,7 @@
   },
   "ezraexile":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_EZRAEXILE",
@@ -4318,19 +4318,19 @@
    "skill":[
     {
      "id":"leaderskill_CLONEWARSCHEWBACCA",
-     "tier":3
+     "tier":5
     },
     {
      "id":"specialskill_CLONEWARSCHEWBACCA01",
-     "tier":3
+     "tier":5
     },
     {
      "id":"specialskill_CLONEWARSCHEWBACCA02",
-     "tier":3
+     "tier":5
     },
     {
      "id":"basicskill_CLONEWARSCHEWBACCA",
-     "tier":3
+     "tier":5
     }
    ],
    "relic":{
@@ -4365,7 +4365,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -4907,7 +4907,7 @@
    }
   },
   "triplezero":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":8,
    "skill":[
     {
@@ -5858,11 +5858,11 @@
     },
     {
      "id":"leaderskill_ZAMWESELL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZAMWESELL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZAMWESELL02",
@@ -6270,7 +6270,7 @@
    ]
   },
   "imagundi":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -6409,7 +6409,7 @@
    "skill":[
     {
      "id":"specialskill_CAPITALSTARDESTROYER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPITALSTARDESTROYER03",
@@ -7774,7 +7774,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":9,
    "skill":[
     {
@@ -8811,7 +8811,7 @@
     },
     {
      "id":"hardwareskill_TIEREAPER01",
-     "tier":0
+     "tier":1
     }
    ]
   },
@@ -8885,7 +8885,7 @@
     },
     {
      "id":"hardwareskill_JEDISTARFIGHTERCONSULAR01",
-     "tier":0
+     "tier":1
     }
    ]
   },
@@ -9128,12 +9128,38 @@
    "stats":{}
   },
   "aurra_sing":{
-   "currentRarity":2,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_AURRA_SING02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_AURRA_SING01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_AURRA_SING",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_AURRA_SING01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_AURRA_SING",
+     "tier":5
+    },
+    {
+     "id":"contractskill_AURRA_SING01",
+     "tier":1
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "jediknightguardian":{
    "currentRarity":7,

@@ -813,7 +813,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -1886,6 +1886,14 @@
     "currentTier":5
    },
    "stats":{}
+  },
+  "queenamidala":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "chiefchirpa":{
    "currentRarity":7,
@@ -2985,7 +2993,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3434,8 +3442,8 @@
    ]
   },
   "calkestis":{
-   "currentRarity":5,
-   "currentTier":10,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CALKESTIS",
@@ -3455,7 +3463,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4255,7 +4263,7 @@
   },
   "badbatchwrecker":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BADBATCHWRECKER",
@@ -5254,7 +5262,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":6
    },
    "stats":{}
   },

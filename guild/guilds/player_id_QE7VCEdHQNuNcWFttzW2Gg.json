@@ -20,13 +20,13 @@
    "total_score":78.0
   },
   "drevan":{
-   "total_score":96.6
+   "total_score":97.0
   },
   "amidala":{
    "total_score":91.33
   },
   "gungans":{
-   "total_score":92.6
+   "total_score":92.2
   },
   "leia":{
    "total_score":100.6
@@ -38,7 +38,7 @@
    "total_score":91.5
   }
  },
- "modsRating":51.624032,
+ "modsRating":51.755748,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -720,7 +720,7 @@
   },
   "l3_37":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_l3_37",
@@ -740,7 +740,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3401,7 +3401,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4976,7 +4976,7 @@
     },
     {
      "id":"specialskill_GLHONDO01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_GLHONDO02",
@@ -5296,23 +5296,23 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -7562,7 +7562,7 @@
   },
   "stormtrooperhan":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_STORMTROOPERHAN01",
@@ -7582,7 +7582,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -9950,7 +9950,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

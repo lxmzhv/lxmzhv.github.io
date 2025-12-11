@@ -20,10 +20,10 @@
    "total_score":60.5
   },
   "drevan":{
-   "total_score":44.8
+   "total_score":52.8
   },
   "amidala":{
-   "total_score":57.33
+   "total_score":62.0
   },
   "gungans":{
    "total_score":15.4
@@ -38,7 +38,7 @@
    "total_score":36.5
   }
  },
- "modsRating":14.125798,
+ "modsRating":14.162767,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -279,7 +279,7 @@
    "stats":{}
   },
   "capitalmalevolence":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[]
   },
@@ -337,7 +337,7 @@
   },
   "colonelstarck":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_COLONELSTARCK",
@@ -357,7 +357,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -831,23 +831,23 @@
   },
   "sithmarauder":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SITHMARAUDER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SITHMARAUDER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SITHMARAUDER01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1285,7 +1285,7 @@
   },
   "royalguard":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ROYALGUARD",
@@ -1301,7 +1301,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -2811,7 +2811,7 @@
   },
   "veers":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_VEERS",
@@ -2831,7 +2831,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -3040,15 +3040,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3584,7 +3584,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -4236,11 +4236,12 @@
   },
   "pazvizsla":{
    "currentRarity":5,
-   "currentTier":1,
+   "currentTier":7,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "younglando":{
    "currentRarity":7,
@@ -4334,11 +4335,11 @@
    "skill":[
     {
      "id":"specialskill_SMUGGLERHAN01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SMUGGLERHAN02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SMUGGLERHAN01",
@@ -4346,7 +4347,7 @@
     },
     {
      "id":"basicskill_SMUGGLERHAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4381,7 +4382,7 @@
    "stats":{}
   },
   "zoriibliss_v2":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":12,
    "skill":[
     {
@@ -4492,7 +4493,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4500,7 +4501,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -4599,7 +4600,7 @@
    }
   },
   "rogueoneship":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -5409,7 +5410,7 @@
   },
   "jediknightluke":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTLUKE",
@@ -5433,7 +5434,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5699,7 +5700,7 @@
   },
   "fennecshand":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_FENNECSHAND",
@@ -6197,11 +6198,33 @@
   },
   "directorkrennic":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_DIRECTORKRENNIC01",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_DIRECTORKRENNIC",
+     "tier":5
+    },
+    {
+     "id":"basicskill_DIRECTORKRENNIC",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DIRECTORKRENNIC01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DIRECTORKRENNIC02",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":7
+   },
+   "stats":{}
   },
   "tiefighterimperial":{
    "currentRarity":7,
@@ -7087,7 +7110,7 @@
     },
     {
      "id":"uniqueskill_CHEWBACCALEGENDARY01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_CHEWBACCALEGENDARY02",
@@ -7718,7 +7741,7 @@
   },
   "sithassassin":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[],
    "relic":{
     "currentTier":1
@@ -8415,7 +8438,7 @@
   },
   "ig12":{
    "currentRarity":6,
-   "currentTier":2,
+   "currentTier":8,
    "skill":[],
    "relic":{
     "currentTier":1

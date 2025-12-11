@@ -29,7 +29,7 @@
    "total_score":1.6
   },
   "leia":{
-   "total_score":52.0
+   "total_score":55.4
   },
   "slkr":{
    "total_score":88.14
@@ -38,7 +38,7 @@
    "total_score":41.5
   }
  },
- "modsRating":15.284688,
+ "modsRating":15.316919,
  "roster":{
   "magmatrooper":{
    "currentRarity":5,
@@ -152,7 +152,7 @@
    "stats":{}
   },
   "barrissoffee":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -2653,7 +2653,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -2669,11 +2669,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3388,11 +3388,11 @@
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3881,12 +3881,30 @@
    }
   },
   "triplezero":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":4,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "fosithtrooper":{
    "currentRarity":7,
@@ -3916,7 +3934,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5407,11 +5425,28 @@
    }
   },
   "princesskneesaa":{
-   "currentRarity":6,
-   "currentTier":4,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_PRINCESSKNEESAA",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PRINCESSKNEESAA01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_PRINCESSKNEESAA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PRINCESSKNEESAA02",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -6238,7 +6273,7 @@
    ]
   },
   "wreckers3":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[],
    "relic":{
@@ -6306,7 +6341,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":1,
    "skill":[],
    "relic":{

@@ -2,7 +2,7 @@
  "allyCode":"644419692",
  "requirements":{
   "jabba":{
-   "total_score":79.5
+   "total_score":80.0
   },
   "gg":{
    "total_score":80.2
@@ -23,13 +23,13 @@
    "total_score":97.2
   },
   "amidala":{
-   "total_score":81.67
+   "total_score":84.0
   },
   "gungans":{
    "total_score":12.8
   },
   "leia":{
-   "total_score":85.2
+   "total_score":86.4
   },
   "slkr":{
    "total_score":77.43
@@ -38,7 +38,7 @@
    "total_score":39.0
   }
  },
- "modsRating":17.660172,
+ "modsRating":17.799874,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1622,7 +1622,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -1967,6 +1967,40 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "glahsokatano":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLAHSOKATANO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLAHSOKATANO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLAHSOKATANO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLAHSOKATANO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLAHSOKATANO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2943,7 +2977,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -3115,12 +3149,34 @@
    "stats":{}
   },
   "darthtalon":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_DARTHTALON",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARTHTALON01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DARTHTALON02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARTHTALON02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHTALON01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "stormtrooperluke":{
    "currentRarity":3,
@@ -3876,19 +3932,27 @@
   },
   "dashrendar":{
    "currentRarity":7,
-   "currentTier":3,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_DASHRENDAR",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DASHRENDAR01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DASHRENDAR02",
-     "tier":1
+     "tier":6
+    },
+    {
+     "id":"leaderskill_DASHRENDAR",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DASHRENDAR",
+     "tier":5
     }
    ],
    "relic":{
@@ -3914,7 +3978,7 @@
     },
     {
      "id":"uniqueskill_CASSIANANDOR01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4632,15 +4696,15 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_IG90",
@@ -4856,7 +4920,7 @@
   },
   "darktrooper":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_DARKTROOPER01",
@@ -4876,7 +4940,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5012,7 +5076,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

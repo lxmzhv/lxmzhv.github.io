@@ -2,7 +2,7 @@
  "allyCode":"428538653",
  "requirements":{
   "jabba":{
-   "total_score":37.17
+   "total_score":38.33
   },
   "gg":{
    "total_score":76.4
@@ -38,7 +38,7 @@
    "total_score":90.0
   }
  },
- "modsRating":42.394173,
+ "modsRating":42.486134,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1114,7 +1114,7 @@
     },
     {
      "id":"uniqueskill_DENGAR01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_DENGAR",
@@ -3482,15 +3482,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3534,7 +3534,7 @@
   },
   "ig88":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG88",
@@ -3558,7 +3558,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5086,7 +5086,7 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -8047,7 +8047,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":9,
    "skill":[
     {
@@ -8214,7 +8214,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },

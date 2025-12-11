@@ -38,7 +38,7 @@
    "total_score":93.5
   }
  },
- "modsRating":32.222437,
+ "modsRating":32.247844,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2996,7 +2996,7 @@
    "skill":[
     {
      "id":"basicskill_SM33",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_SM3301",
@@ -3008,11 +3008,11 @@
     },
     {
      "id":"uniqueskill_SM3301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3540,15 +3540,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4594,7 +4594,7 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4614,7 +4614,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4928,7 +4928,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5176,27 +5176,27 @@
   },
   "triplezero":{
    "currentRarity":4,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
-     "tier":3
+     "tier":6
     },
     {
      "id":"specialskill_TRIPLEZERO01",
-     "tier":3
+     "tier":5
     },
     {
      "id":"uniqueskill_TRIPLEZERO01",
-     "tier":3
+     "tier":6
     },
     {
      "id":"uniqueskill_TRIPLEZERO02",
-     "tier":3
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5236,7 +5236,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5244,7 +5244,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",

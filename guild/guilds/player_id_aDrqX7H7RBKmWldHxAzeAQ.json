@@ -23,7 +23,7 @@
    "total_score":25.8
   },
   "amidala":{
-   "total_score":0.0
+   "total_score":19.33
   },
   "gungans":{
    "total_score":11.2
@@ -2500,11 +2500,11 @@
     },
     {
      "id":"specialskill_CAPTAINENOCH01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_CAPTAINENOCH",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4992,11 +4992,29 @@
   },
   "padawanobiwan":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_PADAWANOBIWAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PADAWANOBIWAN01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_PADAWANOBIWAN01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PADAWANOBIWAN02",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "eethkoth":{
    "currentRarity":7,
@@ -5917,7 +5935,7 @@
    }
   },
   "tiedagger":{
-   "currentRarity":2,
+   "currentRarity":3,
    "currentTier":1,
    "skill":[]
   },

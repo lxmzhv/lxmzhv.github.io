@@ -5,10 +5,10 @@
    "total_score":80.67
   },
   "gg":{
-   "total_score":63.8
+   "total_score":66.2
   },
   "gas":{
-   "total_score":87.0
+   "total_score":88.0
   },
   "inqs":{
    "total_score":24.2
@@ -23,7 +23,7 @@
    "total_score":76.6
   },
   "amidala":{
-   "total_score":0.0
+   "total_score":19.33
   },
   "gungans":{
    "total_score":78.8
@@ -32,13 +32,13 @@
    "total_score":92.2
   },
   "slkr":{
-   "total_score":89.71
+   "total_score":90.57
   },
   "beq_raid":{
    "total_score":93.0
   }
  },
- "modsRating":32.749588,
+ "modsRating":32.985989,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -720,7 +720,7 @@
   },
   "droideka":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DROIDEKA",
@@ -740,7 +740,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3151,7 +3151,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":9,
    "skill":[
     {
@@ -4826,7 +4826,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5654,7 +5654,7 @@
     },
     {
      "id":"uniqueskill_MOFFGIDEONS301",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -6243,12 +6243,30 @@
    ]
   },
   "padawanobiwan":{
-   "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_PADAWANOBIWAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PADAWANOBIWAN01",
+     "tier":4
+    },
+    {
+     "id":"specialskill_PADAWANOBIWAN01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PADAWANOBIWAN02",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "eethkoth":{
    "currentRarity":7,
@@ -6492,7 +6510,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8910,7 +8928,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

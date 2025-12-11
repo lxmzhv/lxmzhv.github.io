@@ -38,7 +38,7 @@
    "total_score":87.5
   }
  },
- "modsRating":29.377161,
+ "modsRating":29.424424,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1186,7 +1186,7 @@
     },
     {
      "id":"uniqueskill_kiadimundi01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -1533,8 +1533,8 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":6,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BT1",
@@ -3304,7 +3304,7 @@
   },
   "4lom":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_4LOM",
@@ -3480,27 +3480,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4504,7 +4504,7 @@
   },
   "huyang":{
    "currentRarity":5,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_HUYANG01",
@@ -4524,7 +4524,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5104,7 +5104,7 @@
   },
   "ig90":{
    "currentRarity":5,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -6281,8 +6281,8 @@
    "stats":{}
   },
   "tuskenhuntress":{
-   "currentRarity":3,
-   "currentTier":9,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_TUSKENHUNTRESS02",
@@ -6302,7 +6302,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -6444,7 +6444,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -9666,7 +9666,7 @@
   },
   "jediknightguardian":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_JEDIKNIGHTGUARDIAN01",
@@ -9682,7 +9682,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":6
    },
    "stats":{}
   },

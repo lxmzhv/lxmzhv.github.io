@@ -35,10 +35,10 @@
    "total_score":86.43
   },
   "beq_raid":{
-   "total_score":94.5
+   "total_score":92.5
   }
  },
- "modsRating":29.980723,
+ "modsRating":29.921389,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2284,7 +2284,7 @@
     },
     {
      "id":"uniqueskill_PADAWANSABINE01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3508,7 +3508,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -5108,11 +5108,29 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_TRIPLEZERO01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_TRIPLEZERO02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_TRIPLEZERO01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_TRIPLEZERO",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "ig90":{
    "currentRarity":3,
@@ -5456,7 +5474,7 @@
   },
   "hondo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HONDO",
@@ -5480,7 +5498,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":11
    },
    "stats":{}
   },
@@ -5777,8 +5795,8 @@
    "stats":{}
   },
   "morganelsbeth":{
-   "currentRarity":5,
-   "currentTier":9,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MORGANELSBETH",
@@ -5798,7 +5816,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -6996,7 +7014,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CHIRRUTIMWE02",
@@ -7020,7 +7038,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },

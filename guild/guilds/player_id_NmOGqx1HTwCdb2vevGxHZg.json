@@ -38,7 +38,7 @@
    "total_score":97.5
   }
  },
- "modsRating":57.51199,
+ "modsRating":57.455917,
  "roster":{
   "hermityoda":{
    "currentRarity":7,
@@ -1932,7 +1932,7 @@
   },
   "stap":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -1952,7 +1952,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3397,7 +3397,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":12,
    "skill":[
     {
@@ -3616,11 +3616,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3810,7 +3810,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4962,6 +4962,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":0
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":0
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":0
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":7,
    "currentTier":12,
@@ -5262,7 +5296,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5270,11 +5304,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -6469,8 +6507,8 @@
    "stats":{}
   },
   "tuskenhuntress":{
-   "currentRarity":3,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TUSKENHUNTRESS",
@@ -6490,7 +6528,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -9900,7 +9938,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

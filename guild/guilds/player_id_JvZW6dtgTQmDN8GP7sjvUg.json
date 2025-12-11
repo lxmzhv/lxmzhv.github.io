@@ -23,7 +23,7 @@
    "total_score":95.0
   },
   "amidala":{
-   "total_score":29.67
+   "total_score":40.33
   },
   "gungans":{
    "total_score":29.2
@@ -38,7 +38,7 @@
    "total_score":42.5
   }
  },
- "modsRating":12.184368,
+ "modsRating":12.311851,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,24 +127,24 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
      "id":"basicskill_ZUCKUSS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZUCKUSS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ZUCKUSS02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_ZUCKUSS",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_ZUCKUSS01",
@@ -152,7 +152,7 @@
     },
     {
      "id":"contractskill_zuckuss",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -2348,7 +2348,7 @@
   },
   "lukeskywalker":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_LUKESKYWALKER",
@@ -2536,7 +2536,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3436,11 +3436,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4218,7 +4218,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":6
    },
    "stats":{}
   },
@@ -4284,7 +4284,7 @@
   },
   "epixfinn":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_EPIXFINN",
@@ -4414,7 +4414,7 @@
   },
   "huyang":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_HUYANG02",
@@ -4434,7 +4434,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -5014,7 +5014,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -6050,7 +6050,7 @@
     },
     {
      "id":"uniqueskill_TARONMALICOS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TARONMALICOS02",
@@ -6148,7 +6148,7 @@
     },
     {
      "id":"specialskill_SANASTARROS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_SANASTARROS",
@@ -6504,7 +6504,7 @@
   },
   "padawanobiwan":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"uniqueskill_PADAWANOBIWAN01",
@@ -6882,7 +6882,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8520,7 +8520,7 @@
   },
   "masterquigon":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_MASTERQUIGON01",
@@ -8528,19 +8528,19 @@
     },
     {
      "id":"specialskill_MASTERQUIGON02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MASTERQUIGON01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_MASTERQUIGON",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },

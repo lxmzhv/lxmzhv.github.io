@@ -38,7 +38,7 @@
    "total_score":92.0
   }
  },
- "modsRating":43.39799,
+ "modsRating":43.585663,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2468,7 +2468,7 @@
   },
   "lukeskywalker":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_LUKESKYWALKER",
@@ -2476,7 +2476,7 @@
     },
     {
      "id":"leaderskill_LUKESKYWALKER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_LUKESKYWALKER01",
@@ -2484,11 +2484,11 @@
     },
     {
      "id":"uniqueskill_LUKESKYWALKER01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3608,15 +3608,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -5262,7 +5262,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5270,7 +5270,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5278,7 +5278,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -5364,7 +5364,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5748,7 +5748,7 @@
   },
   "captainsilvo":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_CAPTAINSILVO01",
@@ -5772,7 +5772,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -7178,7 +7178,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_CHIRRUTIMWE02",
@@ -7202,7 +7202,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -10310,7 +10310,7 @@
   },
   "ig11":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG11",
@@ -10330,7 +10330,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   }

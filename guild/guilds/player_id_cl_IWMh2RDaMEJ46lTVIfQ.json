@@ -2,10 +2,10 @@
  "allyCode":"678929358",
  "requirements":{
   "jabba":{
-   "total_score":42.83
+   "total_score":55.5
   },
   "gg":{
-   "total_score":70.8
+   "total_score":73.2
   },
   "gas":{
    "total_score":95.0
@@ -20,7 +20,7 @@
    "total_score":88.5
   },
   "drevan":{
-   "total_score":97.6
+   "total_score":100.2
   },
   "amidala":{
    "total_score":6.67
@@ -29,7 +29,7 @@
    "total_score":19.8
   },
   "leia":{
-   "total_score":83.2
+   "total_score":84.0
   },
   "slkr":{
    "total_score":87.71
@@ -38,7 +38,7 @@
    "total_score":15.5
   }
  },
- "modsRating":56.138194,
+ "modsRating":55.907635,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -709,7 +709,7 @@
   },
   "droideka":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DROIDEKA",
@@ -729,7 +729,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -972,12 +972,38 @@
    "stats":{}
   },
   "krrsantan":{
-   "currentRarity":5,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_KRRSANTAN02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_KRRSANTAN01",
+     "tier":6
+    },
+    {
+     "id":"contractskill_KRRSANTAN01",
+     "tier":1
+    },
+    {
+     "id":"basicskill_KRRSANTAN",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_KRRSANTAN",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_KRRSANTAN01",
+     "tier":4
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "batchers3":{
    "currentRarity":7,
@@ -4170,7 +4196,7 @@
     },
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4796,7 +4822,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -6873,7 +6899,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -7630,6 +7656,14 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "generalsyndulla":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "bodhirook":{
    "currentRarity":7,
@@ -8928,7 +8962,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

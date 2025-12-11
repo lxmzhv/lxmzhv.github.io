@@ -38,7 +38,7 @@
    "total_score":88.5
   }
  },
- "modsRating":50.177195,
+ "modsRating":50.143806,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1022,7 +1022,7 @@
     },
     {
      "id":"leaderskill_KRRSANTAN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -3354,6 +3354,40 @@
    },
    "stats":{}
   },
+  "jedimasterkenobi":{
+   "currentRarity":7,
+   "currentTier":11,
+   "skill":[
+    {
+     "id":"basicskill_JEDIMASTERKENOBI",
+     "tier":0
+    },
+    {
+     "id":"specialskill_JEDIMASTERKENOBI01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_JEDIMASTERKENOBI02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_JEDIMASTERKENOBI",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_JEDIMASTERKENOBI01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "pao":{
    "currentRarity":7,
    "currentTier":13,
@@ -5086,7 +5120,7 @@
   },
   "ig90":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -5098,11 +5132,11 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"contractskill_IG90",
@@ -7507,31 +7541,31 @@
   },
   "tarfful":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TARFFUL",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_TARFFUL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_TARFFUL02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_TARFFUL",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_TARFFUL01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8278,7 +8312,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },

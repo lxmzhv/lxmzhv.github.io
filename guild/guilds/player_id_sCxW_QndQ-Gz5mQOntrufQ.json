@@ -26,7 +26,7 @@
    "total_score":86.67
   },
   "gungans":{
-   "total_score":29.2
+   "total_score":29.4
   },
   "leia":{
    "total_score":88.6
@@ -1712,7 +1712,7 @@
   },
   "badbatchomega":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_BADBATCHOMEGA",
@@ -1936,7 +1936,7 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_STAP",
@@ -2544,7 +2544,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3604,27 +3604,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4294,7 +4294,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5274,7 +5274,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5282,7 +5282,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     }
    ],
    "relic":{

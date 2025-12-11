@@ -38,7 +38,7 @@
    "total_score":45.0
   }
  },
- "modsRating":19.821824,
+ "modsRating":19.868819,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -88,7 +88,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":8
    },
    "stats":{}
   },
@@ -534,7 +534,7 @@
   },
   "cerejunda":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CEREJUNDA",
@@ -550,7 +550,7 @@
     },
     {
      "id":"leaderskill_CEREJUNDA",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_CEREJUNDA01",
@@ -558,7 +558,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -1633,27 +1633,27 @@
   },
   "stap":{
    "currentRarity":5,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_STAP01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_STAP02",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_STAP01",
-     "tier":1
+     "tier":4
     },
     {
      "id":"basicskill_STAP",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -2973,7 +2973,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3409,7 +3409,7 @@
    "skill":[]
   },
   "calkestis":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -3430,7 +3430,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4370,7 +4370,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4378,7 +4378,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -6349,7 +6349,7 @@
    "stats":{}
   },
   "tarfful":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {

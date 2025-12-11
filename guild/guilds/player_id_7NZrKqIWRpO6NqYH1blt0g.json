@@ -38,7 +38,7 @@
    "total_score":96.0
   }
  },
- "modsRating":39.9829,
+ "modsRating":40.086143,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -754,7 +754,7 @@
   },
   "ewokscout":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EWOKSCOUT",
@@ -770,7 +770,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1873,8 +1873,8 @@
    "stats":{}
   },
   "stap":{
-   "currentRarity":4,
-   "currentTier":10,
+   "currentRarity":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_STAP01",
@@ -1894,7 +1894,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2507,12 +2507,30 @@
    "stats":{}
   },
   "greatmothers":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":5,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_GREATMOTHERS01",
+     "tier":3
+    },
+    {
+     "id":"basicskill_GREATMOTHERS",
+     "tier":3
+    },
+    {
+     "id":"leaderskill_GREATMOTHERS",
+     "tier":3
+    },
+    {
+     "id":"specialskill_GREATMOTHERS01",
+     "tier":3
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "houndstooth":{
    "currentRarity":7,
@@ -3398,7 +3416,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3414,11 +3432,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4048,7 +4066,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4376,7 +4394,7 @@
   },
   "huyang":{
    "currentRarity":4,
-   "currentTier":8,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_HUYANG",
@@ -4396,7 +4414,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4944,11 +4962,11 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
@@ -4956,7 +4974,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
@@ -5319,7 +5337,28 @@
   "bwingrebel":{
    "currentRarity":4,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"basicskill_BWINGREBEL",
+     "tier":6
+    },
+    {
+     "id":"specialskill_BWINGREBEL01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_BWINGREBEL01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_BWINGREBEL",
+     "tier":1
+    },
+    {
+     "id":"specialskill_BWINGREBEL02",
+     "tier":6
+    }
+   ]
   },
   "jabbathehutt":{
    "currentRarity":7,
@@ -5589,7 +5628,7 @@
   },
   "morganelsbeth":{
    "currentRarity":5,
-   "currentTier":7,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_MORGANELSBETH",
@@ -6072,12 +6111,34 @@
    "stats":{}
   },
   "sanastarros":{
-   "currentRarity":2,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":4,
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"leaderskill_SANASTARROS",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_SANASTARROS01",
+     "tier":2
+    },
+    {
+     "id":"specialskill_SANASTARROS02",
+     "tier":2
+    },
+    {
+     "id":"basicskill_SANASTARROS",
+     "tier":2
+    },
+    {
+     "id":"specialskill_SANASTARROS01",
+     "tier":2
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "tuskenhuntress":{
    "currentRarity":2,
@@ -6762,12 +6823,34 @@
    "stats":{}
   },
   "chirrutimwe":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_CHIRRUTIMWE02",
+     "tier":5
+    },
+    {
+     "id":"specialskill_CHIRRUTIMWE01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_CHIRRUTIMWE",
+     "tier":6
+    },
+    {
+     "id":"specialskill_CHIRRUTIMWE02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_CHIRRUTIMWE01",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "shinhati":{
    "currentRarity":3,
@@ -7853,7 +7936,7 @@
     },
     {
      "id":"uniqueskill_WRECKERS301",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{

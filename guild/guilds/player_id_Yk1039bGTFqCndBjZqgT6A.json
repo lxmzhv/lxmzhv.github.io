@@ -2,7 +2,7 @@
  "allyCode":"466423787",
  "requirements":{
   "jabba":{
-   "total_score":75.0
+   "total_score":75.17
   },
   "gg":{
    "total_score":69.8
@@ -23,7 +23,7 @@
    "total_score":96.0
   },
   "amidala":{
-   "total_score":83.33
+   "total_score":85.0
   },
   "gungans":{
    "total_score":86.6
@@ -38,7 +38,7 @@
    "total_score":91.0
   }
  },
- "modsRating":62.868255,
+ "modsRating":62.713859,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -662,7 +662,7 @@
     },
     {
      "id":"hardwareskill_MILLENNIUMFALCON01",
-     "tier":0
+     "tier":1
     }
    ]
   },
@@ -3567,7 +3567,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3640,6 +3640,10 @@
     {
      "id":"specialskill_MILLENNIUMFALCONPRISTINE02",
      "tier":1
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONPRISTINE01",
+     "tier":4
     }
    ]
   },
@@ -4521,11 +4525,11 @@
     },
     {
      "id":"specialskill_KIX02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KIX01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
@@ -5056,7 +5060,7 @@
    "stats":{}
   },
   "ugnaught":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":4,
    "skill":[
     {
@@ -5131,7 +5135,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -5660,7 +5664,7 @@
    "stats":{}
   },
   "coruscantunderworldpolice":{
-   "currentRarity":5,
+   "currentRarity":7,
    "currentTier":6,
    "skill":[
     {
@@ -6403,7 +6407,7 @@
     },
     {
      "id":"specialskill_CAPITALMONCALAMARICRUISER02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPITALMONCALAMARICRUISER01",
@@ -6411,7 +6415,7 @@
     },
     {
      "id":"basicskill_CAPITALMONCALAMARICRUISER",
-     "tier":0
+     "tier":6
     }
    ]
   },
@@ -6995,7 +6999,7 @@
   },
   "chirrutimwe":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHIRRUTIMWE",
@@ -7019,7 +7023,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7935,19 +7939,19 @@
     },
     {
      "id":"basicskill_CAPITALJEDICRUISER",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_CAPITALJEDICRUISER01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_CAPITALJEDICRUISER02",
-     "tier":2
+     "tier":5
     },
     {
      "id":"uniqueskill_CAPITALJEDICRUISER01",
-     "tier":2
+     "tier":6
     }
    ]
   },
@@ -9311,19 +9315,23 @@
    "skill":[
     {
      "id":"specialskill_TIEREAPER01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_TIEREAPER02",
-     "tier":2
+     "tier":6
     },
     {
      "id":"basicskill_TIEREAPER",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_TIEREAPER01",
-     "tier":1
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_TIEREAPER01",
+     "tier":0
     }
    ]
   },
@@ -9425,7 +9433,7 @@
    "skill":[
     {
      "id":"specialskill_TIEDEFENDER01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"basicskill_TIEDEFENDER",
@@ -9433,11 +9441,11 @@
     },
     {
      "id":"uniqueskill_TIEDEFENDER01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TIEDEFENDER02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"hardwareskill_TIEDEFENDER",
@@ -9765,24 +9773,24 @@
    "stats":{}
   },
   "capitalprofundity":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
      "id":"basicskill_CAPITALPROFUNDITY",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY01",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY02",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_CAPITALPROFUNDITY03",
-     "tier":3
+     "tier":4
     },
     {
      "id":"uniqueskill_CAPITALPROFUNDITY01",

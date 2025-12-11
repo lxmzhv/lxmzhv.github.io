@@ -8,7 +8,7 @@
    "total_score":90.0
   },
   "gas":{
-   "total_score":87.8
+   "total_score":88.0
   },
   "inqs":{
    "total_score":65.6
@@ -38,7 +38,7 @@
    "total_score":89.5
   }
  },
- "modsRating":31.654825,
+ "modsRating":31.957525,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1878,7 +1878,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3536,7 +3536,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -4952,7 +4952,7 @@
   },
   "armorer":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ARMORER",
@@ -4976,7 +4976,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5168,7 +5168,7 @@
   },
   "triplezero":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TRIPLEZERO",
@@ -5188,13 +5188,13 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
   "ig90":{
-   "currentRarity":3,
-   "currentTier":5,
+   "currentRarity":4,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -8308,7 +8308,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -10083,6 +10083,36 @@
    ],
    "relic":{
     "currentTier":9
+   },
+   "stats":{}
+  },
+  "mazkanata":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MAZKANATA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":5
+    }
+   ],
+   "relic":{
+    "currentTier":4
    },
    "stats":{}
   },

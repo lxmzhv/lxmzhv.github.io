@@ -2,7 +2,7 @@
  "allyCode":"862272972",
  "requirements":{
   "jabba":{
-   "total_score":71.83
+   "total_score":71.33
   },
   "gg":{
    "total_score":75.4
@@ -38,7 +38,7 @@
    "total_score":47.5
   }
  },
- "modsRating":14.483892,
+ "modsRating":14.50533,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -2413,7 +2413,7 @@
   },
   "grandmasterluke":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_GRANDMASTERLUKE",
@@ -3364,8 +3364,8 @@
    "stats":{}
   },
   "darthtalon":{
-   "currentRarity":3,
-   "currentTier":8,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DARTHTALON",
@@ -3389,25 +3389,25 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4388,7 +4388,7 @@
    "stats":{}
   },
   "huyang":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -4957,7 +4957,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",

@@ -38,7 +38,7 @@
    "total_score":101.0
   }
  },
- "modsRating":34.813845,
+ "modsRating":34.912231,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -816,7 +816,7 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_K2SO",
@@ -836,7 +836,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1909,28 +1909,28 @@
    ]
   },
   "stap":{
-   "currentRarity":5,
-   "currentTier":10,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_STAP01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_STAP02",
-     "tier":1
+     "tier":6
     },
     {
      "id":"uniqueskill_STAP01",
-     "tier":1
+     "tier":5
     },
     {
      "id":"basicskill_STAP",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -2946,7 +2946,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5538,7 +5538,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6062,7 +6062,7 @@
     },
     {
      "id":"uniqueskill_ZAMWESELL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"contractskill_ZAMWESELL01",

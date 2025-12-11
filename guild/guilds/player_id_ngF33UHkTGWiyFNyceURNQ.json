@@ -20,10 +20,10 @@
    "total_score":81.0
   },
   "drevan":{
-   "total_score":71.4
+   "total_score":91.4
   },
   "amidala":{
-   "total_score":76.0
+   "total_score":75.33
   },
   "gungans":{
    "total_score":73.4
@@ -35,10 +35,10 @@
    "total_score":59.86
   },
   "beq_raid":{
-   "total_score":80.5
+   "total_score":82.0
   }
  },
- "modsRating":10.429787,
+ "modsRating":10.627371,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1187,7 +1187,7 @@
     },
     {
      "id":"uniqueskill_BOKATAN01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -1246,6 +1246,36 @@
      "tier":0
     }
    ]
+  },
+  "mandalorbokatan":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_MANDALORBOKATAN",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MANDALORBOKATAN01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_MANDALORBOKATAN02",
+     "tier":7
+    },
+    {
+     "id":"leaderskill_MANDALORBOKATAN",
+     "tier":7
+    },
+    {
+     "id":"uniqueskill_MANDALORBOKATAN01",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
   },
   "fifthbrother":{
    "currentRarity":7,
@@ -3651,7 +3681,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3946,12 +3976,34 @@
    "stats":{}
   },
   "marrok":{
-   "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_MARROK01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_INQUISITOR01_MARROK",
+     "tier":1
+    },
+    {
+     "id":"basicskill_MARROK",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_MARROK01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_MARROK02",
+     "tier":1
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "darthtraya":{
    "currentRarity":7,
@@ -4411,15 +4463,15 @@
     },
     {
      "id":"specialskill_PAZVIZSLA02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_PAZVIZSLA01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4699,7 +4751,7 @@
     },
     {
      "id":"leaderskill_IG90",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_IG9001",
@@ -5155,11 +5207,11 @@
     },
     {
      "id":"leaderskill_THEMANDALORIANBESKARARMOR",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_THEMANDALORIANBESKARARMOR01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -5965,6 +6017,32 @@
     "currentTier":9
    },
    "stats":{}
+  },
+  "furyclassinterceptor":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"hardwareskill_FURYCLASSINTERCEPTOR",
+     "tier":1
+    },
+    {
+     "id":"specialskill_FURYCLASSINTERCEPTOR01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_FURYCLASSINTERCEPTOR",
+     "tier":5
+    },
+    {
+     "id":"specialskill_FURYCLASSINTERCEPTOR02",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_FURYCLASSINTERCEPTOR01",
+     "tier":6
+    }
+   ]
   },
   "badbatchecho":{
    "currentRarity":7,
@@ -7222,7 +7300,7 @@
     },
     {
      "id":"uniqueskill_TIEDAGGER01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"hardwareskill_TIEDAGGER",
@@ -8389,7 +8467,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8839,6 +8917,36 @@
    },
    "stats":{}
   },
+  "darthmalgus":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_DARTHMALGUS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHMALGUS01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHMALGUS02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_DARTHMALGUS",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARTHMALGUS01",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":11
+   },
+   "stats":{}
+  },
   "kuiil":{
    "currentRarity":7,
    "currentTier":10,
@@ -9211,11 +9319,11 @@
     },
     {
      "id":"uniqueskill_IG1201",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },

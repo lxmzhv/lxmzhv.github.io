@@ -38,7 +38,7 @@
    "total_score":88.5
   }
  },
- "modsRating":18.263576,
+ "modsRating":18.258284,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3445,28 +3445,32 @@
    "stats":{}
   },
   "darthtalon":{
-   "currentRarity":4,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_DARTHTALON01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_DARTHTALON",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_DARTHTALON02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_DARTHTALON01",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARTHTALON02",
      "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5134,7 +5138,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5142,11 +5146,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5632,7 +5640,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":9
    },
    "stats":{}
   },
@@ -8432,7 +8440,7 @@
   },
   "marajade":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MARAJADE",
@@ -8452,7 +8460,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

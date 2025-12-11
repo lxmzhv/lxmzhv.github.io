@@ -26,7 +26,7 @@
    "total_score":25.0
   },
   "gungans":{
-   "total_score":15.0
+   "total_score":15.2
   },
   "leia":{
    "total_score":18.4
@@ -733,19 +733,19 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":5,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_K2SO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_K2SO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_K2SO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_K2SO02",
@@ -753,7 +753,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -1112,7 +1112,7 @@
    ]
   },
   "gunganphalanx":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":4,
    "skill":[
     {
@@ -2337,7 +2337,7 @@
   },
   "kitfisto":{
    "currentRarity":7,
-   "currentTier":6,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_KITFISTO",
@@ -2357,7 +2357,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -2717,7 +2717,7 @@
   },
   "scorch":{
    "currentRarity":5,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SCORCH",
@@ -2737,7 +2737,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3205,27 +3205,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3601,7 +3601,7 @@
     },
     {
      "id":"leaderskill_GRANDMOFFTARKIN",
-     "tier":6
+     "tier":7
     },
     {
      "id":"uniqueskill_GRANDMOFFTARKIN01",
@@ -3609,7 +3609,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -4663,11 +4663,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4675,11 +4675,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5103,7 +5107,7 @@
   },
   "themandalorianbeskararmor":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":11,
    "skill":[
     {
      "id":"basicskill_THEMANDALORIANBESKARARMOR",
@@ -5696,7 +5700,7 @@
    "stats":{}
   },
   "bossnass":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":7,
    "skill":[
     {
@@ -7410,7 +7414,7 @@
    "stats":{}
   },
   "boomadier":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":5,
    "skill":[
     {

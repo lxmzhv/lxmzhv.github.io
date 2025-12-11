@@ -38,7 +38,7 @@
    "total_score":88.0
   }
  },
- "modsRating":45.532839,
+ "modsRating":45.565211,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,7 +127,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -3006,7 +3006,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -3546,11 +3546,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3740,7 +3740,7 @@
     }
    ],
    "relic":{
-    "currentTier":10
+    "currentTier":11
    },
    "stats":{}
   },
@@ -4926,11 +4926,33 @@
   },
   "armorer":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"leaderskill_ARMORER",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_ARMORER01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_ARMORER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ARMORER02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_ARMORER01",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":8
+   },
+   "stats":{}
   },
   "deathtrooperperidea":{
    "currentRarity":7,
@@ -5360,7 +5382,7 @@
   },
   "darktrooper":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DARKTROOPER",
@@ -5380,7 +5402,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -6044,7 +6066,7 @@
   },
   "moffgideons3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_MOFFGIDEONS3",
@@ -6068,7 +6090,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },

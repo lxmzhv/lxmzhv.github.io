@@ -14,7 +14,7 @@
    "total_score":79.2
   },
   "reva":{
-   "total_score":93.8
+   "total_score":94.0
   },
   "geos":{
    "total_score":77.0
@@ -38,7 +38,7 @@
    "total_score":70.5
   }
  },
- "modsRating":21.217911,
+ "modsRating":21.344532,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -113,7 +113,7 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -199,7 +199,7 @@
   },
   "barrissoffee":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BARRISSOFFEE",
@@ -219,7 +219,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3078,15 +3078,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4280,7 +4280,7 @@
   },
   "pazvizsla":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_PAZVIZSLA",
@@ -4300,7 +4300,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -7137,12 +7137,13 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
-   "currentTier":1,
+   "currentRarity":5,
+   "currentTier":2,
    "skill":[],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "bodhirook":{
    "currentRarity":7,
@@ -8568,7 +8569,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8633,8 +8634,8 @@
    "stats":{}
   },
   "ig12":{
-   "currentRarity":5,
-   "currentTier":12,
+   "currentRarity":6,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_IG12",
@@ -8654,7 +8655,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },

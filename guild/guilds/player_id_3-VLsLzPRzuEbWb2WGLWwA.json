@@ -32,13 +32,13 @@
    "total_score":61.8
   },
   "slkr":{
-   "total_score":75.43
+   "total_score":87.71
   },
   "beq_raid":{
    "total_score":99.0
   }
  },
- "modsRating":32.681843,
+ "modsRating":33.039061,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3484,15 +3484,15 @@
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4974,7 +4974,7 @@
   },
   "zoriibliss_v2":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ZORIIBLISS_V2",
@@ -4998,7 +4998,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5107,8 +5107,8 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
-   "currentTier":5,
+   "currentRarity":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5116,7 +5116,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5124,7 +5124,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -9284,7 +9284,7 @@
   },
   "ezrabridgers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_EZRABRIDGERS3",
@@ -9304,7 +9304,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9355,6 +9355,36 @@
      "tier":6
     }
    ]
+  },
+  "darkrey":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_DARKREY",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARKREY01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARKREY02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_DARKREY01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DARKREY02",
+     "tier":6
+    }
+   ],
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
   },
   "jedistarfighterconsular":{
    "currentRarity":7,

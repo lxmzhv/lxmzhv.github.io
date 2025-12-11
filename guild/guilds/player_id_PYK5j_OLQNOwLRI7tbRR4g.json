@@ -29,7 +29,7 @@
    "total_score":87.0
   },
   "leia":{
-   "total_score":98.8
+   "total_score":93.8
   },
   "slkr":{
    "total_score":97.86
@@ -38,7 +38,7 @@
    "total_score":99.5
   }
  },
- "modsRating":53.749833,
+ "modsRating":53.21791,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3576,7 +3576,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3786,7 +3786,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":4
    },
    "stats":{}
   },
@@ -3986,7 +3986,7 @@
   },
   "logray":{
    "currentRarity":7,
-   "currentTier":2,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_LOGRAY",
@@ -3999,10 +3999,14 @@
     {
      "id":"specialskill_LOGRAY02",
      "tier":6
+    },
+    {
+     "id":"uniqueskill_LOGRAY01",
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4624,7 +4628,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":6
    },
    "stats":{}
   },
@@ -5216,15 +5220,15 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":3,
+   "currentTier":4,
    "skill":[
     {
      "id":"specialskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_IG90",
@@ -5697,7 +5701,7 @@
    "stats":{}
   },
   "captainsilvo":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -5722,7 +5726,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":6
    },
    "stats":{}
   },

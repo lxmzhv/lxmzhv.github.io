@@ -8,7 +8,7 @@
    "total_score":68.4
   },
   "gas":{
-   "total_score":90.6
+   "total_score":90.2
   },
   "inqs":{
    "total_score":71.6
@@ -20,7 +20,7 @@
    "total_score":75.5
   },
   "drevan":{
-   "total_score":85.8
+   "total_score":85.6
   },
   "amidala":{
    "total_score":94.0
@@ -35,10 +35,10 @@
    "total_score":98.86
   },
   "beq_raid":{
-   "total_score":96.0
+   "total_score":86.0
   }
  },
- "modsRating":46.160447,
+ "modsRating":45.479709,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -794,7 +794,7 @@
   },
   "k2so":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_K2SO02",
@@ -814,7 +814,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -3594,11 +3594,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -4536,7 +4536,7 @@
    "skill":[
     {
      "id":"basicskill_CAPTAINDROGAN",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINDROGAN01",
@@ -5078,7 +5078,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -5269,8 +5269,8 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
-   "currentTier":5,
+   "currentRarity":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -5278,7 +5278,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5286,7 +5286,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",

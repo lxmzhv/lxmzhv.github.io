@@ -26,19 +26,19 @@
    "total_score":28.33
   },
   "gungans":{
-   "total_score":81.8
+   "total_score":81.0
   },
   "leia":{
    "total_score":23.4
   },
   "slkr":{
-   "total_score":84.57
+   "total_score":89.71
   },
   "beq_raid":{
-   "total_score":74.5
+   "total_score":73.0
   }
  },
- "modsRating":13.229463,
+ "modsRating":11.830557,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -399,7 +399,7 @@
   },
   "vanguardtempleguard":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_VANGUARDTEMPLEGUARD",
@@ -419,7 +419,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2904,11 +2904,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3951,11 +3951,28 @@
    "stats":{}
   },
   "pazvizsla":{
-   "currentRarity":5,
-   "currentTier":3,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_PAZVIZSLA",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PAZVIZSLA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_PAZVIZSLA02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_PAZVIZSLA01",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -4209,11 +4226,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4221,11 +4238,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -4552,7 +4573,7 @@
    ]
   },
   "uwingscarif":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[]
   },
@@ -5013,7 +5034,7 @@
   },
   "zamwesell":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ZAMWESELL",
@@ -5033,7 +5054,7 @@
     },
     {
      "id":"uniqueskill_ZAMWESELL01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"contractskill_ZAMWESELL01",
@@ -5041,7 +5062,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -6964,7 +6985,7 @@
     },
     {
      "id":"uniqueskill_BOBAFETT01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BOBAFETT02",
@@ -8269,8 +8290,25 @@
   },
   "ig12":{
    "currentRarity":7,
-   "currentTier":9,
-   "skill":[],
+   "currentTier":12,
+   "skill":[
+    {
+     "id":"basicskill_IG12",
+     "tier":6
+    },
+    {
+     "id":"specialskill_IG1201",
+     "tier":6
+    },
+    {
+     "id":"specialskill_IG1202",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_IG1201",
+     "tier":6
+    }
+   ],
    "relic":{
     "currentTier":1
    },

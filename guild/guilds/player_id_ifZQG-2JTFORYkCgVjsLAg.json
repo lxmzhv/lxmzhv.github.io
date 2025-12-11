@@ -2,13 +2,13 @@
  "allyCode":"983266236",
  "requirements":{
   "jabba":{
-   "total_score":85.0
+   "total_score":86.67
   },
   "gg":{
    "total_score":48.4
   },
   "gas":{
-   "total_score":82.6
+   "total_score":82.8
   },
   "inqs":{
    "total_score":79.0
@@ -38,7 +38,7 @@
    "total_score":92.0
   }
  },
- "modsRating":17.344192,
+ "modsRating":17.965613,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -838,7 +838,7 @@
   },
   "sithtrooper":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SITHTROOPER",
@@ -854,7 +854,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3217,7 +3217,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":8,
    "skill":[
     {
@@ -3360,19 +3360,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -4890,7 +4890,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -7348,7 +7348,7 @@
     },
     {
      "id":"specialskill_ARC170CLONESERGEANT01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_ARC170CLONESERGEANT01",
@@ -7892,7 +7892,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":2,
    "skill":[],
    "relic":{
@@ -8946,19 +8946,19 @@
    "skill":[
     {
      "id":"specialskill_TIEREAPER01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_TIEREAPER02",
-     "tier":4
+     "tier":6
     },
     {
      "id":"basicskill_TIEREAPER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TIEREAPER01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_TIEREAPER01",
@@ -9002,15 +9002,15 @@
    "skill":[
     {
      "id":"basicskill_JEDISTARFIGHTERCONSULAR",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_JEDISTARFIGHTERCONSULAR01",
-     "tier":4
+     "tier":6
     },
     {
      "id":"specialskill_JEDISTARFIGHTERCONSULAR02",
-     "tier":4
+     "tier":6
     },
     {
      "id":"hardwareskill_JEDISTARFIGHTERCONSULAR01",

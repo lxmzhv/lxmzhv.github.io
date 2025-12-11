@@ -2,7 +2,7 @@
  "allyCode":"696655244",
  "requirements":{
   "jabba":{
-   "total_score":94.0
+   "total_score":94.5
   },
   "gg":{
    "total_score":77.2
@@ -38,7 +38,7 @@
    "total_score":96.5
   }
  },
- "modsRating":126.030187,
+ "modsRating":125.951422,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3401,7 +3401,7 @@
    "stats":{}
   },
   "4lom":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":13,
    "skill":[
     {
@@ -3604,19 +3604,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":2
+     "tier":3
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":2
+     "tier":3
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":2
+     "tier":3
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -5308,7 +5308,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":2
+     "tier":3
     },
     {
      "id":"uniqueskill_IG9001",
@@ -5316,7 +5316,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":2
+     "tier":3
     }
    ],
    "relic":{
@@ -7738,7 +7738,7 @@
   },
   "tarfful":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_TARFFUL",
@@ -7762,7 +7762,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -9530,7 +9530,7 @@
     },
     {
      "id":"uniqueskill_UNDERCOVERLANDO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -10282,7 +10282,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

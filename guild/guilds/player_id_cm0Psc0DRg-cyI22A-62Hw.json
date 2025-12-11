@@ -32,13 +32,13 @@
    "total_score":89.8
   },
   "slkr":{
-   "total_score":75.29
+   "total_score":79.86
   },
   "beq_raid":{
    "total_score":90.0
   }
  },
- "modsRating":37.574945,
+ "modsRating":37.236686,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3526,11 +3526,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -5168,11 +5168,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5180,11 +5180,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -7192,7 +7196,7 @@
   },
   "kananjarruss3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_KANANJARRUSS301",
@@ -7204,7 +7208,7 @@
     },
     {
      "id":"specialskill_KANANJARRUSS302",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_KANANJARRUSS301",
@@ -7212,7 +7216,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -8400,7 +8404,7 @@
   },
   "choppers3":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CHOPPERS3",
@@ -8420,7 +8424,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -9978,7 +9982,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":8
    },
    "stats":{}
   },
@@ -10092,11 +10096,27 @@
   },
   "mazkanata":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_MAZKANATA",
-     "tier":1
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MAZKANATA02",
+     "tier":4
+    },
+    {
+     "id":"leaderskill_MAZKANATA",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_MAZKANATA01",
+     "tier":4
     }
    ],
    "relic":{

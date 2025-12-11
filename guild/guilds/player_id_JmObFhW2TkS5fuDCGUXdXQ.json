@@ -2,7 +2,7 @@
  "allyCode":"275878887",
  "requirements":{
   "jabba":{
-   "total_score":26.83
+   "total_score":34.17
   },
   "gg":{
    "total_score":78.0
@@ -20,7 +20,7 @@
    "total_score":78.0
   },
   "drevan":{
-   "total_score":91.4
+   "total_score":92.0
   },
   "amidala":{
    "total_score":29.0
@@ -38,7 +38,7 @@
    "total_score":7.5
   }
  },
- "modsRating":14.72374,
+ "modsRating":14.733858,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1814,6 +1814,32 @@
    },
    "stats":{}
   },
+  "sithsupremacyclass":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"uniqueskill_SITHSUPREMACYCLASS01",
+     "tier":5
+    },
+    {
+     "id":"basicskill_SITHSUPREMACYCLASS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SITHSUPREMACYCLASS01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_SITHSUPREMACYCLASS02",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_SITHSUPREMACYCLASS",
+     "tier":1
+    }
+   ]
+  },
   "grandadmiralthrawn":{
    "currentRarity":7,
    "currentTier":12,
@@ -2366,13 +2392,13 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
   "gamorreanguard":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_GAMORREANGUARD",
@@ -3121,6 +3147,40 @@
    },
    "stats":{}
   },
+  "4lom":{
+   "currentRarity":3,
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"basicskill_4LOM",
+     "tier":6
+    },
+    {
+     "id":"specialskill_4LOM01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_4LOM02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_4LOM",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_4LOM01",
+     "tier":4
+    },
+    {
+     "id":"contractskill_4LOM",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
   "captainenoch":{
    "currentRarity":4,
    "currentTier":12,
@@ -3264,7 +3324,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3280,11 +3340,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3725,7 +3785,7 @@
    ]
   },
   "calkestis":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":8,
    "skill":[
     {
@@ -4824,7 +4884,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_IG9001",
@@ -5194,7 +5254,7 @@
   },
   "humanthug":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_HUMANTHUG",
@@ -5269,7 +5329,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":7
    },
    "stats":{}
   },
@@ -5751,7 +5811,7 @@
   },
   "boushh":{
    "currentRarity":6,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_BOUSHH",
@@ -7516,7 +7576,7 @@
   },
   "greedo":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":9,
    "skill":[
     {
      "id":"basicskill_GREEDO",
@@ -7575,7 +7635,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":4,
+   "currentRarity":5,
    "currentTier":1,
    "skill":[
     {
@@ -8338,7 +8398,7 @@
     }
    ],
    "relic":{
-    "currentTier":5
+    "currentTier":6
    },
    "stats":{}
   },
@@ -8567,16 +8627,16 @@
    "stats":{}
   },
   "undercoverlando":{
-   "currentRarity":5,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_UNDERCOVERLANDO",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_UNDERCOVERLANDO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_UNDERCOVERLANDO02",
@@ -8588,7 +8648,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -8874,7 +8934,7 @@
     }
    ],
    "relic":{
-    "currentTier":6
+    "currentTier":7
    },
    "stats":{}
   },
@@ -8979,7 +9039,7 @@
   },
   "aurra_sing":{
    "currentRarity":7,
-   "currentTier":7,
+   "currentTier":8,
    "skill":[
     {
      "id":"basicskill_AURRA_SING",

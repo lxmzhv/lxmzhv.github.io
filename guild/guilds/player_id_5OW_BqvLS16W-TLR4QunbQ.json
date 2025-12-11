@@ -23,7 +23,7 @@
    "total_score":35.8
   },
   "amidala":{
-   "total_score":81.67
+   "total_score":82.33
   },
   "gungans":{
    "total_score":92.0
@@ -32,13 +32,13 @@
    "total_score":94.4
   },
   "slkr":{
-   "total_score":11.43
+   "total_score":15.57
   },
   "beq_raid":{
    "total_score":87.5
   }
  },
- "modsRating":21.110555,
+ "modsRating":21.153467,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -793,11 +793,33 @@
   },
   "50rt":{
    "currentRarity":6,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_50RT01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_50RT02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_50RT",
+     "tier":4
+    },
+    {
+     "id":"basicskill_50RT",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_50RT01",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "badbatchhunter":{
    "currentRarity":7,
@@ -1415,7 +1437,24 @@
   "sithfighter":{
    "currentRarity":3,
    "currentTier":1,
-   "skill":[]
+   "skill":[
+    {
+     "id":"specialskill_SITHFIGHTER01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_SITHFIGHTER",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_SITHFIGHTER01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_SITHFIGHTER01",
+     "tier":1
+    }
+   ]
   },
   "xwingresistance":{
    "currentRarity":5,
@@ -3039,27 +3078,27 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3129,15 +3168,15 @@
    "skill":[
     {
      "id":"hardwareskill_EBONHAWK01",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_EBONHAWK01",
-     "tier":2
+     "tier":6
     },
     {
      "id":"specialskill_EBONHAWK02",
-     "tier":4
+     "tier":6
     },
     {
      "id":"basicskill_EBONHAWK",
@@ -4476,16 +4515,34 @@
    }
   },
   "fosithtrooper":{
-   "currentRarity":2,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":3,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_FOSITHTROOPER",
+     "tier":6
+    },
+    {
+     "id":"specialskill_FOSITHTROOPER01",
+     "tier":6
+    },
+    {
+     "id":"specialskill_FOSITHTROOPER02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_FOSITHTROOPER01",
+     "tier":5
+    }
+   ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -6602,7 +6659,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -8030,15 +8087,15 @@
    "skill":[
     {
      "id":"basicskill_SITHASSASSIN",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_SITHASSASSIN01",
-     "tier":1
+     "tier":6
     },
     {
      "id":"specialskill_SITHASSASSIN02",
-     "tier":1
+     "tier":6
     }
    ],
    "relic":{
@@ -8511,7 +8568,7 @@
     },
     {
      "id":"uniqueskill_VANE01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{

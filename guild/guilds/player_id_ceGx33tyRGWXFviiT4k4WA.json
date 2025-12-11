@@ -38,7 +38,7 @@
    "total_score":90.5
   }
  },
- "modsRating":26.603483,
+ "modsRating":26.633284,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3448,7 +3448,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5019,12 +5019,12 @@
    "stats":{}
   },
   "armorer":{
-   "currentRarity":6,
-   "currentTier":7,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_ARMORER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ARMORER01",
@@ -5032,19 +5032,19 @@
     },
     {
      "id":"specialskill_ARMORER02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_ARMORER",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_ARMORER01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -5716,7 +5716,7 @@
     },
     {
      "id":"uniqueskill_UWINGSCARIF02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_UWINGSCARIF01",
@@ -7210,7 +7210,7 @@
     },
     {
      "id":"uniqueskill_SHINHATI01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SHINHATI02",
@@ -9942,7 +9942,7 @@
   },
   "jediknightguardian":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_JEDIKNIGHTGUARDIAN",
@@ -9958,7 +9958,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },
@@ -10222,7 +10222,7 @@
     },
     {
      "id":"specialskill_MAZKANATA02",
-     "tier":4
+     "tier":5
     },
     {
      "id":"leaderskill_MAZKANATA",

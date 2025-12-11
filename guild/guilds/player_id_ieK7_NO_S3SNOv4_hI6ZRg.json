@@ -38,7 +38,7 @@
    "total_score":95.0
   }
  },
- "modsRating":71.223454,
+ "modsRating":71.776106,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -3526,7 +3526,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3542,11 +3542,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -3715,7 +3715,7 @@
    "stats":{}
   },
   "brutus":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":13,
    "skill":[
     {
@@ -3732,11 +3732,11 @@
     },
     {
      "id":"uniqueskill_BRUTUS01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -4888,6 +4888,40 @@
    },
    "stats":{}
   },
+  "glhondo":{
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"basicskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"specialskill_GLHONDO02",
+     "tier":1
+    },
+    {
+     "id":"leaderskill_GLHONDO",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GLHONDO01",
+     "tier":1
+    },
+    {
+     "id":"uniqueskill_GALACTICLEGEND01",
+     "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":8
+   },
+   "stats":{}
+  },
   "younglando":{
    "currentRarity":6,
    "currentTier":7,
@@ -5154,11 +5188,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -5166,11 +5200,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5656,7 +5694,7 @@
     },
     {
      "id":"uniqueskill_CAPTAINSILVO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -9348,7 +9386,7 @@
     },
     {
      "id":"uniqueskill_UNDERCOVERLANDO01",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

@@ -11,10 +11,10 @@
    "total_score":76.2
   },
   "inqs":{
-   "total_score":32.6
+   "total_score":44.0
   },
   "reva":{
-   "total_score":58.6
+   "total_score":60.0
   },
   "geos":{
    "total_score":63.5
@@ -171,6 +171,14 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "barrissoffee":{
    "currentRarity":7,
@@ -822,11 +830,29 @@
   },
   "c3pochewbacca":{
    "currentRarity":4,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_C3POCHEWBACCA01",
+     "tier":2
+    },
+    {
+     "id":"specialskill_C3POCHEWBACCA02",
+     "tier":2
+    },
+    {
+     "id":"basicskill_C3POCHEWBACCA",
+     "tier":2
+    },
+    {
+     "id":"uniqueskill_C3POCHEWBACCA",
+     "tier":2
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "reyjeditraining":{
    "currentRarity":7,
@@ -3441,7 +3467,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -3449,7 +3475,7 @@
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3461,7 +3487,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3647,6 +3673,15 @@
    ],
    "relic":{
     "currentTier":7
+   },
+   "stats":{}
+  },
+  "ezraexile":{
+   "currentRarity":7,
+   "currentTier":4,
+   "skill":[],
+   "relic":{
+    "currentTier":1
    },
    "stats":{}
   },
@@ -4280,7 +4315,7 @@
   },
   "ig90":{
    "currentRarity":4,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -7449,7 +7484,7 @@
    "skill":[
     {
      "id":"specialskill_EZRABRIDGERS301",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_EZRABRIDGERS302",
@@ -7599,7 +7634,7 @@
   },
   "seventhsister":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_SEVENTHSISTER",
@@ -7627,7 +7662,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },

@@ -29,7 +29,7 @@
    "total_score":90.4
   },
   "leia":{
-   "total_score":96.8
+   "total_score":96.6
   },
   "slkr":{
    "total_score":95.14
@@ -38,7 +38,7 @@
    "total_score":88.0
   }
  },
- "modsRating":61.371221,
+ "modsRating":61.469716,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -127,8 +127,8 @@
    "stats":{}
   },
   "zuckuss":{
-   "currentRarity":3,
-   "currentTier":2,
+   "currentRarity":4,
+   "currentTier":7,
    "skill":[],
    "relic":{
     "currentTier":1
@@ -2797,7 +2797,7 @@
   },
   "nightsisterspirit":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_NIGHTSISTERSPIRIT",
@@ -2813,7 +2813,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3055,7 +3055,7 @@
     }
    ],
    "relic":{
-    "currentTier":7
+    "currentTier":9
    },
    "stats":{}
   },
@@ -3595,11 +3595,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
@@ -4959,7 +4959,7 @@
     },
     {
      "id":"leaderskill_GLHONDO",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_GLHONDO02",
@@ -5253,7 +5253,7 @@
     },
     {
      "id":"specialskill_TRIPLEZERO01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_TRIPLEZERO01",
@@ -5271,7 +5271,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",

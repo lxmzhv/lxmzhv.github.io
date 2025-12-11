@@ -38,7 +38,7 @@
    "total_score":88.0
   }
  },
- "modsRating":14.022621,
+ "modsRating":14.042096,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -576,11 +576,29 @@
   },
   "l3_37":{
    "currentRarity":7,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"specialskill_l3_37_01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_l3_37",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_l3_37_01",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_l3_37_02",
+     "tier":6
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":3
+   },
+   "stats":{}
   },
   "droideka":{
    "currentRarity":7,
@@ -1752,7 +1770,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -2966,6 +2984,14 @@
     {
      "id":"hardwareskill_MILLENNIUMFALCONPRISTINE01",
      "tier":1
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONPRISTINE02",
+     "tier":6
+    },
+    {
+     "id":"specialskill_MILLENNIUMFALCONPRISTINE01",
+     "tier":6
     }
    ]
   },
@@ -3588,7 +3614,7 @@
   },
   "resistancetrooper":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"specialskill_RESISTANCETROOPER01",
@@ -3604,7 +3630,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":7
    },
    "stats":{}
   },
@@ -4391,7 +4417,7 @@
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4399,11 +4425,15 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
@@ -5862,12 +5892,34 @@
    }
   },
   "shinhati":{
-   "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentRarity":7,
+   "currentTier":13,
+   "skill":[
+    {
+     "id":"uniqueskill_SHINHATI01",
+     "tier":4
+    },
+    {
+     "id":"uniqueskill_SHINHATI02",
+     "tier":1
+    },
+    {
+     "id":"basicskill_SHINHATI",
+     "tier":5
+    },
+    {
+     "id":"specialskill_SHINHATI01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_SHINHATI02",
+     "tier":5
+    }
+   ],
    "relic":{
-    "currentTier":1
-   }
+    "currentTier":9
+   },
+   "stats":{}
   },
   "juhani":{
    "currentRarity":7,
@@ -7723,7 +7775,7 @@
   },
   "finn":{
    "currentRarity":7,
-   "currentTier":8,
+   "currentTier":12,
    "skill":[
     {
      "id":"basicskill_FINN",
@@ -7739,7 +7791,7 @@
     },
     {
      "id":"leaderskill_FINN",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{

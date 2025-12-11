@@ -5,7 +5,7 @@
    "total_score":27.83
   },
   "gg":{
-   "total_score":71.6
+   "total_score":70.8
   },
   "gas":{
    "total_score":50.2
@@ -20,7 +20,7 @@
    "total_score":63.0
   },
   "drevan":{
-   "total_score":58.0
+   "total_score":64.0
   },
   "amidala":{
    "total_score":45.67
@@ -29,7 +29,7 @@
    "total_score":25.2
   },
   "leia":{
-   "total_score":38.0
+   "total_score":38.2
   },
   "slkr":{
    "total_score":92.86
@@ -38,7 +38,7 @@
    "total_score":90.5
   }
  },
- "modsRating":13.947765,
+ "modsRating":14.007729,
  "roster":{
   "magmatrooper":{
    "currentRarity":6,
@@ -159,6 +159,14 @@
     "currentTier":5
    },
    "stats":{}
+  },
+  "luthenrael":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "barrissoffee":{
    "currentRarity":7,
@@ -2006,7 +2014,7 @@
     }
    ],
    "relic":{
-    "currentTier":4
+    "currentTier":5
    },
    "stats":{}
   },
@@ -3077,7 +3085,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3567,7 +3575,7 @@
     }
    ],
    "relic":{
-    "currentTier":3
+    "currentTier":5
    },
    "stats":{}
   },
@@ -4365,11 +4373,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":4,
+   "currentTier":5,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4377,17 +4385,29 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
     "currentTier":1
    },
    "stats":{}
+  },
+  "triplezero":{
+   "currentRarity":2,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -5434,6 +5454,32 @@
     "currentTier":1
    },
    "stats":{}
+  },
+  "furyclassinterceptor":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[
+    {
+     "id":"specialskill_FURYCLASSINTERCEPTOR01",
+     "tier":6
+    },
+    {
+     "id":"basicskill_FURYCLASSINTERCEPTOR",
+     "tier":6
+    },
+    {
+     "id":"specialskill_FURYCLASSINTERCEPTOR02",
+     "tier":6
+    },
+    {
+     "id":"uniqueskill_FURYCLASSINTERCEPTOR01",
+     "tier":6
+    },
+    {
+     "id":"hardwareskill_FURYCLASSINTERCEPTOR",
+     "tier":1
+    }
+   ]
   },
   "badbatchecho":{
    "currentRarity":7,
@@ -8186,6 +8232,36 @@
     {
      "id":"uniqueskill_INQUISITOR01_HEALER",
      "tier":1
+    }
+   ],
+   "relic":{
+    "currentTier":1
+   },
+   "stats":{}
+  },
+  "darthmalgus":{
+   "currentRarity":7,
+   "currentTier":9,
+   "skill":[
+    {
+     "id":"basicskill_DARTHMALGUS",
+     "tier":6
+    },
+    {
+     "id":"specialskill_DARTHMALGUS01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_DARTHMALGUS02",
+     "tier":6
+    },
+    {
+     "id":"leaderskill_DARTHMALGUS",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_DARTHMALGUS01",
+     "tier":5
     }
    ],
    "relic":{

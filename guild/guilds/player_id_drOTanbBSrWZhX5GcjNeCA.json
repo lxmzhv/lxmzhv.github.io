@@ -20,7 +20,7 @@
    "total_score":77.0
   },
   "drevan":{
-   "total_score":86.2
+   "total_score":87.0
   },
   "amidala":{
    "total_score":27.0
@@ -32,13 +32,13 @@
    "total_score":64.6
   },
   "slkr":{
-   "total_score":82.57
+   "total_score":83.0
   },
   "beq_raid":{
    "total_score":43.5
   }
  },
- "modsRating":23.239459,
+ "modsRating":23.638803,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -886,7 +886,7 @@
   },
   "50rt":{
    "currentRarity":6,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"leaderskill_50RT",
@@ -910,7 +910,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":5
    },
    "stats":{}
   },
@@ -2177,6 +2177,14 @@
    },
    "stats":{}
   },
+  "queenamidala":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
+  },
   "chiefchirpa":{
    "currentRarity":7,
    "currentTier":13,
@@ -3389,19 +3397,19 @@
   },
   "stormtrooperluke":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_STORMTROOPERLUKE02",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
@@ -3851,7 +3859,7 @@
   },
   "calkestis":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CALKESTIS",
@@ -3867,11 +3875,11 @@
     },
     {
      "id":"uniqueskill_CALKESTIS01",
-     "tier":4
+     "tier":5
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":3
    },
    "stats":{}
   },
@@ -4929,7 +4937,7 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
@@ -4937,7 +4945,7 @@
     },
     {
      "id":"specialskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_IG9001",
@@ -4945,7 +4953,7 @@
     },
     {
      "id":"basicskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"contractskill_IG90",
@@ -5237,7 +5245,7 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
    "stats":{}
   },
@@ -5954,7 +5962,7 @@
     },
     {
      "id":"uniqueskill_TARONMALICOS02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -6871,7 +6879,7 @@
   },
   "princesskneesaa":{
    "currentRarity":7,
-   "currentTier":10,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_PRINCESSKNEESAA01",
@@ -6891,7 +6899,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":9
    },
    "stats":{}
   },

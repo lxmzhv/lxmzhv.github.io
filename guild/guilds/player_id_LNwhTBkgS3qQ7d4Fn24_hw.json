@@ -17,7 +17,7 @@
    "total_score":103.0
   },
   "geos":{
-   "total_score":111.0
+   "total_score":110.0
   },
   "drevan":{
    "total_score":88.0
@@ -38,7 +38,7 @@
    "total_score":104.5
   }
  },
- "modsRating":207.389937,
+ "modsRating":207.614198,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -772,7 +772,7 @@
   },
   "ewokscout":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_EWOKSCOUT01",
@@ -788,7 +788,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -3604,7 +3604,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3620,11 +3620,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":3
+     "tier":4
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":3
+     "tier":4
     }
    ],
    "relic":{
@@ -5296,15 +5296,15 @@
   },
   "ig90":{
    "currentRarity":7,
-   "currentTier":9,
+   "currentTier":10,
    "skill":[
     {
      "id":"contractskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"leaderskill_IG90",
-     "tier":3
+     "tier":4
     },
     {
      "id":"specialskill_IG9001",
@@ -5312,7 +5312,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":3
+     "tier":4
     },
     {
      "id":"basicskill_IG90",
@@ -6352,7 +6352,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },

@@ -29,7 +29,7 @@
    "total_score":75.8
   },
   "leia":{
-   "total_score":38.8
+   "total_score":42.0
   },
   "slkr":{
    "total_score":77.14
@@ -38,7 +38,7 @@
    "total_score":70.0
   }
  },
- "modsRating":9.723089,
+ "modsRating":9.762979,
  "roster":{
   "magmatrooper":{
    "currentRarity":7,
@@ -1071,7 +1071,7 @@
   },
   "dengar":{
    "currentRarity":7,
-   "currentTier":12,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_DENGAR",
@@ -1099,7 +1099,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -1471,12 +1471,12 @@
    "stats":{}
   },
   "bt1":{
-   "currentRarity":3,
-   "currentTier":2,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_BT1",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_BT101",
@@ -1488,11 +1488,11 @@
     },
     {
      "id":"uniqueskill_BT102",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":8
    },
    "stats":{}
   },
@@ -1759,12 +1759,12 @@
    "stats":{}
   },
   "admiralraddus":{
-   "currentRarity":4,
-   "currentTier":12,
+   "currentRarity":7,
+   "currentTier":13,
    "skill":[
     {
      "id":"uniqueskill_ADMIRALRADDUS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_ADMIRALRADDUS02",
@@ -1772,7 +1772,7 @@
     },
     {
      "id":"specialskill_ADMIRALRADDUS01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_ADMIRALRADDUS",
@@ -1784,7 +1784,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -2601,7 +2601,7 @@
     }
    ],
    "relic":{
-    "currentTier":9
+    "currentTier":10
    },
    "stats":{}
   },
@@ -2615,7 +2615,7 @@
     },
     {
      "id":"uniqueskill_IG20001",
-     "tier":4
+     "tier":5
     },
     {
      "id":"basicskill_IG2000",
@@ -3384,7 +3384,7 @@
   },
   "stormtrooperluke":{
    "currentRarity":4,
-   "currentTier":6,
+   "currentTier":8,
    "skill":[
     {
      "id":"specialskill_STORMTROOPERLUKE01",
@@ -3400,11 +3400,11 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":1
+     "tier":2
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":1
+     "tier":2
     }
    ],
    "relic":{
@@ -3924,7 +3924,7 @@
   },
   "captainrex":{
    "currentRarity":7,
-   "currentTier":11,
+   "currentTier":13,
    "skill":[
     {
      "id":"basicskill_CAPTAINREX",
@@ -3932,11 +3932,11 @@
     },
     {
      "id":"uniqueskill_CAPTAINREX01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"specialskill_CAPTAINREX01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_CAPTAINREX02",
@@ -3944,7 +3944,7 @@
     }
    ],
    "relic":{
-    "currentTier":1
+    "currentTier":2
    },
    "stats":{}
   },
@@ -4966,7 +4966,7 @@
     },
     {
      "id":"uniqueskill_TRIPLEZERO02",
-     "tier":5
+     "tier":6
     }
    ],
    "relic":{
@@ -4975,12 +4975,12 @@
    "stats":{}
   },
   "ig90":{
-   "currentRarity":4,
-   "currentTier":6,
+   "currentRarity":5,
+   "currentTier":7,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":1
+     "tier":2
     },
     {
      "id":"specialskill_IG9001",
@@ -4988,7 +4988,7 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":1
+     "tier":2
     },
     {
      "id":"basicskill_IG90",
@@ -5890,7 +5890,7 @@
     },
     {
      "id":"specialskill_JEDIMASTERMACEWINDU02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"leaderskill_JEDIMASTERMACEWINDU",
@@ -7119,7 +7119,7 @@
    "skill":[
     {
      "id":"uniqueskill_TIEFIGHTERIMPERIAL02",
-     "tier":5
+     "tier":6
     },
     {
      "id":"basicskill_TIEFIGHTERIMPERIAL",
@@ -8031,7 +8031,7 @@
    "stats":{}
   },
   "generalsyndulla":{
-   "currentRarity":5,
+   "currentRarity":6,
    "currentTier":1,
    "skill":[
     {
@@ -9543,11 +9543,11 @@
   },
   "mauls7":{
    "currentRarity":7,
-   "currentTier":1,
+   "currentTier":4,
    "skill":[
     {
      "id":"basicskill_MAULS7",
-     "tier":5
+     "tier":6
     },
     {
      "id":"specialskill_MAULS701",
@@ -9559,7 +9559,7 @@
     },
     {
      "id":"leaderskill_MAULS7",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_MAULS701",
@@ -9568,7 +9568,8 @@
    ],
    "relic":{
     "currentTier":1
-   }
+   },
+   "stats":{}
   },
   "cadbane":{
    "currentRarity":7,
@@ -9644,7 +9645,7 @@
     }
    ],
    "relic":{
-    "currentTier":2
+    "currentTier":6
    },
    "stats":{}
   },
