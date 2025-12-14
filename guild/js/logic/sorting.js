@@ -29,7 +29,7 @@ export function createPlayerSorter(key, direction, shipBaseIds) {
             return 0;
         }
 
-        if (galacticLegends.includes(key) || ASSAULT_CHARACTERS.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic')) {
+        if (galacticLegends.includes(key) || ASSAULT_CHARACTERS.includes(key) || pilots.includes(key) || conquestCharacters.includes(key) || key.endsWith('-relic') || key === 'marajadeRelic') {
             const valA_gl = a[key] || { type: 0, level: 0, rarity: 0 };
             const valB_gl = b[key] || { type: 0, level: 0, rarity: 0 };
 
@@ -109,7 +109,7 @@ export function createPlayerSorter(key, direction, shipBaseIds) {
             return 0;
         }
 
-        if (key === 'glAverage' || key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron')) {
+        if (key === 'glAverage' || key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron') || key === 'marajadeSpeed' || key === 'marajadePotency') {
             const numA = Number(valA);
             const numB = Number(valB);
             if (numA < numB) return direction === 'asc' ? -1 : 1;

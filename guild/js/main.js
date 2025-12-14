@@ -432,8 +432,11 @@ document.addEventListener('DOMContentLoaded', () => {
           isEnabled: isEnabled,
             rareR9: 0, rareR8: 0, rareR7: 0, rareR6: 0, rareR5: 0, rareRTotal: 0,
             totalOmicrons: 0,
-            generalsyndullaOmicron: 0, padawansabineOmicron: 0, greatmothersOmicron: 0, jynersoOmicron: 0,
-            reqAverageTeamScore: 0
+            generalsyndullaOmicron: 0, padawansabineOmicron: 0, greatmothersOmicron: 0, jynersoOmicron: 0, marajadeOmicron: 0,
+            reqAverageTeamScore: 0,
+            marajadeRelic: { display: '-', type: 0, level: 0, rarity: 0 },
+            marajadeSpeed: 0,
+            marajadePotency: 0
         };
 
     // Assault Characters
@@ -484,12 +487,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     playerInfo.jynersoOmicron = getOmicronCountForSkill(player, 'jynerso', OMICRON_SKILL_MAP['jynerso'][0].skillId, 7); // Tier 7 for Jyn? Original code used 7? Let's check constants.
     // Actually renderers.js uses 7 for Jyn.
+      playerInfo.marajadeOmicron = getOmicronCountForSkill(player, 'marajade', OMICRON_SKILL_MAP['marajade'][0].skillId, 6);
+
 
     // Total Omicrons (simplified - just summing specific ones or all? Original code likely summed specific ones or all TW omicrons)
     // For now, let's just sum the ones we track explicitly + maybe others if needed.
     // The original code likely had a more complex logic or just these.
     // Let's stick to these for now.
-    playerInfo.totalOmicrons = playerInfo.generalsyndullaOmicron + playerInfo.padawansabineOmicron + playerInfo.greatmothersOmicron + playerInfo.jynersoOmicron;
+      playerInfo.totalOmicrons = playerInfo.generalsyndullaOmicron + playerInfo.padawansabineOmicron + playerInfo.greatmothersOmicron + playerInfo.jynersoOmicron + playerInfo.marajadeOmicron;
 
 
         // Rare Units
@@ -548,6 +553,14 @@ document.addEventListener('DOMContentLoaded', () => {
     JABBA_TEAM_UNITS.forEach(unitId => {
       playerInfo[`reqJabba-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
     });
+
+      // Mara Jade Team Stats
+      const mjUnit = player.roster ? player.roster['marajade'] : null;
+      playerInfo.marajadeRelic = getPlayerUnitInfo(player, 'marajade');
+      if (mjUnit && mjUnit.stats && mjUnit.stats.total) {
+          playerInfo.marajadeSpeed = mjUnit.stats.total['Speed'] || 0;
+          playerInfo.marajadePotency = (mjUnit.stats.total['Potency'] || 0) * 100; // Convert to percentage
+      }
 
         return playerInfo;
     }

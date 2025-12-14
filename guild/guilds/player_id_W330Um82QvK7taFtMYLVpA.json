@@ -38,7 +38,7 @@
    "total_score":37.5
   }
  },
- "modsRating":8.729827,
+ "modsRating":8.738316,
  "roster":{
   "magmatrooper":{
    "currentRarity":1,
@@ -76,7 +76,36 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.47262701403887686,
+     "Critical Damage":1.5,
+     "Armor":823,
+     "Armor Penetration":10,
+     "Health Steal":0.05,
+     "Tenacity":0.63778,
+     "Agility":1477,
+     "Potency":0.4679,
+     "Resistance":711,
+     "Protection":79875,
+     "Special Critical Chance %":0.2138574541036717,
+     "Strength":1755,
+     "Physical Damage":4314,
+     "Special Damage":6667,
+     "Speed":278,
+     "Special Accuracy":90,
+     "Physical Critical Avoidance":180,
+     "Deflection Chance":24,
+     "Resistance Penetration":35,
+     "Intelligence":2126,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":180,
+     "Health":66375,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.563505648750428
+    }
+   }
   },
   "greefkarga":{
    "currentRarity":7,
@@ -110,14 +139,67 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4536843574514039,
+     "Critical Damage":1.5,
+     "Protection":16593,
+     "Armor":192,
+     "Special Critical Chance %":0.30784,
+     "Armor Penetration":28,
+     "Strength":821,
+     "Health Steal":0.05,
+     "Physical Damage":2014,
+     "Tenacity":0.35718000000000005,
+     "Special Damage":1415,
+     "Speed":160,
+     "Physical Critical Avoidance":0.24000000000000002,
+     "Agility":549,
+     "Potency":0.17587,
+     "Deflection Chance":24,
+     "Intelligence":536,
+     "Dodge Chance":24,
+     "Resistance":105,
+     "Special Critical Avoidance":0.24000000000000002,
+     "Health":18791,
+     "Armor %":0.2314647377938517
+    }
+   }
   },
   "zuckuss":{
    "currentRarity":3,
-   "currentTier":1,
-   "skill":[],
+   "currentTier":7,
+   "skill":[
+    {
+     "id":"basicskill_ZUCKUSS",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ZUCKUSS01",
+     "tier":5
+    },
+    {
+     "id":"specialskill_ZUCKUSS02",
+     "tier":5
+    },
+    {
+     "id":"leaderskill_ZUCKUSS",
+     "tier":5
+    },
+    {
+     "id":"uniqueskill_ZUCKUSS01",
+     "tier":4
+    },
+    {
+     "id":"contractskill_zuckuss",
+     "tier":0
+    }
+   ],
    "relic":{
     "currentTier":1
+   },
+   "stats":{
+    "total":{}
    }
   },
   "zebs3":{
@@ -144,7 +226,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.42323710313174945,
+     "Critical Damage":1.8,
+     "Protection":23150,
+     "Armor":317,
+     "Special Critical Chance %":0.19697,
+     "Armor Penetration":30,
+     "Strength":1041,
+     "Health Steal":0.1,
+     "Physical Damage":2334,
+     "Tenacity":0.36921000000000004,
+     "Special Damage":1452,
+     "Speed":123,
+     "Agility":666,
+     "Potency":0.35951,
+     "Deflection Chance":24,
+     "Intelligence":515,
+     "Dodge Chance":24,
+     "Resistance":101,
+     "Health":28036,
+     "Armor %":0.3321110529072813
+    }
+   }
   },
   "barrissoffee":{
    "currentRarity":7,
@@ -170,7 +275,32 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.74608468412527,
+     "Critical Damage":1.5,
+     "Protection":65916,
+     "Armor":771,
+     "Special Critical Chance %":0.28063283477321815,
+     "Armor Penetration":35,
+     "Strength":2120,
+     "Health Steal":0.1375,
+     "Physical Damage":4790,
+     "Tenacity":0.6567400000000001,
+     "Special Damage":4696,
+     "Speed":190,
+     "Agility":1530,
+     "Potency":0.25514000000000003,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1665,
+     "Dodge Chance":24,
+     "Resistance":418,
+     "Health":83098,
+     "Mastery":25,
+     "Armor %":0.5473908413205538
+    }
+   }
   },
   "firstordertieechelon":{
    "currentRarity":2,
@@ -209,7 +339,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4800287257019439,
+     "Critical Damage":1.5,
+     "Protection":87168,
+     "Armor":1337,
+     "Special Critical Chance %":0.1,
+     "Armor Penetration":87,
+     "Strength":2654,
+     "Health Steal":0.5675,
+     "Physical Damage":7822,
+     "Tenacity":0.6857,
+     "Special Damage":5935,
+     "Speed":253,
+     "Agility":1728,
+     "Potency":0.72862,
+     "Deflection Chance":24,
+     "Intelligence":1712,
+     "Dodge Chance":24,
+     "Resistance":604,
+     "Health":81925,
+     "Mastery":45,
+     "Armor %":0.6771334515067106
+    }
+   }
   },
   "capitalmalevolence":{
    "currentRarity":7,
@@ -261,7 +415,32 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6714288417926566,
+     "Critical Damage":1.575,
+     "Protection":45361,
+     "Armor":562,
+     "Special Critical Chance %":0.2134775593952484,
+     "Armor Penetration":517,
+     "Strength":1419,
+     "Health Steal":0.05,
+     "Physical Damage":8996,
+     "Tenacity":0.33587,
+     "Special Damage":5330,
+     "Speed":207,
+     "Agility":2040,
+     "Potency":0.9618,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1214,
+     "Dodge Chance":24,
+     "Resistance":260,
+     "Health":41497,
+     "Mastery":25,
+     "Armor %":0.468528553563985
+    }
+   }
   },
   "ct210408":{
    "currentRarity":7,
@@ -287,7 +466,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5638774703023759,
+     "Critical Damage":1.5,
+     "Protection":44120,
+     "Armor":208,
+     "Special Critical Chance %":0.45428585313174946,
+     "Armor Penetration":24,
+     "Strength":788,
+     "Health Steal":0.05,
+     "Physical Damage":3307,
+     "Tenacity":0.57472,
+     "Special Damage":4599,
+     "Speed":133,
+     "Agility":708,
+     "Potency":0.37432,
+     "Deflection Chance":24,
+     "Resistance Penetration":27,
+     "Intelligence":1130,
+     "Dodge Chance":24,
+     "Resistance":180,
+     "Health":22962,
+     "Armor %":0.24600827912477824
+    }
+   }
   },
   "colonelstarck":{
    "currentRarity":7,
@@ -313,7 +516,31 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.0749835610151188,
+     "Critical Damage":1.545,
+     "Protection":45652,
+     "Armor":521,
+     "Special Critical Chance %":0.5686952915766739,
+     "Armor Penetration":161,
+     "Strength":1462,
+     "Health Steal":0.3,
+     "Physical Damage":4490,
+     "Tenacity":0.49126000000000003,
+     "Special Damage":3469,
+     "Speed":245,
+     "Agility":2070,
+     "Potency":0.46758,
+     "Deflection Chance":87,
+     "Intelligence":1270,
+     "Dodge Chance":87,
+     "Resistance":223,
+     "Health":47274,
+     "Mastery":15,
+     "Armor %":0.44971946482520503
+    }
+   }
   },
   "tiefighterfosf":{
    "currentRarity":7,
@@ -361,7 +588,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "bb8":{
    "currentRarity":7,
@@ -391,7 +620,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5582532235421167,
+     "Critical Damage":1.5,
+     "Protection":40961,
+     "Armor":284,
+     "Special Critical Chance %":0.4628293439524839,
+     "Armor Penetration":37,
+     "Strength":890,
+     "Physical Damage":2346,
+     "Tenacity":0.5799799999999999,
+     "Special Damage":3630,
+     "Speed":223,
+     "Agility":612,
+     "Potency":0.61,
+     "Deflection Chance":24,
+     "Resistance Penetration":17,
+     "Intelligence":1249,
+     "Dodge Chance":24,
+     "Resistance":285,
+     "Health":24173,
+     "Armor %":0.3081931633206728
+    }
+   }
   },
   "pogglethelesser":{
    "currentRarity":7,
@@ -417,7 +669,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2945797327213823,
+     "Critical Damage":1.8599999999999999,
+     "Protection":23484,
+     "Armor":217,
+     "Special Critical Chance %":0.2262412338012959,
+     "Armor Penetration":15,
+     "Strength":748,
+     "Physical Damage":2463,
+     "Tenacity":0.38625000000000004,
+     "Special Damage":4875,
+     "Speed":206,
+     "Agility":720,
+     "Potency":0.46714,
+     "Deflection Chance":24,
+     "Resistance Penetration":54,
+     "Intelligence":1452,
+     "Dodge Chance":24,
+     "Resistance":212,
+     "Health":24188,
+     "Armor %":0.253949678174371
+    }
+   }
   },
   "firstorderspecialforcespilot":{
    "currentRarity":7,
@@ -439,7 +714,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7806483423326134,
+     "Critical Damage":1.8,
+     "Armor":516,
+     "Armor Penetration":121,
+     "Health Steal":0.35000000000000003,
+     "Tenacity":0.50114,
+     "Agility":1255,
+     "Potency":0.49286,
+     "Resistance":323,
+     "Protection":74446,
+     "Special Critical Chance %":0.5364632181425486,
+     "Strength":1627,
+     "Physical Damage":4605,
+     "Special Damage":5874,
+     "Speed":150,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":170,
+     "Intelligence":1810,
+     "Dodge Chance":24,
+     "Health":43238,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.44733420026007803
+    }
+   }
   },
   "cerejunda":{
    "currentRarity":7,
@@ -477,7 +779,31 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5273876862850972,
+     "Critical Damage":1.5,
+     "Protection":74626,
+     "Armor":1095,
+     "Special Critical Chance %":0.16111,
+     "Armor Penetration":89,
+     "Strength":2773,
+     "Health Steal":0.19,
+     "Physical Damage":5658,
+     "Tenacity":1.45462,
+     "Special Damage":5450,
+     "Speed":207,
+     "Agility":1828,
+     "Potency":0.07246,
+     "Deflection Chance":24,
+     "Intelligence":1927,
+     "Dodge Chance":24,
+     "Resistance":681,
+     "Health":74381,
+     "Mastery":60,
+     "Armor %":0.6320346320346321
+    }
+   }
   },
   "millenniumfalcon":{
    "currentRarity":7,
@@ -529,7 +855,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.23167661987041038,
+     "Critical Damage":1.5,
+     "Protection":7752,
+     "Armor":192,
+     "Special Critical Chance %":0.1,
+     "Armor Penetration":5,
+     "Strength":520,
+     "Health Steal":0.2,
+     "Physical Damage":1562,
+     "Tenacity":0.27755,
+     "Special Damage":2290,
+     "Speed":162,
+     "Agility":504,
+     "Potency":0.359,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":848,
+     "Dodge Chance":24,
+     "Resistance":170,
+     "Health":13964,
+     "Armor %":0.2314647377938517
+    }
+   }
   },
   "captaintarpals":{
    "currentRarity":7,
@@ -555,7 +905,31 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.2358832046436286,
+     "Critical Damage":1.68,
+     "Protection":85825,
+     "Armor":1109,
+     "Special Critical Chance %":0.6679236069114471,
+     "Armor Penetration":139,
+     "Strength":2259,
+     "Health Steal":0.3,
+     "Physical Damage":8523,
+     "Tenacity":0.55,
+     "Special Damage":6887,
+     "Speed":241,
+     "Agility":2676,
+     "Potency":0.54761,
+     "Deflection Chance":24,
+     "Intelligence":1752,
+     "Dodge Chance":24,
+     "Resistance":700,
+     "Health":62184,
+     "Mastery":60,
+     "Armor %":0.6349842542227312
+    }
+   }
   },
   "droideka":{
    "currentRarity":7,
@@ -581,7 +955,34 @@
    "relic":{
     "currentTier":6
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8203378968682505,
+     "Critical Damage":1.5,
+     "Armor":584,
+     "Armor Penetration":348,
+     "Health Steal":0.25,
+     "Tenacity":0.48153,
+     "Agility":1390,
+     "Potency":0.55532,
+     "Resistance":260,
+     "Protection":57434,
+     "Special Critical Chance %":0.2790469816414687,
+     "Strength":2038,
+     "Physical Damage":6200,
+     "Special Damage":3819,
+     "Speed":191,
+     "Special Accuracy":72,
+     "Deflection Chance":24,
+     "Resistance Penetration":40,
+     "Intelligence":1137,
+     "Dodge Chance":24,
+     "Health":58925,
+     "Mastery":20,
+     "Physical Accuracy":72,
+     "Armor %":0.47810069586573883
+    }
+   }
   },
   "l3_37":{
    "currentRarity":2,
@@ -611,7 +1012,28 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.28992530237580993,
+     "Critical Damage":1.5,
+     "Protection":1027,
+     "Armor":182,
+     "Special Critical Chance %":0.13158,
+     "Strength":519,
+     "Physical Damage":1457,
+     "Tenacity":0.26347,
+     "Special Damage":1238,
+     "Speed":122,
+     "Agility":862,
+     "Potency":0.29202,
+     "Deflection Chance":24,
+     "Intelligence":440,
+     "Dodge Chance":24,
+     "Resistance":66,
+     "Health":12448,
+     "Armor %":0.22208663819402075
+    }
+   }
   },
   "sithinfiltrator":{
    "currentRarity":7,
@@ -663,7 +1085,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3258443574514039,
+     "Critical Damage":2.16,
+     "Protection":43263,
+     "Armor":262,
+     "Special Critical Chance %":0.29667548596112314,
+     "Armor Penetration":10,
+     "Strength":679,
+     "Physical Damage":2404,
+     "Tenacity":0.31765000000000004,
+     "Special Damage":5014,
+     "Speed":192,
+     "Agility":650,
+     "Potency":0.39865,
+     "Deflection Chance":24,
+     "Resistance Penetration":45,
+     "Intelligence":1362,
+     "Dodge Chance":24,
+     "Resistance":257,
+     "Health":19569,
+     "Armor %":0.29127292940522514
+    }
+   }
   },
   "sithtrooper":{
    "currentRarity":7,
@@ -685,7 +1130,31 @@
    "relic":{
     "currentTier":3
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.496338431425486,
+     "Critical Damage":1.5,
+     "Protection":92093,
+     "Armor":976,
+     "Special Critical Chance %":0.2334018898488121,
+     "Armor Penetration":59,
+     "Strength":1539,
+     "Health Steal":0.20750000000000002,
+     "Physical Damage":3532,
+     "Tenacity":0.42442,
+     "Special Damage":2356,
+     "Speed":159,
+     "Agility":836,
+     "Potency":0.5091800000000001,
+     "Deflection Chance":24,
+     "Intelligence":851,
+     "Dodge Chance":24,
+     "Resistance":968,
+     "Health":44238,
+     "Mastery":5,
+     "Armor %":0.6048961884102881
+    }
+   }
   },
   "ig86sentineldroid":{
    "currentRarity":3,
@@ -707,7 +1176,27 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.12000151187904969,
+     "Critical Damage":1.5,
+     "Armor":19,
+     "Special Critical Chance %":0.1,
+     "Strength":78,
+     "Physical Damage":199,
+     "Tenacity":0.15,
+     "Special Damage":160,
+     "Speed":100,
+     "Agility":120,
+     "Potency":0.02,
+     "Deflection Chance":24,
+     "Intelligence":67,
+     "Dodge Chance":24,
+     "Resistance":6,
+     "Health":1567,
+     "Armor %":0.028941355674028942
+    }
+   }
   },
   "sithmarauder":{
    "currentRarity":7,
@@ -729,7 +1218,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8118136501079913,
+     "Critical Damage":2.16,
+     "Armor":672,
+     "Armor Penetration":270,
+     "Health Steal":0.2,
+     "Tenacity":0.47439,
+     "Agility":2194,
+     "Potency":0.4353,
+     "Resistance":251,
+     "Protection":56452,
+     "Special Critical Chance %":0.2826069816414687,
+     "Strength":2215,
+     "Physical Damage":6818,
+     "Special Damage":6135,
+     "Speed":202,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1774,
+     "Dodge Chance":24,
+     "Health":62041,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5131729667812142
+    }
+   }
   },
   "reyjeditraining":{
    "currentRarity":7,
@@ -763,7 +1279,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9280123434125269,
+     "Critical Damage":1.8,
+     "Protection":67239,
+     "Armor":918,
+     "Special Critical Chance %":0.2879639632829374,
+     "Armor Penetration":164,
+     "Strength":2413,
+     "Health Steal":0.25,
+     "Physical Damage":6729,
+     "Tenacity":0.5158,
+     "Special Damage":6252,
+     "Speed":191,
+     "Agility":2670,
+     "Potency":0.7137899999999999,
+     "Deflection Chance":213,
+     "Intelligence":1841,
+     "Dodge Chance":213,
+     "Resistance":264,
+     "Health":65905,
+     "Mastery":45,
+     "Armor %":0.5901639344262295
+    }
+   }
   },
   "c3pochewbacca":{
    "currentRarity":7,
@@ -789,7 +1329,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6465608990280778,
+     "Critical Damage":2.2199999999999998,
+     "Armor":866,
+     "Armor Penetration":218,
+     "Health Steal":0.35000000000000003,
+     "Tenacity":0.73333,
+     "Agility":1727,
+     "Potency":0.59539,
+     "Resistance":448,
+     "Protection":44583,
+     "Special Critical Chance %":0.23778000000000002,
+     "Strength":2545,
+     "Physical Damage":8373,
+     "Special Damage":6055,
+     "Speed":229,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1656,
+     "Dodge Chance":24,
+     "Health":91497,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5759893581642833
+    }
+   }
   },
   "krrsantan":{
    "currentRarity":7,
@@ -823,7 +1390,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5080009827213823,
+     "Critical Damage":1.5,
+     "Protection":72106,
+     "Armor":1620,
+     "Special Critical Chance %":0.18631,
+     "Armor Penetration":50,
+     "Strength":2428,
+     "Health Steal":0.4375,
+     "Physical Damage":5557,
+     "Tenacity":0.74653,
+     "Special Damage":3832,
+     "Speed":223,
+     "Agility":1304,
+     "Potency":0.7431000000000001,
+     "Deflection Chance":24,
+     "Intelligence":1321,
+     "Dodge Chance":24,
+     "Resistance":871,
+     "Health":104668,
+     "Mastery":25,
+     "Armor %":0.717607973421927
+    }
+   }
   },
   "batchers3":{
    "currentRarity":7,
@@ -849,7 +1440,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4189337014038877,
+     "Critical Damage":1.5,
+     "Protection":28518,
+     "Armor":312,
+     "Special Critical Chance %":0.23767000000000002,
+     "Armor Penetration":28,
+     "Strength":945,
+     "Health Steal":0.1,
+     "Physical Damage":2541,
+     "Tenacity":0.37475,
+     "Special Damage":2100,
+     "Speed":152,
+     "Agility":669,
+     "Potency":0.21763,
+     "Deflection Chance":24,
+     "Intelligence":660,
+     "Dodge Chance":24,
+     "Resistance":168,
+     "Health":18777,
+     "Armor %":0.3285939968404423
+    }
+   }
   },
   "kyloren":{
    "currentRarity":7,
@@ -875,7 +1489,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6212894033477322,
+     "Critical Damage":1.8599999999999999,
+     "Protection":73916,
+     "Armor":679,
+     "Special Critical Chance %":0.10416698164146869,
+     "Armor Penetration":368,
+     "Strength":2295,
+     "Health Steal":0.2,
+     "Physical Damage":7395,
+     "Tenacity":0.8219799999999999,
+     "Special Damage":6737,
+     "Speed":198,
+     "Special Accuracy":162,
+     "Agility":1835,
+     "Potency":0.5915,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1773,
+     "Dodge Chance":24,
+     "Resistance":493,
+     "Health":56431,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5157614887960501
+    }
+   }
   },
   "dengar":{
    "currentRarity":7,
@@ -909,7 +1550,34 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7291794924406048,
+     "Critical Damage":2.16,
+     "Armor":688,
+     "Armor Penetration":260,
+     "Health Steal":0.15,
+     "Tenacity":0.55138,
+     "Agility":1423,
+     "Potency":0.58043,
+     "Resistance":328,
+     "Protection":69182,
+     "Special Critical Chance %":0.2758118898488121,
+     "Strength":2220,
+     "Physical Damage":6326,
+     "Special Damage":4370,
+     "Speed":143,
+     "Special Accuracy":90,
+     "Deflection Chance":24,
+     "Resistance Penetration":50,
+     "Intelligence":1294,
+     "Dodge Chance":24,
+     "Health":49365,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5190494153149755
+    }
+   }
   },
   "kiadimundi":{
    "currentRarity":4,
@@ -939,7 +1607,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4049613390928726,
+     "Critical Damage":2.16,
+     "Protection":38966,
+     "Armor":279,
+     "Special Critical Chance %":0.2591169816414687,
+     "Armor Penetration":63,
+     "Strength":1037,
+     "Health Steal":0.15,
+     "Physical Damage":2571,
+     "Tenacity":0.30422,
+     "Special Damage":1182,
+     "Speed":167,
+     "Agility":495,
+     "Potency":0.37961,
+     "Deflection Chance":24,
+     "Intelligence":416,
+     "Dodge Chance":24,
+     "Resistance":97,
+     "Health":25876,
+     "Armor %":0.3044189852700491
+    }
+   }
   },
   "arc170rex":{
    "currentRarity":7,
@@ -987,7 +1678,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7095365523758099,
+     "Critical Damage":1.5,
+     "Protection":86191,
+     "Armor":1287,
+     "Special Critical Chance %":0.35826,
+     "Armor Penetration":30,
+     "Strength":2700,
+     "Health Steal":0.3675,
+     "Physical Damage":5409,
+     "Tenacity":1.15126,
+     "Special Damage":4721,
+     "Speed":248,
+     "Agility":1547,
+     "Potency":1.00243,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":1703,
+     "Dodge Chance":24,
+     "Resistance":555,
+     "Health":92059,
+     "Mastery":45,
+     "Armor %":0.6687451286048324
+    }
+   }
   },
   "tiefighterfirstorder":{
    "currentRarity":7,
@@ -1035,7 +1751,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8097558396328294,
+     "Critical Damage":1.935,
+     "Protection":44881,
+     "Armor":660,
+     "Special Critical Chance %":0.2501302051835853,
+     "Armor Penetration":307,
+     "Strength":1788,
+     "Health Steal":0.4,
+     "Physical Damage":7739,
+     "Tenacity":0.8338300000000001,
+     "Special Damage":5774,
+     "Speed":205,
+     "Agility":2643,
+     "Potency":0.77473,
+     "Deflection Chance":24,
+     "Intelligence":1548,
+     "Dodge Chance":24,
+     "Resistance":268,
+     "Health":81787,
+     "Mastery":45,
+     "Armor %":0.5086705202312138
+    }
+   }
   },
   "magnaguard":{
    "currentRarity":7,
@@ -1061,7 +1801,32 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5609223056155508,
+     "Critical Damage":1.5,
+     "Protection":65090,
+     "Armor":889,
+     "Special Critical Chance %":0.2258969816414687,
+     "Armor Penetration":84,
+     "Strength":2155,
+     "Health Steal":0.23750000000000002,
+     "Physical Damage":4803,
+     "Tenacity":1.0677500000000002,
+     "Special Damage":3874,
+     "Speed":191,
+     "Agility":1399,
+     "Potency":0.48542,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":1423,
+     "Dodge Chance":24,
+     "Resistance":482,
+     "Health":71404,
+     "Mastery":25,
+     "Armor %":0.5823779888634131
+    }
+   }
   },
   "millenniumfalconep7":{
    "currentRarity":6,
@@ -1105,7 +1870,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9934612203023758,
+     "Critical Damage":1.635,
+     "Protection":48721,
+     "Armor":1341,
+     "Special Critical Chance %":0.4067502051835853,
+     "Armor Penetration":98,
+     "Strength":2175,
+     "Health Steal":0.05,
+     "Physical Damage":9967,
+     "Tenacity":0.72,
+     "Special Damage":7667,
+     "Speed":229,
+     "Agility":2719,
+     "Potency":0.23408,
+     "Deflection Chance":24,
+     "Intelligence":1556,
+     "Dodge Chance":24,
+     "Resistance":688,
+     "Health":65890,
+     "Mastery":45,
+     "Armor %":0.6777862016679302
+    }
+   }
   },
   "fifthbrother":{
    "currentRarity":7,
@@ -1139,7 +1928,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4720038174946004,
+     "Critical Damage":1.5,
+     "Protection":98303,
+     "Armor":1057,
+     "Special Critical Chance %":0.14614585313174944,
+     "Armor Penetration":138,
+     "Strength":2658,
+     "Health Steal":0.2675,
+     "Physical Damage":5496,
+     "Tenacity":0.56,
+     "Special Damage":5867,
+     "Speed":253,
+     "Special Accuracy":162,
+     "Agility":1716,
+     "Potency":0.45417,
+     "Deflection Chance":24,
+     "Resistance Penetration":150,
+     "Intelligence":1839,
+     "Dodge Chance":24,
+     "Resistance":667,
+     "Health":102558,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6237828267925641
+    }
+   }
   },
   "quigonjinn":{
    "currentRarity":7,
@@ -1165,7 +1981,36 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.48398172246220306,
+     "Critical Damage":1.8599999999999999,
+     "Armor":348,
+     "Armor Penetration":165,
+     "Health Steal":0.15,
+     "Tenacity":0.36,
+     "Agility":1009,
+     "Potency":0.76072,
+     "Resistance":337,
+     "Protection":36222,
+     "Special Critical Chance %":0.4348113390928725,
+     "Strength":1150,
+     "Physical Damage":4167,
+     "Special Damage":7048,
+     "Speed":259,
+     "Special Accuracy":54,
+     "Physical Critical Avoidance":108,
+     "Deflection Chance":24,
+     "Resistance Penetration":242,
+     "Intelligence":2126,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":108,
+     "Health":43004,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.3531202435312024
+    }
+   }
   },
   "royalguard":{
    "currentRarity":7,
@@ -1187,7 +2032,33 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4944005939524838,
+     "Critical Damage":1.5,
+     "Protection":59525,
+     "Armor":1430,
+     "Special Critical Chance %":0.2952188714902808,
+     "Armor Penetration":34,
+     "Strength":1918,
+     "Health Steal":0.17250000000000001,
+     "Physical Damage":3787,
+     "Tenacity":0.54219,
+     "Special Damage":3098,
+     "Speed":151,
+     "Physical Critical Avoidance":0.24000000000000002,
+     "Agility":1096,
+     "Potency":0.56708,
+     "Deflection Chance":24,
+     "Intelligence":1127,
+     "Dodge Chance":24,
+     "Resistance":1254,
+     "Special Critical Avoidance":0.24000000000000002,
+     "Health":62182,
+     "Mastery":15,
+     "Armor %":0.6916565900846433
+    }
+   }
   },
   "bastilashan":{
    "currentRarity":7,
@@ -1221,7 +2092,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3244381371490281,
+     "Critical Damage":1.5,
+     "Protection":61460,
+     "Armor":317,
+     "Special Critical Chance %":0.1390074541036717,
+     "Armor Penetration":5,
+     "Strength":1085,
+     "Health Steal":0.3,
+     "Physical Damage":2158,
+     "Tenacity":0.51728,
+     "Special Damage":3495,
+     "Speed":175,
+     "Agility":701,
+     "Potency":0.16015000000000001,
+     "Deflection Chance":24,
+     "Intelligence":1026,
+     "Dodge Chance":24,
+     "Resistance":257,
+     "Health":32891,
+     "Armor %":0.3321110529072813
+    }
+   }
   },
   "geonosianspy":{
    "currentRarity":7,
@@ -1247,7 +2141,31 @@
    "relic":{
     "currentTier":4
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7310994978401728,
+     "Critical Damage":2.19,
+     "Protection":27531,
+     "Armor":465,
+     "Special Critical Chance %":0.30106699244060475,
+     "Armor Penetration":189,
+     "Strength":1097,
+     "Health Steal":0.1,
+     "Physical Damage":4938,
+     "Tenacity":0.5654300000000001,
+     "Special Damage":2714,
+     "Speed":206,
+     "Agility":1893,
+     "Potency":0.46159,
+     "Deflection Chance":24,
+     "Intelligence":794,
+     "Dodge Chance":24,
+     "Resistance":288,
+     "Health":44637,
+     "Mastery":10,
+     "Armor %":0.4217687074829932
+    }
+   }
   },
   "bt1":{
    "currentRarity":6,
@@ -1277,7 +2195,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5090653185745141,
+     "Critical Damage":1.8599999999999999,
+     "Armor":480,
+     "Armor Penetration":70,
+     "Health Steal":0.05,
+     "Tenacity":0.5887100000000001,
+     "Agility":1162,
+     "Potency":0.54574,
+     "Resistance":286,
+     "Protection":42324,
+     "Special Critical Chance %":0.43280955453563713,
+     "Strength":1316,
+     "Physical Damage":5129,
+     "Special Damage":6838,
+     "Speed":167,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":210,
+     "Intelligence":1762,
+     "Dodge Chance":24,
+     "Health":46596,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.42953020134228187
+    }
+   }
   },
   "xwingresistance":{
    "currentRarity":7,
@@ -1328,7 +2273,31 @@
    "relic":{
     "currentTier":2
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.31893077213822896,
+     "Critical Damage":1.5,
+     "Protection":42966,
+     "Armor":547,
+     "Special Critical Chance %":0.2847615226781858,
+     "Armor Penetration":40,
+     "Strength":1003,
+     "Health Steal":0.1,
+     "Physical Damage":2957,
+     "Tenacity":1.35,
+     "Special Damage":5271,
+     "Speed":198,
+     "Agility":742,
+     "Potency":1.4694800000000001,
+     "Deflection Chance":24,
+     "Resistance Penetration":130,
+     "Intelligence":1671,
+     "Dodge Chance":24,
+     "Resistance":289,
+     "Health":53230,
+     "Armor %":0.4617982271000422
+    }
+   }
   },
   "badbatchomega":{
    "currentRarity":6,
@@ -1342,7 +2311,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2000075593952484,
+     "Critical Damage":1.5,
+     "Protection":0,
+     "Armor":112,
+     "Special Critical Chance %":0.1,
+     "Armor Penetration":23,
+     "Strength":453,
+     "Physical Damage":957,
+     "Tenacity":0.2,
+     "Special Damage":987,
+     "Speed":103,
+     "Agility":502,
+     "Potency":0.060000000000000005,
+     "Deflection Chance":24,
+     "Intelligence":410,
+     "Dodge Chance":24,
+     "Resistance":41,
+     "Health":8559,
+     "Armor %":0.1494329553035357
+    }
+   }
   },
   "eighthbrother":{
    "currentRarity":7,
@@ -1376,7 +2367,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9840234827213823,
+     "Critical Damage":2.355,
+     "Protection":98506,
+     "Armor":885,
+     "Special Critical Chance %":0.4114802051835853,
+     "Armor Penetration":99,
+     "Strength":1774,
+     "Health Steal":0.15,
+     "Physical Damage":7997,
+     "Tenacity":0.8588399999999999,
+     "Special Damage":6155,
+     "Speed":275,
+     "Agility":2707,
+     "Potency":0.37926000000000004,
+     "Deflection Chance":24,
+     "Intelligence":1587,
+     "Dodge Chance":24,
+     "Resistance":518,
+     "Health":59655,
+     "Mastery":45,
+     "Armor %":0.5812807881773399
+    }
+   }
   },
   "talia":{
    "currentRarity":6,
@@ -1402,7 +2417,28 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.19560953833693304,
+     "Critical Damage":1.8599999999999999,
+     "Protection":1863,
+     "Armor":176,
+     "Special Critical Chance %":0.12602094492440605,
+     "Strength":516,
+     "Physical Damage":1105,
+     "Tenacity":0.23058,
+     "Special Damage":1760,
+     "Speed":95,
+     "Agility":481,
+     "Potency":0.02,
+     "Deflection Chance":24,
+     "Intelligence":611,
+     "Dodge Chance":24,
+     "Resistance":105,
+     "Health":14914,
+     "Armor %":0.21634910878918254
+    }
+   }
   },
   "admiralraddus":{
    "currentRarity":2,
@@ -1436,7 +2472,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6350343952483801,
+     "Critical Damage":1.5,
+     "Armor":810,
+     "Armor Penetration":218,
+     "Health Steal":0.3,
+     "Tenacity":0.46049999999999996,
+     "Agility":1728,
+     "Potency":0.98483,
+     "Resistance":503,
+     "Protection":100275,
+     "Special Critical Chance %":0.18,
+     "Strength":2423,
+     "Physical Damage":9102,
+     "Special Damage":7702,
+     "Speed":195,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1734,
+     "Dodge Chance":24,
+     "Health":103061,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5595854922279793
+    }
+   }
   },
   "nightsisterzombie":{
    "currentRarity":7,
@@ -1462,7 +2525,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5260440847732182,
+     "Critical Damage":1.5,
+     "Protection":41056,
+     "Armor":489,
+     "Special Critical Chance %":0.29561000000000004,
+     "Armor Penetration":61,
+     "Strength":1026,
+     "Physical Damage":2652,
+     "Tenacity":0.31821000000000005,
+     "Special Damage":2038,
+     "Speed":178,
+     "Agility":908,
+     "Potency":0.47189000000000003,
+     "Deflection Chance":24,
+     "Intelligence":676,
+     "Dodge Chance":24,
+     "Resistance":256,
+     "Health":25071,
+     "Armor %":0.4340878828229028
+    }
+   }
   },
   "jedistarfighteranakin":{
    "currentRarity":7,
@@ -1512,9 +2597,38 @@
     }
    ],
    "relic":{
-    "currentTier":8
+    "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5108583423326134,
+     "Critical Damage":1.92,
+     "Armor":721,
+     "Armor Penetration":5,
+     "Health Steal":0.15,
+     "Tenacity":0.67681,
+     "Agility":1760,
+     "Potency":0.5483,
+     "Resistance":504,
+     "Protection":47236,
+     "Special Critical Chance %":0.3841821004319655,
+     "Strength":2111,
+     "Physical Damage":5382,
+     "Special Damage":9034,
+     "Speed":245,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":230,
+     "Intelligence":2629,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":63007,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5307324254692676
+    }
+   }
   },
   "sabinewrens3":{
    "currentRarity":6,
@@ -1540,7 +2654,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3808936123110151,
+     "Critical Damage":1.5,
+     "Protection":8078,
+     "Armor":216,
+     "Special Critical Chance %":0.15671000000000002,
+     "Armor Penetration":37,
+     "Strength":524,
+     "Health Steal":0.05,
+     "Physical Damage":1767,
+     "Tenacity":0.28451,
+     "Special Damage":1375,
+     "Speed":163,
+     "Agility":838,
+     "Potency":0.47398,
+     "Deflection Chance":24,
+     "Intelligence":453,
+     "Dodge Chance":24,
+     "Resistance":76,
+     "Health":15739,
+     "Armor %":0.2530755711775044
+    }
+   }
   },
   "paploo":{
    "currentRarity":7,
@@ -1566,7 +2703,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3421909665226782,
+     "Critical Damage":1.5,
+     "Protection":42296,
+     "Armor":685,
+     "Special Critical Chance %":0.15301,
+     "Armor Penetration":20,
+     "Strength":1194,
+     "Health Steal":0.15,
+     "Physical Damage":2457,
+     "Tenacity":0.36449,
+     "Special Damage":2171,
+     "Speed":117,
+     "Agility":690,
+     "Potency":0.3,
+     "Deflection Chance":24,
+     "Intelligence":699,
+     "Dodge Chance":24,
+     "Resistance":310,
+     "Health":32732,
+     "Armor %":0.5179584120982986
+    }
+   }
   },
   "scouttrooper_v3":{
    "currentRarity":7,
@@ -1592,7 +2752,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7886877186825054,
+     "Critical Damage":1.635,
+     "Protection":65624,
+     "Armor":862,
+     "Special Critical Chance %":0.29240020518358534,
+     "Armor Penetration":140,
+     "Strength":2337,
+     "Health Steal":0.25,
+     "Physical Damage":5316,
+     "Tenacity":0.76085,
+     "Special Damage":5156,
+     "Speed":231,
+     "Agility":2511,
+     "Potency":1.49885,
+     "Deflection Chance":213,
+     "Resistance Penetration":10,
+     "Intelligence":1814,
+     "Dodge Chance":213,
+     "Resistance":315,
+     "Health":68740,
+     "Mastery":45,
+     "Armor %":0.5748582860953652
+    }
+   }
   },
   "ewokelder":{
    "currentRarity":7,
@@ -1614,7 +2799,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4131180534557235,
+     "Critical Damage":1.8599999999999999,
+     "Protection":41169,
+     "Armor":328,
+     "Special Critical Chance %":0.1593488714902808,
+     "Armor Penetration":20,
+     "Strength":952,
+     "Health Steal":0.1,
+     "Physical Damage":2087,
+     "Tenacity":0.34696,
+     "Special Damage":2259,
+     "Speed":171,
+     "Agility":1105,
+     "Potency":0.12964,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":764,
+     "Dodge Chance":24,
+     "Resistance":227,
+     "Health":26285,
+     "Armor %":0.33972035214914553
+    }
+   }
   },
   "epixpoe":{
    "currentRarity":6,
@@ -1648,7 +2857,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.25904142818574516,
+     "Critical Damage":1.5,
+     "Protection":7769,
+     "Armor":185,
+     "Special Critical Chance %":0.15195,
+     "Armor Penetration":27,
+     "Strength":388,
+     "Health Steal":0.1,
+     "Physical Damage":1284,
+     "Tenacity":0.24639,
+     "Special Damage":1016,
+     "Speed":133,
+     "Agility":470,
+     "Potency":0.14161,
+     "Deflection Chance":24,
+     "Intelligence":319,
+     "Dodge Chance":24,
+     "Resistance":97,
+     "Health":8941,
+     "Armor %":0.22492401215805471
+    }
+   }
   },
   "queenamidala":{
    "currentRarity":7,
@@ -1678,7 +2910,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5186288201943845,
+     "Critical Damage":1.5,
+     "Armor":1101,
+     "Armor Penetration":33,
+     "Health Steal":0.1,
+     "Tenacity":1.04831,
+     "Agility":1966,
+     "Potency":0.63702,
+     "Resistance":967,
+     "Protection":62439,
+     "Special Critical Chance %":0.1581849082073434,
+     "Strength":1835,
+     "Physical Damage":6336,
+     "Special Damage":7603,
+     "Speed":240,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":70,
+     "Intelligence":2450,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":73344,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.633304572907679
+    }
+   }
   },
   "glahsokatano":{
    "currentRarity":7,
@@ -1712,7 +2973,32 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4499717332613391,
+     "Critical Damage":1.5,
+     "Protection":101947,
+     "Armor":1937,
+     "Special Critical Chance %":0.19370236231101512,
+     "Armor Penetration":100,
+     "Strength":2699,
+     "Health Steal":0.6625,
+     "Physical Damage":6430,
+     "Tenacity":0.81973,
+     "Special Damage":6566,
+     "Speed":518,
+     "Agility":1727,
+     "Potency":0.58,
+     "Deflection Chance":24,
+     "Resistance Penetration":47,
+     "Intelligence":2082,
+     "Dodge Chance":24,
+     "Resistance":1159,
+     "Health":139305,
+     "Mastery":75,
+     "Armor %":0.7523791027383958
+    }
+   }
   },
   "chiefchirpa":{
    "currentRarity":7,
@@ -1738,7 +3024,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6058735340172787,
+     "Critical Damage":1.8599999999999999,
+     "Armor":645,
+     "Armor Penetration":153,
+     "Health Steal":0.1225,
+     "Tenacity":0.26,
+     "Agility":1196,
+     "Potency":0.40179,
+     "Resistance":365,
+     "Protection":49741,
+     "Special Critical Chance %":0.2545969816414687,
+     "Strength":1795,
+     "Physical Damage":4894,
+     "Special Damage":4285,
+     "Speed":179,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":45,
+     "Intelligence":1423,
+     "Dodge Chance":24,
+     "Health":47301,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.5029239766081871
+    }
+   }
   },
   "padawansabine":{
    "currentRarity":7,
@@ -1764,7 +3077,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.0576088525917926,
+     "Critical Damage":1.635,
+     "Protection":59051,
+     "Armor":1055,
+     "Special Critical Chance %":0.5463202051835854,
+     "Armor Penetration":121,
+     "Strength":2239,
+     "Health Steal":4.55,
+     "Physical Damage":8111,
+     "Tenacity":0.44527,
+     "Special Damage":6712,
+     "Speed":186,
+     "Agility":2572,
+     "Potency":0.8366500000000001,
+     "Deflection Chance":24,
+     "Intelligence":1597,
+     "Dodge Chance":24,
+     "Resistance":520,
+     "Health":74484,
+     "Mastery":45,
+     "Armor %":0.6233382570162481
+    }
+   }
   },
   "generalhux":{
    "currentRarity":7,
@@ -1794,7 +3131,36 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4198722003239741,
+     "Critical Damage":1.5,
+     "Armor":662,
+     "Armor Penetration":5,
+     "Health Steal":0.1,
+     "Tenacity":1.3782100000000002,
+     "Agility":1385,
+     "Potency":0.43655,
+     "Resistance":515,
+     "Protection":56732,
+     "Special Critical Chance %":0.22860774298056155,
+     "Strength":1718,
+     "Physical Damage":4578,
+     "Special Damage":8002,
+     "Speed":269,
+     "Special Accuracy":90,
+     "Physical Critical Avoidance":180,
+     "Deflection Chance":24,
+     "Resistance Penetration":130,
+     "Intelligence":2518,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":180,
+     "Health":73289,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5094267025779146
+    }
+   }
   },
   "ct5555":{
    "currentRarity":7,
@@ -1824,7 +3190,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.38662228401727866,
+     "Critical Damage":1.5,
+     "Protection":56103,
+     "Armor":700,
+     "Special Critical Chance %":0.2282769816414687,
+     "Armor Penetration":25,
+     "Strength":1280,
+     "Health Steal":0.15,
+     "Physical Damage":2764,
+     "Tenacity":0.6292500000000001,
+     "Special Damage":2309,
+     "Speed":168,
+     "Agility":708,
+     "Potency":0.30014,
+     "Deflection Chance":24,
+     "Intelligence":782,
+     "Dodge Chance":24,
+     "Resistance":320,
+     "Health":32810,
+     "Armor %":0.5233644859813084
+    }
+   }
   },
   "commanderahsoka":{
    "currentRarity":7,
@@ -1850,7 +3239,32 @@
    "relic":{
     "currentTier":11
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.912374055075594,
+     "Critical Damage":1.71,
+     "Protection":76594,
+     "Armor":1319,
+     "Special Critical Chance %":0.5986003374730022,
+     "Armor Penetration":353,
+     "Strength":2355,
+     "Health Steal":0.1,
+     "Physical Damage":8737,
+     "Tenacity":1.08742,
+     "Special Damage":9713,
+     "Speed":303,
+     "Agility":2656,
+     "Potency":0.16,
+     "Deflection Chance":24,
+     "Resistance Penetration":60,
+     "Intelligence":2229,
+     "Dodge Chance":24,
+     "Resistance":579,
+     "Health":90077,
+     "Mastery":70,
+     "Armor %":0.6741630462560695
+    }
+   }
   },
   "visasmarr":{
    "currentRarity":7,
@@ -1876,7 +3290,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.38640266198704104,
+     "Critical Damage":1.5,
+     "Protection":3433,
+     "Armor":188,
+     "Special Critical Chance %":0.21889,
+     "Armor Penetration":11,
+     "Strength":622,
+     "Health Steal":0.2,
+     "Physical Damage":1520,
+     "Tenacity":0.31582,
+     "Special Damage":1631,
+     "Speed":175,
+     "Agility":756,
+     "Potency":0.12872,
+     "Deflection Chance":24,
+     "Intelligence":580,
+     "Dodge Chance":24,
+     "Resistance":92,
+     "Health":16099,
+     "Armor %":0.22774076317383404
+    }
+   }
   },
   "lukeskywalker":{
    "currentRarity":7,
@@ -1902,7 +3339,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.49782947084233264,
+     "Critical Damage":1.65,
+     "Protection":28025,
+     "Armor":261,
+     "Special Critical Chance %":0.2003069816414687,
+     "Armor Penetration":25,
+     "Strength":676,
+     "Health Steal":0.1,
+     "Physical Damage":2400,
+     "Tenacity":0.29934,
+     "Special Damage":1440,
+     "Speed":114,
+     "Agility":1088,
+     "Potency":0.16716,
+     "Deflection Chance":24,
+     "Intelligence":528,
+     "Dodge Chance":24,
+     "Resistance":78,
+     "Health":15828,
+     "Armor %":0.2904841402337229
+    }
+   }
   },
   "bensolo":{
    "currentRarity":7,
@@ -1932,7 +3392,34 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5947123164146868,
+     "Critical Damage":1.5,
+     "Armor":641,
+     "Armor Penetration":38,
+     "Health Steal":0.15,
+     "Tenacity":0.55047,
+     "Agility":1670,
+     "Potency":1.21401,
+     "Resistance":601,
+     "Protection":73881,
+     "Special Critical Chance %":0.41594880399568035,
+     "Strength":1763,
+     "Physical Damage":6947,
+     "Special Damage":12373,
+     "Speed":222,
+     "Special Accuracy":126,
+     "Deflection Chance":24,
+     "Resistance Penetration":122,
+     "Intelligence":2789,
+     "Dodge Chance":24,
+     "Health":48849,
+     "Mastery":35,
+     "Physical Accuracy":126,
+     "Armor %":0.5013687915526007
+    }
+   }
   },
   "grandmasterluke":{
    "currentRarity":7,
@@ -1966,7 +3453,33 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.43346211123110145,
+     "Critical Damage":1.5,
+     "Protection":74518,
+     "Armor":1124,
+     "Special Critical Chance %":0.2471980318574514,
+     "Strength":2171,
+     "Health Steal":0.5,
+     "Physical Damage":5757,
+     "Tenacity":0.63,
+     "Special Damage":11849,
+     "Speed":450,
+     "Physical Critical Avoidance":486,
+     "Agility":1682,
+     "Potency":1.1374,
+     "Deflection Chance":24,
+     "Resistance Penetration":157,
+     "Intelligence":2912,
+     "Dodge Chance":24,
+     "Resistance":1271,
+     "Special Critical Avoidance":486,
+     "Health":154998,
+     "Mastery":45,
+     "Armor %":0.6380925347715015
+    }
+   }
   },
   "gamorreanguard":{
    "currentRarity":7,
@@ -1992,7 +3505,31 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3077030399568034,
+     "Critical Damage":1.5,
+     "Protection":118870,
+     "Armor":938,
+     "Special Critical Chance %":0.13519,
+     "Armor Penetration":194,
+     "Strength":1786,
+     "Health Steal":0.2225,
+     "Physical Damage":4066,
+     "Tenacity":0.5561200000000001,
+     "Special Damage":3036,
+     "Speed":171,
+     "Agility":920,
+     "Potency":1.05427,
+     "Deflection Chance":24,
+     "Intelligence":988,
+     "Dodge Chance":24,
+     "Resistance":868,
+     "Health":50637,
+     "Mastery":15,
+     "Armor %":0.5953665503014915
+    }
+   }
   },
   "kitfisto":{
    "currentRarity":2,
@@ -2026,7 +3563,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5498324109071274,
+     "Critical Damage":1.5,
+     "Armor":973,
+     "Armor Penetration":22,
+     "Health Steal":0.2,
+     "Tenacity":1.10139,
+     "Agility":1886,
+     "Potency":0.49,
+     "Resistance":650,
+     "Protection":88613,
+     "Special Critical Chance %":0.1773042521598272,
+     "Strength":2018,
+     "Physical Damage":6720,
+     "Special Damage":10410,
+     "Speed":270,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":105,
+     "Intelligence":3063,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":69757,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6041601986960571
+    }
+   }
   },
   "houndstooth":{
    "currentRarity":7,
@@ -2074,7 +3640,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.742448752699784,
+     "Critical Damage":1.5,
+     "Armor":788,
+     "Armor Penetration":290,
+     "Health Steal":0.1,
+     "Tenacity":0.43193000000000004,
+     "Agility":1935,
+     "Potency":0.72828,
+     "Resistance":318,
+     "Protection":42432,
+     "Special Critical Chance %":0.1665718898488121,
+     "Strength":2437,
+     "Physical Damage":8088,
+     "Special Damage":7325,
+     "Speed":261,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":105,
+     "Intelligence":1801,
+     "Dodge Chance":24,
+     "Health":101293,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5527884952648193
+    }
+   }
   },
   "administratorlando":{
    "currentRarity":7,
@@ -2100,7 +3693,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.864993282937365,
+     "Critical Damage":1.875,
+     "Protection":49195,
+     "Armor":708,
+     "Special Critical Chance %":0.37120595842332615,
+     "Armor Penetration":241,
+     "Strength":1474,
+     "Health Steal":0.2,
+     "Physical Damage":5228,
+     "Tenacity":0.62727,
+     "Special Damage":4587,
+     "Speed":152,
+     "Agility":2348,
+     "Potency":0.54606,
+     "Deflection Chance":24,
+     "Intelligence":1422,
+     "Dodge Chance":24,
+     "Resistance":444,
+     "Health":59288,
+     "Mastery":25,
+     "Armor %":0.5261984392419174
+    }
+   }
   },
   "admiralpiett":{
    "currentRarity":7,
@@ -2130,7 +3747,35 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7404280858531318,
+     "Critical Damage":1.5,
+     "Armor":759,
+     "Armor Penetration":48,
+     "Health Steal":0.45,
+     "Tenacity":0.8934700000000001,
+     "Agility":1908,
+     "Potency":0.50739,
+     "Resistance":476,
+     "Protection":71775,
+     "Special Critical Chance %":0.19247,
+     "Strength":2102,
+     "Physical Damage":7109,
+     "Special Damage":7018,
+     "Speed":211,
+     "Special Accuracy":216,
+     "Physical Critical Avoidance":432,
+     "Deflection Chance":24,
+     "Intelligence":2360,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":432,
+     "Health":59691,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.5435016111707841
+    }
+   }
   },
   "ig2000":{
    "currentRarity":7,
@@ -2186,7 +3831,34 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7713579913606912,
+     "Critical Damage":1.5,
+     "Armor":958,
+     "Armor Penetration":316,
+     "Health Steal":0.3,
+     "Tenacity":0.703,
+     "Agility":2128,
+     "Potency":0.88197,
+     "Resistance":362,
+     "Protection":96097,
+     "Special Critical Chance %":0.22465000000000002,
+     "Strength":2628,
+     "Physical Damage":7815,
+     "Special Damage":6782,
+     "Speed":252,
+     "Special Accuracy":216,
+     "Deflection Chance":24,
+     "Resistance Penetration":120,
+     "Intelligence":1848,
+     "Dodge Chance":24,
+     "Health":89267,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.600438733939204
+    }
+   }
   },
   "nightsisterspirit":{
    "currentRarity":2,
@@ -2238,7 +3910,33 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.0168830048596111,
+     "Critical Damage":1.875,
+     "Armor":586,
+     "Accuracy":0.12000000000000001,
+     "Armor Penetration":143,
+     "Health Steal":0.2,
+     "Tenacity":0.49158,
+     "Agility":2344,
+     "Potency":0.54017,
+     "Resistance":269,
+     "Protection":53316,
+     "Special Critical Chance %":0.45975755939524837,
+     "Strength":1657,
+     "Physical Damage":5966,
+     "Special Damage":4223,
+     "Speed":143,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1262,
+     "Dodge Chance":24,
+     "Health":48806,
+     "Mastery":25,
+     "Armor %":0.47895382100531264
+    }
+   }
   },
   "supremeleaderkyloren":{
    "currentRarity":7,
@@ -2272,7 +3970,41 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.3831617413606911,
+     "Critical Damage":1.725,
+     "Protection":50886,
+     "Armor":732,
+     "Special Critical Chance %":0.507678898488121,
+     "Armor Penetration":338,
+     "Strength":2356,
+     "Health Steal":0.4,
+     "Physical Damage":12287,
+     "Tenacity":0.5415800000000001,
+     "Special Damage":9160,
+     "Speed":510,
+     "Agility":3162,
+     "Potency":1.5151700000000001,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1906,
+     "Dodge Chance":24,
+     "Resistance":316,
+     "Defense Penetration":0.65,
+     "Health":134914,
+     "Mastery":75,
+     "Armor %":0.5345016429353778
+    }
+   }
+  },
+  "baylanskoll":{
+   "currentRarity":7,
+   "currentTier":1,
+   "skill":[],
+   "relic":{
+    "currentTier":1
+   }
   },
   "admiralackbar":{
    "currentRarity":7,
@@ -2298,7 +4030,36 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.43640530777537795,
+     "Critical Damage":1.5,
+     "Armor":613,
+     "Armor Penetration":75,
+     "Health Steal":0.15,
+     "Tenacity":0.92958,
+     "Agility":1204,
+     "Potency":0.37334999999999996,
+     "Resistance":546,
+     "Protection":48162,
+     "Special Critical Chance %":0.2588918898488121,
+     "Strength":1216,
+     "Physical Damage":4473,
+     "Special Damage":5451,
+     "Speed":165,
+     "Special Accuracy":54,
+     "Physical Critical Avoidance":108,
+     "Deflection Chance":24,
+     "Resistance Penetration":37,
+     "Intelligence":1839,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":108,
+     "Health":52768,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.49020391843262695
+    }
+   }
   },
   "fulcrumahsoka":{
    "currentRarity":7,
@@ -2324,7 +4085,33 @@
    "relic":{
     "currentTier":11
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.226577656587473,
+     "Critical Damage":2.01,
+     "Armor":837,
+     "Armor Penetration":164,
+     "Health Steal":0.15,
+     "Tenacity":1.00032,
+     "Agility":2983,
+     "Potency":0.4071,
+     "Resistance":429,
+     "Protection":72590,
+     "Special Critical Chance %":0.5581938012958964,
+     "Strength":2126,
+     "Physical Damage":8442,
+     "Special Damage":7327,
+     "Speed":193,
+     "Physical Critical Avoidance":0.35000000000000003,
+     "Deflection Chance":24,
+     "Intelligence":1834,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":0.35000000000000003,
+     "Health":62158,
+     "Mastery":70,
+     "Armor %":0.5676500508646999
+    }
+   }
   },
   "stormtrooper":{
    "currentRarity":7,
@@ -2346,7 +4133,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.32931681425485965,
+     "Critical Damage":1.5,
+     "Protection":22819,
+     "Armor":396,
+     "Special Critical Chance %":0.15097,
+     "Armor Penetration":32,
+     "Strength":863,
+     "Physical Damage":2058,
+     "Tenacity":0.32538,
+     "Special Damage":1637,
+     "Speed":113,
+     "Agility":762,
+     "Potency":0.17326000000000003,
+     "Deflection Chance":24,
+     "Intelligence":553,
+     "Dodge Chance":24,
+     "Resistance":208,
+     "Health":21934,
+     "Armor %":0.38316400580551524
+    }
+   }
   },
   "hunters3":{
    "currentRarity":3,
@@ -2376,10 +4185,33 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.28298850431965444,
+     "Critical Damage":1.5,
+     "Protection":13873,
+     "Armor":166,
+     "Special Critical Chance %":0.19756538066954643,
+     "Armor Penetration":21,
+     "Strength":432,
+     "Health Steal":0.05,
+     "Physical Damage":1517,
+     "Tenacity":0.25631000000000004,
+     "Special Damage":1746,
+     "Speed":139,
+     "Agility":399,
+     "Potency":0.47989000000000004,
+     "Deflection Chance":24,
+     "Intelligence":526,
+     "Dodge Chance":24,
+     "Resistance":124,
+     "Health":10288,
+     "Armor %":0.20659614187927816
+    }
+   }
   },
   "scorch":{
-   "currentRarity":3,
+   "currentRarity":4,
    "currentTier":7,
    "skill":[
     {
@@ -2402,7 +4234,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "jangofett":{
    "currentRarity":7,
@@ -2436,7 +4270,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.0733974514038878,
+     "Critical Damage":1.935,
+     "Protection":43995,
+     "Armor":598,
+     "Special Critical Chance %":0.4733520950323974,
+     "Armor Penetration":178,
+     "Strength":1907,
+     "Health Steal":0.25,
+     "Physical Damage":7616,
+     "Tenacity":0.51512,
+     "Special Damage":5915,
+     "Speed":208,
+     "Agility":2550,
+     "Potency":0.74668,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1585,
+     "Dodge Chance":24,
+     "Resistance":273,
+     "Health":60362,
+     "Mastery":45,
+     "Armor %":0.4840145690004047
+    }
+   }
   },
   "luminaraunduli":{
    "currentRarity":3,
@@ -2534,10 +4393,33 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4803982478401728,
+     "Critical Damage":1.5,
+     "Protection":38387,
+     "Armor":299,
+     "Special Critical Chance %":0.15079,
+     "Armor Penetration":94,
+     "Strength":906,
+     "Health Steal":0.1,
+     "Physical Damage":3205,
+     "Tenacity":0.37634999999999996,
+     "Special Damage":1928,
+     "Speed":216,
+     "Agility":1253,
+     "Potency":0.82134,
+     "Deflection Chance":24,
+     "Intelligence":646,
+     "Dodge Chance":24,
+     "Resistance":145,
+     "Health":22314,
+     "Armor %":0.3192738921516284
+    }
+   }
   },
   "disguisedclonetrooper":{
-   "currentRarity":3,
+   "currentRarity":5,
    "currentTier":7,
    "skill":[
     {
@@ -2556,7 +4438,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "slave1":{
    "currentRarity":7,
@@ -2608,7 +4492,36 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5194732397408208,
+     "Critical Damage":1.8599999999999999,
+     "Armor":425,
+     "Armor Penetration":100,
+     "Health Steal":0.05,
+     "Tenacity":0.31,
+     "Agility":1131,
+     "Potency":0.5046,
+     "Resistance":408,
+     "Protection":62391,
+     "Special Critical Chance %":0.3123742521598272,
+     "Strength":1083,
+     "Physical Damage":4156,
+     "Special Damage":6070,
+     "Speed":229,
+     "Special Accuracy":54,
+     "Physical Critical Avoidance":108,
+     "Deflection Chance":24,
+     "Resistance Penetration":219,
+     "Intelligence":2037,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":108,
+     "Health":43726,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.4
+    }
+   }
   },
   "tieadvanced":{
    "currentRarity":7,
@@ -2656,7 +4569,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "4lom":{
    "currentRarity":3,
@@ -2690,7 +4605,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "captainenoch":{
    "currentRarity":7,
@@ -2716,7 +4633,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.557467030237581,
+     "Critical Damage":1.5,
+     "Protection":101109,
+     "Armor":1442,
+     "Special Critical Chance %":0.15577000000000002,
+     "Armor Penetration":321,
+     "Strength":2718,
+     "Health Steal":0.3175,
+     "Physical Damage":7095,
+     "Tenacity":0.56,
+     "Special Damage":5583,
+     "Speed":263,
+     "Special Accuracy":162,
+     "Agility":1682,
+     "Potency":0.96593,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1739,
+     "Dodge Chance":24,
+     "Resistance":692,
+     "Health":70760,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6934359220966578
+    }
+   }
   },
   "appo":{
    "currentRarity":6,
@@ -2742,7 +4686,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.40271501889848815,
+     "Critical Damage":1.8599999999999999,
+     "Protection":42628,
+     "Armor":281,
+     "Special Critical Chance %":0.24812,
+     "Armor Penetration":7,
+     "Strength":833,
+     "Health Steal":0.05,
+     "Physical Damage":2406,
+     "Tenacity":0.39022,
+     "Special Damage":2146,
+     "Speed":204,
+     "Agility":538,
+     "Potency":0.12144,
+     "Deflection Chance":24,
+     "Intelligence":662,
+     "Dodge Chance":24,
+     "Resistance":159,
+     "Health":21538,
+     "Armor %":0.30593358737071313
+    }
+   }
   },
   "jedimasterkenobi":{
    "currentRarity":7,
@@ -2776,7 +4743,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9188118925485961,
+     "Critical Damage":2.1,
+     "Protection":52650,
+     "Armor":865,
+     "Special Critical Chance %":0.28001360691144705,
+     "Armor Penetration":352,
+     "Strength":2222,
+     "Health Steal":0.4,
+     "Physical Damage":10818,
+     "Tenacity":1.0625200000000001,
+     "Special Damage":8160,
+     "Speed":504,
+     "Agility":2704,
+     "Potency":1.03441,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1793,
+     "Dodge Chance":24,
+     "Resistance":399,
+     "Health":110248,
+     "Mastery":60,
+     "Armor %":0.5757071547420965
+    }
+   }
   },
   "pao":{
    "currentRarity":4,
@@ -2831,7 +4823,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7623531776457882,
+     "Critical Damage":1.575,
+     "Protection":58357,
+     "Armor":927,
+     "Special Critical Chance %":0.3102356695464363,
+     "Armor Penetration":231,
+     "Strength":1935,
+     "Health Steal":0.55,
+     "Physical Damage":7435,
+     "Tenacity":0.80678,
+     "Special Damage":5643,
+     "Speed":207,
+     "Agility":2246,
+     "Potency":0.71313,
+     "Deflection Chance":24,
+     "Intelligence":1307,
+     "Dodge Chance":24,
+     "Resistance":388,
+     "Health":60025,
+     "Mastery":25,
+     "Armor %":0.5925215723873442
+    }
+   }
   },
   "stormtrooperluke":{
    "currentRarity":3,
@@ -2851,17 +4867,19 @@
     },
     {
      "id":"leaderskill_STORMTROOPERLUKE",
-     "tier":0
+     "tier":1
     },
     {
      "id":"uniqueskill_STORMTROOPERLUKE01",
-     "tier":0
+     "tier":1
     }
    ],
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "ig88":{
    "currentRarity":7,
@@ -2891,7 +4909,32 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8558353617710583,
+     "Critical Damage":2.235,
+     "Protection":48917,
+     "Armor":542,
+     "Special Critical Chance %":0.31579454103671706,
+     "Armor Penetration":142,
+     "Strength":1520,
+     "Health Steal":0.2,
+     "Physical Damage":6264,
+     "Tenacity":0.52292,
+     "Special Damage":4720,
+     "Speed":192,
+     "Agility":2399,
+     "Potency":0.32003000000000004,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":1364,
+     "Dodge Chance":24,
+     "Resistance":309,
+     "Health":50035,
+     "Mastery":25,
+     "Armor %":0.4595167443832132
+    }
+   }
   },
   "millenniumfalconpristine":{
    "currentRarity":7,
@@ -2948,7 +4991,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.47519984881209504,
+     "Critical Damage":1.8599999999999999,
+     "Protection":44652,
+     "Armor":245,
+     "Special Critical Chance %":0.19351188984881212,
+     "Armor Penetration":44,
+     "Strength":747,
+     "Health Steal":0.1,
+     "Physical Damage":3411,
+     "Tenacity":0.63961,
+     "Special Damage":2155,
+     "Speed":196,
+     "Agility":1103,
+     "Potency":0.05,
+     "Deflection Chance":24,
+     "Resistance Penetration":15,
+     "Intelligence":596,
+     "Dodge Chance":24,
+     "Resistance":159,
+     "Health":19988,
+     "Armor %":0.2776203966005666
+    }
+   }
   },
   "bladeofdorin":{
    "currentRarity":7,
@@ -3000,7 +5067,34 @@
    "relic":{
     "currentTier":3
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.28857011069114474,
+     "Critical Damage":1.92,
+     "Armor":603,
+     "Armor Penetration":20,
+     "Health Steal":0.1575,
+     "Tenacity":0.85867,
+     "Agility":779,
+     "Potency":0.69021,
+     "Resistance":538,
+     "Protection":59285,
+     "Special Critical Chance %":0.3777435178185745,
+     "Strength":1086,
+     "Physical Damage":2350,
+     "Special Damage":6051,
+     "Speed":231,
+     "Special Accuracy":18,
+     "Deflection Chance":24,
+     "Resistance Penetration":167,
+     "Intelligence":1450,
+     "Dodge Chance":24,
+     "Health":40230,
+     "Mastery":5,
+     "Physical Accuracy":18,
+     "Armor %":0.4860943168077388
+    }
+   }
   },
   "brutus":{
    "currentRarity":4,
@@ -3026,7 +5120,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "emperorpalpatine":{
    "currentRarity":7,
@@ -3056,7 +5152,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5054839956803455,
+     "Critical Damage":1.92,
+     "Armor":588,
+     "Armor Penetration":20,
+     "Health Steal":0.1,
+     "Tenacity":0.34,
+     "Agility":1626,
+     "Potency":0.91872,
+     "Resistance":601,
+     "Protection":48152,
+     "Special Critical Chance %":0.4508965361771058,
+     "Strength":1640,
+     "Physical Damage":5708,
+     "Special Damage":11289,
+     "Speed":242,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":217,
+     "Intelligence":2864,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":49101,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.47980416156670747
+    }
+   }
   },
   "monmothma":{
    "currentRarity":7,
@@ -3086,7 +5211,36 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.43836191684665227,
+     "Critical Damage":1.92,
+     "Armor":704,
+     "Armor Penetration":10,
+     "Health Steal":0.2,
+     "Tenacity":1.55637,
+     "Agility":1300,
+     "Potency":0.6308499999999999,
+     "Resistance":440,
+     "Protection":51973,
+     "Special Critical Chance %":0.23626330723542116,
+     "Strength":1662,
+     "Physical Damage":5156,
+     "Special Damage":7221,
+     "Speed":193,
+     "Special Accuracy":90,
+     "Physical Critical Avoidance":180,
+     "Deflection Chance":24,
+     "Resistance Penetration":22,
+     "Intelligence":2248,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":180,
+     "Health":59729,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5247856876630638
+    }
+   }
   },
   "razorcrest":{
    "currentRarity":7,
@@ -3138,7 +5292,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6690364794816415,
+     "Critical Damage":1.575,
+     "Protection":52397,
+     "Armor":944,
+     "Special Critical Chance %":0.24650454103671707,
+     "Armor Penetration":75,
+     "Strength":2118,
+     "Health Steal":0.3,
+     "Physical Damage":4777,
+     "Tenacity":0.62083,
+     "Special Damage":5128,
+     "Speed":226,
+     "Agility":2067,
+     "Potency":0.53893,
+     "Deflection Chance":129,
+     "Intelligence":1695,
+     "Dodge Chance":129,
+     "Resistance":572,
+     "Health":78012,
+     "Mastery":25,
+     "Armor %":0.5969016756244072
+    }
+   }
   },
   "plokoon":{
    "currentRarity":7,
@@ -3164,7 +5342,34 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5377232451403887,
+     "Critical Damage":1.92,
+     "Armor":757,
+     "Armor Penetration":204,
+     "Health Steal":0.15,
+     "Tenacity":0.54418,
+     "Agility":1845,
+     "Potency":0.57,
+     "Resistance":792,
+     "Protection":57932,
+     "Special Critical Chance %":0.2906212338012959,
+     "Strength":2043,
+     "Physical Damage":5662,
+     "Special Damage":8724,
+     "Speed":222,
+     "Physical Critical Avoidance":648.0000000000001,
+     "Deflection Chance":24,
+     "Resistance Penetration":140,
+     "Intelligence":2657,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":648.0000000000001,
+     "Health":100355,
+     "Mastery":60,
+     "Armor %":0.5428468985299391
+    }
+   }
   },
   "daka":{
    "currentRarity":7,
@@ -3190,7 +5395,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.23959907127429805,
+     "Critical Damage":1.5,
+     "Protection":41333,
+     "Armor":237,
+     "Special Critical Chance %":0.14667538066954644,
+     "Armor Penetration":49,
+     "Strength":785,
+     "Physical Damage":2287,
+     "Tenacity":0.30147,
+     "Special Damage":3608,
+     "Speed":187,
+     "Agility":709,
+     "Potency":0.53819,
+     "Deflection Chance":24,
+     "Resistance Penetration":30,
+     "Intelligence":1056,
+     "Dodge Chance":24,
+     "Resistance":255,
+     "Health":20999,
+     "Armor %":0.27101200686106347
+    }
+   }
   },
   "grandmofftarkin":{
    "currentRarity":7,
@@ -3220,7 +5448,36 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.46414182235421164,
+     "Critical Damage":1.5,
+     "Armor":386,
+     "Armor Penetration":22,
+     "Health Steal":0.2,
+     "Tenacity":0.43932000000000004,
+     "Agility":1107,
+     "Potency":1.02983,
+     "Resistance":431,
+     "Protection":61548,
+     "Special Critical Chance %":0.34663294006479484,
+     "Strength":1196,
+     "Physical Damage":4579,
+     "Special Damage":7119,
+     "Speed":223,
+     "Special Accuracy":54,
+     "Physical Critical Avoidance":108,
+     "Deflection Chance":24,
+     "Resistance Penetration":230,
+     "Intelligence":2081,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":108,
+     "Health":38949,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.3771372740595994
+    }
+   }
   },
   "logray":{
    "currentRarity":7,
@@ -3246,7 +5503,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.49584511339092874,
+     "Critical Damage":1.8599999999999999,
+     "Protection":41492,
+     "Armor":395,
+     "Special Critical Chance %":0.3879202888768899,
+     "Armor Penetration":39,
+     "Strength":877,
+     "Health Steal":0.1,
+     "Physical Damage":2254,
+     "Tenacity":0.40940000000000004,
+     "Special Damage":3175,
+     "Speed":184,
+     "Agility":724,
+     "Potency":0.54282,
+     "Deflection Chance":24,
+     "Resistance Penetration":25,
+     "Intelligence":1215,
+     "Dodge Chance":24,
+     "Resistance":199,
+     "Health":23162,
+     "Armor %":0.38256658595641646
+    }
+   }
   },
   "mg100starfortresssf17":{
    "currentRarity":2,
@@ -3277,7 +5558,31 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9323662958963284,
+     "Critical Damage":1.605,
+     "Protection":61326,
+     "Armor":1032,
+     "Special Critical Chance %":0.4794153914686825,
+     "Armor Penetration":18,
+     "Strength":1904,
+     "Health Steal":0.2,
+     "Physical Damage":5400,
+     "Tenacity":0.82943,
+     "Special Damage":5164,
+     "Speed":203,
+     "Agility":2342,
+     "Potency":0.74156,
+     "Deflection Chance":171,
+     "Intelligence":1769,
+     "Dodge Chance":171,
+     "Resistance":717,
+     "Health":89462,
+     "Mastery":35,
+     "Armor %":0.6181491464510332
+    }
+   }
   },
   "kelleranbeq":{
    "currentRarity":7,
@@ -3307,7 +5612,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9389758450323974,
+     "Critical Damage":1.635,
+     "Protection":77539,
+     "Armor":666,
+     "Special Critical Chance %":0.3601820950323974,
+     "Armor Penetration":200,
+     "Strength":1963,
+     "Health Steal":0.2,
+     "Physical Damage":7635,
+     "Tenacity":0.59191,
+     "Special Damage":7019,
+     "Speed":201,
+     "Agility":2408,
+     "Potency":0.5281600000000001,
+     "Deflection Chance":24,
+     "Resistance Penetration":15,
+     "Intelligence":1683,
+     "Dodge Chance":24,
+     "Resistance":256,
+     "Health":60063,
+     "Mastery":45,
+     "Armor %":0.5109321058688148
+    }
+   }
   },
   "geonosiansoldier":{
    "currentRarity":7,
@@ -3329,7 +5659,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6903118277537797,
+     "Critical Damage":1.8,
+     "Protection":25794,
+     "Armor":321,
+     "Special Critical Chance %":0.42654188984881214,
+     "Armor Penetration":47,
+     "Strength":759,
+     "Physical Damage":3150,
+     "Tenacity":0.30741,
+     "Special Damage":2064,
+     "Speed":187,
+     "Agility":1298,
+     "Potency":0.23824,
+     "Deflection Chance":24,
+     "Intelligence":673,
+     "Dodge Chance":24,
+     "Resistance":126,
+     "Health":18008,
+     "Armor %":0.3348982785602504
+    }
+   }
   },
   "caradune":{
    "currentRarity":7,
@@ -3355,7 +5707,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.36156087203023757,
+     "Critical Damage":1.8599999999999999,
+     "Protection":23673,
+     "Armor":247,
+     "Special Critical Chance %":0.17363,
+     "Armor Penetration":28,
+     "Strength":907,
+     "Health Steal":0.05,
+     "Physical Damage":2311,
+     "Tenacity":0.5618700000000001,
+     "Special Damage":1588,
+     "Speed":187,
+     "Agility":588,
+     "Potency":0.08023000000000001,
+     "Deflection Chance":24,
+     "Intelligence":582,
+     "Dodge Chance":24,
+     "Resistance":146,
+     "Health":24701,
+     "Armor %":0.2792538157150933
+    }
+   }
   },
   "captainrex":{
    "currentRarity":7,
@@ -3381,7 +5756,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5547836339092872,
+     "Critical Damage":1.5,
+     "Armor":820,
+     "Armor Penetration":340,
+     "Health Steal":0.3175,
+     "Tenacity":0.89835,
+     "Agility":1677,
+     "Potency":0.6724100000000001,
+     "Resistance":346,
+     "Protection":70806,
+     "Special Critical Chance %":0.15392,
+     "Strength":2492,
+     "Physical Damage":5628,
+     "Special Damage":4591,
+     "Speed":249,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1737,
+     "Dodge Chance":24,
+     "Health":69887,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5626072041166381
+    }
+   }
   },
   "scythe":{
    "currentRarity":7,
@@ -3471,7 +5873,34 @@
    "relic":{
     "currentTier":4
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5364015442764578,
+     "Critical Damage":2.16,
+     "Armor":556,
+     "Armor Penetration":329,
+     "Health Steal":0.1,
+     "Tenacity":0.48260000000000003,
+     "Agility":990,
+     "Potency":0.60081,
+     "Resistance":315,
+     "Protection":54909,
+     "Special Critical Chance %":0.26804792656587473,
+     "Strength":1554,
+     "Physical Damage":5109,
+     "Special Damage":3926,
+     "Speed":157,
+     "Special Accuracy":36,
+     "Deflection Chance":24,
+     "Resistance Penetration":20,
+     "Intelligence":1197,
+     "Dodge Chance":24,
+     "Health":37243,
+     "Mastery":10,
+     "Physical Accuracy":36,
+     "Armor %":0.46585672392124006
+    }
+   }
   },
   "tuskenraider":{
    "currentRarity":3,
@@ -3509,7 +5938,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.091149514038877,
+     "Critical Damage":1.575,
+     "Protection":37927,
+     "Armor":691,
+     "Special Critical Chance %":0.5486085043196545,
+     "Armor Penetration":121,
+     "Strength":1687,
+     "Health Steal":0.25,
+     "Physical Damage":5199,
+     "Tenacity":0.57215,
+     "Special Damage":4642,
+     "Speed":266,
+     "Agility":2402,
+     "Potency":1.05672,
+     "Deflection Chance":129,
+     "Intelligence":1615,
+     "Dodge Chance":129,
+     "Resistance":351,
+     "Health":62240,
+     "Mastery":25,
+     "Armor %":0.5201354911554384
+    }
+   }
   },
   "marrok":{
    "currentRarity":7,
@@ -3525,7 +5978,7 @@
     },
     {
      "id":"uniqueskill_MARROK01",
-     "tier":4
+     "tier":5
     },
     {
      "id":"uniqueskill_MARROK02",
@@ -3539,7 +5992,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5731532559395248,
+     "Critical Damage":1.5,
+     "Armor":775,
+     "Armor Penetration":123,
+     "Health Steal":0.2,
+     "Tenacity":0.5898800000000001,
+     "Agility":1662,
+     "Potency":0.7100000000000001,
+     "Resistance":525,
+     "Protection":81649,
+     "Special Critical Chance %":0.183540472462203,
+     "Strength":1980,
+     "Physical Damage":5501,
+     "Special Damage":6682,
+     "Speed":199,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":50,
+     "Intelligence":2147,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":79463,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5486725663716814
+    }
+   }
   },
   "darthtraya":{
    "currentRarity":7,
@@ -3569,7 +6051,36 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6627967251619871,
+     "Critical Damage":1.5,
+     "Armor":548,
+     "Armor Penetration":5,
+     "Health Steal":0.2,
+     "Tenacity":0.51547,
+     "Agility":1303,
+     "Potency":0.55945,
+     "Resistance":450,
+     "Protection":53724,
+     "Special Critical Chance %":0.6290441738660907,
+     "Strength":1542,
+     "Physical Damage":5821,
+     "Special Damage":11118,
+     "Speed":182,
+     "Special Accuracy":90,
+     "Physical Critical Avoidance":180,
+     "Deflection Chance":24,
+     "Resistance Penetration":182,
+     "Intelligence":2351,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":180,
+     "Health":61484,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.4622522142555884
+    }
+   }
   },
   "epixfinn":{
    "currentRarity":7,
@@ -3607,7 +6118,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.21632208423326135,
+     "Critical Damage":1.5,
+     "Protection":3816,
+     "Armor":204,
+     "Special Critical Chance %":0.14465,
+     "Armor Penetration":5,
+     "Strength":579,
+     "Health Steal":0.1,
+     "Physical Damage":1168,
+     "Tenacity":0.22943,
+     "Special Damage":862,
+     "Speed":96,
+     "Agility":327,
+     "Potency":0.19962000000000002,
+     "Deflection Chance":24,
+     "Intelligence":277,
+     "Dodge Chance":24,
+     "Resistance":73,
+     "Health":17893,
+     "Armor %":0.24242424242424243
+    }
+   }
   },
   "captaindrogan":{
    "currentRarity":7,
@@ -3633,7 +6167,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6996722273218142,
+     "Critical Damage":1.5,
+     "Armor":590,
+     "Armor Penetration":73,
+     "Health Steal":0.1,
+     "Tenacity":1.25119,
+     "Agility":1899,
+     "Potency":1.51393,
+     "Resistance":432,
+     "Protection":69299,
+     "Special Critical Chance %":0.46840474622030237,
+     "Strength":2025,
+     "Physical Damage":7029,
+     "Special Damage":11226,
+     "Speed":258,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":130,
+     "Intelligence":2688,
+     "Dodge Chance":24,
+     "Health":71246,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.48065173116089616
+    }
+   }
   },
   "zaalbar":{
    "currentRarity":7,
@@ -3659,7 +6220,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.47709908207343416,
+     "Critical Damage":1.5,
+     "Protection":50801,
+     "Armor":359,
+     "Special Critical Chance %":0.2979188714902808,
+     "Accuracy":0.12000000000000001,
+     "Armor Penetration":34,
+     "Strength":1394,
+     "Health Steal":0.05,
+     "Physical Damage":3183,
+     "Tenacity":0.56928,
+     "Special Damage":2307,
+     "Speed":135,
+     "Agility":680,
+     "Potency":0.30069,
+     "Deflection Chance":24,
+     "Intelligence":685,
+     "Dodge Chance":24,
+     "Resistance":180,
+     "Health":39471,
+     "Armor %":0.36026091319618664
+    }
+   }
   },
   "clonewarschewbacca":{
    "currentRarity":5,
@@ -3685,7 +6270,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.16875519708423325,
+     "Critical Damage":1.5,
+     "Armor":107,
+     "Special Critical Chance %":0.10833396328293737,
+     "Armor Penetration":5,
+     "Strength":467,
+     "Health Steal":0.05,
+     "Physical Damage":909,
+     "Tenacity":0.19,
+     "Special Damage":701,
+     "Speed":98,
+     "Agility":313,
+     "Potency":0.05,
+     "Deflection Chance":24,
+     "Intelligence":259,
+     "Dodge Chance":24,
+     "Resistance":50,
+     "Health":9804,
+     "Armor %":0.14372061786433848
+    }
+   }
   },
   "kix":{
    "currentRarity":5,
@@ -3711,7 +6318,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "huyang":{
    "currentRarity":7,
@@ -3737,7 +6346,33 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8637705372570195,
+     "Critical Damage":1.5,
+     "Protection":63040,
+     "Armor":753,
+     "Special Critical Chance %":0.4624902051835853,
+     "Armor Penetration":178,
+     "Strength":2170,
+     "Health Steal":0.15,
+     "Physical Damage":7316,
+     "Tenacity":1.4032200000000001,
+     "Special Damage":8478,
+     "Speed":224,
+     "Special Accuracy":162,
+     "Agility":1718,
+     "Potency":0.6391,
+     "Deflection Chance":24,
+     "Intelligence":2279,
+     "Dodge Chance":24,
+     "Resistance":608,
+     "Health":85128,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5415318230852212
+    }
+   }
   },
   "commanderlukeskywalker":{
    "currentRarity":7,
@@ -3771,7 +6406,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9695638660907127,
+     "Critical Damage":1.935,
+     "Protection":50676,
+     "Armor":886,
+     "Special Critical Chance %":0.3561841684665227,
+     "Armor Penetration":251,
+     "Strength":1897,
+     "Health Steal":0.1,
+     "Physical Damage":8735,
+     "Tenacity":0.6206,
+     "Special Damage":6985,
+     "Speed":209,
+     "Agility":2854,
+     "Potency":0.58255,
+     "Deflection Chance":24,
+     "Intelligence":1695,
+     "Dodge Chance":24,
+     "Resistance":501,
+     "Health":52294,
+     "Mastery":45,
+     "Armor %":0.5815556284870365
+    }
+   }
   },
   "b2superbattledroid":{
    "currentRarity":7,
@@ -3797,7 +6456,32 @@
    "relic":{
     "currentTier":6
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4596410772138229,
+     "Critical Damage":1.5,
+     "Protection":59101,
+     "Armor":802,
+     "Special Critical Chance %":0.13670000000000002,
+     "Armor Penetration":81,
+     "Strength":2114,
+     "Health Steal":0.23,
+     "Physical Damage":4446,
+     "Tenacity":0.8190200000000001,
+     "Special Damage":3932,
+     "Speed":167,
+     "Agility":1181,
+     "Potency":1.44239,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1343,
+     "Dodge Chance":24,
+     "Resistance":574,
+     "Health":54897,
+     "Mastery":20,
+     "Armor %":0.5571378951024661
+    }
+   }
   },
   "depabillaba":{
    "currentRarity":4,
@@ -3823,7 +6507,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "darthsidious":{
    "currentRarity":7,
@@ -3849,7 +6535,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9614426376889849,
+     "Critical Damage":1.635,
+     "Protection":61331,
+     "Armor":734,
+     "Special Critical Chance %":0.3643141684665227,
+     "Armor Penetration":139,
+     "Strength":1824,
+     "Health Steal":0.3,
+     "Physical Damage":7735,
+     "Tenacity":0.60407,
+     "Special Damage":6574,
+     "Speed":264,
+     "Agility":2768,
+     "Potency":0.68566,
+     "Deflection Chance":24,
+     "Resistance Penetration":15,
+     "Intelligence":1701,
+     "Dodge Chance":24,
+     "Resistance":371,
+     "Health":60492,
+     "Mastery":45,
+     "Armor %":0.5351804593510755
+    }
+   }
   },
   "outrider":{
    "currentRarity":7,
@@ -3905,7 +6616,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.560917024838013,
+     "Critical Damage":1.5,
+     "Protection":95903,
+     "Armor":1932,
+     "Special Critical Chance %":0.2283918898488121,
+     "Armor Penetration":20,
+     "Strength":2382,
+     "Health Steal":0.2675,
+     "Physical Damage":4356,
+     "Tenacity":0.63195,
+     "Special Damage":5405,
+     "Speed":169,
+     "Agility":1608,
+     "Potency":0.72146,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1912,
+     "Dodge Chance":24,
+     "Resistance":1219,
+     "Health":57165,
+     "Mastery":45,
+     "Armor %":0.7518972562755399
+    }
+   }
   },
   "kylorenunmasked":{
    "currentRarity":7,
@@ -3935,7 +6671,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5765979697624191,
+     "Critical Damage":1.5,
+     "Protection":70115,
+     "Armor":1893,
+     "Special Critical Chance %":0.2315718898488121,
+     "Armor Penetration":59,
+     "Strength":2580,
+     "Health Steal":0.3175,
+     "Physical Damage":5684,
+     "Tenacity":0.51665,
+     "Special Damage":5252,
+     "Speed":223,
+     "Agility":1605,
+     "Potency":0.61622,
+     "Deflection Chance":24,
+     "Intelligence":1785,
+     "Dodge Chance":24,
+     "Resistance":1238,
+     "Health":62991,
+     "Mastery":45,
+     "Armor %":0.7480735032602253
+    }
+   }
   },
   "pazvizsla":{
    "currentRarity":7,
@@ -3961,7 +6721,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.478647497300216,
+     "Critical Damage":1.5,
+     "Protection":132423,
+     "Armor":1302,
+     "Special Critical Chance %":0.11487,
+     "Armor Penetration":50,
+     "Strength":2764,
+     "Health Steal":0.5675,
+     "Physical Damage":6119,
+     "Tenacity":0.8583000000000001,
+     "Special Damage":4544,
+     "Speed":267,
+     "Agility":1594,
+     "Potency":0.92092,
+     "Deflection Chance":24,
+     "Intelligence":1628,
+     "Dodge Chance":24,
+     "Resistance":600,
+     "Health":90088,
+     "Mastery":45,
+     "Armor %":0.671307037896365
+    }
+   }
   },
   "younglando":{
    "currentRarity":3,
@@ -3995,7 +6779,31 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.1254173731101513,
+     "Critical Damage":2.34,
+     "Protection":52636,
+     "Armor":714,
+     "Special Critical Chance %":0.41411360691144705,
+     "Armor Penetration":204,
+     "Strength":2040,
+     "Health Steal":0.1,
+     "Physical Damage":8951,
+     "Tenacity":0.4021,
+     "Special Damage":7189,
+     "Speed":169,
+     "Agility":2384,
+     "Potency":0.46340000000000003,
+     "Deflection Chance":24,
+     "Intelligence":1705,
+     "Dodge Chance":24,
+     "Resistance":388,
+     "Health":57513,
+     "Mastery":60,
+     "Armor %":0.5283018867924528
+    }
+   }
   },
   "armorer":{
    "currentRarity":5,
@@ -4029,7 +6837,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9654376403887689,
+     "Critical Damage":2.355,
+     "Protection":66548,
+     "Armor":1035,
+     "Special Critical Chance %":0.3378902051835853,
+     "Armor Penetration":177,
+     "Strength":1955,
+     "Health Steal":0.3,
+     "Physical Damage":8621,
+     "Tenacity":0.76526,
+     "Special Damage":6518,
+     "Speed":236,
+     "Agility":2801,
+     "Potency":1.12359,
+     "Deflection Chance":24,
+     "Intelligence":1629,
+     "Dodge Chance":24,
+     "Resistance":625,
+     "Health":60055,
+     "Mastery":45,
+     "Armor %":0.6188340807174888
+    }
+   }
   },
   "smugglerhan":{
    "currentRarity":7,
@@ -4055,7 +6887,31 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8244403482721382,
+     "Critical Damage":1.845,
+     "Protection":41566,
+     "Armor":510,
+     "Special Critical Chance %":0.3356534017278618,
+     "Armor Penetration":177,
+     "Strength":1237,
+     "Health Steal":0.2,
+     "Physical Damage":5339,
+     "Tenacity":0.47143999999999997,
+     "Special Damage":3990,
+     "Speed":188,
+     "Agility":1957,
+     "Potency":0.49216000000000004,
+     "Deflection Chance":24,
+     "Intelligence":1099,
+     "Dodge Chance":24,
+     "Resistance":369,
+     "Health":46950,
+     "Mastery":15,
+     "Armor %":0.4444444444444444
+    }
+   }
   },
   "badbatchwrecker":{
    "currentRarity":7,
@@ -4081,7 +6937,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.25238567494600433,
+     "Critical Damage":1.5,
+     "Protection":6705,
+     "Armor":256,
+     "Special Critical Chance %":0.13321,
+     "Armor Penetration":15,
+     "Strength":774,
+     "Health Steal":0.05,
+     "Physical Damage":1448,
+     "Tenacity":1.01777,
+     "Special Damage":1391,
+     "Speed":145,
+     "Agility":552,
+     "Potency":0.1,
+     "Deflection Chance":24,
+     "Intelligence":536,
+     "Dodge Chance":24,
+     "Resistance":100,
+     "Health":21451,
+     "Armor %":0.28651371012870736
+    }
+   }
   },
   "themandalorian":{
    "currentRarity":7,
@@ -4111,7 +6990,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.39290720302375814,
+     "Critical Damage":2.16,
+     "Protection":32182,
+     "Armor":295,
+     "Special Critical Chance %":0.12122000000000001,
+     "Armor Penetration":152,
+     "Strength":865,
+     "Health Steal":0.1,
+     "Physical Damage":3160,
+     "Tenacity":0.4256,
+     "Special Damage":1610,
+     "Speed":192,
+     "Agility":1116,
+     "Potency":0.52424,
+     "Deflection Chance":24,
+     "Intelligence":475,
+     "Dodge Chance":24,
+     "Resistance":103,
+     "Health":25681,
+     "Armor %":0.3163538873994638
+    }
+   }
   },
   "fosithtrooper":{
    "currentRarity":7,
@@ -4137,7 +7039,34 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7493405156587474,
+     "Critical Damage":1.8,
+     "Armor":754,
+     "Armor Penetration":178,
+     "Health Steal":0.25,
+     "Tenacity":0.90451,
+     "Agility":1411,
+     "Potency":0.33508000000000004,
+     "Resistance":426,
+     "Protection":58449,
+     "Special Critical Chance %":0.38973,
+     "Strength":2156,
+     "Physical Damage":8205,
+     "Special Damage":5242,
+     "Speed":186,
+     "Special Accuracy":90,
+     "Deflection Chance":24,
+     "Resistance Penetration":50,
+     "Intelligence":1340,
+     "Dodge Chance":24,
+     "Health":64673,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5418613007545814
+    }
+   }
   },
   "triplezero":{
    "currentRarity":6,
@@ -4149,11 +7078,11 @@
   },
   "ig90":{
    "currentRarity":3,
-   "currentTier":5,
+   "currentTier":6,
    "skill":[
     {
      "id":"leaderskill_IG90",
-     "tier":0
+     "tier":1
     },
     {
      "id":"specialskill_IG9001",
@@ -4161,17 +7090,23 @@
     },
     {
      "id":"uniqueskill_IG9001",
-     "tier":0
+     "tier":1
     },
     {
      "id":"basicskill_IG90",
      "tier":1
+    },
+    {
+     "id":"contractskill_IG90",
+     "tier":0
     }
    ],
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "umbaranstarfighter":{
    "currentRarity":7,
@@ -4223,7 +7158,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6105697543196544,
+     "Critical Damage":1.5,
+     "Armor":657,
+     "Armor Penetration":287,
+     "Health Steal":0.2,
+     "Tenacity":0.61209,
+     "Agility":1278,
+     "Potency":0.59585,
+     "Resistance":393,
+     "Protection":47972,
+     "Special Critical Chance %":0.3092969816414687,
+     "Strength":1808,
+     "Physical Damage":6886,
+     "Special Damage":4215,
+     "Speed":187,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":30,
+     "Intelligence":1068,
+     "Dodge Chance":24,
+     "Health":47475,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.507531865585168
+    }
+   }
   },
   "smugglerchewbacca":{
    "currentRarity":7,
@@ -4249,7 +7211,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3956819060475162,
+     "Critical Damage":1.8,
+     "Protection":18026,
+     "Armor":298,
+     "Special Critical Chance %":0.24233698164146872,
+     "Armor Penetration":34,
+     "Strength":1059,
+     "Health Steal":0.05,
+     "Physical Damage":2647,
+     "Tenacity":0.21,
+     "Special Damage":1622,
+     "Speed":110,
+     "Agility":590,
+     "Potency":0.23995,
+     "Deflection Chance":24,
+     "Intelligence":481,
+     "Dodge Chance":24,
+     "Resistance":122,
+     "Health":22707,
+     "Armor %":0.3185462319615179
+    }
+   }
   },
   "bobafettscion":{
    "currentRarity":7,
@@ -4283,7 +7268,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4188599325053996,
+     "Critical Damage":1.8,
+     "Protection":22536,
+     "Armor":296,
+     "Special Critical Chance %":0.2034269816414687,
+     "Armor Penetration":17,
+     "Strength":907,
+     "Health Steal":0.05,
+     "Physical Damage":2491,
+     "Tenacity":0.30922,
+     "Special Damage":2198,
+     "Speed":188,
+     "Agility":719,
+     "Potency":0.24597999999999998,
+     "Deflection Chance":24,
+     "Intelligence":766,
+     "Dodge Chance":24,
+     "Resistance":155,
+     "Health":20661,
+     "Armor %":0.31708623460096413
+    }
+   }
   },
   "rogueoneship":{
    "currentRarity":3,
@@ -4338,7 +7346,7 @@
    ]
   },
   "operative":{
-   "currentRarity":6,
+   "currentRarity":7,
    "currentTier":9,
    "skill":[
     {
@@ -4361,7 +7369,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "grandinquisitor":{
    "currentRarity":7,
@@ -4395,7 +7405,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.607771560475162,
+     "Critical Damage":1.5,
+     "Armor":837,
+     "Armor Penetration":307,
+     "Health Steal":0.45,
+     "Tenacity":0.83667,
+     "Agility":1688,
+     "Potency":0.5618500000000001,
+     "Resistance":458,
+     "Protection":97263,
+     "Special Critical Chance %":0.19024000000000002,
+     "Strength":2550,
+     "Physical Damage":8171,
+     "Special Damage":6720,
+     "Speed":316,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1723,
+     "Dodge Chance":24,
+     "Health":71408,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5676500508646999
+    }
+   }
   },
   "darktrooper":{
    "currentRarity":7,
@@ -4421,7 +7458,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.427091244600432,
+     "Critical Damage":1.5,
+     "Protection":16002,
+     "Armor":238,
+     "Special Critical Chance %":0.2908309449244061,
+     "Armor Penetration":29,
+     "Strength":853,
+     "Physical Damage":2283,
+     "Tenacity":0.5565100000000001,
+     "Special Damage":2289,
+     "Speed":177,
+     "Agility":663,
+     "Potency":0.48345000000000005,
+     "Deflection Chance":24,
+     "Intelligence":625,
+     "Dodge Chance":24,
+     "Resistance":191,
+     "Health":20395,
+     "Armor %":0.27184466019417475
+    }
+   }
   },
   "darthrevan":{
    "currentRarity":7,
@@ -4455,7 +7514,36 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7275578914686824,
+     "Critical Damage":1.5,
+     "Armor":1047,
+     "Armor Penetration":10,
+     "Health Steal":0.2,
+     "Tenacity":0.7876399999999999,
+     "Agility":1929,
+     "Potency":0.4619,
+     "Resistance":707,
+     "Protection":50049,
+     "Special Critical Chance %":0.48753974892008645,
+     "Strength":2367,
+     "Physical Damage":7680,
+     "Special Damage":12352,
+     "Speed":258,
+     "Special Accuracy":216,
+     "Physical Critical Avoidance":0.35000000000000003,
+     "Deflection Chance":24,
+     "Resistance Penetration":202,
+     "Intelligence":2940,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":0.35000000000000003,
+     "Health":68405,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.6215494211932324
+    }
+   }
   },
   "r2d2_legendary":{
    "currentRarity":7,
@@ -4485,7 +7573,36 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5817427780777538,
+     "Critical Damage":1.5,
+     "Armor":599,
+     "Armor Penetration":10,
+     "Health Steal":0.15,
+     "Tenacity":0.6939200000000001,
+     "Agility":1942,
+     "Potency":0.8115000000000001,
+     "Resistance":497,
+     "Protection":46915,
+     "Special Critical Chance %":0.31755614200863935,
+     "Strength":2102,
+     "Physical Damage":7722,
+     "Special Damage":12229,
+     "Speed":222,
+     "Special Accuracy":216,
+     "Physical Critical Avoidance":432,
+     "Deflection Chance":24,
+     "Resistance Penetration":250,
+     "Intelligence":3075,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":432,
+     "Health":72356,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.48443186413263245
+    }
+   }
   },
   "bwingrebel":{
    "currentRarity":3,
@@ -4549,7 +7666,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4044416387688985,
+     "Critical Damage":1.5,
+     "Armor":902,
+     "Armor Penetration":10,
+     "Health Steal":0.05,
+     "Tenacity":1.48259,
+     "Agility":1619,
+     "Potency":0.89001,
+     "Resistance":744,
+     "Protection":96603,
+     "Special Critical Chance %":0.26193086663066956,
+     "Strength":1828,
+     "Physical Damage":7108,
+     "Special Damage":10742,
+     "Speed":433,
+     "Special Accuracy":216,
+     "Physical Critical Avoidance":432,
+     "Deflection Chance":24,
+     "Resistance Penetration":187,
+     "Intelligence":3096,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":432,
+     "Health":117923,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.5859045144527444
+    }
+   }
   },
   "humanthug":{
    "currentRarity":7,
@@ -4571,7 +7717,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4673861636069115,
+     "Critical Damage":1.8599999999999999,
+     "Armor":690,
+     "Armor Penetration":150,
+     "Health Steal":0.3225,
+     "Tenacity":0.47736,
+     "Agility":1205,
+     "Potency":0.92352,
+     "Resistance":303,
+     "Protection":44768,
+     "Special Critical Chance %":0.2552867980561555,
+     "Strength":1952,
+     "Physical Damage":5320,
+     "Special Damage":4302,
+     "Speed":189,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":45,
+     "Intelligence":1350,
+     "Dodge Chance":24,
+     "Health":49823,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.519774011299435
+    }
+   }
   },
   "captainsilvo":{
    "currentRarity":4,
@@ -4601,7 +7774,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "themandalorianbeskararmor":{
    "currentRarity":7,
@@ -4631,7 +7806,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6387907262419006,
+     "Critical Damage":1.5,
+     "Protection":75380,
+     "Armor":1157,
+     "Special Critical Chance %":0.1,
+     "Armor Penetration":300,
+     "Strength":2551,
+     "Health Steal":0.3,
+     "Physical Damage":8917,
+     "Tenacity":1.00815,
+     "Special Damage":6911,
+     "Speed":262,
+     "Special Accuracy":162,
+     "Agility":1846,
+     "Potency":0.47974000000000006,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1678,
+     "Dodge Chance":24,
+     "Resistance":402,
+     "Health":65574,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6447478406241293
+    }
+   }
   },
   "ithano":{
    "currentRarity":6,
@@ -4661,7 +7863,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "enfysnest":{
    "currentRarity":7,
@@ -4687,7 +7891,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.43169399568034555,
+     "Critical Damage":1.5,
+     "Protection":64029,
+     "Armor":292,
+     "Special Critical Chance %":0.15834,
+     "Armor Penetration":109,
+     "Strength":951,
+     "Health Steal":0.1,
+     "Physical Damage":2559,
+     "Tenacity":0.43589,
+     "Special Damage":1909,
+     "Speed":203,
+     "Agility":939,
+     "Potency":0.5766800000000001,
+     "Deflection Chance":24,
+     "Intelligence":653,
+     "Dodge Chance":24,
+     "Resistance":118,
+     "Health":23479,
+     "Armor %":0.314147391070468
+    }
+   }
   },
   "mothertalzin":{
    "currentRarity":7,
@@ -4717,7 +7944,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2749501997840173,
+     "Critical Damage":1.5,
+     "Protection":45983,
+     "Armor":306,
+     "Special Critical Chance %":0.26119916036717067,
+     "Armor Penetration":10,
+     "Strength":773,
+     "Health Steal":0.1,
+     "Physical Damage":3034,
+     "Tenacity":0.45036,
+     "Special Damage":6425,
+     "Speed":190,
+     "Agility":521,
+     "Potency":0.61699,
+     "Deflection Chance":24,
+     "Resistance Penetration":22,
+     "Intelligence":1349,
+     "Dodge Chance":24,
+     "Resistance":266,
+     "Health":23671,
+     "Armor %":0.32432432432432434
+    }
+   }
   },
   "morganelsbeth":{
    "currentRarity":7,
@@ -4743,7 +7994,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6395382586393088,
+     "Critical Damage":1.5,
+     "Protection":109309,
+     "Armor":1548,
+     "Special Critical Chance %":0.22159,
+     "Armor Penetration":48,
+     "Strength":2627,
+     "Health Steal":0.5175,
+     "Physical Damage":6187,
+     "Tenacity":0.7660899999999999,
+     "Special Damage":4828,
+     "Speed":260,
+     "Agility":1555,
+     "Potency":0.44,
+     "Deflection Chance":24,
+     "Intelligence":1671,
+     "Dodge Chance":24,
+     "Resistance":669,
+     "Health":107903,
+     "Mastery":45,
+     "Armor %":0.7083047357584077
+    }
+   }
   },
   "biggsdarklighter":{
    "currentRarity":7,
@@ -4765,7 +8040,32 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8732440280777538,
+     "Critical Damage":1.845,
+     "Protection":53199,
+     "Armor":631,
+     "Special Critical Chance %":0.44237812634989204,
+     "Armor Penetration":99,
+     "Strength":1267,
+     "Health Steal":0.05,
+     "Physical Damage":3710,
+     "Tenacity":0.40931,
+     "Special Damage":4166,
+     "Speed":156,
+     "Agility":1758,
+     "Potency":0.60913,
+     "Deflection Chance":87,
+     "Resistance Penetration":10,
+     "Intelligence":1498,
+     "Dodge Chance":87,
+     "Resistance":567,
+     "Health":42195,
+     "Mastery":15,
+     "Armor %":0.4974379188017343
+    }
+   }
   },
   "c3polegendary":{
    "currentRarity":7,
@@ -4803,7 +8103,35 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.46335475161987044,
+     "Critical Damage":1.5,
+     "Armor":1222,
+     "Armor Penetration":40,
+     "Tenacity":0.52496,
+     "Agility":1676,
+     "Potency":1.08704,
+     "Resistance":788,
+     "Protection":81640,
+     "Special Critical Chance %":0.1841669816414687,
+     "Strength":2334,
+     "Physical Damage":4802,
+     "Special Damage":7364,
+     "Speed":222,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":30,
+     "Intelligence":2386,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":89801,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6571659048131218
+    }
+   }
   },
   "cc2224":{
    "currentRarity":7,
@@ -4829,7 +8157,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8394823272138229,
+     "Critical Damage":1.935,
+     "Protection":40838,
+     "Armor":447,
+     "Special Critical Chance %":0.5794626727861771,
+     "Armor Penetration":99,
+     "Strength":1538,
+     "Physical Damage":5273,
+     "Tenacity":0.42564,
+     "Special Damage":5269,
+     "Speed":172,
+     "Agility":2243,
+     "Potency":0.42136,
+     "Deflection Chance":24,
+     "Resistance Penetration":170,
+     "Intelligence":1449,
+     "Dodge Chance":24,
+     "Resistance":219,
+     "Health":53596,
+     "Mastery":25,
+     "Armor %":0.41217150760719223
+    }
+   }
   },
   "jediknightrevan":{
    "currentRarity":7,
@@ -4863,7 +8215,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6814771085313175,
+     "Critical Damage":1.5,
+     "Armor":473,
+     "Armor Penetration":5,
+     "Health Steal":0.05,
+     "Tenacity":0.51836,
+     "Agility":1128,
+     "Potency":0.46155,
+     "Resistance":334,
+     "Protection":49793,
+     "Special Critical Chance %":0.6193890820734341,
+     "Strength":1526,
+     "Physical Damage":4572,
+     "Special Damage":7745,
+     "Speed":206,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":230,
+     "Intelligence":1898,
+     "Dodge Chance":24,
+     "Health":46741,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.4259342638451148
+    }
+   }
   },
   "padmeamidala":{
    "currentRarity":7,
@@ -4893,7 +8272,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7619591252699784,
+     "Critical Damage":1.5,
+     "Armor":774,
+     "Armor Penetration":411,
+     "Health Steal":0.7175,
+     "Tenacity":0.66776,
+     "Agility":1870,
+     "Potency":1.02656,
+     "Resistance":266,
+     "Protection":62105,
+     "Special Critical Chance %":0.20025,
+     "Strength":2530,
+     "Physical Damage":6328,
+     "Special Damage":5093,
+     "Speed":255,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":95,
+     "Intelligence":1829,
+     "Dodge Chance":24,
+     "Health":95120,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5483528161530287
+    }
+   }
   },
   "ct7567":{
    "currentRarity":7,
@@ -4923,7 +8329,35 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.732689692224622,
+     "Critical Damage":1.5,
+     "Armor":564,
+     "Armor Penetration":103,
+     "Health Steal":0.1,
+     "Tenacity":0.45821,
+     "Agility":1946,
+     "Potency":0.45477,
+     "Resistance":446,
+     "Protection":34710,
+     "Special Critical Chance %":0.21556727051835856,
+     "Strength":1660,
+     "Physical Damage":5515,
+     "Special Damage":6819,
+     "Speed":245,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Intelligence":2278,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":65663,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.46941323345817726
+    }
+   }
   },
   "moffgideons3":{
    "currentRarity":7,
@@ -4932,7 +8366,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2979605885529158,
+     "Critical Damage":1.5,
+     "Protection":38527,
+     "Armor":278,
+     "Special Critical Chance %":0.11378,
+     "Armor Penetration":5,
+     "Strength":835,
+     "Health Steal":0.25,
+     "Physical Damage":1736,
+     "Tenacity":0.48911000000000004,
+     "Special Damage":2616,
+     "Speed":160,
+     "Agility":670,
+     "Potency":0.13254,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":931,
+     "Dodge Chance":24,
+     "Resistance":185,
+     "Health":25405,
+     "Armor %":0.3036592026215183
+    }
+   }
   },
   "moffgideons1":{
    "currentRarity":7,
@@ -4962,7 +8420,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.24126954373650109,
+     "Critical Damage":1.5,
+     "Protection":4605,
+     "Armor":164,
+     "Special Critical Chance %":0.11501,
+     "Armor Penetration":18,
+     "Strength":519,
+     "Health Steal":0.1,
+     "Physical Damage":1824,
+     "Tenacity":0.68667,
+     "Special Damage":2185,
+     "Speed":208,
+     "Agility":457,
+     "Potency":0.09375,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":821,
+     "Dodge Chance":24,
+     "Resistance":121,
+     "Health":13438,
+     "Armor %":0.20461634435433562
+    }
+   }
   },
   "zamwesell":{
    "currentRarity":3,
@@ -4996,7 +8478,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.22612501349892009,
+     "Critical Damage":1.5,
+     "Protection":4544,
+     "Armor":207,
+     "Special Critical Chance %":0.11778349082073433,
+     "Armor Penetration":11,
+     "Strength":577,
+     "Health Steal":0.05,
+     "Physical Damage":1583,
+     "Tenacity":0.22745,
+     "Special Damage":2154,
+     "Speed":196,
+     "Agility":587,
+     "Potency":0.34650000000000003,
+     "Deflection Chance":24,
+     "Resistance Penetration":25,
+     "Intelligence":731,
+     "Dodge Chance":24,
+     "Resistance":136,
+     "Health":14790,
+     "Armor %":0.24511545293072823
+    }
+   }
   },
   "boushh":{
    "currentRarity":7,
@@ -5030,7 +8536,34 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5082436285097193,
+     "Critical Damage":1.5,
+     "Armor":593,
+     "Armor Penetration":73,
+     "Health Steal":0.1,
+     "Tenacity":0.81568,
+     "Agility":1576,
+     "Potency":1.98062,
+     "Resistance":448,
+     "Protection":72839,
+     "Special Critical Chance %":0.33073021058315333,
+     "Strength":1702,
+     "Physical Damage":5151,
+     "Special Damage":9115,
+     "Speed":266,
+     "Special Accuracy":90,
+     "Deflection Chance":24,
+     "Resistance Penetration":130,
+     "Intelligence":2165,
+     "Dodge Chance":24,
+     "Health":72377,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.48191791954490043
+    }
+   }
   },
   "jediknightluke":{
    "currentRarity":7,
@@ -5060,7 +8593,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7773279805615552,
+     "Critical Damage":1.92,
+     "Armor":1047,
+     "Armor Penetration":290,
+     "Health Steal":0.4,
+     "Tenacity":0.6024700000000001,
+     "Agility":1970,
+     "Potency":0.5766,
+     "Resistance":360,
+     "Protection":85113,
+     "Special Critical Chance %":0.34396188984881215,
+     "Strength":3272,
+     "Physical Damage":10554,
+     "Special Damage":7592,
+     "Speed":239,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1800,
+     "Dodge Chance":24,
+     "Health":98034,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6215494211932324
+    }
+   }
   },
   "bossnass":{
    "currentRarity":7,
@@ -5090,7 +8650,35 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5825937284017279,
+     "Critical Damage":1.5,
+     "Armor":934,
+     "Armor Penetration":128,
+     "Health Steal":0.2,
+     "Tenacity":0.66633,
+     "Agility":1661,
+     "Potency":1.59074,
+     "Resistance":722,
+     "Protection":82101,
+     "Special Critical Chance %":0.18048,
+     "Strength":1995,
+     "Physical Damage":5800,
+     "Special Damage":6693,
+     "Speed":313,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Intelligence":2190,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":68839,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5943366210626789
+    }
+   }
   },
   "capitalmoncalamaricruiser":{
    "currentRarity":7,
@@ -5142,7 +8730,31 @@
    "relic":{
     "currentTier":4
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4008045626349892,
+     "Critical Damage":1.8599999999999999,
+     "Protection":75083,
+     "Armor":1540,
+     "Special Critical Chance %":0.17412076133909288,
+     "Armor Penetration":100,
+     "Strength":1758,
+     "Health Steal":0.215,
+     "Physical Damage":3822,
+     "Tenacity":0.7686999999999999,
+     "Special Damage":2839,
+     "Speed":177,
+     "Agility":868,
+     "Potency":0.55152,
+     "Deflection Chance":24,
+     "Intelligence":933,
+     "Dodge Chance":24,
+     "Resistance":753,
+     "Health":55873,
+     "Mastery":10,
+     "Armor %":0.7072330654420207
+    }
+   }
   },
   "starkiller":{
    "currentRarity":7,
@@ -5172,7 +8784,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8891192305615552,
+     "Critical Damage":1.9949999999999999,
+     "Protection":67548,
+     "Armor":759,
+     "Special Critical Chance %":0.3128256695464363,
+     "Armor Penetration":312,
+     "Strength":1645,
+     "Health Steal":0.45,
+     "Physical Damage":6614,
+     "Tenacity":0.81762,
+     "Special Damage":4482,
+     "Speed":255,
+     "Agility":2281,
+     "Potency":0.68955,
+     "Deflection Chance":24,
+     "Intelligence":1217,
+     "Dodge Chance":24,
+     "Resistance":367,
+     "Health":83347,
+     "Mastery":25,
+     "Armor %":0.5435016111707841
+    }
+   }
   },
   "lobot":{
    "currentRarity":7,
@@ -5202,7 +8838,36 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3519782316414687,
+     "Critical Damage":1.5,
+     "Armor":746,
+     "Armor Penetration":15,
+     "Health Steal":0.15,
+     "Tenacity":0.43677,
+     "Agility":1145,
+     "Potency":0.41924,
+     "Resistance":634,
+     "Protection":45016,
+     "Special Critical Chance %":0.21738472462203023,
+     "Strength":1264,
+     "Physical Damage":4390,
+     "Special Damage":7822,
+     "Speed":140,
+     "Special Accuracy":54,
+     "Physical Critical Avoidance":108,
+     "Deflection Chance":24,
+     "Resistance Penetration":56,
+     "Intelligence":2174,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":108,
+     "Health":53916,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.5392121431152873
+    }
+   }
   },
   "furyclassinterceptor":{
    "currentRarity":7,
@@ -5254,7 +8919,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.20704708693304535,
+     "Critical Damage":1.5,
+     "Protection":6844,
+     "Armor":161,
+     "Special Critical Chance %":0.1237074541036717,
+     "Armor Penetration":21,
+     "Strength":535,
+     "Physical Damage":1215,
+     "Tenacity":0.5070600000000001,
+     "Special Damage":2000,
+     "Speed":205,
+     "Agility":525,
+     "Potency":0.46436,
+     "Deflection Chance":24,
+     "Resistance Penetration":15,
+     "Intelligence":741,
+     "Dodge Chance":24,
+     "Resistance":102,
+     "Health":11696,
+     "Armor %":0.2016280525986224
+    }
+   }
   },
   "embo":{
    "currentRarity":2,
@@ -5362,7 +9050,32 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9009953617710583,
+     "Critical Damage":2.055,
+     "Protection":61205,
+     "Armor":853,
+     "Special Critical Chance %":0.3917902051835853,
+     "Armor Penetration":116,
+     "Strength":2232,
+     "Health Steal":0.7000000000000001,
+     "Physical Damage":7422,
+     "Tenacity":0.61262,
+     "Special Damage":6474,
+     "Speed":238,
+     "Agility":2275,
+     "Potency":0.9096900000000001,
+     "Deflection Chance":24,
+     "Resistance Penetration":20,
+     "Intelligence":1666,
+     "Dodge Chance":24,
+     "Resistance":362,
+     "Health":79036,
+     "Mastery":45,
+     "Armor %":0.5722911774572291
+    }
+   }
   },
   "fennecshand":{
    "currentRarity":7,
@@ -5392,7 +9105,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8728772354211662,
+     "Critical Damage":1.8,
+     "Armor":699,
+     "Armor Penetration":10,
+     "Health Steal":0.3,
+     "Tenacity":0.64134,
+     "Agility":1787,
+     "Potency":0.20361,
+     "Resistance":464,
+     "Protection":61501,
+     "Special Critical Chance %":0.5649372921166307,
+     "Strength":2153,
+     "Physical Damage":5990,
+     "Special Damage":9177,
+     "Speed":202,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":60,
+     "Intelligence":2407,
+     "Dodge Chance":24,
+     "Health":66877,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5230078563411896
+    }
+   }
   },
   "capitalstardestroyer":{
    "currentRarity":7,
@@ -5448,7 +9188,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3926056749460043,
+     "Critical Damage":1.5,
+     "Protection":16617,
+     "Armor":168,
+     "Special Critical Chance %":0.2880144357451404,
+     "Armor Penetration":21,
+     "Strength":572,
+     "Health Steal":0.1,
+     "Physical Damage":1435,
+     "Tenacity":0.32421,
+     "Special Damage":2730,
+     "Speed":154,
+     "Agility":563,
+     "Potency":0.71258,
+     "Deflection Chance":24,
+     "Resistance Penetration":27,
+     "Intelligence":874,
+     "Dodge Chance":24,
+     "Resistance":132,
+     "Health":15509,
+     "Armor %":0.2085661080074488
+    }
+   }
   },
   "xwingred2":{
    "currentRarity":7,
@@ -5500,7 +9264,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.38348747030237584,
+     "Critical Damage":1.5,
+     "Protection":24868,
+     "Armor":279,
+     "Special Critical Chance %":0.27181236231101513,
+     "Armor Penetration":21,
+     "Strength":873,
+     "Physical Damage":2020,
+     "Tenacity":0.8726499999999999,
+     "Special Damage":3032,
+     "Speed":134,
+     "Agility":705,
+     "Potency":0.10262,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":1086,
+     "Dodge Chance":24,
+     "Resistance":187,
+     "Health":22339,
+     "Armor %":0.3044189852700491
+    }
+   }
   },
   "ninthsister":{
    "currentRarity":7,
@@ -5534,7 +9321,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5669607991360691,
+     "Critical Damage":1.5,
+     "Protection":110896,
+     "Armor":1375,
+     "Special Critical Chance %":0.2036,
+     "Armor Penetration":50,
+     "Strength":2763,
+     "Health Steal":0.5675,
+     "Physical Damage":6299,
+     "Tenacity":1.56085,
+     "Special Damage":4778,
+     "Speed":217,
+     "Agility":1590,
+     "Potency":0.86678,
+     "Deflection Chance":24,
+     "Intelligence":1627,
+     "Dodge Chance":24,
+     "Resistance":657,
+     "Health":90701,
+     "Mastery":45,
+     "Armor %":0.6832298136645962
+    }
+   }
   },
   "jedistarfighterahsokatano":{
    "currentRarity":7,
@@ -5594,7 +9405,32 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.747582516198704,
+     "Critical Damage":1.575,
+     "Protection":62137,
+     "Armor":609,
+     "Special Critical Chance %":0.3521359584233261,
+     "Armor Penetration":144,
+     "Strength":1573,
+     "Health Steal":0.55,
+     "Physical Damage":5745,
+     "Tenacity":0.53916,
+     "Special Damage":6369,
+     "Speed":169,
+     "Agility":2062,
+     "Potency":0.43,
+     "Deflection Chance":129,
+     "Resistance Penetration":197,
+     "Intelligence":1741,
+     "Dodge Chance":129,
+     "Resistance":289,
+     "Health":58040,
+     "Mastery":25,
+     "Armor %":0.48856799037304455
+    }
+   }
   },
   "grievous":{
    "currentRarity":7,
@@ -5624,7 +9460,33 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.819778758099352,
+     "Critical Damage":1.935,
+     "Armor":714,
+     "Armor Penetration":205,
+     "Health Steal":0.2,
+     "Tenacity":0.52501,
+     "Agility":2393,
+     "Potency":0.40953,
+     "Resistance":468,
+     "Protection":53686,
+     "Special Critical Chance %":0.31390718682505403,
+     "Strength":1865,
+     "Physical Damage":6181,
+     "Special Damage":5346,
+     "Speed":168,
+     "Physical Critical Avoidance":0.24000000000000002,
+     "Deflection Chance":24,
+     "Intelligence":1543,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":0.24000000000000002,
+     "Health":107808,
+     "Mastery":45,
+     "Armor %":0.5283018867924528
+    }
+   }
   },
   "chirrutimwe":{
    "currentRarity":4,
@@ -5654,7 +9516,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3622060529157668,
+     "Critical Damage":1.5,
+     "Protection":8355,
+     "Armor":113,
+     "Special Critical Chance %":0.23803000000000002,
+     "Armor Penetration":19,
+     "Strength":276,
+     "Health Steal":0.1,
+     "Physical Damage":1324,
+     "Tenacity":0.44878,
+     "Special Damage":783,
+     "Speed":181,
+     "Agility":395,
+     "Potency":0.05296,
+     "Deflection Chance":24,
+     "Intelligence":206,
+     "Dodge Chance":24,
+     "Resistance":70,
+     "Health":7426,
+     "Armor %":0.15056628914057296
+    }
+   }
   },
   "shinhati":{
    "currentRarity":7,
@@ -5674,7 +9559,7 @@
     },
     {
      "id":"uniqueskill_SHINHATI01",
-     "tier":5
+     "tier":6
     },
     {
      "id":"uniqueskill_SHINHATI02",
@@ -5684,7 +9569,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9782864956803455,
+     "Critical Damage":1.935,
+     "Armor":890,
+     "Armor Penetration":116,
+     "Health Steal":0.85,
+     "Tenacity":0.45026,
+     "Agility":2292,
+     "Potency":0.74082,
+     "Resistance":392,
+     "Protection":77997,
+     "Special Critical Chance %":0.45408020518358533,
+     "Strength":2231,
+     "Physical Damage":6605,
+     "Special Damage":5777,
+     "Speed":206,
+     "Physical Critical Avoidance":0.15,
+     "Deflection Chance":24,
+     "Resistance Penetration":20,
+     "Intelligence":1669,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":0.15,
+     "Health":57937,
+     "Mastery":45,
+     "Armor %":0.5826513911620295
+    }
+   }
   },
   "juhani":{
    "currentRarity":7,
@@ -5710,7 +9622,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4032244627429806,
+     "Critical Damage":1.5,
+     "Protection":60795,
+     "Armor":409,
+     "Special Critical Chance %":0.16779,
+     "Armor Penetration":60,
+     "Strength":1220,
+     "Health Steal":0.05,
+     "Physical Damage":3001,
+     "Tenacity":0.93426,
+     "Special Damage":1676,
+     "Speed":170,
+     "Agility":850,
+     "Potency":0.22695,
+     "Deflection Chance":24,
+     "Intelligence":648,
+     "Dodge Chance":24,
+     "Resistance":241,
+     "Health":24975,
+     "Armor %":0.3908265647396082
+    }
+   }
   },
   "capitalnegotiator":{
    "currentRarity":7,
@@ -5762,7 +9697,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.513358431425486,
+     "Critical Damage":1.8599999999999999,
+     "Protection":65109,
+     "Armor":418,
+     "Special Critical Chance %":0.2754237796976242,
+     "Armor Penetration":30,
+     "Strength":1414,
+     "Health Steal":0.1,
+     "Physical Damage":3018,
+     "Tenacity":0.62775,
+     "Special Damage":1825,
+     "Speed":105,
+     "Agility":742,
+     "Potency":0.46537,
+     "Deflection Chance":24,
+     "Intelligence":643,
+     "Dodge Chance":24,
+     "Resistance":136,
+     "Health":38617,
+     "Armor %":0.3960208432022738
+    }
+   }
   },
   "rosetico":{
    "currentRarity":5,
@@ -5796,7 +9754,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.0326381965442764,
+     "Critical Damage":1.935,
+     "Protection":78507,
+     "Armor":845,
+     "Special Critical Chance %":0.4859302051835853,
+     "Armor Penetration":163,
+     "Strength":1759,
+     "Health Steal":0.1,
+     "Physical Damage":7076,
+     "Tenacity":0.79222,
+     "Special Damage":5550,
+     "Speed":247,
+     "Agility":2492,
+     "Potency":0.4,
+     "Deflection Chance":24,
+     "Intelligence":1599,
+     "Dodge Chance":24,
+     "Resistance":544,
+     "Health":46901,
+     "Mastery":45,
+     "Armor %":0.5699831365935919
+    }
+   }
   },
   "jediknightconsular":{
    "currentRarity":7,
@@ -5818,7 +9800,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.33309172246220303,
+     "Critical Damage":1.8599999999999999,
+     "Protection":40085,
+     "Armor":265,
+     "Special Critical Chance %":0.1589118898488121,
+     "Armor Penetration":46,
+     "Strength":868,
+     "Health Steal":0.05,
+     "Physical Damage":2337,
+     "Tenacity":0.39504000000000006,
+     "Special Damage":3007,
+     "Speed":203,
+     "Agility":840,
+     "Potency":0.13,
+     "Deflection Chance":24,
+     "Resistance Penetration":32,
+     "Intelligence":1008,
+     "Dodge Chance":24,
+     "Resistance":189,
+     "Health":19425,
+     "Armor %":0.29362880886426596
+    }
+   }
   },
   "ahsokatano":{
    "currentRarity":7,
@@ -5844,7 +9850,31 @@
    "relic":{
     "currentTier":11
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.189248601511879,
+     "Critical Damage":2.13,
+     "Protection":48020,
+     "Armor":737,
+     "Special Critical Chance %":0.5041968196544278,
+     "Armor Penetration":329,
+     "Strength":2253,
+     "Health Steal":0.35000000000000003,
+     "Physical Damage":10352,
+     "Tenacity":0.42067,
+     "Special Damage":8471,
+     "Speed":208,
+     "Agility":2617,
+     "Potency":0.23,
+     "Deflection Chance":24,
+     "Intelligence":1749,
+     "Dodge Chance":24,
+     "Resistance":300,
+     "Health":73759,
+     "Mastery":70,
+     "Armor %":0.5361949799927246
+    }
+   }
   },
   "directorkrennic":{
    "currentRarity":7,
@@ -5874,7 +9904,36 @@
    "relic":{
     "currentTier":6
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6194482424406047,
+     "Critical Damage":1.8599999999999999,
+     "Armor":420,
+     "Armor Penetration":20,
+     "Health Steal":0.1,
+     "Tenacity":0.64849,
+     "Agility":1273,
+     "Potency":0.50264,
+     "Resistance":455,
+     "Protection":39761,
+     "Special Critical Chance %":0.498605774838013,
+     "Strength":1216,
+     "Physical Damage":4455,
+     "Special Damage":8062,
+     "Speed":172,
+     "Special Accuracy":72,
+     "Physical Critical Avoidance":144,
+     "Deflection Chance":24,
+     "Resistance Penetration":217,
+     "Intelligence":2317,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":144,
+     "Health":48335,
+     "Mastery":20,
+     "Physical Accuracy":72,
+     "Armor %":0.3971631205673759
+    }
+   }
   },
   "tiefighterimperial":{
    "currentRarity":7,
@@ -5930,7 +9989,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6228989254859612,
+     "Critical Damage":1.92,
+     "Armor":847,
+     "Armor Penetration":5,
+     "Health Steal":0.65,
+     "Tenacity":1.29942,
+     "Agility":1720,
+     "Potency":1.07,
+     "Resistance":617,
+     "Protection":70152,
+     "Special Critical Chance %":0.7737436609071274,
+     "Strength":2079,
+     "Physical Damage":9348,
+     "Special Damage":13821,
+     "Speed":441,
+     "Special Accuracy":216,
+     "Deflection Chance":24,
+     "Resistance Penetration":182,
+     "Intelligence":3066,
+     "Dodge Chance":24,
+     "Health":109300,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.5705624789491411
+    }
+   }
   },
   "stormtrooperhan":{
    "currentRarity":7,
@@ -5956,7 +10042,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4798674811015119,
+     "Critical Damage":1.5,
+     "Protection":20255,
+     "Armor":278,
+     "Special Critical Chance %":0.2694349082073434,
+     "Armor Penetration":31,
+     "Strength":782,
+     "Health Steal":0.15,
+     "Physical Damage":2066,
+     "Tenacity":0.35526,
+     "Special Damage":1955,
+     "Speed":150,
+     "Agility":956,
+     "Potency":0.6014200000000001,
+     "Deflection Chance":24,
+     "Intelligence":596,
+     "Dodge Chance":24,
+     "Resistance":98,
+     "Health":20398,
+     "Armor %":0.3036592026215183
+    }
+   }
   },
   "herasyndullas3":{
    "currentRarity":7,
@@ -5982,7 +10091,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2723093547516199,
+     "Critical Damage":1.5,
+     "Protection":37899,
+     "Armor":325,
+     "Special Critical Chance %":0.14855000000000002,
+     "Armor Penetration":25,
+     "Strength":867,
+     "Health Steal":0.1,
+     "Physical Damage":2568,
+     "Tenacity":0.48924,
+     "Special Damage":3135,
+     "Speed":159,
+     "Agility":630,
+     "Potency":0.34128000000000003,
+     "Deflection Chance":24,
+     "Intelligence":1123,
+     "Dodge Chance":24,
+     "Resistance":439,
+     "Health":23726,
+     "Armor %":0.33766233766233766
+    }
+   }
   },
   "bastilashandark":{
    "currentRarity":7,
@@ -6016,7 +10148,36 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3482288876889849,
+     "Critical Damage":1.5,
+     "Armor":357,
+     "Armor Penetration":20,
+     "Health Steal":0.1,
+     "Tenacity":0.37,
+     "Agility":972,
+     "Potency":0.63598,
+     "Resistance":468,
+     "Protection":48667,
+     "Special Critical Chance %":0.4219844627429806,
+     "Strength":1194,
+     "Physical Damage":4039,
+     "Special Damage":8487,
+     "Speed":236,
+     "Special Accuracy":54,
+     "Physical Critical Avoidance":108,
+     "Deflection Chance":24,
+     "Resistance Penetration":185,
+     "Intelligence":2044,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":108,
+     "Health":77296,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.358974358974359
+    }
+   }
   },
   "bossk":{
    "currentRarity":7,
@@ -6050,7 +10211,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7217921328293737,
+     "Critical Damage":1.5,
+     "Protection":97061,
+     "Armor":1042,
+     "Special Critical Chance %":0.2817588714902808,
+     "Armor Penetration":161,
+     "Strength":2039,
+     "Health Steal":0.1375,
+     "Physical Damage":4734,
+     "Tenacity":0.60733,
+     "Special Damage":4197,
+     "Speed":247,
+     "Agility":1413,
+     "Potency":0.57694,
+     "Deflection Chance":24,
+     "Intelligence":1392,
+     "Dodge Chance":24,
+     "Resistance":593,
+     "Health":54487,
+     "Mastery":25,
+     "Armor %":0.6204227448645431
+    }
+   }
   },
   "firstorderexecutioner":{
    "currentRarity":7,
@@ -6072,7 +10257,34 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8620575134989201,
+     "Critical Damage":1.92,
+     "Armor":746,
+     "Armor Penetration":196,
+     "Health Steal":0.15,
+     "Tenacity":0.42,
+     "Agility":1687,
+     "Potency":0.6029800000000001,
+     "Resistance":318,
+     "Protection":60971,
+     "Special Critical Chance %":0.3699369816414687,
+     "Strength":2118,
+     "Physical Damage":6335,
+     "Special Damage":4643,
+     "Speed":189,
+     "Special Accuracy":90,
+     "Deflection Chance":24,
+     "Resistance Penetration":50,
+     "Intelligence":1393,
+     "Dodge Chance":24,
+     "Health":60011,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5392121431152873
+    }
+   }
   },
   "vader":{
    "currentRarity":7,
@@ -6106,7 +10318,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5800511879049676,
+     "Critical Damage":2.2199999999999998,
+     "Armor":1033,
+     "Armor Penetration":265,
+     "Health Steal":0.15,
+     "Tenacity":0.50978,
+     "Agility":1759,
+     "Potency":0.86983,
+     "Resistance":642,
+     "Protection":65967,
+     "Special Critical Chance %":0.14210141738660909,
+     "Strength":2599,
+     "Physical Damage":6810,
+     "Special Damage":7002,
+     "Speed":241,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":2013,
+     "Dodge Chance":24,
+     "Health":54739,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6183777312181982
+    }
+   }
   },
   "jarjarbinks":{
    "currentRarity":7,
@@ -6136,7 +10375,35 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.45127655237581,
+     "Critical Damage":1.5,
+     "Protection":78716,
+     "Armor":832,
+     "Special Critical Chance %":0.12083490820734341,
+     "Armor Penetration":103,
+     "Strength":2038,
+     "Health Steal":0.15,
+     "Physical Damage":6162,
+     "Tenacity":1.08115,
+     "Special Damage":7798,
+     "Speed":223,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Agility":1631,
+     "Potency":1.30937,
+     "Deflection Chance":24,
+     "Intelligence":2277,
+     "Dodge Chance":24,
+     "Resistance":720,
+     "Special Critical Avoidance":324,
+     "Health":82426,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5661789724396054
+    }
+   }
   },
   "countdooku":{
    "currentRarity":7,
@@ -6166,7 +10433,32 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6915982694384449,
+     "Critical Damage":1.9649999999999999,
+     "Protection":45524,
+     "Armor":642,
+     "Special Critical Chance %":0.38199153347732184,
+     "Armor Penetration":165,
+     "Strength":1812,
+     "Health Steal":0.15,
+     "Physical Damage":5213,
+     "Tenacity":0.52662,
+     "Special Damage":6978,
+     "Speed":251,
+     "Agility":2218,
+     "Potency":1.0562,
+     "Deflection Chance":24,
+     "Resistance Penetration":100,
+     "Intelligence":1814,
+     "Dodge Chance":24,
+     "Resistance":525,
+     "Health":53892,
+     "Mastery":35,
+     "Armor %":0.5017584994138335
+    }
+   }
   },
   "missionvao":{
    "currentRarity":7,
@@ -6192,7 +10484,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7773325890928726,
+     "Critical Damage":1.8,
+     "Protection":38378,
+     "Armor":285,
+     "Special Critical Chance %":0.43439000000000005,
+     "Armor Penetration":112,
+     "Strength":740,
+     "Health Steal":0.05,
+     "Physical Damage":3156,
+     "Tenacity":0.41720999999999997,
+     "Special Damage":1721,
+     "Speed":160,
+     "Agility":1265,
+     "Potency":0.40344,
+     "Deflection Chance":24,
+     "Intelligence":555,
+     "Dodge Chance":24,
+     "Resistance":161,
+     "Health":21270,
+     "Armor %":0.3089430894308943
+    }
+   }
   },
   "arc170clonesergeant":{
    "currentRarity":7,
@@ -6248,7 +10563,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6036910718142549,
+     "Critical Damage":1.5,
+     "Armor":658,
+     "Armor Penetration":191,
+     "Health Steal":0.2225,
+     "Tenacity":1.08864,
+     "Agility":1159,
+     "Potency":0.7147,
+     "Resistance":404,
+     "Protection":78373,
+     "Special Critical Chance %":0.35200538066954645,
+     "Strength":1996,
+     "Physical Damage":4159,
+     "Special Damage":3983,
+     "Speed":222,
+     "Special Accuracy":54,
+     "Deflection Chance":24,
+     "Resistance Penetration":52,
+     "Intelligence":1315,
+     "Dodge Chance":24,
+     "Health":81609,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.507912003087611
+    }
+   }
   },
   "joleebindo":{
    "currentRarity":7,
@@ -6278,7 +10620,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3203940793736501,
+     "Critical Damage":1.8599999999999999,
+     "Protection":53233,
+     "Armor":328,
+     "Special Critical Chance %":0.17163283477321814,
+     "Armor Penetration":35,
+     "Strength":921,
+     "Health Steal":0.1,
+     "Physical Damage":2251,
+     "Tenacity":0.34368,
+     "Special Damage":3050,
+     "Speed":144,
+     "Agility":666,
+     "Potency":0.2,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1012,
+     "Dodge Chance":24,
+     "Resistance":261,
+     "Health":28423,
+     "Armor %":0.33972035214914553
+    }
+   }
   },
   "maul":{
    "currentRarity":7,
@@ -6304,7 +10670,31 @@
    "relic":{
     "currentTier":6
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9200288471922246,
+     "Critical Damage":1.86,
+     "Protection":59855,
+     "Armor":767,
+     "Special Critical Chance %":0.37790453563714904,
+     "Armor Penetration":199,
+     "Strength":1518,
+     "Health Steal":0.25,
+     "Physical Damage":6381,
+     "Tenacity":0.34,
+     "Special Damage":3464,
+     "Speed":165,
+     "Agility":1867,
+     "Potency":0.08571000000000001,
+     "Deflection Chance":24,
+     "Intelligence":978,
+     "Dodge Chance":24,
+     "Resistance":330,
+     "Health":48360,
+     "Mastery":20,
+     "Armor %":0.5461018155927376
+    }
+   }
   },
   "chiefnebit":{
    "currentRarity":7,
@@ -6330,7 +10720,32 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.20834152267818576,
+     "Critical Damage":1.5,
+     "Protection":9209,
+     "Armor":287,
+     "Special Critical Chance %":0.10833396328293737,
+     "Armor Penetration":5,
+     "Strength":811,
+     "Health Steal":0.05,
+     "Physical Damage":1514,
+     "Tenacity":0.36219,
+     "Special Damage":1357,
+     "Speed":121,
+     "Physical Critical Avoidance":0.24000000000000002,
+     "Agility":535,
+     "Potency":0.08369,
+     "Deflection Chance":24,
+     "Intelligence":468,
+     "Dodge Chance":24,
+     "Resistance":111,
+     "Special Critical Avoidance":0.24000000000000002,
+     "Health":27328,
+     "Armor %":0.3104380746349378
+    }
+   }
   },
   "tuskenshaman":{
    "currentRarity":3,
@@ -6420,7 +10835,31 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8226394141468683,
+     "Critical Damage":2.205,
+     "Protection":41096,
+     "Armor":473,
+     "Special Critical Chance %":0.26218038336933047,
+     "Armor Penetration":225,
+     "Strength":1231,
+     "Health Steal":0.1,
+     "Physical Damage":5727,
+     "Tenacity":0.64527,
+     "Special Damage":3374,
+     "Speed":192,
+     "Agility":2376,
+     "Potency":0.44705,
+     "Deflection Chance":24,
+     "Intelligence":994,
+     "Dodge Chance":24,
+     "Resistance":196,
+     "Health":44786,
+     "Mastery":15,
+     "Armor %":0.4259342638451148
+    }
+   }
   },
   "darthsion":{
    "currentRarity":7,
@@ -6450,7 +10889,31 @@
    "relic":{
     "currentTier":3
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3731094600431965,
+     "Critical Damage":1.5,
+     "Protection":55322,
+     "Armor":899,
+     "Special Critical Chance %":0.1889288714902808,
+     "Armor Penetration":34,
+     "Strength":1726,
+     "Health Steal":0.20750000000000002,
+     "Physical Damage":4467,
+     "Tenacity":0.62075,
+     "Special Damage":2872,
+     "Speed":172,
+     "Agility":796,
+     "Potency":0.5847800000000001,
+     "Deflection Chance":24,
+     "Intelligence":791,
+     "Dodge Chance":24,
+     "Resistance":479,
+     "Health":43686,
+     "Mastery":5,
+     "Armor %":0.5850959973966807
+    }
+   }
   },
   "capitaljedicruiser":{
    "currentRarity":7,
@@ -6506,7 +10969,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.48910738120950326,
+     "Critical Damage":1.8,
+     "Protection":12890,
+     "Armor":262,
+     "Special Critical Chance %":0.30326,
+     "Armor Penetration":5,
+     "Strength":682,
+     "Health Steal":0.25,
+     "Physical Damage":1714,
+     "Tenacity":0.30428,
+     "Special Damage":2008,
+     "Speed":158,
+     "Agility":780,
+     "Potency":0.30201,
+     "Deflection Chance":24,
+     "Intelligence":609,
+     "Dodge Chance":24,
+     "Resistance":162,
+     "Health":17256,
+     "Armor %":0.29127292940522514
+    }
+   }
   },
   "capitalchimaera":{
    "currentRarity":7,
@@ -6614,7 +11100,33 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.43900427915766743,
+     "Critical Damage":1.5,
+     "Protection":86011,
+     "Armor":1762,
+     "Special Critical Chance %":0.1660669816414687,
+     "Armor Penetration":41,
+     "Strength":2367,
+     "Health Steal":0.23750000000000002,
+     "Physical Damage":4638,
+     "Tenacity":0.5700000000000001,
+     "Special Damage":3652,
+     "Speed":167,
+     "Physical Critical Avoidance":0.24000000000000002,
+     "Agility":1333,
+     "Potency":0.41478000000000004,
+     "Deflection Chance":24,
+     "Intelligence":1316,
+     "Dodge Chance":24,
+     "Resistance":1149,
+     "Special Critical Avoidance":0.24000000000000002,
+     "Health":63010,
+     "Mastery":25,
+     "Armor %":0.7343196499270681
+    }
+   }
   },
   "wreckers3":{
    "currentRarity":7,
@@ -6644,7 +11156,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2947546409287257,
+     "Critical Damage":1.5,
+     "Protection":24695,
+     "Armor":293,
+     "Special Critical Chance %":0.14516,
+     "Armor Penetration":29,
+     "Strength":969,
+     "Health Steal":0.35000000000000003,
+     "Physical Damage":2476,
+     "Tenacity":0.61473,
+     "Special Damage":1868,
+     "Speed":148,
+     "Agility":628,
+     "Potency":0.17342,
+     "Deflection Chance":24,
+     "Intelligence":636,
+     "Dodge Chance":24,
+     "Resistance":132,
+     "Health":29256,
+     "Armor %":0.3148844707146695
+    }
+   }
   },
   "hothleia":{
    "currentRarity":7,
@@ -6670,7 +11205,31 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8451363957883369,
+     "Critical Damage":1.905,
+     "Protection":83855,
+     "Armor":751,
+     "Special Critical Chance %":0.3405149190064795,
+     "Armor Penetration":164,
+     "Strength":2060,
+     "Health Steal":0.25,
+     "Physical Damage":6583,
+     "Tenacity":0.5140100000000001,
+     "Special Damage":5740,
+     "Speed":233,
+     "Agility":2476,
+     "Potency":0.50138,
+     "Deflection Chance":24,
+     "Intelligence":1523,
+     "Dodge Chance":24,
+     "Resistance":411,
+     "Health":56286,
+     "Mastery":35,
+     "Armor %":0.5408714440043212
+    }
+   }
   },
   "greedo":{
    "currentRarity":7,
@@ -6704,7 +11263,32 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.947534522138229,
+     "Critical Damage":2.265,
+     "Protection":44455,
+     "Armor":504,
+     "Special Critical Chance %":0.3479058639308855,
+     "Armor Penetration":230,
+     "Strength":1675,
+     "Health Steal":0.15,
+     "Physical Damage":6580,
+     "Tenacity":0.56843,
+     "Special Damage":4926,
+     "Speed":207,
+     "Agility":2522,
+     "Potency":0.5363,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":1468,
+     "Dodge Chance":24,
+     "Resistance":279,
+     "Health":51004,
+     "Mastery":35,
+     "Armor %":0.44152431011826543
+    }
+   }
   },
   "generalsyndulla":{
    "currentRarity":7,
@@ -6734,7 +11318,36 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5130469249460043,
+     "Critical Damage":1.92,
+     "Armor":821,
+     "Armor Penetration":38,
+     "Health Steal":0.15,
+     "Tenacity":0.86912,
+     "Agility":1659,
+     "Potency":1.24122,
+     "Resistance":719,
+     "Protection":77004,
+     "Special Critical Chance %":0.207190472462203,
+     "Strength":1761,
+     "Physical Damage":5258,
+     "Special Damage":7274,
+     "Speed":223,
+     "Special Accuracy":126,
+     "Physical Critical Avoidance":252,
+     "Deflection Chance":24,
+     "Resistance Penetration":25,
+     "Intelligence":2447,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":252,
+     "Health":58464,
+     "Mastery":35,
+     "Physical Accuracy":126,
+     "Armor %":0.5629070963318478
+    }
+   }
   },
   "boomadier":{
    "currentRarity":7,
@@ -6760,7 +11373,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9488699649028078,
+     "Critical Damage":1.5,
+     "Protection":82794,
+     "Armor":826,
+     "Special Critical Chance %":0.46425000000000005,
+     "Armor Penetration":298,
+     "Strength":2399,
+     "Health Steal":0.1,
+     "Physical Damage":7397,
+     "Tenacity":0.73,
+     "Special Damage":5751,
+     "Speed":289,
+     "Special Accuracy":162,
+     "Agility":1806,
+     "Potency":0.92679,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1672,
+     "Dodge Chance":24,
+     "Resistance":495,
+     "Health":65249,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5644004099760848
+    }
+   }
   },
   "bodhirook":{
    "currentRarity":3,
@@ -6803,7 +11443,34 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8629367683585313,
+     "Critical Damage":2.2199999999999998,
+     "Armor":735,
+     "Armor Penetration":285,
+     "Health Steal":0.2,
+     "Tenacity":0.47464,
+     "Agility":1812,
+     "Potency":0.38769000000000003,
+     "Resistance":283,
+     "Protection":76625,
+     "Special Critical Chance %":0.2924769816414687,
+     "Strength":2343,
+     "Physical Damage":7480,
+     "Special Damage":5400,
+     "Speed":202,
+     "Special Accuracy":126,
+     "Deflection Chance":24,
+     "Resistance Penetration":70,
+     "Intelligence":1496,
+     "Dodge Chance":24,
+     "Health":61639,
+     "Mastery":35,
+     "Physical Accuracy":126,
+     "Armor %":0.5355191256830601
+    }
+   }
   },
   "choppers3":{
    "currentRarity":7,
@@ -6829,7 +11496,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.35650210043196545,
+     "Critical Damage":1.5,
+     "Protection":28338,
+     "Armor":429,
+     "Special Critical Chance %":0.16065396328293738,
+     "Armor Penetration":35,
+     "Strength":787,
+     "Physical Damage":1875,
+     "Tenacity":0.27,
+     "Special Damage":2124,
+     "Speed":216,
+     "Agility":799,
+     "Potency":0.32249,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":751,
+     "Dodge Chance":24,
+     "Resistance":229,
+     "Health":17300,
+     "Armor %":0.4022503516174402
+    }
+   }
   },
   "bobafett":{
    "currentRarity":7,
@@ -6863,7 +11553,31 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":1.0672421760259179,
+     "Critical Damage":2.34,
+     "Protection":53862,
+     "Armor":668,
+     "Special Critical Chance %":0.4246936069114471,
+     "Armor Penetration":203,
+     "Strength":1919,
+     "Health Steal":0.15,
+     "Physical Damage":8738,
+     "Tenacity":0.52982,
+     "Special Damage":6855,
+     "Speed":171,
+     "Agility":2937,
+     "Potency":0.52157,
+     "Deflection Chance":24,
+     "Intelligence":1742,
+     "Dodge Chance":24,
+     "Resistance":367,
+     "Health":54275,
+     "Mastery":60,
+     "Armor %":0.5116813481424741
+    }
+   }
   },
   "wattambor":{
    "currentRarity":7,
@@ -6889,7 +11603,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4346137122030238,
+     "Critical Damage":1.5,
+     "Armor":1147,
+     "Armor Penetration":21,
+     "Health Steal":0.05,
+     "Tenacity":0.94896,
+     "Agility":1581,
+     "Potency":0.57291,
+     "Resistance":958,
+     "Protection":59397,
+     "Special Critical Chance %":0.1691769816414687,
+     "Strength":2194,
+     "Physical Damage":4609,
+     "Special Damage":7278,
+     "Speed":252,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":25,
+     "Intelligence":2383,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":78389,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.6427570748108714
+    }
+   }
   },
   "wedgeantilles":{
    "currentRarity":7,
@@ -6915,7 +11658,31 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9671144060475162,
+     "Critical Damage":1.845,
+     "Protection":47049,
+     "Armor":520,
+     "Special Critical Chance %":0.48124434665226784,
+     "Armor Penetration":134,
+     "Strength":1139,
+     "Health Steal":0.2,
+     "Physical Damage":4540,
+     "Tenacity":0.52473,
+     "Special Damage":3812,
+     "Speed":173,
+     "Agility":1993,
+     "Potency":0.46284000000000003,
+     "Deflection Chance":24,
+     "Intelligence":1301,
+     "Dodge Chance":24,
+     "Resistance":428,
+     "Health":36187,
+     "Mastery":15,
+     "Armor %":0.44924406047516197
+    }
+   }
   },
   "marajade":{
    "currentRarity":7,
@@ -6941,7 +11708,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8990924163066955,
+     "Critical Damage":1.575,
+     "Protection":61978,
+     "Armor":661,
+     "Special Critical Chance %":0.6011532289416847,
+     "Armor Penetration":37,
+     "Strength":1534,
+     "Health Steal":0.05,
+     "Physical Damage":4739,
+     "Tenacity":0.83462,
+     "Special Damage":6636,
+     "Speed":257,
+     "Agility":2011,
+     "Potency":0.38851,
+     "Deflection Chance":24,
+     "Intelligence":1604,
+     "Dodge Chance":24,
+     "Resistance":484,
+     "Health":64024,
+     "Mastery":25,
+     "Armor %":0.5090489025798999
+    }
+   }
   },
   "carthonasi":{
    "currentRarity":7,
@@ -6967,7 +11758,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.43501739200863937,
+     "Critical Damage":2.16,
+     "Protection":51178,
+     "Armor":258,
+     "Special Critical Chance %":0.16083,
+     "Armor Penetration":119,
+     "Strength":865,
+     "Health Steal":0.1,
+     "Physical Damage":2858,
+     "Tenacity":0.42201000000000005,
+     "Special Damage":2073,
+     "Speed":180,
+     "Agility":880,
+     "Potency":0.64229,
+     "Deflection Chance":24,
+     "Intelligence":632,
+     "Dodge Chance":24,
+     "Resistance":83,
+     "Health":21093,
+     "Armor %":0.288107202680067
+    }
+   }
   },
   "arctrooper501st":{
    "currentRarity":7,
@@ -6989,7 +11803,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.49173653617710583,
+     "Critical Damage":1.8599999999999999,
+     "Protection":40468,
+     "Armor":325,
+     "Special Critical Chance %":0.27297000000000005,
+     "Armor Penetration":68,
+     "Strength":1240,
+     "Health Steal":0.1,
+     "Physical Damage":3880,
+     "Tenacity":0.41214,
+     "Special Damage":1841,
+     "Speed":206,
+     "Agility":637,
+     "Potency":0.23908,
+     "Deflection Chance":24,
+     "Intelligence":566,
+     "Dodge Chance":24,
+     "Resistance":264,
+     "Health":30691,
+     "Armor %":0.33766233766233766
+    }
+   }
   },
   "deathtrooper":{
    "currentRarity":7,
@@ -7015,7 +11852,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.26376237850971923,
+     "Critical Damage":1.5,
+     "Protection":6879,
+     "Armor":241,
+     "Special Critical Chance %":0.1,
+     "Accuracy":0.12000000000000001,
+     "Armor Penetration":15,
+     "Strength":839,
+     "Health Steal":0.05,
+     "Physical Damage":1772,
+     "Tenacity":0.22076,
+     "Special Damage":1432,
+     "Speed":129,
+     "Agility":585,
+     "Potency":0.42845,
+     "Deflection Chance":24,
+     "Intelligence":462,
+     "Dodge Chance":24,
+     "Resistance":93,
+     "Health":24114,
+     "Armor %":0.2743312464428002
+    }
+   }
   },
   "trench":{
    "currentRarity":7,
@@ -7041,7 +11902,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.32178294546436287,
+     "Critical Damage":1.5,
+     "Protection":30749,
+     "Armor":301,
+     "Special Critical Chance %":0.17135490820734342,
+     "Armor Penetration":5,
+     "Strength":977,
+     "Health Steal":0.05,
+     "Physical Damage":2357,
+     "Tenacity":0.31762,
+     "Special Damage":3792,
+     "Speed":199,
+     "Agility":829,
+     "Potency":0.07,
+     "Deflection Chance":24,
+     "Resistance Penetration":30,
+     "Intelligence":1294,
+     "Dodge Chance":24,
+     "Resistance":176,
+     "Health":26601,
+     "Armor %":0.32072456046883324
+    }
+   }
   },
   "wicket":{
    "currentRarity":7,
@@ -7067,7 +11952,30 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.891530642548596,
+     "Critical Damage":1.845,
+     "Protection":62092,
+     "Armor":552,
+     "Special Critical Chance %":0.31065340172786177,
+     "Armor Penetration":233,
+     "Strength":1287,
+     "Health Steal":0.15,
+     "Physical Damage":4974,
+     "Tenacity":0.42,
+     "Special Damage":3280,
+     "Speed":185,
+     "Agility":1899,
+     "Deflection Chance":24,
+     "Intelligence":1005,
+     "Dodge Chance":24,
+     "Resistance":346,
+     "Health":44923,
+     "Mastery":15,
+     "Armor %":0.4640605296343001
+    }
+   }
   },
   "geonosianstarfighter2":{
    "currentRarity":7,
@@ -7145,7 +12053,36 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6181441900647948,
+     "Critical Damage":2.42,
+     "Armor":916,
+     "Armor Penetration":41,
+     "Health Steal":0.35000000000000003,
+     "Tenacity":0.8746900000000001,
+     "Agility":1433,
+     "Potency":0.38,
+     "Resistance":711,
+     "Protection":67440,
+     "Special Critical Chance %":0.42104595842332615,
+     "Strength":1648,
+     "Physical Damage":6182,
+     "Special Damage":9832,
+     "Speed":233,
+     "Special Accuracy":90,
+     "Physical Critical Avoidance":0.35000000000000003,
+     "Deflection Chance":24,
+     "Resistance Penetration":158,
+     "Intelligence":2420,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":0.35000000000000003,
+     "Health":66690,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5896363051174767
+    }
+   }
   },
   "geonosianstarfighter3":{
    "currentRarity":7,
@@ -7201,7 +12138,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3699951187904968,
+     "Critical Damage":1.8599999999999999,
+     "Armor":489,
+     "Armor Penetration":80,
+     "Health Steal":0.15,
+     "Tenacity":0.50638,
+     "Agility":1075,
+     "Potency":0.46,
+     "Resistance":719,
+     "Protection":69404,
+     "Special Critical Chance %":0.2512361420086393,
+     "Strength":1262,
+     "Physical Damage":3690,
+     "Special Damage":6358,
+     "Speed":191,
+     "Physical Critical Avoidance":162.00000000000003,
+     "Deflection Chance":24,
+     "Resistance Penetration":140,
+     "Intelligence":2180,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":162.00000000000003,
+     "Health":58556,
+     "Mastery":15,
+     "Armor %":0.4340878828229028
+    }
+   }
   },
   "dathcha":{
    "currentRarity":7,
@@ -7227,7 +12191,33 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3118449244060475,
+     "Critical Damage":1.5,
+     "Protection":5475,
+     "Armor":199,
+     "Special Critical Chance %":0.1585,
+     "Armor Penetration":6,
+     "Strength":538,
+     "Health Steal":0.15,
+     "Physical Damage":1828,
+     "Tenacity":0.45634,
+     "Special Damage":2612,
+     "Speed":119,
+     "Physical Critical Avoidance":0.24000000000000002,
+     "Agility":539,
+     "Potency":0.11437,
+     "Deflection Chance":24,
+     "Resistance Penetration":15,
+     "Intelligence":830,
+     "Dodge Chance":24,
+     "Resistance":135,
+     "Special Critical Avoidance":0.24000000000000002,
+     "Health":15001,
+     "Armor %":0.23789599521817095
+    }
+   }
   },
   "masterquigon":{
    "currentRarity":7,
@@ -7253,7 +12243,36 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.541164379049676,
+     "Critical Damage":1.92,
+     "Armor":837,
+     "Armor Penetration":72,
+     "Health Steal":0.1,
+     "Tenacity":1.0621399999999999,
+     "Agility":1698,
+     "Potency":1.19831,
+     "Resistance":661,
+     "Protection":90807,
+     "Special Critical Chance %":0.3165640685745141,
+     "Strength":1837,
+     "Physical Damage":5698,
+     "Special Damage":8713,
+     "Speed":288,
+     "Special Accuracy":162,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":195,
+     "Intelligence":2731,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":60012,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5676500508646999
+    }
+   }
   },
   "teebo":{
    "currentRarity":7,
@@ -7279,7 +12298,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.35139350701943844,
+     "Critical Damage":1.5,
+     "Protection":8394,
+     "Armor":241,
+     "Special Critical Chance %":0.2168,
+     "Armor Penetration":10,
+     "Strength":903,
+     "Health Steal":0.15,
+     "Physical Damage":1582,
+     "Tenacity":0.26254,
+     "Special Damage":1332,
+     "Speed":159,
+     "Agility":585,
+     "Potency":0.84905,
+     "Deflection Chance":24,
+     "Intelligence":482,
+     "Dodge Chance":24,
+     "Resistance":158,
+     "Health":18764,
+     "Armor %":0.2743312464428002
+    }
+   }
   },
   "badbatchtech":{
    "currentRarity":2,
@@ -7336,7 +12378,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2937243574514039,
+     "Critical Damage":1.5,
+     "Protection":18325,
+     "Armor":225,
+     "Special Critical Chance %":0.14788,
+     "Armor Penetration":5,
+     "Strength":815,
+     "Health Steal":0.2,
+     "Physical Damage":1570,
+     "Tenacity":0.26056,
+     "Special Damage":2415,
+     "Speed":91,
+     "Agility":629,
+     "Potency":0.17659000000000002,
+     "Deflection Chance":24,
+     "Intelligence":749,
+     "Dodge Chance":24,
+     "Resistance":121,
+     "Health":25107,
+     "Armor %":0.2608695652173913
+    }
+   }
   },
   "glleia":{
    "currentRarity":7,
@@ -7370,7 +12435,34 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.45696947084233264,
+     "Critical Damage":1.5,
+     "Armor":1106,
+     "Armor Penetration":50,
+     "Health Steal":0.5,
+     "Tenacity":1.30339,
+     "Agility":1812,
+     "Potency":0.71944,
+     "Resistance":1256,
+     "Protection":79970,
+     "Special Critical Chance %":0.21986821544276458,
+     "Strength":2300,
+     "Physical Damage":6955,
+     "Special Damage":9305,
+     "Speed":477,
+     "Physical Critical Avoidance":648.0000000000001,
+     "Deflection Chance":24,
+     "Resistance Penetration":107,
+     "Intelligence":2710,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":648.0000000000001,
+     "Health":113323,
+     "Mastery":60,
+     "Armor %":0.634356180097505
+    }
+   }
   },
   "urorrurrr":{
    "currentRarity":7,
@@ -7392,7 +12484,36 @@
    "relic":{
     "currentTier":6
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5205814605831534,
+     "Critical Damage":1.5,
+     "Armor":555,
+     "Armor Penetration":63,
+     "Health Steal":0.1,
+     "Tenacity":0.47661000000000003,
+     "Agility":1283,
+     "Potency":0.45349,
+     "Resistance":379,
+     "Protection":48322,
+     "Special Critical Chance %":0.1922233072354212,
+     "Strength":1498,
+     "Physical Damage":4751,
+     "Special Damage":5363,
+     "Speed":187,
+     "Special Accuracy":72,
+     "Physical Critical Avoidance":144,
+     "Deflection Chance":24,
+     "Resistance Penetration":20,
+     "Intelligence":1873,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":144,
+     "Health":56771,
+     "Mastery":20,
+     "Physical Accuracy":72,
+     "Armor %":0.46540880503144655
+    }
+   }
   },
   "snowtrooper":{
    "currentRarity":7,
@@ -7414,7 +12535,31 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4288729400647948,
+     "Critical Damage":2.16,
+     "Protection":5101,
+     "Armor":180,
+     "Special Critical Chance %":0.30178000000000005,
+     "Armor Penetration":12,
+     "Strength":674,
+     "Health Steal":0.05,
+     "Physical Damage":1476,
+     "Tenacity":0.26066,
+     "Special Damage":1172,
+     "Speed":97,
+     "Agility":482,
+     "Potency":0.10807,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":401,
+     "Dodge Chance":24,
+     "Resistance":77,
+     "Health":14246,
+     "Armor %":0.22018348623853212
+    }
+   }
   },
   "shoretrooper":{
    "currentRarity":7,
@@ -7436,7 +12581,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.21334190064794817,
+     "Critical Damage":1.5,
+     "Protection":50559,
+     "Armor":426,
+     "Special Critical Chance %":0.10416698164146869,
+     "Armor Penetration":30,
+     "Strength":1424,
+     "Health Steal":0.2,
+     "Physical Damage":2949,
+     "Tenacity":0.56,
+     "Special Damage":2013,
+     "Speed":164,
+     "Agility":600,
+     "Potency":0.5154000000000001,
+     "Deflection Chance":24,
+     "Intelligence":641,
+     "Dodge Chance":24,
+     "Resistance":258,
+     "Health":50177,
+     "Armor %":0.4005641748942172
+    }
+   }
   },
   "princessleia":{
    "currentRarity":7,
@@ -7462,7 +12630,31 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8593687473002161,
+     "Critical Damage":2.205,
+     "Protection":54461,
+     "Armor":464,
+     "Special Critical Chance %":0.3476634017278618,
+     "Armor Penetration":224,
+     "Strength":1273,
+     "Health Steal":0.15,
+     "Physical Damage":5737,
+     "Tenacity":0.48459,
+     "Special Damage":3776,
+     "Speed":214,
+     "Agility":2335,
+     "Potency":0.51659,
+     "Deflection Chance":24,
+     "Intelligence":1146,
+     "Dodge Chance":24,
+     "Resistance":231,
+     "Health":44153,
+     "Mastery":15,
+     "Armor %":0.4212437585111212
+    }
+   }
   },
   "darthmalak":{
    "currentRarity":7,
@@ -7492,7 +12684,31 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.49669665226781856,
+     "Critical Damage":1.5,
+     "Protection":130461,
+     "Armor":1420,
+     "Special Critical Chance %":0.1,
+     "Armor Penetration":189,
+     "Strength":3145,
+     "Health Steal":0.44,
+     "Physical Damage":7033,
+     "Tenacity":1.51715,
+     "Special Damage":5325,
+     "Speed":225,
+     "Agility":1768,
+     "Potency":1.00041,
+     "Deflection Chance":24,
+     "Intelligence":1785,
+     "Dodge Chance":24,
+     "Resistance":794,
+     "Health":75585,
+     "Mastery":60,
+     "Armor %":0.6901579586877278
+    }
+   }
   },
   "finn":{
    "currentRarity":7,
@@ -7518,7 +12734,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.3668168142548596,
+     "Critical Damage":1.8599999999999999,
+     "Protection":41237,
+     "Armor":391,
+     "Special Critical Chance %":0.19680396328293737,
+     "Armor Penetration":29,
+     "Strength":1095,
+     "Health Steal":0.2,
+     "Physical Damage":2224,
+     "Tenacity":0.33389,
+     "Special Damage":1691,
+     "Speed":163,
+     "Agility":605,
+     "Potency":0.9454800000000001,
+     "Deflection Chance":24,
+     "Intelligence":581,
+     "Dodge Chance":24,
+     "Resistance":185,
+     "Health":27662,
+     "Armor %":0.38016528925619836
+    }
+   }
   },
   "phasma":{
    "currentRarity":7,
@@ -7544,7 +12783,34 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6962293034557235,
+     "Critical Damage":1.5,
+     "Armor":672,
+     "Armor Penetration":290,
+     "Health Steal":0.3875,
+     "Tenacity":0.52783,
+     "Agility":1477,
+     "Potency":0.78982,
+     "Resistance":420,
+     "Protection":78487,
+     "Special Critical Chance %":0.2495288714902808,
+     "Strength":2053,
+     "Physical Damage":4366,
+     "Special Damage":4683,
+     "Speed":183,
+     "Special Accuracy":90,
+     "Deflection Chance":24,
+     "Resistance Penetration":55,
+     "Intelligence":1654,
+     "Dodge Chance":24,
+     "Health":49831,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.5131729667812142
+    }
+   }
   },
   "undercoverlando":{
    "currentRarity":7,
@@ -7570,7 +12836,36 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6493524055075595,
+     "Critical Damage":1.5,
+     "Armor":1157,
+     "Armor Penetration":178,
+     "Health Steal":0.4,
+     "Tenacity":0.5513600000000001,
+     "Agility":1382,
+     "Potency":0.95177,
+     "Resistance":319,
+     "Protection":70348,
+     "Special Critical Chance %":0.26474,
+     "Strength":2854,
+     "Physical Damage":9315,
+     "Special Damage":5346,
+     "Speed":193,
+     "Special Accuracy":90,
+     "Physical Critical Avoidance":0.35000000000000003,
+     "Deflection Chance":24,
+     "Resistance Penetration":50,
+     "Intelligence":1339,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":0.35000000000000003,
+     "Health":66035,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.6447478406241293
+    }
+   }
   },
   "capitalfinalizer":{
    "currentRarity":7,
@@ -7622,7 +12917,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8090099757019439,
+     "Critical Damage":1.935,
+     "Protection":49314,
+     "Armor":696,
+     "Special Critical Chance %":0.31105566954643626,
+     "Armor Penetration":225,
+     "Strength":1873,
+     "Health Steal":0.15,
+     "Physical Damage":6506,
+     "Tenacity":0.53389,
+     "Special Damage":5076,
+     "Speed":223,
+     "Agility":2268,
+     "Potency":0.51126,
+     "Deflection Chance":24,
+     "Intelligence":1337,
+     "Dodge Chance":24,
+     "Resistance":389,
+     "Health":50438,
+     "Mastery":25,
+     "Armor %":0.5219347581552306
+    }
+   }
   },
   "hyenabomber":{
    "currentRarity":7,
@@ -7688,7 +13007,32 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8301711150107991,
+     "Critical Damage":1.9649999999999999,
+     "Protection":57255,
+     "Armor":709,
+     "Special Critical Chance %":0.34471775377969766,
+     "Armor Penetration":136,
+     "Strength":1948,
+     "Health Steal":0.15,
+     "Physical Damage":4956,
+     "Tenacity":0.44729,
+     "Special Damage":5269,
+     "Speed":207,
+     "Agility":2329,
+     "Potency":1.03554,
+     "Deflection Chance":171,
+     "Resistance Penetration":15,
+     "Intelligence":1700,
+     "Dodge Chance":171,
+     "Resistance":307,
+     "Health":57605,
+     "Mastery":35,
+     "Armor %":0.5265503156331229
+    }
+   }
   },
   "aaylasecura":{
    "currentRarity":7,
@@ -7714,7 +13058,34 @@
    "relic":{
     "currentTier":5
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8995343061555077,
+     "Critical Damage":1.5,
+     "Protection":46213,
+     "Armor":508,
+     "Special Critical Chance %":0.40158000000000005,
+     "Armor Penetration":214,
+     "Strength":1715,
+     "Health Steal":0.17250000000000001,
+     "Physical Damage":4881,
+     "Tenacity":0.5,
+     "Special Damage":3958,
+     "Speed":187,
+     "Special Accuracy":54,
+     "Agility":1362,
+     "Potency":0.60589,
+     "Deflection Chance":24,
+     "Resistance Penetration":45,
+     "Intelligence":1286,
+     "Dodge Chance":24,
+     "Resistance":237,
+     "Health":47297,
+     "Mastery":15,
+     "Physical Accuracy":54,
+     "Armor %":0.4434744652989961
+    }
+   }
   },
   "ywingrebel":{
    "currentRarity":7,
@@ -7770,7 +13141,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.82755593412527,
+     "Critical Damage":1.5,
+     "Protection":84799,
+     "Armor":940,
+     "Special Critical Chance %":0.3341853077753779,
+     "Armor Penetration":253,
+     "Strength":1703,
+     "Health Steal":0.3,
+     "Physical Damage":5830,
+     "Tenacity":0.55728,
+     "Special Damage":4576,
+     "Speed":309,
+     "Agility":2430,
+     "Potency":0.25528,
+     "Deflection Chance":213,
+     "Intelligence":1581,
+     "Dodge Chance":213,
+     "Resistance":631,
+     "Health":78328,
+     "Mastery":45,
+     "Armor %":0.595879556259905
+    }
+   }
   },
   "darthmalgus":{
    "currentRarity":7,
@@ -7800,7 +13195,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.4298568304535637,
+     "Critical Damage":1.5,
+     "Protection":91071,
+     "Armor":1780,
+     "Special Critical Chance %":0.11900000000000001,
+     "Armor Penetration":40,
+     "Strength":2473,
+     "Health Steal":0.5375,
+     "Physical Damage":4809,
+     "Tenacity":0.89073,
+     "Special Damage":3636,
+     "Speed":235,
+     "Agility":1300,
+     "Potency":0.482,
+     "Deflection Chance":24,
+     "Intelligence":1341,
+     "Dodge Chance":24,
+     "Resistance":842,
+     "Health":80301,
+     "Mastery":25,
+     "Armor %":0.7362978283350569
+    }
+   }
   },
   "resistancepilot":{
    "currentRarity":5,
@@ -7814,7 +13233,27 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.15083717602591792,
+     "Critical Damage":1.5,
+     "Armor":56,
+     "Special Critical Chance %":0.1,
+     "Strength":179,
+     "Physical Damage":461,
+     "Tenacity":0.15,
+     "Special Damage":360,
+     "Speed":104,
+     "Agility":306,
+     "Potency":0.01,
+     "Deflection Chance":24,
+     "Intelligence":150,
+     "Dodge Chance":24,
+     "Resistance":15,
+     "Health":3394,
+     "Armor %":0.08074981975486661
+    }
+   }
   },
   "kuiil":{
    "currentRarity":7,
@@ -7840,7 +13279,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.19500718142548595,
+     "Critical Damage":1.5,
+     "Protection":17537,
+     "Armor":177,
+     "Special Critical Chance %":0.11875141738660908,
+     "Armor Penetration":5,
+     "Strength":642,
+     "Physical Damage":1871,
+     "Tenacity":0.29258,
+     "Special Damage":3499,
+     "Speed":181,
+     "Agility":570,
+     "Potency":0.61851,
+     "Deflection Chance":24,
+     "Resistance Penetration":59,
+     "Intelligence":1139,
+     "Dodge Chance":24,
+     "Resistance":154,
+     "Health":18450,
+     "Armor %":0.21731123388581952
+    }
+   }
   },
   "kylekatarn":{
    "currentRarity":7,
@@ -7866,7 +13328,34 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.7563188201943845,
+     "Critical Damage":1.5,
+     "Armor":1014,
+     "Armor Penetration":275,
+     "Health Steal":0.3,
+     "Tenacity":0.81301,
+     "Agility":1489,
+     "Potency":0.34803,
+     "Resistance":466,
+     "Protection":73352,
+     "Special Critical Chance %":0.37504000000000004,
+     "Strength":2196,
+     "Physical Damage":7945,
+     "Special Damage":5687,
+     "Speed":221,
+     "Special Accuracy":90,
+     "Deflection Chance":24,
+     "Resistance Penetration":50,
+     "Intelligence":1406,
+     "Dodge Chance":24,
+     "Health":62701,
+     "Mastery":25,
+     "Physical Accuracy":90,
+     "Armor %":0.6139872842870118
+    }
+   }
   },
   "vane":{
    "currentRarity":5,
@@ -7892,7 +13381,9 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{}
+   }
   },
   "aurra_sing":{
    "currentRarity":7,
@@ -7926,7 +13417,31 @@
    "relic":{
     "currentTier":8
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.890525172786177,
+     "Critical Damage":1.905,
+     "Protection":51172,
+     "Armor":601,
+     "Special Critical Chance %":0.35381793736501077,
+     "Armor Penetration":307,
+     "Strength":2006,
+     "Health Steal":0.2,
+     "Physical Damage":7522,
+     "Tenacity":0.46091,
+     "Special Damage":5368,
+     "Speed":179,
+     "Agility":2158,
+     "Potency":0.5700000000000001,
+     "Deflection Chance":24,
+     "Intelligence":1432,
+     "Dodge Chance":24,
+     "Resistance":273,
+     "Health":55335,
+     "Mastery":35,
+     "Armor %":0.48526443278159065
+    }
+   }
   },
   "jediknightguardian":{
    "currentRarity":2,
@@ -7960,7 +13475,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.40834757019438445,
+     "Critical Damage":1.5,
+     "Protection":47088,
+     "Armor":319,
+     "Special Critical Chance %":0.22000000000000003,
+     "Armor Penetration":156,
+     "Strength":1160,
+     "Physical Damage":3923,
+     "Tenacity":0.5279499999999999,
+     "Special Damage":1744,
+     "Speed":170,
+     "Agility":769,
+     "Potency":0.040530000000000004,
+     "Deflection Chance":24,
+     "Intelligence":526,
+     "Dodge Chance":24,
+     "Resistance":151,
+     "Health":27926,
+     "Armor %":0.3335075797177209
+    }
+   }
   },
   "mauls7":{
    "currentRarity":7,
@@ -7998,7 +13535,31 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.986567346112311,
+     "Critical Damage":1.875,
+     "Protection":77415,
+     "Armor":627,
+     "Special Critical Chance %":0.40360661447084234,
+     "Armor Penetration":119,
+     "Strength":1729,
+     "Health Steal":0.1,
+     "Physical Damage":5383,
+     "Tenacity":0.36623000000000006,
+     "Special Damage":4245,
+     "Speed":171,
+     "Agility":2246,
+     "Potency":0.37814,
+     "Deflection Chance":129,
+     "Intelligence":1492,
+     "Dodge Chance":129,
+     "Resistance":375,
+     "Health":49413,
+     "Mastery":25,
+     "Armor %":0.4958481613285884
+    }
+   }
   },
   "sawgerrera":{
    "currentRarity":7,
@@ -8024,7 +13585,29 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.2652834071274298,
+     "Critical Damage":1.5,
+     "Protection":6651,
+     "Armor":225,
+     "Special Critical Chance %":0.17611,
+     "Strength":805,
+     "Health Steal":0.1,
+     "Physical Damage":1644,
+     "Tenacity":0.23551,
+     "Special Damage":1405,
+     "Speed":150,
+     "Agility":510,
+     "Potency":0.10584,
+     "Deflection Chance":24,
+     "Intelligence":515,
+     "Dodge Chance":24,
+     "Resistance":168,
+     "Health":20793,
+     "Armor %":0.2608695652173913
+    }
+   }
   },
   "tiefighterpilot":{
    "currentRarity":7,
@@ -8046,7 +13629,32 @@
    "relic":{
     "currentTier":7
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.8765139389848813,
+     "Critical Damage":1.575,
+     "Protection":51331,
+     "Armor":580,
+     "Special Critical Chance %":0.3952275593952484,
+     "Armor Penetration":228,
+     "Strength":1534,
+     "Health Steal":0.2,
+     "Physical Damage":6288,
+     "Tenacity":0.48000000000000004,
+     "Special Damage":4154,
+     "Speed":239,
+     "Agility":2393,
+     "Potency":0.66313,
+     "Deflection Chance":24,
+     "Resistance Penetration":5,
+     "Intelligence":1263,
+     "Dodge Chance":24,
+     "Resistance":254,
+     "Health":51159,
+     "Mastery":25,
+     "Armor %":0.47638603696098564
+    }
+   }
   },
   "grandmasteryoda":{
    "currentRarity":7,
@@ -8076,7 +13684,36 @@
    "relic":{
     "currentTier":10
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6324550458963283,
+     "Critical Damage":1.5,
+     "Armor":693,
+     "Armor Penetration":36,
+     "Health Steal":0.05,
+     "Tenacity":0.4929,
+     "Agility":1842,
+     "Potency":0.6950400000000001,
+     "Resistance":385,
+     "Protection":31312,
+     "Special Critical Chance %":0.3861864308855292,
+     "Strength":1974,
+     "Physical Damage":6828,
+     "Special Damage":11233,
+     "Speed":228,
+     "Special Accuracy":216,
+     "Physical Critical Avoidance":432,
+     "Deflection Chance":24,
+     "Resistance Penetration":130,
+     "Intelligence":2776,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":432,
+     "Health":58655,
+     "Mastery":60,
+     "Physical Accuracy":216,
+     "Armor %":0.5208568207440811
+    }
+   }
   },
   "darthbane":{
    "currentRarity":7,
@@ -8106,7 +13743,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.6573392980561555,
+     "Critical Damage":2.2199999999999998,
+     "Armor":768,
+     "Armor Penetration":295,
+     "Health Steal":0.55,
+     "Tenacity":0.52178,
+     "Agility":1853,
+     "Potency":0.52107,
+     "Resistance":319,
+     "Protection":67167,
+     "Special Critical Chance %":0.22564,
+     "Strength":2815,
+     "Physical Damage":9517,
+     "Special Damage":7138,
+     "Speed":194,
+     "Special Accuracy":162,
+     "Deflection Chance":24,
+     "Resistance Penetration":90,
+     "Intelligence":1764,
+     "Dodge Chance":24,
+     "Health":99119,
+     "Mastery":45,
+     "Physical Accuracy":162,
+     "Armor %":0.5464247598719317
+    }
+   }
   },
   "ig12":{
    "currentRarity":7,
@@ -8132,7 +13796,34 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.5067494762419007,
+     "Critical Damage":1.5,
+     "Armor":911,
+     "Armor Penetration":23,
+     "Health Steal":0.25,
+     "Tenacity":0.69657,
+     "Agility":1812,
+     "Potency":1.11673,
+     "Resistance":685,
+     "Protection":70040,
+     "Special Critical Chance %":0.16714047246220304,
+     "Strength":2040,
+     "Physical Damage":4541,
+     "Special Damage":7021,
+     "Speed":240,
+     "Physical Critical Avoidance":324,
+     "Deflection Chance":24,
+     "Resistance Penetration":10,
+     "Intelligence":2374,
+     "Dodge Chance":24,
+     "Special Critical Avoidance":324,
+     "Health":127715,
+     "Mastery":45,
+     "Armor %":0.588311268969971
+    }
+   }
   },
   "shaakti":{
    "currentRarity":7,
@@ -8162,7 +13853,31 @@
    "relic":{
     "currentTier":9
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.9851397084233261,
+     "Critical Damage":1.635,
+     "Protection":50086,
+     "Armor":836,
+     "Special Critical Chance %":0.422597186825054,
+     "Armor Penetration":120,
+     "Strength":2015,
+     "Health Steal":0.3,
+     "Physical Damage":5505,
+     "Tenacity":0.5522400000000001,
+     "Special Damage":4675,
+     "Speed":248,
+     "Agility":2606,
+     "Potency":0.20018,
+     "Deflection Chance":213,
+     "Intelligence":1639,
+     "Dodge Chance":213,
+     "Resistance":338,
+     "Health":76662,
+     "Mastery":45,
+     "Armor %":0.5673566338649474
+    }
+   }
   },
   "ig11":{
    "currentRarity":7,
@@ -8188,7 +13903,30 @@
    "relic":{
     "currentTier":1
    },
-   "stats":{}
+   "stats":{
+    "total":{
+     "Physical Critical Chance %":0.30250105561555074,
+     "Critical Damage":1.5,
+     "Protection":32760,
+     "Armor":254,
+     "Special Critical Chance %":0.15624,
+     "Armor Penetration":47,
+     "Strength":997,
+     "Health Steal":0.1,
+     "Physical Damage":2377,
+     "Tenacity":0.26,
+     "Special Damage":1747,
+     "Speed":199,
+     "Agility":574,
+     "Potency":0.6466700000000001,
+     "Deflection Chance":24,
+     "Intelligence":650,
+     "Dodge Chance":24,
+     "Resistance":139,
+     "Health":27775,
+     "Armor %":0.284913067863152
+    }
+   }
   }
  }
 }

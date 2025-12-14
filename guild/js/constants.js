@@ -190,6 +190,9 @@ export const OMICRON_SKILL_MAP = {
     'jynerso': [
         { skillId: 'uniqueskill_JYNERSO01', displayName: 'unique 1' },
     ],
+    'marajade': [
+        { skillId: 'uniqueskill_MARAJADE01', displayName: 'unique 1' },
+    ],
 };
 
 export const RANK_MAP = {

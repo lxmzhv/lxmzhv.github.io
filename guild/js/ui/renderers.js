@@ -188,12 +188,23 @@ export function renderTable(data, tbody, tbColumns, selectedPlayerId, callbacks)
     jynCell.classList.add('col-tw-omicrons');
     jynCell.textContent = player.jynersoOmicron;
     setBgColor(jynCell, player.jynersoOmicron >= 1 ? '#7ACC7A' : '#FF9999');
-    jynCell.classList.add('separator-right');
     jynCell.style.cursor = 'pointer';
     jynCell.addEventListener('click', (e) => {
       e.stopPropagation();
       const details = getOmicronDetails(player, 'jynerso', OMICRON_SKILL_MAP['jynerso'], 7);
       callbacks.onOmicronClick(player.playerName, 'Jyn Erso', details);
+    });
+
+    const marajadeCell = row.insertCell();
+    marajadeCell.classList.add('col-tw-omicrons');
+    marajadeCell.textContent = player.marajadeOmicron;
+    setBgColor(marajadeCell, player.marajadeOmicron >= 1 ? '#7ACC7A' : '#FF9999');
+    marajadeCell.classList.add('separator-right');
+    marajadeCell.style.cursor = 'pointer';
+    marajadeCell.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const details = getOmicronDetails(player, 'marajade', OMICRON_SKILL_MAP['marajade'], 6);
+      callbacks.onOmicronClick(player.playerName, 'Mara Jade', details);
     });
 
     CONQUEST_UNITS_ORDER.forEach((unitName, idx) => {
@@ -299,6 +310,36 @@ export function renderTable(data, tbody, tbColumns, selectedPlayerId, callbacks)
         });
       }
     });
+
+    // Mara Jade Columns
+    // Relic
+    const mjRelicCell = row.insertCell();
+    mjRelicCell.classList.add('col-requirements', 'separator-left');
+    const mjUnitInfo = player.marajadeRelic;
+    mjRelicCell.textContent = mjUnitInfo.display;
+    setBgColor(mjRelicCell, getReqUnitBGColor(mjUnitInfo, 'marajade'));
+
+    // Speed
+    const mjSpeedCell = row.insertCell();
+    mjSpeedCell.classList.add('col-requirements');
+    mjSpeedCell.textContent = player.marajadeSpeed;
+    // 340+ - green, 320-339 - yellow, 300-319 - orange, <300 - pink
+    let speedColor = '#FF9999'; // pink
+    if (player.marajadeSpeed >= 340) speedColor = '#7ACC7A'; // green
+    else if (player.marajadeSpeed >= 320) speedColor = 'yellow';
+    else if (player.marajadeSpeed >= 300) speedColor = 'orange';
+    setBgColor(mjSpeedCell, speedColor);
+
+    // Potency
+    const mjPotencyCell = row.insertCell();
+    mjPotencyCell.classList.add('col-requirements', 'separator-right');
+    mjPotencyCell.textContent = `${player.marajadePotency.toFixed(0)}%`;
+    // 90+ - green, 70-89 - yellow, 50-69 - orange, <50 - pink
+    let potencyColor = '#FF9999'; // pink
+    if (player.marajadePotency >= 90) potencyColor = '#7ACC7A'; // green
+    else if (player.marajadePotency >= 70) potencyColor = 'yellow';
+    else if (player.marajadePotency >= 50) potencyColor = 'orange';
+    setBgColor(mjPotencyCell, potencyColor);
 
     tbColumns.forEach((col, idx) => {
       const tbCell = row.insertCell();
