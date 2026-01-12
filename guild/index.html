@@ -119,6 +119,13 @@
                 <label for="rareUnitThreshold">Rare Unit Threshold:</label>
                 <input type="number" id="rareUnitThreshold" min="-50" max="50" value="2" style="width: 60px; text-align: center;">
             </div>
+            <div style="display: inline-block; margin-left: 20px; border-left: 2px solid #ccc; padding-left: 10px;">
+                <label for="platoonAssignmentMode">Assign Platoons:</label>
+                <select id="platoonAssignmentMode" style="margin-left: 5px;">
+                    <option value="early">Early</option>
+                    <option value="late">Late</option>
+                </select>
+            </div>
             <button id="tb-plan-btn" style="margin-left: 10px;">TB Plan</button>
         </div>
         <div id="progress-container" style="display: none;">

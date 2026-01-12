@@ -175,6 +175,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const platoonAssignmentModeSelect = document.getElementById('platoonAssignmentMode');
+    if (platoonAssignmentModeSelect) {
+        const savedMode = localStorage.getItem('platoonAssignmentMode');
+        if (savedMode) {
+            platoonAssignmentModeSelect.value = savedMode;
+            state.set('platoonAssignmentMode', savedMode);
+        } else {
+            state.set('platoonAssignmentMode', 'early');
+        }
+
+        platoonAssignmentModeSelect.addEventListener('change', () => {
+            const mode = platoonAssignmentModeSelect.value;
+            state.set('platoonAssignmentMode', mode);
+            localStorage.setItem('platoonAssignmentMode', mode);
+            if (state.get('players').length > 0) {
+                // Re-run assignments and re-render debug table
+                // Note: assignPlatoons mutates planetStats in place.
+                assignPlatoons(
+                    state.get('enrichedPlayers'),
+                    state.get('planetStats'),
+                    calculateGuildAvailability(state.get('enrichedPlayers'), state.get('platoonRequirements'), state.get('shipBaseIds')),
+                    state.get('shipBaseIds'),
+                    mode
+                );
+                renderDebugTableWrapper();
+                renderDebugTableTotals(state.get('planetStats'), getDebugTotalCallbacks());
+            }
+        });
+    }
+
     // Table Sorting
     table.querySelector('thead').addEventListener('click', (event) => {
         const headerCell = event.target.closest('th[data-sort]');
@@ -395,7 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Assign Platoons (only to active players)
       const activeEnrichedPlayers = enrichedPlayers.filter(p => p.isEnabled);
-      assignPlatoons(activeEnrichedPlayers, planetStats, guildAvailabilityForPlatoons, shipBaseIds);
+        assignPlatoons(activeEnrichedPlayers, planetStats, guildAvailabilityForPlatoons, shipBaseIds, state.get('platoonAssignmentMode'));
 
         // Render Planet Config Table
         renderPlanetConfigTable(planetStats, document.getElementById('planet-config-table-container'), document.getElementById('planet-config-table'), handlePlanetCheckboxChange);
@@ -668,7 +698,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 player.isNew = isNew;
                 localStorage.setItem(`isNew-${player.playerId}`, isNew);
                 // Re-assign and re-render debug
-                assignPlatoons(state.get('enrichedPlayers'), state.get('planetStats'), calculateGuildAvailability(state.get('enrichedPlayers'), state.get('platoonRequirements'), state.get('shipBaseIds')), state.get('shipBaseIds'));
+                assignPlatoons(
+                    state.get('enrichedPlayers'),
+                    state.get('planetStats'),
+                    calculateGuildAvailability(state.get('enrichedPlayers'), state.get('platoonRequirements'), state.get('shipBaseIds')),
+                    state.get('shipBaseIds'),
+                    state.get('platoonAssignmentMode')
+                );
                 renderDebugTableWrapper();
                 renderDebugTableTotals(state.get('planetStats'), getDebugTotalCallbacks());
             }

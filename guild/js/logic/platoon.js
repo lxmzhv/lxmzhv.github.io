@@ -108,7 +108,7 @@ export function identifyRareCharacters(availability, totalRequirements, rareUnit
     return rareCharacters;
 }
 
-export function assignPlatoons(players, planetStats, guildAvailability, shipBaseIds) {
+export function assignPlatoons(players, planetStats, guildAvailability, shipBaseIds, assignmentMode = 'early') {
     // Initialize all units as unassigned and clear previous stats
     for (const planetName in planetStats) {
         const planet = planetStats[planetName];
@@ -121,8 +121,11 @@ export function assignPlatoons(players, planetStats, guildAvailability, shipBase
         planet.candidates = [];
     }
 
-    // Loop through each round from 1 to 6 to perform assignments
-    for (let round = 1; round <= 6; round++) {
+    // Determine round order based on mode
+    const rounds = assignmentMode === 'late' ? [6, 5, 4, 3, 2, 1] : [1, 2, 3, 4, 5, 6];
+
+    // Loop through each round to perform assignments
+    for (const round of rounds) {
         const assignedUnitsThisRound = new Set(); // Tracks "playerId-unitId" for this round only.
         const playerAssignmentsCountThisRound = {}; // Tracks assignments per player, per planet for this round.
 
