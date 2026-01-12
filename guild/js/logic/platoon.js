@@ -214,9 +214,13 @@ export function assignPlatoons(players, planetStats, guildAvailability, shipBase
         const candidateUnitsThisRound = new Set();
         planetsActiveThisRound.forEach(planetName => {
             const planet = planetStats[planetName];
-            const lastActiveRound = Math.max(...planet.rounds);
 
-            if (round === lastActiveRound) {
+            // Determine the round to calculate missing units based on mode
+            const targetRound = assignmentMode === 'late'
+                ? Math.min(...planet.rounds)
+                : Math.max(...planet.rounds);
+
+            if (round === targetRound) {
                 const missingUnits = planet.units.filter(u => !u.assignedPlayerName);
                 planet.missingCount = missingUnits.length;
                 const requiredRelic = parseInt(planet.relic.substring(1));
