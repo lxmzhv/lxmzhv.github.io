@@ -108,6 +108,29 @@ export function identifyRareCharacters(availability, totalRequirements, rareUnit
     return rareCharacters;
 }
 
+export function identifyMasterRareList(guildWideAvailability, platoonRequirements, rareUnitAvailabilityThreshold, assignmentMode = 'early') {
+    const masterRareCheck = new Set();
+    const masterRareList = [];
+
+    const rounds = assignmentMode === 'late' ? [6, 5, 4, 3, 2, 1] : [1, 2, 3, 4, 5, 6];
+
+    for (const round of rounds) {
+        // Only process if round requirements exist
+        if (!platoonRequirements[round]) continue;
+
+        const rareForThisRound = identifyRareCharacters(guildWideAvailability, platoonRequirements[round], rareUnitAvailabilityThreshold);
+
+        rareForThisRound.forEach(rareChar => {
+            const key = `${rareChar.unitId}-${rareChar.level}`;
+            if (!masterRareCheck.has(key)) {
+                masterRareList.push(rareChar);
+                masterRareCheck.add(key);
+            }
+        });
+    }
+    return masterRareList;
+}
+
 export function assignPlatoons(players, planetStats, guildAvailability, shipBaseIds, assignmentMode = 'early') {
     // Initialize all units as unassigned and clear previous stats
     for (const planetName in planetStats) {

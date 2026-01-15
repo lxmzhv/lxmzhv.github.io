@@ -5,6 +5,7 @@ import {
     determineTbColumns,
     calculateGuildWideAvailability,
     identifyRareCharacters,
+    identifyMasterRareList,
     assignPlatoons
 } from './logic/platoon.js';
 import { createPlayerSorter, createDebugSorter } from './logic/sorting.js';
@@ -32,17 +33,17 @@ import {
 } from './ui/planetConfig.js';
 import { getPlayerUnitInfo, getShipInfo, getOmicronCountForSkill } from './logic/player.js';
 import {
-  ASSAULT_CHARACTERS,
-  GALACTIC_LEGENDS_MAP,
-  SHIPS_MAP,
-  PILOTS_MAP,
-  CONQUEST_CHARACTERS_SET,
-  CONQUEST_SHIPS_MAP,
-  TEAMS,
-  LEIA_TEAM_UNITS,
-  JABBA_TEAM_UNITS,
-  OMICRON_SKILL_MAP,
-  CONQUEST_UNITS_ORDER
+    ASSAULT_CHARACTERS,
+    GALACTIC_LEGENDS_MAP,
+    SHIPS_MAP,
+    PILOTS_MAP,
+    CONQUEST_CHARACTERS_SET,
+    CONQUEST_SHIPS_MAP,
+    TEAMS,
+    LEIA_TEAM_UNITS,
+    JABBA_TEAM_UNITS,
+    OMICRON_SKILL_MAP,
+    CONQUEST_UNITS_ORDER
 } from './constants.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -137,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (tbPlanCloseButton) tbPlanCloseButton.addEventListener('click', () => tbPlanModal.style.display = 'none');
     if (tbPlanCancelBtn) tbPlanCancelBtn.addEventListener('click', () => tbPlanModal.style.display = 'none');
-    
+
     if (tbPlanSaveBtn) {
         tbPlanSaveBtn.addEventListener('click', () => {
             savePlanetRoundMap(state.get('tempPlanetConfig'));
@@ -190,17 +191,8 @@ document.addEventListener('DOMContentLoaded', () => {
             state.set('platoonAssignmentMode', mode);
             localStorage.setItem('platoonAssignmentMode', mode);
             if (state.get('players').length > 0) {
-                // Re-run assignments and re-render debug table
-                // Note: assignPlatoons mutates planetStats in place.
-                assignPlatoons(
-                    state.get('enrichedPlayers'),
-                    state.get('planetStats'),
-                    calculateGuildAvailability(state.get('enrichedPlayers'), state.get('platoonRequirements'), state.get('shipBaseIds')),
-                    state.get('shipBaseIds'),
-                    mode
-                );
-                renderDebugTableWrapper();
-                renderDebugTableTotals(state.get('planetStats'), getDebugTotalCallbacks());
+                // Re-calculate everything (requirements placement depends on mode)
+                recalculateAndRenderDashboard();
             }
         });
     }
@@ -224,14 +216,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         state.set('sortKey', sortKey);
         state.set('sortDirection', newDirection);
-        
+
         // Trigger render
         const sorter = createPlayerSorter(sortKey, newDirection, state.get('shipBaseIds'));
-      const sortedPlayers = [...state.get('enrichedPlayers')].sort(sorter);
+        const sortedPlayers = [...state.get('enrichedPlayers')].sort(sorter);
         renderTable(sortedPlayers, tbody, state.get('tbColumns'), state.get('selectedPlayerId'), getTableCallbacks());
 
-      // Re-apply checkbox states after sorting (re-rendering rows)
-      loadCheckboxStates();
+        // Re-apply checkbox states after sorting (re-rendering rows)
+        loadCheckboxStates();
     });
 
     // Debug Table Sorting
@@ -275,11 +267,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'mustafar': [1], 'corellia': [1], 'coruscant': [1],
             'geonosis': [2], 'felucia': [2], 'bracca': [2],
             'dathomir': [3], 'tatooine': [3], 'kashyyyk': [3],
-            'kessel': [4], 'lothal': [4], 'haven-class medical station': [4,5],
-            'vandor': [5,6], 'ring of kafrene': [5],
+            'kessel': [4], 'lothal': [4], 'haven-class medical station': [4, 5],
+            'vandor': [5, 6], 'ring of kafrene': [5],
             'scarif': [6], 'malachor': [6],
-            'zeffo': [3,4,5,6],
-            'mandalor': [4,5,6],
+            'zeffo': [3, 4, 5, 6],
+            'mandalor': [4, 5, 6],
         };
     }
 
@@ -311,64 +303,64 @@ document.addEventListener('DOMContentLoaded', () => {
             progressBar.style.width = `${percentage}%`;
             progressBar.textContent = `${percentage}%`;
         })
-        .then(({ guildData, players }) => {
-            // Render Guild Header
-            const guildName = guildData.profile.name;
-            const guildId = guildData.profile.id;
-            const guildTitle = document.createElement('h1');
-            const guildLink = document.createElement('a');
-            guildLink.href = `https://swgoh.gg/g/${guildId}/`;
-            guildLink.textContent = guildName;
-            guildLink.target = "_blank";
-            guildTitle.appendChild(guildLink);
+            .then(({ guildData, players }) => {
+                // Render Guild Header
+                const guildName = guildData.profile.name;
+                const guildId = guildData.profile.id;
+                const guildTitle = document.createElement('h1');
+                const guildLink = document.createElement('a');
+                guildLink.href = `https://swgoh.gg/g/${guildId}/`;
+                guildLink.textContent = guildName;
+                guildLink.target = "_blank";
+                guildTitle.appendChild(guildLink);
 
-            const recruitLink = document.createElement('a');
-            recruitLink.href = `https://recruit.swgoh.gg/guild/redirect?id=${guildId}`;
-            recruitLink.textContent = 'recruit';
-            recruitLink.target = "_blank";
-            recruitLink.style.fontSize = '0.6em';
-            recruitLink.style.marginLeft = '10px';
-            guildTitle.appendChild(recruitLink);
+                const recruitLink = document.createElement('a');
+                recruitLink.href = `https://recruit.swgoh.gg/guild/redirect?id=${guildId}`;
+                recruitLink.textContent = 'recruit';
+                recruitLink.target = "_blank";
+                recruitLink.style.fontSize = '0.6em';
+                recruitLink.style.marginLeft = '10px';
+                guildTitle.appendChild(recruitLink);
 
-            guildInfoDiv.appendChild(guildTitle);
+                guildInfoDiv.appendChild(guildTitle);
 
-            const dataDate = guildData.date;
-            if (dataDate) {
-                const dateSpan = document.createElement('span');
-                dateSpan.textContent = `Data as of: ${dataDate}`;
-                dateSpan.style.fontSize = '1em';
-                dateSpan.style.fontWeight = 'normal';
-                dateSpan.style.color = '#555';
-                guildInfoDiv.appendChild(dateSpan);
-            }
+                const dataDate = guildData.date;
+                if (dataDate) {
+                    const dateSpan = document.createElement('span');
+                    dateSpan.textContent = `Data as of: ${dataDate}`;
+                    dateSpan.style.fontSize = '1em';
+                    dateSpan.style.fontWeight = 'normal';
+                    dateSpan.style.color = '#555';
+                    guildInfoDiv.appendChild(dateSpan);
+                }
 
-            // Populate shipBaseIds
-            const shipBaseIds = new Set();
-            players.forEach(player => {
-                if (player.roster) {
-                    for (const unitId in player.roster) {
-                        if (player.roster[unitId]?.stats?.crew || (
-                            !player.roster[unitId]?.stats && (
-                                unitId.toLowerCase().startsWith('capital') ||
-                                player.roster[unitId].skill.some(skill => skill.id.startsWith("hardwareskill"))
-                            ))) {
-                            shipBaseIds.add(unitId.toLowerCase());
+                // Populate shipBaseIds
+                const shipBaseIds = new Set();
+                players.forEach(player => {
+                    if (player.roster) {
+                        for (const unitId in player.roster) {
+                            if (player.roster[unitId]?.stats?.crew || (
+                                !player.roster[unitId]?.stats && (
+                                    unitId.toLowerCase().startsWith('capital') ||
+                                    player.roster[unitId].skill.some(skill => skill.id.startsWith("hardwareskill"))
+                                ))) {
+                                shipBaseIds.add(unitId.toLowerCase());
+                            }
                         }
                     }
-                }
-            });
-            state.set('shipBaseIds', shipBaseIds);
-            state.set('players', players);
+                });
+                state.set('shipBaseIds', shipBaseIds);
+                state.set('players', players);
 
-            return fetchPlatoonData().then(({ tsvData, phaseToRelic }) => {
-                state.set('tsvData', tsvData); // Cache TSV data
-                recalculateAndRenderDashboard();
+                return fetchPlatoonData().then(({ tsvData, phaseToRelic }) => {
+                    state.set('tsvData', tsvData); // Cache TSV data
+                    recalculateAndRenderDashboard();
+                });
+            })
+            .catch(error => {
+                console.error('Error loading guild data:', error);
+                progressContainer.style.display = 'none';
             });
-        })
-        .catch(error => {
-            console.error('Error loading guild data:', error);
-            progressContainer.style.display = 'none';
-        });
     }
 
     function recalculateAndRenderDashboard() {
@@ -377,15 +369,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const shipBaseIds = state.get('shipBaseIds');
         const planetRoundMap = getPlanetRoundMap();
 
-        const { platoonRequirements, planetStats } = processPlatoonData(tsvData, planetRoundMap, shipBaseIds);
+        const { platoonRequirements, planetStats } = processPlatoonData(tsvData, planetRoundMap, shipBaseIds, state.get('platoonAssignmentMode'));
         state.set('planetStats', planetStats);
         state.set('platoonRequirements', platoonRequirements);
 
-      // Filter active players for calculations
-      const activePlayers = players.filter(p => localStorage.getItem(`isEnabled-${p.playerId}`) !== 'false');
+        // Filter active players for calculations
+        const activePlayers = players.filter(p => localStorage.getItem(`isEnabled-${p.playerId}`) !== 'false');
 
         // Calculate Availability
-      const guildAvailabilityForPlatoons = calculateGuildAvailability(activePlayers, platoonRequirements, shipBaseIds);
+        const guildAvailabilityForPlatoons = calculateGuildAvailability(activePlayers, platoonRequirements, shipBaseIds);
         const tbColumns = determineTbColumns(platoonRequirements, guildAvailabilityForPlatoons, shipBaseIds, state.get('rareUnitAvailabilityThreshold'));
         state.set('tbColumns', tbColumns);
 
@@ -399,32 +391,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-      const guildWideAvailability = calculateGuildWideAvailability(activePlayers, Array.from(platoonCharIds));
-        
-        const masterRareCheck = new Set();
-        const masterRareList = [];
+        const guildWideAvailability = calculateGuildWideAvailability(activePlayers, Array.from(platoonCharIds));
 
-        for (let round = 1; round <= 6; round++) {
-            const rareForThisRound = identifyRareCharacters(guildWideAvailability, platoonRequirements[round], state.get('rareUnitAvailabilityThreshold'));
-
-            rareForThisRound.forEach(rareChar => {
-                const key = `${rareChar.unitId}-${rareChar.level}`;
-                if (!masterRareCheck.has(key)) {
-                    masterRareList.push(rareChar);
-                    masterRareCheck.add(key);
-                }
-            });
-        }
+        const masterRareList = identifyMasterRareList(
+            guildWideAvailability,
+            platoonRequirements,
+            state.get('rareUnitAvailabilityThreshold'),
+            state.get('platoonAssignmentMode')
+        );
         state.set('masterRareList', masterRareList);
 
-      // Enrich players
-      const enrichedPlayers = players.map(player => {
+        // Enrich players
+        const enrichedPlayers = players.map(player => {
             return enrichPlayer(player, masterRareList, shipBaseIds);
         });
         state.set('enrichedPlayers', enrichedPlayers);
 
-      // Assign Platoons (only to active players)
-      const activeEnrichedPlayers = enrichedPlayers.filter(p => p.isEnabled);
+        // Assign Platoons (only to active players)
+        const activeEnrichedPlayers = enrichedPlayers.filter(p => p.isEnabled);
         assignPlatoons(activeEnrichedPlayers, planetStats, guildAvailabilityForPlatoons, shipBaseIds, state.get('platoonAssignmentMode'));
 
         // Render Planet Config Table
@@ -432,34 +416,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render Main Table
         renderTableHeaders(table, tbColumns);
-        
+
         const sorter = createPlayerSorter(state.get('sortKey'), state.get('sortDirection'), shipBaseIds);
         const sortedPlayers = [...enrichedPlayers].sort(sorter);
         renderTable(sortedPlayers, tbody, tbColumns, state.get('selectedPlayerId'), getTableCallbacks());
 
-      // Re-apply checkbox states to newly rendered columns
-      loadCheckboxStates();
+        // Re-apply checkbox states to newly rendered columns
+        loadCheckboxStates();
 
         // Render Debug Table
         renderDebugTableWrapper();
         renderDebugTableTotals(planetStats, getDebugTotalCallbacks());
-        
+
         progressContainer.style.display = 'none';
     }
 
-  function enrichPlayer(player, masterRareList, shipBaseIds) {
-    const roleMap = {
-      'GUILD_LEADER': 'leader',
-      'GUILD_OFFICER': 'officer',
-      'GUILD_MEMBER': 'member'
-    };
-    const isEnabled = localStorage.getItem(`isEnabled-${player.playerId}`) !== 'false';
+    function enrichPlayer(player, masterRareList, shipBaseIds) {
+        const roleMap = {
+            'GUILD_LEADER': 'leader',
+            'GUILD_OFFICER': 'officer',
+            'GUILD_MEMBER': 'member'
+        };
+        const isEnabled = localStorage.getItem(`isEnabled-${player.playerId}`) !== 'false';
         const playerInfo = {
-          ...player,
-          memberLevel: roleMap[player.memberLevel] || player.memberLevel,
-          joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime) * 1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
-          isNew: localStorage.getItem(`isNew-${player.playerId}`) !== 'false',
-          isEnabled: isEnabled,
+            ...player,
+            memberLevel: roleMap[player.memberLevel] || player.memberLevel,
+            joined: player.guildJoinTime ? new Date(Number(player.guildJoinTime) * 1000).toISOString().slice(0, 10).replace(/-/g, '.') : '-',
+            isNew: localStorage.getItem(`isNew-${player.playerId}`) !== 'false',
+            isEnabled: isEnabled,
             rareR9: 0, rareR8: 0, rareR7: 0, rareR6: 0, rareR5: 0, rareRTotal: 0,
             totalOmicrons: 0,
             generalsyndullaOmicron: 0, padawansabineOmicron: 0, greatmothersOmicron: 0, jynersoOmicron: 0, marajadeOmicron: 0,
@@ -469,128 +453,128 @@ document.addEventListener('DOMContentLoaded', () => {
             marajadePotency: 0
         };
 
-    // Assault Characters
-    ASSAULT_CHARACTERS.forEach(unitId => {
-      playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
-    });
+        // Assault Characters
+        ASSAULT_CHARACTERS.forEach(unitId => {
+            playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
+        });
 
-    // Galactic Legends
-    let glRelicSum = 0;
-    const glIds = Object.keys(GALACTIC_LEGENDS_MAP);
-    glIds.forEach(unitId => {
-        const unitInfo = getPlayerUnitInfo(player, unitId);
-        playerInfo[unitId] = unitInfo;
-        if (unitInfo.type === 3) { // Relic
-            glRelicSum += unitInfo.level;
-        }
-    });
-    playerInfo.glAverage = glIds.length > 0 ? glRelicSum / glIds.length : 0;
+        // Galactic Legends
+        let glRelicSum = 0;
+        const glIds = Object.keys(GALACTIC_LEGENDS_MAP);
+        glIds.forEach(unitId => {
+            const unitInfo = getPlayerUnitInfo(player, unitId);
+            playerInfo[unitId] = unitInfo;
+            if (unitInfo.type === 3) { // Relic
+                glRelicSum += unitInfo.level;
+            }
+        });
+        playerInfo.glAverage = glIds.length > 0 ? glRelicSum / glIds.length : 0;
 
-    // Ships
-    Object.keys(SHIPS_MAP).forEach(unitId => {
-      playerInfo[unitId] = getShipInfo(player, unitId);
-    });
+        // Ships
+        Object.keys(SHIPS_MAP).forEach(unitId => {
+            playerInfo[unitId] = getShipInfo(player, unitId);
+        });
 
-    // Pilots
-    Object.keys(PILOTS_MAP).forEach(unitId => {
-      playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
-    });
+        // Pilots
+        Object.keys(PILOTS_MAP).forEach(unitId => {
+            playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
+        });
 
-    // Conquest Units
-    CONQUEST_UNITS_ORDER.forEach(unitId => {
-      if (CONQUEST_CHARACTERS_SET.has(unitId)) {
-        playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
-      } else if (CONQUEST_SHIPS_MAP[unitId]) {
-        playerInfo[unitId] = getShipInfo(player, unitId);
-      }
-    });
+        // Conquest Units
+        CONQUEST_UNITS_ORDER.forEach(unitId => {
+            if (CONQUEST_CHARACTERS_SET.has(unitId)) {
+                playerInfo[unitId] = getPlayerUnitInfo(player, unitId);
+            } else if (CONQUEST_SHIPS_MAP[unitId]) {
+                playerInfo[unitId] = getShipInfo(player, unitId);
+            }
+        });
 
         // Omicrons
-    playerInfo.generalsyndullaOmicron = getOmicronCountForSkill(player, 'generalsyndulla', OMICRON_SKILL_MAP['generalsyndulla'][0].skillId, 6);
-    playerInfo.padawansabineOmicron = getOmicronCountForSkill(player, 'padawansabine', OMICRON_SKILL_MAP['padawansabine'][0].skillId, 6);
+        playerInfo.generalsyndullaOmicron = getOmicronCountForSkill(player, 'generalsyndulla', OMICRON_SKILL_MAP['generalsyndulla'][0].skillId, 6);
+        playerInfo.padawansabineOmicron = getOmicronCountForSkill(player, 'padawansabine', OMICRON_SKILL_MAP['padawansabine'][0].skillId, 6);
 
-    let gmOmicrons = 0;
-    OMICRON_SKILL_MAP['greatmothers'].forEach(skill => {
-      gmOmicrons += getOmicronCountForSkill(player, 'greatmothers', skill.skillId, 6);
-    });
-    playerInfo.greatmothersOmicron = gmOmicrons;
+        let gmOmicrons = 0;
+        OMICRON_SKILL_MAP['greatmothers'].forEach(skill => {
+            gmOmicrons += getOmicronCountForSkill(player, 'greatmothers', skill.skillId, 6);
+        });
+        playerInfo.greatmothersOmicron = gmOmicrons;
 
-    playerInfo.jynersoOmicron = getOmicronCountForSkill(player, 'jynerso', OMICRON_SKILL_MAP['jynerso'][0].skillId, 7); // Tier 7 for Jyn? Original code used 7? Let's check constants.
-    // Actually renderers.js uses 7 for Jyn.
-      playerInfo.marajadeOmicron = getOmicronCountForSkill(player, 'marajade', OMICRON_SKILL_MAP['marajade'][0].skillId, 6);
+        playerInfo.jynersoOmicron = getOmicronCountForSkill(player, 'jynerso', OMICRON_SKILL_MAP['jynerso'][0].skillId, 7); // Tier 7 for Jyn? Original code used 7? Let's check constants.
+        // Actually renderers.js uses 7 for Jyn.
+        playerInfo.marajadeOmicron = getOmicronCountForSkill(player, 'marajade', OMICRON_SKILL_MAP['marajade'][0].skillId, 6);
 
 
-    // Total Omicrons (simplified - just summing specific ones or all? Original code likely summed specific ones or all TW omicrons)
-    // For now, let's just sum the ones we track explicitly + maybe others if needed.
-    // The original code likely had a more complex logic or just these.
-    // Let's stick to these for now.
-      playerInfo.totalOmicrons = playerInfo.generalsyndullaOmicron + playerInfo.padawansabineOmicron + playerInfo.greatmothersOmicron + playerInfo.jynersoOmicron + playerInfo.marajadeOmicron;
+        // Total Omicrons (simplified - just summing specific ones or all? Original code likely summed specific ones or all TW omicrons)
+        // For now, let's just sum the ones we track explicitly + maybe others if needed.
+        // The original code likely had a more complex logic or just these.
+        // Let's stick to these for now.
+        playerInfo.totalOmicrons = playerInfo.generalsyndullaOmicron + playerInfo.padawansabineOmicron + playerInfo.greatmothersOmicron + playerInfo.jynersoOmicron + playerInfo.marajadeOmicron;
 
 
         // Rare Units
-    if (isEnabled) {
-          const unitsMeetingRequirement = { 9: new Set(), 8: new Set(), 7: new Set(), 6: new Set(), 5: new Set() };
-          masterRareList.forEach(req => {
-            const requiredRelic = req.level;
-            const unitInfo = getPlayerUnitInfo(player, req.unitId);
-            if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= requiredRelic) {
-              if (unitsMeetingRequirement[requiredRelic]) {
-                unitsMeetingRequirement[requiredRelic].add(req.unitId);
-              }
-            }
-          });
+        if (isEnabled) {
+            const unitsMeetingRequirement = { 9: new Set(), 8: new Set(), 7: new Set(), 6: new Set(), 5: new Set() };
+            masterRareList.forEach(req => {
+                const requiredRelic = req.level;
+                const unitInfo = getPlayerUnitInfo(player, req.unitId);
+                if (unitInfo.type === 3 && unitInfo.rarity === 7 && unitInfo.level >= requiredRelic) {
+                    if (unitsMeetingRequirement[requiredRelic]) {
+                        unitsMeetingRequirement[requiredRelic].add(req.unitId);
+                    }
+                }
+            });
 
-          playerInfo.rareR9 = unitsMeetingRequirement[9].size;
-          playerInfo.rareR8 = unitsMeetingRequirement[8].size;
-          playerInfo.rareR7 = unitsMeetingRequirement[7].size;
-          playerInfo.rareR6 = unitsMeetingRequirement[6].size;
-          playerInfo.rareR5 = unitsMeetingRequirement[5].size;
+            playerInfo.rareR9 = unitsMeetingRequirement[9].size;
+            playerInfo.rareR8 = unitsMeetingRequirement[8].size;
+            playerInfo.rareR7 = unitsMeetingRequirement[7].size;
+            playerInfo.rareR6 = unitsMeetingRequirement[6].size;
+            playerInfo.rareR5 = unitsMeetingRequirement[5].size;
 
-          const allRareUnits = new Set();
-          Object.values(unitsMeetingRequirement).forEach(unitSet => {
-            unitSet.forEach(unitId => allRareUnits.add(unitId));
-          });
-          playerInfo.rareRTotal = allRareUnits.size;
+            const allRareUnits = new Set();
+            Object.values(unitsMeetingRequirement).forEach(unitSet => {
+                unitSet.forEach(unitId => allRareUnits.add(unitId));
+            });
+            playerInfo.rareRTotal = allRareUnits.size;
         } else {
-          playerInfo.rareR9 = null;
-          playerInfo.rareR8 = null;
-          playerInfo.rareR7 = null;
-          playerInfo.rareR6 = null;
-          playerInfo.rareR5 = null;
-          playerInfo.rareRTotal = null;
+            playerInfo.rareR9 = null;
+            playerInfo.rareR8 = null;
+            playerInfo.rareR7 = null;
+            playerInfo.rareR6 = null;
+            playerInfo.rareR5 = null;
+            playerInfo.rareRTotal = null;
         }
 
-    // Requirements (TEAMS)
-    let totalScore = 0;
-    let teamCount = 0;
-    TEAMS.forEach(team => {
-      const reqs = player.requirements?.[team];
-      const score = reqs?.total_score || 0;
-      playerInfo[`req${team}Total`] = score;
-      if (score > 0) {
-        totalScore += score;
-        teamCount++;
-      }
-    });
-    playerInfo.reqAverageTeamScore = teamCount > 0 ? Math.round(totalScore / teamCount) : 0;
+        // Requirements (TEAMS)
+        let totalScore = 0;
+        let teamCount = 0;
+        TEAMS.forEach(team => {
+            const reqs = player.requirements?.[team];
+            const score = reqs?.total_score || 0;
+            playerInfo[`req${team}Total`] = score;
+            if (score > 0) {
+                totalScore += score;
+                teamCount++;
+            }
+        });
+        playerInfo.reqAverageTeamScore = teamCount > 0 ? Math.round(totalScore / teamCount) : 0;
 
-    // Leia Team
-    LEIA_TEAM_UNITS.forEach(unitId => {
-      playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
-    });
+        // Leia Team
+        LEIA_TEAM_UNITS.forEach(unitId => {
+            playerInfo[`reqLeia-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
+        });
 
-    // Jabba Team
-    JABBA_TEAM_UNITS.forEach(unitId => {
-      playerInfo[`reqJabba-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
-    });
+        // Jabba Team
+        JABBA_TEAM_UNITS.forEach(unitId => {
+            playerInfo[`reqJabba-${unitId}-relic`] = getPlayerUnitInfo(player, unitId);
+        });
 
-      // Mara Jade Team Stats
-      const mjUnit = player.roster ? player.roster['marajade'] : null;
-      playerInfo.marajadeRelic = getPlayerUnitInfo(player, 'marajade');
-      if (mjUnit && mjUnit.stats && mjUnit.stats.total) {
-          playerInfo.marajadeSpeed = mjUnit.stats.total['Speed'] || 0;
-          playerInfo.marajadePotency = (mjUnit.stats.total['Potency'] || 0) * 100; // Convert to percentage
-      }
+        // Mara Jade Team Stats
+        const mjUnit = player.roster ? player.roster['marajade'] : null;
+        playerInfo.marajadeRelic = getPlayerUnitInfo(player, 'marajade');
+        if (mjUnit && mjUnit.stats && mjUnit.stats.total) {
+            playerInfo.marajadeSpeed = mjUnit.stats.total['Speed'] || 0;
+            playerInfo.marajadePotency = (mjUnit.stats.total['Potency'] || 0) * 100; // Convert to percentage
+        }
 
         return playerInfo;
     }
@@ -604,16 +588,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 planetRounds.push({
                     planetName: planetName,
                     round: round,
-                  stats: planet,
-                  isLastActiveRound: round === Math.max(...planet.rounds)
+                    stats: planet,
+                    isLastActiveRound: round === Math.max(...planet.rounds)
                 });
             });
         }
-        
+
         const sorter = createDebugSorter(state.get('debugSortKey'), state.get('debugSortDirection'));
         const sortedPlanetRounds = planetRounds.sort(sorter);
-        
-      renderDebugTable(sortedPlanetRounds, debugTbody, getDebugCallbacks(), state.get('shipBaseIds'));
+
+        renderDebugTable(sortedPlanetRounds, debugTbody, getDebugCallbacks(), state.get('shipBaseIds'));
     }
 
     function handlePlanetCheckboxChange(e) {
@@ -621,13 +605,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentConfig = state.get('tempPlanetConfig');
         const planetName = e.target.dataset.planet.toLowerCase();
         const round = parseInt(e.target.dataset.round, 10);
-        
+
         if (!currentConfig[planetName]) currentConfig[planetName] = [];
-        
+
         // This logic is actually handled by `validatePlanetConfig` which reads from DOM?
         // No, `validatePlanetConfig` takes a config object.
         // We need to construct the config object from the DOM state first.
-        
+
         let newConfig = {};
         document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
             const pName = cb.dataset.planet.toLowerCase();
@@ -635,13 +619,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!newConfig[pName]) newConfig[pName] = [];
             if (cb.checked) newConfig[pName].push(r);
         });
-        
+
         // Validate
         // Wait, `validatePlanetConfig` in my previous step was designed to work with a slightly different structure (object of rounds).
         // I should check `js/ui/planetConfig.js`.
         // It uses `currentConfig[p.name][r] = boolean`.
         // So I need to match that structure.
-        
+
         let configObj = {};
         document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
             const pName = cb.dataset.planet; // Case sensitive for map lookup?
@@ -649,9 +633,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!configObj[pName]) configObj[pName] = {};
             configObj[pName][r] = cb.checked;
         });
-        
+
         const validatedConfigObj = validatePlanetConfig(configObj, state.get('planetStats'));
-        
+
         // Convert back to array format for storage
         const finalConfig = {};
         for (const pName in validatedConfigObj) {
@@ -663,7 +647,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 finalConfig[pName.toLowerCase()] = rounds;
             }
         }
-        
+
         state.set('tempPlanetConfig', finalConfig);
         updatePlanetConfigUI(finalConfig, state.get('planetStats'));
     }
@@ -690,10 +674,10 @@ document.addEventListener('DOMContentLoaded', () => {
             onRareCharClick: (player, relicLevel) => {
                 showRareCharsPopup(modal, modalBody, player, relicLevel, state.get('masterRareList'), getPlayerUnitInfo);
             },
-          onEnabledChange: (playerId, isEnabled) => {
-            localStorage.setItem(`isEnabled-${playerId}`, isEnabled);
-            recalculateAndRenderDashboard();
-          },
+            onEnabledChange: (playerId, isEnabled) => {
+                localStorage.setItem(`isEnabled-${playerId}`, isEnabled);
+                recalculateAndRenderDashboard();
+            },
             onNewPlayerChange: (player, isNew) => {
                 player.isNew = isNew;
                 localStorage.setItem(`isNew-${player.playerId}`, isNew);
@@ -713,32 +697,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getDebugCallbacks() {
         return {
-          onPlanetClick: (planetName, stats, round, shipBaseIds) => {
-            showPlanetUnitsPopup(modal, modalBody, planetName, stats, round, shipBaseIds);
-          },
-          onUnitCountClick: (planetName, stats, round, shipBaseIds) => {
-            showPlanetUnitsPopup(modal, modalBody, planetName, stats, round, shipBaseIds);
-          },
-          onMissingClick: (planetName, stats, missingCount, shipBaseIds) => {
-            // We need to filter for missing units
-            const missingUnits = stats.units.filter(u => !u.assignedPlayerName);
-            showMissingUnitsPopup(modal, modalBody, planetName, stats, missingUnits, shipBaseIds);
-          },
-          onCandidateClick: (planetName, stats) => {
-            showCandidatesPopup(modal, modalBody, planetName, stats);
-          },
-          onPlayersClick: (planetName, stats, round) => {
-            showPlanetPlayersPopup(modal, modalBody, planetName, stats, round);
-          },
-          onTotalUnitsClick: (planetsByRound) => {
-            showAllUnitsPopup(modal, modalBody, planetsByRound);
-          },
-          onTotalMissingClick: (planetsByRound) => {
-            showAllMissingUnitsPopup(modal, modalBody, planetsByRound);
-          },
-          onTotalCandidatesClick: (planetsByRound) => {
-            showAllCandidatesPopup(modal, modalBody, planetsByRound);
-          }
+            onPlanetClick: (planetName, stats, round, shipBaseIds) => {
+                showPlanetUnitsPopup(modal, modalBody, planetName, stats, round, shipBaseIds);
+            },
+            onUnitCountClick: (planetName, stats, round, shipBaseIds) => {
+                showPlanetUnitsPopup(modal, modalBody, planetName, stats, round, shipBaseIds);
+            },
+            onMissingClick: (planetName, stats, missingCount, shipBaseIds) => {
+                // We need to filter for missing units
+                const missingUnits = stats.units.filter(u => !u.assignedPlayerName);
+                showMissingUnitsPopup(modal, modalBody, planetName, stats, missingUnits, shipBaseIds);
+            },
+            onCandidateClick: (planetName, stats) => {
+                showCandidatesPopup(modal, modalBody, planetName, stats);
+            },
+            onPlayersClick: (planetName, stats, round) => {
+                showPlanetPlayersPopup(modal, modalBody, planetName, stats, round);
+            },
+            onTotalUnitsClick: (planetsByRound) => {
+                showAllUnitsPopup(modal, modalBody, planetsByRound);
+            },
+            onTotalMissingClick: (planetsByRound) => {
+                showAllMissingUnitsPopup(modal, modalBody, planetsByRound);
+            },
+            onTotalCandidatesClick: (planetsByRound) => {
+                showAllCandidatesPopup(modal, modalBody, planetsByRound);
+            }
         };
     }
 
@@ -761,13 +745,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         let selectedGuildId = urlParams.get('guild') || localStorage.getItem('selectedGuildId');
-        
+
         if (selectedGuildId && guilds.some(g => g.id === selectedGuildId)) {
             guildSelector.value = selectedGuildId;
+            state.set('selectedGuildId', selectedGuildId); // Sync with state!
             loadAndRenderGuildData(selectedGuildId);
-        } else if (urlParams.get('dev') === '1' && guilds.length > 0) {
+        } else if (guilds.length > 0) {
             selectedGuildId = guilds[0].id;
             guildSelector.value = selectedGuildId;
+            state.set('selectedGuildId', selectedGuildId); // Sync with state!
             loadAndRenderGuildData(selectedGuildId);
         } else {
             guildInfoDiv.innerHTML = '<h1>No Guild Selected</h1><p>Please select a guild using the URL parameter, e.g., ?guild=YOUR_GUILD_ID</p>';
@@ -775,7 +761,6 @@ document.addEventListener('DOMContentLoaded', () => {
             debugTbody.innerHTML = '';
             progressContainer.style.display = 'none';
         }
-        
         if (urlParams.get('dev') !== '1') {
             guildSelector.disabled = true;
         }

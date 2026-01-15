@@ -82,7 +82,7 @@ export function fetchPlatoonData(planetToRoundMap) {
     });
 }
 
-export function processPlatoonData(tsvData, planetToRoundMap, shipBaseIds) {
+export function processPlatoonData(tsvData, planetToRoundMap, shipBaseIds, assignmentMode = 'early') {
   const phaseToRelic = { 1: 5, 2: 6, 3: 7, 4: 8, 5: 9, 6: 9 };
   const platoonRequirements = { 1: {}, 2: {}, 3: {}, 4: {}, 5: {}, 6: {} };
   const planetStats = {};
@@ -104,6 +104,17 @@ export function processPlatoonData(tsvData, planetToRoundMap, shipBaseIds) {
     let unitId = columns[7].toLowerCase();
 
     const rounds = planetToRoundMap[planetName.toLowerCase()] || [];
+
+    // Determine the round to place requirements in based on mode
+    const targetRound = assignmentMode === 'late'
+      ? (rounds.length > 0 ? rounds[rounds.length - 1] : 0) // Late: Last active round
+      : (rounds.length > 0 ? rounds[0] : 0); // Early: First active round
+
+    // firstActiveRound variable kept for PlanetStats purposes? 
+    // Wait, planetStats.round usually indicates when it "starts" being active?
+    // Let's keep it as first active for display consistency, but logic uses targetRound for Req generation.
+    // Actually, let's use firstActiveRound just for local logic if needed, but the REQUIREMENT placement (reqs object) depends on mode.
+
     const firstActiveRound = rounds.length > 0 ? rounds[0] : 0;
 
     const isShip = shipBaseIds.has(unitId);
@@ -111,9 +122,11 @@ export function processPlatoonData(tsvData, planetToRoundMap, shipBaseIds) {
 
     if (!requiredLevel) return;
 
-    // For main platoon requirement logic - only add if planet is active
-    if (firstActiveRound > 0 && platoonRequirements[firstActiveRound]) {
-      const reqs = platoonRequirements[firstActiveRound];
+    // Platoon Requirements Logic
+    // We place requirements in the round where they will be assigned.
+    // Early: Round X (Start). Late: Round Y (End).
+    if (targetRound > 0 && platoonRequirements[targetRound]) {
+      const reqs = platoonRequirements[targetRound];
       if (!reqs[unitId]) reqs[unitId] = {};
       if (!reqs[unitId][requiredLevel]) reqs[unitId][requiredLevel] = 0;
       reqs[unitId][requiredLevel]++;
