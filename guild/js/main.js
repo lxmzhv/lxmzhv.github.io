@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         assignPlatoons(activeEnrichedPlayers, planetStats, guildAvailabilityForPlatoons, shipBaseIds, state.get('platoonAssignmentMode'));
 
         // Render Planet Config Table
-        renderPlanetConfigTable(planetStats, document.getElementById('planet-config-table-container'), document.getElementById('planet-config-table'), handlePlanetCheckboxChange);
+        renderPlanetConfigTable(planetStats, document.getElementById('planet-config-table-container'), document.getElementById('planet-config-table'), handlePlanetConfigChange);
 
         // Render Main Table
         renderTableHeaders(table, tbColumns);
@@ -600,56 +600,29 @@ document.addEventListener('DOMContentLoaded', () => {
         renderDebugTable(sortedPlanetRounds, debugTbody, getDebugCallbacks(), state.get('shipBaseIds'));
     }
 
-    function handlePlanetCheckboxChange(e) {
-        // Update temp config based on checkbox changes
-        const currentConfig = state.get('tempPlanetConfig');
-        const planetName = e.target.dataset.planet.toLowerCase();
-        const round = parseInt(e.target.dataset.round, 10);
+    function handlePlanetConfigChange(e) {
+        // Update temp config based on Dropdown changes
 
-        if (!currentConfig[planetName]) currentConfig[planetName] = [];
-
-        // This logic is actually handled by `validatePlanetConfig` which reads from DOM?
-        // No, `validatePlanetConfig` takes a config object.
-        // We need to construct the config object from the DOM state first.
-
-        let newConfig = {};
-        document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
-            const pName = cb.dataset.planet.toLowerCase();
-            const r = parseInt(cb.dataset.round, 10);
-            if (!newConfig[pName]) newConfig[pName] = [];
-            if (cb.checked) newConfig[pName].push(r);
-        });
-
-        // Validate
-        // Wait, `validatePlanetConfig` in my previous step was designed to work with a slightly different structure (object of rounds).
-        // I should check `js/ui/planetConfig.js`.
-        // It uses `currentConfig[p.name][r] = boolean`.
-        // So I need to match that structure.
-
+        // 1. Construct current state from DOM
         let configObj = {};
-        document.querySelectorAll('#planet-config-table input[type="checkbox"]').forEach(cb => {
-            const pName = cb.dataset.planet; // Case sensitive for map lookup?
-            const r = parseInt(cb.dataset.round, 10);
-            if (!configObj[pName]) configObj[pName] = {};
-            configObj[pName][r] = cb.checked;
+        document.querySelectorAll('#planet-config-table select').forEach(sel => {
+            const val = sel.value;
+            if (val) {
+                const pName = val.toLowerCase();
+                const r = parseInt(sel.dataset.round, 10);
+                if (!configObj[pName]) configObj[pName] = [];
+                configObj[pName].push(r);
+            }
         });
 
+        // 2. Validate and Enforce Rules
         const validatedConfigObj = validatePlanetConfig(configObj, state.get('planetStats'));
 
-        // Convert back to array format for storage
-        const finalConfig = {};
-        for (const pName in validatedConfigObj) {
-            const rounds = [];
-            for (let r = 1; r <= 6; r++) {
-                if (validatedConfigObj[pName][r]) rounds.push(r);
-            }
-            if (rounds.length > 0) {
-                finalConfig[pName.toLowerCase()] = rounds;
-            }
-        }
+        // 3. Update UI to reflect Validated State (e.g. auto-stay, auto-unlock)
+        updatePlanetConfigUI(validatedConfigObj, state.get('planetStats'));
 
-        state.set('tempPlanetConfig', finalConfig);
-        updatePlanetConfigUI(finalConfig, state.get('planetStats'));
+        // 4. Update Temp State
+        state.set('tempPlanetConfig', validatedConfigObj);
     }
 
     function getTableCallbacks() {

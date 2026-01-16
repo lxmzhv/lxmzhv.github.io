@@ -282,6 +282,17 @@ export const REQ_TEAM_UNIT_COLOR_THRESHOLDS = {
     "undercoverlando": { red: 1, orange: 5, yellow: 7, lightgreen: 9, green: Infinity },
 };
 
+export const PLANET_TRACKS = {
+    'Dark Side': ['Mustafar', 'Geonosis', 'Dathomir', 'Haven-class Medical Station', 'Malachor', 'Death Star'],
+    'Mixed': ['Corellia', 'Felucia', 'Tatooine', 'Kessel', 'Vandor', 'Hoth'],
+    'Light Side': ['Coruscant', 'Bracca', 'Kashyyyk', 'Lothal', 'Ring of Kafrene', 'Scarif']
+};
+
+export const BONUS_PLANETS = {
+    'Zeffo': { parent: 'Bracca', track: 'Light Side' },
+    'Mandalor': { parent: 'Tatooine', track: 'Mixed' } // Codebase uses Mandalor usually, let's Stick to it.
+};
+
 export const GUILD_FILES = [
     'guild_LVmIG5W_RSCmvZYOxdyH_Q.json',
     'guild_IVgWpcsTSgKbtd7uoTiTAg.json',
