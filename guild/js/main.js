@@ -604,7 +604,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update temp config based on Dropdown changes
 
         // 1. Construct current state from DOM
-
         let configObj = {};
         document.querySelectorAll('#planet-config-table select').forEach(sel => {
             const val = sel.value;
@@ -616,22 +615,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // 2. Validate and Enforce Rules
         const validatedConfigObj = validatePlanetConfig(configObj, state.get('planetStats'));
 
-        // Convert back to array format for storage
-        const finalConfig = {};
-        for (const pName in validatedConfigObj) {
-            const rounds = [];
-            for (let r = 1; r <= 6; r++) {
-                if (validatedConfigObj[pName][r]) rounds.push(r);
-            }
-            if (rounds.length > 0) {
-                finalConfig[pName.toLowerCase()] = rounds;
-            }
-        }
+        // 3. Update UI to reflect Validated State (e.g. auto-stay, auto-unlock)
+        updatePlanetConfigUI(validatedConfigObj, state.get('planetStats'));
 
-        state.set('tempPlanetConfig', finalConfig);
-        updatePlanetConfigUI(finalConfig, state.get('planetStats'));
+        // 4. Update Temp State
+        state.set('tempPlanetConfig', validatedConfigObj);
     }
 
     function getTableCallbacks() {
