@@ -109,7 +109,7 @@ export function createPlayerSorter(key, direction, shipBaseIds) {
             return 0;
         }
 
-        if (key === 'glAverage' || key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron') || key === 'marajadeSpeed' || key === 'marajadePotency') {
+        if (key === 'isEnabled' || key === 'glAverage' || key === 'allyCode' || key === 'galacticPower' || key.startsWith('rareR') || key === 'modsRating' || key.startsWith('req') || key.endsWith('Omicron') || key === 'marajadeSpeed' || key === 'marajadePotency') {
             const numA = Number(valA);
             const numB = Number(valB);
             if (numA < numB) return direction === 'asc' ? -1 : 1;
