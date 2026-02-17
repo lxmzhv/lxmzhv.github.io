@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hex Blast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overscroll-behavior: none;
+            touch-action: none;
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        canvas {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(79, 172, 254, 0.2);
+            border-radius: 12px;
+            background: #1e293b;
+        }
+        .ui-overlay {
+            position: absolute;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .score-board {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .score-value {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(to bottom, #fff 20%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(79, 172, 254, 0.5));
+        }
+        .score-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #94a3b8;
+        }
+        
+        #game-over-modal {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(2, 6, 23, 0.9);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            pointer-events: auto;
+            backdrop-filter: blur(8px);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            border: none;
+            padding: 16px 48px;
+            color: white;
+            font-size: 1.25rem;
+            border-radius: 99px;
+            cursor: pointer;
+            font-weight: 800;
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px rgba(59, 130, 246, 0.6);
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .toast {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            padding: 24px 48px;
+            border-radius: 16px;
+            font-size: 3rem;
+            font-weight: 900;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            z-index: 50;
+            text-align: center;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <div class="ui-overlay">
+        <div class="score-board">
+            <div class="score-label">Points</div>
+            <div class="score-value" id="score-display">0</div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="game-over-modal">
+        <h1 class="text-5xl font-black mb-2 text-white italic">OUT OF SPACE</h1>
+        <p class="text-2xl text-slate-400 mb-10 font-medium">Final Score: <span id="final-score" class="text-blue-400">0</span></p>
+        <button class="btn" onclick="game.restart()">REPLAY</button>
+    </div>
+
+    <div id="combo-toast" class="toast">MEGA BLAST!</div>
+</div>
+
+<script>
+/**
+ * Hexagon Logic Helper
+ */
+const Hex = {
+    add: (a, b) => ({ q: a.q + b.q, r: a.r + b.r }),
+    toPixel: (hex, size) => {
+        const x = size * (Math.sqrt(3) * hex.q + Math.sqrt(3)/2 * hex.r);
+        const y = size * (3./2 * hex.r);
+        return { x, y };
+    },
+    fromPixel: (x, y, size) => {
+        const q = (Math.sqrt(3)/3 * x - 1./3 * y) / size;
+        const r = (2./3 * y) / size;
+        return Hex.round({ q, r });
+    },
+    round: (hex) => {
+        let q = Math.round(hex.q);
+        let r = Math.round(hex.r);
+        let s = Math.round(-hex.q - hex.r);
+        const q_diff = Math.abs(q - hex.q);
+        const r_diff = Math.abs(r - hex.r);
+        const s_diff = Math.abs(s - (-hex.q - hex.r));
+        if (q_diff > r_diff && q_diff > s_diff) q = -r - s;
+        else if (r_diff > s_diff) r = -q - s;
+        return { q, r };
+    },
+    id: (hex) => `${hex.q},${hex.r}`
+};
+
+const SHAPES = [
+    [{q:0, r:0}],
+    [{q:0, r:0}, {q:1, r:-1}],
+    [{q:0, r:0}, {q:1, r:0}],
+    [{q:0, r:0}, {q:0, r:1}],
+    [{q:0, r:0}, {q:1, r:-1}, {q:2, r:-2}],
+    [{q:0, r:0}, {q:1, r:0}, {q:2, r:0}],
+    [{q:0, r:0}, {q:0, r:1}, {q:0, r:2}],
+    [{q:0, r:0}, {q:1, r:0}, {q:2, r:0}, {q:3, r:0}],
+    [{q:0, r:0}, {q:1, r:0}, {q:0, r:1}],
+    [{q:0, r:0}, {q:-1, r:0}, {q:0, r:-1}],
+    [{q:0, r:0}, {q:1, r:0}, {q:0, r:1}, {q:1, r:1}],
+    [{q:0, r:0}, {q:1, r:-1}, {q:-1, r:1}, {q:-1, r:0}],
+    [{q:0, r:0}, {q:1, r:-1}, {q:1, r:0}, {q:0, r:1}, {q:-1, r:1}, {q:-1, r:0}, {q:0, r:-1}]
+];
+
+const COLORS = ['#ff4757', '#2ed573', '#1e90ff', '#ffa502', '#e056fd', '#00ced1', '#f9ca24'];
+
+class Particle {
+    constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 2 + Math.random() * 8;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed;
+        this.life = 1.0;
+        this.decay = 0.02 + Math.random() * 0.03;
+        this.size = 2 + Math.random() * 5;
+    }
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.vy += 0.1; // gravity
+        this.life -= this.decay;
+    }
+    draw(ctx) {
+        ctx.globalAlpha = this.life;
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+    }
+}
+
+class Game {
+    constructor() {
+        this.canvas = document.getElementById('gameCanvas');
+        this.ctx = this.canvas.getContext('2d');
+        this.scoreDisplay = document.getElementById('score-display');
+        this.gameOverModal = document.getElementById('game-over-modal');
+        this.finalScoreEl = document.getElementById('final-score');
+        
+        this.boardRadius = 4;
+        this.board = new Map();
+        this.score = 0;
+        this.hand = [];
+        this.draggedShapeIndex = null;
+        this.dragPosition = { x: 0, y: 0 };
+        this.isDragging = false;
+        
+        this.particles = [];
+        this.shakeTime = 0;
+        
+        this.initInput();
+        this.resize();
+        window.addEventListener('resize', () => this.resize());
+        this.initBoard();
+        this.refillHand();
+        this.loop();
+    }
+
+    initBoard() {
+        for (let q = -this.boardRadius; q <= this.boardRadius; q++) {
+            let r1 = Math.max(-this.boardRadius, -q - this.boardRadius);
+            let r2 = Math.min(this.boardRadius, -q + this.boardRadius);
+            for (let r = r1; r <= r2; r++) {
+                this.board.set(Hex.id({q, r}), null);
+            }
+        }
+    }
+
+    resize() {
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+        const maxW = this.canvas.width * 0.9;
+        const maxH = this.canvas.height * 0.55;
+        const gridWidthUnits = (this.boardRadius * 2 + 1) * Math.sqrt(3);
+        const gridHeightUnits = (this.boardRadius * 2 + 1) * 1.5;
+        this.hexSize = Math.min(maxW / gridWidthUnits, maxH / gridHeightUnits);
+        this.centerX = this.canvas.width / 2;
+        this.boardCenterY = this.canvas.height * 0.38;
+        this.handY = this.canvas.height * 0.82;
+    }
+
+    initInput() {
+        const start = (e) => {
+            const touch = e.touches ? e.touches[0] : e;
+            const x = touch.clientX;
+            const y = touch.clientY;
+            for (let i = 0; i < this.hand.length; i++) {
+                if (!this.hand[i]) continue;
+                const dist = Math.sqrt((x - this.getHandShapeX(i))**2 + (y - this.handY)**2);
+                if (dist < this.hexSize * 3) {
+                    this.isDragging = true;
+                    this.draggedShapeIndex = i;
+                    this.dragPosition = { x, y };
+                    this.dragOffset = { x: 0, y: -this.hexSize * 4 };
+                    break;
+                }
+            }
+        };
+        const move = (e) => {
+            if (!this.isDragging) return;
+            const touch = e.touches ? e.touches[0] : e;
+            this.dragPosition = { x: touch.clientX, y: touch.clientY };
+        };
+        const end = () => {
+            if (!this.isDragging) return;
+            this.isDragging = false;
+            const shape = this.hand[this.draggedShapeIndex];
+            const dropX = this.dragPosition.x + this.dragOffset.x;
+            const dropY = this.dragPosition.y + this.dragOffset.y;
+            const h = Hex.fromPixel(dropX - this.centerX, dropY - this.boardCenterY, this.hexSize);
+            if (this.canPlace(shape, h)) {
+                this.placeShape(shape, h);
+                this.hand[this.draggedShapeIndex] = null;
+                this.checkLines();
+                if (this.hand.every(s => s === null)) this.refillHand();
+                else this.checkGameOver();
+            }
+            this.draggedShapeIndex = null;
+        };
+        this.canvas.addEventListener('mousedown', start);
+        this.canvas.addEventListener('mousemove', move);
+        window.addEventListener('mouseup', end);
+        this.canvas.addEventListener('touchstart', start, {passive: false});
+        this.canvas.addEventListener('touchmove', move, {passive: false});
+        window.addEventListener('touchend', end);
+    }
+
+    getHandShapeX(index) {
+        return this.centerX + (index - 1) * (this.canvas.width / 3.5);
+    }
+
+    generateShape() {
+        return { 
+            cells: SHAPES[Math.floor(Math.random() * SHAPES.length)], 
+            color: COLORS[Math.floor(Math.random() * COLORS.length)] 
+        };
+    }
+
+    refillHand() {
+        this.hand = [this.generateShape(), this.generateShape(), this.generateShape()];
+        this.checkGameOver();
+    }
+
+    canPlace(shape, center) {
+        if (!shape) return false;
+        return shape.cells.every(c => {
+            const id = Hex.id(Hex.add(center, c));
+            return this.board.has(id) && this.board.get(id) === null;
+        });
+    }
+
+    placeShape(shape, center) {
+        shape.cells.forEach(c => this.board.set(Hex.id(Hex.add(center, c)), shape.color));
+        this.score += shape.cells.length * 10;
+        this.updateScore();
+    }
+
+    checkLines() {
+        let cellsToRemove = new Set();
+        let linesFound = 0;
+        const getLine = (axis, val) => {
+            const res = [];
+            for (let [id, color] of this.board) {
+                const [q, r] = id.split(',').map(Number);
+                const s = -q - r;
+                if ((axis === 'q' && q === val) || (axis === 'r' && r === val) || (axis === 's' && s === val)) res.push(id);
+            }
+            return res;
+        };
+
+        for (let i = -this.boardRadius; i <= this.boardRadius; i++) {
+            ['q', 'r', 's'].forEach(axis => {
+                const line = getLine(axis, i);
+                if (line.length > 0 && line.every(id => this.board.get(id) !== null)) {
+                    line.forEach(id => cellsToRemove.add(id));
+                    linesFound++;
+                }
+            });
+        }
+
+        if (cellsToRemove.size > 0) {
+            this.shakeTime = 15;
+            cellsToRemove.forEach(id => {
+                const color = this.board.get(id);
+                const [q, r] = id.split(',').map(Number);
+                const pos = Hex.toPixel({q, r}, this.hexSize);
+                // Create blast particles
+                for (let i = 0; i < 8; i++) {
+                    this.particles.push(new Particle(this.centerX + pos.x, this.boardCenterY + pos.y, color));
+                }
+                this.board.set(id, null);
+            });
+            this.score += cellsToRemove.size * 20 * linesFound;
+            this.updateScore();
+            if (linesFound > 1) this.showToast(linesFound > 2 ? "ULTRA BLAST!" : "COMBO!");
+        }
+    }
+
+    checkGameOver() {
+        const available = this.hand.filter(s => s !== null);
+        const canFit = available.some(shape => {
+            for (let key of this.board.keys()) {
+                const [q, r] = key.split(',').map(Number);
+                if (this.canPlace(shape, {q, r})) return true;
+            }
+            return false;
+        });
+        if (!canFit) {
+            setTimeout(() => {
+                this.finalScoreEl.innerText = this.score;
+                this.gameOverModal.style.display = 'flex';
+            }, 1000);
+        }
+    }
+
+    restart() {
+        this.board.forEach((v, k) => this.board.set(k, null));
+        this.score = 0;
+        this.updateScore();
+        this.gameOverModal.style.display = 'none';
+        this.refillHand();
+    }
+
+    updateScore() {
+        this.scoreDisplay.innerText = this.score;
+    }
+
+    showToast(msg) {
+        const toast = document.getElementById('combo-toast');
+        toast.innerText = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 1000);
+    }
+
+    drawHex(x, y, size, color, alpha = 1) {
+        this.ctx.globalAlpha = alpha;
+        this.ctx.beginPath();
+        for (let i = 0; i < 6; i++) {
+            const angle = Math.PI / 180 * (60 * i - 30);
+            const px = x + size * Math.cos(angle);
+            const py = y + size * Math.sin(angle);
+            if (i === 0) this.ctx.moveTo(px, py); else this.ctx.lineTo(px, py);
+        }
+        this.ctx.closePath();
+        this.ctx.fillStyle = color;
+        this.ctx.fill();
+        this.ctx.globalAlpha = 1;
+    }
+
+    loop() {
+        let ox = 0, oy = 0;
+        if (this.shakeTime > 0) {
+            ox = (Math.random() - 0.5) * this.shakeTime;
+            oy = (Math.random() - 0.5) * this.shakeTime;
+            this.shakeTime--;
+        }
+
+        this.ctx.fillStyle = '#0f172a';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+        // Draw Board
+        for (let [id, color] of this.board) {
+            const [q, r] = id.split(',').map(Number);
+            const pos = Hex.toPixel({q, r}, this.hexSize);
+            const x = this.centerX + pos.x + ox;
+            const y = this.boardCenterY + pos.y + oy;
+            this.drawHex(x, y, this.hexSize * 0.92, '#1e293b');
+            if (color) {
+                this.drawHex(x, y, this.hexSize * 0.85, color);
+                // Gloss effect
+                this.ctx.fillStyle = 'rgba(255,255,255,0.15)';
+                this.ctx.beginPath();
+                this.ctx.ellipse(x - this.hexSize*0.2, y - this.hexSize*0.2, this.hexSize*0.3, this.hexSize*0.15, Math.PI/4, 0, Math.PI*2);
+                this.ctx.fill();
+            }
+        }
+
+        // Ghost
+        if (this.isDragging && this.draggedShapeIndex !== null) {
+            const shape = this.hand[this.draggedShapeIndex];
+            const dropX = this.dragPosition.x + this.dragOffset.x;
+            const dropY = this.dragPosition.y + this.dragOffset.y;
+            const h = Hex.fromPixel(dropX - this.centerX, dropY - this.boardCenterY, this.hexSize);
+            if (this.canPlace(shape, h)) {
+                shape.cells.forEach(c => {
+                    const pos = Hex.toPixel(Hex.add(h, c), this.hexSize);
+                    this.drawHex(this.centerX + pos.x, this.boardCenterY + pos.y, this.hexSize * 0.85, 'rgba(255,255,255,0.2)');
+                });
+            }
+            // Dragged Shape
+            shape.cells.forEach(c => {
+                const pos = Hex.toPixel(c, this.hexSize);
+                this.drawHex(this.dragPosition.x + pos.x + this.dragOffset.x, this.dragPosition.y + pos.y + this.dragOffset.y, this.hexSize * 0.9, shape.color);
+            });
+        }
+
+        // Particles
+        for (let i = this.particles.length - 1; i >= 0; i--) {
+            this.particles[i].update();
+            this.particles[i].draw(this.ctx);
+            if (this.particles[i].life <= 0) this.particles.splice(i, 1);
+        }
+
+        // Hand tray
+        for (let i = 0; i < this.hand.length; i++) {
+            if (!this.hand[i] || (this.isDragging && this.draggedShapeIndex === i)) continue;
+            this.hand[i].cells.forEach(c => {
+                const pos = Hex.toPixel(c, this.hexSize * 0.6);
+                this.drawHex(this.getHandShapeX(i) + pos.x, this.handY + pos.y, this.hexSize * 0.55, this.hand[i].color);
+            });
+        }
+
+        requestAnimationFrame(() => this.loop());
+    }
+}
+
+const game = new Game();
+</script>
+</body>
+</html>
