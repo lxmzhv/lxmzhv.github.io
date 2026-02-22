@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hex Blast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" crossorigin src="./assets/index-DWb_PJth.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CZpg3Qge.css">
+  <script type="module" crossorigin src="./assets/index-CyuOb6p8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BjScM1_b.css">
 </head>
 
 <body>
@@ -29,7 +29,10 @@
             <button class="btn" onclick="game.restart()">REPLAY</button>
         </div>
 
-        <div id="combo-toast" class="toast">MEGA BLAST!</div>
+        <div id="combo-toast" class="toast flex flex-col items-center justify-center">
+            <div class="toast-title">MEGA BLAST!</div>
+            <div class="toast-score-gain text-blue-300 text-2xl mt-2"></div>
+        </div>
 
         <div class="absolute top-5 right-5 z-50 pointer-events-auto">
             <button
