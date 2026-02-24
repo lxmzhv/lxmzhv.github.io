@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hex Blast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" crossorigin src="./assets/index-BKMHsCVf.js"></script>
+  <script type="module" crossorigin src="./assets/index-BjtqfAs0.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-B6JaEsqK.css">
 </head>
 
@@ -55,6 +55,24 @@
                     <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                     <line x1="23" y1="9" x2="17" y2="15"></line>
                     <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+            </button>
+            <button
+                class="bg-slate-800/50 hover:bg-slate-700/50 p-3 rounded-full backdrop-blur-sm border border-slate-700 transition-all active:scale-95"
+                onclick="game.toggleHaptics()" id="haptic-toggle-btn">
+                <svg id="haptic-on-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="#4facfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 8 2 2-2 2 2 2-2 2"></path>
+                    <path d="m22 8-2 2 2 2-2 2 2 2"></path>
+                    <rect width="8" height="14" x="8" y="5" rx="1"></rect>
+                </svg>
+                <svg id="haptic-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="m2 8 2 2-2 2 2 2-2 2"></path>
+                    <path d="m22 8-2 2 2 2-2 2 2 2"></path>
+                    <rect width="8" height="14" x="8" y="5" rx="1"></rect>
+                    <line x1="2" y1="2" x2="22" y2="22"></line>
                 </svg>
             </button>
             <button
