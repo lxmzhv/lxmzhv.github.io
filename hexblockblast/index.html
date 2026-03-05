@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hex Blast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" crossorigin src="./assets/index-SQ5Du_ck.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CwC9y8qj.css">
+  <script type="module" crossorigin src="./assets/index-CZ_6yr50.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-DJp3C_vv.css">
 </head>
 
 <body>
@@ -29,10 +29,15 @@
         <canvas id="gameCanvas"></canvas>
 
         <div id="game-over-modal">
-            <h1 class="text-5xl font-black mb-2 text-white italic">OUT OF SPACE</h1>
-            <p class="text-2xl text-slate-400 mb-10 font-medium">Final Score: <span id="final-score"
-                    class="text-blue-400">0</span></p>
-            <button class="btn" onclick="game.restart()">REPLAY</button>
+            <h1 class="text-5xl font-black mb-2 text-white italic game-over-title">OUT OF SPACE</h1>
+            <p class="text-2xl text-slate-400 mb-6 font-medium">Final Score: <span id="final-score"
+                    class="text-blue-400 font-black text-4xl ml-2 drop-shadow-[0_0_10px_rgba(96,165,250,0.8)]">0</span></p>
+
+            <div id="game-over-stats" class="stats-grid mb-10 w-full max-w-sm px-4">
+                <!-- Stats injected here -->
+            </div>
+
+            <button class="btn btn-glow" onclick="game.restart()">REPLAY</button>
         </div>
 
         <div id="combo-toast" class="toast flex flex-col items-center justify-center">
@@ -40,7 +45,7 @@
             <div class="toast-score-gain text-blue-300 text-2xl mt-2"></div>
         </div>
 
-        <div class="absolute top-5 right-5 z-50 pointer-events-auto flex flex-col gap-3">
+        <div class="absolute top-5 right-5 z-50 pointer-events-auto flex flex-col gap-3 safe-area-top">
             <button
                 class="bg-slate-800/50 hover:bg-slate-700/50 p-3 rounded-full backdrop-blur-sm border border-slate-700 transition-all active:scale-95"
                 onclick="game.toggleSound()" id="sound-toggle-btn">
