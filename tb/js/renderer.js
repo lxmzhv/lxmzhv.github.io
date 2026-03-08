@@ -1,632 +1,16 @@
-let state = {
-    playerData: [],
-    currentData: null,
-    baselineData: null,
-    isDiffMode: false,
-    guildActivePhases: new Set(),
-    visiblePhases: new Set(),
-    guildName: '',
-    guildGalacticPower: 0,
-    sort: {
-        key: 'totalWaves',
-        direction: 'desc'
-    },
-    selectedPlayerId: null,
-    showGP: false,
-    showUnits: false,
-    showScore: false,
-    showMissionsScore: true,
-    showSpecialMissions: true,
-    showDeployed: false,
-    showUndeployed: false,
-    showWaves: false,
-    showTotals: true,
-};
-
-const ZoneAliases = [
-    ['tb3_mixed_', ''],
-    ['phase0', 'p'],
-    ["conflict01", "right"],
-    ["conflict02", "left"],
-    ["conflict03", "middle"],
-    ['strike0', 'm'],
-    ['covert0', 'sm'],
-];
-
-const SpecialMissions = [
-   { name: 'Cere', id: 'phase02_conflict01_covert01' },
-   { name: 'Reva', id: 'phase03_conflict03_covert01' },
-   { name: 'Bo-Katan', id: 'phase03_conflict03_covert02' },
-];
-
-function zoneIdToName(zone_id) {
-    let name = zone_id;
-    for (const [text, alias] of ZoneAliases) {
-        name = name.replace(new RegExp(text, 'g'), alias);
-    }
-    return name;
-}
-
-function getPlayers(data) {
-    const players = {};
-    if (data && data.member) {
-        for (const member of data.member) {
-            players[member.playerId] = member;
-        }
-    }
-    return players;
-}
-
-function isNumericKey(key) {
-    return (
-        key === 'rank' ||
-        key === 'galacticPower' ||
-        key === 'totalWaves' ||
-        key === 'totalUnits' ||
-        key === 'totalScore' ||
-        key === 'totalMissionsScore' ||
-        key === 'totalDeployed' ||
-        key === 'totalUndeployed' ||
-        key.startsWith('waves-') ||
-        key.startsWith('units-') ||
-        key.startsWith('score-') ||
-        key.startsWith('missionsScore-') ||
-        key.startsWith('deployed-') ||
-        key.startsWith('undeployed-')
-    );
-}
-
-function formatDiff(value, precision = 1) {
-    if (value === 0) return '0';
-    const sign = value > 0 ? '+' : '';
-    const num = (value % 1 === 0) ? value : value.toFixed(precision);
-    return sign + num;
-}
-
-function getSmDiff(current, baseline) {
-    if (current === baseline) return current;
-    if (!baseline || baseline === '-') {
-        return `- => ${current}`;
-    }
-    if (!current || current === '-') {
-        return `${baseline} => -`;
-    }
-    if (current === 'win' && baseline === 'fail') return 'fail => win';
-    if (current === 'fail' && baseline === 'win') return 'win => fail';
-    return current;
-}
-
-function getSmDiffClass(current, baseline) {
-    if (current === baseline) return `sm-${current}`;
-    if (!baseline || baseline === '-') {
-        return current === 'win' ? 'sm-win' : (current === 'fail' ? 'sm-fail' : 'sm-not-attempted');
-    }
-    if (!current || current === '-') {
-        return baseline === 'win' ? 'sm-fail' : 'sm-win';
-    }
-    if (current === 'win' && baseline === 'fail') return 'sm-win';
-    if (current === 'fail' && baseline === 'win') return 'sm-fail';
-    return 'sm-not-attempted';
-}
-
-function getDiffColor(diff, className) {
-    const isLightBg = className === 'group-orange' || className === 'group-yellow' || className === 'group-lightgreen' || className === '';
-
-    if (diff > 0) {
-        return isLightBg ? 'darkgreen' : 'lightgreen';
-    }
-    if (diff < 0) {
-        return isLightBg ? 'darkred' : '#ffd0d0';
-    }
-    return isLightBg ? '#404040' : 'lightgrey';
-}
-
-
-function sortAndRender() {
-    const { key, direction } = state.sort;
-    const sortedData = [...state.playerData];
-
-    sortedData.sort((a, b) => {
-        let valA, valB;
-
-        const playerA = state.isDiffMode ? a.current : a;
-        const playerB = state.isDiffMode ? b.current : b;
-
-        if (key.startsWith('waves-')) {
-            const phase = key.split('-')[1];
-            valA = playerA.phases[phase].waves;
-            valB = playerB.phases[phase].waves;
-        } else if (key.startsWith('units-')) {
-            const phase = key.split('-')[1];
-            valA = playerA.phases[phase].units;
-            valB = playerB.phases[phase].units;
-        } else if (key.startsWith('score-')) {
-            const phase = key.split('-')[1];
-            valA = playerA.phases[phase].score;
-            valB = playerB.phases[phase].score;
-        } else if (key.startsWith('missionsScore-')) {
-            const phase = key.split('-')[1];
-            valA = playerA.phases[phase].missionsScore;
-            valB = playerB.phases[phase].missionsScore;
-        } else if (key.startsWith('deployed-')) {
-            const phase = key.split('-')[1];
-            valA = playerA.phases[phase].deployed;
-            valB = playerB.phases[phase].deployed;
-        } else if (key.startsWith('undeployed-')) {
-            const phase = key.split('-')[1];
-            valA = playerA.phases[phase].undeployed;
-            valB = playerB.phases[phase].undeployed;
-        } else if (key.startsWith('sm-')) {
-            const missionName = key.substring(3);
-            valA = playerA.specialMissions[missionName];
-            valB = playerB.specialMissions[missionName];
-        } else {
-            valA = playerA[key];
-            valB = playerB[key];
-        }
-
-        let result;
-        if (isNumericKey(key)) {
-            result = valA - valB;
-        } else {
-            result = String(valA).localeCompare(String(valB));
-        }
-
-        return direction === 'asc' ? result : -result;
-    });
-
-    sortedData.forEach((p, index) => {
-        p.rank = index + 1;
-    });
-
-    renderDashboard(sortedData, state.guildActivePhases);
-}
-
-function extractPlayerData(data) {
-    let guildName = '';
-    let guildGalacticPower = 0;
-
-    if (data.profile && data.profile.name) {
-        guildName = data.profile.name;
-        if (data.profile.guildGalacticPower) {
-            guildGalacticPower = parseInt(data.profile.guildGalacticPower, 10) / 1000000;
-        }
-    }
-
-    const players = getPlayers(data);
-    const playerData = {};
-
-    for (const pId in players) {
-        playerData[pId] = {
-            playerId: pId,
-            playerName: players[pId].playerName,
-            galacticPower: parseInt(players[pId].galacticPower, 10) / 1000000,
-            phases: {},
-            specialMissions: {},
-            totalWaves: 0,
-            totalUnits: 0,
-            totalScore: 0,
-            totalDeployed: 0,
-            totalUndeployed: 0,
-            totalMissionsScore: 0
-        };
-        for (let i = 1; i <= 6; i++) {
-            playerData[pId].phases[i] = { waves: 0, units: 0, score: 0, deployed: 0, undeployed: 0, missionsScore: 0 };
-        }
-        for (const mission of SpecialMissions) {
-            playerData[pId].specialMissions[mission.name] = '-';
-        }
-    }
-
-    if (!data.currentStat) {
-        console.error("data.currentStat is not found");
-        return { playerData: [], guildActivePhases: new Set(), guildName, guildGalacticPower };
-    }
-
-    const guildActivePhases = new Set();
-
-    for (const stats of data.currentStat) {
-        if (!stats.playerStat) continue;
-        const statName = zoneIdToName(stats.mapStatId);
-        const match = statName.match(/strike_encounter_round_(\d+)/);
-        if (match) {
-            const phase = parseInt(match[1], 10);
-            if (stats.playerStat.length > 0) guildActivePhases.add(phase);
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId] && playerData[pId].phases[phase]) {
-                    playerData[pId].phases[phase].waves = parseInt(playerStat.score, 10);
-                }
-            }
-        }
-    }
-
-    for (const stats of data.currentStat) {
-        if (!stats.playerStat) continue;
-        const match = stats.mapStatId.match(/unit_donated_round_(\d+)/);
-        if (match) {
-            const phase = parseInt(match[1], 10);
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId] && playerData[pId].phases[phase]) {
-                    playerData[pId].phases[phase].units = parseInt(playerStat.score, 10);
-                }
-            }
-        }
-    }
-
-    for (const stats of data.currentStat) {
-        if (!stats.playerStat) continue;
-        const match = stats.mapStatId.match(/summary_round_(\d+)/);
-        if (match) {
-            const phase = parseInt(match[1], 10);
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId] && playerData[pId].phases[phase]) {
-                    playerData[pId].phases[phase].score = parseInt(playerStat.score, 10) / 1000000;
-                }
-            }
-        }
-        if (stats.mapStatId === 'summary') {
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId]) playerData[pId].totalScore = parseInt(playerStat.score, 10) / 1000000;
-            }
-        }
-    }
-
-    for (const stats of data.currentStat) {
-        if (!stats.playerStat) continue;
-        const match = stats.mapStatId.match(/power_round_(\d+)/);
-        if (match) {
-            const phase = parseInt(match[1], 10);
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId] && playerData[pId].phases[phase]) {
-                    playerData[pId].phases[phase].deployed = parseInt(playerStat.score, 10) / 1000000;
-                }
-            }
-        }
-        if (stats.mapStatId === 'power') {
-            for (const playerStat of stats.playerStat) {
-                const pId = playerStat.memberId;
-                if (playerData[pId]) playerData[pId].totalDeployed = parseInt(playerStat.score, 10) / 1000000;
-            }
-        }
-    }
-
-    for (const mission of SpecialMissions) {
-        const suffix = '_tb3_mixed_' + mission.id;
-        const attemptedMissionStatId = "covert_round_attempted_mission" + suffix;
-        const completedMissionStatId = "covert_complete_mission" + suffix;
-        const attemptedMissionStats = data.currentStat.find(s => s.mapStatId === attemptedMissionStatId);
-        const completedMissionStats = data.currentStat.find(s => s.mapStatId === completedMissionStatId);
-        const attemptedPlayers = new Set(attemptedMissionStats ? attemptedMissionStats.playerStat.map(p => p.memberId) : []);
-        const completedPlayers = new Set(completedMissionStats ? completedMissionStats.playerStat.map(p => p.memberId) : []);
-        for (const pId in playerData) {
-            if (playerData[pId]) {
-                if (completedPlayers.has(pId)) playerData[pId].specialMissions[mission.name] = 'win';
-                else if (attemptedPlayers.has(pId)) playerData[pId].specialMissions[mission.name] = 'fail';
-                else playerData[pId].specialMissions[mission.name] = '-';
-            }
-        }
-    }
-
-    return { playerData: Object.values(playerData), guildActivePhases, guildName, guildGalacticPower };
-}
-
-function processSingleData(data) {
-    state.isDiffMode = false;
-    const { playerData, guildActivePhases, guildName, guildGalacticPower } = extractPlayerData(data);
-    
-    state.guildName = guildName;
-    state.guildGalacticPower = guildGalacticPower;
-    document.title = `Territory Battle - ${state.guildName}`;
-    let titleText = `Territory Battle - ${state.guildName}`;
-    if (state.guildGalacticPower) {
-        titleText += ` (${state.guildGalacticPower.toFixed(1)}M GP)`;
-    }
-    document.querySelector('h1').textContent = titleText;
-
-    state.playerData = playerData;
-    state.guildActivePhases = guildActivePhases;
-    state.visiblePhases = new Set(guildActivePhases);
-
-    setupPhaseCheckboxes();
-    recalculatePlayerTotals();
-    sortAndRender();
-}
-
-function processDiffData(currentData, baselineData) {
-    state.isDiffMode = true;
-    const current = extractPlayerData(currentData);
-    recalculatePlayerTotals(current.playerData, current.guildActivePhases, new Set(current.guildActivePhases));
-    
-    const baseline = extractPlayerData(baselineData);
-    recalculatePlayerTotals(baseline.playerData, baseline.guildActivePhases, new Set(baseline.guildActivePhases));
-
-    state.guildName = current.guildName;
-    state.guildGalacticPower = current.guildGalacticPower;
-    document.title = `Territory Battle Diff - ${state.guildName}`;
-    let titleText = `TB Diff - ${state.guildName}`;
-    if (state.guildGalacticPower) {
-        titleText += ` (${state.guildGalacticPower.toFixed(1)}M GP)`;
-    }
-    document.querySelector('h1').textContent = titleText;
-
-    const allPhases = new Set([...current.guildActivePhases, ...baseline.guildActivePhases]);
-    state.guildActivePhases = allPhases;
-    state.visiblePhases = new Set(allPhases);
-
-    const baselinePlayers = new Map(baseline.playerData.map(p => [p.playerId, p]));
-    const currentPlayers = new Map(current.playerData.map(p => [p.playerId, p]));
-    const allPlayerIds = new Set([...currentPlayers.keys(), ...baselinePlayers.keys()]);
-    
-    const diffPlayerData = [];
-
-    const zeroPlayer = {
-        galacticPower: 0, phases: {}, specialMissions: {}, totalWaves: 0, totalUnits: 0, totalScore: 0,
-        totalDeployed: 0, totalUndeployed: 0, totalMissionsScore: 0, playerName: ''
-    };
-    for (let i = 1; i <= 6; i++) {
-        zeroPlayer.phases[i] = { waves: 0, units: 0, score: 0, deployed: 0, undeployed: 0, missionsScore: 0 };
-    }
-    for (const mission of SpecialMissions) {
-        zeroPlayer.specialMissions[mission.name] = '-';
-    }
-
-    for (const pId of allPlayerIds) {
-        const currentP = currentPlayers.get(pId) || { ...zeroPlayer, playerId: pId, playerName: baselinePlayers.get(pId)?.playerName || 'Unknown' };
-        const baselineP = baselinePlayers.get(pId) || { ...zeroPlayer, playerId: pId, playerName: currentP.playerName };
-
-        const diffP = {
-            playerId: pId,
-            playerName: currentP.playerName,
-            galacticPower: currentP.galacticPower - baselineP.galacticPower,
-            phases: {},
-            specialMissions: {},
-            baseline: baselineP,
-            current: currentP
-        };
-
-        diffP.totalWaves = currentP.totalWaves - baselineP.totalWaves;
-        diffP.totalUnits = currentP.totalUnits - baselineP.totalUnits;
-        diffP.totalScore = currentP.totalScore - baselineP.totalScore;
-        diffP.totalDeployed = currentP.totalDeployed - baselineP.totalDeployed;
-        diffP.totalUndeployed = currentP.totalUndeployed - baselineP.totalUndeployed;
-        diffP.totalMissionsScore = currentP.totalMissionsScore - baselineP.totalMissionsScore;
-
-        for (let i = 1; i <= 6; i++) {
-            diffP.phases[i] = {
-                waves: currentP.phases[i].waves - baselineP.phases[i].waves,
-                units: currentP.phases[i].units - baselineP.phases[i].units,
-                score: currentP.phases[i].score - baselineP.phases[i].score,
-                deployed: currentP.phases[i].deployed - baselineP.phases[i].deployed,
-                undeployed: currentP.phases[i].undeployed - baselineP.phases[i].undeployed,
-                missionsScore: currentP.phases[i].missionsScore - baselineP.phases[i].missionsScore,
-            };
-        }
-
-        for (const mission of SpecialMissions) {
-            diffP.specialMissions[mission.name] = getSmDiff(currentP.specialMissions[mission.name], baselineP.specialMissions[mission.name]);
-        }
-        diffPlayerData.push(diffP);
-    }
-
-    state.playerData = diffPlayerData;
-    setupPhaseCheckboxes();
-    sortAndRender();
-}
-
-
-function recalculatePlayerTotals(playerData = state.playerData, guildActivePhases = state.guildActivePhases, visiblePhases = state.visiblePhases) {
-    const visiblePhasesCount = Math.max(visiblePhases.size, 1);
-    for (const p of playerData) {
-        let grandTotal = 0;
-        p.totalScore = 0;
-        p.totalDeployed = 0;
-        p.totalMissionsScore = 0;
-        p.totalUnits = 0;
-
-        for (let i = 1; i <= 6; i++) {
-            const phaseData = p.phases[i];
-            if (guildActivePhases.has(i)) {
-                p.phases[i].undeployed = p.galacticPower - p.phases[i].deployed;
-            }
-            p.phases[i].missionsScore = p.phases[i].score - p.phases[i].deployed;
-
-            if (visiblePhases.has(i)) {
-                grandTotal += phaseData.waves;
-                p.totalScore += phaseData.score;
-                p.totalDeployed += phaseData.deployed;
-                p.totalMissionsScore += phaseData.missionsScore;
-                p.totalUnits += phaseData.units;
-            }
-        }
-
-        p.totalWaves = grandTotal;
-        p.totalUndeployed = p.galacticPower * visiblePhasesCount - p.totalDeployed;
-        p.totalMissionsScore = p.totalScore - p.totalDeployed;
-    }
-
-    for (const p of playerData) {
-        p.normalizedTotalWaves = p.totalWaves / visiblePhasesCount;
-        p.normalizedTotalMissionsScore = p.totalMissionsScore / visiblePhasesCount;
-    }
-}
-
-function setupPhaseCheckboxes() {
-    const container = document.getElementById('phase-checkboxes');
-    container.innerHTML = '';
-    for (let i = 1; i <= 6; i++) {
-        const label = document.createElement('label');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.id = `phase-${i}-checkbox`;
-        checkbox.dataset.phase = i;
-        checkbox.checked = state.visiblePhases.has(i);
-        checkbox.disabled = !state.guildActivePhases.has(i);
-
-        checkbox.addEventListener('change', (event) => {
-            const phase = parseInt(event.target.dataset.phase, 10);
-            if (event.target.checked) {
-                state.visiblePhases.add(phase);
-            } else {
-                state.visiblePhases.delete(phase);
-            }
-            recalculateAndRender();
-        });
-
-        label.appendChild(checkbox);
-        label.append(` Phase ${i}`);
-        label.style.marginRight = '1em';
-        container.appendChild(label);
-    }
-}
-
-function recalculateAndRender() {
-    if (!state.isDiffMode) {
-        recalculatePlayerTotals();
-    } else {
-        for (const p of state.playerData) {
-            recalculatePlayerTotals([p.current], state.guildActivePhases, state.visiblePhases);
-            recalculatePlayerTotals([p.baseline], state.guildActivePhases, state.visiblePhases);
-
-            p.totalWaves = p.current.totalWaves - p.baseline.totalWaves;
-            p.totalUnits = p.current.totalUnits - p.baseline.totalUnits;
-            p.totalScore = p.current.totalScore - p.baseline.totalScore;
-            p.totalDeployed = p.current.totalDeployed - p.baseline.totalDeployed;
-            p.totalUndeployed = p.current.totalUndeployed - p.baseline.totalUndeployed;
-            p.totalMissionsScore = p.current.totalMissionsScore - p.baseline.totalMissionsScore;
-        }
-    }
-    sortAndRender();
-}
-
-function formatNumber(num) {
-    return (num % 1 === 0) ? num : num.toFixed(1);
-}
-
-function getWaveCountGroupInfo(waves_count) {
-    let className = '';
-    let tooltipText = `Waves: ${formatNumber(waves_count)}`;
-    if (waves_count === 0) {
-        className = 'group-red';
-        tooltipText += '\nStatus: Very Poor';
-    } else if (waves_count > 0 && waves_count < 5) {
-        className = 'group-orange';
-        tooltipText += '\nStatus: Poor';
-    } else if (waves_count >= 5 && waves_count < 10) {
-        className = 'group-yellow';
-        tooltipText += '\nStatus: Average';
-    } else if (waves_count >= 10 && waves_count < 15) {
-        className = 'group-lightgreen';
-        tooltipText += '\nStatus: Good';
-    } else if (waves_count >= 15) {
-        className = 'group-green';
-        tooltipText += '\nStatus: Excellent';
-    }
-    return { className, tooltipText };
-}
-
-function getUnitsInfo(units) {
-    let className = '';
-    let tooltipText = `Units: ${formatNumber(units)}`;
-    if (units >= 6) {
-        className = 'group-green';
-        tooltipText += '\nStatus: Excellent';
-    } else if (units >= 3) {
-        className = 'group-lightgreen';
-        tooltipText += '\nStatus: Good';
-    } else if (units === 2) {
-        className = 'group-yellow';
-        tooltipText += '\nStatus: Average';
-    } else if (units === 1) {
-        className = 'group-orange';
-        tooltipText += '\nStatus: Poor';
-    } else if (units === 0) {
-        className = 'group-red';
-        tooltipText += '\nStatus: Very Poor';
-    }
-    return { className, tooltipText };
-}
-
-function getDeployedInfo(deployed, gp) {
-    if (gp === 0) return { className: '', tooltipText: '' };
-    const ratio = deployed / gp;
-    let className = '';
-    if (ratio < 0.8) {
-        className = 'group-red';
-    } else if (ratio < 0.9) {
-        className = 'group-orange';
-    } else if (ratio < 0.95) {
-        className = 'group-yellow';
-    } else if (ratio < 0.99) {
-        className = 'group-lightgreen';
-    } else {
-        className = 'group-green';
-    }
-    const tooltipText = `Deployed: ${deployed.toFixed(1)}M\nTarget (GP): ${gp.toFixed(1)}M\nRatio: ${(ratio * 100).toFixed(1)}%`;
-    return { className, tooltipText };
-}
-
-function getUndeployedInfo(undeployed, gp) {
-    if (gp === 0) return { className: '', tooltipText: '' };
-    const ratio = undeployed / gp;
-    let className = '';
-    if (ratio > 0.20) {
-        className = 'group-red';
-    } else if (ratio > 0.10) {
-        className = 'group-orange';
-    } else if (ratio > 0.05) {
-        className = 'group-yellow';
-    } else if (ratio > 0.01) {
-        className = 'group-lightgreen';
-    } else {
-        className = 'group-green';
-    }
-    const tooltipText = `Undeployed: ${undeployed.toFixed(1)}M\nGP: ${gp.toFixed(1)}M\nRatio: ${(ratio * 100).toFixed(1)}%`;
-    return { className, tooltipText };
-}
-
-const TargetMissionScores = {
-    1: 1.0,
-    2: 4.0,
-    3: 5.5,
-    4: 8.3,
-    5: 8.7,
-    6: 10.2,
-};
-
-function getScoreInfo(score, metricName, targetScore) {
-    if (!targetScore || targetScore === 0) {
-        return { className: '', tooltipText: '' };
-    }
-    const ratio = score / targetScore;
-    let className = '';
-    if (ratio >= 0.8) {
-        className = 'group-green';
-    } else if (ratio >= 0.6) {
-        className = 'group-lightgreen';
-    } else if (ratio >= 0.4) {
-        className = 'group-yellow';
-    } else if (ratio >= 0.2) {
-        className = 'group-orange';
-    } else {
-        className = 'group-red';
-    }
-    const tooltipText = `${metricName}: ${score.toFixed(1)}M\nTarget: ${targetScore.toFixed(1)}M\nRatio: ${(ratio * 100).toFixed(1)}%`;
-    return { className, tooltipText };
-}
+import { AppState } from './state.js';
+import { SpecialMissions, TargetMissionScores } from './constants.js';
+import { getDiffColor, formatDiff, getWaveCountGroupInfo, getUnitsInfo, getScoreInfo, getDeployedInfo, getUndeployedInfo, getSpecialMissionsScoreInfo, isNumericKey, getSmDiffClass, formatNumber } from './utils.js';
+import { sortAndRender, recalculateAndRender } from './dataProcessor.js';
 
 function renderDashboard(playerData, guildActivePhases) {
     const dashboard = document.getElementById('dashboard');
-    const { showGP, showUnits, showScore, showMissionsScore, showSpecialMissions, showDeployed, showUndeployed, showWaves, isDiffMode, showTotals } = state;
+    const { showGP, showUnits, showScore, showMissionsScore, showSpecialMissions, showDeployed, showUndeployed, showWaves, isDiffMode, showTotals } = AppState;
     const visibleMissions = showSpecialMissions ? SpecialMissions : [];
-    const showDataColumns = showUnits || showScore || showMissionsScore || showWaves || showDeployed || showUndeployed;
+    const showDataColumns = showUnits || showScore || showMissionsScore || showWaves || showDeployed || showUndeployed || showSpecialMissions;
 
     let totalTargetMissionScore = 0;
-    for (const phase of state.visiblePhases) {
+    for (const phase of AppState.visiblePhases) {
         totalTargetMissionScore += TargetMissionScores[phase] || 0;
     }
 
@@ -637,6 +21,7 @@ function renderDashboard(playerData, guildActivePhases) {
     if (showMissionsScore) totalColspan++;
     if (showDeployed) totalColspan++;
     if (showUndeployed) totalColspan++;
+    if (showSpecialMissions) totalColspan++;
 
     let phaseColspan = 0;
     if (showWaves) phaseColspan++;
@@ -659,9 +44,11 @@ function renderDashboard(playerData, guildActivePhases) {
         if (showTotals) {
             html += `<th colspan="${totalColspan}">Total</th>`;
         }
-        for (let i = 1; i <= 6; i++) {
-            if (state.visiblePhases.has(i)) {
-                html += `<th colspan="${phaseColspan}">Phase ${i}</th>`;
+        if (phaseColspan > 0) {
+            for (let i = 1; i <= 6; i++) {
+                if (AppState.visiblePhases.has(i)) {
+                    html += `<th colspan="${phaseColspan}">Phase ${i}</th>`;
+                }
             }
         }
     }
@@ -677,9 +64,10 @@ function renderDashboard(playerData, guildActivePhases) {
             if (showMissionsScore) html += '<th data-sort="totalMissionsScore">Missions Score</th>';
             if (showDeployed) html += '<th data-sort="totalDeployed">Deployed</th>';
             if (showUndeployed) html += '<th data-sort="totalUndeployed">Undeployed</th>';
+            if (showSpecialMissions) html += '<th data-sort="totalSpecialMissionsScore">Special Missions</th>';
         }
         for (let i = 1; i <= 6; i++) {
-            if (state.visiblePhases.has(i)) {
+            if (AppState.visiblePhases.has(i)) {
                 if (showWaves) html += `<th data-sort="waves-${i}">Waves</th>`;
                 if (showUnits) html += `<th data-sort="units-${i}">Units</th>`;
                 if (showScore) html += `<th data-sort="score-${i}">Score</th>`;
@@ -700,8 +88,8 @@ function renderDashboard(playerData, guildActivePhases) {
     // Calculate and render Totals row first
     if (isDiffMode) {
         const totals = {
-            current: { totalGalacticPower: 0, totalWaves: 0, totalUnits: 0, totalScore: 0, totalDeployed: 0, totalUndeployed: 0, totalMissionsScore: 0, phases: {}, specialMissions: {} },
-            baseline: { totalGalacticPower: 0, totalWaves: 0, totalUnits: 0, totalScore: 0, totalDeployed: 0, totalUndeployed: 0, totalMissionsScore: 0, phases: {}, specialMissions: {} }
+            current: { totalGalacticPower: 0, totalWaves: 0, totalUnits: 0, totalScore: 0, totalDeployed: 0, totalUndeployed: 0, totalMissionsScore: 0, totalSpecialMissionsScore: 0, phases: {}, specialMissions: {} },
+            baseline: { totalGalacticPower: 0, totalWaves: 0, totalUnits: 0, totalScore: 0, totalDeployed: 0, totalUndeployed: 0, totalMissionsScore: 0, totalSpecialMissionsScore: 0, phases: {}, specialMissions: {} }
         };
 
         for (let i = 1; i <= 6; i++) {
@@ -731,6 +119,8 @@ function renderDashboard(playerData, guildActivePhases) {
             totals.baseline.totalUndeployed += baselineP.totalUndeployed;
             totals.current.totalMissionsScore += currentP.totalMissionsScore;
             totals.baseline.totalMissionsScore += baselineP.totalMissionsScore;
+            totals.current.totalSpecialMissionsScore += currentP.totalSpecialMissionsScore;
+            totals.baseline.totalSpecialMissionsScore += baselineP.totalSpecialMissionsScore;
 
             for (let i = 1; i <= 6; i++) {
                 totals.current.phases[i].waves += currentP.phases[i].waves;
@@ -756,7 +146,7 @@ function renderDashboard(playerData, guildActivePhases) {
         }
 
         const playersCount = Math.max(playerData.length, 1);
-        const visiblePhasesCount = Math.max(state.visiblePhases.size, 1);
+        const visiblePhasesCount = Math.max(AppState.visiblePhases.size, 1);
 
         html += '<tr>';
         html += '<td><b>0</b></td>';
@@ -833,10 +223,20 @@ function renderDashboard(playerData, guildActivePhases) {
                     const finalTooltip = `${tooltip}\n${undeployedTooltip}`;
                     html += `<td class="${undeployedClass}" title="${finalTooltip}"><b>${totals.current.totalUndeployed.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
                 }
+                if (showSpecialMissions) {
+                    const diff = totals.current.totalSpecialMissionsScore - totals.baseline.totalSpecialMissionsScore;
+                    const tooltip = `Current: ${totals.current.totalSpecialMissionsScore}\nBaseline: ${totals.baseline.totalSpecialMissionsScore}`;
+                    const diffStr = formatDiff(diff, 0);
+                    const avgScore = totals.current.totalSpecialMissionsScore / playersCount;
+                    const { className, tooltipText } = getSpecialMissionsScoreInfo(avgScore);
+                    const diffColor = getDiffColor(diff, className);
+                    const finalTooltip = `${tooltip}\n${tooltipText}`;
+                    html += `<td class="${className}" title="${finalTooltip}"><b>${totals.current.totalSpecialMissionsScore} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
+                }
             }
 
             for (let i = 1; i <= 6; i++) {
-                if (state.visiblePhases.has(i)) {
+                if (AppState.visiblePhases.has(i)) {
                     if (showWaves) {
                         const diff = totals.current.phases[i].waves - totals.baseline.phases[i].waves;
                         const tooltip = `Current: ${totals.current.phases[i].waves}\nBaseline: ${totals.baseline.phases[i].waves}`;
@@ -883,7 +283,7 @@ function renderDashboard(playerData, guildActivePhases) {
                         const diff = totals.current.phases[i].deployed - totals.baseline.phases[i].deployed;
                         const tooltip = `Current: ${totals.current.phases[i].deployed.toFixed(1)}M\nBaseline: ${totals.baseline.phases[i].deployed.toFixed(1)}M`;
                         const diffStr = formatDiff(diff);
-                        const deployedInfo = getDeployedInfo(totals.current.phases[i].deployed, state.guildGalacticPower);
+                        const deployedInfo = getDeployedInfo(totals.current.phases[i].deployed, AppState.guildGalacticPower);
                         const diffColor = getDiffColor(diff, deployedInfo.className);
                         const finalTooltip = `${tooltip}\n${deployedInfo.tooltipText}`;
                         html += `<td class="${deployedInfo.className}" title="${finalTooltip}"><b>${totals.current.phases[i].deployed.toFixed(1)} <span style="color: ${diffColor};">(${diffStr})</span></b></td>`;
@@ -907,8 +307,8 @@ function renderDashboard(playerData, guildActivePhases) {
             const baseline_sm = totals.baseline.specialMissions[mission.name];
             const win_diff = current_sm.win - baseline_sm.win;
             const attempts_diff = (current_sm.win + current_sm.fail) - (baseline_sm.win + baseline_sm.fail);
-            const win_diff_str = win_diff === 0 ? '0' : (win_diff > 0 ? `+${win_diff}`: `${win_diff}`);
-            const attempts_diff_str = attempts_diff === 0 ? '0' : (attempts_diff > 0 ? `+${attempts_diff}`: `${attempts_diff}`);
+            const win_diff_str = win_diff === 0 ? '0' : (win_diff > 0 ? `+${win_diff}` : `${win_diff}`);
+            const attempts_diff_str = attempts_diff === 0 ? '0' : (attempts_diff > 0 ? `+${attempts_diff}` : `${attempts_diff}`);
             const tooltip = `Current: ${current_sm.win}/${current_sm.win + current_sm.fail}\nBaseline: ${baseline_sm.win}/${baseline_sm.win + baseline_sm.fail}`;
             html += `<td title="${tooltip}">${win_diff_str}/${attempts_diff_str}</td>`;
         }
@@ -917,7 +317,7 @@ function renderDashboard(playerData, guildActivePhases) {
     } else {
         const totals = {
             totalWaves: 0, totalUnits: 0, totalScore: 0, totalDeployed: 0, totalUndeployed: 0,
-            totalMissionsScore: 0, totalGalacticPower: 0, phases: {}, specialMissions: {}
+            totalMissionsScore: 0, totalSpecialMissionsScore: 0, totalGalacticPower: 0, phases: {}, specialMissions: {}
         };
         for (let i = 1; i <= 6; i++) {
             totals.phases[i] = { waves: 0, units: 0, score: 0, deployed: 0, undeployed: 0, missionsScore: 0 };
@@ -933,6 +333,7 @@ function renderDashboard(playerData, guildActivePhases) {
             totals.totalDeployed += p.totalDeployed;
             totals.totalUndeployed += p.totalUndeployed;
             totals.totalMissionsScore += p.totalMissionsScore;
+            totals.totalSpecialMissionsScore += p.totalSpecialMissionsScore;
             totals.totalGalacticPower += p.galacticPower;
             for (let i = 1; i <= 6; i++) {
                 totals.phases[i].waves += p.phases[i].waves;
@@ -958,7 +359,7 @@ function renderDashboard(playerData, guildActivePhases) {
 
         if (showDataColumns) {
             const playersCount = Math.max(playerData.length, 1);
-            const visiblePhasesCount = Math.max(state.visiblePhases.size, 1);
+            const visiblePhasesCount = Math.max(AppState.visiblePhases.size, 1);
 
             if (showTotals) {
                 if (showWaves) {
@@ -993,10 +394,15 @@ function renderDashboard(playerData, guildActivePhases) {
                     const undeployedTooltip = `Undeployed: ${totals.totalUndeployed.toFixed(1)}M`;
                     html += `<td class="${undeployedClass}" title="${undeployedTooltip}"><b>${totals.totalUndeployed.toFixed(1)}</b></td>`;
                 }
+                if (showSpecialMissions) {
+                    const avgScore = totals.totalSpecialMissionsScore / playersCount;
+                    const { className, tooltipText } = getSpecialMissionsScoreInfo(avgScore);
+                    html += `<td class="${className}" title="${tooltipText}"><b>${totals.totalSpecialMissionsScore}</b></td>`;
+                }
             }
 
             for (let i = 1; i <= 6; i++) {
-                if (state.visiblePhases.has(i)) {
+                if (AppState.visiblePhases.has(i)) {
                     const phase = totals.phases[i];
                     if (showWaves) {
                         const waveInfo = getWaveCountGroupInfo(phase.waves / playersCount);
@@ -1021,7 +427,7 @@ function renderDashboard(playerData, guildActivePhases) {
                         html += `<td class="${missionsScoreInfo.className}" title="${missionsScoreInfo.tooltipText}"><b>${phase.missionsScore.toFixed(1)}</b></td>`;
                     }
                     if (showDeployed) {
-                        const deployedInfo = getDeployedInfo(phase.deployed, state.guildGalacticPower);
+                        const deployedInfo = getDeployedInfo(phase.deployed, AppState.guildGalacticPower);
                         html += `<td class="${deployedInfo.className}" title="${deployedInfo.tooltipText}"><b>${phase.deployed.toFixed(1)}</b></td>`;
                     }
                     if (showUndeployed) {
@@ -1042,7 +448,7 @@ function renderDashboard(playerData, guildActivePhases) {
 
     // Render player rows
     for (const p of playerData) {
-        const isSelected = p.playerId === state.selectedPlayerId;
+        const isSelected = p.playerId === AppState.selectedPlayerId;
         html += `<tr class="${isSelected ? 'selected-row' : ''}" data-player-id="${p.playerId}">`;
         html += `<td>${p.rank}</td>`;
         html += `<td class="player-name-cell">${p.playerName}</td>`;
@@ -1076,7 +482,7 @@ function renderDashboard(playerData, guildActivePhases) {
                     return `<td class="${className}" title="${tooltipText}"><b>${formatNumber(val)}</b></td>`;
                 }
             };
-            
+
             const renderScoreCell = (val, current, baseline, infoFn, ...args) => {
                 if (isDiffMode) {
                     const tooltip = `Current: ${current.toFixed(1)}M\nBaseline: ${baseline.toFixed(1)}M`;
@@ -1097,18 +503,19 @@ function renderDashboard(playerData, guildActivePhases) {
             if (showTotals) {
                 if (showWaves) html += renderCell(p.totalWaves, p.current?.totalWaves, p.baseline?.totalWaves, getWaveCountGroupInfo, p.normalizedTotalWaves);
                 if (showUnits) html += renderCell(p.totalUnits, p.current?.totalUnits, p.baseline?.totalUnits, getUnitsInfo);
-                if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', totalTargetMissionScore + gp * Math.max(state.visiblePhases.size, 1));
+                if (showScore) html += renderScoreCell(p.totalScore, p.current?.totalScore, p.baseline?.totalScore, getScoreInfo, 'Score', totalTargetMissionScore + gp * Math.max(AppState.visiblePhases.size, 1));
                 if (showMissionsScore) html += renderScoreCell(p.totalMissionsScore, p.current?.totalMissionsScore, p.baseline?.totalMissionsScore, getScoreInfo, 'Missions Score', totalTargetMissionScore);
-                if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, gp * Math.max(state.visiblePhases.size, 1));
-                if (showUndeployed) html += renderScoreCell(p.totalUndeployed, p.current?.totalUndeployed, p.baseline?.totalUndeployed, getUndeployedInfo, gp * Math.max(state.visiblePhases.size, 1));
+                if (showDeployed) html += renderScoreCell(p.totalDeployed, p.current?.totalDeployed, p.baseline?.totalDeployed, getDeployedInfo, gp * Math.max(AppState.visiblePhases.size, 1));
+                if (showUndeployed) html += renderScoreCell(p.totalUndeployed, p.current?.totalUndeployed, p.baseline?.totalUndeployed, getUndeployedInfo, gp * Math.max(AppState.visiblePhases.size, 1));
+                if (showSpecialMissions) html += renderCell(p.totalSpecialMissionsScore, p.current?.totalSpecialMissionsScore, p.baseline?.totalSpecialMissionsScore, getSpecialMissionsScoreInfo);
             }
 
             for (let i = 1; i <= 6; i++) {
-                if (state.visiblePhases.has(i)) {
+                if (AppState.visiblePhases.has(i)) {
                     const phase = p.phases[i];
                     const currentPhase = p.current?.phases[i];
                     const baselinePhase = p.baseline?.phases[i];
-                    
+
                     if (showWaves) html += renderCell(phase.waves, currentPhase?.waves, baselinePhase?.waves, getWaveCountGroupInfo);
                     if (showUnits) html += renderCell(phase.units, currentPhase?.units, baselinePhase?.units, getUnitsInfo);
                     if (showScore) html += renderScoreCell(phase.score, currentPhase?.score, baselinePhase?.score, getScoreInfo, 'Score', (TargetMissionScores[i] || 0) + gp);
@@ -1140,17 +547,17 @@ function renderDashboard(playerData, guildActivePhases) {
 
     dashboard.querySelectorAll('th[data-sort]').forEach(th => {
         const sortKey = th.dataset.sort;
-        if (sortKey === state.sort.key) {
+        if (sortKey === AppState.sort.key) {
             th.classList.add('sort-active');
-            th.innerHTML += state.sort.direction === 'asc' ? ' &uarr;' : ' &darr;';
+            th.innerHTML += AppState.sort.direction === 'asc' ? ' &uarr;' : ' &darr;';
         }
         th.addEventListener('click', () => {
             const newSortKey = th.dataset.sort;
-            if (state.sort.key === newSortKey) {
-                state.sort.direction = state.sort.direction === 'asc' ? 'desc' : 'asc';
+            if (AppState.sort.key === newSortKey) {
+                AppState.sort.direction = AppState.sort.direction === 'asc' ? 'desc' : 'asc';
             } else {
-                state.sort.key = newSortKey;
-                state.sort.direction = isNumericKey(newSortKey) ? 'desc' : 'asc';
+                AppState.sort.key = newSortKey;
+                AppState.sort.direction = isNumericKey(newSortKey) ? 'desc' : 'asc';
             }
             sortAndRender();
         });
@@ -1159,13 +566,42 @@ function renderDashboard(playerData, guildActivePhases) {
     setupHighlightEventListeners();
 }
 
+function setupPhaseCheckboxes() {
+    const container = document.getElementById('phase-checkboxes');
+    container.innerHTML = '';
+    for (let i = 1; i <= 6; i++) {
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `phase-${i}-checkbox`;
+        checkbox.dataset.phase = i;
+        checkbox.checked = AppState.visiblePhases.has(i);
+        checkbox.disabled = !AppState.guildActivePhases.has(i);
+
+        checkbox.addEventListener('change', (event) => {
+            const phase = parseInt(event.target.dataset.phase, 10);
+            if (event.target.checked) {
+                AppState.visiblePhases.add(phase);
+            } else {
+                AppState.visiblePhases.delete(phase);
+            }
+            recalculateAndRender();
+        });
+
+        label.appendChild(checkbox);
+        label.append(` Phase ${i}`);
+        label.style.marginRight = '1em';
+        container.appendChild(label);
+    }
+}
+
 function setupHighlightEventListeners() {
     const table = document.querySelector('#dashboard table');
     if (!table) return;
 
     const headerRows = table.querySelectorAll('thead tr');
     const tBody = table.querySelector('tbody');
-    const { showGP, showUnits, showScore, showMissionsScore, showSpecialMissions, showDeployed, showUndeployed, showWaves } = state;
+    const { showGP, showUnits, showScore, showMissionsScore, showSpecialMissions, showDeployed, showUndeployed, showWaves } = AppState;
     const visibleMissions = showSpecialMissions ? SpecialMissions : [];
 
     tBody.addEventListener('click', (e) => {
@@ -1177,10 +613,10 @@ function setupHighlightEventListeners() {
         const targetRow = e.target.closest('tr');
         if (targetRow && targetRow.dataset.playerId) {
             const playerId = targetRow.dataset.playerId;
-            if (state.selectedPlayerId === playerId) {
-                state.selectedPlayerId = null;
+            if (AppState.selectedPlayerId === playerId) {
+                AppState.selectedPlayerId = null;
             } else {
-                state.selectedPlayerId = playerId;
+                AppState.selectedPlayerId = playerId;
             }
             sortAndRender();
         }
@@ -1241,147 +677,11 @@ function setupHighlightEventListeners() {
     });
 }
 
-async function loadDefaultData() {
-    try {
-        const defaultFilePath = './default_data.json';
-        const response = await fetch(defaultFilePath);
-        if (response.ok) {
-            const data = await response.json();
-            state.currentData = data;
-            onDataLoaded();
-        } else {
-            console.log("No default data file found or failed to load.");
-        }
-    } catch (error) {
-        console.error("Error loading default data:", error);
-    }
-}
-
-function clearDashboard() {
-    document.getElementById('dashboard').innerHTML = '';
-    document.querySelector('h1').textContent = 'Territory Battle Status';
-    document.title = 'TB Status Dashboard';
-    state.playerData = [];
-    state.guildActivePhases = new Set();
-    state.visiblePhases = new Set();
-    state.guildName = '';
-    state.guildGalacticPower = 0;
-    state.isDiffMode = false;
-    setupPhaseCheckboxes();
-}
-
-function onDataLoaded() {
-    if (state.currentData && state.baselineData) {
-        processDiffData(state.currentData, state.baselineData);
-    } else if (state.currentData) {
-        processSingleData(state.currentData);
-    } else if (state.baselineData) {
-        processSingleData(state.baselineData);
-    } else {
-        clearDashboard();
-    }
-}
-
-function handleFileSelect(file, type) {
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            try {
-                const data = JSON.parse(e.target.result);
-                if (type === 'current') {
-                    state.currentData = data;
-                    document.getElementById('clear-current-button').style.display = 'inline-block';
-                } else {
-                    state.baselineData = data;
-                    document.getElementById('clear-baseline-button').style.display = 'inline-block';
-                }
-                onDataLoaded();
-            } catch (error) {
-                alert('Error parsing JSON file.');
-                console.error(error);
-            }
-        };
-        reader.readAsText(file);
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    loadDefaultData();
-    document.getElementById('show-totals-checkbox').addEventListener('change', (event) => {
-        state.showTotals = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-gp-checkbox').addEventListener('change', (event) => {
-        state.showGP = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-units-checkbox').addEventListener('change', (event) => {
-        state.showUnits = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-score-checkbox').addEventListener('change', (event) => {
-        state.showScore = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-missions-score-checkbox').addEventListener('change', (event) => {
-        state.showMissionsScore = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-deployed-checkbox').addEventListener('change', (event) => {
-        state.showDeployed = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-special-missions-checkbox').addEventListener('change', (event) => {
-        state.showSpecialMissions = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-waves-checkbox').addEventListener('change', (event) => {
-        state.showWaves = event.target.checked;
-        sortAndRender();
-    });
-    document.getElementById('show-undeployed-checkbox').addEventListener('change', (event) => {
-        state.showUndeployed = event.target.checked;
-        sortAndRender();
-    });
-
-    document.getElementById('current-file-input').addEventListener('change', (event) => {
-        handleFileSelect(event.target.files[0], 'current');
-    });
-    document.getElementById('baseline-file-input').addEventListener('change', (event) => {
-        handleFileSelect(event.target.files[0], 'baseline');
-    });
-
-    document.getElementById('clear-current-button').addEventListener('click', () => {
-        state.currentData = null;
-        const fileInput = document.getElementById('current-file-input');
-        fileInput.value = '';
-        document.getElementById('clear-current-button').style.display = 'none';
-        onDataLoaded();
-    });
-
-    document.getElementById('clear-baseline-button').addEventListener('click', () => {
-        state.baselineData = null;
-        const fileInput = document.getElementById('baseline-file-input');
-        fileInput.value = '';
-        document.getElementById('clear-baseline-button').style.display = 'none';
-        onDataLoaded();
-    });
-
-    const modal = document.getElementById('cell-info-modal');
-    const closeBtn = modal.querySelector('.close');
-    closeBtn.onclick = function() {
-        modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-});
-
 function showModal(text) {
     const modal = document.getElementById('cell-info-modal');
     const modalText = document.getElementById('modal-text');
     modalText.textContent = text;
     modal.style.display = 'block';
 }
+
+export { renderDashboard, setupPhaseCheckboxes };
