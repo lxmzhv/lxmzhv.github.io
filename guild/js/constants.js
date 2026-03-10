@@ -294,6 +294,7 @@ export const BONUS_PLANETS = {
 };
 
 export const GUILD_FILES = [
+    'guild_EjrEgqL1SRunQzbG5u05UA.json',
     'guild_LVmIG5W_RSCmvZYOxdyH_Q.json',
     'guild_IVgWpcsTSgKbtd7uoTiTAg.json',
     'guild_RiWsgx3BQXqZMepXXEb2Cg.json',
@@ -301,4 +302,6 @@ export const GUILD_FILES = [
     'guild_OjLlFWggT5yuH0ufYws1fA.json',
     'guild_0ftcV359S4KiFpZ9Sl0kVQ.json',
     'guild_jrl9Q-_CRDGdMyNjTQH1rQ.json',
+    'guild_sY8z_VF7SpaPhdpSN88qBw.json',
+    'guild_oy2awPmqRYyCKPvgJNjPIQ.json',
 ];
