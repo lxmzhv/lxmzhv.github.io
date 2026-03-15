@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hex Blast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" crossorigin src="./assets/index-LcoJiuTQ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/style-DJp3C_vv.css">
+  <script type="module" crossorigin src="./assets/index-CJhAJwLW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-CIlED1D9.css">
 </head>
 
 <body>
 
     <div id="game-container">
         <div class="ui-overlay pointer-events-none p-5">
+            <div class="level-container">
+                <div class="level-badge" id="level-badge">
+                    <span class="level-label">LVL</span>
+                    <span class="level-value" id="player-level">1</span>
+                </div>
+                <div class="exp-bar-container">
+                    <div class="exp-bar" id="exp-progress"></div>
+                </div>
+            </div>
+
             <div class="stats-container">
                 <div id="streak-display" class="streak-container hidden">
                     <span class="streak-label">STREAK</span>
@@ -31,7 +41,8 @@
         <div id="game-over-modal">
             <h1 class="text-5xl font-black mb-2 text-white italic game-over-title">OUT OF SPACE</h1>
             <p class="text-2xl text-slate-400 mb-6 font-medium">Final Score: <span id="final-score"
-                    class="text-blue-400 font-black text-4xl ml-2 drop-shadow-[0_0_10px_rgba(96,165,250,0.8)]">0</span></p>
+                    class="text-blue-400 font-black text-4xl ml-2 drop-shadow-[0_0_10px_rgba(96,165,250,0.8)]">0</span>
+            </p>
 
             <div id="game-over-stats" class="stats-grid mb-10 w-full max-w-sm px-4">
                 <!-- Stats injected here -->
