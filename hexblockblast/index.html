@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hex Blast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" crossorigin src="./assets/index-CJhAJwLW.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/style-CIlED1D9.css">
+  <script type="module" crossorigin src="./assets/index-BpH_YXol.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-BYF9sd5h.css">
 </head>
 
 <body>
 
     <div id="game-container">
         <div class="ui-overlay pointer-events-none p-5">
-            <div class="level-container">
+            <div class="level-container safe-area-top" onclick="game.showExperienceDetails()" style="cursor: pointer;"
+                title="Show Experience Details">
                 <div class="level-badge" id="level-badge">
                     <span class="level-label">LVL</span>
                     <span class="level-value" id="player-level">1</span>
@@ -137,6 +138,25 @@
                 <canvas id="shapesCanvas"></canvas>
             </div>
             <button class="btn btn-small mt-8" onclick="game.closeShapes()">CLOSE</button>
+        </div>
+
+        <div id="experience-modal">
+            <h2 class="text-3xl font-black mb-6 text-white italic">PLAYER EXPERIENCE</h2>
+            <div class="stats-grid mb-10 w-full max-w-sm px-4">
+                <div class="stat-box highlight-streak">
+                    <div class="stat-value glow-text-orange" id="popup-level">1</div>
+                    <div class="stat-label">CURRENT LEVEL</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value glow-text-blue" id="exp-current">0</div>
+                    <div class="stat-label">TOTAL EXPERIENCE</div>
+                </div>
+                <div class="stat-box highlight-combo">
+                    <div class="stat-value glow-text-purple" id="exp-remaining">0</div>
+                    <div class="stat-label">TO NEXT LEVEL</div>
+                </div>
+            </div>
+            <button class="btn btn-small" onclick="game.closeExperienceDetails()">CLOSE</button>
         </div>
     </div>
 
