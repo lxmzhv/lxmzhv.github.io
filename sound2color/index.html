@@ -39,7 +39,7 @@
                     <span>Upload Audio</span>
                     <input type="file" id="audioInput" accept="audio/*" class="hidden">
                 </label>
-                
+
                 <button id="playPauseBtn" class="hidden bg-slate-700 hover:bg-slate-600 p-2 rounded-full transition-colors">
                     <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                     <svg id="pauseIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
@@ -83,7 +83,7 @@
         // Configuration
         const fftSize = 2048;
         const scrollSpeed = 2; // Pixels per frame
-        
+
         // Handle Resize
         function resize() {
             canvas.width = canvas.clientWidth * window.devicePixelRatio;
@@ -96,36 +96,36 @@
         resize();
 
         // Frequency to Color Mapping (HSL)
-        // High frequency = Blue (Cool)
-        // Mid frequency = Green/Yellow
-        // Low frequency = Red/Purple (Warm)
-        function getFrequencyColor(frequency, intensity) {
-            // frequency index is from 0 to analyser.frequencyBinCount
+        function getFrequencyColor(index, intensity, totalBins) {
+            // frequency index is from 0 to totalBins
             // We map this to Hue (0 to 360)
-            // Logarithmic mapping feels more natural for sound
-            const hue = (frequency / analyser.frequencyBinCount) * 360;
+            const hue = (index / totalBins) * 360;
             // Use intensity for Lightness/Saturation
-            const lightness = 20 + (intensity / 255) * 60;
-            const saturation = 70 + (intensity / 255) * 30;
+            const lightness = 10 + (intensity / 255) * 70;
+            const saturation = 60 + (intensity / 255) * 40;
             return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
         }
 
         async function handleFile(file) {
             if (!file) return;
-            
+
             status.textContent = "Loading audio...";
             dropZone.style.opacity = '0';
-            
+
             if (!audioCtx) {
                 audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             }
 
-            const arrayBuffer = await file.arrayBuffer();
-            audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
-            
-            status.textContent = "File Ready. Click Play.";
-            playPauseBtn.classList.remove('hidden');
-            
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+                status.textContent = "File Ready. Click Play.";
+                playPauseBtn.classList.remove('hidden');
+            } catch (err) {
+                status.textContent = "Error loading audio file.";
+                console.error(err);
+            }
+
             if (source) source.stop();
             isPlaying = false;
             updatePlayUI();
@@ -140,16 +140,17 @@
 
             source = audioCtx.createBufferSource();
             source.buffer = audioBuffer;
-            
+
             analyser = audioCtx.createAnalyser();
             analyser.fftSize = fftSize;
-            
+            analyser.smoothingTimeConstant = 0.8;
+
             source.connect(analyser);
             analyser.connect(audioCtx.destination);
 
             source.start(0, pausedAt);
             startTime = audioCtx.currentTime - pausedAt;
-            
+
             source.onended = () => {
                 if (isPlaying) {
                     isPlaying = false;
@@ -203,27 +204,26 @@
             ctx.putImageData(imageData, 0, 0);
 
             // 2. Draw the new vertical line on the far right
-            // We find the "dominant" frequency or represent the whole spectrum
-            // For a "moving picture of lines", we calculate the average color weighted by intensity
-            let r = 0, g = 0, b = 0;
-            let totalWeight = 0;
-
-            // We iterate through frequencies and draw a multi-layered line for depth
             const x = canvas.width - scrollSpeed;
-            
+
             // Clear the new column
             ctx.fillStyle = '#000';
             ctx.fillRect(x, 0, scrollSpeed, canvas.height);
 
-            const sliceHeight = canvas.height / (bufferLength / 4); // Use quarter of buffer for clarity
-            
-            for (let i = 0; i < bufferLength / 4; i++) {
+            // Limit processing to the audible spectrum range (usually lower 70% is most active)
+            const activeBins = Math.floor(bufferLength * 0.7);
+            const sliceHeight = canvas.height / activeBins;
+
+            for (let i = 0; i < activeBins; i++) {
                 const intensity = dataArray[i];
-                if (intensity > 0) {
-                    const color = getFrequencyColor(i, intensity);
+                if (intensity > 5) { // Small threshold to keep blacks clean
+                    const color = getFrequencyColor(i, intensity, activeBins);
                     ctx.fillStyle = color;
-                    // Draw segments vertically from bottom to top (low to high freq)
-                    ctx.fillRect(x, canvas.height - (i * sliceHeight), scrollSpeed, sliceHeight);
+
+                    // Draw segments vertically from top to bottom
+                    // Using Math.ceil for height to avoid sub-pixel gaps
+                    const y = canvas.height - (i * sliceHeight);
+                    ctx.fillRect(x, y - sliceHeight, scrollSpeed, Math.ceil(sliceHeight));
                 }
             }
 
@@ -242,7 +242,6 @@
             e.preventDefault();
             handleFile(e.dataTransfer.files[0]);
         });
-
     </script>
 </body>
 </html>
