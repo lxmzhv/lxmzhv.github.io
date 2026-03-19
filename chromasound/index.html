@@ -303,7 +303,7 @@
 
                 // Switch to lighter for glowing overlap
                 ctx.globalCompositeOperation = 'lighter';
-                const spawnX = canvas.width - 5;
+                const spawnY = canvas.height + 5; // Spawning slightly below the bottom
 
                 for (let i = minBin; i < activeBins; i++) {
                     const intensity = dataArray[i];
@@ -311,7 +311,7 @@
                         const emitProb = (intensity / 255) * 0.6;
                         if (Math.random() < emitProb) {
                             const normalizedLog = (Math.log10(i) - logMin) / logRange;
-                            const y = canvas.height - (normalizedLog * canvas.height);
+                            const x = normalizedLog * canvas.width;
                             const color = getFrequencyColor(normalizedLog, intensity);
 
                             // Bass = big/slow, Highs = tiny/fast
@@ -320,10 +320,10 @@
                             const baseSpeed = isBass ? 1 : 4 + normalizedLog * 6;
                             
                             particles.push({
-                                x: spawnX,
-                                y: y + (Math.random() - 0.5) * 15,
-                                vx: -(baseSpeed + Math.random() * 3) - (intensity / 100),
-                                vy: (Math.random() - 0.5) * 2,
+                                x: x + (Math.random() - 0.5) * 15,
+                                y: spawnY,
+                                vx: (Math.random() - 0.5) * 2,
+                                vy: -((baseSpeed + Math.random() * 3) + (intensity / 100)),
                                 color: color,
                                 radius: radius,
                                 life: 1.0,
@@ -340,7 +340,7 @@
                     p.y += p.vy;
                     p.life -= p.decay;
 
-                    if (p.life <= 0 || p.x < 0) {
+                    if (p.life <= 0 || p.y < 0) {
                         particles.splice(i, 1);
                     } else {
                         ctx.beginPath();
