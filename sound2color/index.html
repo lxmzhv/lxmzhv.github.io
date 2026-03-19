@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChromaSound Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        canvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+
+    <!-- Header & Controls -->
+    <div class="glass-panel z-10 w-full max-w-2xl rounded-2xl p-6 mb-8 shadow-2xl transition-all hover:shadow-cyan-500/10">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+                    ChromaSound
+                </h1>
+                <p class="text-slate-400 text-sm mt-1">Audio-to-Color Spectrum Mapper</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <label class="cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-2 rounded-full font-medium transition-colors shadow-lg shadow-cyan-900/20">
+                    <span>Upload Audio</span>
+                    <input type="file" id="audioInput" accept="audio/*" class="hidden">
+                </label>
+                
+                <button id="playPauseBtn" class="hidden bg-slate-700 hover:bg-slate-600 p-2 rounded-full transition-colors">
+                    <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    <svg id="pauseIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- UI Feedback -->
+        <div id="status" class="mt-4 text-xs text-center text-slate-500 uppercase tracking-widest">
+            Ready for input
+        </div>
+    </div>
+
+    <!-- Main Visualizer Canvas -->
+    <div class="relative w-full flex-grow flex items-center justify-center overflow-hidden rounded-xl border border-slate-800 bg-black">
+        <canvas id="visualizerCanvas" class="w-full h-full"></canvas>
+        <div id="dropZone" class="absolute inset-0 flex items-center justify-center border-2 border-dashed border-slate-700 rounded-xl pointer-events-none transition-opacity duration-500 opacity-30">
+            <p class="text-slate-500 italic">Drag audio file here or click Upload</p>
+        </div>
+    </div>
+
+    <script>
+        const audioInput = document.getElementById('audioInput');
+        const canvas = document.getElementById('visualizerCanvas');
+        const ctx = canvas.getContext('2d');
+        const status = document.getElementById('status');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+        const dropZone = document.getElementById('dropZone');
+
+        let audioCtx;
+        let analyser;
+        let source;
+        let animationId;
+        let isPlaying = false;
+        let audioBuffer;
+        let startTime = 0;
+        let pausedAt = 0;
+
+        // Configuration
+        const fftSize = 2048;
+        const scrollSpeed = 2; // Pixels per frame
+        
+        // Handle Resize
+        function resize() {
+            canvas.width = canvas.clientWidth * window.devicePixelRatio;
+            canvas.height = canvas.clientHeight * window.devicePixelRatio;
+            // Fill with black initially
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Frequency to Color Mapping (HSL)
+        // High frequency = Blue (Cool)
+        // Mid frequency = Green/Yellow
+        // Low frequency = Red/Purple (Warm)
+        function getFrequencyColor(frequency, intensity) {
+            // frequency index is from 0 to analyser.frequencyBinCount
+            // We map this to Hue (0 to 360)
+            // Logarithmic mapping feels more natural for sound
+            const hue = (frequency / analyser.frequencyBinCount) * 360;
+            // Use intensity for Lightness/Saturation
+            const lightness = 20 + (intensity / 255) * 60;
+            const saturation = 70 + (intensity / 255) * 30;
+            return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+        }
+
+        async function handleFile(file) {
+            if (!file) return;
+            
+            status.textContent = "Loading audio...";
+            dropZone.style.opacity = '0';
+            
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+
+            const arrayBuffer = await file.arrayBuffer();
+            audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+            
+            status.textContent = "File Ready. Click Play.";
+            playPauseBtn.classList.remove('hidden');
+            
+            if (source) source.stop();
+            isPlaying = false;
+            updatePlayUI();
+        }
+
+        audioInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
+
+        function playAudio() {
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+
+            source = audioCtx.createBufferSource();
+            source.buffer = audioBuffer;
+            
+            analyser = audioCtx.createAnalyser();
+            analyser.fftSize = fftSize;
+            
+            source.connect(analyser);
+            analyser.connect(audioCtx.destination);
+
+            source.start(0, pausedAt);
+            startTime = audioCtx.currentTime - pausedAt;
+            
+            source.onended = () => {
+                if (isPlaying) {
+                    isPlaying = false;
+                    pausedAt = 0;
+                    updatePlayUI();
+                }
+            };
+
+            isPlaying = true;
+            updatePlayUI();
+            visualize();
+        }
+
+        function stopAudio() {
+            if (source) {
+                source.stop();
+                pausedAt = audioCtx.currentTime - startTime;
+            }
+            isPlaying = false;
+            updatePlayUI();
+            cancelAnimationFrame(animationId);
+        }
+
+        function updatePlayUI() {
+            if (isPlaying) {
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            } else {
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            }
+        }
+
+        playPauseBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                stopAudio();
+            } else {
+                playAudio();
+            }
+        });
+
+        function visualize() {
+            if (!isPlaying) return;
+
+            const bufferLength = analyser.frequencyBinCount;
+            const dataArray = new Uint8Array(bufferLength);
+            analyser.getByteFrequencyData(dataArray);
+
+            // 1. Shift existing content to the left
+            const imageData = ctx.getImageData(scrollSpeed, 0, canvas.width - scrollSpeed, canvas.height);
+            ctx.putImageData(imageData, 0, 0);
+
+            // 2. Draw the new vertical line on the far right
+            // We find the "dominant" frequency or represent the whole spectrum
+            // For a "moving picture of lines", we calculate the average color weighted by intensity
+            let r = 0, g = 0, b = 0;
+            let totalWeight = 0;
+
+            // We iterate through frequencies and draw a multi-layered line for depth
+            const x = canvas.width - scrollSpeed;
+            
+            // Clear the new column
+            ctx.fillStyle = '#000';
+            ctx.fillRect(x, 0, scrollSpeed, canvas.height);
+
+            const sliceHeight = canvas.height / (bufferLength / 4); // Use quarter of buffer for clarity
+            
+            for (let i = 0; i < bufferLength / 4; i++) {
+                const intensity = dataArray[i];
+                if (intensity > 0) {
+                    const color = getFrequencyColor(i, intensity);
+                    ctx.fillStyle = color;
+                    // Draw segments vertically from bottom to top (low to high freq)
+                    ctx.fillRect(x, canvas.height - (i * sliceHeight), scrollSpeed, sliceHeight);
+                }
+            }
+
+            animationId = requestAnimationFrame(visualize);
+        }
+
+        // Drag and Drop
+        window.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('border-cyan-500');
+        });
+        window.addEventListener('dragleave', () => {
+            dropZone.classList.remove('border-cyan-500');
+        });
+        window.addEventListener('drop', (e) => {
+            e.preventDefault();
+            handleFile(e.dataTransfer.files[0]);
+        });
+
+    </script>
+</body>
+</html>
