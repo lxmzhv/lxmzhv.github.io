@@ -35,6 +35,11 @@
             </div>
 
             <div class="flex items-center gap-4">
+                <select id="modeSelect" class="bg-slate-800 border border-slate-700 text-slate-300 text-sm rounded-full px-4 py-2 focus:ring-cyan-500 outline-none cursor-pointer shadow-lg">
+                    <option value="supernova">Supernova Radial</option>
+                    <option value="particles">Cosmic Particles</option>
+                </select>
+
                 <label class="cursor-pointer bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-2 rounded-full font-medium transition-colors shadow-lg shadow-cyan-900/20">
                     <span>Upload Audio</span>
                     <input type="file" id="audioInput" accept="audio/*" class="hidden">
@@ -80,31 +85,52 @@
         let startTime = 0;
         let pausedAt = 0;
 
+        // Mode Configuration
+        const modeSelect = document.getElementById('modeSelect');
+        let currentMode = modeSelect.value;
+        let particles = [];
+
+        modeSelect.addEventListener('change', (e) => {
+            currentMode = e.target.value;
+            // Clear screens when switching
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            particles = [];
+            feedbackCtx.fillStyle = '#000';
+            feedbackCtx.fillRect(0, 0, feedbackCanvas.width, feedbackCanvas.height);
+        });
+
         // Configuration
         const fftSize = 2048;
-        const scrollSpeed = 2; // Pixels per frame
+
+        // Setup feedback loop canvas
+        let feedbackCanvas = document.createElement('canvas');
+        let feedbackCtx = feedbackCanvas.getContext('2d');
 
         // Handle Resize
         function resize() {
             // Save existing image before resizing to stretch it later
-            let oldCanvas;
+            let tempCanvas;
             if (canvas.width > 0 && canvas.height > 0) {
-                oldCanvas = document.createElement('canvas');
-                oldCanvas.width = canvas.width;
-                oldCanvas.height = canvas.height;
-                oldCanvas.getContext('2d').drawImage(canvas, 0, 0);
+                tempCanvas = document.createElement('canvas');
+                tempCanvas.width = canvas.width;
+                tempCanvas.height = canvas.height;
+                tempCanvas.getContext('2d').drawImage(canvas, 0, 0);
             }
 
             canvas.width = canvas.clientWidth * window.devicePixelRatio;
             canvas.height = canvas.clientHeight * window.devicePixelRatio;
+            
+            feedbackCanvas.width = canvas.width;
+            feedbackCanvas.height = canvas.height;
 
             // Fill with black initially
             ctx.fillStyle = '#000';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Restore and stretch to new dimensions
-            if (oldCanvas) {
-                ctx.drawImage(oldCanvas, 0, 0, oldCanvas.width, oldCanvas.height, 0, 0, canvas.width, canvas.height);
+            if (tempCanvas) {
+                ctx.drawImage(tempCanvas, 0, 0, tempCanvas.width, tempCanvas.height, 0, 0, canvas.width, canvas.height);
             }
         }
         window.addEventListener('resize', resize);
@@ -213,43 +239,120 @@
             const dataArray = new Uint8Array(bufferLength);
             analyser.getByteFrequencyData(dataArray);
 
-            // 1. Shift existing content to the left
-            const imageData = ctx.getImageData(scrollSpeed, 0, canvas.width - scrollSpeed, canvas.height);
-            ctx.putImageData(imageData, 0, 0);
-
-            // 2. Draw the new vertical line on the far right
-            const x = canvas.width - scrollSpeed;
-
-            // Clear the new column
-            ctx.fillStyle = '#000';
-            ctx.fillRect(x, 0, scrollSpeed, canvas.height);
-
-            // Limit processing to the audible spectrum range (usually lower 70% is most active)
             const activeBins = Math.floor(bufferLength * 0.7);
-
-            // Logarithmic mapping for better utilization of canvas height,
-            // as lower frequencies have more musical information and energy.
-            const minBin = 1; // Skip bin 0 (DC offset/inaudible)
+            const minBin = 1; 
             const logMin = Math.log10(minBin);
             const logMax = Math.log10(activeBins);
             const logRange = logMax - logMin;
 
-            for (let i = minBin; i < activeBins; i++) {
-                const intensity = dataArray[i];
-                if (intensity > 5) { // Small threshold to keep blacks clean
-                    const normalizedLogStart = (Math.log10(i) - logMin) / logRange;
-                    const normalizedLogEnd = (Math.log10(i + 1) - logMin) / logRange;
+            if (currentMode === 'supernova') {
+                // 1. Store current frame in feedback canvas
+                feedbackCtx.clearRect(0, 0, feedbackCanvas.width, feedbackCanvas.height);
+                feedbackCtx.drawImage(canvas, 0, 0);
 
-                    const color = getFrequencyColor(normalizedLogStart, intensity);
-                    ctx.fillStyle = color;
+                // 2. Clear main canvas to black
+                ctx.fillStyle = '#000';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-                    // Compute vertical position (y=canvas.height is bottom, y=0 is top)
-                    const yBottom = canvas.height - (normalizedLogStart * canvas.height);
-                    const yTop = canvas.height - (normalizedLogEnd * canvas.height);
-                    const segmentHeight = Math.max(1, yBottom - yTop);
+                // 3. Draw scaled up feedback (creates the expanding ripple effect)
+                ctx.save();
+                ctx.globalAlpha = 0.92; // smooth fade out
+                ctx.translate(canvas.width / 2, canvas.height / 2);
+                ctx.scale(1.02, 1.02); // Supernova expansion speed
+                ctx.translate(-canvas.width / 2, -canvas.height / 2);
+                ctx.drawImage(feedbackCanvas, 0, 0);
+                ctx.restore();
 
-                    ctx.fillRect(x, Math.floor(yTop), scrollSpeed, Math.ceil(segmentHeight));
+                // 4. Draw new audio ring in the center
+                const cx = canvas.width / 2;
+                const cy = canvas.height / 2;
+                const baseRadius = Math.min(cx, cy) * 0.2; // The inner black hole
+                
+                ctx.lineWidth = Math.max(2, (Math.PI * baseRadius) / activeBins * 1.5);
+                ctx.lineCap = 'round';
+
+                for (let i = minBin; i < activeBins; i++) {
+                    const intensity = dataArray[i];
+                    if (intensity > 5) { 
+                        const normalizedLog = (Math.log10(i) - logMin) / logRange;
+                        const color = getFrequencyColor(normalizedLog, intensity);
+                        
+                        const spikeLength = (intensity / 255) * (Math.min(cx, cy) * 0.35);
+
+                        const angleRight = -Math.PI / 2 + (normalizedLog * Math.PI);
+                        const angleLeft = -Math.PI / 2 - (normalizedLog * Math.PI);
+
+                        ctx.strokeStyle = color;
+
+                        ctx.beginPath();
+                        ctx.moveTo(cx + Math.cos(angleRight) * baseRadius, cy + Math.sin(angleRight) * baseRadius);
+                        ctx.lineTo(cx + Math.cos(angleRight) * (baseRadius + spikeLength), cy + Math.sin(angleRight) * (baseRadius + spikeLength));
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(cx + Math.cos(angleLeft) * baseRadius, cy + Math.sin(angleLeft) * baseRadius);
+                        ctx.lineTo(cx + Math.cos(angleLeft) * (baseRadius + spikeLength), cy + Math.sin(angleLeft) * (baseRadius + spikeLength));
+                        ctx.stroke();
+                    }
                 }
+            } else if (currentMode === 'particles') {
+                // Clear background slowly to create trails
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; 
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Switch to lighter for glowing overlap
+                ctx.globalCompositeOperation = 'lighter';
+                const spawnX = canvas.width - 5;
+
+                for (let i = minBin; i < activeBins; i++) {
+                    const intensity = dataArray[i];
+                    if (intensity > 40) {
+                        const emitProb = (intensity / 255) * 0.6;
+                        if (Math.random() < emitProb) {
+                            const normalizedLog = (Math.log10(i) - logMin) / logRange;
+                            const y = canvas.height - (normalizedLog * canvas.height);
+                            const color = getFrequencyColor(normalizedLog, intensity);
+
+                            // Bass = big/slow, Highs = tiny/fast
+                            const isBass = normalizedLog < 0.2;
+                            const radius = isBass ? (Math.random() * 8 + 4) : (Math.random() * 3 + 1);
+                            const baseSpeed = isBass ? 1 : 4 + normalizedLog * 6;
+                            
+                            particles.push({
+                                x: spawnX,
+                                y: y + (Math.random() - 0.5) * 15,
+                                vx: -(baseSpeed + Math.random() * 3) - (intensity / 100),
+                                vy: (Math.random() - 0.5) * 2,
+                                color: color,
+                                radius: radius,
+                                life: 1.0,
+                                decay: 0.005 + Math.random() * 0.015
+                            });
+                        }
+                    }
+                }
+
+                // Update and draw particles
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.life -= p.decay;
+
+                    if (p.life <= 0 || p.x < 0) {
+                        particles.splice(i, 1);
+                    } else {
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                        ctx.fillStyle = p.color;
+                        ctx.globalAlpha = p.life;
+                        ctx.fill();
+                    }
+                }
+
+                ctx.globalAlpha = 1.0;
+                ctx.globalCompositeOperation = 'source-over';
             }
 
             animationId = requestAnimationFrame(visualize);
