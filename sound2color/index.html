@@ -55,7 +55,7 @@
 
     <!-- Main Visualizer Canvas -->
     <div class="relative w-full flex-grow flex items-center justify-center overflow-hidden rounded-xl border border-slate-800 bg-black">
-        <canvas id="visualizerCanvas" class="w-full h-full"></canvas>
+        <canvas id="visualizerCanvas" class="absolute inset-0 w-full h-full"></canvas>
         <div id="dropZone" class="absolute inset-0 flex items-center justify-center border-2 border-dashed border-slate-700 rounded-xl pointer-events-none transition-opacity duration-500 opacity-30">
             <p class="text-slate-500 italic">Drag audio file here or click Upload</p>
         </div>
@@ -86,20 +86,34 @@
 
         // Handle Resize
         function resize() {
+            // Save existing image before resizing to stretch it later
+            let oldCanvas;
+            if (canvas.width > 0 && canvas.height > 0) {
+                oldCanvas = document.createElement('canvas');
+                oldCanvas.width = canvas.width;
+                oldCanvas.height = canvas.height;
+                oldCanvas.getContext('2d').drawImage(canvas, 0, 0);
+            }
+
             canvas.width = canvas.clientWidth * window.devicePixelRatio;
             canvas.height = canvas.clientHeight * window.devicePixelRatio;
+
             // Fill with black initially
             ctx.fillStyle = '#000';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Restore and stretch to new dimensions
+            if (oldCanvas) {
+                ctx.drawImage(oldCanvas, 0, 0, oldCanvas.width, oldCanvas.height, 0, 0, canvas.width, canvas.height);
+            }
         }
         window.addEventListener('resize', resize);
         resize();
 
         // Frequency to Color Mapping (HSL)
-        function getFrequencyColor(index, intensity, totalBins) {
-            // frequency index is from 0 to totalBins
-            // We map this to Hue (0 to 360)
-            const hue = (index / totalBins) * 360;
+        function getFrequencyColor(normalizedPosition, intensity) {
+            // Map the normalized position (0 to 1) to Hue (0 to 360)
+            const hue = normalizedPosition * 360;
             // Use intensity for Lightness/Saturation
             const lightness = 10 + (intensity / 255) * 70;
             const saturation = 60 + (intensity / 255) * 40;
@@ -212,18 +226,29 @@
 
             // Limit processing to the audible spectrum range (usually lower 70% is most active)
             const activeBins = Math.floor(bufferLength * 0.7);
-            const sliceHeight = canvas.height / activeBins;
 
-            for (let i = 0; i < activeBins; i++) {
+            // Logarithmic mapping for better utilization of canvas height,
+            // as lower frequencies have more musical information and energy.
+            const minBin = 1; // Skip bin 0 (DC offset/inaudible)
+            const logMin = Math.log10(minBin);
+            const logMax = Math.log10(activeBins);
+            const logRange = logMax - logMin;
+
+            for (let i = minBin; i < activeBins; i++) {
                 const intensity = dataArray[i];
                 if (intensity > 5) { // Small threshold to keep blacks clean
-                    const color = getFrequencyColor(i, intensity, activeBins);
+                    const normalizedLogStart = (Math.log10(i) - logMin) / logRange;
+                    const normalizedLogEnd = (Math.log10(i + 1) - logMin) / logRange;
+
+                    const color = getFrequencyColor(normalizedLogStart, intensity);
                     ctx.fillStyle = color;
 
-                    // Draw segments vertically from top to bottom
-                    // Using Math.ceil for height to avoid sub-pixel gaps
-                    const y = canvas.height - (i * sliceHeight);
-                    ctx.fillRect(x, y - sliceHeight, scrollSpeed, Math.ceil(sliceHeight));
+                    // Compute vertical position (y=canvas.height is bottom, y=0 is top)
+                    const yBottom = canvas.height - (normalizedLogStart * canvas.height);
+                    const yTop = canvas.height - (normalizedLogEnd * canvas.height);
+                    const segmentHeight = Math.max(1, yBottom - yTop);
+
+                    ctx.fillRect(x, Math.floor(yTop), scrollSpeed, Math.ceil(segmentHeight));
                 }
             }
 
