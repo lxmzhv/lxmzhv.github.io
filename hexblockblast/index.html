@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hex Blast</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" crossorigin src="./assets/index-CpqhLvis.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/style-iIxgMoqF.css">
+  <script type="module" crossorigin src="./assets/index-BpU3FfA7.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-ByIw7QBG.css">
 </head>
 
 <body>
@@ -122,6 +122,15 @@
             </button>-->
             <button
                 class="bg-slate-800/50 hover:bg-slate-700/50 p-3 rounded-full backdrop-blur-sm border border-slate-700 transition-all active:scale-95"
+                onclick="game.showNewGameModal()" title="New Game">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#4facfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                    <path d="M3 3v5h5"></path>
+                </svg>
+            </button>
+            <button
+                class="bg-slate-800/50 hover:bg-slate-700/50 p-3 rounded-full backdrop-blur-sm border border-slate-700 transition-all active:scale-95"
                 onclick="game.showLeaderboard()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="#4facfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -175,6 +184,15 @@
                 </div>
             </div>
             <button class="btn btn-small" onclick="game.closeExperienceDetails()">CLOSE</button>
+        </div>
+
+        <div id="new-game-modal">
+            <h2 class="text-3xl font-black mb-6 text-white italic text-center">NEW GAME</h2>
+            <p class="text-xl text-slate-300 mb-8 text-center max-w-sm px-4">Are you sure you want to start a new game?<br/>Current progress will be lost.</p>
+            <div class="flex gap-4">
+                <button class="btn btn-small bg-slate-700 hover:bg-slate-600" style="background: #334155; box-shadow: none;" onclick="game.closeNewGameModal()">CANCEL</button>
+                <button class="btn btn-small btn-glow" onclick="game.confirmNewGameAction()">START NEW</button>
+            </div>
         </div>
     </div>
 
