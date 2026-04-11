@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISC Опросник</title>
+  <style>
+    :root {
+      --d-color: #e74c3c;
+      --i-color: #f1c40f;
+      --s-color: #2ecc71;
+      --c-color: #3498db;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #2c3e50;
+      --border: #dce3eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: linear-gradient(180deg, #eef4fb 0%, #ffffff 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 40px;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 12px;
+      line-height: 1.1;
+    }
+
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 16px 50px rgba(44, 62, 80, 0.08);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      margin-top: 28px;
+    }
+
+    .question-card,
+    .question-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .question-card {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .question-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 16px 30px rgba(44, 62, 80, 0.06);
+    }
+
+    .question-card {
+      transition: transform 0.2s ease;
+    }
+
+    .question-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .question-title {
+      font-size: 1rem;
+      margin-bottom: 18px;
+      color: #34495e;
+    }
+
+    .answers {
+      display: grid;
+      gap: 12px;
+    }
+
+    .question-nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-button {
+      width: auto;
+      min-width: 50px;
+      padding: 12px;
+      text-align: center;
+      font-size: 1.2rem;
+      background: #e5ecf4;
+      border: 1px solid #d8e5f3;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .nav-button:hover {
+      background: #d8e5f3;
+      transform: scale(1.05);
+    }
+
+    .nav-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .answer-button:hover {
+      background: #f1f5fa;
+      transform: translateY(-1px);
+    }
+
+    .answer-button.active {
+      border-color: #8ba6c9;
+      background: #e7f0fb;
+    }
+
+    .progress-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .progress-item {
+      display: grid;
+      gap: 8px;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .bar {
+      width: 100%;
+      height: 14px;
+      border-radius: 999px;
+      background: #e5ecf4;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      transition: width 0.35s ease;
+    }
+
+    .bar-d { background: var(--d-color); }
+    .bar-i { background: var(--i-color); }
+    .bar-s { background: var(--s-color); }
+    .bar-c { background: var(--c-color); }
+
+    .score-box {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #f8fbff;
+      border: 1px solid #d8e5f3;
+    }
+
+    .score-row {
+      display: grid;
+      gap: 8px;
+    }
+
+    .summary {
+      margin-top: 24px;
+      color: #4a5d70;
+      line-height: 1.7;
+    }
+
+    .footer {
+      margin-top: 32px;
+      font-size: 0.9rem;
+      color: #6b7e90;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .page { padding: 20px 16px 30px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <h1>DISC Опросник</h1>
+      <p>Ответьте на 24 простых вопроса, чтобы получить распределение вашего стиля общения по модели DISC. После каждого ответа результат обновляется в процентах для каждого класса.</p>
+    </section>
+
+    <section class="result-card">
+      <h2>Текущий результат</h2>
+      <div class="progress-list">
+        <div class="progress-item">
+          <div class="progress-label"><span>Dominance (D)</span><span id="d-value">0%</span></div>
+          <div class="bar"><div class="bar-fill bar-d" id="d-bar"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Influence (I)</span><span id="i-value">0%</span></div>
+          <div class="bar"><div class="bar-fill bar-i" id="i-bar"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Steadiness (S)</span><span id="s-value">0%</span></div>
+          <div class="bar"><div class="bar-fill bar-s" id="s-bar"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Conscientiousness (C)</span><span id="c-value">0%</span></div>
+          <div class="bar"><div class="bar-fill bar-c" id="c-bar"></div></div>
+        </div>
+      </div>
+
+      <div class="score-box">
+        <div class="score-row"><strong>Сумма баллов:</strong> <span id="total-score">0</span></div>
+        <div class="score-row">Выберите ответы, чтобы увидеть изменение весов и процентах.</div>
+      </div>
+    </section>
+
+    <section class="grid" id="questions"></section>
+
+    <div class="footer">DISC: Dominance / Influence / Steadiness / Conscientiousness</div>
+  </main>
+
+  <script>
+    const questions = [
+      {
+        text: 'Когда нужно принять решение быстро, вы:',
+        options: [
+          { label: 'берёте инициативу', weights: { D: 1 } },
+          { label: 'обсуждаете с коллегами', weights: { I: 1 } },
+          { label: 'ждёте удобного момента', weights: { S: 1 } },
+          { label: 'проверяете детали', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'В разговоре вы чаще:',
+        options: [
+          { label: 'говорите прямо и по сути', weights: { D: 1 } },
+          { label: 'рассказываете с эмоциями', weights: { I: 1 } },
+          { label: 'слушаете внимательно', weights: { S: 1 } },
+          { label: 'задаёте уточняющие вопросы', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Ваш идеальный рабочий день:',
+        options: [
+          { label: 'полон задач и скорости', weights: { D: 1 } },
+          { label: 'связанный с общением', weights: { I: 1 } },
+          { label: 'размеренный и предсказуемый', weights: { S: 1 } },
+          { label: 'упорядоченный и аккуратный', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Когда проект идёт не по плану, вы:',
+        options: [
+          { label: 'берёте ответственность', weights: { D: 1 } },
+          { label: 'поддерживаете команду', weights: { I: 1 } },
+          { label: 'успокаиваете людей', weights: { S: 1 } },
+          { label: 'ищете причину ошибки', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'В обсуждении вы предпочитаете:',
+        options: [
+          { label: 'быстро переходить к делу', weights: { D: 1 } },
+          { label: 'делиться идеями', weights: { I: 1 } },
+          { label: 'учитывать других', weights: { S: 1 } },
+          { label: 'сравнивать факты', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Новые идеи вам нравятся, если они:',
+        options: [
+          { label: 'позволяют двигаться вперёд', weights: { D: 1 } },
+          { label: 'вдохновляют команду', weights: { I: 1 } },
+          { label: 'не нарушают ритм', weights: { S: 1 } },
+          { label: 'тщательно продуманы', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Вы скорее:',
+        options: [
+          { label: 'готовы взять риск', weights: { D: 1 } },
+          { label: 'готовы знакомиться с новыми людьми', weights: { I: 1 } },
+          { label: 'предпочитаете стабильность', weights: { S: 1 } },
+          { label: 'предпочитаете точные инструкции', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'При выборе пути вы ориентируетесь на:',
+        options: [
+          { label: 'эффект и результат', weights: { D: 1 } },
+          { label: 'влияние на людей', weights: { I: 1 } },
+          { label: 'спокойствие и безопасность', weights: { S: 1 } },
+          { label: 'порядок и точность', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Вы чувствуете себя увереннее, когда:',
+        options: [
+          { label: 'всё под вашим контролем', weights: { D: 1 } },
+          { label: 'все настроены оптимистично', weights: { I: 1 } },
+          { label: 'ничего не меняется резко', weights: { S: 1 } },
+          { label: 'вы понимаете все детали', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'На встрече вы чаще:',
+        options: [
+          { label: 'предлагаете план действий', weights: { D: 1 } },
+          { label: 'вовлекаете всех в разговор', weights: { I: 1 } },
+          { label: 'поддерживаете спокойную атмосферу', weights: { S: 1 } },
+          { label: 'проверяете цифры и факты', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Если много работы, вы:',
+        options: [
+          { label: 'организуете всё сами', weights: { D: 1 } },
+          { label: 'обсуждаете, кто чем займётся', weights: { I: 1 } },
+          { label: 'делаете своё спокойно', weights: { S: 1 } },
+          { label: 'сначала продумываете план', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'В непредвиденной ситуации вы:',
+        options: [
+          { label: 'действуете сразу', weights: { D: 1 } },
+          { label: 'собираете мнения других', weights: { I: 1 } },
+          { label: 'сохраняете спокойствие', weights: { S: 1 } },
+          { label: 'анализируете, что произошло', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Вас привлекают люди, которые:',
+        options: [
+          { label: 'решительны и уверены', weights: { D: 1 } },
+          { label: 'веселы и дружелюбны', weights: { I: 1 } },
+          { label: 'спокойны и надёжны', weights: { S: 1 } },
+          { label: 'аккуратны и логичны', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Работа вам нравится, когда она:',
+        options: [
+          { label: 'быстро приносит результат', weights: { D: 1 } },
+          { label: 'включает общение', weights: { I: 1 } },
+          { label: 'идёт ровно и без сюрпризов', weights: { S: 1 } },
+          { label: 'требует аккуратности', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Вас раздражает, когда:',
+        options: [
+          { label: 'теряется контроль', weights: { D: 1 } },
+          { label: 'нет живого общения', weights: { I: 1 } },
+          { label: 'мешают спешкой', weights: { S: 1 } },
+          { label: 'делают работу поверхностно', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Вы описываете себя как:',
+        options: [
+          { label: 'человека, который ведёт вперёд', weights: { D: 1 } },
+          { label: 'человека, который вдохновляет', weights: { I: 1 } },
+          { label: 'человека, который подстраивается', weights: { S: 1 } },
+          { label: 'человека, который проверяет', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Вы предпочитаете:',
+        options: [
+          { label: 'решать задачи сразу', weights: { D: 1 } },
+          { label: 'обсудить, как действовать', weights: { I: 1 } },
+          { label: 'следовать знакомому плану', weights: { S: 1 } },
+          { label: 'уточнить шаги', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'В разговоре вам важно:',
+        options: [
+          { label: 'решить проблему быстро', weights: { D: 1 } },
+          { label: 'создать дружелюбную атмосферу', weights: { I: 1 } },
+          { label: 'чтобы собеседнику было комфортно', weights: { S: 1 } },
+          { label: 'чтобы всё было ясно и точно', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Ваше главное качество:',
+        options: [
+          { label: 'скорость и решительность', weights: { D: 1 } },
+          { label: 'энергия и обаяние', weights: { I: 1 } },
+          { label: 'терпение и стабильность', weights: { S: 1 } },
+          { label: 'точность и аккуратность', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Новая задача для вас лучше, если вы:',
+        options: [
+          { label: 'сразу берётесь за дело', weights: { D: 1 } },
+          { label: 'обсуждаете варианты', weights: { I: 1 } },
+          { label: 'привыкаете к новому ритму', weights: { S: 1 } },
+          { label: 'составляете план', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Когда вас просят мнение, вы:',
+        options: [
+          { label: 'говорите, что нужно делать', weights: { D: 1 } },
+          { label: 'делитесь идеей и эмоцией', weights: { I: 1 } },
+          { label: 'даёте совет осторожно', weights: { S: 1 } },
+          { label: 'объясняете, почему', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'Если нужно организовать мероприятие, вы:',
+        options: [
+          { label: 'берёте управление на себя', weights: { D: 1 } },
+          { label: 'задумываете атмосферу', weights: { I: 1 } },
+          { label: 'собираете всё спокойно', weights: { S: 1 } },
+          { label: 'продумываете детали', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'В команде для вас важно:',
+        options: [
+          { label: 'видимый прогресс', weights: { D: 1 } },
+          { label: 'дружеские отношения', weights: { I: 1 } },
+          { label: 'спокойная работа', weights: { S: 1 } },
+          { label: 'ясные правила', weights: { C: 1 } }
+        ]
+      },
+      {
+        text: 'После рабочего дня вы предпочитаете:',
+        options: [
+          { label: 'кратко обсудить результат', weights: { D: 1 } },
+          { label: 'поговорить с кем-то о дне', weights: { I: 1 } },
+          { label: 'отдохнуть в тишине', weights: { S: 1 } },
+          { label: 'разобраться в деталях', weights: { C: 1 } }
+        ]
+      }
+    ];
+
+    const state = { D: 0, I: 0, S: 0, C: 0, total: 0 };
+    const selected = new Array(questions.length).fill(null);
+    let currentQuestion = 0;
+
+    const questionContainer = document.getElementById('questions');
+    const dBar = document.getElementById('d-bar');
+    const iBar = document.getElementById('i-bar');
+    const sBar = document.getElementById('s-bar');
+    const cBar = document.getElementById('c-bar');
+    const dValue = document.getElementById('d-value');
+    const iValue = document.getElementById('i-value');
+    const sValue = document.getElementById('s-value');
+    const cValue = document.getElementById('c-value');
+    const totalScore = document.getElementById('total-score');
+
+    function renderQuestions() {
+      questionContainer.innerHTML = '';
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'question-wrapper';
+
+      // Левая кнопка назад
+      const backButton = document.createElement('button');
+      backButton.type = 'button';
+      backButton.className = 'nav-button';
+      backButton.innerHTML = '&#8592;'; // ←
+      backButton.disabled = currentQuestion === 0;
+      backButton.addEventListener('click', () => {
+        if (currentQuestion > 0) {
+          currentQuestion -= 1;
+          renderQuestions();
+        }
+      });
+      wrapper.appendChild(backButton);
+
+      // Карточка вопроса
+      const question = questions[currentQuestion];
+      const card = document.createElement('div');
+      card.className = 'question-card';
+
+      const title = document.createElement('div');
+      title.className = 'question-title';
+      title.textContent = `Вопрос ${currentQuestion + 1} из ${questions.length}: ${question.text}`;
+      card.appendChild(title);
+
+      const answers = document.createElement('div');
+      answers.className = 'answers';
+
+      question.options.forEach((option, oIndex) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'answer-button';
+        button.textContent = option.label;
+        if (selected[currentQuestion] === oIndex) button.classList.add('active');
+
+        button.addEventListener('click', () => {
+          selected[currentQuestion] = oIndex;
+          recalculateScores();
+          // Автоматический переход к следующему вопросу
+          if (currentQuestion < questions.length - 1) {
+            currentQuestion += 1;
+            renderQuestions();
+          }
+        });
+
+        answers.appendChild(button);
+      });
+
+      card.appendChild(answers);
+      wrapper.appendChild(card);
+
+      // Правая кнопка вперёд
+      const forwardButton = document.createElement('button');
+      forwardButton.type = 'button';
+      forwardButton.className = 'nav-button';
+      forwardButton.innerHTML = '&#8594;'; // →
+      forwardButton.disabled = currentQuestion === questions.length - 1;
+      forwardButton.addEventListener('click', () => {
+        if (currentQuestion < questions.length - 1) {
+          currentQuestion += 1;
+          renderQuestions();
+        }
+      });
+      wrapper.appendChild(forwardButton);
+
+      questionContainer.appendChild(wrapper);
+    }
+
+    function recalculateScores() {
+      state.D = 0;
+      state.I = 0;
+      state.S = 0;
+      state.C = 0;
+      state.total = 0;
+
+      selected.forEach((optionIndex, qIndex) => {
+        if (optionIndex === null) return;
+        const weights = questions[qIndex].options[optionIndex].weights;
+        state.D += weights.D || 0;
+        state.I += weights.I || 0;
+        state.S += weights.S || 0;
+        state.C += weights.C || 0;
+      });
+
+      state.total = state.D + state.I + state.S + state.C;
+      updateResultDisplay();
+    }
+
+    function updateResultDisplay() {
+      const total = state.total || 1;
+      const dPercent = Math.round((state.D / total) * 100);
+      const iPercent = Math.round((state.I / total) * 100);
+      const sPercent = Math.round((state.S / total) * 100);
+      const cPercent = Math.round((state.C / total) * 100);
+
+      dBar.style.width = `${dPercent}%`;
+      iBar.style.width = `${iPercent}%`;
+      sBar.style.width = `${sPercent}%`;
+      cBar.style.width = `${cPercent}%`;
+
+      dValue.textContent = `${dPercent}%`;
+      iValue.textContent = `${iPercent}%`;
+      sValue.textContent = `${sPercent}%`;
+      cValue.textContent = `${cPercent}%`;
+      totalScore.textContent = state.total;
+    }
+
+    renderQuestions();
+    updateResultDisplay();
+  </script>
+</body>
+</html>
