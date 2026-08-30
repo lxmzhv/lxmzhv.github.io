@@ -99,7 +99,7 @@ let diceValue = 0;
 let phase = 'setup'; // setup | roll | direction | animating | win
 let displayPos = []; // { row, col } used for rendering (updated during animation)
 let animPixels = []; // { x, y } pixel-level override during smooth animation
-let flashCells = [];
+let swayingTrees = []; // { row, col, startTime }
 let collisionFlash = null;
 let hoveredHex = null;
 let canvasDice = null; // { value, rolling } — large dice drawn on canvas during roll
@@ -263,7 +263,7 @@ function startGame() {
 
   displayPos = players.map(p => ({ row: p.row, col: p.col }));
   animPixels = new Array(numPlayers).fill(null);
-  flashCells = [];
+  swayingTrees = [];
   collisionFlash = null;
   canvasDice = null;
   aiPaused = false;
@@ -505,15 +505,24 @@ async function animateMove(pIdx, fromRow, fromCol, toRow, toCol) {
   });
 }
 
-async function flashCell(row, col, times = 2) {
-  for (let i = 0; i < times; i++) {
-    flashCells.push({ row, col });
-    render();
-    await sleep(100);
-    flashCells = flashCells.filter(f => !(f.row === row && f.col === col));
-    render();
-    await sleep(60);
-  }
+const SWAY_DURATION = 620; // ms
+
+async function swayTree(row, col) {
+  const entry = { row, col, startTime: performance.now() };
+  swayingTrees.push(entry);
+  await new Promise(resolve => {
+    function frame() {
+      if (performance.now() - entry.startTime >= SWAY_DURATION) {
+        swayingTrees = swayingTrees.filter(s => s !== entry);
+        render();
+        resolve();
+        return;
+      }
+      render();
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  });
 }
 
 async function playEvents(events, finalPos) {
@@ -528,9 +537,9 @@ async function playEvents(events, finalPos) {
 
     } else if (ev.type === 'bounce') {
       if (ev.wallPos && isValid(ev.wallPos.row, ev.wallPos.col)) {
-        await flashCell(ev.wallPos.row, ev.wallPos.col);
+        await swayTree(ev.wallPos.row, ev.wallPos.col);
       } else {
-        await sleep(160);
+        await sleep(SWAY_DURATION);
       }
 
     } else if (ev.type === 'collision') {
@@ -687,7 +696,7 @@ async function chooseDir(dirName) {
 
 function resetGame() {
   hoveredHex = null;
-  flashCells = [];
+  swayingTrees = [];
   collisionFlash = null;
   canvasDice = null;
   aiPaused = false;
@@ -853,7 +862,7 @@ function render() {
   ctx.fillStyle = '#0d1f0d';
   ctx.fillRect(0, 0, canvasW, canvasH);
 
-  const flashSet = new Set(flashCells.map(f => `${f.row},${f.col}`));
+  const now = performance.now();
 
   for (let row = 0; row < ROWS; row++) {
     for (let col = 0; col < COLS; col++) {
@@ -861,11 +870,9 @@ function render() {
       const isTree  = board[row][col] === 'tree';
       const isStart = col === 0;
       const isGoal  = col === COLS - 1;
-      const isFlash = flashSet.has(`${row},${col}`);
 
       let fill, stroke;
-      if (isFlash)       { fill = '#ff7043'; stroke = '#ff3d00'; }
-      else if (isTree)   { fill = '#1a3a1a'; stroke = '#2a5a2a'; }
+      if (isTree)        { fill = '#1a3a1a'; stroke = '#2a5a2a'; }
       else if (isStart)  { fill = '#2a5a2a'; stroke = '#4caf50'; }
       else if (isGoal)   { fill = '#4a3a10'; stroke = '#ffd54f'; }
       else               { fill = '#2a5236'; stroke = '#3a7a4a'; }
@@ -873,10 +880,28 @@ function render() {
       drawHex(ctx, x, y, hexSize - 1, fill, stroke);
 
       if (isTree) {
-        ctx.font = `${Math.round(hexSize * 0.78)}px serif`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText('🌲', x, y);
+        const sway = swayingTrees.find(s => s.row === row && s.col === col);
+        if (sway) {
+          // Damped cosine: deflects on impact, oscillates back to rest
+          const t = Math.min((now - sway.startTime) / SWAY_DURATION, 1);
+          const angle = Math.cos(t * Math.PI * 3) * (Math.PI / 6) * Math.pow(1 - t, 0.7);
+          const treeSize = Math.round(hexSize * 0.78);
+          // Rotate around the base of the trunk (bottom-center of the emoji)
+          const trunkY = y + hexSize * 0.22;
+          ctx.save();
+          ctx.translate(x, trunkY);
+          ctx.rotate(angle);
+          ctx.font = `${treeSize}px serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('🌲', 0, -hexSize * 0.22);
+          ctx.restore();
+        } else {
+          ctx.font = `${Math.round(hexSize * 0.78)}px serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('🌲', x, y);
+        }
       }
     }
   }
