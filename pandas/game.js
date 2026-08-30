@@ -48,6 +48,12 @@ const PLAYER_COLORS = ['#e53935', '#1e88e5', '#43a047', '#fb8c00', '#8e24aa', '#
 const PLAYER_LABELS = ['1', '2', '3', '4', '5', '6'];
 
 // =====================================================================
+// SETUP STATE
+// =====================================================================
+let selectedNumPlayers = 2;
+let playerTypes = ['human', 'ai']; // per-player: 'human' | 'ai'
+
+// =====================================================================
 // GAME STATE
 // =====================================================================
 let board = [];       // board[row][col] = 'grass' | 'tree'
@@ -61,6 +67,7 @@ let animPixels = []; // { x, y } pixel-level override during smooth animation
 let flashCells = [];
 let collisionFlash = null;
 let hoveredHex = null;
+let canvasDice = null; // { value, rolling } — large dice drawn on canvas during roll
 
 // =====================================================================
 // HEX MATH
@@ -170,23 +177,25 @@ function shuffleArray(arr) {
 // =====================================================================
 // GAME INITIALIZATION
 // =====================================================================
-function startGame(np) {
-  numPlayers = np;
-  board = generateBoard(np);
+function startGame() {
+  numPlayers = selectedNumPlayers;
+  saveSetup();
+  board = generateBoard(numPlayers);
 
   const leftGrass = [];
   for (let r = 0; r < ROWS; r++) if (board[r][0] === 'grass') leftGrass.push(r);
   shuffleArray(leftGrass);
 
   players = [];
-  for (let i = 0; i < np; i++) {
+  for (let i = 0; i < numPlayers; i++) {
     players.push({ row: leftGrass[i], col: 0, color: PLAYER_COLORS[i], label: PLAYER_LABELS[i] });
   }
 
   displayPos = players.map(p => ({ row: p.row, col: p.col }));
-  animPixels = new Array(np).fill(null);
+  animPixels = new Array(numPlayers).fill(null);
   flashCells = [];
   collisionFlash = null;
+  canvasDice = null;
 
   currentPlayer = 0;
   diceValue = 0;
@@ -238,7 +247,7 @@ function setupCanvasEvents() {
   });
 
   canvas.addEventListener('click', e => {
-    if (phase !== 'direction') return;
+    if (phase !== 'direction' || playerTypes[currentPlayer] === 'ai') return;
     const hex = hexUnderPointer(e.clientX, e.clientY);
     const panda = displayPos[currentPlayer];
     const dir = getDirToNeighbor(panda.row, panda.col, hex.row, hex.col);
@@ -247,7 +256,7 @@ function setupCanvasEvents() {
 
   canvas.addEventListener('touchstart', e => {
     e.preventDefault();
-    if (phase !== 'direction') return;
+    if (phase !== 'direction' || playerTypes[currentPlayer] === 'ai') return;
     const touch = e.changedTouches[0];
     const hex = hexUnderPointer(touch.clientX, touch.clientY);
     const panda = displayPos[currentPlayer];
@@ -269,13 +278,14 @@ function updateUI() {
   turnPanda.textContent = `Panda ${p.label}`;
   turnPanda.style.color = p.color;
 
+  const isAITurn = playerTypes[currentPlayer] === 'ai';
   const phaseInfo = document.getElementById('phase-info');
   if (phase === 'roll') phaseInfo.textContent = 'Roll the dice to begin your move';
-  else if (phase === 'direction') phaseInfo.textContent = `Rolled ${diceValue} — choose a direction`;
+  else if (phase === 'direction') phaseInfo.textContent = isAITurn ? `Rolled ${diceValue} — AI is thinking…` : `Rolled ${diceValue} — choose a direction`;
   else if (phase === 'animating') phaseInfo.textContent = 'Moving…';
 
   document.querySelectorAll('.dir-btn').forEach(btn => {
-    btn.disabled = (phase !== 'direction');
+    btn.disabled = (phase !== 'direction') || isAITurn;
   });
 
   const list = document.getElementById('player-list');
@@ -284,21 +294,24 @@ function updateUI() {
     const row = document.createElement('div');
     row.className = 'player-row' + (i === currentPlayer && phase !== 'win' ? ' active' : '');
     if (pl.col === COLS - 1) row.className += ' winner';
+    const typeIcon = playerTypes[i] === 'ai' ? ' 🤖' : '';
     row.innerHTML = `
       <div class="player-dot" style="background:${pl.color}"></div>
-      <div class="player-name">Panda ${pl.label}</div>
+      <div class="player-name">Panda ${pl.label}${typeIcon}</div>
       <div class="player-pos">col ${pl.col + 1}/${COLS}</div>
     `;
     list.appendChild(row);
   });
 
-  const diceContainer = document.getElementById('dice-display');
-  diceContainer.innerHTML = diceValue > 0
-    ? renderDiceSVG(diceValue)
-    : '<span style="font-size:2rem;color:#81c784">?</span>';
+  const diceInline = document.getElementById('dice-inline');
+  if (diceInline) {
+    diceInline.innerHTML = diceValue > 0
+      ? renderDiceSVG(diceValue)
+      : '<span style="font-size:1rem;color:#81c784;padding:0 4px">?</span>';
+  }
 }
 
-function renderDiceSVG(n) {
+function diceDots(n) {
   const dotPos = {
     1: [[50, 50]],
     2: [[25, 25], [75, 75]],
@@ -307,10 +320,17 @@ function renderDiceSVG(n) {
     5: [[25, 25], [75, 25], [50, 50], [25, 75], [75, 75]],
     6: [[25, 25], [75, 25], [25, 50], [75, 50], [25, 75], [75, 75]],
   };
-  const dots = dotPos[n].map(([cx, cy]) =>
+  return dotPos[n].map(([cx, cy]) =>
     `<circle cx="${cx}" cy="${cy}" r="8" fill="#e8f5e9"/>`
   ).join('');
-  return `<svg width="70" height="70" viewBox="0 0 100 100">${dots}</svg>`;
+}
+
+function renderDiceSVG(n, size = 36) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100">${diceDots(n)}</svg>`;
+}
+
+function renderDiceSVGFlex(n) {
+  return `<svg width="100%" height="100%" viewBox="0 0 100 100">${diceDots(n)}</svg>`;
 }
 
 function addLog(msg, highlight = false) {
@@ -333,7 +353,8 @@ function simulateMove(startPlayerIdx, dirName, steps) {
     return simPos.findIndex((p, i) => i !== excludeIdx && p.row === row && p.col === col);
   }
 
-  function doSim(pIdx, dir, stepsLeft) {
+  function doSim(pIdx, dir, stepsLeft, inChain = new Set()) {
+    inChain.add(pIdx);
     let bounced = false;
     let safetyCount = 0;
 
@@ -354,14 +375,23 @@ function simulateMove(startPlayerIdx, dirName, steps) {
       } else {
         const otherIdx = getPandaAt(next.row, next.col, pIdx);
         if (otherIdx !== -1) {
-          events.push({ type: 'collision', player: pIdx, other: otherIdx, stepsLeft });
-          doSim(otherIdx, dir, stepsLeft);
-          return;
+          if (inChain.has(otherIdx)) {
+            // Circular collision chain — treat the blocking panda as a wall
+            if (bounced) { events.push({ type: 'stuck', player: pIdx }); return; }
+            dir = REVERSE[dir];
+            bounced = true;
+            events.push({ type: 'bounce', player: pIdx, newDir: dir, wallPos: next });
+          } else {
+            events.push({ type: 'collision', player: pIdx, other: otherIdx, stepsLeft });
+            doSim(otherIdx, dir, stepsLeft, inChain);
+            return;
+          }
+        } else {
+          simPos[pIdx] = { ...next };
+          events.push({ type: 'move', player: pIdx, to: { ...next } });
+          stepsLeft--;
+          bounced = false;
         }
-        simPos[pIdx] = { ...next };
-        events.push({ type: 'move', player: pIdx, to: { ...next } });
-        stepsLeft--;
-        bounced = false;
       }
     }
   }
@@ -481,24 +511,98 @@ async function playEvents(events, finalPos) {
 // =====================================================================
 function rollDice() {
   if (phase !== 'roll') return;
-  const d = document.getElementById('dice-display');
-  d.classList.add('rolling');
-  setTimeout(() => d.classList.remove('rolling'), 420);
+
+  // Keep header dice showing ? until the fly animation lands
+  const diceEl = document.getElementById('dice-inline');
+  if (diceEl) diceEl.innerHTML = '<span style="font-size:1rem;color:#81c784;padding:0 4px">?</span>';
+
+  canvasDice = { value: Math.floor(Math.random() * 6) + 1, rolling: true };
+  render();
 
   let count = 0;
   const interval = setInterval(() => {
-    d.innerHTML = renderDiceSVG(Math.floor(Math.random() * 6) + 1);
+    if (phase !== 'roll') { clearInterval(interval); canvasDice = null; return; }
+    canvasDice.value = Math.floor(Math.random() * 6) + 1;
+    render();
     count++;
-    if (count >= 6) {
+    if (count >= 8) {
       clearInterval(interval);
       diceValue = Math.floor(Math.random() * 6) + 1;
-      d.innerHTML = renderDiceSVG(diceValue);
-      phase = 'direction';
-      addLog(`🎲 Panda ${players[currentPlayer].label} rolled ${diceValue}`);
-      updateUI();
+      canvasDice = { value: diceValue, rolling: false };
       render();
+      addLog(`🎲 Panda ${players[currentPlayer].label} rolled ${diceValue}`);
+      setTimeout(flyDiceToHeader, 1000);
     }
-  }, 60);
+  }, 65);
+}
+
+function flyDiceToHeader() {
+  if (phase !== 'roll') { canvasDice = null; return; }
+
+  const canvas  = document.getElementById('gameCanvas');
+  const diceEl  = document.getElementById('dice-inline');
+  if (!canvas || !diceEl) { canvasDice = null; finishRoll(); return; }
+
+  const cRect  = canvas.getBoundingClientRect();
+  const dRect  = diceEl.getBoundingClientRect();
+  const scale  = cRect.width / canvasW;
+  const fromS  = hexSize * 1.2 * 2 * scale;     // CSS-pixel side of canvas dice
+  const fromX  = cRect.left + cRect.width  / 2;  // canvas centre in viewport coords
+  const fromY  = cRect.top  + cRect.height / 2;
+  const toS    = dRect.width;
+  const toX    = dRect.left + toS / 2;
+  const toY    = dRect.top  + toS / 2;
+
+  const fly = document.createElement('div');
+  fly.style.cssText = `
+    position:fixed; z-index:9999; pointer-events:none;
+    width:${fromS}px; height:${fromS}px;
+    left:${fromX - fromS / 2}px; top:${fromY - fromS / 2}px;
+    border-radius:${fromS * 0.09}px;
+    border:${Math.max(2, Math.round(fromS * 0.03))}px solid #4caf50;
+    background:#1a3a1a;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 8px 32px rgba(0,0,0,0.65);
+    overflow:hidden;
+    transition:left .45s cubic-bezier(.4,0,.2,1),
+               top .45s cubic-bezier(.4,0,.2,1),
+               width .45s cubic-bezier(.4,0,.2,1),
+               height .45s cubic-bezier(.4,0,.2,1),
+               border-radius .45s ease,
+               opacity .12s ease .36s;
+  `;
+  fly.innerHTML = renderDiceSVGFlex(diceValue);
+  document.body.appendChild(fly);
+
+  canvasDice = null;
+  render();
+
+  // Double-rAF ensures initial styles are committed before transition fires
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    fly.style.left         = `${toX - toS / 2}px`;
+    fly.style.top          = `${toY - toS / 2}px`;
+    fly.style.width        = `${toS}px`;
+    fly.style.height       = `${toS}px`;
+    fly.style.borderRadius = '8px';
+    fly.style.opacity      = '0';
+  }));
+
+  setTimeout(() => { fly.remove(); finishRoll(); }, 520);
+}
+
+function finishRoll() {
+  phase = 'direction';
+  updateUI();
+  // Small pop animation on the header dice when it appears
+  const diceEl = document.getElementById('dice-inline');
+  if (diceEl) {
+    diceEl.classList.remove('dice-pop');
+    void diceEl.offsetWidth;
+    diceEl.classList.add('dice-pop');
+    setTimeout(() => diceEl.classList.remove('dice-pop'), 350);
+  }
+  render();
+  if (playerTypes[currentPlayer] === 'ai') setTimeout(aiChooseDir, 700);
 }
 
 async function chooseDir(dirName) {
@@ -506,6 +610,18 @@ async function chooseDir(dirName) {
   addLog(`➡ Panda ${players[currentPlayer].label} moves ${dirName} (${diceValue} steps)`);
   const { events, finalPos } = simulateMove(currentPlayer, dirName, diceValue);
   await playEvents(events, finalPos);
+}
+
+function resetGame() {
+  hoveredHex = null;
+  flashCells = [];
+  collisionFlash = null;
+  canvasDice = null;
+  phase = 'setup';
+  document.getElementById('game-screen').style.display = 'none';
+  document.getElementById('setup-screen').style.display = 'flex';
+  renderPlayerConfig();
+  document.getElementById('player-config').style.display = 'flex';
 }
 
 function showWin(winnerIdx) {
@@ -519,6 +635,53 @@ function showWin(winnerIdx) {
 // =====================================================================
 // RENDERING
 // =====================================================================
+function roundRectPath(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.arcTo(x + w, y, x + w, y + r, r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+  ctx.lineTo(x + r, y + h);
+  ctx.arcTo(x, y + h, x, y + h - r, r);
+  ctx.lineTo(x, y + r);
+  ctx.arcTo(x, y, x + r, y, r);
+  ctx.closePath();
+}
+
+function drawCanvasDice(ctx, value) {
+  const s  = hexSize * 1.2;        // half-side (dice = 2× panda diameter)
+  const r  = s * 0.18;
+  const cx = canvasW / 2;
+  const cy = canvasH / 2;
+
+  ctx.shadowColor = 'rgba(0,0,0,0.75)';
+  ctx.shadowBlur  = 30;
+  roundRectPath(ctx, cx - s, cy - s, s * 2, s * 2, r);
+  ctx.fillStyle = '#1a3a1a';
+  ctx.fill();
+
+  ctx.shadowBlur = 0;
+  ctx.strokeStyle = '#4caf50';
+  ctx.lineWidth   = Math.max(2, s * 0.06);
+  ctx.stroke();
+
+  const dotPositions = {
+    1: [[0,    0   ]],
+    2: [[-0.4,-0.4 ], [ 0.4, 0.4]],
+    3: [[-0.4,-0.4 ], [ 0,   0  ], [ 0.4, 0.4]],
+    4: [[-0.4,-0.4 ], [ 0.4,-0.4], [-0.4, 0.4], [ 0.4, 0.4]],
+    5: [[-0.4,-0.4 ], [ 0.4,-0.4], [ 0,   0  ], [-0.4, 0.4], [ 0.4, 0.4]],
+    6: [[-0.4,-0.4 ], [ 0.4,-0.4], [-0.4, 0  ], [ 0.4, 0  ], [-0.4, 0.4], [ 0.4, 0.4]],
+  };
+  ctx.fillStyle = '#e8f5e9';
+  for (const [dx, dy] of dotPositions[value]) {
+    ctx.beginPath();
+    ctx.arc(cx + dx * s, cy + dy * s, s * 0.11, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
 function drawHex(ctx, cx, cy, size, fill, stroke) {
   ctx.beginPath();
   for (let i = 0; i < 6; i++) {
@@ -717,6 +880,124 @@ function render() {
       }
     }
   }
+
+  // Large dice overlay during roll phase — drawn last, on top of everything
+  if (canvasDice) {
+    ctx.save();
+    ctx.fillStyle = 'rgba(0,0,0,0.38)';
+    ctx.fillRect(0, 0, canvasW, canvasH);
+    if (canvasDice.rolling) {
+      ctx.translate(canvasW / 2, canvasH / 2);
+      ctx.rotate((Math.random() - 0.5) * 0.07);
+      ctx.translate(-canvasW / 2, -canvasH / 2);
+    }
+    drawCanvasDice(ctx, canvasDice.value);
+    ctx.restore();
+  }
+}
+
+// =====================================================================
+// SETUP / PLAYER CONFIG
+// =====================================================================
+function selectNumPlayers(n) {
+  selectedNumPlayers = n;
+  while (playerTypes.length < n) playerTypes.push('ai');
+  playerTypes = playerTypes.slice(0, n);
+  renderPlayerConfig();
+  document.getElementById('player-config').style.display = 'flex';
+}
+
+function renderPlayerConfig() {
+  document.querySelectorAll('.player-btn').forEach(btn => {
+    btn.classList.toggle('selected', parseInt(btn.textContent) === selectedNumPlayers);
+  });
+
+  const list = document.getElementById('player-type-list');
+  list.innerHTML = '';
+  for (let i = 0; i < selectedNumPlayers; i++) {
+    const type = playerTypes[i];
+    const row = document.createElement('div');
+    row.className = 'player-type-row';
+    row.innerHTML = `
+      <div class="player-dot-setup" style="background:${PLAYER_COLORS[i]}"></div>
+      <span class="player-type-name">Panda ${PLAYER_LABELS[i]}</span>
+      <div class="type-toggle">
+        <button class="type-btn${type === 'human' ? ' active' : ''}" onclick="setPlayerType(${i},'human')">👤 Human</button>
+        <button class="type-btn${type === 'ai'    ? ' active' : ''}" onclick="setPlayerType(${i},'ai')">🤖 AI</button>
+      </div>
+    `;
+    list.appendChild(row);
+  }
+}
+
+function setPlayerType(idx, type) {
+  playerTypes[idx] = type;
+  renderPlayerConfig();
+}
+
+function saveSetup() {
+  try {
+    localStorage.setItem('pandas-setup', JSON.stringify({ numPlayers: selectedNumPlayers, playerTypes }));
+  } catch (e) {}
+}
+
+function loadSetup() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('pandas-setup'));
+    if (saved && Number.isInteger(saved.numPlayers) && saved.numPlayers >= 2 && saved.numPlayers <= 6) {
+      selectedNumPlayers = saved.numPlayers;
+      const types = saved.playerTypes;
+      if (Array.isArray(types) && types.length === selectedNumPlayers &&
+          types.every(t => t === 'human' || t === 'ai')) {
+        playerTypes = types;
+      } else {
+        playerTypes = Array.from({ length: selectedNumPlayers }, (_, i) => i === 0 ? 'human' : 'ai');
+      }
+      renderPlayerConfig();
+      document.getElementById('player-config').style.display = 'flex';
+    }
+  } catch (e) {}
+}
+
+// =====================================================================
+// AI
+// =====================================================================
+function scoreMove(pIdx, dirName) {
+  const { events, finalPos } = simulateMove(pIdx, dirName, diceValue);
+  let score = 0;
+
+  // Own column progress (primary objective)
+  score += (finalPos[pIdx].col - players[pIdx].col) * 10;
+
+  // Win instantly
+  if (finalPos[pIdx].col === COLS - 1) score += 200;
+
+  // Stuck (bounced twice, no progress)
+  if (events.some(e => e.type === 'stuck' && e.player === pIdx)) score -= 8;
+
+  // Penalise advancing opponents
+  for (let i = 0; i < players.length; i++) {
+    if (i === pIdx) continue;
+    const adv = finalPos[i].col - players[i].col;
+    if (adv > 0) score -= adv * 4;
+    if (finalPos[i].col === COLS - 1) score -= 200;
+  }
+
+  // Small noise so equal-score directions don't always resolve the same way
+  score += (Math.random() - 0.5) * 1.5;
+  return score;
+}
+
+function aiChooseDir() {
+  if (phase !== 'direction') return;
+  let bestScore = -Infinity;
+  let bestDir = DIR_NAMES[0];
+  const shuffled = [...DIR_NAMES].sort(() => Math.random() - 0.5);
+  for (const dir of shuffled) {
+    const s = scoreMove(currentPlayer, dir);
+    if (s > bestScore) { bestScore = s; bestDir = dir; }
+  }
+  chooseDir(bestDir);
 }
 
 // =====================================================================
@@ -728,7 +1009,7 @@ document.addEventListener('keydown', e => {
     KeyQ: 'NW', KeyW: 'NE', KeyA: 'SW', KeyS: 'SE',
     Numpad6: 'E', Numpad4: 'W', Numpad9: 'NE', Numpad7: 'NW', Numpad1: 'SW', Numpad3: 'SE',
   };
-  if (phase === 'direction' && keyDirMap[e.code]) {
+  if (phase === 'direction' && playerTypes[currentPlayer] !== 'ai' && keyDirMap[e.code]) {
     e.preventDefault();
     chooseDir(keyDirMap[e.code]);
   }
@@ -742,3 +1023,5 @@ window.addEventListener('resize', () => {
   canvas.height = canvasH;
   render();
 });
+
+loadSetup();

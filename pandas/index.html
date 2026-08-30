@@ -16,12 +16,18 @@
   <div>
     <div class="section-label">Number of players:</div>
     <div class="player-btns">
-      <button class="player-btn" onclick="startGame(2)">2</button>
-      <button class="player-btn" onclick="startGame(3)">3</button>
-      <button class="player-btn" onclick="startGame(4)">4</button>
-      <button class="player-btn" onclick="startGame(5)">5</button>
-      <button class="player-btn" onclick="startGame(6)">6</button>
+      <button class="player-btn" onclick="selectNumPlayers(2)">2</button>
+      <button class="player-btn" onclick="selectNumPlayers(3)">3</button>
+      <button class="player-btn" onclick="selectNumPlayers(4)">4</button>
+      <button class="player-btn" onclick="selectNumPlayers(5)">5</button>
+      <button class="player-btn" onclick="selectNumPlayers(6)">6</button>
     </div>
+  </div>
+
+  <div id="player-config">
+    <div class="section-label">Player types:</div>
+    <div id="player-type-list"></div>
+    <button class="start-game-btn" onclick="startGame()">Start Game ▶</button>
   </div>
 
   <div class="rules-box">
@@ -40,9 +46,10 @@
 <div id="game-screen">
   <div id="game-header">
     <div id="turn-info">
-      Turn: <span id="turn-panda">—</span>
+      Turn: <span id="turn-panda">—</span><span id="dice-inline"></span>
     </div>
     <div id="phase-info">Roll the dice to begin your move</div>
+    <button id="reset-btn" onclick="resetGame()">↩ Reset</button>
     <div id="legend">
       <div class="legend-item">
         <div class="legend-box" style="background:#3a7a3a;border:1px solid #4caf50"></div> Start
@@ -67,11 +74,6 @@
       <div class="panel-card">
         <h3>Players</h3>
         <div id="player-list"></div>
-      </div>
-
-      <div class="panel-card">
-        <h3>Dice</h3>
-        <div id="dice-display"><span style="font-size:2rem;color:#81c784">?</span></div>
       </div>
 
       <div class="panel-card">
