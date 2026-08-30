@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandas in a Forest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =================== SETUP =================== -->
+<div id="setup-screen">
+  <h1>🐼 Pandas in a Forest</h1>
+  <p class="subtitle">Race your panda from the green side to the golden side of the forest!</p>
+
+  <div>
+    <div class="section-label">Number of players:</div>
+    <div class="player-btns">
+      <button class="player-btn" onclick="startGame(2)">2</button>
+      <button class="player-btn" onclick="startGame(3)">3</button>
+      <button class="player-btn" onclick="startGame(4)">4</button>
+      <button class="player-btn" onclick="startGame(5)">5</button>
+      <button class="player-btn" onclick="startGame(6)">6</button>
+    </div>
+  </div>
+
+  <div class="rules-box">
+    <h3>📜 How To Play</h3>
+    <li>🎲 Roll the d6 dice to get N movement steps</li>
+    <li>↗ Choose one of 6 hex directions to move</li>
+    <li>🌲 Hitting a tree <b>bounces</b> you back (reverses direction)</li>
+    <li>🐼 Hitting another panda transfers your remaining momentum to them</li>
+    <li>🏆 First panda to reach the <b>gold side</b> wins!</li>
+    <li>🟩 Start: left (green) column &nbsp;→&nbsp; 🟨 Goal: right (gold) column</li>
+    <li><small>Keyboard: Q/W/A/S/←/→ = choose direction</small></li>
+  </div>
+</div>
+
+<!-- =================== GAME =================== -->
+<div id="game-screen">
+  <div id="game-header">
+    <div id="turn-info">
+      Turn: <span id="turn-panda">—</span>
+    </div>
+    <div id="phase-info">Roll the dice to begin your move</div>
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-box" style="background:#3a7a3a;border:1px solid #4caf50"></div> Start
+      </div>
+      <div class="legend-item">
+        <div class="legend-box" style="background:#6b5a1a;border:1px solid #ffd54f"></div> Goal
+      </div>
+      <div class="legend-item">
+        <div class="legend-box" style="background:#2a5236;"></div> Grass
+      </div>
+      <div class="legend-item">
+        <div class="legend-box" style="background:#1a3a1a;border:1px solid #4a7a4a"></div> Tree
+      </div>
+    </div>
+  </div>
+
+  <div id="game-main">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="side-panel">
+
+      <div class="panel-card">
+        <h3>Players</h3>
+        <div id="player-list"></div>
+      </div>
+
+      <div class="panel-card">
+        <h3>Dice</h3>
+        <div id="dice-display"><span style="font-size:2rem;color:#81c784">?</span></div>
+      </div>
+
+      <div class="panel-card">
+        <h3>Direction</h3>
+        <div class="dir-pad">
+          <div class="dir-row">
+            <button class="dir-btn" onclick="chooseDir('NW')">
+              <span class="arrow">↖</span><span class="label">NW</span>
+            </button>
+            <button class="dir-btn" onclick="chooseDir('NE')">
+              <span class="arrow">↗</span><span class="label">NE</span>
+            </button>
+          </div>
+          <div class="dir-row">
+            <button class="dir-btn" onclick="chooseDir('W')">
+              <span class="arrow">←</span><span class="label">W</span>
+            </button>
+            <button class="dir-btn" onclick="chooseDir('E')">
+              <span class="arrow">→</span><span class="label">E</span>
+            </button>
+          </div>
+          <div class="dir-row">
+            <button class="dir-btn" onclick="chooseDir('SW')">
+              <span class="arrow">↙</span><span class="label">SW</span>
+            </button>
+            <button class="dir-btn" onclick="chooseDir('SE')">
+              <span class="arrow">↘</span><span class="label">SE</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <h3>Log</h3>
+        <div id="log-list"></div>
+      </div>
+
+    </div><!-- #side-panel -->
+  </div><!-- #game-main -->
+</div><!-- #game-screen -->
+
+<!-- =================== WIN =================== -->
+<div id="win-screen">
+  <div class="win-card">
+    <h1>🏆 Winner! 🏆</h1>
+    <div class="win-player-name" id="win-name">—</div>
+    <div class="win-sub">reached the other side of the forest!</div>
+    <button class="play-again-btn" onclick="location.reload()">Play Again</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

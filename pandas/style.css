@@ -1,0 +1,344 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0d1f0d;
+  color: #e8f5e9;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#setup-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+#setup-screen h1 {
+  font-size: 3rem;
+  color: #a5d6a7;
+  text-shadow: 0 0 30px rgba(165,214,167,0.6);
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #81c784;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 400px;
+}
+
+.section-label {
+  font-size: 1.1rem;
+  color: #a5d6a7;
+  margin-bottom: 4px;
+}
+
+.player-btns {
+  display: flex;
+  gap: 14px;
+}
+
+.player-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #4caf50;
+  background: #1b5e20;
+  color: #c8e6c9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.player-btn:hover {
+  background: #2e7d32;
+  transform: scale(1.15);
+  box-shadow: 0 0 16px rgba(76,175,80,0.6);
+}
+
+.rules-box {
+  background: #122912;
+  border: 1px solid #2e7d32;
+  border-radius: 12px;
+  padding: 20px 28px;
+  max-width: 420px;
+  width: 100%;
+}
+.rules-box h3 {
+  color: #66bb6a;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.rules-box li {
+  color: #c8e6c9;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  list-style: none;
+}
+
+#game-screen {
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+  overflow: hidden;
+  padding: 12px;
+  gap: 10px;
+}
+
+#game-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  background: #122912;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid #2e7d32;
+}
+
+#turn-info {
+  font-size: 1.1rem;
+  color: #a5d6a7;
+  flex: 1;
+}
+
+#turn-panda {
+  font-weight: bold;
+}
+
+#phase-info {
+  font-size: 0.9rem;
+  color: #66bb6a;
+}
+
+#game-main {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1;
+  min-height: 0;
+}
+
+canvas {
+  border-radius: 12px;
+  border: 2px solid #2e7d32;
+  box-shadow: 0 0 24px rgba(76,175,80,0.25);
+  display: block;
+  flex-shrink: 0;
+}
+
+#side-panel {
+  width: 210px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  align-self: stretch;
+}
+
+.panel-card {
+  background: #122912;
+  border: 1px solid #2e7d32;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.panel-card h3 {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+/* Players list */
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  transition: background 0.2s;
+}
+.player-row.active {
+  background: #1a4a1a;
+  outline: 1px solid #4caf50;
+}
+.player-row.winner {
+  background: #3a3a1a;
+  outline: 1px solid #ffd54f;
+}
+.player-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.player-name {
+  flex: 1;
+  color: #c8e6c9;
+}
+.player-pos {
+  color: #66bb6a;
+  font-size: 0.78rem;
+}
+
+/* Dice */
+#dice-display {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  border: 2px solid #4caf50;
+  background: #1a3a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: #e8f5e9;
+  margin: 0 auto 10px;
+  transition: transform 0.1s;
+  user-select: none;
+  position: relative;
+}
+#dice-display.rolling {
+  animation: shake 0.4s ease;
+}
+@keyframes shake {
+  0%,100% { transform: rotate(0deg); }
+  20% { transform: rotate(-8deg) scale(1.1); }
+  40% { transform: rotate(8deg) scale(1.1); }
+  60% { transform: rotate(-6deg); }
+  80% { transform: rotate(6deg); }
+}
+
+/* Direction pad */
+.dir-pad {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.dir-row {
+  display: flex;
+  gap: 4px;
+}
+.dir-btn {
+  width: 60px;
+  height: 38px;
+  border: 1px solid #2e7d32;
+  border-radius: 7px;
+  background: #1a3a1a;
+  color: #a5d6a7;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  flex-direction: column;
+  line-height: 1;
+}
+.dir-btn .arrow { font-size: 1rem; }
+.dir-btn .label { font-size: 0.65rem; opacity: 0.7; }
+.dir-btn:hover:not(:disabled) {
+  background: #2e7d32;
+  color: #fff;
+  transform: scale(1.08);
+}
+.dir-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+/* Game log */
+#log-list {
+  max-height: 120px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.log-entry {
+  font-size: 0.78rem;
+  color: #81c784;
+  padding: 2px 0;
+  border-bottom: 1px solid #1a3a1a;
+  line-height: 1.4;
+}
+.log-entry.highlight {
+  color: #fff176;
+}
+
+/* Win screen */
+#win-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.win-card {
+  background: #122912;
+  border: 2px solid #ffd54f;
+  border-radius: 20px;
+  padding: 50px 60px;
+  text-align: center;
+  box-shadow: 0 0 50px rgba(255,213,79,0.3);
+  animation: winPulse 2s ease infinite;
+}
+@keyframes winPulse {
+  0%,100% { box-shadow: 0 0 50px rgba(255,213,79,0.3); }
+  50% { box-shadow: 0 0 80px rgba(255,213,79,0.6); }
+}
+.win-card h1 {
+  font-size: 3rem;
+  color: #ffd54f;
+  margin-bottom: 16px;
+}
+.win-player-name {
+  font-size: 1.5rem;
+  color: #e8f5e9;
+  margin-bottom: 8px;
+}
+.win-sub {
+  color: #81c784;
+  margin-bottom: 30px;
+}
+.play-again-btn {
+  padding: 14px 36px;
+  border: 2px solid #4caf50;
+  border-radius: 30px;
+  background: #1b5e20;
+  color: #e8f5e9;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.play-again-btn:hover {
+  background: #2e7d32;
+  transform: scale(1.05);
+}
+
+/* Legend strip */
+#legend {
+  display: flex;
+  gap: 16px;
+  font-size: 0.78rem;
+  color: #81c784;
+  align-items: center;
+}
+.legend-item { display: flex; align-items: center; gap: 5px; }
+.legend-box {
+  width: 16px; height: 16px; border-radius: 3px;
+}
