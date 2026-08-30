@@ -91,6 +91,17 @@ function isValid(row, col) {
   return row >= 0 && row < ROWS && col >= 0 && col < COLS;
 }
 
+function pixelToHex(px, py) {
+  const r_frac = (py - offsetY) / (hexSize * 1.5);
+  const q_frac = (px - offsetX) / (hexSize * SQRT3) - r_frac / 2;
+  const s_frac = -q_frac - r_frac;
+  let rq = Math.round(q_frac), rr = Math.round(r_frac), rs = Math.round(s_frac);
+  const dq = Math.abs(rq - q_frac), dr = Math.abs(rr - r_frac), ds = Math.abs(rs - s_frac);
+  if (dq > dr && dq > ds) rq = -rr - rs;
+  else if (dr > ds)        rr = -rq - rs;
+  return axialToOffset(rq, rr);
+}
+
 // Returns the direction name if (toRow,toCol) is a direct neighbor, else null.
 function getDirToNeighbor(fromRow, fromCol, toRow, toCol) {
   const from = offsetToAxial(fromRow, fromCol);
@@ -188,48 +199,65 @@ function startGame(np) {
   const canvas = document.getElementById('gameCanvas');
   canvas.width = canvasW;
   canvas.height = canvasH;
-  setupCanvasEvents(canvas);
+  setupCanvasEvents();
 
   updateUI();
   render();
   setTimeout(rollDice, 600);
 }
 
-function setupCanvasEvents(canvas) {
-  // Only attach once; replace by cloning the node to wipe any prior listeners.
-  const fresh = canvas.cloneNode(true);
-  canvas.parentNode.replaceChild(fresh, canvas);
+let canvasEventsAttached = false;
 
-  function hexUnderPointer(e) {
-    const rect = fresh.getBoundingClientRect();
-    const px = (e.clientX - rect.left) * (canvasW / rect.width);
-    const py = (e.clientY - rect.top)  * (canvasH / rect.height);
-    return pixelToHex(px, py);
+function setupCanvasEvents() {
+  if (canvasEventsAttached) return;
+  canvasEventsAttached = true;
+  const canvas = document.getElementById('gameCanvas');
+
+  function hexUnderPointer(clientX, clientY) {
+    const rect = canvas.getBoundingClientRect();
+    return pixelToHex(
+      (clientX - rect.left) * (canvasW / rect.width),
+      (clientY - rect.top)  * (canvasH / rect.height)
+    );
   }
 
-  fresh.addEventListener('mousemove', e => {
-    if (phase !== 'direction') { hoveredHex = null; fresh.style.cursor = 'default'; render(); return; }
-    const hex = hexUnderPointer(e);
+  canvas.addEventListener('mousemove', e => {
+    if (phase !== 'direction') { hoveredHex = null; canvas.style.cursor = 'default'; render(); return; }
+    const hex = hexUnderPointer(e.clientX, e.clientY);
     const panda = displayPos[currentPlayer];
     const dir = getDirToNeighbor(panda.row, panda.col, hex.row, hex.col);
     hoveredHex = dir ? hex : null;
-    fresh.style.cursor = dir ? 'pointer' : 'default';
+    canvas.style.cursor = dir ? 'pointer' : 'default';
     render();
   });
 
-  fresh.addEventListener('mouseleave', () => {
+  canvas.addEventListener('mouseleave', () => {
     hoveredHex = null;
-    fresh.style.cursor = 'default';
+    canvas.style.cursor = 'default';
     render();
   });
 
-  fresh.addEventListener('click', e => {
+  canvas.addEventListener('click', e => {
     if (phase !== 'direction') return;
-    const hex = hexUnderPointer(e);
+    const hex = hexUnderPointer(e.clientX, e.clientY);
     const panda = displayPos[currentPlayer];
     const dir = getDirToNeighbor(panda.row, panda.col, hex.row, hex.col);
     if (dir) chooseDir(dir);
   });
+
+  canvas.addEventListener('touchstart', e => {
+    e.preventDefault();
+    if (phase !== 'direction') return;
+    const touch = e.changedTouches[0];
+    const hex = hexUnderPointer(touch.clientX, touch.clientY);
+    const panda = displayPos[currentPlayer];
+    const dir = getDirToNeighbor(panda.row, panda.col, hex.row, hex.col);
+    if (dir) {
+      hoveredHex = hex;
+      render();
+      setTimeout(() => { hoveredHex = null; chooseDir(dir); }, 80);
+    }
+  }, { passive: false });
 }
 
 // =====================================================================
@@ -514,36 +542,56 @@ function drawDirectionArrow(ctx, fromX, fromY, toX, toY) {
   const dist = Math.sqrt(dx * dx + dy * dy);
   const nx = dx / dist, ny = dy / dist;
 
-  // Shaft: from just outside the panda circle to just before the target hex center
-  const x0 = fromX + nx * hexSize * 0.68;
-  const y0 = fromY + ny * hexSize * 0.68;
-  const x1 = toX   - nx * hexSize * 0.38;
-  const y1 = toY   - ny * hexSize * 0.38;
-
-  const headLen = hexSize * 0.38;
+  const headLen = hexSize * 0.42;
+  const lineW   = Math.max(2, hexSize * 0.09);
   const angle   = Math.atan2(dy, dx);
 
+  // Tip lands exactly at target hex center; shaft stops at the triangle base
+  const tipX     = toX;
+  const tipY     = toY;
+  const shaftX0  = fromX + nx * hexSize * 0.68;
+  const shaftY0  = fromY + ny * hexSize * 0.68;
+  const shaftX1  = tipX  - nx * headLen;   // ends at arrowhead base → round cap hidden
+  const shaftY1  = tipY  - ny * headLen;
+
   ctx.save();
-  ctx.shadowColor = 'rgba(0,0,0,0.7)';
+  ctx.shadowColor = 'rgba(0,0,0,0.75)';
   ctx.shadowBlur  = 8;
 
   // Shaft
   ctx.beginPath();
-  ctx.moveTo(x0, y0);
-  ctx.lineTo(x1, y1);
+  ctx.moveTo(shaftX0, shaftY0);
+  ctx.lineTo(shaftX1, shaftY1);
   ctx.strokeStyle = '#ffffff';
-  ctx.lineWidth   = Math.max(2, hexSize * 0.08);
+  ctx.lineWidth   = lineW;
   ctx.lineCap     = 'round';
   ctx.stroke();
 
-  // Arrowhead
+  // Arrowhead triangle (tip at hex center)
   ctx.beginPath();
-  ctx.moveTo(x1, y1);
-  ctx.lineTo(x1 - headLen * Math.cos(angle - Math.PI / 6), y1 - headLen * Math.sin(angle - Math.PI / 6));
-  ctx.lineTo(x1 - headLen * Math.cos(angle + Math.PI / 6), y1 - headLen * Math.sin(angle + Math.PI / 6));
+  ctx.moveTo(tipX, tipY);
+  ctx.lineTo(tipX - headLen * Math.cos(angle - Math.PI / 6), tipY - headLen * Math.sin(angle - Math.PI / 6));
+  ctx.lineTo(tipX - headLen * Math.cos(angle + Math.PI / 6), tipY - headLen * Math.sin(angle + Math.PI / 6));
   ctx.closePath();
   ctx.fillStyle = '#ffffff';
   ctx.fill();
+
+  // Dice step count — badge beside shaft midpoint (offset perpendicular to arrow)
+  if (diceValue > 0) {
+    const mx   = (shaftX0 + shaftX1) / 2 + (-ny) * hexSize * 0.38;
+    const my   = (shaftY0 + shaftY1) / 2 + ( nx) * hexSize * 0.38;
+    const r    = Math.round(hexSize * 0.32);
+    ctx.shadowBlur = 0;
+    ctx.beginPath();
+    ctx.arc(mx, my, r, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    ctx.fill();
+    ctx.font = `bold ${Math.round(hexSize * 0.48)}px sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#ffd54f';
+    ctx.fillText(String(diceValue), mx, my);
+  }
 
   ctx.restore();
 }
@@ -606,41 +654,6 @@ function render() {
     }
   }
 
-  // Direction selection: highlight adjacent hexes and draw arrow
-  if (phase === 'direction' && players.length > 0) {
-    const pandaPos = displayPos[currentPlayer];
-    const pandaPx  = hexToPixel(pandaPos.row, pandaPos.col);
-
-    for (const dirName of DIR_NAMES) {
-      const nb = getNeighbor(pandaPos.row, pandaPos.col, dirName);
-      if (!isValid(nb.row, nb.col)) continue;
-      const { x, y } = hexToPixel(nb.row, nb.col);
-      const isHovered = hoveredHex && hoveredHex.row === nb.row && hoveredHex.col === nb.col;
-
-      ctx.beginPath();
-      for (let i = 0; i < 6; i++) {
-        const a = Math.PI / 180 * (60 * i + 30);
-        const hx = x + (hexSize - 1) * Math.cos(a);
-        const hy = y + (hexSize - 1) * Math.sin(a);
-        if (i === 0) ctx.moveTo(hx, hy); else ctx.lineTo(hx, hy);
-      }
-      ctx.closePath();
-      ctx.fillStyle   = isHovered ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.05)';
-      ctx.strokeStyle = isHovered ? 'rgba(255,255,255,0.75)' : 'rgba(255,255,255,0.22)';
-      ctx.lineWidth   = isHovered ? 2 : 1;
-      ctx.fill();
-      ctx.stroke();
-    }
-
-    if (hoveredHex) {
-      const dir = getDirToNeighbor(pandaPos.row, pandaPos.col, hoveredHex.row, hoveredHex.col);
-      if (dir) {
-        const tgt = hexToPixel(hoveredHex.row, hoveredHex.col);
-        drawDirectionArrow(ctx, pandaPx.x, pandaPx.y, tgt.x, tgt.y);
-      }
-    }
-  }
-
   if (collisionFlash) {
     for (const { x, y } of collisionFlash) {
       ctx.beginPath();
@@ -668,6 +681,41 @@ function render() {
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#fff';
     ctx.fillText(players[i].label, px + hexSize * 0.38, py - hexSize * 0.35);
+  }
+
+  // Direction selection: drawn last so highlights and arrow appear above pandas
+  if (phase === 'direction' && players.length > 0) {
+    const pandaPos = displayPos[currentPlayer];
+    const pandaPx  = hexToPixel(pandaPos.row, pandaPos.col);
+
+    for (const dirName of DIR_NAMES) {
+      const nb = getNeighbor(pandaPos.row, pandaPos.col, dirName);
+      if (!isValid(nb.row, nb.col)) continue;
+      const { x, y } = hexToPixel(nb.row, nb.col);
+      const isHovered = hoveredHex && hoveredHex.row === nb.row && hoveredHex.col === nb.col;
+
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+        const a = Math.PI / 180 * (60 * i + 30);
+        const hx = x + (hexSize - 1) * Math.cos(a);
+        const hy = y + (hexSize - 1) * Math.sin(a);
+        if (i === 0) ctx.moveTo(hx, hy); else ctx.lineTo(hx, hy);
+      }
+      ctx.closePath();
+      ctx.fillStyle   = isHovered ? 'rgba(255,255,255,0.28)' : 'rgba(255,255,255,0.12)';
+      ctx.strokeStyle = isHovered ? 'rgba(255,255,255,1.0)'  : 'rgba(255,255,255,0.5)';
+      ctx.lineWidth   = isHovered ? 2.5 : 1.5;
+      ctx.fill();
+      ctx.stroke();
+    }
+
+    if (hoveredHex) {
+      const dir = getDirToNeighbor(pandaPos.row, pandaPos.col, hoveredHex.row, hoveredHex.col);
+      if (dir) {
+        const tgt = hexToPixel(hoveredHex.row, hoveredHex.col);
+        drawDirectionArrow(ctx, pandaPx.x, pandaPx.y, tgt.x, tgt.y);
+      }
+    }
   }
 }
 
