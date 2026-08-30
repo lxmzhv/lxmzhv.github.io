@@ -68,6 +68,7 @@ let flashCells = [];
 let collisionFlash = null;
 let hoveredHex = null;
 let canvasDice = null; // { value, rolling } — large dice drawn on canvas during roll
+let aiPaused   = false;
 
 // =====================================================================
 // HEX MATH
@@ -196,6 +197,7 @@ function startGame() {
   flashCells = [];
   collisionFlash = null;
   canvasDice = null;
+  aiPaused = false;
 
   currentPlayer = 0;
   diceValue = 0;
@@ -502,6 +504,7 @@ async function playEvents(events, finalPos) {
   diceValue = 0;
   phase = 'roll';
   updateUI();
+  updatePauseButton();
   render();
   setTimeout(rollDice, 600);
 }
@@ -511,6 +514,7 @@ async function playEvents(events, finalPos) {
 // =====================================================================
 function rollDice() {
   if (phase !== 'roll') return;
+  if (aiPaused && playerTypes[currentPlayer] === 'ai') return;
 
   // Keep header dice showing ? until the fly animation lands
   const diceEl = document.getElementById('dice-inline');
@@ -617,6 +621,7 @@ function resetGame() {
   flashCells = [];
   collisionFlash = null;
   canvasDice = null;
+  aiPaused = false;
   phase = 'setup';
   document.getElementById('game-screen').style.display = 'none';
   document.getElementById('setup-screen').style.display = 'flex';
@@ -978,8 +983,30 @@ function scoreMove(pIdx, dirName) {
   return score;
 }
 
+function toggleAIPause() {
+  aiPaused = !aiPaused;
+  updatePauseButton();
+  if (!aiPaused) {
+    if (phase === 'roll' && playerTypes[currentPlayer] === 'ai') {
+      setTimeout(rollDice, 300);
+    } else if (phase === 'direction' && playerTypes[currentPlayer] === 'ai') {
+      setTimeout(aiChooseDir, 300);
+    }
+  }
+}
+
+function updatePauseButton() {
+  const btn = document.getElementById('pause-btn');
+  if (!btn) return;
+  const hasAI = players.length > 0 && playerTypes.some(t => t === 'ai');
+  btn.disabled = !hasAI;
+  btn.textContent = aiPaused ? '▶ Play' : '⏸ Pause';
+  btn.classList.toggle('paused', aiPaused);
+}
+
 function aiChooseDir() {
   if (phase !== 'direction') return;
+  if (aiPaused) return;
   let bestScore = -Infinity;
   let bestDir = DIR_NAMES[0];
   const shuffled = [...DIR_NAMES].sort(() => Math.random() - 0.5);
