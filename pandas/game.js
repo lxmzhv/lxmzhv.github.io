@@ -649,23 +649,7 @@ function roundRectPath(ctx, x, y, w, h, r) {
   ctx.closePath();
 }
 
-function drawCanvasDice(ctx, value) {
-  const s  = hexSize * 1.2;        // half-side (dice = 2× panda diameter)
-  const r  = s * 0.18;
-  const cx = canvasW / 2;
-  const cy = canvasH / 2;
-
-  ctx.shadowColor = 'rgba(0,0,0,0.75)';
-  ctx.shadowBlur  = 30;
-  roundRectPath(ctx, cx - s, cy - s, s * 2, s * 2, r);
-  ctx.fillStyle = '#1a3a1a';
-  ctx.fill();
-
-  ctx.shadowBlur = 0;
-  ctx.strokeStyle = '#4caf50';
-  ctx.lineWidth   = Math.max(2, s * 0.06);
-  ctx.stroke();
-
+function drawDiceFace(ctx, cx, cy, s, value) {
   const dotPositions = {
     1: [[0,    0   ]],
     2: [[-0.4,-0.4 ], [ 0.4, 0.4]],
@@ -674,12 +658,28 @@ function drawCanvasDice(ctx, value) {
     5: [[-0.4,-0.4 ], [ 0.4,-0.4], [ 0,   0  ], [-0.4, 0.4], [ 0.4, 0.4]],
     6: [[-0.4,-0.4 ], [ 0.4,-0.4], [-0.4, 0  ], [ 0.4, 0  ], [-0.4, 0.4], [ 0.4, 0.4]],
   };
+
+  ctx.shadowColor = 'rgba(0,0,0,0.75)';
+  ctx.shadowBlur  = s * 0.5;
+  roundRectPath(ctx, cx - s, cy - s, s * 2, s * 2, s * 0.18);
+  ctx.fillStyle = '#1a3a1a';
+  ctx.fill();
+
+  ctx.shadowBlur = 0;
+  ctx.strokeStyle = '#4caf50';
+  ctx.lineWidth   = Math.max(1.5, s * 0.06);
+  ctx.stroke();
+
   ctx.fillStyle = '#e8f5e9';
   for (const [dx, dy] of dotPositions[value]) {
     ctx.beginPath();
     ctx.arc(cx + dx * s, cy + dy * s, s * 0.11, 0, Math.PI * 2);
     ctx.fill();
   }
+}
+
+function drawCanvasDice(ctx, value) {
+  drawDiceFace(ctx, canvasW / 2, canvasH / 2, hexSize * 1.2, value);
 }
 
 function drawHex(ctx, cx, cy, size, fill, stroke) {
@@ -739,21 +739,11 @@ function drawDirectionArrow(ctx, fromX, fromY, toX, toY) {
   ctx.fillStyle = '#ffffff';
   ctx.fill();
 
-  // Dice step count — badge beside shaft midpoint (offset perpendicular to arrow)
+  // Mini dice beside shaft midpoint showing the rolled value
   if (diceValue > 0) {
-    const mx   = (shaftX0 + shaftX1) / 2 + (-ny) * hexSize * 0.38;
-    const my   = (shaftY0 + shaftY1) / 2 + ( nx) * hexSize * 0.38;
-    const r    = Math.round(hexSize * 0.32);
-    ctx.shadowBlur = 0;
-    ctx.beginPath();
-    ctx.arc(mx, my, r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(0,0,0,0.6)';
-    ctx.fill();
-    ctx.font = `bold ${Math.round(hexSize * 0.48)}px sans-serif`;
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillStyle = '#ffd54f';
-    ctx.fillText(String(diceValue), mx, my);
+    const mx = (shaftX0 + shaftX1) / 2 + (-ny) * hexSize * 0.56;
+    const my = (shaftY0 + shaftY1) / 2 + ( nx) * hexSize * 0.56;
+    drawDiceFace(ctx, mx, my, hexSize * 0.40, diceValue);
   }
 
   ctx.restore();
