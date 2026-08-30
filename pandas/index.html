@@ -27,6 +27,22 @@
   <div id="player-config">
     <div class="section-label">Player types:</div>
     <div id="player-type-list"></div>
+
+    <div class="section-label" style="margin-top:8px">Difficulty:</div>
+    <div class="diff-btns">
+      <button class="diff-btn" data-diff="easy" onclick="selectDifficulty('easy')">Easy</button>
+      <button class="diff-btn" data-diff="medium" onclick="selectDifficulty('medium')">Medium</button>
+      <button class="diff-btn" data-diff="hard" onclick="selectDifficulty('hard')">Hard</button>
+    </div>
+
+    <div class="section-label" style="margin-top:8px">Map:</div>
+    <div class="map-btns">
+      <button class="map-btn" data-mapidx="-1" onclick="selectMap(-1)">Random</button>
+      <button class="map-btn" data-mapidx="0" onclick="selectMap(0)">Map 1</button>
+      <button class="map-btn" data-mapidx="1" onclick="selectMap(1)">Map 2</button>
+      <button class="map-btn" data-mapidx="2" onclick="selectMap(2)">Map 3</button>
+    </div>
+
     <button class="start-game-btn" onclick="startGame()">Start Game ▶</button>
   </div>
 
