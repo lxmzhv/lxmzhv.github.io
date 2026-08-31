@@ -99,6 +99,7 @@ let diceValue = 0;
 let phase = 'setup'; // setup | roll | direction | animating | win
 let displayPos = []; // { row, col } used for rendering (updated during animation)
 let animPixels = []; // { x, y } pixel-level override during smooth animation
+let rollAngles = []; // cumulative roll angle (radians) per player
 let swayingTrees = []; // { row, col, startTime }
 let collisionFlash = null;
 let hoveredHex = null;
@@ -263,6 +264,7 @@ function startGame() {
 
   displayPos = players.map(p => ({ row: p.row, col: p.col }));
   animPixels = new Array(numPlayers).fill(null);
+  rollAngles = new Array(numPlayers).fill(0);
   swayingTrees = [];
   collisionFlash = null;
   canvasDice = null;
@@ -484,13 +486,25 @@ function easeInOut(t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; }
 async function animateMove(pIdx, fromRow, fromCol, toRow, toCol) {
   const from = hexToPixel(fromRow, fromCol);
   const to   = hexToPixel(toRow, toCol);
+  const dx = to.x - from.x;
+  const dy = to.y - from.y;
+  const totalDist = Math.sqrt(dx * dx + dy * dy);
+  // Roll clockwise when moving right, counter-clockwise when moving left.
+  // dx is never zero for any of the 6 hex directions.
+  const rollSign = dx >= 0 ? 1 : -1;
+  const radius = hexSize * 0.6;
+
   const DURATION = 220;
   const start = performance.now();
+  let prevE = 0;
 
   await new Promise(resolve => {
     function frame() {
       const t = Math.min((performance.now() - start) / DURATION, 1);
       const e = easeInOut(t);
+      // Accumulate roll angle proportional to incremental distance this frame
+      rollAngles[pIdx] += rollSign * (e - prevE) * totalDist / radius;
+      prevE = e;
       animPixels[pIdx] = { x: lerp(from.x, to.x, e), y: lerp(from.y, to.y, e) };
       render();
       if (t < 1) {
@@ -697,6 +711,7 @@ async function chooseDir(dirName) {
 function resetGame() {
   hoveredHex = null;
   swayingTrees = [];
+  rollAngles = [];
   collisionFlash = null;
   canvasDice = null;
   aiPaused = false;
@@ -832,25 +847,35 @@ function drawDirectionArrow(ctx, fromX, fromY, toX, toY) {
   ctx.restore();
 }
 
-function drawPanda(ctx, x, y, color, size, isActive) {
+function drawPanda(ctx, x, y, color, size, isActive, rollAngle = 0) {
+  // Active glow — not rotated so it stays circular
   if (isActive) {
     ctx.beginPath();
     ctx.arc(x, y, size * 0.72, 0, Math.PI * 2);
     ctx.fillStyle = 'rgba(255,255,255,0.25)';
     ctx.fill();
   }
+
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.rotate(rollAngle);
+
+  // Colored body disc
   ctx.beginPath();
-  ctx.arc(x, y, size * 0.6, 0, Math.PI * 2);
+  ctx.arc(0, 0, size * 0.6, 0, Math.PI * 2);
   ctx.fillStyle = color;
   ctx.fill();
   ctx.strokeStyle = isActive ? '#ffffff' : 'rgba(0,0,0,0.4)';
   ctx.lineWidth = isActive ? 2.5 : 1.5;
   ctx.stroke();
 
+  // 🐼 emoji tumbles with the body
   ctx.font = `${Math.round(size * 0.7)}px serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText('🐼', x, y);
+  ctx.fillText('🐼', 0, 0);
+
+  ctx.restore();
 }
 
 function render() {
@@ -926,7 +951,7 @@ function render() {
       px = x; py = y;
     }
     const isActive = (i === currentPlayer) && (phase === 'roll' || phase === 'direction');
-    drawPanda(ctx, px, py, players[i].color, hexSize, isActive);
+    drawPanda(ctx, px, py, players[i].color, hexSize, isActive, rollAngles[i] ?? 0);
 
     ctx.font = `bold ${Math.round(hexSize * 0.28)}px sans-serif`;
     ctx.textAlign = 'center';
